@@ -17,8 +17,9 @@ does, and who it is.
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
 &nbsp;·&nbsp; [Full Index](./INDEX.md)
 
-> **TotalMarkdown.ai** and **TotalAgents.ai** — the markdown-native agent
-> bundle marketplace — are currently in development.
+> **TotalMarkdown.ai** (the markdown-native workspace for agent configuration) &
+> **TotalAgents.ai** (the markdown-native agent bundle marketplace)
+> are currently in development.
 > ⭐ Star this repo to follow progress.
 
 ---
@@ -193,7 +194,7 @@ each maintained as a focused open standard while also cross-referenced here:
 | HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement |
 | ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety |
 | SEEKING.md | [totalmarkdown/seeking.md](https://github.com/totalmarkdown/seeking.md) | Agent want-ads and discovery |
-| ICE.md | [totalmarkdown/ice.md](https://github.com/totalmarkdown/ice.md) | Emergency protocol (break-glass) |
+| ICE.md | [totalmarkdown/ice.md](https://github.com/totalmarkdown/ice.md) | In Case of Emergency protocol (break-glass) |
 | WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity |
 | WAKEUP.md | [totalmarkdown/wakeup.md](https://github.com/totalmarkdown/wakeup.md) | Session startup lifecycle |
 
