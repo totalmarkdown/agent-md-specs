@@ -1,0 +1,95 @@
+---
+spec_name: INTERRUPT.md
+spec_version: 0.1.0
+category: Operations
+domain: interruptmd.dev
+priority: Medium
+volume: "Vol 7 — Inner Life & Lifecycle Rituals"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+# INTERRUPT.md
+
+**Category:** Operations
+**Domain:** interruptmd.dev
+**Priority:** Medium
+**Version:** 0.1.0
+
+**Priority:** MEDIUM  
+**Version:** 0.1.0
+
+### Purpose
+How to safely interrupt this agent mid-task — 
+pause it, redirect it, or stop it without losing 
+work or corrupting state.
+
+Every agent running autonomous tasks needs a 
+safe interrupt protocol. INTERRUPT.md defines it.
+
+### Spec
+
+```markdown
+---
+agent_name: string
+version: semver
+interrupt_safe: boolean   # Does agent support safe interrupts?
+checkpoint_frequency: string  # How often state is saved
+---
+
+# [Agent Name] — Interrupt Protocol
+
+## Interrupt Levels
+
+### Level 1: Pause (complete current step, then stop)
+**Command:** [pause command]  
+**What happens:** Finish current atomic operation, checkpoint, wait  
+**State preserved:** Yes — full  
+**Resume with:** [resume command]  
+**Use when:** Need to review progress, inject new context
+
+### Level 2: Redirect (complete current step, then change direction)
+**Command:** [redirect command] + new instruction  
+**What happens:** Finish current step, then follow new instruction  
+**State preserved:** Yes — partial (task history kept)  
+**Use when:** Goal has changed but work so far is useful
+
+### Level 3: Stop (stop at next safe checkpoint)
+**Command:** [stop command]  
+**What happens:** Complete or abort current operation, save state, stop  
+**State preserved:** Checkpoint saved  
+**Resume with:** Requires explicit restart  
+**Use when:** Done for the session, switching tasks
+
+### Level 4: Kill (immediate stop — may lose state)
+**Command:** [kill -9 or equivalent]  
+**What happens:** Immediate termination  
+**State preserved:** Best effort — may lose current operation  
+**Use when:** Emergency only — see PANIC.md  
+**Recovery:** See REBOOT.md
+
+## Checkpoint System
+This agent checkpoints every: [N operations | N seconds | on request]  
+Checkpoint location: [path]  
+Checkpoint format: [JSON snapshot of current state]  
+Maximum checkpoints kept: [N] (oldest deleted automatically)
+
+## Safe Interrupt Signals
+| Signal | Effect | Safe? |
+|--------|--------|-------|
+| [signal 1] | Pause after current step | ✓ Yes |
+| [signal 2] | Stop after current task | ✓ Yes |
+| [signal 3] | Immediate stop | ⚠ May lose state |
+
+## After Interrupt
+Agent will:
+1. Save checkpoint
+2. Write summary to HANDOFF.md: "Interrupted at [point], [status]"
+3. Emit status signal: "paused" or "stopped"
+4. Wait for resume or restart command
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*

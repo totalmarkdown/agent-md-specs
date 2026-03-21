@@ -1,0 +1,106 @@
+---
+spec_name: COPPA.md
+spec_version: 0.1.0
+category: Regulatory Compliance
+domain: coppamd.dev
+priority: High
+volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+# COPPA.md
+
+**Category:** Regulatory Compliance
+**Domain:** coppamd.dev
+**Priority:** High
+**Version:** 0.1.0
+
+**Priority:** HIGH — any agent that might reach children  
+**Regulation:** Children's Online Privacy Protection Act (US)  
+**Version:** 0.1.0
+
+```markdown
+---
+agent_name: string
+version: semver
+coppa_applicable: boolean
+directed_to_children: boolean   # Is this agent directed at children?
+actual_knowledge_children: boolean  # Do you have actual knowledge of children using it?
+minimum_age: number             # Minimum age for this service
+verifiable_parental_consent: boolean
+---
+
+# [Agent Name] — COPPA Compliance
+
+## Applicability
+COPPA applies to operators of websites/online services directed 
+to children under 13, OR who have actual knowledge they are 
+collecting personal information from children under 13.
+
+**Is this service directed to children?** [Yes | No | Mixed audience]  
+**Minimum age requirement:** [13 | 16 | 18 | other]  
+**Age verification method:** [how age is verified]
+
+## What COPPA Requires
+
+### Verifiable Parental Consent
+Required BEFORE collecting personal info from children under 13.
+
+**Consent method:** [one of the following]
+- [ ] Signed consent form (mail/fax)
+- [ ] Credit card verification
+- [ ] Parent call to toll-free number
+- [ ] Video conference with trained personnel
+- [ ] Government ID verification
+- [ ] Knowledge-based authentication
+- [ ] Facial recognition match to ID
+
+### Privacy Notice Requirements
+Must post clear, comprehensive privacy policy including:
+- [ ] What information is collected from children
+- [ ] How information is used
+- [ ] Disclosure practices
+- [ ] Parent rights
+
+**Privacy policy for children:** [URL]  
+**Written in language children can understand:** [yes/no]
+
+### Parent Rights
+Parents can:
+- Review personal information collected from their child
+- Revoke consent and request deletion
+- Refuse further collection or use
+- Not required to consent to more than necessary
+
+**Parent request process:** [process]  
+**Response time:** [timeframe]
+
+## Data Practices for Children
+- Collect only what necessary
+- No behavioral advertising to children
+- No sharing with third parties (with limited exceptions)
+- No retention beyond necessary
+- Reasonable security measures
+
+## Prohibited
+- Conditioning participation on disclosure of more info than necessary
+- Marketing/advertising to children based on their data
+- Third-party behavioral tracking without parental consent
+
+## Penalties
+$51,744 per violation per day (adjusted for inflation)  
+FTC enforcement  
+State AGs can also enforce
+
+## If Not Directed to Children
+Steps taken to avoid collecting children's data:
+- [Age gate method]
+- [What happens when underage user identified]
+- [Deletion process for inadvertently collected children's data]
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*

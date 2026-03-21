@@ -1,0 +1,27 @@
+name: Sync ICE.md to canonical repo
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'specs/governance/ICE.md'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout agent-md-specs
+        uses: actions/checkout@v4
+
+      - name: Open PR on canonical repo
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.SYNC_TOKEN }}
+          commit-message: 'sync: update ICE.md from agent-md-specs'
+          title: 'sync: update from agent-md-specs'
+          body: |
+            Automated sync from agent-md-specs repository.
+            agent-md-specs is the source of truth for this spec.
+            Review and merge to update the canonical repo.
+          branch: sync-from-agent-md-specs

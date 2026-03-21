@@ -1,0 +1,128 @@
+---
+spec_name: LOGS.md
+spec_version: 0.1.0
+category: Operations
+domain: logsmd.dev
+priority: Medium
+volume: "Vol 4 — Economic Identity"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+# LOGS.md
+
+**Category:** Operations
+**Domain:** logsmd.dev
+**Priority:** Medium
+**Version:** 0.1.0
+
+**Priority:** MEDIUM  
+**Version:** 0.1.0
+
+### Purpose
+Operational logging configuration — where logs go, what gets logged, 
+log format, retention policy, and how to query them. Different from 
+AUDIT.md (compliance/security audit trail) — LOGS.md covers 
+operational observability logs.
+
+### Spec
+
+```markdown
+---
+agent_name: string
+version: semver
+log_level: string      # DEBUG | INFO | WARN | ERROR
+log_destination: string
+retention_days: number
+structured_logging: boolean
+---
+
+# [Agent Name] — Logging Configuration
+
+## Log Destinations
+| Log type | Destination | Format | Retention |
+|----------|-------------|--------|-----------|
+| Application logs | [path/service] | [JSON/text] | [N days] |
+| Error logs | [path/service] | [JSON/text] | [N days] |
+| Audit logs | [path/service] | [JSON/text] | [N years] |
+| Performance logs | [path/service] | [JSON/text] | [N days] |
+| Debug logs | [path/service] | [JSON/text] | [N days] |
+
+## Log Levels
+**Production:** [INFO | WARN | ERROR]  
+**Staging:** [DEBUG | INFO | WARN | ERROR]  
+**Development:** [DEBUG]
+
+## What Gets Logged
+
+### Always logged (regardless of level)
+- Agent start/stop events
+- Task start/completion/failure
+- All errors and exceptions
+- Security events (auth, access control)
+- Escalations
+- External API calls (sanitized)
+
+### Logged at INFO level
+- Task progress milestones
+- Configuration changes
+- Resource usage summaries
+
+### Logged at DEBUG level
+- Detailed task steps
+- Tool call inputs/outputs (sanitized)
+- Memory operations
+- Full request/response cycles
+
+### Never logged
+- API keys, tokens, credentials
+- PII (names, emails, phone numbers)
+- File contents unless explicitly in scope
+- Private wallet addresses
+
+## Log Format
+Structured JSON format:
+```json
+{
+  "timestamp": "ISO-8601",
+  "level": "INFO|WARN|ERROR|DEBUG",
+  "agent": "agent-name",
+  "agent_version": "semver",
+  "task_id": "uuid",
+  "event": "event-type",
+  "message": "human readable description",
+  "data": {},
+  "duration_ms": 0,
+  "error": null
+}
+```
+
+## Querying Logs
+```bash
+# Recent errors
+[log-query-command] --level ERROR --since 1h
+
+# Specific task
+[log-query-command] --task-id [uuid]
+
+# Performance analysis
+[log-query-command] --event task_complete --since 24h | analyze
+```
+
+## Alerting (see MONITOR.md for full config)
+Log-based alerts:
+- ERROR rate > [N]/min → alert
+- Specific error pattern → alert
+- No logs for [N] min → heartbeat alert
+
+## Log Access
+- **Read access:** [roles/systems]
+- **Write access:** agent only
+- **Deletion:** [policy — typically never]
+- **Export:** [how to export for analysis]
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*

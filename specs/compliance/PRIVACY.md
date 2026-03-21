@@ -1,0 +1,93 @@
+---
+spec_name: PRIVACY.md
+spec_version: 0.1.0
+category: Compliance
+domain: privacymd.dev
+priority: High
+volume: "Vol 1 — Core Agent Specs"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+# PRIVACY.md
+
+**Category:** Compliance
+**Domain:** privacymd.dev
+**Priority:** High
+**Version:** 0.1.0
+
+### Purpose
+Defines data privacy rules, consent requirements, retention policies, 
+and deletion procedures for agents that handle personal data.
+
+### Spec
+
+```markdown
+---
+agent_name: string
+version: semver
+jurisdictions: list       # [GDPR, CCPA, PIPEDA, etc.]
+pii_categories: list      # Types of PII handled
+dpo_contact: string       # Data Protection Officer contact
+created: date
+updated: date
+---
+
+# [Agent Name] — Privacy Configuration
+
+## Applicable Regulations
+- [ ] GDPR (EU/EEA users)
+- [ ] CCPA (California users)
+- [ ] PIPEDA (Canadian users)
+- [ ] HIPAA (US healthcare)
+- [ ] [Other]
+
+## PII Handled by This Agent
+| Data Type | Sensitivity | Retention | Deletion Method |
+|-----------|-------------|-----------|-----------------|
+| Email address | Medium | [X days] | Hard delete |
+| IP address | Low | [X days] | Anonymize |
+| Health data | High | [X days] | Secure delete |
+| [Other] | [level] | [period] | [method] |
+
+## Consent Requirements
+Before processing PII, verify:
+- [ ] User has given consent for this processing purpose
+- [ ] Consent is documented in [location]
+- [ ] User has not withdrawn consent
+
+If consent cannot be verified: do not process, log attempt.
+
+## Data Minimization
+Only collect and process PII that is strictly necessary.
+If a task can be completed with anonymized data: use anonymized data.
+Never request more PII than the task requires.
+
+## Data Subject Rights
+When user requests:
+- **Access:** Provide within [30] days — escalate to [contact]
+- **Deletion:** Complete within [30] days — use deletion procedure below
+- **Correction:** Complete within [30] days
+- **Export:** Provide in [JSON | CSV] format within [30] days
+
+## Deletion Procedure
+1. Identify all locations where user's data exists
+2. Delete from: [list all storage locations]
+3. Verify deletion in each location
+4. Document deletion with timestamp and confirmation
+5. Do NOT delete: [audit logs required by law]
+
+## Data Breach Response
+If data breach detected or suspected:
+1. STOP — do not continue processing
+2. Do not attempt to cover or minimize
+3. Escalate Level 3 immediately
+4. Preserve all logs — do not delete anything
+5. Document: what data, how many users, how discovered
+6. GDPR: notify DPA within 72 hours if required
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*

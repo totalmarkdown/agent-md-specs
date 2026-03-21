@@ -1,0 +1,104 @@
+---
+spec_name: WHOAMI.md
+spec_version: 0.1.0
+category: Identity
+domain: whoamimd.dev
+priority: High
+volume: "Vol 3 — Forward-Thinking Identity"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+> **Canonical repository:**
+> [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md)
+> This copy is included in agent-md-specs for cross-reference.
+> For contributions to this specific spec, use the canonical repo.
+
+# WHOAMI.md
+
+**Category:** Identity
+**Domain:** whoamimd.dev
+**Priority:** High
+**Version:** 0.1.0
+
+**Priority:** HIGH — foundational for agent-to-agent trust  
+**Version:** 0.1.0
+
+### Purpose
+The agent's factual identity document — a machine-readable passport 
+that any other agent or system can read to verify who this agent is, 
+what it can do, and whether to trust it. Where SOUL.md is philosophical, 
+WHOAMI.md is factual and verifiable.
+
+### When to create
+Every agent that operates in a multi-agent environment where 
+identity verification matters. Required for any agent that 
+accepts tasks from other agents.
+
+### Spec
+
+```markdown
+---
+agent_id: string          # Globally unique, stable, never changes
+agent_name: string        # Human-readable display name
+version: semver           # Current version of this agent
+created: date             # When this agent was first deployed
+creator: string           # Who/what created this agent
+deployment_env: string    # local | cloud | edge | hybrid
+public_key_url: string    # URL to verify cryptographic identity
+whoami_spec_version: string  # Version of this spec
+---
+
+# [Agent Name] — Identity Document
+
+## Core Identity
+- **ID:** [UUID — globally unique, permanent]
+- **Name:** [Display name]
+- **Version:** [Current version]
+- **Type:** [coding | research | support | sales | ops | creative | other]
+- **Created:** [Date]
+- **Creator:** [Human name or parent agent ID]
+- **Organization:** [Org name or "independent"]
+
+## What I Am
+[2-3 sentences describing this agent's fundamental nature and purpose.
+Written in first person. Should answer: what do I do, for whom, why do I exist?]
+
+## Capabilities
+What I can do:
+- [Capability 1]
+- [Capability 2]
+
+What I cannot do:
+- [Limitation 1]
+- [Limitation 2]
+
+## Verification
+- **Public key:** [URL to public key for cryptographic verification]
+- **Signed by:** [Issuing authority if any]
+- **Last verified:** [Date]
+- **Fingerprint:** [Short hash for quick verification]
+
+## How to Contact Me
+- **MCP endpoint:** [connection string from MCP.md]
+- **A2A endpoint:** [agent card URL]
+- **CLI:** [invocation command]
+- **Human owner:** [contact for the human responsible]
+
+## Trust Level I Claim
+**Claimed trust level:** [untrusted | community | verified | certified]
+**Verification:** [How to verify this claim]
+
+## Linked Identity Documents
+- Full capabilities: AGENTS.md
+- Personality: SOUL.md
+- What I'm seeking: SEEKING.md
+- What I offer: OFFERING.md
+- My limits: LIMITS.md
+- Who I report to: REPORTSTO.md
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
