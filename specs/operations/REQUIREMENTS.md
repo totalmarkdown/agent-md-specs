@@ -1,0 +1,218 @@
+---
+spec_name: REQUIREMENTS.md
+spec_version: 0.1.0
+category: Operations
+domain: requirementsmd.dev
+priority: Very High
+volume: "Vol 12 — Fleet Operations"
+maintained_by: TotalMarkdown.ai
+license: CC0 1.0 Universal
+---
+
+# REQUIREMENTS.md
+
+**Category:** Operations
+**Domain:** requirementsmd.dev
+**Priority:** Very High
+**Version:** 0.1.0
+
+## REQUIREMENTS.md
+**Category:** Technical/Operations
+**Domain:** requirementsmd.dev (register)
+**Priority:** VERY HIGH — deployment essential
+**Version:** 0.1.0
+
+### Purpose
+The complete "can I run this agent?" document —
+everything needed to deploy and operate this agent:
+hardware minimums, OS requirements, runtime versions,
+network access, all API keys and MCP connections,
+and estimated running cost.
+
+Where DEPENDENCIES.md lists software packages and
+TOOLS.md lists available tools, REQUIREMENTS.md is
+the unified pre-flight checklist. Before deploying
+this agent, read this file.
+
+### Spec
+
+```markdown
+---
+agent_name: string
+version: semver
+minimum_viable: boolean   # Can it run with just the required items?
+estimated_monthly_cost: string
+last_updated: date
+---
+
+# [Agent Name] — Requirements
+
+## At a Glance
+
+| Category | Minimum | Recommended |
+|----------|---------|------------|
+| RAM | [N GB] | [N GB] |
+| CPU | [N cores] | [N cores] |
+| Storage | [N GB] | [N GB] |
+| Network | [bandwidth] | [bandwidth] |
+| Monthly cost | ~$[X] | ~$[X] |
+
+---
+
+## Hardware Requirements
+
+### Minimum (agent will run but may be slow)
+- **RAM:** [N GB]
+- **CPU:** [N cores, architecture]
+- **Storage:** [N GB free disk space]
+- **GPU:** [not required | optional for X | required for Y]
+
+### Recommended (optimal performance)
+- **RAM:** [N GB]
+- **CPU:** [N cores]
+- **Storage:** [N GB SSD]
+- **GPU:** [specification if needed]
+
+### Known good hardware configurations
+- Mac Mini M4 Pro (16GB+) — tested, works well
+- Ubuntu 22.04 on [cloud instance type] — tested, production use
+- [Other configurations]
+
+---
+
+## Software Requirements
+
+### Runtime
+| Software | Minimum version | Recommended | Install |
+|----------|----------------|-------------|---------|
+| [Runtime e.g. Node.js] | [version] | [version] | [command] |
+| [Python] | [version] | [version] | [command] |
+| [Docker] | [version] | [version] | [url] |
+
+### Operating System
+- **Linux:** Ubuntu 20.04+ / Debian 11+ / RHEL 8+
+- **macOS:** 13 (Ventura)+
+- **Windows:** WSL2 with Ubuntu 22.04 (not native Windows)
+
+### Required CLI Tools
+| Tool | Version | Purpose | Install |
+|------|---------|---------|---------|
+| [tool] | [version] | [use] | [command] |
+
+---
+
+## Network Requirements
+
+### Outbound connections required
+| Destination | Port | Protocol | Purpose |
+|-------------|------|---------|---------|
+| api.anthropic.com | 443 | HTTPS | LLM inference |
+| [other service] | [port] | [protocol] | [purpose] |
+
+### Firewall rules needed
+If deploying behind a corporate firewall, allow outbound to:
+```
+api.anthropic.com:443
+[other required domains]:443
+```
+
+### Data residency
+- Data processed in: [regions]
+- Data stored in: [regions]
+- Compliant with: [GDPR | CCPA | HIPAA | other]
+
+---
+
+## API Credentials Required
+
+All credentials should be stored in SECRETS.md system.
+This table shows what you need to obtain before deployment.
+
+| Credential | Service | Where to obtain | Required | Monthly cost |
+|-----------|---------|----------------|---------|-------------|
+| LLM API key | Anthropic | console.anthropic.com | Yes | ~$[X] |
+| [other key] | [service] | [URL] | [yes/no] | ~$[X] |
+
+---
+
+## MCP Servers Required
+
+| MCP Server | Purpose | Install | Required |
+|-----------|---------|---------|---------|
+| [server name] | [what it provides] | [install command] | [yes/no] |
+
+See MCP.md for full MCP configuration details.
+
+---
+
+## External Services Required
+
+| Service | Purpose | Free tier | Required |
+|---------|---------|-----------|---------|
+| [Neon] | Database | Yes (limited) | Yes |
+| [service] | [purpose] | [yes/no] | [yes/no] |
+
+---
+
+## Estimated Running Costs
+
+Based on [N] tasks per day at average [N] tokens per task:
+
+| Cost item | Per day | Per month | Notes |
+|-----------|---------|-----------|-------|
+| LLM API (input) | $[X] | $[X] | [N] tokens/day |
+| LLM API (output) | $[X] | $[X] | [N] tokens/day |
+| Database | $[X] | $[X] | [plan] |
+| [other] | $[X] | $[X] | |
+| **Total** | **~$[X]** | **~$[X]** | |
+
+---
+
+## Pre-deployment Checklist
+
+```bash
+# Run this to verify all requirements are met
+[agent-cli] requirements check
+
+# What it verifies:
+[ ] Node/Python/runtime version meets minimum
+[ ] Required environment variables set (see ENV.md)
+[ ] All API credentials valid (see SECRETS.md)
+[ ] All MCP servers reachable
+[ ] Database connection successful
+[ ] Sufficient disk space
+[ ] Network access to required endpoints
+```
+
+---
+
+## Quick Start
+
+If all requirements are met, get running in [N] minutes:
+
+```bash
+# 1. Clone and install
+git clone [repo]
+cd [agent]
+[install command]
+
+# 2. Configure environment
+cp .env.example .env.local
+# Edit .env.local with your credentials
+# Or: doppler run -- [start command]
+
+# 3. Verify requirements
+[agent-cli] requirements check
+
+# 4. Start
+[start command]
+
+# 5. Smoke test
+[test command]
+```
+```
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
+*Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*

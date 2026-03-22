@@ -2,13 +2,13 @@
 
 > *The vocabulary for AI agency.*
 
-An open standard library of **153 file type specifications** for AI agent
+An open standard library of **165 file type specifications** for AI agent
 configuration — covering every dimension of what an agent is, what it
 does, and who it is.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Specs](https://img.shields.io/badge/specs-153-blue)](./INDEX.md)
-[![Volumes](https://img.shields.io/badge/volumes-11-purple)](./INDEX.md)
+[![Specs](https://img.shields.io/badge/specs-165-blue)](./INDEX.md)
+[![Volumes](https://img.shields.io/badge/volumes-13-purple)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -52,7 +52,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs defines the vocabulary for all of it.**
 
-153 file types. 11 volumes. Every dimension of an agent's existence:
+165 file types. 13 volumes. Every dimension of an agent's existence:
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
@@ -116,18 +116,19 @@ Each level has its own spec. Each spec has its own `.dev` domain.
 
 ## Spec Categories
 
-153 specs across 16 categories:
+165 specs across 17 categories:
 
 | Category | Count | What lives here |
 |----------|------:|----------------|
 | [Coordination](./specs/coordination/) | 8 | TEAM, SWARM, CREW, ROSTER, PROTOCOL, COLLEAGUES, COLLABORATE, HANDSHAKE |
 | [Identity](./specs/identity/) | 14 | SOUL, WHOAMI, PERSONA, VOICE, SEEKING, OFFERING, REPUTATION, NETWORK, CONTACT, ID, ALIASES, SIGNATURE, MANIFESTO, CHANNELS |
-| [Governance](./specs/governance/) | 12 | LIMITS, ESCALATION, POLICY, PERMISSIONS, BUDGET, GUARDRAILS, CENSOR, RULES, CHARTER, REPORTSTO, VERSIONING, SLA |
-| [Operations](./specs/operations/) | 10 | REPAIR, SELFHEALING, MONITOR, STATUS, HEARTBEAT, BACKUP, DEPLOYMENT, AVAILABILITY, INTERRUPT, LOGS |
+| [Governance](./specs/governance/) | 15 | LIMITS, ESCALATION, POLICY, PERMISSIONS, BUDGET, GUARDRAILS, CENSOR, RULES, CHARTER, REPORTSTO, VERSIONING, SLA, QUOTA, INHERIT, OVERRIDE |
+| [Operations](./specs/operations/) | 17 | REPAIR, SELFHEALING, MONITOR, STATUS, HEARTBEAT, BACKUP, DEPLOYMENT, AVAILABILITY, INTERRUPT, LOGS, MOOD, RISKS, SLA, REQUIREMENTS, SETUP, HEALTHCHECK, MIGRATION |
 | [Lifecycle](./specs/lifecycle/) | 7 | HELLOWORLD, WAKEUP, SLEEP, REBOOT, ICE, PANIC, LEGACY |
 | [Compliance](./specs/compliance/) | 6 | SECURITY, PRIVACY, PII, GDPR, CERTIFICATIONS, INSURANCE |
+| [Security](./specs/security/) | 4 | SECRETS, VAULT, ACCESS, SANDBOX |
 | [Regulatory](./specs/regulatory/) | 15 | EUAIACT, HIPAA, CCPA, PIPEDA, LGPD, PDPA, PCIDSS, SOC2, ISO27001, COPPA, AML, DORA, NIS2, FERPA, NISTAIRF |
-| [Technical](./specs/technical/) | 13 | MCP, API, A2A, DATA, TOOLS, CLI, INPUT, OUTPUT, INTEGRATION, DEPENDENCIES, EVENTS, PROMPTS, SCHEMA |
+| [Technical](./specs/technical/) | 17 | MCP, API, A2A, DATA, TOOLS, CLI, INPUT, OUTPUT, INTEGRATION, DEPENDENCIES, EVENTS, PROMPTS, SCHEMA, MODEL, REPO, VERSION, ENV, NETWORK |
 | [Quality](./specs/quality/) | 7 | EVAL, VALIDATION, TESTING, FEEDBACK, PERFORMANCE, TESTSCORES, ASSUMPTIONS |
 | [Business](./specs/business/) | 8 | HIREME, PRICING, SALES, MARKETING, PITCH, BRAND, COMPETITIVE, SOP |
 | [Cognitive](./specs/cognitive/) | 8 | BELIEFS, EXPERTISE, TRAINING, LEARNING, MEMORY, INSTINCT, JOURNAL, CONFESSION |
@@ -213,7 +214,7 @@ and **goose** (agent framework). Together these form the infrastructure layer �
 how agents connect to tools and receive project-specific instructions.
 
 **agent-md-specs is the vocabulary layer** — everything an agent needs to
-express about itself beyond task instructions. The 153 specs here are
+express about itself beyond task instructions. The 165 specs here are
 deliberately out of AAIF scope: personality, hiring, financial identity,
 compliance documentation, lifecycle rituals, competitive positioning.
 
@@ -222,7 +223,7 @@ These are complementary layers, not competing standards:
 ```
 Infrastructure layer:   AGENTS.md  +  MCP  +  goose   (AAIF)
         ↕
-Vocabulary layer:    agent-md-specs (153 specs)    (this repo)
+Vocabulary layer:    agent-md-specs (165 specs)    (this repo)
 ```
 
 We actively encourage adoption of the most widely-used specs from this
@@ -258,6 +259,47 @@ They're the ones with:
 > *models. They're the ones with the best stories, the most honest*
 > *documentation of their failures, the clearest sense of what they're*
 > *for, and the occasional really good joke."*
+
+---
+
+## Fleet Management at Scale
+
+Managing one agent is easy. Managing a thousand is not.
+
+**Volume 12** (Fleet Operations) adds the files that make
+large-scale agent deployment practical:
+
+| File | Solves |
+|------|--------|
+| SECRETS.md | What secrets each agent needs — never the values |
+| ENV.md | Complete environment variable specification |
+| REQUIREMENTS.md | Everything needed to run this agent |
+| VAULT.md | Fleet-wide secrets governance |
+| ACCESS.md | Who and what can invoke this agent |
+| NETWORK.md | Firewall rules and data residency |
+| SETUP.md | Step-by-step first-run guide |
+| HEALTHCHECK.md | Liveness and readiness check endpoints |
+| QUOTA.md | Rate limits placed on callers |
+| SANDBOX.md | OS-level isolation and containment |
+
+**Volume 13** (Hierarchy & Inheritance) adds the files that make
+policy management practical across hundreds of agents:
+
+```
+ORG.md policies     → apply to everyone, cannot be overridden
+  └── SWARM adds    → applies to this swarm
+       └── CREW adds → applies to this crew
+            └── TEAM adds → applies to this team
+                 └── AGENT overrides → individual, within constraints
+```
+
+| File | Purpose |
+|------|---------|
+| INHERIT.md | Declares what configuration is inherited from parent level |
+| OVERRIDE.md | Documents every deviation from inherited config, with justification |
+
+Change org security policy → update one file.
+Audit 1,000 agents for compliance → read their OVERRIDE.md files.
 
 ---
 

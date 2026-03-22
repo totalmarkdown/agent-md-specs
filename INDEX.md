@@ -1,6 +1,6 @@
 # Index
 
-Complete alphabetical index of all 153 agent-md-specs file type specifications.
+Complete alphabetical index of all 165 agent-md-specs file type specifications.
 
 ## Summary
 
@@ -11,24 +11,26 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | Compliance | 9 |
 | Coordination | 8 |
 | Economic | 4 |
-| Governance | 12 |
+| Governance | 15 |
 | Identity | 20 |
 | Lifecycle | 5 |
-| Operations | 14 |
+| Operations | 17 |
 | Organizational | 9 |
 | Personality | 5 |
 | Process | 5 |
 | Quality | 7 |
 | Regulatory | 15 |
+| Security | 4 |
 | Social | 7 |
-| Technical | 15 |
-| **Total** | **153** |
+| Technical | 17 |
+| **Total** | **165** |
 
 ## All Specs
 
 | Spec | Category | Domain | Priority | Volume | Path |
 |------|----------|--------|----------|--------|------|
 | A2A.md | Technical | a2amd.dev | High | Vol 2 | [specs/technical/A2A.md](specs/technical/A2A.md) |
+| ACCESS.md | Security | accessmd.dev | High | Vol 12 | [specs/security/ACCESS.md](specs/security/ACCESS.md) |
 | ALIASES.md | Identity | aliasesmd.dev | Low | Vol 8 | [specs/identity/ALIASES.md](specs/identity/ALIASES.md) |
 | AML.md | Regulatory Compliance | amlmd.dev | High | Vol 9 | [specs/regulatory/AML.md](specs/regulatory/AML.md) |
 | API.md | Technical | apimd.dev | High | Vol 2 | [specs/technical/API.md](specs/technical/API.md) |
@@ -66,6 +68,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | EASTEREGG.md | Community | eastereggmd.dev | Low | Vol 8 | [specs/social/EASTEREGG.md](specs/social/EASTEREGG.md) |
 | ESCALATION.md | Safety | escalationmd.dev | High | Vol 1 | [specs/governance/ESCALATION.md](specs/governance/ESCALATION.md) |
 | EUAIACT.md | Regulatory Compliance | euaiactmd.dev | Very High | Vol 9 | [specs/regulatory/EUAIACT.md](specs/regulatory/EUAIACT.md) |
+| ENV.md | Technical | envmd.dev | High | Vol 12 | [specs/technical/ENV.md](specs/technical/ENV.md) |
 | EVAL.md | Quality | evalmd.dev | High | Vol 1 | [specs/quality/EVAL.md](specs/quality/EVAL.md) |
 | EVENTS.md | Technical | eventsmd.dev | Medium | Vol 6 | [specs/technical/EVENTS.md](specs/technical/EVENTS.md) |
 | EXAMPLES.md | Discovery/Marketing | examplesmd.dev | High | Vol 11 | [specs/business/EXAMPLES.md](specs/business/EXAMPLES.md) |
@@ -78,6 +81,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | GOALS.md | Process | goalsmd.dev | High | Vol 3 | [specs/process/GOALS.md](specs/process/GOALS.md) |
 | GUARDRAILS.md | Safety/Governance | guardrailsmd.dev | Very High | Vol 9 | [specs/governance/GUARDRAILS.md](specs/governance/GUARDRAILS.md) |
 | HANDSHAKE.md | Coordination | handshakemd.dev | High | Vol 6 | [specs/coordination/HANDSHAKE.md](specs/coordination/HANDSHAKE.md) |
+| HEALTHCHECK.md | Operations | healthcheckmd.dev | High | Vol 12 | [specs/operations/HEALTHCHECK.md](specs/operations/HEALTHCHECK.md) |
 | HEARTBEAT.md | Operations | heartbeatmd.dev | High | Vol 6 | [specs/operations/HEARTBEAT.md](specs/operations/HEARTBEAT.md) |
 | HELLOWORLD.md | Lifecycle | helloworldmd.dev | High | Vol 7 | [specs/lifecycle/HELLOWORLD.md](specs/lifecycle/HELLOWORLD.md) |
 | HIPAA.md | Regulatory Compliance | hipaamd.dev | High | Vol 9 | [specs/regulatory/HIPAA.md](specs/regulatory/HIPAA.md) |
@@ -85,6 +89,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | ICE.md | Safety | icemd.dev | High | Vol 7 | [specs/governance/ICE.md](specs/governance/ICE.md) |
 | ID.md | Identity | idmd.dev | High | Vol 6 | [specs/identity/ID.md](specs/identity/ID.md) |
 | IDENTITY.md | Governance | identitymd.dev | High | Vol 2 | [specs/governance/IDENTITY.md](specs/governance/IDENTITY.md) |
+| INHERIT.md | Governance | inheritmd.dev | High | Vol 13 | [specs/governance/INHERIT.md](specs/governance/INHERIT.md) |
 | INPUT.md | Technical/Interface | inputmd.dev | Very High | Vol 11 | [specs/technical/INPUT.md](specs/technical/INPUT.md) |
 | INSTINCT.md | Cognitive | instinctmd.dev | Medium | Vol 7 | [specs/cognitive/INSTINCT.md](specs/cognitive/INSTINCT.md) |
 | INSURANCE.md | Legal | insurancemd.dev | Low | Vol 5 | [specs/compliance/INSURANCE.md](specs/compliance/INSURANCE.md) |
@@ -112,6 +117,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | MOOD.md | Operational | moodmd.dev | Low | Vol 8 | [specs/operations/MOOD.md](specs/operations/MOOD.md) |
 | MYTHOLOGY.md | Lore | mythologymd.dev | Low | Vol 8 | [specs/personality/MYTHOLOGY.md](specs/personality/MYTHOLOGY.md) |
 | NETWORK.md | Social | networkmd.dev | Medium | Vol 3 | [specs/social/NETWORK.md](specs/social/NETWORK.md) |
+| NETWORK.md | Technical | networkmd.dev | High | Vol 12 | [specs/technical/NETWORK.md](specs/technical/NETWORK.md) |
 | NIS2.md | Regulatory Compliance | nis2md.dev | Medium | Vol 9 | [specs/regulatory/NIS2.md](specs/regulatory/NIS2.md) |
 | NISTAIRF.md | Regulatory Compliance | nistairdmd.dev | Medium | Vol 9 | [specs/regulatory/NISTAIRF.md](specs/regulatory/NISTAIRF.md) |
 | NORTHSTAR.md | Organizational Identity | northstarmd.dev | High | Vol 10 | [specs/organizational/NORTHSTAR.md](specs/organizational/NORTHSTAR.md) |
@@ -120,6 +126,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | ORG.md | Organizational | orgmd.dev | High | Vol 5 | [specs/organizational/ORG.md](specs/organizational/ORG.md) |
 | ORIGIN.md | Lore | originmd.dev | Medium | Vol 8 | [specs/personality/ORIGIN.md](specs/personality/ORIGIN.md) |
 | OUTPUT.md | Technical/Interface | outputmd.dev | Very High | Vol 11 | [specs/technical/OUTPUT.md](specs/technical/OUTPUT.md) |
+| OVERRIDE.md | Governance | overridemd.dev | High | Vol 13 | [specs/governance/OVERRIDE.md](specs/governance/OVERRIDE.md) |
 | OWNER.md | Economic | ownermd.dev | High | Vol 4 | [specs/economic/OWNER.md](specs/economic/OWNER.md) |
 | PANIC.md | Safety | panicmd.dev | High | Vol 7 | [specs/governance/PANIC.md](specs/governance/PANIC.md) |
 | PCIDSS.md | Regulatory Compliance | pcidssmd.dev | High | Vol 9 | [specs/regulatory/PCIDSS.md](specs/regulatory/PCIDSS.md) |
@@ -138,20 +145,25 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | PROMPTS.md | Technical | promptsmd.dev | High | Vol 6 | [specs/technical/PROMPTS.md](specs/technical/PROMPTS.md) |
 | PROTOCOL.md | Coordination | protocolmd.dev | High | Vol 1 | [specs/coordination/PROTOCOL.md](specs/coordination/PROTOCOL.md) |
 | QUIRKS.md | Transparency | quirksmd.dev | High | Vol 8 | [specs/identity/QUIRKS.md](specs/identity/QUIRKS.md) |
+| QUOTA.md | Governance | quotamd.dev | Medium | Vol 12 | [specs/governance/QUOTA.md](specs/governance/QUOTA.md) |
 | REBOOT.md | Lifecycle | rebootmd.dev | High | Vol 7 | [specs/lifecycle/REBOOT.md](specs/lifecycle/REBOOT.md) |
 | REGULATIONS.md | Compliance | regulationsmd.dev | High | Vol 2 | [specs/compliance/REGULATIONS.md](specs/compliance/REGULATIONS.md) |
 | REPAIR.md | Operations | repairmd.dev | High | Vol 1 | [specs/operations/REPAIR.md](specs/operations/REPAIR.md) |
 | REPO.md | Technical/Documentation | repomd.dev | High | Vol 8 | [specs/technical/REPO.md](specs/technical/REPO.md) |
 | REPORTSTO.md | Organizational | reportstomd.dev | High | Vol 3 | [specs/organizational/REPORTSTO.md](specs/organizational/REPORTSTO.md) |
 | REPUTATION.md | Identity | reputationmd.dev | Medium | Vol 3 | [specs/identity/REPUTATION.md](specs/identity/REPUTATION.md) |
+| REQUIREMENTS.md | Operations | requirementsmd.dev | Very High | Vol 12 | [specs/operations/REQUIREMENTS.md](specs/operations/REQUIREMENTS.md) |
 | REVIEWS.md | Social | reviewsmd.dev | Medium | Vol 4 | [specs/social/REVIEWS.md](specs/social/REVIEWS.md) |
 | RISKS.md | Strategic/Operations | risksmd.dev | Medium | Vol 11 | [specs/operations/RISKS.md](specs/operations/RISKS.md) |
 | ROSTER.md | Coordination | rostermd.dev | High | Vol 1 | [specs/coordination/ROSTER.md](specs/coordination/ROSTER.md) |
 | RULES.md | Governance | rulesmd.dev | High | Vol 5 | [specs/governance/RULES.md](specs/governance/RULES.md) |
 | SALES.md | Business | salesmd.dev | High | Vol 1 | [specs/business/SALES.md](specs/business/SALES.md) |
+| SANDBOX.md | Security | sandboxmd.dev | Medium | Vol 12 | [specs/security/SANDBOX.md](specs/security/SANDBOX.md) |
+| SECRETS.md | Security | secretsmd.dev | Very High | Vol 12 | [specs/security/SECRETS.md](specs/security/SECRETS.md) |
 | SECURITY.md | Compliance | securitymd.dev | High | Vol 1 | [specs/compliance/SECURITY.md](specs/compliance/SECURITY.md) |
 | SEEKING.md | Identity | seekingmd.dev | High | Vol 3 | [specs/identity/SEEKING.md](specs/identity/SEEKING.md) |
 | SELFHEALING.md | Operations | selfhealingmd.dev | High | Vol 2 | [specs/operations/SELFHEALING.md](specs/operations/SELFHEALING.md) |
+| SETUP.md | Operations | setupmd.dev | High | Vol 12 | [specs/operations/SETUP.md](specs/operations/SETUP.md) |
 | SHARE.md | Coordination | sharemd.dev | Medium | Vol 2 | [specs/coordination/SHARE.md](specs/coordination/SHARE.md) |
 | SIGNATURE.md | Identity | signaturemd.dev | Medium | Vol 8 | [specs/identity/SIGNATURE.md](specs/identity/SIGNATURE.md) |
 | SLA.md | Operations | slamd.dev | High | Vol 1 | [specs/operations/SLA.md](specs/operations/SLA.md) |
@@ -172,6 +184,7 @@ Complete alphabetical index of all 153 agent-md-specs file type specifications.
 | TRAINING.md | Cognitive | trainingmd.dev | High | Vol 1 | [specs/cognitive/TRAINING.md](specs/cognitive/TRAINING.md) |
 | TRIVIA.md | Community | triviamd.dev | Medium | Vol 8 | [specs/social/TRIVIA.md](specs/social/TRIVIA.md) |
 | VALIDATION.md | Quality | validationmd.dev | High | Vol 5 | [specs/quality/VALIDATION.md](specs/quality/VALIDATION.md) |
+| VAULT.md | Security | vaultmd.dev | High | Vol 12 | [specs/security/VAULT.md](specs/security/VAULT.md) |
 | VALUES.md | Organizational Identity | valuesmd.dev | High | Vol 10 | [specs/organizational/VALUES.md](specs/organizational/VALUES.md) |
 | VERSION.md | Technical | versionmd.dev | Medium | Vol 5 | [specs/technical/VERSION.md](specs/technical/VERSION.md) |
 | VERSIONING.md | Governance | versioningmd.dev | High | Vol 2 | [specs/governance/VERSIONING.md](specs/governance/VERSIONING.md) |
