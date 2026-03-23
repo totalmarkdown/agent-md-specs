@@ -2,13 +2,13 @@
 
 > *The vocabulary for AI agency.*
 
-An open standard library of **165 file type specifications** for AI agent
+An open standard library of **174 file type specifications** for AI agent
 configuration — covering every dimension of what an agent is, what it
 does, and who it is.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Specs](https://img.shields.io/badge/specs-165-blue)](./INDEX.md)
-[![Volumes](https://img.shields.io/badge/volumes-13-purple)](./INDEX.md)
+[![Specs](https://img.shields.io/badge/specs-174-blue)](./INDEX.md)
+[![Volumes](https://img.shields.io/badge/volumes-14-purple)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -16,6 +16,7 @@ does, and who it is.
 &nbsp;·&nbsp; [Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
 &nbsp;·&nbsp; [Full Index](./INDEX.md)
+&nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
 
 > **TotalMarkdown.ai** (the markdown-native workspace for agent configuration) &
 > **TotalAgents.ai** (the markdown-native agent bundle marketplace)
@@ -52,7 +53,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs defines the vocabulary for all of it.**
 
-165 file types. 13 volumes. Every dimension of an agent's existence:
+174 file types. 14 volumes. Every dimension of an agent's existence:
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
@@ -93,7 +94,7 @@ curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/temp
 
 ## Core Specs (Recommended for All Production Agents)
 
-The 30 Core specs cover the essential dimensions every production agent should define.
+The 39 Core specs cover the essential dimensions every production agent should define.
 Start here. Add Extended specs as your needs grow.
 
 | Spec | Category | What it defines |
@@ -128,8 +129,17 @@ Start here. Add Extended specs as your needs grow.
 | CV.md | Economic | Work history and track record |
 | WALLET.md | Economic | Financial identity and payment |
 | TESTSCORES.md | Quality | Benchmark results and performance evidence |
+| DELEGATION.md | Governance | On-behalf-of authority chains and human binding |
+| INTENT.md | Governance | Pre-action intent declaration with confidence levels |
+| LEASTPRIVILEGE.md | Governance | Zero-trust dynamic privilege management |
+| ENFORCEMENT.md | Governance | Spec compliance verification (meta-enforcement) |
+| ATTESTATION.md | Security | Identity verification — SPIFFE, X.509, DID |
+| PROMPTSHIELD.md | Security | Prompt injection defense and containment |
+| AUDITTRAIL.md | Compliance | Tamper-proof non-repudiation action records |
+| PROVENANCE.md | Compliance | Data lineage and trust classification |
+| SESSION.md | Lifecycle | Ephemeral task-scoped identity and credentials |
 
-→ See [INDEX.md](INDEX.md) for the complete list of all 165 specs including Extended tier.
+→ See [INDEX.md](INDEX.md) for the complete list of all 174 specs including Extended tier.
 
 ---
 
@@ -158,25 +168,25 @@ Each level has its own spec. Each spec has its own `.dev` domain.
 
 ## Spec Categories
 
-165 specs across 17 categories:
+174 specs across 17 categories:
 
 | Category | Count | What lives here |
 |----------|------:|----------------|
 | [Business](./specs/business/) | 9 | BRAND, COMPETITIVE, EXAMPLES, HIREME, MARKETING, MOAT, PITCH, SALES, SPECIALSAUCE |
 | [Cognitive](./specs/cognitive/) | 9 | BELIEFS, CONFESSION, EXPERTISE, INSTINCT, JOURNAL, LEARNING, MEMORY, PHILOSOPHY, TRAINING |
-| [Compliance](./specs/compliance/) | 9 | CERTIFICATIONS, COMPLIANCE, GDPR, INSURANCE, LICENSE, PII, PRIVACY, REGULATIONS, SECURITY |
+| [Compliance](./specs/compliance/) | 11 | AUDITTRAIL, CERTIFICATIONS, COMPLIANCE, GDPR, INSURANCE, LICENSE, PII, PRIVACY, PROVENANCE, REGULATIONS, SECURITY |
 | [Coordination](./specs/coordination/) | 8 | COLLABORATE, CREW, HANDSHAKE, PROTOCOL, ROSTER, SHARE, SWARM, TEAM |
 | [Economic](./specs/economic/) | 4 | CV, OWNER, PRICING, WALLET |
-| [Governance](./specs/governance/) | 15 | BUDGET, CENSOR, ESCALATION, GUARDRAILS, ICE, IDENTITY, INHERIT, LIMITS, OVERRIDE, PANIC, PERMISSIONS, POLICY, QUOTA, RULES, VERSIONING |
+| [Governance](./specs/governance/) | 19 | BUDGET, CENSOR, DELEGATION, ENFORCEMENT, ESCALATION, GUARDRAILS, ICE, IDENTITY, INHERIT, INTENT, LEASTPRIVILEGE, LIMITS, OVERRIDE, PANIC, PERMISSIONS, POLICY, QUOTA, RULES, VERSIONING |
 | [Identity](./specs/identity/) | 20 | ALIASES, ASSUMPTIONS, CHANGELOG, CHANNELS, CONTACT, GLOSSARY, ID, KRYPTONITE, MANIFESTO, OFFERING, ONBOARDING, PERSONA, PREFERENCES, QUIRKS, REPUTATION, SEEKING, SIGNATURE, SOUL, VOICE, WHOAMI |
-| [Lifecycle](./specs/lifecycle/) | 5 | HELLOWORLD, LEGACY, REBOOT, SLEEP, WAKEUP |
+| [Lifecycle](./specs/lifecycle/) | 6 | HELLOWORLD, LEGACY, REBOOT, SESSION, SLEEP, WAKEUP |
 | [Operations](./specs/operations/) | 17 | AVAILABILITY, BACKUP, DEPLOYMENT, HEALTHCHECK, HEARTBEAT, INTERRUPT, LOGS, MIGRATION, MONITOR, MOOD, REPAIR, REQUIREMENTS, RISKS, SELFHEALING, SETUP, SLA, STATUS |
 | [Organizational](./specs/organizational/) | 9 | CHARTER, CULTURE, MISSION, NORTHSTAR, ORG, REPORTSTO, STRATEGY, VALUES, VISION |
 | [Personality](./specs/personality/) | 5 | DREAM, FUN, MYTHOLOGY, ORIGIN, SUPERPOWERS |
 | [Process](./specs/process/) | 5 | BLOCKERS, DEADLINES, GOALS, SOP, WORKFLOW |
 | [Quality](./specs/quality/) | 7 | EVAL, FEEDBACK, KPI, PERFORMANCE, TESTING, TESTSCORES, VALIDATION |
 | [Regulatory](./specs/regulatory/) | 15 | AML, CCPA, COPPA, DORA, EUAIACT, FERPA, HIPAA, ISO27001, LGPD, NIS2, NISTAIRF, PCIDSS, PDPA, PIPEDA, SOC2 |
-| [Security](./specs/security/) | 4 | ACCESS, SANDBOX, SECRETS, VAULT |
+| [Security](./specs/security/) | 6 | ACCESS, ATTESTATION, PROMPTSHIELD, SANDBOX, SECRETS, VAULT |
 | [Social](./specs/social/) | 7 | AWARDS, COLLEAGUES, CONNECTIONS, EASTEREGG, REVIEWS, SOCIALS, TRIVIA |
 | [Technical](./specs/technical/) | 17 | A2A, API, CLI, DATA, DEPENDENCIES, ENV, EVENTS, INPUT, INTEGRATION, MCP, MODEL, NETWORK, OUTPUT, PROMPTS, REPO, TOOLS, VERSION |
 
@@ -256,7 +266,7 @@ and **goose** (agent framework). Together these form the infrastructure layer �
 how agents connect to tools and receive project-specific instructions.
 
 **agent-md-specs is the vocabulary layer** — everything an agent needs to
-express about itself beyond task instructions. The 165 specs here are
+express about itself beyond task instructions. The 174 specs here are
 deliberately out of AAIF scope: personality, hiring, financial identity,
 compliance documentation, lifecycle rituals, competitive positioning.
 
@@ -265,7 +275,7 @@ These are complementary layers, not competing standards:
 ```
 Infrastructure layer:   AGENTS.md  +  MCP  +  goose   (AAIF)
         ↕
-Vocabulary layer:    agent-md-specs (165 specs)    (this repo)
+Vocabulary layer:    agent-md-specs (174 specs)    (this repo)
 ```
 
 We actively encourage adoption of the most widely-used specs from this
@@ -342,6 +352,38 @@ ORG.md policies     → apply to everyone, cannot be overridden
 
 Change org security policy → update one file.
 Audit 1,000 agents for compliance → read their OVERRIDE.md files.
+
+---
+
+## Agent Identity and Accountability
+
+**Volume 14** addresses the identity, authorization, and accountability
+requirements outlined in NIST's AI Agent Standards Initiative (Feb 2026)
+and the NCCoE concept paper on AI Agent Identity and Authorization.
+
+These specs create a complete accountability chain from human
+authorization to tamper-proof audit trail:
+
+| Step | Spec | What It Answers |
+|------|------|-----------------|
+| 1. Authority | DELEGATION.md | Who authorized this agent to act? |
+| 2. Identity | WHOAMI.md + ID.md | Who is this agent? |
+| 3. Verification | ATTESTATION.md | Can it prove it is who it claims? |
+| 4. Runtime Scope | SESSION.md | What is its current task boundary? |
+| 5. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? |
+| 6. Intent | INTENT.md | What does it intend to do? |
+| 7. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? |
+| 8. Data Lineage | PROVENANCE.md | Where did the data come from? |
+| 9. Audit | AUDITTRAIL.md | What happened, provably? |
+| 10. Enforcement | ENFORCEMENT.md | Can we verify all of the above? |
+| 11. Escalation | ESCALATION.md | Should a human review this? |
+
+→ See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
+to NIST AI RMF and NCCoE concept paper requirements.
+
+→ See [examples/nist-nccoe-bundle/](examples/nist-nccoe-bundle/) for
+a complete enterprise agent ("Atlas") configured with all identity
+and accountability specs.
 
 ---
 

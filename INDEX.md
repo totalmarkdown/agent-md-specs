@@ -1,14 +1,14 @@
 # Index
 
-Complete alphabetical index of all 165 agent-md-specs file type specifications.
+Complete alphabetical index of all 174 agent-md-specs file type specifications.
 
 ## Tier Summary
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Core | 30 | Essential specs recommended for all production agents |
+| Core | 39 | Essential specs recommended for all production agents |
 | Extended | 135 | Valuable specs for specific use cases and advanced configurations |
-| **Total** | **165** | |
+| **Total** | **174** | |
 
 ## Category Summary
 
@@ -16,22 +16,22 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 |----------|-------|
 | Business | 9 |
 | Cognitive | 9 |
-| Compliance | 9 |
+| Compliance | 11 |
 | Coordination | 8 |
 | Economic | 4 |
-| Governance | 15 |
+| Governance | 19 |
 | Identity | 20 |
-| Lifecycle | 5 |
+| Lifecycle | 6 |
 | Operations | 17 |
 | Organizational | 9 |
 | Personality | 5 |
 | Process | 5 |
 | Quality | 7 |
 | Regulatory | 15 |
-| Security | 4 |
+| Security | 6 |
 | Social | 7 |
 | Technical | 17 |
-| **Total** | **165** |
+| **Total** | **174** |
 
 ## All Specs
 
@@ -42,7 +42,9 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | ALIASES.md | Identity | Extended | aliasesmd.dev | Low | Vol 8 | [specs/identity/ALIASES.md](specs/identity/ALIASES.md) |
 | AML.md | Regulatory Compliance | Extended | amlmd.dev | High | Vol 9 | [specs/regulatory/AML.md](specs/regulatory/AML.md) |
 | API.md | Technical | Core | apimd.dev | High | Vol 2 | [specs/technical/API.md](specs/technical/API.md) |
+| ATTESTATION.md | Security | Core | attestationmd.dev | Very High | Vol 14 | [specs/security/ATTESTATION.md](specs/security/ATTESTATION.md) |
 | ASSUMPTIONS.md | Transparency/Trust | Extended | assumptionsmd.dev | Medium | Vol 11 | [specs/identity/ASSUMPTIONS.md](specs/identity/ASSUMPTIONS.md) |
+| AUDITTRAIL.md | Compliance | Core | audittrailmd.dev | Very High | Vol 14 | [specs/compliance/AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) |
 | AVAILABILITY.md | Operations | Extended | availabilitymd.dev | Medium | Vol 4 | [specs/operations/AVAILABILITY.md](specs/operations/AVAILABILITY.md) |
 | AWARDS.md | Social | Extended | awardsmd.dev | Low | Vol 4 | [specs/social/AWARDS.md](specs/social/AWARDS.md) |
 | BACKUP.md | Operations | Extended | backupmd.dev | Medium | Vol 2 | [specs/operations/BACKUP.md](specs/operations/BACKUP.md) |
@@ -69,6 +71,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | CV.md | Economic | Core | cvmd.dev | High | Vol 4 | [specs/economic/CV.md](specs/economic/CV.md) |
 | DATA.md | Technical | Extended | datamd.dev | High | Vol 1 | [specs/technical/DATA.md](specs/technical/DATA.md) |
 | DEADLINES.md | Planning | Extended | deadlinesmd.dev | High | Vol 7 | [specs/process/DEADLINES.md](specs/process/DEADLINES.md) |
+| DELEGATION.md | Governance | Core | delegationmd.dev | Very High | Vol 14 | [specs/governance/DELEGATION.md](specs/governance/DELEGATION.md) |
 | DEPENDENCIES.md | Technical | Extended | dependenciesmd.dev | High | Vol 5 | [specs/technical/DEPENDENCIES.md](specs/technical/DEPENDENCIES.md) |
 | DEPLOYMENT.md | Operations | Extended | deploymentmd.dev | High | Vol 2 | [specs/operations/DEPLOYMENT.md](specs/operations/DEPLOYMENT.md) |
 | DORA.md | Regulatory Compliance | Extended | doramd.dev | High | Vol 9 | [specs/regulatory/DORA.md](specs/regulatory/DORA.md) |
@@ -76,6 +79,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | EASTEREGG.md | Community | Extended | eastereggmd.dev | Low | Vol 8 | [specs/social/EASTEREGG.md](specs/social/EASTEREGG.md) |
 | ESCALATION.md | Safety | Core | escalationmd.dev | High | Vol 1 | [specs/governance/ESCALATION.md](specs/governance/ESCALATION.md) |
 | EUAIACT.md | Regulatory Compliance | Extended | euaiactmd.dev | Very High | Vol 9 | [specs/regulatory/EUAIACT.md](specs/regulatory/EUAIACT.md) |
+| ENFORCEMENT.md | Governance | Core | enforcementmd.dev | Very High | Vol 14 | [specs/governance/ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) |
 | ENV.md | Technical | Extended | envmd.dev | High | Vol 12 | [specs/technical/ENV.md](specs/technical/ENV.md) |
 | EVAL.md | Quality | Extended | evalmd.dev | High | Vol 1 | [specs/quality/EVAL.md](specs/quality/EVAL.md) |
 | EVENTS.md | Technical | Extended | eventsmd.dev | Medium | Vol 6 | [specs/technical/EVENTS.md](specs/technical/EVENTS.md) |
@@ -100,6 +104,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | INHERIT.md | Governance | Extended | inheritmd.dev | High | Vol 13 | [specs/governance/INHERIT.md](specs/governance/INHERIT.md) |
 | INPUT.md | Technical/Interface | Core | inputmd.dev | Very High | Vol 11 | [specs/technical/INPUT.md](specs/technical/INPUT.md) |
 | INSTINCT.md | Cognitive | Extended | instinctmd.dev | Medium | Vol 7 | [specs/cognitive/INSTINCT.md](specs/cognitive/INSTINCT.md) |
+| INTENT.md | Governance | Core | intentmd.dev | Very High | Vol 14 | [specs/governance/INTENT.md](specs/governance/INTENT.md) |
 | INSURANCE.md | Legal | Extended | insurancemd.dev | Low | Vol 5 | [specs/compliance/INSURANCE.md](specs/compliance/INSURANCE.md) |
 | INTEGRATION.md | Technical | Extended | integrationmd.dev | High | Vol 2 | [specs/technical/INTEGRATION.md](specs/technical/INTEGRATION.md) |
 | INTERRUPT.md | Operations | Extended | interruptmd.dev | Medium | Vol 7 | [specs/operations/INTERRUPT.md](specs/operations/INTERRUPT.md) |
@@ -107,6 +112,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | JOURNAL.md | Cognitive | Extended | journalmd.dev | Medium | Vol 7 | [specs/cognitive/JOURNAL.md](specs/cognitive/JOURNAL.md) |
 | KPI.md | Performance/Governance | Extended | kpimd.dev | High | Vol 11 | [specs/quality/KPI.md](specs/quality/KPI.md) |
 | KRYPTONITE.md | Transparency | Extended | kryptonitemd.dev | High | Vol 8 | [specs/identity/KRYPTONITE.md](specs/identity/KRYPTONITE.md) |
+| LEASTPRIVILEGE.md | Governance | Core | leastprivilegemd.dev | Very High | Vol 14 | [specs/governance/LEASTPRIVILEGE.md](specs/governance/LEASTPRIVILEGE.md) |
 | LEARNING.md | Cognitive/Growth | Extended | learningmd.dev | High | Vol 10 | [specs/cognitive/LEARNING.md](specs/cognitive/LEARNING.md) |
 | LEGACY.md | Lifecycle | Extended | legacymd.dev | Low | Vol 3 | [specs/lifecycle/LEGACY.md](specs/lifecycle/LEGACY.md) |
 | LGPD.md | Regulatory Compliance | Extended | lgpdmd.dev | Medium | Vol 9 | [specs/regulatory/LGPD.md](specs/regulatory/LGPD.md) |
@@ -150,7 +156,9 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | PREFERENCES.md | Identity | Extended | preferencesmd.dev | Medium | Vol 3 | [specs/identity/PREFERENCES.md](specs/identity/PREFERENCES.md) |
 | PRICING.md | Economic | Core | pricingmd.dev | High | Vol 4 | [specs/economic/PRICING.md](specs/economic/PRICING.md) |
 | PRIVACY.md | Compliance | Extended | privacymd.dev | High | Vol 1 | [specs/compliance/PRIVACY.md](specs/compliance/PRIVACY.md) |
+| PROMPTSHIELD.md | Security | Core | promptshieldmd.dev | Very High | Vol 14 | [specs/security/PROMPTSHIELD.md](specs/security/PROMPTSHIELD.md) |
 | PROMPTS.md | Technical | Extended | promptsmd.dev | High | Vol 6 | [specs/technical/PROMPTS.md](specs/technical/PROMPTS.md) |
+| PROVENANCE.md | Compliance | Core | provenancemd.dev | High | Vol 14 | [specs/compliance/PROVENANCE.md](specs/compliance/PROVENANCE.md) |
 | PROTOCOL.md | Coordination | Extended | protocolmd.dev | High | Vol 1 | [specs/coordination/PROTOCOL.md](specs/coordination/PROTOCOL.md) |
 | QUIRKS.md | Transparency | Extended | quirksmd.dev | High | Vol 8 | [specs/identity/QUIRKS.md](specs/identity/QUIRKS.md) |
 | QUOTA.md | Governance | Extended | quotamd.dev | Medium | Vol 12 | [specs/governance/QUOTA.md](specs/governance/QUOTA.md) |
@@ -171,6 +179,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | SECURITY.md | Compliance | Extended | securitymd.dev | High | Vol 1 | [specs/compliance/SECURITY.md](specs/compliance/SECURITY.md) |
 | SEEKING.md | Identity | Extended | seekingmd.dev | High | Vol 3 | [specs/identity/SEEKING.md](specs/identity/SEEKING.md) |
 | SELFHEALING.md | Operations | Extended | selfhealingmd.dev | High | Vol 2 | [specs/operations/SELFHEALING.md](specs/operations/SELFHEALING.md) |
+| SESSION.md | Lifecycle | Core | sessionmd.dev | High | Vol 14 | [specs/lifecycle/SESSION.md](specs/lifecycle/SESSION.md) |
 | SETUP.md | Operations | Extended | setupmd.dev | High | Vol 12 | [specs/operations/SETUP.md](specs/operations/SETUP.md) |
 | SHARE.md | Coordination | Extended | sharemd.dev | Medium | Vol 2 | [specs/coordination/SHARE.md](specs/coordination/SHARE.md) |
 | SIGNATURE.md | Identity | Extended | signaturemd.dev | Medium | Vol 8 | [specs/identity/SIGNATURE.md](specs/identity/SIGNATURE.md) |
