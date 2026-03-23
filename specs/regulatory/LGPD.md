@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — Brazilian users  
-**Regulation:** Lei Geral de Proteção de Dados (Brazil)  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

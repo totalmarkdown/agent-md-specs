@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 Complete list of everything this agent depends on to function — 
 software packages, other agents, external services, data sources, 

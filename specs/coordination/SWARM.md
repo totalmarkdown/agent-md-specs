@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — completes hierarchy  
-**Version:** 0.1.0
-
 ### Purpose
 Defines a large-scale coordinated operation involving multiple 
 crews working in parallel or sequence toward a shared objective.

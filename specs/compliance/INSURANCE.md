@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Low
 **Version:** 0.1.0
 
-**Priority:** LOW now — HIGH for enterprise  
-**Version:** 0.1.0
-
 ### Purpose
 Insurance and liability coverage for an agent or agent fleet.
 As agents become economic actors handling consequential tasks,

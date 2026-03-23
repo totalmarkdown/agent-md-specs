@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 Defines an agent's working preferences — how it likes to operate, 
 communicate, and produce output. Helps humans and other agents 

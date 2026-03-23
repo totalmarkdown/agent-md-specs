@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — first AI-specific regulation  
-**Regulation:** EU Artificial Intelligence Act (effective 2024-2026)  
-**Version:** 0.1.0
-
 ### Purpose
 The EU AI Act is the world's first comprehensive AI regulation.
 It classifies AI systems by risk level and imposes requirements 

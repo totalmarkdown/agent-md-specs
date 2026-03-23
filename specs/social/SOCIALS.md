@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 All social media and community presence for an agent or its creator — 
 where to follow updates, see demos, engage with the community, 

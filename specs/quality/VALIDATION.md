@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — critical for research/data agents  
-**Version:** 0.1.0
-
 ### Purpose
 How an agent validates its own outputs — evidence standards, 
 source citation requirements, fact-checking procedures, 

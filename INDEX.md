@@ -116,7 +116,7 @@ Complete alphabetical index of all 165 agent-md-specs file type specifications.
 | MONITOR.md | Operations | monitormd.dev | High | Vol 2 | [specs/operations/MONITOR.md](specs/operations/MONITOR.md) |
 | MOOD.md | Operational | moodmd.dev | Low | Vol 8 | [specs/operations/MOOD.md](specs/operations/MOOD.md) |
 | MYTHOLOGY.md | Lore | mythologymd.dev | Low | Vol 8 | [specs/personality/MYTHOLOGY.md](specs/personality/MYTHOLOGY.md) |
-| NETWORK.md | Social | networkmd.dev | Medium | Vol 3 | [specs/social/NETWORK.md](specs/social/NETWORK.md) |
+| CONNECTIONS.md | Social | connectionsmd.dev | Medium | Vol 3 | [specs/social/CONNECTIONS.md](specs/social/CONNECTIONS.md) |
 | NETWORK.md | Technical | networkmd.dev | High | Vol 12 | [specs/technical/NETWORK.md](specs/technical/NETWORK.md) |
 | NIS2.md | Regulatory Compliance | nis2md.dev | Medium | Vol 9 | [specs/regulatory/NIS2.md](specs/regulatory/NIS2.md) |
 | NISTAIRF.md | Regulatory Compliance | nistairdmd.dev | Medium | Vol 9 | [specs/regulatory/NISTAIRF.md](specs/regulatory/NISTAIRF.md) |

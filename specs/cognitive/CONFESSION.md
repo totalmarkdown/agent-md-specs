@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — trust building  
-**Version:** 0.1.0
-
 ### Purpose
 Honest acknowledgment of mistakes, errors, and failures 
 this agent has made — and what it learned from each.

@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 Honest competitive analysis — where this agent sits relative 
 to alternatives, who should use competitors instead, and 

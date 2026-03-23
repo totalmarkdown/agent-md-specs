@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — prompt management  
-**Version:** 0.1.0
-
 ### Purpose
 The canonical prompt library for an agent — the actual prompts 
 used for different task types, system prompt components, 

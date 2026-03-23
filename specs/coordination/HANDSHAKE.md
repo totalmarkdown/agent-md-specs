@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — secure agent-to-agent communication  
-**Version:** 0.1.0
-
 ### Purpose
 Defines the protocol for establishing trusted connections 
 between agents — how two agents verify each other's identity, 

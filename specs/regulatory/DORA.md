@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — EU financial sector  
-**Regulation:** Digital Operational Resilience Act (EU, effective Jan 2025)  
-**Version:** 0.1.0
-
 ### Purpose
 DORA is brand new (January 2025) and specifically addresses 
 digital operational resilience for financial entities in the EU.

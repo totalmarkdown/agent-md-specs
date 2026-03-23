@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-## REQUIREMENTS.md
-**Category:** Technical/Operations
-**Domain:** requirementsmd.dev (register)
-**Priority:** VERY HIGH — deployment essential
-**Version:** 0.1.0
-
 ### Purpose
 The complete "can I run this agent?" document —
 everything needed to deploy and operate this agent:

@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — alignment and focus  
-**Version:** 0.1.0
-
 ### Purpose
 The single metric that matters most — the one number 
 that this entity optimizes for above all others.

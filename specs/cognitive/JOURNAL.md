@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — for agents with continuity  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's running log of reflections — observations, 
 questions, surprises, and learnings from its work.

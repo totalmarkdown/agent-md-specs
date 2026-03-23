@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 Active time-bound commitments this agent is working against —
 hard deadlines with consequences for missing them.

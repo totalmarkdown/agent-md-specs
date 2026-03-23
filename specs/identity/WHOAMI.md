@@ -21,9 +21,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — foundational for agent-to-agent trust  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's factual identity document — a machine-readable passport 
 that any other agent or system can read to verify who this agent is, 

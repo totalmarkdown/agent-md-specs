@@ -21,9 +21,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — forward-thinking, connects to crypto payments  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's financial identity — crypto wallet addresses, 
 payment preferences, earnings history, and spending authority.

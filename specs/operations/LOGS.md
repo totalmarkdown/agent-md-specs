@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 Operational logging configuration — where logs go, what gets logged, 
 log format, retention policy, and how to query them. Different from 

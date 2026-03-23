@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## ENV.md
-**Category:** Technical/Operations
-**Domain:** envmd.dev (register)
-**Priority:** HIGH
-**Version:** 0.1.0
-
 ### Purpose
 Complete environment variable specification for an agent —
 all variables it reads from the environment, their types,

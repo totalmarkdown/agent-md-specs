@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — enterprise fleet governance  
-**Version:** 0.1.0
-
 ### Purpose
 The top-level organizational view of an entire agent fleet — 
 the company or organization that owns and operates multiple 

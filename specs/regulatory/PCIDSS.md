@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — any agent handling payment data  
-**Regulation:** Payment Card Industry Data Security Standard  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

@@ -21,9 +21,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — genuinely novel concept  
-**Version:** 0.1.0
-
 ### Purpose
 An agent's public declaration of what it is actively looking for — 
 data, collaborators, tools, information, other agents, or resources. 

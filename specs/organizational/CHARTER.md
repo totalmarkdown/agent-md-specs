@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — enterprise governance  
-**Version:** 0.1.0
-
 ### Purpose
 The formal mandate authorizing this agent's existence and operation — 
 who approved it, for what purpose, under what constraints, 

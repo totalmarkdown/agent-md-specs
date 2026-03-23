@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## NETWORK.md
-**Category:** Technical/Security
-**Domain:** networkmd.dev (register)
-**Priority:** HIGH — enterprise deployment
-**Version:** 0.1.0
-
 ### Purpose
 Network requirements and firewall rules for an agent —
 what it calls outbound, what ports it needs, data residency

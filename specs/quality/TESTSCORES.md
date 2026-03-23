@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — marketplace trust signal  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's actual benchmark scores and assessment results —
 formal evaluations, third-party tests, academic benchmarks,

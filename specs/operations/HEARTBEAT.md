@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — monitoring foundation  
-**Version:** 0.1.0
-
 ### Purpose
 Defines the agent's heartbeat signal — a regular pulse that 
 proves the agent is alive and functioning. Essential for 

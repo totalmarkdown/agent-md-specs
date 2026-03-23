@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## ACCESS.md
-**Category:** Security/Governance
-**Domain:** accessmd.dev (register)
-**Priority:** HIGH — zero-trust agent architecture
-**Version:** 0.1.0
-
 ### Purpose
 Defines exactly who and what is authorized to invoke this agent —
 the allowlist of callers, their permission levels, and what

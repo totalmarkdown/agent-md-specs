@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — completes hierarchy  
-**Version:** 0.1.0
-
 ### Purpose
 Defines a crew — a specialized working group of 3-10 agents 
 that handles a specific workstream within a swarm or as a 

@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 Defines legal and beneficial ownership of an agent — who created it, 
 who owns the intellectual property, who is financially responsible, 

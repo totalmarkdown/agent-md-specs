@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — marketplace and public presence  
-**Version:** 0.1.0
-
 ### Purpose
 Complete brand identity for an agent or organization —
 visual identity, voice, positioning, and brand guidelines.

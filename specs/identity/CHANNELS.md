@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 Defines all the ways to reach and interact with an agent — 
 every channel, endpoint, and contact method available.

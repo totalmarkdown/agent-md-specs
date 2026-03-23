@@ -16,7 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — US federal and enterprise  
 **Framework:** NIST AI Risk Management Framework 1.0  
 **Version:** 0.1.0
 

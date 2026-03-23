@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — operational visibility  
-**Version:** 0.1.0
-
 ### Purpose
 Real-time or near-real-time operational status of an agent — 
 current task, queue depth, health, and any active incidents.

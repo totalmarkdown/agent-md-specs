@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## HEALTHCHECK.md
-**Category:** Operations
-**Domain:** healthcheckmd.dev (register)
-**Priority:** HIGH — production operations
-**Version:** 0.1.0
-
 ### Purpose
 Exact commands and endpoints to verify this agent is running
 correctly. Different from MONITOR.md (ongoing observability)

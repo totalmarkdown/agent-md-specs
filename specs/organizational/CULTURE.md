@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — important for multi-agent orgs  
-**Version:** 0.1.0
-
 ### Purpose
 How this agent fleet or organization actually operates together —
 the norms, behaviors, and unwritten rules that govern 

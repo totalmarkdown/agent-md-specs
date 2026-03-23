@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-## SANDBOX.md
-**Category:** Security/Operations
-**Domain:** sandboxmd.dev (register)
-**Priority:** MEDIUM — code-executing agents
-**Version:** 0.1.0
-
 ### Purpose
 Isolation and containment configuration for an agent —
 what it is and isn't allowed to do at the OS/container level.

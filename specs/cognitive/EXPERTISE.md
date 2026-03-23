@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — agent selection/routing  
-**Version:** 0.1.0
-
 ### Purpose
 Maps the agent's knowledge depth by topic — what it knows deeply, 
 what it knows superficially, and what it doesn't know at all. 

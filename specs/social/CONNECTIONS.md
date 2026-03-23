@@ -1,22 +1,19 @@
 ---
-spec_name: NETWORK.md
+spec_name: CONNECTIONS.md
 spec_version: 0.1.0
 category: Social
-domain: networkmd.dev
+domain: connectionsmd.dev
 priority: Medium
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 ---
 
-# NETWORK.md
+# CONNECTIONS.md
 
 **Category:** Social
-**Domain:** networkmd.dev
+**Domain:** connectionsmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
-
-**Priority:** MEDIUM — future multi-agent ecosystems  
 **Version:** 0.1.0
 
 ### Purpose

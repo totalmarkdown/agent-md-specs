@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — any agent that might reach children  
-**Regulation:** Children's Online Privacy Protection Act (US)  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

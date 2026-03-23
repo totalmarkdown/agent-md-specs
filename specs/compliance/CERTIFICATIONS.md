@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — enterprise procurement  
-**Version:** 0.1.0
-
 ### Purpose
 Formal certifications, compliance attestations, and third-party 
 verifications this agent holds. Enterprise procurement teams 

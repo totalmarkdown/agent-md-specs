@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — operational safety foundation  
-**Version:** 0.1.0
-
 ### Purpose
 The active safety rails that keep an agent on track 
 during operation — not the hard walls (LIMITS.md), 

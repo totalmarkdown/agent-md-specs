@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 Complete inventory of every tool an agent has access to — 
 file system operations, code execution, web browsing, 

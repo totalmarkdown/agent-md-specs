@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — marketplace essential  
-**Version:** 0.1.0
-
 ### Purpose
 Complete pricing information for an agent — all tiers, what's 
 included in each, how billing works, and how to upgrade or 

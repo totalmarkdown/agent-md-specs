@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — marketplace conversion  
-**Version:** 0.1.0
-
 ### Purpose
 Concrete input/output pairs that show prospective users 
 exactly what this agent can do before they commit.

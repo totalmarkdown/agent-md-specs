@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — essential for marketplace and hiring  
-**Version:** 0.1.0
-
 ### Purpose
 Every professional entity needs a contact page. CONTACT.md 
 is the agent's. How to reach the agent directly, how to 

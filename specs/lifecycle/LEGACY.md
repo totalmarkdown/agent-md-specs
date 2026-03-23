@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Low
 **Version:** 0.1.0
 
-**Priority:** LOW now, HIGH later  
-**Version:** 0.1.0
-
 ### Purpose
 What an agent leaves behind when it is deprecated or decommissioned — 
 knowledge transfer, successor designation, archived outputs, 

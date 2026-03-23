@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-## QUOTA.md
-**Category:** Governance/Operations
-**Domain:** quotamd.dev (register)
-**Priority:** MEDIUM
-**Version:** 0.1.0
-
 ### Purpose
 Rate limits and usage quotas this agent enforces on callers.
 Different from BUDGET.md (what the agent itself spends) and

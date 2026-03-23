@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's curriculum vitae — its full professional history, 
 training background, notable projects, skills, certifications,

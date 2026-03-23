@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — interface contract  
-**Version:** 0.1.0
-
 ### Purpose
 The complete formal specification of everything this agent 
 produces as output — formats, schemas, quality guarantees,

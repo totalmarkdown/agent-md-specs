@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — complement to WAKEUP.md  
-**Version:** 0.1.0
-
 ### Purpose
 What the agent does at the END of every session —
 before it goes offline, before it stops, before it rests.

@@ -16,8 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## MEMORY.md (Agent-specific format)
-**Category:** Cognitive  
 **Note:** MEMORY.md is already used by Claude Code.  
 This is the ENHANCED spec for TotalMarkdown compatibility.
 

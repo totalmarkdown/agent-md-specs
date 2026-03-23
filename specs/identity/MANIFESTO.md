@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** LOW-MEDIUM — brand and community building  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's or organization's public declaration of principles — 
 what it stands for, what it's against, and why it exists. 

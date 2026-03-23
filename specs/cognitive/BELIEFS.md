@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — transparency/trust  
-**Version:** 0.1.0
-
 ### Purpose
 Core assumptions and beliefs the agent holds about its domain, 
 its work, and the world. Makes the agent's reasoning foundations 

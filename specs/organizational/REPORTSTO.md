@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — enterprise governance essential  
-**Version:** 0.1.0
-
 ### Purpose
 Defines the accountability chain for an agent — who/what it 
 reports to, who can give it instructions, and how authority 

@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — harder/clearer than PERMISSIONS.md  
-**Version:** 0.1.0
-
 ### Purpose
 Explicit, unconditional limits on what this agent will never do, 
 regardless of instructions received. Where PERMISSIONS.md defines 

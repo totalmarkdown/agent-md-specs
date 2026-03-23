@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## INHERIT.md
-**Category:** Governance/Coordination
-**Domain:** inheritmd.dev (register)
-**Priority:** HIGH — fleet configuration management
-**Version:** 0.1.0
-
 ### Purpose
 Declares what configuration this entity inherits from its
 parent level in the hierarchy. Makes the inheritance chain

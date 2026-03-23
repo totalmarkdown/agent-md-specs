@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — US healthcare  
-**Regulation:** Health Insurance Portability and Accountability Act  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

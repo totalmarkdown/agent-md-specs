@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — powers marketplace listings  
-**Version:** 0.1.0
-
 ### Purpose
 Every version of how to describe this agent or organization —
 the tagline, the one-liner, the elevator pitch, the full pitch.

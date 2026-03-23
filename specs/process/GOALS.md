@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — critical for autonomous agents  
-**Version:** 0.1.0
-
 ### Purpose
 Defines what the agent is working toward — current objectives, 
 success criteria, and progress indicators. The agent's OKRs. 

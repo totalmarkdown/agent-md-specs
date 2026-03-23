@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — continuous improvement  
-**Version:** 0.1.0
-
 ### Purpose
 What this agent is actively learning — knowledge gaps 
 being filled, skills being developed, patterns being 

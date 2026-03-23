@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's fast patterns — heuristics, reflexes, and 
 intuitions it applies without deliberate reasoning.

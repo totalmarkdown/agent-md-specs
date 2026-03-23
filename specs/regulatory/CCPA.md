@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — California users  
-**Regulation:** California Consumer Privacy Act + CPRA amendments  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

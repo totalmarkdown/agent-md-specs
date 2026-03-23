@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — developer tooling  
-**Version:** 0.1.0
-
 ### Purpose
 Complete command-line interface documentation for an agent. 
 Tells developers and other agents exactly how to invoke this 

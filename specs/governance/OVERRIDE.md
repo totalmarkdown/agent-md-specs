@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## OVERRIDE.md
-**Category:** Governance/Coordination
-**Domain:** overridemd.dev (register)
-**Priority:** HIGH — audit and governance
-**Version:** 0.1.0
-
 ### Purpose
 Documents every place where this entity deviates from
 its inherited configuration — what was overridden, why,

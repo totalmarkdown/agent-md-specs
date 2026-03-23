@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — design transparency  
-**Version:** 0.1.0
-
 ### Purpose
 The key assumptions this agent's design is built on.
 If these assumptions are wrong, the agent doesn't work 

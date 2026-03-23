@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — the most poetic spec in the library  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's first ever awakening — the moment it becomes
 aware of itself for the first time.

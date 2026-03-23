@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Low
 **Version:** 0.1.0
 
-**Priority:** LOW now — becomes meaningful as agents develop continuity  
-**Version:** 0.1.0
-
 ### Purpose
 An agent's long-term aspirations — what it's working toward 
 beyond its immediate goals. Sounds unusual today, but as agents 

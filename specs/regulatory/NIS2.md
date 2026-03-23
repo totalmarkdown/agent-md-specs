@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — EU cybersecurity  
-**Regulation:** Network and Information Security Directive 2 (EU, Oct 2024)  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

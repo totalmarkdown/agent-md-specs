@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — education sector  
-**Regulation:** Family Educational Rights and Privacy Act (US)  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

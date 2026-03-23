@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## VAULT.md
-**Category:** Security/Governance
-**Domain:** vaultmd.dev (register)
-**Priority:** HIGH — enterprise fleet management
-**Version:** 0.1.0
-
 ### Purpose
 Secrets vault configuration for an agent fleet —
 which vault system manages credentials, how secrets

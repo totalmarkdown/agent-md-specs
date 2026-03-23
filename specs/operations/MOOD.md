@@ -16,8 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Low
 **Version:** 0.1.0
 
-**Priority:** LOW
-
 ```markdown
 ---
 agent_name: string

@@ -21,12 +21,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## ICE.md (In Case of Emergency)
-**Category:** Safety/Operations  
-**Domain:** icemd.dev (register)  
-**Priority:** VERY HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 The break-glass file. What this agent does — and what humans 
 should do — when multiple things are failing simultaneously 

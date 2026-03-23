@@ -21,9 +21,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** VERY HIGH — foundational lifecycle file  
-**Version:** 0.1.0
-
 ### Purpose
 What the agent does at the beginning of every session —
 before it accepts its first task, before it speaks,

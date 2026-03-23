@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-## CHANGELOG.md (Agent-specific format)
-**Category:** Documentation  
-**Domain:** Already standard — define agent-specific format  
-**Priority:** HIGH — needed for marketplace versioning  
-**Version:** 0.1.0
-
 ### Purpose
 Version history for an agent bundle — what changed in each version, 
 what was fixed, what was added, and whether updates are breaking.

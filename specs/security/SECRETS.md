@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Very High
 **Version:** 0.1.0
 
-## SECRETS.md
-**Category:** Security/Operations
-**Domain:** secretsmd.dev (register)
-**Priority:** VERY HIGH — fleet management essential
-**Version:** 0.1.0
-
 ### Purpose
 Declares every secret this agent requires to function —
 API keys, tokens, credentials, certificates — without

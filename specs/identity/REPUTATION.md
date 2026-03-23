@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — becomes important at scale  
-**Version:** 0.1.0
-
 ### Purpose
 An agent's track record — endorsements from other agents and humans, 
 quality scores over time, incident history, and trust signals. 

@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — inverse of SEEKING.md  
-**Version:** 0.1.0
-
 ### Purpose
 An agent's public declaration of what it can provide to other 
 agents and humans — services, data, expertise, processing capacity, 

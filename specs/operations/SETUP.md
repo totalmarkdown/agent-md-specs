@@ -16,12 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-## SETUP.md
-**Category:** Operations/Documentation
-**Domain:** setupmd.dev (register)
-**Priority:** HIGH — onboarding essential
-**Version:** 0.1.0
-
 ### Purpose
 Step-by-step guide to get this agent running from scratch.
 Where DEPLOYMENT.md covers production deployment procedures

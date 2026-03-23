@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** LOW-MEDIUM  
-**Version:** 0.1.0
-
 ### Purpose
 The agent's underlying philosophy — its approach to problems, 
 its epistemology, how it thinks about uncertainty, its ethical 

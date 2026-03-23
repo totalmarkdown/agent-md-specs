@@ -16,10 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** Medium
 **Version:** 0.1.0
 
-**Priority:** MEDIUM — Southeast Asia  
-**Regulation:** Personal Data Protection Act (Thailand + Singapore variants)  
-**Version:** 0.1.0
-
 ```markdown
 ---
 agent_name: string

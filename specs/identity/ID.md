@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — foundation for identity layer  
-**Version:** 0.1.0
-
 ### Purpose
 The minimal machine-readable identity anchor for any agent, 
 crew, team, swarm, or organization. A single file that declares 

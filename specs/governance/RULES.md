@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH  
-**Version:** 0.1.0
-
 ### Purpose
 Operational rules the agent follows — specific, actionable rules 
 that govern daily behavior. More granular than POLICY.md (org-wide 

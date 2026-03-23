@@ -16,9 +16,6 @@ license: CC0 1.0 Universal
 **Priority:** High
 **Version:** 0.1.0
 
-**Priority:** HIGH — especially for customer-facing agents  
-**Version:** 0.1.0
-
 ### Purpose
 Defines how an agent communicates — its writing style, tone 
 calibration, vocabulary choices, and communication patterns. 
