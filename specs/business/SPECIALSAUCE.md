@@ -7,6 +7,7 @@ priority: High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # SPECIALSAUCE.md

@@ -7,6 +7,7 @@ priority: Very High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: core
 ---
 
 # SECRETS.md

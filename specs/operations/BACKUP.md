@@ -7,6 +7,7 @@ priority: Medium
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # BACKUP.md

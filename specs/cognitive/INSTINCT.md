@@ -7,6 +7,7 @@ priority: Medium
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # INSTINCT.md

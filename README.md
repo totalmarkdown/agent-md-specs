@@ -91,6 +91,48 @@ curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/temp
 
 ---
 
+## Core Specs (Recommended for All Production Agents)
+
+The 30 Core specs cover the essential dimensions every production agent should define.
+Start here. Add Extended specs as your needs grow.
+
+| Spec | Category | What it defines |
+|------|----------|-----------------|
+| SOUL.md | Identity | Personality, values, tone, ethical boundaries |
+| WHOAMI.md | Identity | Verifiable identity document |
+| CONTACT.md | Identity | How to reach this agent |
+| LIMITS.md | Governance | Absolute hard stops — what the agent will never do |
+| ESCALATION.md | Governance | When and how to involve humans |
+| GUARDRAILS.md | Governance | Runtime safety boundaries |
+| POLICY.md | Governance | Operating policies and constraints |
+| PERMISSIONS.md | Governance | What the agent is allowed to access |
+| BUDGET.md | Governance | Cost controls and spending limits |
+| ICE.md | Lifecycle | In Case of Emergency — break-glass protocol |
+| WAKEUP.md | Lifecycle | Session startup and initialization |
+| TEAM.md | Coordination | Multi-agent team structure |
+| CREW.md | Coordination | Working group configuration |
+| SWARM.md | Coordination | Large coordinated operations |
+| ORG.md | Organizational | Full fleet overview |
+| INPUT.md | Technical | What the agent accepts (interface contract) |
+| OUTPUT.md | Technical | What the agent produces (interface contract) |
+| TOOLS.md | Technical | Available tools and usage guidelines |
+| MCP.md | Technical | Model Context Protocol connections |
+| API.md | Technical | HTTP API specification |
+| SECRETS.md | Security | What secrets the agent needs (never values) |
+| ACCESS.md | Security | Who and what can invoke this agent |
+| MONITOR.md | Operations | Observability and alerting |
+| HEALTHCHECK.md | Operations | Liveness and readiness endpoints |
+| SLA.md | Operations | Service level commitments |
+| HIREME.md | Business | How to hire this agent |
+| PRICING.md | Economic | What it costs |
+| CV.md | Economic | Work history and track record |
+| WALLET.md | Economic | Financial identity and payment |
+| TESTSCORES.md | Quality | Benchmark results and performance evidence |
+
+→ See [INDEX.md](INDEX.md) for the complete list of all 165 specs including Extended tier.
+
+---
+
 ## The Complete Agent Hierarchy
 
 agent-md-specs covers every level of the organizational stack.

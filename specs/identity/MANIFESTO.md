@@ -7,6 +7,7 @@ priority: Medium
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # MANIFESTO.md

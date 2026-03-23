@@ -7,6 +7,7 @@ priority: High
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # VALIDATION.md

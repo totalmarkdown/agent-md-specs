@@ -7,6 +7,7 @@ priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
+tier: extended
 ---
 
 # CERTIFICATIONS.md
