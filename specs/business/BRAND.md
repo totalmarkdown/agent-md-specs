@@ -24,7 +24,7 @@ visual identity, voice, positioning, and brand guidelines.
 Different from:
 - VOICE.md — communication style specifically
 - PITCH.md — how to describe the product
-- DESIGN.md — design tokens and system
+- Design tokens and systems (not currently a spec)
 
 BRAND.md is the complete brand identity system:
 who we are visually and verbally, and what makes us

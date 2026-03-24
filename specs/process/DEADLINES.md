@@ -23,7 +23,7 @@ hard deadlines with consequences for missing them.
 
 Different from:
 - GOALS.md — what to achieve (no specific deadline)
-- SCHEDULE.md — when the agent runs
+- AVAILABILITY.md — when the agent runs
 - SLA.md — service level agreements
 
 DEADLINES.md is the commitments made to specific 

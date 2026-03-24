@@ -56,7 +56,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs proposes a vocabulary for all of it.**
 
-174 file types. 14 volumes. Every dimension of an agent's existence:
+174 file types. 14 volumes. 17 categories. 39 Core + 135 Extended.
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
