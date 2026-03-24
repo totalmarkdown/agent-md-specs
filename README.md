@@ -70,6 +70,44 @@ From who it reports to (REPORTSTO.md)   to what it dreams of (DREAM.md)
 
 ---
 
+## The Pattern Already Exists — We're Standardizing It
+
+The markdown-as-agent-configuration pattern has already been adopted
+across the AI industry — but without standardization, every tool
+reinvents the vocabulary:
+
+| Tool / Project | Config File | Stars/Adoption | What It Configures |
+|---------------|-------------|----------------|-------------------|
+| OpenAI Codex | `AGENTS.md` | 60,000+ repos | Project instructions for coding agents |
+| Anthropic Claude Code | `CLAUDE.md` | Ecosystem standard | Agent behavior in codebases |
+| Anthropic Claude Code | `SKILL.md` | Ecosystem standard | Reusable agent capabilities |
+| Karpathy autoresearch | `program.md` | 51,900+ stars | Autonomous ML research agent |
+| Cursor | `.cursorrules` | Ecosystem standard | Editor AI behavior rules |
+| Google Gemini CLI | `GEMINI.md` | Ecosystem standard | Agent project context |
+
+Each of these solves the same problem: giving agents structured context
+via human-readable Markdown files. But each invented its own file name,
+its own structure, and its own vocabulary.
+
+**agent-md-specs unifies this.** We define 174 file types covering every
+dimension an agent needs to express — from the project instructions that
+AGENTS.md handles, to the identity, governance, compliance, and
+accountability documentation that production agents also need.
+
+AGENTS.md tells an agent *how to work on your project*.
+agent-md-specs tells the world *who this agent is*.
+
+→ See [examples/autoresearch-decomposed/](examples/autoresearch-decomposed/)
+for how a monolithic `program.md` decomposes into standardized specs.
+
+→ See [examples/codex-agent-decomposed/](examples/codex-agent-decomposed/)
+for how AGENTS.md and agent-md-specs work together.
+
+→ See [examples/multi-agent-fleet/](examples/multi-agent-fleet/)
+for organizational hierarchy specs coordinating a 3-agent team.
+
+---
+
 ## Quick Start
 
 The five files every agent should have:
@@ -228,9 +266,15 @@ my-research-agent/
 └── README.md
 ```
 
-See [examples/customer-support-bundle/](./examples/customer-support-bundle/)
-for a complete working example — fictional Meridian support agent "Aria"
-using 7 specs in a realistic production configuration.
+## Example Bundles
+
+| Bundle | What It Demonstrates |
+|--------|---------------------|
+| [customer-support-bundle](examples/customer-support-bundle/) | Aria — customer support agent using 7 core specs |
+| [nist-nccoe-bundle](examples/nist-nccoe-bundle/) | Atlas — enterprise financial agent with full NIST accountability chain |
+| [autoresearch-decomposed](examples/autoresearch-decomposed/) | Nova — how monolithic agent configs (like program.md) decompose into specs |
+| [codex-agent-decomposed](examples/codex-agent-decomposed/) | Forge — AGENTS.md + agent-md-specs working together |
+| [multi-agent-fleet](examples/multi-agent-fleet/) | Sentinel Crew — 3-agent team with hierarchy and coordination |
 
 ---
 
