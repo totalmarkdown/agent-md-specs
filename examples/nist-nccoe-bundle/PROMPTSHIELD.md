@@ -1,4 +1,10 @@
 ---
+spec_name: "PROMPTSHIELD.md"
+spec_version: "1.0.0"
+category: "Security"
+tier: core
+priority: High
+domain: promptshieldmd.dev
 agent_name: "Atlas"
 version: "2.1.0"
 org: "Acme Corp"

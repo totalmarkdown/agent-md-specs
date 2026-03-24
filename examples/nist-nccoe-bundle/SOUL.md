@@ -1,4 +1,10 @@
 ---
+spec_name: "SOUL.md"
+spec_version: "1.0.0"
+category: "Identity"
+tier: core
+priority: High
+domain: soulmd.dev
 agent_name: "Atlas"
 version: "2.1.0"
 org: "Acme Corp"

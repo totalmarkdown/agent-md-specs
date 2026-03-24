@@ -1,4 +1,10 @@
 ---
+spec_name: "PERMISSIONS.md"
+spec_version: "1.0.0"
+category: "Governance"
+tier: core
+priority: High
+domain: permissionsmd.dev
 agent_name: "Atlas"
 version: "2.1.0"
 org: "Acme Corp"

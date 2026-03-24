@@ -1,4 +1,10 @@
 ---
+spec_name: "AUDITTRAIL.md"
+spec_version: "1.0.0"
+category: "Compliance"
+tier: core
+priority: High
+domain: audittrailmd.dev
 agent_name: "Atlas"
 version: "2.1.0"
 org: "Acme Corp"

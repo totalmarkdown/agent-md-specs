@@ -1,8 +1,8 @@
 # agent-md-specs
 
-> *The vocabulary for AI agency.*
+> *A vocabulary for AI agency.*
 
-An open standard library of **174 file type specifications** for AI agent
+A proposed open standard library of **174 file type specifications** for AI agent
 configuration — covering every dimension of what an agent is, what it
 does, and who it is.
 
@@ -51,7 +51,7 @@ documentation (`GDPR.md`, `HIPAA.md`, `EUAIACT.md`), budget controls
 A marketplace agent needs a CV (`CV.md`), pricing (`PRICING.md`),
 reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
-**agent-md-specs defines the vocabulary for all of it.**
+**agent-md-specs proposes a vocabulary for all of it.**
 
 174 file types. 14 volumes. Every dimension of an agent's existence:
 
@@ -62,11 +62,11 @@ From emergency stops  (ICE.md, PANIC.md) to crypto wallet    (WALLET.md)
 From who it reports to (REPORTSTO.md)   to what it dreams of (DREAM.md)
 ```
 
-**This library is:**
+**This library aims to be:**
 - **Tool-agnostic** — every spec works with Claude Code, Cursor, Gemini CLI,
   Codex, goose, or any agent framework
 - **CC0 public domain** — copy, modify, use commercially, no attribution required
-- **Community-governed** — propose new specs, improve existing ones via PR
+- **Community-driven** — propose new specs, improve existing ones via PR
 
 ---
 
@@ -89,7 +89,7 @@ Each of these solves the same problem: giving agents structured context
 via human-readable Markdown files. But each invented its own file name,
 its own structure, and its own vocabulary.
 
-**agent-md-specs unifies this.** We define 174 file types covering every
+**agent-md-specs aims to unify this.** We propose 174 file types covering every
 dimension an agent needs to express — from the project instructions that
 AGENTS.md handles, to the identity, governance, compliance, and
 accountability documentation that production agents also need.
@@ -309,7 +309,7 @@ projects: **AGENTS.md** (project instructions), **MCP** (tool connectivity),
 and **goose** (agent framework). Together these form the infrastructure layer —
 how agents connect to tools and receive project-specific instructions.
 
-**agent-md-specs is the vocabulary layer** — everything an agent needs to
+**agent-md-specs aims to be the vocabulary layer** — everything an agent needs to
 express about itself beyond task instructions. The 174 specs here are
 deliberately out of AAIF scope: personality, hiring, financial identity,
 compliance documentation, lifecycle rituals, competitive positioning.
@@ -408,19 +408,19 @@ and the NCCoE concept paper on AI Agent Identity and Authorization.
 These specs create a complete accountability chain from human
 authorization to tamper-proof audit trail:
 
-| Step | Spec | What It Answers |
-|------|------|-----------------|
-| 1. Authority | DELEGATION.md | Who authorized this agent to act? |
-| 2. Identity | WHOAMI.md + ID.md | Who is this agent? |
-| 3. Verification | ATTESTATION.md | Can it prove it is who it claims? |
-| 4. Runtime Scope | SESSION.md | What is its current task boundary? |
-| 5. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? |
-| 6. Intent | INTENT.md | What does it intend to do? |
-| 7. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? |
-| 8. Data Lineage | PROVENANCE.md | Where did the data come from? |
-| 9. Audit | AUDITTRAIL.md | What happened, provably? |
-| 10. Enforcement | ENFORCEMENT.md | Can we verify all of the above? |
-| 11. Escalation | ESCALATION.md | Should a human review this? |
+| Step | Spec | What It Answers | Phase |
+|------|------|-----------------|-------|
+| 1. Authority | DELEGATION.md | Who authorized this agent? | Pre-deployment |
+| 2. Identity | WHOAMI.md + ID.md | Who is this agent? | Pre-deployment |
+| 3. Verification | ATTESTATION.md | Can it prove its identity? | Runtime (continuous) |
+| 4. Runtime Scope | SESSION.md | What is its current task boundary? | Runtime (per-task) |
+| 5. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? | Runtime (per-action) |
+| 6. Intent | INTENT.md | What does it intend to do? | Runtime (per-action) |
+| 7. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? | Runtime (per-input) |
+| 8. Data Lineage | PROVENANCE.md | Where did the data come from? | Runtime (per-input) |
+| 9. Audit | AUDITTRAIL.md | What happened, provably? | Post-action |
+| 10. Enforcement | ENFORCEMENT.md | Can we verify all of the above? | Continuous |
+| 11. Escalation | ESCALATION.md | Should a human review this? | On-trigger |
 
 → See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
 to NIST AI RMF and NCCoE concept paper requirements.
