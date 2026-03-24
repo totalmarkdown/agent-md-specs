@@ -121,6 +121,13 @@ Confidence should account for:
 - Reversibility (reversible actions tolerate lower confidence)
 - Data freshness (stale context reduces confidence)
 
+**Important:** Confidence scores SHOULD be derived from external
+evaluation systems, deterministic checks, or probabilistic ensembles
+— not solely from the agent's own self-assessment. LLMs are known to
+produce miscalibrated confidence estimates. Where the agent generates
+its own confidence score, an external validator or calibration layer
+SHOULD verify the score before it is used for authorization decisions.
+
 ## Expected Impact Assessment
 
 Before proceeding, classify the expected impact:

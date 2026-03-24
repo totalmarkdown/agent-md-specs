@@ -30,6 +30,17 @@ they create a model where a persistent agent spawns short-lived
 sessions, each with its own credentials, constraints, and audit
 trail — like a process forking from a parent.
 
+### Scope Boundary
+
+This spec defines the **ephemeral, task-scoped runtime identity** of an
+agent during a single execution. It is a runtime schema spec, not a
+static configuration file.
+
+- SESSION.md defines **the runtime boundary for a single task** (ephemeral)
+- ID.md defines **the permanent identity** that sessions inherit from (persistent)
+- DELEGATION.md defines **the authority under which the session operates**
+- WAKEUP.md defines **the bootstrap sequence when a session initializes**
+
 ### When to Create This File
 Required for agents that handle multiple concurrent or sequential
 tasks with different security contexts. Critical when tasks have

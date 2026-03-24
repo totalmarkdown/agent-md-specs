@@ -55,7 +55,7 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | CCPA.md | Regulatory Compliance | Extended | ccpamd.dev | High | Vol 9 | [specs/regulatory/CCPA.md](specs/regulatory/CCPA.md) |
 | CENSOR.md | Governance | Extended | censormd.dev | High | Vol 7 | [specs/governance/CENSOR.md](specs/governance/CENSOR.md) |
 | CERTIFICATIONS.md | Compliance | Extended | certificationsmd.dev | Medium | Vol 4 | [specs/compliance/CERTIFICATIONS.md](specs/compliance/CERTIFICATIONS.md) |
-| CHANGELOG.md | Identity | Extended |  | Medium | Vol 4 | [specs/identity/CHANGELOG.md](specs/identity/CHANGELOG.md) |
+| CHANGELOG.md | Identity | Extended | changelogmd.dev | Medium | Vol 4 | [specs/identity/CHANGELOG.md](specs/identity/CHANGELOG.md) |
 | CHANNELS.md | Communication | Extended | channelsmd.dev | Medium | Vol 3 | [specs/identity/CHANNELS.md](specs/identity/CHANNELS.md) |
 | CHARTER.md | Organizational | Extended | chartermd.dev | Medium | Vol 3 | [specs/organizational/CHARTER.md](specs/organizational/CHARTER.md) |
 | CLI.md | Technical | Extended | climd.dev | High | Vol 3 | [specs/technical/CLI.md](specs/technical/CLI.md) |
@@ -122,7 +122,7 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | MANIFESTO.md | Identity | Extended | manifestomd.dev | Medium | Vol 6 | [specs/identity/MANIFESTO.md](specs/identity/MANIFESTO.md) |
 | MARKETING.md | Business | Extended | marketingmd.dev | High | Vol 1 | [specs/business/MARKETING.md](specs/business/MARKETING.md) |
 | MCP.md | Technical | Core | mcpmd.dev | High | Vol 2 | [specs/technical/MCP.md](specs/technical/MCP.md) |
-| MEMORY.md | Cognitive | Extended |  | High | Vol 6 | [specs/cognitive/MEMORY.md](specs/cognitive/MEMORY.md) |
+| MEMORY.md | Cognitive | Extended | memorymd.dev | High | Vol 6 | [specs/cognitive/MEMORY.md](specs/cognitive/MEMORY.md) |
 | MIGRATION.md | Operations | Extended | migrationmd.dev | Medium | Vol 2 | [specs/operations/MIGRATION.md](specs/operations/MIGRATION.md) |
 | MISSION.md | Organizational Identity | Extended | missionmd.dev | High | Vol 10 | [specs/organizational/MISSION.md](specs/organizational/MISSION.md) |
 | MOAT.md | Competitive/Strategic | Extended | moatmd.dev | High | Vol 11 | [specs/business/MOAT.md](specs/business/MOAT.md) |
@@ -133,7 +133,7 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | CONNECTIONS.md | Social | Extended | connectionsmd.dev | Medium | Vol 3 | [specs/social/CONNECTIONS.md](specs/social/CONNECTIONS.md) |
 | NETWORK.md | Technical | Extended | networkmd.dev | High | Vol 12 | [specs/technical/NETWORK.md](specs/technical/NETWORK.md) |
 | NIS2.md | Regulatory Compliance | Extended | nis2md.dev | Medium | Vol 9 | [specs/regulatory/NIS2.md](specs/regulatory/NIS2.md) |
-| NISTAIRF.md | Regulatory Compliance | Extended | nistairdmd.dev | Medium | Vol 9 | [specs/regulatory/NISTAIRF.md](specs/regulatory/NISTAIRF.md) |
+| NISTAIRF.md | Regulatory Compliance | Extended | nistairfmd.dev | Medium | Vol 9 | [specs/regulatory/NISTAIRF.md](specs/regulatory/NISTAIRF.md) |
 | NORTHSTAR.md | Organizational Identity | Extended | northstarmd.dev | High | Vol 10 | [specs/organizational/NORTHSTAR.md](specs/organizational/NORTHSTAR.md) |
 | OFFERING.md | Identity | Extended | offeringmd.dev | High | Vol 3 | [specs/identity/OFFERING.md](specs/identity/OFFERING.md) |
 | ONBOARDING.md | Identity | Extended | onboardingmd.dev | Medium | Vol 1 | [specs/identity/ONBOARDING.md](specs/identity/ONBOARDING.md) |

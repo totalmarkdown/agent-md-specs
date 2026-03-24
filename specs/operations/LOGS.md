@@ -20,7 +20,7 @@ tier: extended
 ### Purpose
 Operational logging configuration — where logs go, what gets logged, 
 log format, retention policy, and how to query them. Different from 
-AUDIT.md (compliance/security audit trail) — LOGS.md covers 
+AUDITTRAIL.md (compliance/security audit trail) — LOGS.md covers 
 operational observability logs.
 
 ### Spec

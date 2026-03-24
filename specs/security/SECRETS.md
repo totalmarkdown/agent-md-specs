@@ -109,7 +109,7 @@ Secret values live in: [vault system name]
 4. Verify all agents healthy with new credential
 5. Revoke old credential at [service]
 6. Update rotation date in this file
-7. Log rotation in AUDIT.md
+7. Log rotation in AUDITTRAIL.md
 
 ---
 

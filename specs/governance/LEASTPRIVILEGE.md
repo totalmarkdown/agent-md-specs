@@ -29,6 +29,16 @@ LEASTPRIVILEGE.md inverts this — the agent starts with minimal
 permissions and temporarily escalates only when a specific task
 requires it, with automatic de-escalation when the task completes.
 
+### Scope Boundary
+
+This spec governs **dynamic privilege management at runtime** using
+zero-trust principles.
+
+- LEASTPRIVILEGE.md defines **runtime privilege escalation and de-escalation**
+- DELEGATION.md defines **the authority chain that grants baseline privileges**
+- PERMISSIONS.md defines **the static resource access list**
+- ENFORCEMENT.md defines **how privilege policies are enforced and drift is detected**
+
 ### When to Create This File
 Required for any agent with access to resources beyond its
 minimum operational needs. Critical for agents operating in

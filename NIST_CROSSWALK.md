@@ -5,6 +5,26 @@ and the NCCoE Concept Paper on AI Agent Identity and Authorization (Feb 2026).
 
 ---
 
+## Implementation Model
+
+agent-md-specs defines two types of specifications:
+
+- **Static configuration** (e.g., WHOAMI.md, LIMITS.md, DELEGATION.md):
+  committed to version control, define the agent's permanent identity
+  and constraints.
+
+- **Runtime schemas** (e.g., INTENT.md, SESSION.md, AUDITTRAIL.md):
+  define the format and validation rules for ephemeral data generated
+  during agent execution. These are not files overwritten on disk —
+  they are schemas that runtime systems use to structure API payloads,
+  session tokens, and audit log entries.
+
+This distinction means agent-md-specs is a **declarative policy
+specification** that compiles down into machine-enforceable rules,
+not a file-based runtime system.
+
+---
+
 ## NCCoE Concept Paper — Question-by-Question Mapping
 
 ### 1. Identification
@@ -81,12 +101,19 @@ and the NCCoE Concept Paper on AI Agent Identity and Authorization (Feb 2026).
 | LIMITS.md | Hard stops that override all input including injected instructions |
 | ENFORCEMENT.md | Runtime enforcement of injection defense specs |
 
-### 7. Enforcement (Cross-Cutting)
-> Implicit across all NIST questions: "How do we verify agents follow their own declarations?"
+### 7. Enforcement and Continuous Monitoring
+> "How do we verify agents follow their own declarations?"
+> Mapped to: NIST SP 800-207 Zero Trust Architecture — Policy
+> Enforcement Points (PEPs) and Policy Decision Points (PDPs)
 
-| Spec | What It Provides |
-|------|-----------------|
-| ENFORCEMENT.md | Pre-deployment validation, runtime monitoring, behavioral drift detection, audit verification, compliance attestation reports |
+| Spec | Enforcement Role | ZTA Mapping |
+|------|-----------------|-------------|
+| ENFORCEMENT.md | Defines the verification framework — pre-deployment validation, runtime enforcement matrix, behavioral drift detection | Policy Decision Point (PDP) |
+| ATTESTATION.md | Provides cryptographic identity proof at runtime | Policy Information Point (PIP) |
+| AUDITTRAIL.md | Records all enforcement decisions for non-repudiation | Continuous Diagnostics and Mitigation (CDM) |
+| LEASTPRIVILEGE.md | Defines JIT privilege escalation requiring PDP approval | Dynamic access control per SP 800-207 S3 |
+| INTENT.md | Pre-action declaration evaluated against policy before execution | Implicit trust zone boundary |
+| SESSION.md | Ephemeral credential scope prevents lateral movement | Microsegmentation boundary |
 
 ---
 

@@ -133,6 +133,51 @@ curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/temp
 
 ---
 
+## How Specs Are Used: Static Configuration vs Runtime Schemas
+
+agent-md-specs files serve two distinct purposes, and understanding
+the difference is essential for implementation:
+
+**Static Specs** are committed to your repository alongside your code.
+They define the agent's permanent identity, hard constraints, and
+organizational configuration. They change infrequently and are
+version-controlled like any configuration file.
+
+Examples: `WHOAMI.md`, `LIMITS.md`, `PERMISSIONS.md`, `SOUL.md`,
+`DELEGATION.md`, `TEAM.md`, `ORG.md`
+
+**Runtime Schema Specs** define the *format and rules* for data that
+is generated dynamically during agent execution. These specs are NOT
+overwritten on disk for every action. Instead, they define the schema
+that runtime systems (API gateways, policy engines, logging pipelines)
+use to structure ephemeral payloads, log entries, and session tokens.
+
+Examples: `INTENT.md` (defines the schema for intent declarations
+passed via API), `SESSION.md` (defines session token structure and
+lifecycle rules), `AUDITTRAIL.md` (defines the log entry format
+and tamper-resistance requirements), `PROVENANCE.md` (defines data
+lineage record structure)
+
+**The relationship:**
+
+```
+Static specs (committed to repo)     Runtime schema specs (define formats)
++--------------------------+         +-------------------------------+
+| WHOAMI.md                |         | INTENT.md -> intent payloads  |
+| LIMITS.md                | govern  | SESSION.md -> session tokens  |
+| PERMISSIONS.md           | ------> | AUDITTRAIL.md -> log entries  |
+| DELEGATION.md            |         | PROVENANCE.md -> lineage data |
+| ENFORCEMENT.md           | verifies| PROMPTSHIELD.md -> input scan |
++--------------------------+         +-------------------------------+
+```
+
+Both types use the same Markdown format for **human readability and
+auditability**. The static specs live in your repo. The runtime schema
+specs define what your infrastructure produces — the actual payloads
+flow through APIs, logs, and policy engines, not Markdown files on disk.
+
+---
+
 ## Core Specs (Recommended for All Production Agents)
 
 The 39 Core specs cover the essential dimensions every production agent should define.

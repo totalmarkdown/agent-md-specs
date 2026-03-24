@@ -29,6 +29,17 @@ Without DELEGATION.md, an agent operating autonomously has no
 provable link between its actions and the human who authorized them.
 This spec creates that link — scoped, time-bound, and revocable.
 
+### Scope Boundary
+
+This spec governs **who authorized this agent and with what constraints**.
+It defines the authority chain from human to agent.
+
+- DELEGATION.md defines **who granted what authority** (static, pre-deployment)
+- LEASTPRIVILEGE.md defines **what privileges are active right now** (dynamic, runtime)
+- PERMISSIONS.md defines **what resources can be accessed** (static, pre-deployment)
+- ENFORCEMENT.md defines **how all of the above are verified** (meta, continuous)
+- SESSION.md defines **the ephemeral runtime boundary** for a single task
+
 ### When to Create This File
 Required for any agent that acts on behalf of a human or organization.
 Critical when agents send communications, make purchases, modify data,

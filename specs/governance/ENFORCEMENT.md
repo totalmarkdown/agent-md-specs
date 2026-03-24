@@ -27,6 +27,21 @@ intended behavior but provide no mechanism to verify compliance.
 This spec closes the gap between declaration and reality by defining
 validation rules, drift detection, and compliance attestation.
 
+### Scope Boundary
+
+This spec is a **meta-specification** that defines how all other specs
+are verified. It does not define policies itself — it defines the
+verification framework.
+
+- ENFORCEMENT.md defines **how specs are validated and enforced** (the "how")
+- LIMITS.md, PERMISSIONS.md, DELEGATION.md define **what is enforced** (the "what")
+- AUDITTRAIL.md defines **the record of enforcement actions** (the "proof")
+
+Note: ENFORCEMENT.md describes a declarative verification framework.
+Actual enforcement requires a compliant runtime — such as an API gateway,
+policy engine (e.g., OPA/Rego), or agent orchestration platform — that
+reads these specs and implements the enforcement matrix.
+
 ### When to Create This File
 Required for any agent operating in production or handling sensitive
 tasks. Critical in regulated environments where compliance must be
