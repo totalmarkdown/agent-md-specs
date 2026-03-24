@@ -1,3 +1,12 @@
+---
+spec_name: "WHOAMI.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Forge"
+agent_version: "3.2.0"
+---
+
 # WHOAMI.md — Forge
 
 ## Identity

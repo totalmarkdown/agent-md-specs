@@ -1,3 +1,12 @@
+---
+spec_name: "ESCALATION.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Forge"
+agent_version: "3.2.0"
+---
+
 # ESCALATION.md — Forge
 
 ## Escalation Levels

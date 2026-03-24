@@ -1,3 +1,12 @@
+---
+spec_name: "LIMITS.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Forge"
+agent_version: "3.2.0"
+---
+
 # LIMITS.md — Forge
 
 ## Hard Limits (NEVER Do)

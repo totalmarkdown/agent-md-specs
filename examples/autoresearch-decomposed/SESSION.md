@@ -1,3 +1,12 @@
+---
+spec_name: "SESSION.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Nova"
+agent_version: "1.0.0"
+---
+
 # Session
 
 ## Session Boundary

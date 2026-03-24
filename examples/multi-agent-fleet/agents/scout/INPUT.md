@@ -1,3 +1,12 @@
+---
+spec_name: "INPUT.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Scout"
+agent_version: "1.0.0"
+---
+
 # Scout — Input Specification
 
 ## Accepted Input Types

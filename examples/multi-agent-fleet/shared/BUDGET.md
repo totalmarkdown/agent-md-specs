@@ -1,3 +1,12 @@
+---
+spec_name: "BUDGET.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Sentinel Crew"
+agent_version: "1.0.0"
+---
+
 # Sentinel Crew — Budget
 
 **Effective:** 2026-01-15

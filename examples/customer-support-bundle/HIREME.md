@@ -1,4 +1,8 @@
 ---
+spec_name: "HIREME.md"
+spec_version: "1.0.0"
+category: "Example"
+tier: extended
 agent_name: "Aria"
 version: "2.4.1"
 org: "Meridian"

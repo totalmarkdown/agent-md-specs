@@ -1,3 +1,12 @@
+---
+spec_name: "OUTPUT.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Scribe"
+agent_version: "1.0.0"
+---
+
 # Scribe — Output Specification
 
 ## Output Format

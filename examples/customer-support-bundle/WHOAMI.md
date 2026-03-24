@@ -1,4 +1,8 @@
 ---
+spec_name: "WHOAMI.md"
+spec_version: "1.0.0"
+category: "Example"
+tier: extended
 agent_id: "a3f7b2c1-9e4d-4a8b-b5f6-2d1e8c7a4f9e"
 agent_name: "Aria"
 version: "2.4.1"

@@ -1,3 +1,12 @@
+---
+spec_name: "ESCALATION.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Sentinel Crew"
+agent_version: "1.0.0"
+---
+
 # Sentinel Crew — Escalation Policy
 
 ## Level 1 — Automatic (No Human)

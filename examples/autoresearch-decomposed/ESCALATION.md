@@ -1,3 +1,12 @@
+---
+spec_name: "ESCALATION.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Nova"
+agent_version: "1.0.0"
+---
+
 # Escalation
 
 ## Core Principle

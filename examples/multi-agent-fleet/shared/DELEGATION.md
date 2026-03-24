@@ -1,3 +1,12 @@
+---
+spec_name: "DELEGATION.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Sentinel Crew"
+agent_version: "1.0.0"
+---
+
 # Sentinel Crew — Delegation Authority
 
 ## Delegated By

@@ -1,3 +1,12 @@
+---
+spec_name: "LIMITS.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Nova"
+agent_version: "1.0.0"
+---
+
 # Limits
 
 ## Hard Constraints — NEVER Violate

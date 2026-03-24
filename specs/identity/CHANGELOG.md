@@ -2,7 +2,7 @@
 spec_name: CHANGELOG.md
 spec_version: 0.1.0
 category: Identity
-domain: 
+domain: changelogmd.dev
 priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai

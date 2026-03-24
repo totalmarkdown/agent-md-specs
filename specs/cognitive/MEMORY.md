@@ -2,7 +2,7 @@
 spec_name: MEMORY.md
 spec_version: 0.1.0
 category: Cognitive
-domain: 
+domain: memorymd.dev
 priority: High
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai

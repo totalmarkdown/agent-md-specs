@@ -1,3 +1,12 @@
+---
+spec_name: "AUDITTRAIL.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Forge"
+agent_version: "3.2.0"
+---
+
 # AUDITTRAIL.md — Forge
 
 ## What Gets Logged

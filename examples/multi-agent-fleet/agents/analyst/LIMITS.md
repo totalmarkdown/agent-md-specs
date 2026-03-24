@@ -1,3 +1,12 @@
+---
+spec_name: "LIMITS.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Analyst"
+agent_version: "1.0.0"
+---
+
 # Analyst — Limits
 
 ## NEVER

@@ -1,3 +1,12 @@
+---
+spec_name: "ENFORCEMENT.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Forge"
+agent_version: "3.2.0"
+---
+
 # ENFORCEMENT.md — Forge
 
 ## Pre-Review Checks

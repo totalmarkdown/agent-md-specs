@@ -1,3 +1,12 @@
+---
+spec_name: "LIMITS.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Scout"
+agent_version: "1.0.0"
+---
+
 # Scout — Limits
 
 ## NEVER

@@ -1,3 +1,12 @@
+---
+spec_name: "INPUT.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Analyst"
+agent_version: "1.0.0"
+---
+
 # Analyst — Input Specification
 
 ## Accepted Input

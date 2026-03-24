@@ -1,3 +1,12 @@
+---
+spec_name: "TEAM.md"
+spec_version: "1.0.0"
+category: Example
+tier: extended
+agent_name: "Sentinel Crew"
+agent_version: "1.0.0"
+---
+
 # Sentinel Crew
 
 **Owner:** David Park, Portfolio Manager — Equities Desk
