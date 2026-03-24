@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/contact.schema.json",
+  "title": "CONTACT.md Schema",
+  "description": "Schema for agent contact endpoints",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "mcp_endpoint": {
+      "type": "string",
+      "format": "uri"
+    },
+    "api_endpoint": {
+      "type": "string",
+      "format": "uri"
+    },
+    "email": {
+      "type": "string",
+      "format": "email"
+    },
+    "human_owner": {
+      "type": "string"
+    }
+  },
+  "anyOf": [
+    {
+      "required": [
+        "mcp_endpoint"
+      ]
+    },
+    {
+      "required": [
+        "api_endpoint"
+      ]
+    },
+    {
+      "required": [
+        "email"
+      ]
+    },
+    {
+      "required": [
+        "human_owner"
+      ]
+    }
+  ]
+}

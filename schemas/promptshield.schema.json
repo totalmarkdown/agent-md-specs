@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/promptshield.schema.json",
+  "title": "PROMPTSHIELD.md Schema",
+  "description": "Schema for prompt injection defense configuration",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Direct Injection Controls",
+        "Indirect Injection Controls",
+        "Detection Methods",
+        "Containment Procedures",
+        "Recovery Procedures",
+        "Testing Requirements",
+        "Incident Reporting"
+      ]
+    },
+    "direct_controls": {
+      "type": "object",
+      "properties": {
+        "max_input_length": {
+          "type": "integer"
+        },
+        "instruction_hierarchy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "delimiter_hardening": {
+          "type": "boolean"
+        }
+      }
+    },
+    "indirect_controls": {
+      "type": "object",
+      "properties": {
+        "content_sandboxing": {
+          "type": "boolean"
+        },
+        "privilege_separation": {
+          "type": "boolean"
+        },
+        "boundary_markers": {
+          "type": "string"
+        },
+        "tool_output_sanitization": {
+          "type": "boolean"
+        }
+      }
+    },
+    "detection_methods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "pattern_based",
+          "semantic_analysis",
+          "canary_tokens",
+          "output_consistency",
+          "confidence_monitoring"
+        ]
+      }
+    },
+    "containment_procedure": {
+      "type": "string",
+      "enum": [
+        "halt_execution",
+        "quarantine_input",
+        "alert_human",
+        "log_incident",
+        "rollback_to_safe_state"
+      ]
+    },
+    "recovery_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "testing": {
+      "type": "object",
+      "properties": {
+        "red_team_frequency": {
+          "type": "string"
+        },
+        "test_suite": {
+          "type": "string"
+        },
+        "benchmark_ref": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

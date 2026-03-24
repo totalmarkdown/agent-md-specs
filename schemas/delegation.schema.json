@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/delegation.schema.json",
+  "title": "DELEGATION.md Schema",
+  "description": "Schema for AI agent authority delegation configuration",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Delegating Principal",
+        "Delegation Scope",
+        "Delegation Constraints",
+        "Sub-Delegation Policy",
+        "Consent Record",
+        "Revocation",
+        "Accountability Binding"
+      ]
+    },
+    "delegating_principal": {
+      "type": "object",
+      "required": [
+        "name",
+        "role",
+        "organization",
+        "authentication_method"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "organization": {
+          "type": "string"
+        },
+        "authentication_method": {
+          "type": "string",
+          "enum": [
+            "oauth2_obo",
+            "fido2",
+            "x509_cert",
+            "signed_jwt",
+            "manual_approval"
+          ]
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "required": [
+        "allowed_actions"
+      ],
+      "properties": {
+        "allowed_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1
+        },
+        "denied_actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "max_actions": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_spend": {
+          "type": "string"
+        },
+        "allowed_regions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sub_delegation": {
+      "type": "object",
+      "properties": {
+        "allowed": {
+          "type": "boolean"
+        },
+        "max_depth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "must_narrow_scope": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "revocation": {
+      "type": "object",
+      "required": [
+        "method"
+      ],
+      "properties": {
+        "method": {
+          "type": "string"
+        },
+        "in_flight_policy": {
+          "type": "string",
+          "enum": [
+            "complete_then_revoke",
+            "immediate_halt",
+            "timeout_grace_period"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/audittrail.schema.json",
+  "title": "AUDITTRAIL.md Schema",
+  "description": "Schema for tamper-proof non-repudiation action records",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Audit Event Schema",
+        "Tamper Resistance",
+        "Retention Policy",
+        "Non-Repudiation Mechanism",
+        "Human Authority Binding",
+        "Query Interface",
+        "Compliance Mapping"
+      ]
+    },
+    "event_schema": {
+      "type": "object",
+      "required": [
+        "event_id",
+        "timestamp",
+        "agent_id",
+        "action_type",
+        "result"
+      ],
+      "properties": {
+        "event_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "agent_id": {
+          "type": "string"
+        },
+        "session_id": {
+          "type": "string"
+        },
+        "delegation_chain": {
+          "type": "string"
+        },
+        "intent_hash": {
+          "type": "string"
+        },
+        "action_type": {
+          "type": "string"
+        },
+        "target_resource": {
+          "type": "string"
+        },
+        "input_hash": {
+          "type": "string"
+        },
+        "output_hash": {
+          "type": "string"
+        },
+        "result": {
+          "type": "string",
+          "enum": [
+            "success",
+            "failure",
+            "partial",
+            "escalated"
+          ]
+        },
+        "human_approval_ref": {
+          "type": "string"
+        }
+      }
+    },
+    "tamper_resistance_method": {
+      "type": "string",
+      "enum": [
+        "append_only_log",
+        "hash_chain",
+        "signed_entries",
+        "blockchain_anchor",
+        "combination"
+      ]
+    },
+    "retention_policy": {
+      "type": "object",
+      "properties": {
+        "duration_years": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "storage_location": {
+          "type": "string"
+        },
+        "encryption_at_rest": {
+          "type": "boolean"
+        }
+      }
+    },
+    "non_repudiation_method": {
+      "type": "string"
+    },
+    "compliance_mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "regulation": {
+            "type": "string"
+          },
+          "required_fields": {
+            "type": "string"
+          },
+          "retention": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

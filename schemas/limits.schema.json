@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/limits.schema.json",
+  "title": "LIMITS.md Schema",
+  "description": "Schema for absolute hard and soft limits",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Hard Limits",
+        "Soft Limits"
+      ]
+    },
+    "hard_limits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Actions the agent will NEVER take"
+    },
+    "soft_limits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Actions requiring confirmation or elevated context"
+    }
+  }
+}

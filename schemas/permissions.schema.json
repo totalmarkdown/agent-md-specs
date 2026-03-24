@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/permissions.schema.json",
+  "title": "PERMISSIONS.md Schema",
+  "description": "Schema for static permission declarations",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "read": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "write": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execute": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "never": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

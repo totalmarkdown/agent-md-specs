@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/intent.schema.json",
+  "title": "INTENT.md Schema",
+  "description": "Schema for AI agent pre-action intent declaration",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Intent Declaration Format",
+        "Intent Categories",
+        "Confidence Level",
+        "Expected Impact Assessment",
+        "Fallback Intent",
+        "Human Review Threshold",
+        "Intent Logging"
+      ]
+    },
+    "intent_format": {
+      "type": "object",
+      "required": [
+        "action_type",
+        "target_resource",
+        "reason",
+        "expected_outcome",
+        "confidence_level"
+      ],
+      "properties": {
+        "action_type": {
+          "type": "string",
+          "enum": [
+            "read",
+            "write",
+            "delete",
+            "create",
+            "communicate",
+            "transact",
+            "delegate",
+            "escalate",
+            "external_call"
+          ]
+        },
+        "target_resource": {
+          "type": "string"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "expected_outcome": {
+          "type": "string"
+        },
+        "confidence_level": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      }
+    },
+    "confidence_thresholds": {
+      "type": "object",
+      "properties": {
+        "autonomous": {
+          "type": "number",
+          "default": 0.9
+        },
+        "log_and_proceed": {
+          "type": "number",
+          "default": 0.7
+        },
+        "request_confirmation": {
+          "type": "number",
+          "default": 0.5
+        },
+        "halt_and_escalate": {
+          "type": "number",
+          "default": 0.5
+        }
+      }
+    },
+    "human_review_threshold": {
+      "type": "object",
+      "properties": {
+        "confidence_below": {
+          "type": "number"
+        },
+        "impact_above": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "critical"
+          ]
+        },
+        "always_review_categories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

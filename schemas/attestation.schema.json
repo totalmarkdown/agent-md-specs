@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/attestation.schema.json",
+  "title": "ATTESTATION.md Schema",
+  "description": "Schema for AI agent identity verification",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Attestation Method",
+        "Hardware Binding",
+        "Software Binding",
+        "Organizational Binding",
+        "Credential Lifecycle",
+        "Verification Endpoint",
+        "Human-in-the-Loop Binding"
+      ]
+    },
+    "method": {
+      "type": "string",
+      "enum": [
+        "spiffe",
+        "x509",
+        "did",
+        "jwt",
+        "api_key"
+      ]
+    },
+    "method_preference_order": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hardware_binding": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "tpm",
+            "secure_enclave",
+            "cloud_hsm",
+            "none"
+          ]
+        },
+        "identifier": {
+          "type": "string"
+        }
+      }
+    },
+    "software_binding": {
+      "type": "object",
+      "properties": {
+        "container_hash": {
+          "type": "string"
+        },
+        "model_checksum": {
+          "type": "string"
+        },
+        "code_signature": {
+          "type": "string"
+        }
+      }
+    },
+    "credential_lifecycle": {
+      "type": "object",
+      "required": [
+        "issuance",
+        "rotation_days",
+        "revocation_method"
+      ],
+      "properties": {
+        "issuance": {
+          "type": "string"
+        },
+        "rotation_days": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "revocation_method": {
+          "type": "string"
+        },
+        "recovery_procedure": {
+          "type": "string"
+        }
+      }
+    },
+    "verification_endpoint": {
+      "type": "string",
+      "format": "uri"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/session.schema.json",
+  "title": "SESSION.md Schema",
+  "description": "Schema for ephemeral task-scoped identity",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Session Identity",
+        "Ephemeral Credentials",
+        "Session Context",
+        "Session Boundaries",
+        "Destruction Policy",
+        "Session State Machine"
+      ]
+    },
+    "session_identity": {
+      "type": "object",
+      "required": [
+        "session_id",
+        "parent_id",
+        "delegation_ref",
+        "created_at",
+        "expires_at"
+      ],
+      "properties": {
+        "session_id": {
+          "type": "string",
+          "format": "uuid"
+        },
+        "parent_id": {
+          "type": "string"
+        },
+        "delegation_ref": {
+          "type": "string"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    },
+    "ephemeral_credentials": {
+      "type": "object",
+      "properties": {
+        "key_generation": {
+          "type": "string"
+        },
+        "key_scope": {
+          "type": "string"
+        },
+        "storage": {
+          "type": "string",
+          "const": "in_memory_only"
+        },
+        "rotation_interval": {
+          "type": "string"
+        }
+      }
+    },
+    "boundaries": {
+      "type": "object",
+      "properties": {
+        "max_duration": {
+          "type": "string"
+        },
+        "max_actions": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "max_spend": {
+          "type": "string"
+        },
+        "scope_lock": {
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "destruction_policy": {
+      "type": "object",
+      "properties": {
+        "memory_wipe": {
+          "type": "boolean"
+        },
+        "key_destruction": {
+          "type": "boolean"
+        },
+        "audit_preservation": {
+          "type": "boolean",
+          "const": true
+        },
+        "context_cleanup": {
+          "type": "boolean"
+        }
+      }
+    }
+  }
+}

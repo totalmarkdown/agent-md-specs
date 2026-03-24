@@ -1,0 +1,145 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/enforcement.schema.json",
+  "title": "ENFORCEMENT.md Schema",
+  "description": "Schema for spec compliance verification (meta-enforcement)",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Pre-Deployment Validation",
+        "Runtime Enforcement Matrix",
+        "Declaration-Only Specs",
+        "Behavioral Drift Detection",
+        "Audit Verification",
+        "Compliance Attestation Report"
+      ]
+    },
+    "pre_deployment": {
+      "type": "object",
+      "required": [
+        "validator",
+        "specs_validated"
+      ],
+      "properties": {
+        "validator": {
+          "type": "string"
+        },
+        "validator_version": {
+          "type": "string"
+        },
+        "specs_validated": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "spec": {
+                "type": "string"
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "pass",
+                  "fail",
+                  "skip"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "runtime_matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "spec",
+          "method",
+          "violation_action"
+        ],
+        "properties": {
+          "spec": {
+            "type": "string"
+          },
+          "method": {
+            "type": "string",
+            "enum": [
+              "policy_engine",
+              "iam_sync",
+              "spend_tracker",
+              "input_scanner",
+              "query_filter",
+              "action_blocklist",
+              "rate_limiter",
+              "token_validator"
+            ]
+          },
+          "violation_action": {
+            "type": "string",
+            "enum": [
+              "block",
+              "alert",
+              "log",
+              "halt",
+              "escalate",
+              "quarantine",
+              "terminate"
+            ]
+          }
+        }
+      }
+    },
+    "drift_detection": {
+      "type": "object",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "enum": [
+            "continuous",
+            "hourly",
+            "daily"
+          ]
+        },
+        "alert_mechanism": {
+          "type": "string"
+        },
+        "auto_remediation": {
+          "type": "string",
+          "enum": [
+            "auto_halt",
+            "alert_only",
+            "sandbox_and_continue"
+          ]
+        }
+      }
+    },
+    "audit_verification": {
+      "type": "object",
+      "properties": {
+        "external_anchor": {
+          "type": "string"
+        },
+        "verification_endpoint": {
+          "type": "string"
+        },
+        "chain_check_frequency": {
+          "type": "string",
+          "enum": [
+            "continuous",
+            "hourly",
+            "daily"
+          ]
+        }
+      }
+    }
+  }
+}

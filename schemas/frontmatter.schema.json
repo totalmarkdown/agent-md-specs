@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/frontmatter.schema.json",
+  "title": "agent-md-specs Frontmatter",
+  "description": "Required YAML frontmatter fields for all agent-md-specs files",
+  "type": "object",
+  "required": [
+    "spec_name",
+    "spec_version",
+    "category",
+    "tier"
+  ],
+  "properties": {
+    "spec_name": {
+      "type": "string",
+      "description": "Name of the spec (e.g., DELEGATION.md)"
+    },
+    "spec_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (e.g., 0.1.0)"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Identity",
+        "Governance",
+        "Security",
+        "Compliance",
+        "Operations",
+        "Lifecycle",
+        "Coordination",
+        "Technical",
+        "Quality",
+        "Business",
+        "Cognitive",
+        "Social",
+        "Economic",
+        "Organizational",
+        "Process",
+        "Personality",
+        "Regulatory"
+      ]
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "core",
+        "extended"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": [
+        "Very High",
+        "High",
+        "Medium",
+        "Low"
+      ]
+    },
+    "volume": {
+      "type": "string",
+      "pattern": "^Vol \\d+"
+    },
+    "domain": {
+      "type": "string",
+      "pattern": "^[a-z]+md\\.dev$",
+      "description": "Reserved .dev domain (e.g., delegationmd.dev)"
+    }
+  },
+  "if": {
+    "properties": {
+      "tier": {
+        "const": "core"
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "spec_name",
+      "spec_version",
+      "category",
+      "tier",
+      "priority",
+      "domain"
+    ]
+  }
+}

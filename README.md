@@ -17,6 +17,9 @@ does, and who it is.
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
 &nbsp;·&nbsp; [Full Index](./INDEX.md)
 &nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
+&nbsp;·&nbsp; [JSON Schemas](./schemas/)
+&nbsp;·&nbsp; [Spec Lifecycle](./SPEC_LIFECYCLE.md)
+&nbsp;·&nbsp; [Changelog](./CHANGELOG.md)
 
 > **TotalMarkdown.ai** (the markdown-native workspace for agent configuration) &
 > **TotalAgents.ai** (the markdown-native agent bundle marketplace)
@@ -428,6 +431,15 @@ to NIST AI RMF and NCCoE concept paper requirements.
 → See [examples/nist-nccoe-bundle/](examples/nist-nccoe-bundle/) for
 a complete enterprise agent ("Atlas") configured with all identity
 and accountability specs.
+
+---
+
+## Validation
+
+Machine-readable [JSON Schemas](schemas/) are available for all Core specs,
+enabling Level 3 validation of frontmatter content and field constraints.
+See the [agent-md-validator](https://github.com/totalmarkdown/agent-md-validator)
+CLI for Level 1-2 validation.
 
 ---
 

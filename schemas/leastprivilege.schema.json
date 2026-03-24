@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/leastprivilege.schema.json",
+  "title": "LEASTPRIVILEGE.md Schema",
+  "description": "Schema for zero-trust dynamic privilege management",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Privilege Baseline",
+        "Just-In-Time Escalation",
+        "Automatic De-escalation",
+        "Unknown Action Policy",
+        "Privilege Audit",
+        "Zero Trust Posture Statement"
+      ]
+    },
+    "privilege_baseline": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Minimum permissions when idle"
+    },
+    "escalation_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "trigger",
+          "mechanism",
+          "authority",
+          "scope",
+          "ttl"
+        ],
+        "properties": {
+          "trigger": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "string"
+          },
+          "authority": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "ttl": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "de_escalation_mode": {
+      "type": "string",
+      "enum": [
+        "per_action",
+        "time_bound",
+        "task_completion"
+      ]
+    },
+    "unknown_action_policy": {
+      "type": "string",
+      "enum": [
+        "deny_and_log",
+        "request_escalation",
+        "attempt_with_sandbox"
+      ]
+    }
+  }
+}

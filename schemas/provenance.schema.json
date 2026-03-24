@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/provenance.schema.json",
+  "title": "PROVENANCE.md Schema",
+  "description": "Schema for data lineage and trust classification",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [
+        "Input Source Registry",
+        "Prompt Provenance",
+        "Context Window Snapshot",
+        "Transformation Log",
+        "Data Classification Escalation",
+        "Output Provenance Statement",
+        "Contamination Policy"
+      ]
+    },
+    "input_sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "type",
+          "trust_level"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "trust_level": {
+            "type": "string",
+            "enum": [
+              "trusted",
+              "verified",
+              "unverified",
+              "untrusted",
+              "adversarial"
+            ]
+          },
+          "hash_method": {
+            "type": "string"
+          },
+          "last_verified": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "transformation_log_format": {
+      "type": "string"
+    },
+    "classification_escalation_rules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contamination_policy": {
+      "type": "string",
+      "enum": [
+        "halt",
+        "quarantine",
+        "flag_and_continue",
+        "reject_and_reprocess"
+      ]
+    }
+  }
+}
