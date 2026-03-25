@@ -24,6 +24,7 @@ does, and who it is.
 > **TotalMarkdown.ai** (the markdown-native workspace for agent configuration) &
 > **TotalAgents.ai** (the markdown-native agent bundle marketplace)
 > are currently in development.
+> 
 > ⭐ Star this repo to follow progress.
 
 ---
