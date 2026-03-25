@@ -65,7 +65,7 @@ deployments require.
 
 ---
 
-## What Is This?
+## What Is agent-md-specs?
 
 agent-md-specs is a proposed open standard library of 178 Markdown
 specifications for AI agent configuration. It defines a declarative
