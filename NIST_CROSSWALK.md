@@ -115,6 +115,17 @@ not a file-based runtime system.
 | INTENT.md | Pre-action declaration evaluated against policy before execution | Implicit trust zone boundary |
 | SESSION.md | Ephemeral credential scope prevents lateral movement | Microsegmentation boundary |
 
+### 8. Shared Memory and Context Security
+> Addresses OWASP ASI06 (Memory Poisoning) — peer-reviewed by NIST
+> and cited in the NIST CAISI RFI on AI Agent Security as
+> "memory management vulnerabilities"
+
+| Spec | What It Provides | Threat Addressed |
+|------|-----------------|-----------------|
+| SHAREDCONTEXT.md | Governance framework for multi-agent shared memory — access control, schema, retention, inheritance across org hierarchy | Unauthorized memory access, context sprawl |
+| MEMORYSAFETY.md | Defense against memory poisoning, cross-session contamination, and instruction injection via stored entries | OWASP ASI06, ASI04, ASI01 |
+| MEMORY.md | Individual agent memory with scope declaration, shared context integration, and classification enforcement | Memory leakage, staleness, over-sharing |
+
 ---
 
 ## NIST AI Risk Management Framework (AI RMF 1.0) Mapping
@@ -194,6 +205,8 @@ LEASTPRIVILEGE.md  -> What is it allowed to do right now?
 INTENT.md          -> What does it intend to do?
 PROMPTSHIELD.md    -> Is the input safe to act on?
 PROVENANCE.md      -> Where did the data come from?
+SHAREDCONTEXT.md   -> Is the shared memory trustworthy?
+MEMORYSAFETY.md    -> Has the memory been poisoned or tampered with?
      [ACTION TAKEN]
 AUDITTRAIL.md      -> What happened, provably?
 ENFORCEMENT.md     -> Can we verify all of the above?

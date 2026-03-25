@@ -2,13 +2,13 @@
 
 > *A vocabulary for AI agency.*
 
-A proposed open standard library of **174 file type specifications** for AI agent
+A proposed open standard library of **176 file type specifications** for AI agent
 configuration — covering every dimension of what an agent is, what it
 does, and who it is.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Specs](https://img.shields.io/badge/specs-174-blue)](./INDEX.md)
-[![Volumes](https://img.shields.io/badge/volumes-14-purple)](./INDEX.md)
+[![Specs](https://img.shields.io/badge/specs-176-blue)](./INDEX.md)
+[![Volumes](https://img.shields.io/badge/volumes-15-purple)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -56,7 +56,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs proposes a vocabulary for all of it.**
 
-174 file types. 14 volumes. 17 categories. 39 Core + 135 Extended.
+176 file types. 15 volumes. 17 categories. 42 Core + 134 Extended.
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
@@ -92,7 +92,7 @@ Each of these solves the same problem: giving agents structured context
 via human-readable Markdown files. But each invented its own file name,
 its own structure, and its own vocabulary.
 
-**agent-md-specs aims to unify this.** We propose 174 file types covering every
+**agent-md-specs aims to unify this.** We propose 176 file types covering every
 dimension an agent needs to express — from the project instructions that
 AGENTS.md handles, to the identity, governance, compliance, and
 accountability documentation that production agents also need.
@@ -180,7 +180,7 @@ flow through APIs, logs, and policy engines, not Markdown files on disk.
 
 ## Core Specs (Recommended for All Production Agents)
 
-The 39 Core specs cover the essential dimensions every production agent should define.
+The 42 Core specs cover the essential dimensions every production agent should define.
 Start here. Add Extended specs as your needs grow.
 
 | Spec | Category | What it defines |
@@ -224,8 +224,11 @@ Start here. Add Extended specs as your needs grow.
 | AUDITTRAIL.md | Compliance | Tamper-proof non-repudiation action records |
 | PROVENANCE.md | Compliance | Data lineage and trust classification |
 | SESSION.md | Lifecycle | Ephemeral task-scoped identity and credentials |
+| MEMORY.md | Cognitive | Individual memory with scope, classification, shared context integration |
+| SHAREDCONTEXT.md | Coordination | Multi-agent shared memory pool governance |
+| MEMORYSAFETY.md | Security | Memory poisoning defense and integrity verification |
 
-→ See [INDEX.md](INDEX.md) for the complete list of all 174 specs including Extended tier.
+→ See [INDEX.md](INDEX.md) for the complete list of all 176 specs including Extended tier.
 
 ---
 
@@ -254,14 +257,14 @@ Each level has its own spec. Each spec has its own `.dev` domain.
 
 ## Spec Categories
 
-174 specs across 17 categories:
+176 specs across 17 categories:
 
 | Category | Count | What lives here |
 |----------|------:|----------------|
 | [Business](./specs/business/) | 9 | BRAND, COMPETITIVE, EXAMPLES, HIREME, MARKETING, MOAT, PITCH, SALES, SPECIALSAUCE |
 | [Cognitive](./specs/cognitive/) | 9 | BELIEFS, CONFESSION, EXPERTISE, INSTINCT, JOURNAL, LEARNING, MEMORY, PHILOSOPHY, TRAINING |
 | [Compliance](./specs/compliance/) | 11 | AUDITTRAIL, CERTIFICATIONS, COMPLIANCE, GDPR, INSURANCE, LICENSE, PII, PRIVACY, PROVENANCE, REGULATIONS, SECURITY |
-| [Coordination](./specs/coordination/) | 8 | COLLABORATE, CREW, HANDSHAKE, PROTOCOL, ROSTER, SHARE, SWARM, TEAM |
+| [Coordination](./specs/coordination/) | 9 | COLLABORATE, CREW, HANDSHAKE, PROTOCOL, ROSTER, SHARE, SHAREDCONTEXT, SWARM, TEAM |
 | [Economic](./specs/economic/) | 4 | CV, OWNER, PRICING, WALLET |
 | [Governance](./specs/governance/) | 19 | BUDGET, CENSOR, DELEGATION, ENFORCEMENT, ESCALATION, GUARDRAILS, ICE, IDENTITY, INHERIT, INTENT, LEASTPRIVILEGE, LIMITS, OVERRIDE, PANIC, PERMISSIONS, POLICY, QUOTA, RULES, VERSIONING |
 | [Identity](./specs/identity/) | 20 | ALIASES, ASSUMPTIONS, CHANGELOG, CHANNELS, CONTACT, GLOSSARY, ID, KRYPTONITE, MANIFESTO, OFFERING, ONBOARDING, PERSONA, PREFERENCES, QUIRKS, REPUTATION, SEEKING, SIGNATURE, SOUL, VOICE, WHOAMI |
@@ -272,7 +275,7 @@ Each level has its own spec. Each spec has its own `.dev` domain.
 | [Process](./specs/process/) | 5 | BLOCKERS, DEADLINES, GOALS, SOP, WORKFLOW |
 | [Quality](./specs/quality/) | 7 | EVAL, FEEDBACK, KPI, PERFORMANCE, TESTING, TESTSCORES, VALIDATION |
 | [Regulatory](./specs/regulatory/) | 15 | AML, CCPA, COPPA, DORA, EUAIACT, FERPA, HIPAA, ISO27001, LGPD, NIS2, NISTAIRF, PCIDSS, PDPA, PIPEDA, SOC2 |
-| [Security](./specs/security/) | 6 | ACCESS, ATTESTATION, PROMPTSHIELD, SANDBOX, SECRETS, VAULT |
+| [Security](./specs/security/) | 7 | ACCESS, ATTESTATION, MEMORYSAFETY, PROMPTSHIELD, SANDBOX, SECRETS, VAULT |
 | [Social](./specs/social/) | 7 | AWARDS, COLLEAGUES, CONNECTIONS, EASTEREGG, REVIEWS, SOCIALS, TRIVIA |
 | [Technical](./specs/technical/) | 17 | A2A, API, CLI, DATA, DEPENDENCIES, ENV, EVENTS, INPUT, INTEGRATION, MCP, MODEL, NETWORK, OUTPUT, PROMPTS, REPO, TOOLS, VERSION |
 
@@ -358,7 +361,7 @@ and **goose** (agent framework). Together these form the infrastructure layer �
 how agents connect to tools and receive project-specific instructions.
 
 **agent-md-specs aims to be the vocabulary layer** — everything an agent needs to
-express about itself beyond task instructions. The 174 specs here are
+express about itself beyond task instructions. The 176 specs here are
 deliberately out of AAIF scope: personality, hiring, financial identity,
 compliance documentation, lifecycle rituals, competitive positioning.
 
@@ -367,7 +370,7 @@ These are complementary layers, not competing standards:
 ```
 Infrastructure layer:   AGENTS.md  +  MCP  +  goose   (AAIF)
         ↕
-Vocabulary layer:    agent-md-specs (174 specs)    (this repo)
+Vocabulary layer:    agent-md-specs (176 specs)    (this repo)
 ```
 
 We actively encourage adoption of the most widely-used specs from this
@@ -476,6 +479,24 @@ to NIST AI RMF and NCCoE concept paper requirements.
 → See [examples/nist-nccoe-bundle/](examples/nist-nccoe-bundle/) for
 a complete enterprise agent ("Atlas") configured with all identity
 and accountability specs.
+
+---
+
+## Shared Context & Memory Governance
+
+**Volume 15** addresses the security of shared agent memory — identified
+as a critical concern by NIST CAISI, OWASP Top 10 for Agentic Applications
+(ASI06: Memory Poisoning), and Microsoft's NIST-mapped agent security framework.
+
+In multi-agent systems, agents share persistent context that grows as
+work proceeds. Later agents build on earlier conclusions. This creates
+a powerful coordination mechanism — and a critical attack surface.
+
+| Spec | What It Governs |
+|------|----------------|
+| SHAREDCONTEXT.md | Who can read/write shared memory, what format entries take, how long they persist, how context inherits across the org hierarchy |
+| MEMORYSAFETY.md | Defenses against memory poisoning, cross-session contamination, instruction injection via stored entries, and cascading poisoning |
+| MEMORY.md | Individual agent memory with scope declaration, shared context integration, and classification enforcement |
 
 ---
 

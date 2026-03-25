@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/memorysafety.schema.json",
+  "title": "MEMORYSAFETY.md Schema",
+  "description": "Schema for agent memory security and poisoning defense",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Threat Model",
+        "Input Sanitization",
+        "Poisoning Detection",
+        "Quarantine Procedures",
+        "Cross-Session Isolation",
+        "Memory Integrity Verification",
+        "Classification Enforcement"
+      ]
+    },
+    "threat_model": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["threat", "description"],
+        "properties": {
+          "threat": { "type": "string" },
+          "description": { "type": "string" },
+          "owasp_ref": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "sanitization_rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check", "action_on_fail"],
+        "properties": {
+          "check": { "type": "string" },
+          "action_on_fail": {
+            "type": "string",
+            "enum": ["reject", "quarantine", "flag_and_allow", "strip_and_allow"]
+          }
+        }
+      }
+    },
+    "canary_entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["entry_id", "expected_value"],
+        "properties": {
+          "entry_id": { "type": "string" },
+          "expected_value": { "type": "string" },
+          "alert_on_change": { "type": "boolean", "default": true }
+        }
+      }
+    },
+    "quarantine_procedure": {
+      "type": "string",
+      "enum": ["quarantine_and_alert", "halt_all", "log_only"]
+    },
+    "integrity_method": {
+      "type": "string",
+      "enum": ["hash_chain", "signed_entries", "both"]
+    }
+  }
+}

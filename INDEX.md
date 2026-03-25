@@ -1,14 +1,14 @@
 # Index
 
-Complete alphabetical index of all 174 agent-md-specs file type specifications.
+Complete alphabetical index of all 176 agent-md-specs file type specifications.
 
 ## Tier Summary
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Core | 39 | Essential specs recommended for all production agents |
-| Extended | 135 | Valuable specs for specific use cases and advanced configurations |
-| **Total** | **174** | |
+| Core | 42 | Essential specs recommended for all production agents |
+| Extended | 134 | Valuable specs for specific use cases and advanced configurations |
+| **Total** | **176** | |
 
 ## Category Summary
 
@@ -17,7 +17,7 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | Business | 9 |
 | Cognitive | 9 |
 | Compliance | 11 |
-| Coordination | 8 |
+| Coordination | 9 |
 | Economic | 4 |
 | Governance | 19 |
 | Identity | 20 |
@@ -28,10 +28,10 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | Process | 5 |
 | Quality | 7 |
 | Regulatory | 15 |
-| Security | 6 |
+| Security | 7 |
 | Social | 7 |
 | Technical | 17 |
-| **Total** | **174** |
+| **Total** | **176** |
 
 ## All Specs
 
@@ -122,7 +122,8 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | MANIFESTO.md | Identity | Extended | manifestomd.dev | Medium | Vol 6 | [specs/identity/MANIFESTO.md](specs/identity/MANIFESTO.md) |
 | MARKETING.md | Business | Extended | marketingmd.dev | High | Vol 1 | [specs/business/MARKETING.md](specs/business/MARKETING.md) |
 | MCP.md | Technical | Core | mcpmd.dev | High | Vol 2 | [specs/technical/MCP.md](specs/technical/MCP.md) |
-| MEMORY.md | Cognitive | Extended | memorymd.dev | High | Vol 6 | [specs/cognitive/MEMORY.md](specs/cognitive/MEMORY.md) |
+| MEMORY.md | Cognitive | Core | memorymd.dev | High | Vol 6 | [specs/cognitive/MEMORY.md](specs/cognitive/MEMORY.md) |
+| MEMORYSAFETY.md | Security | Core | memorysafetymd.dev | Very High | Vol 15 | [specs/security/MEMORYSAFETY.md](specs/security/MEMORYSAFETY.md) |
 | MIGRATION.md | Operations | Extended | migrationmd.dev | Medium | Vol 2 | [specs/operations/MIGRATION.md](specs/operations/MIGRATION.md) |
 | MISSION.md | Organizational Identity | Extended | missionmd.dev | High | Vol 10 | [specs/organizational/MISSION.md](specs/organizational/MISSION.md) |
 | MOAT.md | Competitive/Strategic | Extended | moatmd.dev | High | Vol 11 | [specs/business/MOAT.md](specs/business/MOAT.md) |
@@ -182,6 +183,7 @@ Complete alphabetical index of all 174 agent-md-specs file type specifications.
 | SESSION.md | Lifecycle | Core | sessionmd.dev | High | Vol 14 | [specs/lifecycle/SESSION.md](specs/lifecycle/SESSION.md) |
 | SETUP.md | Operations | Extended | setupmd.dev | High | Vol 12 | [specs/operations/SETUP.md](specs/operations/SETUP.md) |
 | SHARE.md | Coordination | Extended | sharemd.dev | Medium | Vol 2 | [specs/coordination/SHARE.md](specs/coordination/SHARE.md) |
+| SHAREDCONTEXT.md | Coordination | Core | sharedcontextmd.dev | Very High | Vol 15 | [specs/coordination/SHAREDCONTEXT.md](specs/coordination/SHAREDCONTEXT.md) |
 | SIGNATURE.md | Identity | Extended | signaturemd.dev | Medium | Vol 8 | [specs/identity/SIGNATURE.md](specs/identity/SIGNATURE.md) |
 | SLA.md | Operations | Core | slamd.dev | High | Vol 1 | [specs/operations/SLA.md](specs/operations/SLA.md) |
 | SLEEP.md | Lifecycle | Extended | sleepmd.dev | High | Vol 7 | [specs/lifecycle/SLEEP.md](specs/lifecycle/SLEEP.md) |

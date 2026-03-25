@@ -7,7 +7,7 @@ priority: High
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
-tier: extended
+tier: core
 ---
 
 # MEMORY.md
@@ -76,6 +76,61 @@ When this file exceeds [N] characters:
 ## Memory Archive
 Older memory condensed into: memory-archive/[YYYY-MM].md
 ```
+
+## Memory Scope Declaration
+
+Every agent must declare the scope of its memory:
+
+```yaml
+memory_scope: individual | team | crew | org | global
+shared_context_ref: [path to SHAREDCONTEXT.md if scope > individual]
+```
+
+- **individual**: Memory is private to this agent. Not shared.
+- **team/crew/org/global**: Agent participates in a shared context pool.
+  Must reference the applicable SHAREDCONTEXT.md file.
+
+## Shared Context Integration
+
+How this agent's individual memory interacts with shared context:
+
+### Reading from Shared Context
+- Which shared context entries are loaded at session start
+  (reference: SESSION.md inherited configuration)
+- How shared context entries are merged with individual memory
+- Conflict resolution: if individual memory contradicts shared context,
+  which takes precedence? (default: shared context for facts,
+  individual for preferences/learned behaviors)
+
+### Writing to Shared Context
+- What types of individual memory entries are eligible for promotion
+  to shared context (e.g., confirmed facts, not speculative observations)
+- Promotion criteria: minimum confidence threshold, human approval
+  required, automatic for certain entry types
+- Must comply with MEMORYSAFETY.md write gateway sanitization
+
+## Memory Classification
+
+Every memory entry carries a classification level:
+- **public**: Can be shared with any agent or external system
+- **internal**: Can be shared within the organization only
+- **confidential**: Can be shared only with agents at same or higher clearance
+- **restricted**: Cannot be shared — individual memory only
+
+Classification must be assigned at write time and cannot be downgraded
+without human approval (via ESCALATION.md).
+
+## Destruction Policy
+
+Aligned with SESSION.md destruction policy:
+- Session-scoped memories: destroyed when session ends
+- Persistent individual memories: retained across sessions,
+  subject to TTL and retention policy
+- Shared context entries: governed by SHAREDCONTEXT.md retention policy,
+  survive individual session destruction
+- On agent decommissioning (LEGACY.md): individual memories are archived
+  or destroyed per retention policy; shared context entries persist
+  (they belong to the team/org, not the agent)
 
 ---
 

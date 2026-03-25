@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/sharedcontext.schema.json",
+  "title": "SHAREDCONTEXT.md Schema",
+  "description": "Schema for multi-agent shared memory pool governance",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Shared Context Pool",
+        "Access Control Matrix",
+        "Memory Schema",
+        "Retention Policy",
+        "Inheritance Rules",
+        "Synchronization",
+        "Integration with Individual Memory"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "enum": ["team", "crew", "swarm", "org", "global"]
+    },
+    "scope_ref": {
+      "type": "string",
+      "description": "Reference to TEAM.md, CREW.md, or ORG.md that owns this pool"
+    },
+    "access_control": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["agent", "read", "write"],
+        "properties": {
+          "agent": { "type": "string" },
+          "read": { "type": "boolean" },
+          "write": { "type": "boolean" },
+          "delete": { "type": "boolean", "default": false },
+          "admin": { "type": "boolean", "default": false },
+          "delegation_ref": { "type": "string" }
+        }
+      },
+      "minItems": 1
+    },
+    "memory_schema": {
+      "type": "object",
+      "required": ["entry_id", "source_agent", "timestamp", "entry_type", "content"],
+      "properties": {
+        "entry_id": { "type": "string", "format": "uuid" },
+        "source_agent": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "entry_type": {
+          "type": "string",
+          "enum": ["fact", "observation", "decision", "instruction", "alert"]
+        },
+        "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "classification": {
+          "type": "string",
+          "enum": ["public", "internal", "confidential", "restricted"]
+        },
+        "ttl": { "type": "string" },
+        "content": { "type": "string" },
+        "provenance": { "type": "string" },
+        "supersedes": { "type": ["string", "null"] }
+      }
+    },
+    "retention": {
+      "type": "object",
+      "properties": {
+        "default_ttl": { "type": "object" },
+        "max_size": { "type": "string" },
+        "eviction_strategy": {
+          "type": "string",
+          "enum": ["oldest_first", "lowest_confidence_first", "expired_only", "manual_only"]
+        },
+        "archive_evicted": { "type": "boolean", "default": true }
+      }
+    },
+    "inheritance": {
+      "type": "object",
+      "properties": {
+        "override_policy": {
+          "type": "string",
+          "enum": ["no_override", "with_justification", "unrestricted"],
+          "default": "no_override"
+        },
+        "conflict_resolution": {
+          "type": "string",
+          "enum": ["timestamp", "confidence", "delegation_authority"]
+        }
+      }
+    },
+    "sync": {
+      "type": "object",
+      "properties": {
+        "frequency": {
+          "type": "string",
+          "enum": ["real_time", "batch", "on_demand"]
+        },
+        "consistency_model": {
+          "type": "string",
+          "enum": ["eventual", "strong", "causal"]
+        }
+      }
+    }
+  }
+}
