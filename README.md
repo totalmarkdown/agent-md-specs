@@ -17,6 +17,7 @@
 &nbsp;·&nbsp; [JSON Schemas](./schemas/)
 &nbsp;·&nbsp; [Spec Lifecycle](./SPEC_LIFECYCLE.md)
 &nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
+&nbsp;·&nbsp; [NIST Reviewer Guide](./NIST_SUBMISSION_GUIDE.md)
 
 ---
 
