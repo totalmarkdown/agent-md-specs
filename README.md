@@ -57,7 +57,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs proposes a vocabulary for all of it.**
 
-178 file types. 16 volumes. 17 categories. 44 Core + 134 Extended.
+178 file types. 16 volumes. 17 categories. 46 Core + 132 Extended.
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
@@ -181,7 +181,7 @@ flow through APIs, logs, and policy engines, not Markdown files on disk.
 
 ## Core Specs (Recommended for All Production Agents)
 
-The 44 Core specs cover the essential dimensions every production agent should define.
+The 46 Core specs cover the essential dimensions every production agent should define.
 Start here. Add Extended specs as your needs grow.
 
 | Spec | Category | What it defines |

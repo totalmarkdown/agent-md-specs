@@ -1,11 +1,11 @@
-name: Sync SEEKING.md to canonical repo
+name: Sync DELEGATION.md to canonical repo
 
 on:
   push:
     branches:
       - main
     paths:
-      - 'specs/identity/SEEKING.md'
+      - 'specs/governance/DELEGATION.md'
 
 jobs:
   sync:
@@ -18,7 +18,7 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.SYNC_TOKEN }}
-          commit-message: 'sync: update SEEKING.md from agent-md-specs'
+          commit-message: 'sync: update DELEGATION.md from agent-md-specs'
           title: 'sync: update from agent-md-specs'
           body: |
             Automated sync from agent-md-specs repository.

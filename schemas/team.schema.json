@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/team.schema.json",
+  "title": "TEAM.md Schema",
+  "description": "Schema for multi-agent team coordination configuration",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Members", "Coordination"]
+    },
+    "members": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["agent_id", "role"],
+        "properties": {
+          "agent_id": { "type": "string" },
+          "role": { "type": "string" },
+          "whoami_ref": { "type": "string" }
+        }
+      },
+      "minItems": 2
+    },
+    "coordination_mode": {
+      "type": "string",
+      "enum": ["sequential", "parallel", "event_driven", "hierarchical"]
+    },
+    "handoff_protocol": { "type": "string" },
+    "shared_context_ref": { "type": "string" }
+  }
+}

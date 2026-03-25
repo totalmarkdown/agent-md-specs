@@ -2,6 +2,36 @@
 
 All notable changes to agent-md-specs are documented here.
 
+## [1.1.0] — 2026-03-26
+
+### Added
+- Vol 15: Shared Context & Memory Governance
+  - SHAREDCONTEXT.md — multi-agent shared memory pool governance
+  - MEMORYSAFETY.md — memory poisoning defense and integrity verification
+  - MEMORY.md upgraded to Core tier with scope declaration
+- Vol 16: Resilience & Consent
+  - CIRCUITBREAKER.md — failure containment and cascading prevention
+  - CONSENT.md — user consent lifecycle (GDPR, CCPA, EU AI Act)
+- JSON Schemas for all Vol 15-16 specs + expanded schema coverage
+- Templates for top 23 specs
+- Atlas example bundle updated with Vol 15-16 specs
+- Static vs Runtime distinction in README and NIST_CROSSWALK.md
+- Scope Boundary sections in Vol 14 governance specs
+- SPEC_LIFECYCLE.md — formal Draft → Stable progression
+- SECURITY.md — vulnerability reporting policy
+- READMEs added to all spec category directories
+- READMEs added to all example bundles
+- Standalone repos restructured (10 repos aligned to top specs)
+
+### Fixed
+- All broken cross-references resolved
+- Frontmatter consistency across all 178 specs
+- Schema category enum expanded to match all specs
+- All 5 example bundles pass validator with 0 errors
+- Standalone repos updated to 178 count
+- README softened to "proposed standard"
+- NIST_CROSSWALK.md enforcement mapping expanded with ZTA references
+
 ## [1.0.0] — 2026-03-25
 
 ### Added

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/guardrails.schema.json",
+  "title": "GUARDRAILS.md Schema",
+  "description": "Schema for AI agent runtime safety boundaries",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Runtime Boundaries", "Content Filtering", "Output Validation"]
+    },
+    "runtime_boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["boundary", "action_on_violation"],
+        "properties": {
+          "boundary": { "type": "string" },
+          "action_on_violation": { "type": "string", "enum": ["block", "warn", "log", "escalate", "halt"] }
+        }
+      }
+    },
+    "content_filters": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "output_validation": {
+      "type": "object",
+      "properties": {
+        "format_check": { "type": "boolean" },
+        "safety_check": { "type": "boolean" },
+        "pii_check": { "type": "boolean" }
+      }
+    }
+  }
+}

@@ -33,21 +33,29 @@ print('Valid!')
 | Schema | Validates | Spec Tier |
 |--------|----------|-----------|
 | frontmatter.schema.json | All specs (shared fields) | All |
+| attestation.schema.json | ATTESTATION.md | Core |
+| audittrail.schema.json | AUDITTRAIL.md | Core |
+| circuitbreaker.schema.json | CIRCUITBREAKER.md | Core |
+| consent.schema.json | CONSENT.md | Core |
+| contact.schema.json | CONTACT.md | Core |
 | delegation.schema.json | DELEGATION.md | Core |
+| enforcement.schema.json | ENFORCEMENT.md | Core |
+| escalation.schema.json | ESCALATION.md | Core |
+| guardrails.schema.json | GUARDRAILS.md | Core |
+| id.schema.json | ID.md | Core |
 | intent.schema.json | INTENT.md | Core |
 | leastprivilege.schema.json | LEASTPRIVILEGE.md | Core |
-| enforcement.schema.json | ENFORCEMENT.md | Core |
-| attestation.schema.json | ATTESTATION.md | Core |
+| limits.schema.json | LIMITS.md | Core |
+| memory.schema.json | MEMORY.md | Core |
+| memorysafety.schema.json | MEMORYSAFETY.md | Core |
+| owner.schema.json | OWNER.md | Core |
+| permissions.schema.json | PERMISSIONS.md | Core |
 | promptshield.schema.json | PROMPTSHIELD.md | Core |
-| audittrail.schema.json | AUDITTRAIL.md | Core |
 | provenance.schema.json | PROVENANCE.md | Core |
 | session.schema.json | SESSION.md | Core |
+| sharedcontext.schema.json | SHAREDCONTEXT.md | Core |
+| team.schema.json | TEAM.md | Core |
 | whoami.schema.json | WHOAMI.md | Core |
-| id.schema.json | ID.md | Extended |
-| limits.schema.json | LIMITS.md | Core |
-| escalation.schema.json | ESCALATION.md | Core |
-| permissions.schema.json | PERMISSIONS.md | Core |
-| contact.schema.json | CONTACT.md | Core |
 
 ## Conformance Levels
 

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/memory.schema.json",
+  "title": "MEMORY.md Schema",
+  "description": "Schema for AI agent individual memory configuration",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Memory Scope Declaration", "Shared Context Integration", "Memory Classification", "Destruction Policy"]
+    },
+    "memory_scope": {
+      "type": "string",
+      "enum": ["individual", "team", "crew", "org", "global"]
+    },
+    "shared_context_ref": { "type": "string" },
+    "classification_levels": {
+      "type": "array",
+      "items": { "type": "string", "enum": ["public", "internal", "confidential", "restricted"] }
+    },
+    "retention_policy": {
+      "type": "object",
+      "properties": {
+        "session_scoped_ttl": { "type": "string" },
+        "persistent_ttl": { "type": "string" },
+        "max_entries": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

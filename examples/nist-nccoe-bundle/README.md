@@ -1,69 +1,63 @@
----
-bundle_name: "nist-nccoe-bundle"
-agent_name: "Atlas"
-version: "2.1.0"
-org: "Acme Corp"
-spec_profile: "nist-nccoe-identity-authorization"
-created: "2025-11-01"
-updated: "2026-03-15"
----
+# Example Bundle: Atlas — Enterprise Financial Agent (NIST-Aligned)
 
-# Atlas -- NIST NCCoE Agent Identity & Authorization Bundle
+This bundle demonstrates how agent-md-specs configures a production
+financial analysis agent with full NIST NCCoE alignment, including
+the complete accountability chain from human delegation to
+tamper-proof audit trail.
 
-## Overview
+## Why This Bundle Matters
 
-This bundle demonstrates a production deployment of the agent-md specification
-suite applied to a real enterprise use case: an AI-powered financial analysis
-agent operating under strict regulatory compliance requirements.
+This is the reference example for the NIST NCCoE submission. It shows
+how core specs work together to govern a real enterprise agent
+operating under strict regulatory requirements (SOX, GDPR, SOC2).
 
-**Atlas** is Acme Corp's financial analysis agent, built on Claude Sonnet 4 and
-deployed on Acme's private cloud infrastructure. It generates quarterly financial
-reports and forecasts for the CFO's office, operating under SOX, GDPR, and SOC2
-compliance obligations.
+## Agent Profile
 
-## Purpose
+- **Name:** Atlas v2.1
+- **Role:** Financial analysis agent
+- **Organization:** Acme Corp (fictional)
+- **Delegated by:** CFO Sarah Chen
+- **Model:** Claude Sonnet 4
+- **Purpose:** Generate quarterly financial reports and forecasts
 
-This example bundle shows how the agent-md specs map to the NIST National
-Cybersecurity Center of Excellence (NCCoE) framework for AI agent identity,
-authorization, and governance. Each file in this bundle corresponds to a spec
-in the agent-md standard, populated with realistic enterprise content rather
-than placeholder templates.
+## Files in This Bundle
 
-## Specs Included
+| File | What It Configures | NIST Question |
+|------|-------------------|---------------|
+| WHOAMI.md | Agent identity | Identification |
+| DELEGATION.md | Authority chain from CFO | Authorization (delegation) |
+| ATTESTATION.md | SPIFFE/X.509 verification | Authentication |
+| SESSION.md | 30-min task boundary | Identification (ephemeral) |
+| LEASTPRIVILEGE.md | Zero-trust privileges | Authorization (least privilege) |
+| INTENT.md | Pre-action declarations | Authorization (intent) |
+| PROMPTSHIELD.md | Injection defenses | Prompt injection |
+| PROVENANCE.md | Data source lineage | Data flow tracking |
+| SHAREDCONTEXT.md | Team shared memory | Memory governance |
+| MEMORYSAFETY.md | Memory poisoning defense | Memory security |
+| AUDITTRAIL.md | Hash-chain audit log | Auditing/non-repudiation |
+| CIRCUITBREAKER.md | Failure containment | Resilience |
+| CONSENT.md | Employee consent record | Compliance (GDPR) |
+| ESCALATION.md | 4-level escalation path | Human-in-the-loop |
+| LIMITS.md | Hard stops | Safety boundaries |
+| PERMISSIONS.md | Resource access control | Authorization |
+| ENFORCEMENT.md | Compliance verification | Cross-cutting |
+| SOUL.md | Professional persona | Agent behavior |
 
-| File | Spec | Purpose |
-|------|------|---------|
-| SOUL.md | Core | Personality, values, and behavioral norms |
-| WHOAMI.md | Core | Machine-readable identity card |
-| DELEGATION.md | Authorization | Authority chain and scope |
-| ATTESTATION.md | Identity | Cryptographic identity binding |
-| SESSION.md | Runtime | Session lifecycle and isolation |
-| LEASTPRIVILEGE.md | Authorization | Minimal permissions model |
-| INTENT.md | Runtime | Action declaration and approval |
-| PROMPTSHIELD.md | Security | Input validation and injection defense |
-| PROVENANCE.md | Trust | Data source classification and lineage |
-| AUDITTRAIL.md | Compliance | Immutable logging and retention |
-| ESCALATION.md | Governance | Human-in-the-loop tiers |
-| LIMITS.md | Governance | Hard behavioral constraints |
-| PERMISSIONS.md | Authorization | Granular access control list |
-| ENFORCEMENT.md | Runtime | Policy enforcement mechanisms |
+## The Accountability Chain in Action
 
-## Compliance Mapping
-
-- **SOX Section 302/404:** AUDITTRAIL.md, PROVENANCE.md, LIMITS.md
-- **GDPR Articles 13-15, 22:** SESSION.md, PROVENANCE.md, AUDITTRAIL.md
-- **SOC2 Trust Criteria:** ATTESTATION.md, LEASTPRIVILEGE.md, ENFORCEMENT.md
-
-## How to Use This Bundle
-
-1. Review WHOAMI.md and SOUL.md to understand Atlas's identity and behavior.
-2. Review DELEGATION.md and PERMISSIONS.md to understand its authority scope.
-3. Review ENFORCEMENT.md to understand how policies are enforced at runtime.
-4. Use this bundle as a reference when building your own agent-md deployment.
-
-## Contact
-
-- **Agent Owner:** CFO's Office, Acme Corp
-- **Compliance Officer:** James Park, james.park@acme.corp
-- **Engineering Lead:** Maria Gonzalez, maria.gonzalez@acme.corp
-- **Security Review:** Acme InfoSec Team, infosec@acme.corp
+This bundle implements the complete accountability chain:
+1. CFO Sarah Chen delegates read-only financial analysis authority
+2. Employee consent covers AI-assisted analysis (form FIN-AI-001)
+3. Atlas identifies as spiffe://acme.corp/finance/agents/atlas
+4. X.509 certificate proves identity with 90-day rotation
+5. Session scoped to 30 minutes, 50 actions max
+6. Baseline: read financial databases only
+7. Intent: "read Q3 revenue data" (confidence 0.95)
+8. Input scanned for SQL injection and financial-domain attacks
+9. Data sourced from Bloomberg (trusted) and internal DB (trusted)
+10. Shared context validated, canary entries intact
+11. Memory sanitization gateway active
+12. [ACTION: generate report]
+13. Circuit breaker monitoring (3 consecutive failures = halt)
+14. Hash-chain audit entry signed with Atlas's X.509 cert
+15. Enforcement verified, no drift detected

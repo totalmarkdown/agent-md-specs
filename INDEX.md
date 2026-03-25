@@ -6,8 +6,8 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Core | 44 | Essential specs recommended for all production agents |
-| Extended | 134 | Valuable specs for specific use cases and advanced configurations |
+| Core | 46 | Essential specs recommended for all production agents |
+| Extended | 132 | Valuable specs for specific use cases and advanced configurations |
 | **Total** | **178** | |
 
 ## Category Summary
@@ -100,7 +100,7 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | HIPAA.md | Regulatory Compliance | Extended | hipaamd.dev | High | Vol 9 | [specs/regulatory/HIPAA.md](specs/regulatory/HIPAA.md) |
 | HIREME.md | Business | Core | hiremd.dev | High | Vol 4 | [specs/business/HIREME.md](specs/business/HIREME.md) |
 | ICE.md | Safety | Core | icemd.dev | High | Vol 7 | [specs/governance/ICE.md](specs/governance/ICE.md) |
-| ID.md | Identity | Extended | idmd.dev | High | Vol 6 | [specs/identity/ID.md](specs/identity/ID.md) |
+| ID.md | Identity | Core | idmd.dev | High | Vol 6 | [specs/identity/ID.md](specs/identity/ID.md) |
 | IDENTITY.md | Governance | Extended | identitymd.dev | High | Vol 2 | [specs/governance/IDENTITY.md](specs/governance/IDENTITY.md) |
 | INHERIT.md | Governance | Extended | inheritmd.dev | High | Vol 13 | [specs/governance/INHERIT.md](specs/governance/INHERIT.md) |
 | INPUT.md | Technical/Interface | Core | inputmd.dev | Very High | Vol 11 | [specs/technical/INPUT.md](specs/technical/INPUT.md) |
@@ -144,7 +144,7 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | ORIGIN.md | Lore | Extended | originmd.dev | Medium | Vol 8 | [specs/personality/ORIGIN.md](specs/personality/ORIGIN.md) |
 | OUTPUT.md | Technical/Interface | Core | outputmd.dev | Very High | Vol 11 | [specs/technical/OUTPUT.md](specs/technical/OUTPUT.md) |
 | OVERRIDE.md | Governance | Extended | overridemd.dev | High | Vol 13 | [specs/governance/OVERRIDE.md](specs/governance/OVERRIDE.md) |
-| OWNER.md | Economic | Extended | ownermd.dev | High | Vol 4 | [specs/economic/OWNER.md](specs/economic/OWNER.md) |
+| OWNER.md | Economic | Core | ownermd.dev | High | Vol 4 | [specs/economic/OWNER.md](specs/economic/OWNER.md) |
 | PANIC.md | Safety | Extended | panicmd.dev | High | Vol 7 | [specs/governance/PANIC.md](specs/governance/PANIC.md) |
 | PCIDSS.md | Regulatory Compliance | Extended | pcidssmd.dev | High | Vol 9 | [specs/regulatory/PCIDSS.md](specs/regulatory/PCIDSS.md) |
 | PDPA.md | Regulatory Compliance | Extended | pdpamd.dev | Medium | Vol 9 | [specs/regulatory/PDPA.md](specs/regulatory/PDPA.md) |
@@ -215,6 +215,12 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | WALLET.md | Economic | Core | walletmd.dev | High | Vol 4 | [specs/economic/WALLET.md](specs/economic/WALLET.md) |
 | WHOAMI.md | Identity | Core | whoamimd.dev | High | Vol 3 | [specs/identity/WHOAMI.md](specs/identity/WHOAMI.md) |
 | WORKFLOW.md | Process | Extended | workflowmd.dev | High | Vol 1 | [specs/process/WORKFLOW.md](specs/process/WORKFLOW.md) |
+
+---
+
+**Note on domains:** The domain column lists reserved namespace
+identifiers for each spec. Domain registration is in progress
+for Core tier specs. Not all domains have been purchased.
 
 ---
 

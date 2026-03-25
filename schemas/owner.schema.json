@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/owner.schema.json",
+  "title": "OWNER.md Schema",
+  "description": "Schema for AI agent ownership and economic identity",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": ["Owner Identity", "Licensing", "Revenue Model"]
+    },
+    "owner": {
+      "type": "object",
+      "required": ["name", "organization"],
+      "properties": {
+        "name": { "type": "string" },
+        "organization": { "type": "string" },
+        "contact": { "type": "string" }
+      }
+    },
+    "license_type": {
+      "type": "string",
+      "enum": ["proprietary", "open_source", "freemium", "subscription", "pay_per_use"]
+    }
+  }
+}
