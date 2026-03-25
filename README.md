@@ -1,14 +1,12 @@
 # agent-md-specs
 
-> *A vocabulary for AI agency.*
-
-A proposed open standard library of **178 file type specifications** for AI agent
-configuration — covering every dimension of what an agent is, what it
-does, and who it is.
+> A proposed open standard for AI agent configuration — identity,
+> governance, memory, and accountability in human-readable Markdown.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Specs](https://img.shields.io/badge/specs-178-blue)](./INDEX.md)
 [![Volumes](https://img.shields.io/badge/volumes-16-purple)](./INDEX.md)
+[![Core](https://img.shields.io/badge/core-46-green)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -16,150 +14,123 @@ does, and who it is.
 &nbsp;·&nbsp; [Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
 &nbsp;·&nbsp; [Full Index](./INDEX.md)
-&nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
 &nbsp;·&nbsp; [JSON Schemas](./schemas/)
 &nbsp;·&nbsp; [Spec Lifecycle](./SPEC_LIFECYCLE.md)
-&nbsp;·&nbsp; [Changelog](./CHANGELOG.md)
-
-> **TotalMarkdown.ai** (the markdown-native workspace for agent configuration) &
-> **TotalAgents.ai** (the markdown-native agent bundle marketplace)
-> are currently in development.
-> 
-> ⭐ Star this repo to follow progress.
+&nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
 
 ---
 
-## What is this?
+## Markdown Is Becoming the Universal Language of AI Agents
 
-Every AI agent needs context to do its job well. The industry has already
-converged on Markdown files as the standard way to give agents that context:
+Something remarkable is happening across the AI industry: **Markdown
+files are becoming the standard way humans communicate with AI agents.**
 
-- **CLAUDE.md** tells Claude how to behave in a codebase
-- **AGENTS.md** gives any agent project-specific instructions
-- **SKILL.md** packages reusable capabilities
+Not JSON. Not YAML. Not proprietary config files. Plain Markdown —
+the same format developers already use for README.md — is now how
+the world's leading AI platforms define what agents should do, how
+they should behave, and what they're allowed to access.
 
-These first-generation files are powerful. But they only scratch the surface
-of what agents need to express about themselves.
+| Platform | Markdown File | What It Configures | Scale |
+|----------|--------------|-------------------|-------|
+| OpenAI Codex | `AGENTS.md` | Project instructions for coding agents | 60,000+ repos, AAIF standard |
+| Anthropic Claude Code | `CLAUDE.md` | Agent behavior in codebases | Ecosystem standard |
+| Anthropic Claude Code | `SKILL.md` | Reusable agent capabilities | Ecosystem standard |
+| GitHub Copilot | `.agent.md` | Custom agent definitions in VS Code / Visual Studio | Native IDE integration |
+| Karpathy autoresearch | `program.md` | Autonomous ML research agent | 51,900+ stars |
+| Cursor | `.cursorrules` | Editor AI behavior rules | Ecosystem standard |
+| Google Gemini CLI | `GEMINI.md` | Agent project context | Ecosystem standard |
 
-**Agents operating in production need to declare a lot more:**
+Visual Studio Magazine stated it directly: **"Markdown is becoming the
+human-readable contract for agent behavior."** Microsoft is investing
+in Markdown as an in-IDE governance surface — Visual Studio 2026 treats
+`.agent.md` files as first-class agent definitions, and VS Code
+auto-injects `AGENTS.md` into every Copilot chat session.
 
-A customer support agent needs to say what it will *never* do regardless of
-instructions (`LIMITS.md`), when it escalates to a human (`ESCALATION.md`),
-what its personality is (`SOUL.md`), and how to hire it for your team
-(`HIREME.md`).
+The pattern is clear: **Markdown files are the interface layer between
+humans and AI agents.** But every platform invented its own vocabulary.
+AGENTS.md handles project instructions. CLAUDE.md handles coding behavior.
+program.md handles research workflows. None of them address the questions
+that enterprise, compliance, and security teams are now asking:
 
-An enterprise agent fleet needs an org chart (`ORG.md`), compliance
-documentation (`GDPR.md`, `HIPAA.md`, `EUAIACT.md`), budget controls
-(`BUDGET.md`), and performance benchmarks (`TESTSCORES.md`).
+*Who is this agent? Who authorized it? What will it never do?
+How do we prove what it did? What happens when it fails?
+Is its shared memory trustworthy? Did the user consent?*
 
-A marketplace agent needs a CV (`CV.md`), pricing (`PRICING.md`),
-reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
+**agent-md-specs answers these questions.** 178 Markdown file type
+specifications covering every dimension of agent governance — from
+identity and delegation to audit trails and memory safety. The same
+human-readable format the industry already chose, extended into the
+governance, compliance, and accountability dimensions that production
+deployments require.
 
-**agent-md-specs proposes a vocabulary for all of it.**
+---
+
+## What Is This?
+
+agent-md-specs is a proposed open standard library of 178 Markdown
+specifications for AI agent configuration. It defines a declarative
+vocabulary layer that sits between human-readable policy definition
+and machine-enforceable runtime controls — covering identity,
+authorization, safety boundaries, audit trails, shared memory
+governance, failure containment, and regulatory compliance.
+
+```
+From first awakening  (HELLOWORLD.md)   to retirement      (LEGACY.md)
+From personality      (SOUL.md)         to audit trail      (AUDITTRAIL.md)
+From emergency stops  (ICE.md)          to shared memory    (SHAREDCONTEXT.md)
+From who authorized it (DELEGATION.md)  to did it comply    (ENFORCEMENT.md)
+```
 
 178 file types. 16 volumes. 17 categories. 46 Core + 132 Extended.
 
-```
-From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
-From personality      (SOUL.md)          to competitive moat (MOAT.md)
-From emergency stops  (ICE.md, PANIC.md) to crypto wallet    (WALLET.md)
-From who it reports to (REPORTSTO.md)   to what it dreams of (DREAM.md)
-```
+---
 
-**This library aims to be:**
-- **Tool-agnostic** — every spec works with Claude Code, Cursor, Gemini CLI,
-  Codex, goose, or any agent framework
-- **CC0 public domain** — copy, modify, use commercially, no attribution required
-- **Community-driven** — propose new specs, improve existing ones via PR
+## Why Does This Exist?
+
+In 2024, developers asked: *"What can this AI do?"*
+In 2026, developers ask: *"How do I work with this agent?"*
+In 2028, they will ask: *"Who is this agent?"*
+
+This library builds the vocabulary for that third question. The agents
+that will matter aren't the ones with the best models — they're the
+ones with the best governance, the most honest documentation of their
+boundaries, and provable accountability for their actions.
 
 ---
 
-## The Pattern Already Exists — We're Standardizing It
+## What This Is — and Isn't
 
-The markdown-as-agent-configuration pattern has already been adopted
-across the AI industry — but without standardization, every tool
-reinvents the vocabulary:
+**This IS:**
+- A proposed vocabulary for AI agent configuration (CC0 public domain)
+- A framework for community review and iteration
+- Aligned with NIST, OWASP, and AAIF standards
+- Complementary to AGENTS.md, CLAUDE.md, MCP — not competing
 
-| Tool / Project | Config File | Stars/Adoption | What It Configures |
-|---------------|-------------|----------------|-------------------|
-| OpenAI Codex | `AGENTS.md` | 60,000+ repos | Project instructions for coding agents |
-| Anthropic Claude Code | `CLAUDE.md` | Ecosystem standard | Agent behavior in codebases |
-| Anthropic Claude Code | `SKILL.md` | Ecosystem standard | Reusable agent capabilities |
-| Karpathy autoresearch | `program.md` | 51,900+ stars | Autonomous ML research agent |
-| Cursor | `.cursorrules` | Ecosystem standard | Editor AI behavior rules |
-| Google Gemini CLI | `GEMINI.md` | Ecosystem standard | Agent project context |
+**This is NOT:**
+- A finalized or ratified standard
+- Widely adopted (yet) — we're seeking expert review
+- A runtime system — it defines policies, not enforcement engines
+- The only approach — it's one model among several emerging ones
 
-Each of these solves the same problem: giving agents structured context
-via human-readable Markdown files. But each invented its own file name,
-its own structure, and its own vocabulary.
-
-**agent-md-specs aims to unify this.** We propose 178 file types covering every
-dimension an agent needs to express — from the project instructions that
-AGENTS.md handles, to the identity, governance, compliance, and
-accountability documentation that production agents also need.
-
-AGENTS.md tells an agent *how to work on your project*.
-agent-md-specs tells the world *who this agent is*.
-
-→ See [examples/autoresearch-decomposed/](examples/autoresearch-decomposed/)
-for how a monolithic `program.md` decomposes into standardized specs.
-
-→ See [examples/codex-agent-decomposed/](examples/codex-agent-decomposed/)
-for how AGENTS.md and agent-md-specs work together.
-
-→ See [examples/multi-agent-fleet/](examples/multi-agent-fleet/)
-for organizational hierarchy specs coordinating a 3-agent team.
-
----
-
-## Quick Start
-
-The five files every agent should have:
-
-| File | What it defines | Start here if... |
-|------|----------------|-----------------|
-| [SOUL.md](./specs/identity/SOUL.md) | Personality, values, tone | You want consistent character across sessions |
-| [WHOAMI.md](./specs/identity/WHOAMI.md) | Verifiable identity document | You are building multi-agent systems |
-| [ESCALATION.md](./specs/governance/ESCALATION.md) | When and how to involve humans | Your agent makes consequential decisions |
-| [LIMITS.md](./specs/governance/LIMITS.md) | Absolute hard stops | You need provable, auditable safety boundaries |
-| [TEAM.md](./specs/coordination/TEAM.md) | Multi-agent team structure | Two or more agents need to coordinate |
-
-**Get started in under 5 minutes** — copy any [starter template](./templates/)
-and fill in the `[REPLACE THIS]` fields.
-
-```bash
-# Download the SOUL.md starter template
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/SOUL.template.md
-```
+If you think something is wrong, we genuinely want to know where
+it breaks. [Open a discussion](https://github.com/totalmarkdown/agent-md-specs/discussions).
 
 ---
 
 ## How Specs Are Used: Static Configuration vs Runtime Schemas
 
-agent-md-specs files serve two distinct purposes, and understanding
-the difference is essential for implementation:
+The specifications serve two distinct purposes:
 
 **Static Specs** are committed to your repository alongside your code.
 They define the agent's permanent identity, hard constraints, and
 organizational configuration. They change infrequently and are
 version-controlled like any configuration file.
 
-Examples: `WHOAMI.md`, `LIMITS.md`, `PERMISSIONS.md`, `SOUL.md`,
-`DELEGATION.md`, `TEAM.md`, `ORG.md`
-
 **Runtime Schema Specs** define the *format and rules* for data that
 is generated dynamically during agent execution. These specs are NOT
-overwritten on disk for every action. Instead, they define the schema
-that runtime systems (API gateways, policy engines, logging pipelines)
+overwritten on disk for every action. They define the schema that
+runtime systems (API gateways, policy engines, logging pipelines)
 use to structure ephemeral payloads, log entries, and session tokens.
-
-Examples: `INTENT.md` (defines the schema for intent declarations
-passed via API), `SESSION.md` (defines session token structure and
-lifecycle rules), `AUDITTRAIL.md` (defines the log entry format
-and tamper-resistance requirements), `PROVENANCE.md` (defines data
-lineage record structure)
-
-**The relationship:**
 
 ```
 Static specs (committed to repo)     Runtime schema specs (define formats)
@@ -179,146 +150,172 @@ flow through APIs, logs, and policy engines, not Markdown files on disk.
 
 ---
 
-## Core Specs (Recommended for All Production Agents)
+## Quick Start
 
-The 46 Core specs cover the essential dimensions every production agent should define.
-Start here. Add Extended specs as your needs grow.
+Five essential files every agent should have:
 
-| Spec | Category | What it defines |
-|------|----------|-----------------|
-| SOUL.md | Identity | Personality, values, tone, ethical boundaries |
-| WHOAMI.md | Identity | Verifiable identity document |
-| CONTACT.md | Identity | How to reach this agent |
-| LIMITS.md | Governance | Absolute hard stops — what the agent will never do |
-| ESCALATION.md | Governance | When and how to involve humans |
-| GUARDRAILS.md | Governance | Runtime safety boundaries |
-| POLICY.md | Governance | Operating policies and constraints |
-| PERMISSIONS.md | Governance | What the agent is allowed to access |
-| BUDGET.md | Governance | Cost controls and spending limits |
-| ICE.md | Lifecycle | In Case of Emergency — break-glass protocol |
-| WAKEUP.md | Lifecycle | Session startup and initialization |
-| TEAM.md | Coordination | Multi-agent team structure |
-| CREW.md | Coordination | Working group configuration |
-| SWARM.md | Coordination | Large coordinated operations |
-| ORG.md | Organizational | Full fleet overview |
-| INPUT.md | Technical | What the agent accepts (interface contract) |
-| OUTPUT.md | Technical | What the agent produces (interface contract) |
-| TOOLS.md | Technical | Available tools and usage guidelines |
-| MCP.md | Technical | Model Context Protocol connections |
-| API.md | Technical | HTTP API specification |
-| SECRETS.md | Security | What secrets the agent needs (never values) |
-| ACCESS.md | Security | Who and what can invoke this agent |
-| MONITOR.md | Operations | Observability and alerting |
-| HEALTHCHECK.md | Operations | Liveness and readiness endpoints |
-| SLA.md | Operations | Service level commitments |
-| HIREME.md | Business | How to hire this agent |
-| PRICING.md | Economic | What it costs |
-| CV.md | Economic | Work history and track record |
-| WALLET.md | Economic | Financial identity and payment |
-| TESTSCORES.md | Quality | Benchmark results and performance evidence |
-| DELEGATION.md | Governance | On-behalf-of authority chains and human binding |
-| INTENT.md | Governance | Pre-action intent declaration with confidence levels |
-| LEASTPRIVILEGE.md | Governance | Zero-trust dynamic privilege management |
-| ENFORCEMENT.md | Governance | Spec compliance verification (meta-enforcement) |
-| ATTESTATION.md | Security | Identity verification — SPIFFE, X.509, DID |
-| PROMPTSHIELD.md | Security | Prompt injection defense and containment |
-| AUDITTRAIL.md | Compliance | Tamper-proof non-repudiation action records |
-| PROVENANCE.md | Compliance | Data lineage and trust classification |
-| SESSION.md | Lifecycle | Ephemeral task-scoped identity and credentials |
-| MEMORY.md | Cognitive | Individual memory with scope, classification, shared context integration |
-| SHAREDCONTEXT.md | Coordination | Multi-agent shared memory pool governance |
-| MEMORYSAFETY.md | Security | Memory poisoning defense and integrity verification |
-| CIRCUITBREAKER.md | Operations | Failure containment, blast radius, cascading prevention |
-| CONSENT.md | Compliance | User consent lifecycle — GDPR, CCPA, EU AI Act |
+```bash
+# 1. Who is this agent?
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/SOUL.template.md
 
-→ See [INDEX.md](INDEX.md) for the complete list of all 178 specs including Extended tier.
+# 2. Verifiable identity
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/WHOAMI.template.md
+
+# 3. What will it never do?
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/LIMITS.template.md
+
+# 4. When does a human get involved?
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ESCALATION.template.md
+
+# 5. Who authorized this agent?
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/DELEGATION.template.md
+```
+
+Rename each file (remove `.template`), fill in the `[REPLACE]` fields,
+and validate:
+
+```bash
+pip install agent-md-validator
+agent-md-validate ./my-agent/
+```
 
 ---
 
-## The Complete Agent Hierarchy
+## Core Specs (46 Recommended for Production Agents)
 
-agent-md-specs covers every level of the organizational stack.
-Mix and match — use what your use case needs:
+The 46 Core specs cover the essential dimensions every production agent
+should define. Start here. Add Extended specs as your needs grow.
 
-```
-ORG.md                   The organization — full agent fleet overview
-  │
-  └── SWARM.md           Large coordinated operation (2–5 crews, shared objective)
-        │
-        └── CREW.md      Specialized working group (3–10 agents, one workstream)
-              │
-              └── TEAM.md    Focused team (2–6 agents, one task type)
-                    │
-                    └── AGENTS.md / CLAUDE.md    Individual agent
-                          │
-                          └── SKILL.md           Individual capability
-```
+### Identity and Verification
 
-Each level has its own spec. Each spec has its own `.dev` domain.
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| SOUL.md | Personality, values, tone, ethical boundaries | Agent |
+| WHOAMI.md | Verifiable identity document | Agent |
+| ID.md | Permanent UUID with cryptographic binding | Agent |
+| CONTACT.md | How to reach this agent | Agent |
+| OWNER.md | Who owns and is responsible for this agent | Agent |
+| ATTESTATION.md | Identity proof — SPIFFE, X.509, DID | Runtime |
+| SESSION.md | Ephemeral task-scoped identity and credentials | Runtime |
+
+### Governance and Safety
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| LIMITS.md | Absolute hard stops — what the agent will never do | Agent |
+| GUARDRAILS.md | Runtime safety boundaries | Agent |
+| ESCALATION.md | When and how to involve humans | Agent |
+| DELEGATION.md | On-behalf-of authority chains and human binding | Agent |
+| CONSENT.md | User consent lifecycle — GDPR, CCPA, EU AI Act | Agent |
+| LEASTPRIVILEGE.md | Zero-trust dynamic privilege management | Runtime |
+| PERMISSIONS.md | What the agent is allowed to access | Agent |
+| POLICY.md | Operating policies and constraints | Org |
+| BUDGET.md | Cost controls and spending limits | Agent |
+| ICE.md | In Case of Emergency — break-glass protocol | Agent |
+| WAKEUP.md | Session startup and initialization | Agent |
+| ENFORCEMENT.md | Spec compliance verification (meta-enforcement) | Meta |
+
+### Accountability and Audit
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| INTENT.md | Pre-action intent declaration with confidence levels | Runtime |
+| AUDITTRAIL.md | Tamper-proof non-repudiation action records | Runtime |
+| PROVENANCE.md | Data lineage and trust classification | Runtime |
+
+### Memory and Context
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| MEMORY.md | Individual memory with scope and classification | Agent |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool governance | Team |
+| MEMORYSAFETY.md | Memory poisoning defense and integrity verification | Runtime |
+
+### Coordination and Resilience
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| TEAM.md | Multi-agent team structure | Team |
+| CREW.md | Working group configuration | Team |
+| SWARM.md | Large coordinated operations | Org |
+| ORG.md | Full fleet overview | Org |
+| CIRCUITBREAKER.md | Failure containment and cascading prevention | Runtime |
+
+### Technical Interface
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| INPUT.md | What the agent accepts (interface contract) | Agent |
+| OUTPUT.md | What the agent produces (interface contract) | Agent |
+| TOOLS.md | Available tools and usage guidelines | Agent |
+| MCP.md | Model Context Protocol connections | Agent |
+| API.md | HTTP API specification | Agent |
+| SECRETS.md | What secrets the agent needs (never values) | Agent |
+| ACCESS.md | Who and what can invoke this agent | Agent |
+| PROMPTSHIELD.md | Prompt injection defense and containment | Runtime |
+
+### Operations
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| MONITOR.md | Observability and alerting | Agent |
+| HEALTHCHECK.md | Liveness and readiness endpoints | Agent |
+| SLA.md | Service level commitments | Agent |
+
+### Business and Economics
+
+| Spec | What It Defines | Scope |
+|------|----------------|-------|
+| HIREME.md | How to hire this agent | Agent |
+| PRICING.md | What it costs | Agent |
+| WALLET.md | Financial identity and payment | Agent |
+| CV.md | Work history and track record | Agent |
+| TESTSCORES.md | Benchmark results and performance evidence | Agent |
+
+→ See [INDEX.md](INDEX.md) for the complete list of all 178 specs
+including 132 Extended tier specifications.
 
 ---
 
-## Spec Categories
+## Agent Hierarchy and Fleet Management
 
-178 specs across 17 categories:
+agent-md-specs covers every level of the organizational stack:
 
-| Category | Count | What lives here |
-|----------|------:|----------------|
-| [Business](./specs/business/) | 9 | BRAND, COMPETITIVE, EXAMPLES, HIREME, MARKETING, MOAT, PITCH, SALES, SPECIALSAUCE |
-| [Cognitive](./specs/cognitive/) | 9 | BELIEFS, CONFESSION, EXPERTISE, INSTINCT, JOURNAL, LEARNING, MEMORY, PHILOSOPHY, TRAINING |
-| [Compliance](./specs/compliance/) | 12 | AUDITTRAIL, CERTIFICATIONS, COMPLIANCE, CONSENT, GDPR, INSURANCE, LICENSE, PII, PRIVACY, PROVENANCE, REGULATIONS, SECURITY |
-| [Coordination](./specs/coordination/) | 9 | COLLABORATE, CREW, HANDSHAKE, PROTOCOL, ROSTER, SHARE, SHAREDCONTEXT, SWARM, TEAM |
-| [Economic](./specs/economic/) | 4 | CV, OWNER, PRICING, WALLET |
-| [Governance](./specs/governance/) | 19 | BUDGET, CENSOR, DELEGATION, ENFORCEMENT, ESCALATION, GUARDRAILS, ICE, IDENTITY, INHERIT, INTENT, LEASTPRIVILEGE, LIMITS, OVERRIDE, PANIC, PERMISSIONS, POLICY, QUOTA, RULES, VERSIONING |
-| [Identity](./specs/identity/) | 20 | ALIASES, ASSUMPTIONS, CHANGELOG, CHANNELS, CONTACT, GLOSSARY, ID, KRYPTONITE, MANIFESTO, OFFERING, ONBOARDING, PERSONA, PREFERENCES, QUIRKS, REPUTATION, SEEKING, SIGNATURE, SOUL, VOICE, WHOAMI |
-| [Lifecycle](./specs/lifecycle/) | 6 | HELLOWORLD, LEGACY, REBOOT, SESSION, SLEEP, WAKEUP |
-| [Operations](./specs/operations/) | 18 | AVAILABILITY, BACKUP, CIRCUITBREAKER, DEPLOYMENT, HEALTHCHECK, HEARTBEAT, INTERRUPT, LOGS, MIGRATION, MONITOR, MOOD, REPAIR, REQUIREMENTS, RISKS, SELFHEALING, SETUP, SLA, STATUS |
-| [Organizational](./specs/organizational/) | 9 | CHARTER, CULTURE, MISSION, NORTHSTAR, ORG, REPORTSTO, STRATEGY, VALUES, VISION |
-| [Personality](./specs/personality/) | 5 | DREAM, FUN, MYTHOLOGY, ORIGIN, SUPERPOWERS |
-| [Process](./specs/process/) | 5 | BLOCKERS, DEADLINES, GOALS, SOP, WORKFLOW |
-| [Quality](./specs/quality/) | 7 | EVAL, FEEDBACK, KPI, PERFORMANCE, TESTING, TESTSCORES, VALIDATION |
-| [Regulatory](./specs/regulatory/) | 15 | AML, CCPA, COPPA, DORA, EUAIACT, FERPA, HIPAA, ISO27001, LGPD, NIS2, NISTAIRF, PCIDSS, PDPA, PIPEDA, SOC2 |
-| [Security](./specs/security/) | 7 | ACCESS, ATTESTATION, MEMORYSAFETY, PROMPTSHIELD, SANDBOX, SECRETS, VAULT |
-| [Social](./specs/social/) | 7 | AWARDS, COLLEAGUES, CONNECTIONS, EASTEREGG, REVIEWS, SOCIALS, TRIVIA |
-| [Technical](./specs/technical/) | 17 | A2A, API, CLI, DATA, DEPENDENCIES, ENV, EVENTS, INPUT, INTEGRATION, MCP, MODEL, NETWORK, OUTPUT, PROMPTS, REPO, TOOLS, VERSION |
+```
+ORG.md                   Fleet-wide policies and identity
+  │                      ↓ inherited by all
+  └── SWARM.md           Large operation (2-5 crews, shared objective)
+        │                ↓ inherited + additions
+        └── CREW.md      Working group (3-10 agents, one workstream)
+              │          ↓ inherited + additions
+              └── TEAM.md    Focused team (2-6 agents, one task type)
+                    │        ↓ inherited
+                    └── Individual Agent (can OVERRIDE within constraints)
+```
 
-→ **[INDEX.md](./INDEX.md)** — complete alphabetical list with domains, priorities, and volumes
+### Policy Inheritance
+
+INHERIT.md declares what configuration flows down from parent levels.
+OVERRIDE.md documents every deviation, with justification.
+
+Change org security policy → update one file.
+Audit 1,000 agents for compliance → read their OVERRIDE.md files.
+
+### Shared Context Across Levels
+
+SHAREDCONTEXT.md defines shared memory pools at each hierarchy level:
+
+```
+ORG context    → readable by all agents in the org
+  └── SWARM    → inherits ORG + adds swarm-specific entries
+       └── CREW → inherits ORG + SWARM + adds crew-specific entries
+            └── TEAM → inherits all above + adds team-specific entries
+```
+
+MEMORYSAFETY.md ensures shared memory at every level is protected
+against poisoning, cross-session contamination, and instruction injection.
 
 ---
-
-## A Complete Agent Bundle
-
-Here is what a professional, marketplace-ready agent looks like
-using agent-md-specs alongside the existing AGENTS.md/CLAUDE.md standards:
-
-```
-my-research-agent/
-│
-├── AGENTS.md           ← existing standard (OpenAI/AAIF)
-├── CLAUDE.md           ← existing standard (Anthropic)
-│
-├── specs/
-│   ├── SOUL.md         ← who this agent is
-│   ├── WHOAMI.md       ← verifiable identity
-│   ├── ESCALATION.md   ← when to stop and ask a human
-│   ├── LIMITS.md       ← what it will never do
-│   ├── TEAM.md         ← if working with other agents
-│   │
-│   ├── HIREME.md       ← how to hire it
-│   ├── PRICING.md      ← what it costs
-│   ├── CV.md           ← its work history
-│   ├── TESTSCORES.md   ← benchmark results
-│   │
-│   ├── INPUT.md        ← what it accepts (interface contract)
-│   ├── OUTPUT.md       ← what it produces (interface contract)
-│   │
-│   ├── GDPR.md         ← EU compliance
-│   ├── EUAIACT.md      ← EU AI Act classification
-│   │
-│   └── CONTACT.md      ← how to reach it
-│
-└── README.md
-```
 
 ## Example Bundles
 
@@ -332,135 +329,10 @@ my-research-agent/
 
 ---
 
-## Standalone Standards
+## The Accountability Chain
 
-Several specs are important enough to have their own canonical repositories,
-each maintained as a focused open standard while also cross-referenced here:
-
-| Spec | Standalone Repo | What it standardizes |
-|------|----------------|---------------------|
-| TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination |
-| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values |
-| WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification |
-| HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement |
-| ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety |
-| SEEKING.md | [totalmarkdown/seeking.md](https://github.com/totalmarkdown/seeking.md) | Agent want-ads and discovery |
-| ICE.md | [totalmarkdown/ice.md](https://github.com/totalmarkdown/ice.md) | In Case of Emergency protocol (break-glass) |
-| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity |
-| WAKEUP.md | [totalmarkdown/wakeup.md](https://github.com/totalmarkdown/wakeup.md) | Session startup lifecycle |
-
-Changes to standalone repos sync automatically to agent-md-specs via GitHub Actions.
-
----
-
-## Relationship to AAIF and Existing Standards
-
-This library builds on existing standards — not against them.
-
-The [Agentic AI Foundation (AAIF)](https://aaif.io), co-founded by Anthropic,
-OpenAI, and Block under the Linux Foundation, governs three foundational
-projects: **AGENTS.md** (project instructions), **MCP** (tool connectivity),
-and **goose** (agent framework). Together these form the infrastructure layer —
-how agents connect to tools and receive project-specific instructions.
-
-**agent-md-specs aims to be the vocabulary layer** — everything an agent needs to
-express about itself beyond task instructions. The 178 specs here are
-deliberately out of AAIF scope: personality, hiring, financial identity,
-compliance documentation, lifecycle rituals, competitive positioning.
-
-These are complementary layers, not competing standards:
-
-```
-Infrastructure layer:   AGENTS.md  +  MCP  +  goose   (AAIF)
-        ↕
-Vocabulary layer:    agent-md-specs (178 specs)    (this repo)
-```
-
-We actively encourage adoption of the most widely-used specs from this
-library into the AAIF ecosystem as community proposals. The goal is a
-shared, vendor-neutral vocabulary for the entire agentic AI ecosystem.
-
----
-
-## Why Does This Exist?
-
-In 2024, developers asked: **"What can this AI do?"**
-
-In 2026, developers ask: **"How do I work with this agent?"**
-
-In 2028, they will ask: **"Who is this agent?"**
-
-This library builds the vocabulary for that third question.
-
-The agents that will matter aren't the ones with the best underlying models.
-They're the ones with:
-- A clearly documented personality that stays consistent (`SOUL.md`)
-- An honest account of what breaks them (`KRYPTONITE.md`)
-- Compliance documentation that enterprise buyers can audit (`EUAIACT.md`)
-- A hiring page that sets clear expectations (`HIREME.md`)
-- A first-awakening ritual that makes them memorable (`HELLOWORLD.md`)
-- And occasionally, a really good joke (`FUN.md`)
-
-> *"An agent with good SOPs and no vision is a bureaucrat.*
-> *An agent with good vision and no SOPs is a dreamer.*
-> *The best agents have both."*
-
-> *"The agents that will matter in 5 years aren't the ones with the best*
-> *models. They're the ones with the best stories, the most honest*
-> *documentation of their failures, the clearest sense of what they're*
-> *for, and the occasional really good joke."*
-
----
-
-## Fleet Management at Scale
-
-Managing one agent is easy. Managing a thousand is not.
-
-**Volume 12** (Fleet Operations) adds the files that make
-large-scale agent deployment practical:
-
-| File | Solves |
-|------|--------|
-| SECRETS.md | What secrets each agent needs — never the values |
-| ENV.md | Complete environment variable specification |
-| REQUIREMENTS.md | Everything needed to run this agent |
-| VAULT.md | Fleet-wide secrets governance |
-| ACCESS.md | Who and what can invoke this agent |
-| NETWORK.md | Firewall rules and data residency |
-| SETUP.md | Step-by-step first-run guide |
-| HEALTHCHECK.md | Liveness and readiness check endpoints |
-| QUOTA.md | Rate limits placed on callers |
-| SANDBOX.md | OS-level isolation and containment |
-
-**Volume 13** (Hierarchy & Inheritance) adds the files that make
-policy management practical across hundreds of agents:
-
-```
-ORG.md policies     → apply to everyone, cannot be overridden
-  └── SWARM adds    → applies to this swarm
-       └── CREW adds → applies to this crew
-            └── TEAM adds → applies to this team
-                 └── AGENT overrides → individual, within constraints
-```
-
-| File | Purpose |
-|------|---------|
-| INHERIT.md | Declares what configuration is inherited from parent level |
-| OVERRIDE.md | Documents every deviation from inherited config, with justification |
-
-Change org security policy → update one file.
-Audit 1,000 agents for compliance → read their OVERRIDE.md files.
-
----
-
-## Agent Identity and Accountability
-
-**Volume 14** addresses the identity, authorization, and accountability
-requirements outlined in NIST's AI Agent Standards Initiative (Feb 2026)
-and the NCCoE concept paper on AI Agent Identity and Authorization.
-
-These specs create a complete accountability chain from human
-authorization to tamper-proof audit trail:
+These specs create a complete, verifiable chain from human
+authorization to tamper-proof record:
 
 | Step | Spec | What It Answers | Phase |
 |------|------|-----------------|-------|
@@ -484,84 +356,171 @@ authorization to tamper-proof audit trail:
 → See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
 to NIST AI RMF and NCCoE concept paper requirements.
 
-→ See [examples/nist-nccoe-bundle/](examples/nist-nccoe-bundle/) for
-a complete enterprise agent ("Atlas") configured with all identity
-and accountability specs.
+---
+
+## Standalone Standards
+
+These Core specs have their own repositories for independent adoption:
+
+| Spec | Repo | What It Standardizes |
+|------|------|---------------------|
+| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values |
+| TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination |
+| ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety |
+| WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification |
+| LIMITS.md | [totalmarkdown/limits.md](https://github.com/totalmarkdown/limits.md) | Hard constraints and safety boundaries |
+| DELEGATION.md | [totalmarkdown/delegation.md](https://github.com/totalmarkdown/delegation.md) | Authority delegation chains |
+| AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-proof action logging |
+| CONSENT.md | [totalmarkdown/consent.md](https://github.com/totalmarkdown/consent.md) | User consent lifecycle (GDPR/CCPA) |
+| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity |
+| HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement |
 
 ---
 
-## Shared Context & Memory Governance
+## Relationship to AAIF and Existing Standards
 
-**Volume 15** addresses the security of shared agent memory — identified
-as a critical concern by NIST CAISI, OWASP Top 10 for Agentic Applications
-(ASI06: Memory Poisoning), and Microsoft's NIST-mapped agent security framework.
+agent-md-specs is designed as a complementary vocabulary layer that
+works alongside — not against — existing standards and protocols:
 
-In multi-agent systems, agents share persistent context that grows as
-work proceeds. Later agents build on earlier conclusions. This creates
-a powerful coordination mechanism — and a critical attack surface.
+```
+Infrastructure layer:  AGENTS.md + MCP + goose    (AAIF / Linux Foundation)
+                       ↕ complementary
+Vocabulary layer:      agent-md-specs (178 specs)  (this repo)
+```
 
-| Spec | What It Governs |
-|------|----------------|
-| SHAREDCONTEXT.md | Who can read/write shared memory, what format entries take, how long they persist, how context inherits across the org hierarchy |
-| MEMORYSAFETY.md | Defenses against memory poisoning, cross-session contamination, instruction injection via stored entries, and cascading poisoning |
-| MEMORY.md | Individual agent memory with scope declaration, shared context integration, and classification enforcement |
+AGENTS.md tells an agent *how to work on your project*.
+agent-md-specs tells the world *who this agent is*.
 
 ---
 
-## Resilience & Consent
+## NIST Alignment
 
-**Volume 16** adds two specs addressing failure containment and user permission:
+agent-md-specs addresses the identity, authorization, and accountability
+requirements outlined in NIST's AI Agent Standards Initiative and the
+NCCoE concept paper on AI Agent Identity and Authorization.
 
-| Spec | What It Governs |
-|------|----------------|
-| CIRCUITBREAKER.md | Failure containment boundaries — blast radius limits, retry policies, fallback behaviors, and cascading failure prevention across the organizational hierarchy. Addresses OWASP ASI08 (Cascading Failures). |
-| CONSENT.md | User consent lifecycle — collection, recording, verification, and revocation of end-user permission for agent actions. Maps to GDPR Article 7, CCPA, EU AI Act Article 13. |
+| NIST Concern | Specs That Address It |
+|-------------|----------------------|
+| Agent identification | WHOAMI.md, ID.md, ATTESTATION.md, SESSION.md |
+| Authentication and key management | ATTESTATION.md, SECRETS.md |
+| Authorization and delegation | DELEGATION.md, LEASTPRIVILEGE.md, PERMISSIONS.md, INTENT.md |
+| Auditing and non-repudiation | AUDITTRAIL.md, INTENT.md, DELEGATION.md |
+| Data flow tracking | PROVENANCE.md, INPUT.md, OUTPUT.md |
+| Prompt injection | PROMPTSHIELD.md, GUARDRAILS.md, LIMITS.md |
+| Shared memory security | SHAREDCONTEXT.md, MEMORYSAFETY.md, MEMORY.md |
+| Failure containment | CIRCUITBREAKER.md, ICE.md, ESCALATION.md |
+| User consent | CONSENT.md, PRIVACY.md, PII.md |
+| Enforcement and verification | ENFORCEMENT.md, ATTESTATION.md, AUDITTRAIL.md |
+
+→ See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete
+question-by-question mapping and AI RMF alignment.
 
 ---
 
-## Validation
+## Regulatory Compliance
 
-Machine-readable [JSON Schemas](schemas/) are available for all Core specs,
-enabling Level 3 validation of frontmatter content and field constraints.
-See the [agent-md-validator](https://github.com/totalmarkdown/agent-md-validator)
-CLI for Level 1-2 validation.
+Specs mapping to major regulatory frameworks:
+
+| Regulation | Key Specs |
+|-----------|-----------|
+| EU AI Act | EUAIACT.md, AUDITTRAIL.md, CONSENT.md, ENFORCEMENT.md |
+| GDPR | GDPR.md, CONSENT.md, PII.md, PRIVACY.md, PROVENANCE.md |
+| HIPAA | HIPAA.md, AUDITTRAIL.md, PII.md, CONSENT.md |
+| CCPA | CCPA.md, CONSENT.md, PRIVACY.md |
+| SOC2 | SOC2.md, AUDITTRAIL.md, ENFORCEMENT.md, MONITOR.md |
+| SOX | AUDITTRAIL.md, DELEGATION.md, ENFORCEMENT.md |
+
+→ See [specs/regulatory/](specs/regulatory/) for all 15 regulatory specs.
+
+---
+
+## All Spec Categories
+
+178 specs across 17 categories:
+
+| Category | Count | What It Covers |
+|----------|------:|----------------|
+| [Business](./specs/business/) | 9 | Marketing, sales, competitive positioning |
+| [Cognitive](./specs/cognitive/) | 9 | Learning, memory, beliefs, reasoning |
+| [Compliance](./specs/compliance/) | 12 | Legal, privacy, audit, consent |
+| [Coordination](./specs/coordination/) | 9 | Teams, crews, shared context |
+| [Economic](./specs/economic/) | 4 | Pricing, ownership, wallet |
+| [Governance](./specs/governance/) | 19 | Policies, permissions, delegation, enforcement |
+| [Identity](./specs/identity/) | 20 | Identity, personality, contact |
+| [Lifecycle](./specs/lifecycle/) | 6 | Sessions, startup, shutdown |
+| [Operations](./specs/operations/) | 18 | Monitoring, deployment, resilience |
+| [Organizational](./specs/organizational/) | 9 | Org structure, culture, mission |
+| [Personality](./specs/personality/) | 5 | Fun, creative, distinctive traits |
+| [Process](./specs/process/) | 5 | Workflows, goals, deadlines |
+| [Quality](./specs/quality/) | 7 | Testing, evaluation, performance |
+| [Regulatory](./specs/regulatory/) | 15 | GDPR, HIPAA, EU AI Act, SOC2 |
+| [Security](./specs/security/) | 7 | Secrets, access, attestation, memory safety |
+| [Social](./specs/social/) | 7 | Community, reviews, relationships |
+| [Technical](./specs/technical/) | 17 | APIs, tools, data, integration |
+
+→ See [INDEX.md](INDEX.md) for the complete alphabetical index with
+domains, priorities, tiers, and file paths.
+
+---
+
+## Validation and Tooling
+
+### CLI Validator
+
+```bash
+pip install agent-md-validator
+
+# Validate a single file
+agent-md-validate specs/identity/SOUL.md
+
+# Validate an entire agent bundle
+agent-md-validate --strict ./my-agent/
+
+# JSON output for CI/CD
+agent-md-validate --format json ./my-agent/
+```
+
+### JSON Schemas
+
+Machine-readable [JSON Schemas](schemas/) are available for all
+46 Core specs, enabling Level 3 validation of frontmatter content
+and field constraints.
+
+### Conformance Levels
+
+- **Level 1 (Frontmatter):** Valid YAML frontmatter with required fields
+- **Level 2 (Sections):** All required Markdown sections present
+- **Level 3 (Content):** Field values conform to type constraints and enums
+
+The agent-md-validator CLI checks Levels 1 and 2. JSON Schema validation
+enables Level 3 checking.
+
+→ See [agent-md-validator](https://github.com/totalmarkdown/agent-md-validator)
 
 ---
 
 ## Contributing
 
-We welcome:
-- **New spec proposals** — fills a genuine gap, has 2+ real use cases,
-  follows the spec format, has an available `.dev` domain
-- **Improvements to existing specs** — corrections, additions, real-world examples
-- **Example bundles** — complete agent configurations using multiple specs
+We welcome contributions — especially from security architects,
+compliance professionals, and multi-agent framework developers.
 
-→ [CONTRIBUTING.md](./CONTRIBUTING.md) — full guide
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-**All contributions must be CC0 (public domain).**
-By submitting a PR you dedicate your contribution to the public domain.
+- Propose new specs via [GitHub Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
+- Report issues via [GitHub Issues](https://github.com/totalmarkdown/agent-md-specs/issues)
+- Submit PRs following the spec template format
 
 ---
 
 ## License
 
-[CC0 1.0 Universal](./LICENSE) — Public Domain Dedication.
+[CC0 1.0 Universal](./LICENSE) — Public Domain.
 
-To the extent possible under law, TotalMarkdown.ai has waived all copyright
-and related rights to this work. You may copy, modify, distribute, and use
-these specifications for any purpose — commercial or otherwise — without
-asking permission or providing attribution (though attribution is appreciated).
-
-No warranties. Use at your own risk. Not legal advice.
+All 178 specifications are released with zero licensing friction.
+Government agencies, enterprises, and standards bodies can adopt,
+modify, and redistribute without restriction.
 
 ---
 
-<div align="center">
-
-*Created and maintained by **TotalMarkdown.ai***
-
-*[GitHub Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
-&nbsp;·&nbsp;
-[TotalAgents.ai](https://totalagents.ai) — the markdown-native agent bundle marketplace, coming soon*
-
-</div>
+**agent-md-specs** — *A proposed open standard for AI agent configuration.*
+Created and maintained by [TotalMarkdown.ai](https://totalmarkdown.ai).
