@@ -134,7 +134,7 @@ not a file-based runtime system.
 
 | AI RMF Subcategory | Spec(s) | Coverage |
 |-------------------|---------|----------|
-| GOVERN 1.1 — Legal and regulatory requirements | EUAIACT.md, GDPR.md, HIPAA.md, CCPA.md | Full |
+| GOVERN 1.1 — Legal and regulatory requirements | EUAIACT.md, GDPR.md, HIPAA.md, CCPA.md, CONSENT.md | Full |
 | GOVERN 1.2 — Trustworthy AI characteristics | SOUL.md, LIMITS.md, GUARDRAILS.md | Full |
 | GOVERN 1.4 — Organizational practices | ORG.md, POLICY.md, TEAM.md | Full |
 | GOVERN 1.5 — Risk management processes | ESCALATION.md, ICE.md, RISKS.md | Full |
@@ -171,11 +171,11 @@ not a file-based runtime system.
 | MANAGE 1.1 — Risk response | ESCALATION.md, ICE.md, PANIC.md | Full |
 | MANAGE 1.3 — Risk response actions | GUARDRAILS.md, PROMPTSHIELD.md, LIMITS.md | Full |
 | MANAGE 2.1 — Resources for risk management | BUDGET.md, SECRETS.md, VAULT.md | Full |
-| MANAGE 2.2 — Contingency processes | ICE.md, REBOOT.md, REPAIR.md | Full |
+| MANAGE 2.2 — Contingency processes | ICE.md, REBOOT.md, REPAIR.md, CIRCUITBREAKER.md | Full |
 | MANAGE 3.1 — Pre-deployment testing | TESTING.md, TESTSCORES.md, EVAL.md | Full |
 | MANAGE 3.2 — Pre-deployment verification | ENFORCEMENT.md (pre-deployment validation) | Full |
 | MANAGE 4.1 — Post-deployment monitoring | MONITOR.md, HEALTHCHECK.md, HEARTBEAT.md, ENFORCEMENT.md | Full |
-| MANAGE 4.2 — Incident response | ESCALATION.md, AUDITTRAIL.md, ICE.md | Full |
+| MANAGE 4.2 — Incident response | ESCALATION.md, AUDITTRAIL.md, ICE.md, CIRCUITBREAKER.md | Full |
 
 ---
 
@@ -198,6 +198,7 @@ from human authorization to tamper-proof record:
 
 ```
 DELEGATION.md      -> Who authorized this agent?
+CONSENT.md         -> Did the end user give permission?
 WHOAMI.md + ID.md  -> Who is this agent?
 ATTESTATION.md     -> Can it prove its identity?
 SESSION.md         -> What is its current runtime scope?
@@ -208,6 +209,7 @@ PROVENANCE.md      -> Where did the data come from?
 SHAREDCONTEXT.md   -> Is the shared memory trustworthy?
 MEMORYSAFETY.md    -> Has the memory been poisoned or tampered with?
      [ACTION TAKEN]
+CIRCUITBREAKER.md  -> Did something fail? Contain the blast radius.
 AUDITTRAIL.md      -> What happened, provably?
 ENFORCEMENT.md     -> Can we verify all of the above?
 ESCALATION.md      -> Should a human review this?

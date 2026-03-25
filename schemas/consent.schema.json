@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/consent.schema.json",
+  "title": "CONSENT.md Schema",
+  "description": "Schema for user consent lifecycle management",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Consent Requirements",
+        "Consent Collection",
+        "Consent Record",
+        "Consent Verification",
+        "Consent Revocation",
+        "Consent for Multi-Agent Systems",
+        "Compliance Mapping"
+      ]
+    },
+    "consent_record": {
+      "type": "object",
+      "required": ["consent_id", "user_id", "agent_id", "granted_at", "scope"],
+      "properties": {
+        "consent_id": { "type": "string", "format": "uuid" },
+        "user_id": { "type": "string" },
+        "agent_id": { "type": "string" },
+        "granted_at": { "type": "string", "format": "date-time" },
+        "expires_at": { "type": ["string", "null"] },
+        "scope": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "data_categories": { "type": "array", "items": { "type": "string" } },
+        "collection_method": {
+          "type": "string",
+          "enum": ["explicit_opt_in", "verbal", "signed_form", "digital_signature"]
+        },
+        "evidence": { "type": "string" },
+        "revoked": { "type": "boolean", "default": false },
+        "revoked_at": { "type": ["string", "null"] }
+      }
+    },
+    "revocation_method": { "type": "string" },
+    "compliance_mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["regulation", "requirement"],
+        "properties": {
+          "regulation": { "type": "string" },
+          "requirement": { "type": "string" },
+          "spec_coverage": { "type": "string" }
+        }
+      }
+    },
+    "multi_agent_consent": {
+      "type": "object",
+      "properties": {
+        "covered_agents": { "type": "array", "items": { "type": "string" } },
+        "sub_delegation_covered": { "type": "boolean", "default": false },
+        "notification_on_agent_change": { "type": "boolean", "default": true }
+      }
+    }
+  }
+}

@@ -1,14 +1,14 @@
 # Index
 
-Complete alphabetical index of all 176 agent-md-specs file type specifications.
+Complete alphabetical index of all 178 agent-md-specs file type specifications.
 
 ## Tier Summary
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Core | 42 | Essential specs recommended for all production agents |
+| Core | 44 | Essential specs recommended for all production agents |
 | Extended | 134 | Valuable specs for specific use cases and advanced configurations |
-| **Total** | **176** | |
+| **Total** | **178** | |
 
 ## Category Summary
 
@@ -16,13 +16,13 @@ Complete alphabetical index of all 176 agent-md-specs file type specifications.
 |----------|-------|
 | Business | 9 |
 | Cognitive | 9 |
-| Compliance | 11 |
+| Compliance | 12 |
 | Coordination | 9 |
 | Economic | 4 |
 | Governance | 19 |
 | Identity | 20 |
 | Lifecycle | 6 |
-| Operations | 17 |
+| Operations | 18 |
 | Organizational | 9 |
 | Personality | 5 |
 | Process | 5 |
@@ -31,7 +31,7 @@ Complete alphabetical index of all 176 agent-md-specs file type specifications.
 | Security | 7 |
 | Social | 7 |
 | Technical | 17 |
-| **Total** | **176** |
+| **Total** | **178** |
 
 ## All Specs
 
@@ -57,6 +57,7 @@ Complete alphabetical index of all 176 agent-md-specs file type specifications.
 | CERTIFICATIONS.md | Compliance | Extended | certificationsmd.dev | Medium | Vol 4 | [specs/compliance/CERTIFICATIONS.md](specs/compliance/CERTIFICATIONS.md) |
 | CHANGELOG.md | Identity | Extended | changelogmd.dev | Medium | Vol 4 | [specs/identity/CHANGELOG.md](specs/identity/CHANGELOG.md) |
 | CHANNELS.md | Communication | Extended | channelsmd.dev | Medium | Vol 3 | [specs/identity/CHANNELS.md](specs/identity/CHANNELS.md) |
+| CIRCUITBREAKER.md | Operations | Core | circuitbreakermd.dev | Very High | Vol 16 | [specs/operations/CIRCUITBREAKER.md](specs/operations/CIRCUITBREAKER.md) |
 | CHARTER.md | Organizational | Extended | chartermd.dev | Medium | Vol 3 | [specs/organizational/CHARTER.md](specs/organizational/CHARTER.md) |
 | CLI.md | Technical | Extended | climd.dev | High | Vol 3 | [specs/technical/CLI.md](specs/technical/CLI.md) |
 | COLLABORATE.md | Coordination | Extended | collaboratemd.dev | High | Vol 2 | [specs/coordination/COLLABORATE.md](specs/coordination/COLLABORATE.md) |
@@ -132,6 +133,7 @@ Complete alphabetical index of all 176 agent-md-specs file type specifications.
 | MOOD.md | Operational | Extended | moodmd.dev | Low | Vol 8 | [specs/operations/MOOD.md](specs/operations/MOOD.md) |
 | MYTHOLOGY.md | Lore | Extended | mythologymd.dev | Low | Vol 8 | [specs/personality/MYTHOLOGY.md](specs/personality/MYTHOLOGY.md) |
 | CONNECTIONS.md | Social | Extended | connectionsmd.dev | Medium | Vol 3 | [specs/social/CONNECTIONS.md](specs/social/CONNECTIONS.md) |
+| CONSENT.md | Compliance | Core | consentmd.dev | High | Vol 16 | [specs/compliance/CONSENT.md](specs/compliance/CONSENT.md) |
 | NETWORK.md | Technical | Extended | networkmd.dev | High | Vol 12 | [specs/technical/NETWORK.md](specs/technical/NETWORK.md) |
 | NIS2.md | Regulatory Compliance | Extended | nis2md.dev | Medium | Vol 9 | [specs/regulatory/NIS2.md](specs/regulatory/NIS2.md) |
 | NISTAIRF.md | Regulatory Compliance | Extended | nistairfmd.dev | Medium | Vol 9 | [specs/regulatory/NISTAIRF.md](specs/regulatory/NISTAIRF.md) |

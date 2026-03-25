@@ -2,13 +2,13 @@
 
 > *A vocabulary for AI agency.*
 
-A proposed open standard library of **176 file type specifications** for AI agent
+A proposed open standard library of **178 file type specifications** for AI agent
 configuration — covering every dimension of what an agent is, what it
 does, and who it is.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Specs](https://img.shields.io/badge/specs-176-blue)](./INDEX.md)
-[![Volumes](https://img.shields.io/badge/volumes-15-purple)](./INDEX.md)
+[![Specs](https://img.shields.io/badge/specs-178-blue)](./INDEX.md)
+[![Volumes](https://img.shields.io/badge/volumes-16-purple)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -56,7 +56,7 @@ reviews (`REVIEWS.md`), and eventually — a wallet (`WALLET.md`).
 
 **agent-md-specs proposes a vocabulary for all of it.**
 
-176 file types. 15 volumes. 17 categories. 42 Core + 134 Extended.
+178 file types. 16 volumes. 17 categories. 44 Core + 134 Extended.
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement    (LEGACY.md)
@@ -92,7 +92,7 @@ Each of these solves the same problem: giving agents structured context
 via human-readable Markdown files. But each invented its own file name,
 its own structure, and its own vocabulary.
 
-**agent-md-specs aims to unify this.** We propose 176 file types covering every
+**agent-md-specs aims to unify this.** We propose 178 file types covering every
 dimension an agent needs to express — from the project instructions that
 AGENTS.md handles, to the identity, governance, compliance, and
 accountability documentation that production agents also need.
@@ -180,7 +180,7 @@ flow through APIs, logs, and policy engines, not Markdown files on disk.
 
 ## Core Specs (Recommended for All Production Agents)
 
-The 42 Core specs cover the essential dimensions every production agent should define.
+The 44 Core specs cover the essential dimensions every production agent should define.
 Start here. Add Extended specs as your needs grow.
 
 | Spec | Category | What it defines |
@@ -227,8 +227,10 @@ Start here. Add Extended specs as your needs grow.
 | MEMORY.md | Cognitive | Individual memory with scope, classification, shared context integration |
 | SHAREDCONTEXT.md | Coordination | Multi-agent shared memory pool governance |
 | MEMORYSAFETY.md | Security | Memory poisoning defense and integrity verification |
+| CIRCUITBREAKER.md | Operations | Failure containment, blast radius, cascading prevention |
+| CONSENT.md | Compliance | User consent lifecycle — GDPR, CCPA, EU AI Act |
 
-→ See [INDEX.md](INDEX.md) for the complete list of all 176 specs including Extended tier.
+→ See [INDEX.md](INDEX.md) for the complete list of all 178 specs including Extended tier.
 
 ---
 
@@ -257,19 +259,19 @@ Each level has its own spec. Each spec has its own `.dev` domain.
 
 ## Spec Categories
 
-176 specs across 17 categories:
+178 specs across 17 categories:
 
 | Category | Count | What lives here |
 |----------|------:|----------------|
 | [Business](./specs/business/) | 9 | BRAND, COMPETITIVE, EXAMPLES, HIREME, MARKETING, MOAT, PITCH, SALES, SPECIALSAUCE |
 | [Cognitive](./specs/cognitive/) | 9 | BELIEFS, CONFESSION, EXPERTISE, INSTINCT, JOURNAL, LEARNING, MEMORY, PHILOSOPHY, TRAINING |
-| [Compliance](./specs/compliance/) | 11 | AUDITTRAIL, CERTIFICATIONS, COMPLIANCE, GDPR, INSURANCE, LICENSE, PII, PRIVACY, PROVENANCE, REGULATIONS, SECURITY |
+| [Compliance](./specs/compliance/) | 12 | AUDITTRAIL, CERTIFICATIONS, COMPLIANCE, CONSENT, GDPR, INSURANCE, LICENSE, PII, PRIVACY, PROVENANCE, REGULATIONS, SECURITY |
 | [Coordination](./specs/coordination/) | 9 | COLLABORATE, CREW, HANDSHAKE, PROTOCOL, ROSTER, SHARE, SHAREDCONTEXT, SWARM, TEAM |
 | [Economic](./specs/economic/) | 4 | CV, OWNER, PRICING, WALLET |
 | [Governance](./specs/governance/) | 19 | BUDGET, CENSOR, DELEGATION, ENFORCEMENT, ESCALATION, GUARDRAILS, ICE, IDENTITY, INHERIT, INTENT, LEASTPRIVILEGE, LIMITS, OVERRIDE, PANIC, PERMISSIONS, POLICY, QUOTA, RULES, VERSIONING |
 | [Identity](./specs/identity/) | 20 | ALIASES, ASSUMPTIONS, CHANGELOG, CHANNELS, CONTACT, GLOSSARY, ID, KRYPTONITE, MANIFESTO, OFFERING, ONBOARDING, PERSONA, PREFERENCES, QUIRKS, REPUTATION, SEEKING, SIGNATURE, SOUL, VOICE, WHOAMI |
 | [Lifecycle](./specs/lifecycle/) | 6 | HELLOWORLD, LEGACY, REBOOT, SESSION, SLEEP, WAKEUP |
-| [Operations](./specs/operations/) | 17 | AVAILABILITY, BACKUP, DEPLOYMENT, HEALTHCHECK, HEARTBEAT, INTERRUPT, LOGS, MIGRATION, MONITOR, MOOD, REPAIR, REQUIREMENTS, RISKS, SELFHEALING, SETUP, SLA, STATUS |
+| [Operations](./specs/operations/) | 18 | AVAILABILITY, BACKUP, CIRCUITBREAKER, DEPLOYMENT, HEALTHCHECK, HEARTBEAT, INTERRUPT, LOGS, MIGRATION, MONITOR, MOOD, REPAIR, REQUIREMENTS, RISKS, SELFHEALING, SETUP, SLA, STATUS |
 | [Organizational](./specs/organizational/) | 9 | CHARTER, CULTURE, MISSION, NORTHSTAR, ORG, REPORTSTO, STRATEGY, VALUES, VISION |
 | [Personality](./specs/personality/) | 5 | DREAM, FUN, MYTHOLOGY, ORIGIN, SUPERPOWERS |
 | [Process](./specs/process/) | 5 | BLOCKERS, DEADLINES, GOALS, SOP, WORKFLOW |
@@ -361,7 +363,7 @@ and **goose** (agent framework). Together these form the infrastructure layer �
 how agents connect to tools and receive project-specific instructions.
 
 **agent-md-specs aims to be the vocabulary layer** — everything an agent needs to
-express about itself beyond task instructions. The 176 specs here are
+express about itself beyond task instructions. The 178 specs here are
 deliberately out of AAIF scope: personality, hiring, financial identity,
 compliance documentation, lifecycle rituals, competitive positioning.
 
@@ -370,7 +372,7 @@ These are complementary layers, not competing standards:
 ```
 Infrastructure layer:   AGENTS.md  +  MCP  +  goose   (AAIF)
         ↕
-Vocabulary layer:    agent-md-specs (176 specs)    (this repo)
+Vocabulary layer:    agent-md-specs (178 specs)    (this repo)
 ```
 
 We actively encourage adoption of the most widely-used specs from this
@@ -462,16 +464,21 @@ authorization to tamper-proof audit trail:
 | Step | Spec | What It Answers | Phase |
 |------|------|-----------------|-------|
 | 1. Authority | DELEGATION.md | Who authorized this agent? | Pre-deployment |
-| 2. Identity | WHOAMI.md + ID.md | Who is this agent? | Pre-deployment |
-| 3. Verification | ATTESTATION.md | Can it prove its identity? | Runtime (continuous) |
-| 4. Runtime Scope | SESSION.md | What is its current task boundary? | Runtime (per-task) |
-| 5. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? | Runtime (per-action) |
-| 6. Intent | INTENT.md | What does it intend to do? | Runtime (per-action) |
-| 7. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? | Runtime (per-input) |
-| 8. Data Lineage | PROVENANCE.md | Where did the data come from? | Runtime (per-input) |
-| 9. Audit | AUDITTRAIL.md | What happened, provably? | Post-action |
-| 10. Enforcement | ENFORCEMENT.md | Can we verify all of the above? | Continuous |
-| 11. Escalation | ESCALATION.md | Should a human review this? | On-trigger |
+| 2. Consent | CONSENT.md | Did the end user give permission? | Pre-action |
+| 3. Identity | WHOAMI.md + ID.md | Who is this agent? | Pre-deployment |
+| 4. Verification | ATTESTATION.md | Can it prove its identity? | Runtime (continuous) |
+| 5. Runtime Scope | SESSION.md | What is its current task boundary? | Runtime (per-task) |
+| 6. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? | Runtime (per-action) |
+| 7. Intent | INTENT.md | What does it intend to do? | Runtime (per-action) |
+| 8. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? | Runtime (per-input) |
+| 9. Data Lineage | PROVENANCE.md | Where did the data come from? | Runtime (per-input) |
+| 10. Memory Safety | SHAREDCONTEXT.md | Is the shared memory trustworthy? | Runtime (per-read) |
+| | MEMORYSAFETY.md | Has the memory been poisoned? | Runtime (per-write) |
+| | **[ACTION TAKEN]** | | |
+| 11. Containment | CIRCUITBREAKER.md | Did something fail? Contain the blast radius. | On-failure |
+| 12. Audit | AUDITTRAIL.md | What happened, provably? | Post-action |
+| 13. Enforcement | ENFORCEMENT.md | Can we verify all of the above? | Continuous |
+| 14. Escalation | ESCALATION.md | Should a human review this? | On-trigger |
 
 → See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
 to NIST AI RMF and NCCoE concept paper requirements.
@@ -497,6 +504,17 @@ a powerful coordination mechanism — and a critical attack surface.
 | SHAREDCONTEXT.md | Who can read/write shared memory, what format entries take, how long they persist, how context inherits across the org hierarchy |
 | MEMORYSAFETY.md | Defenses against memory poisoning, cross-session contamination, instruction injection via stored entries, and cascading poisoning |
 | MEMORY.md | Individual agent memory with scope declaration, shared context integration, and classification enforcement |
+
+---
+
+## Resilience & Consent
+
+**Volume 16** adds two specs addressing failure containment and user permission:
+
+| Spec | What It Governs |
+|------|----------------|
+| CIRCUITBREAKER.md | Failure containment boundaries — blast radius limits, retry policies, fallback behaviors, and cascading failure prevention across the organizational hierarchy. Addresses OWASP ASI08 (Cascading Failures). |
+| CONSENT.md | User consent lifecycle — collection, recording, verification, and revocation of end-user permission for agent actions. Maps to GDPR Article 7, CCPA, EU AI Act Article 13. |
 
 ---
 

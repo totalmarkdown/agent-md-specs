@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/circuitbreaker.schema.json",
+  "title": "CIRCUITBREAKER.md Schema",
+  "description": "Schema for agent failure containment and blast radius management",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Circuit Breaker States",
+        "Failure Thresholds",
+        "Blast Radius Boundaries",
+        "Fallback Behaviors",
+        "Retry Policy",
+        "Cascading Prevention",
+        "Monitoring and Alerting",
+        "Recovery Procedures"
+      ]
+    },
+    "states": {
+      "type": "string",
+      "enum": ["closed", "open", "half_open"]
+    },
+    "failure_thresholds": {
+      "type": "object",
+      "properties": {
+        "consecutive_failures": { "type": "integer", "minimum": 1 },
+        "error_rate_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "error_rate_window_seconds": { "type": "integer", "minimum": 1 },
+        "latency_threshold_seconds": { "type": "number", "minimum": 0 },
+        "resource_exhaustion": { "type": "boolean" },
+        "anomaly_detection": { "type": "boolean" },
+        "upstream_circuit_open": { "type": "boolean" }
+      }
+    },
+    "blast_radius": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["level", "containment_rule"],
+        "properties": {
+          "level": {
+            "type": "string",
+            "enum": ["agent", "team", "crew", "swarm", "org"]
+          },
+          "containment_rule": { "type": "string" },
+          "critical_path": { "type": "boolean", "default": false }
+        }
+      }
+    },
+    "fallback_behavior": {
+      "type": "string",
+      "enum": ["cached_results", "degrade_gracefully", "queue_for_retry", "route_to_backup", "safe_default", "escalate_to_human"]
+    },
+    "retry_policy": {
+      "type": "object",
+      "properties": {
+        "max_retries": { "type": "integer", "minimum": 0 },
+        "backoff_strategy": {
+          "type": "string",
+          "enum": ["linear", "exponential", "exponential_with_jitter"]
+        },
+        "cooldown_seconds": { "type": "integer", "minimum": 1 },
+        "successes_to_close": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "cascading_prevention": {
+      "type": "object",
+      "properties": {
+        "timeout_seconds": { "type": "integer", "minimum": 1 },
+        "fan_out_limit": { "type": "integer", "minimum": 1 },
+        "bulkhead_enabled": { "type": "boolean", "default": true },
+        "poison_pill_detection": { "type": "boolean", "default": true }
+      }
+    }
+  }
+}
