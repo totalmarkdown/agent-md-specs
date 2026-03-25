@@ -30,6 +30,20 @@ and what it expects to happen. This creates a reviewable record
 that separates "what the agent meant to do" from "what actually
 happened," enabling meaningful accountability.
 
+### Scope Boundary
+
+This spec governs **pre-action intent declaration and confidence assessment**.
+
+- INTENT.md defines **what the agent plans to do before doing it** (runtime, per-action)
+- DELEGATION.md defines **who authorized the agent to act** (static, pre-deployment)
+- LEASTPRIVILEGE.md defines **what privileges are currently active** (runtime, per-action)
+- AUDITTRAIL.md defines **what actually happened after the fact** (post-action)
+- ENFORCEMENT.md defines **how intent declarations are verified against policy** (continuous)
+
+INTENT.md does NOT define permissions or policy — it defines the agent's
+declared plan of action, which is then evaluated against LEASTPRIVILEGE
+and ENFORCEMENT before execution proceeds.
+
 ### When to Create This File
 Required for any agent performing actions with side effects —
 writes, deletes, communications, transactions, API calls.

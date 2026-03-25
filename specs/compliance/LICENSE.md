@@ -83,3 +83,4 @@ Custom licensing available for enterprise deployments.
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
 *Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
+```

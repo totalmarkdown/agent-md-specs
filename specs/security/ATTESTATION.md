@@ -35,6 +35,19 @@ At fleet scale, ATTESTATION.md enables:
 - Hardware-rooted identity that survives software redeployment
 - Auditability of who authenticated as whom, and when
 
+### Scope Boundary
+
+This spec governs **cryptographic identity verification and credential lifecycle**.
+
+- ATTESTATION.md defines **how the agent proves its identity** (runtime, continuous)
+- WHOAMI.md defines **who the agent claims to be** (static, pre-deployment)
+- ID.md defines **the permanent UUID anchor** (static, pre-deployment)
+- SESSION.md defines **the ephemeral runtime identity** that inherits from attestation
+- ENFORCEMENT.md defines **how attestation is verified** at runtime
+
+ATTESTATION.md does NOT define the agent's identity — it defines how
+that identity is cryptographically verified by external systems.
+
 ### When to Create This File
 Every agent that communicates with other agents, accesses shared
 resources, or operates in a zero-trust environment. Required for

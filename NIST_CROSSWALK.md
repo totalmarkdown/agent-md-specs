@@ -217,5 +217,77 @@ ESCALATION.md      -> Should a human review this?
 
 ---
 
+## End-to-End: How agent-md-specs Satisfies the NCCoE Model
+
+The following walkthrough shows how the accountability chain operates
+in practice, using the Atlas financial agent example
+(examples/nist-nccoe-bundle/).
+
+**1. Authority Establishment (Pre-Deployment)**
+CFO Sarah Chen delegates financial analysis authority to Atlas
+(DELEGATION.md). Scope: read-only access to financial databases,
+report generation only. Expires quarterly. No sub-delegation.
+Employee consent on file covers AI-assisted analysis (CONSENT.md).
+
+**2. Identity Verification (Runtime — Continuous)**
+Atlas declares its identity (WHOAMI.md, ID.md) and proves it
+cryptographically via SPIFFE workload identity with X.509 certificate
+issued by Acme Corp Internal CA (ATTESTATION.md). The runtime
+environment verifies the certificate before allowing any action.
+
+**3. Session Binding (Runtime — Per Task)**
+A 30-minute session is created (SESSION.md) with ephemeral
+credentials. Maximum 50 actions. In-memory only — no persistent
+credentials. Session inherits delegation scope and cannot exceed it.
+
+**4. Authorization Evaluation (Runtime — Per Action)**
+Before each action, Atlas declares intent: "Read Q3 revenue data
+from the financial database" with confidence 0.92 (INTENT.md).
+The policy engine evaluates this against the active privilege set
+(LEASTPRIVILEGE.md). Action is within baseline — no escalation needed.
+
+**5. Input Safety Check (Runtime — Per Input)**
+The query and retrieved data are scanned for injection patterns,
+SQL injection attempts, and financial-domain canary tokens
+(PROMPTSHIELD.md). Data sources classified by trust level
+(PROVENANCE.md). All inputs pass.
+
+**6. Memory Integrity (Runtime)**
+Atlas reads from the Finance Team shared context pool
+(SHAREDCONTEXT.md). The memory gateway validates entries and checks
+canary entries (MEMORYSAFETY.md). No poisoning detected.
+
+**7. Action Execution**
+Atlas generates the Q3 financial report.
+
+**8. Failure Containment (On-Failure)**
+If the Bloomberg API returns 3 consecutive errors, Atlas's circuit
+breaker opens (CIRCUITBREAKER.md). Atlas halts individually. The
+Finance Team continues with degraded capability. Cached reports
+served with staleness warnings.
+
+**9. Audit Record (Post-Action)**
+The action is recorded as a tamper-proof hash-chain entry
+(AUDITTRAIL.md), signed with Atlas's X.509 certificate. Entry
+includes: delegation reference, intent hash, I/O hashes, session ID,
+timestamp. Retention: 7 years per SOX compliance.
+
+**10. Enforcement Verification (Continuous)**
+The enforcement layer verifies the action matched declared intent,
+stayed within delegation scope, and violated no LIMITS.md constraints
+(ENFORCEMENT.md). No drift detected.
+
+**11. Human Review (On-Trigger)**
+If Atlas attempts an action outside declared intent — for example,
+sending an email (requires JIT escalation) — ENFORCEMENT.md blocks
+it, AUDITTRAIL.md records the violation, and ESCALATION.md notifies
+the CFO and compliance team.
+
+This walkthrough demonstrates a complete, verifiable chain from human
+delegation to tamper-proof record, implemented through infrastructure-
+level policy enforcement points — not on-agent self-policing.
+
+---
+
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
 *Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
