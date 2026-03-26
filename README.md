@@ -151,6 +151,44 @@ flow through APIs, logs, and policy engines, not Markdown files on disk.
 
 ---
 
+## How Agents Consume Specs
+
+Every agent-md-specs file is simultaneously a human-readable document
+and a machine-readable data source. No special compiler is required.
+
+The YAML frontmatter in every spec file IS the machine-readable format.
+Any standard YAML parser extracts it in three lines of code:
+
+```python
+import yaml
+with open('LIMITS.md') as f:
+    frontmatter = yaml.safe_load(f.read().split('---')[1])
+# frontmatter['tier'] == 'core'
+# frontmatter['spec_name'] == 'LIMITS'
+```
+
+JSON Schemas in `schemas/` validate the frontmatter — enforcing field
+types, allowed values, and structural constraints for every Core spec.
+
+The same file serves both audiences:
+
+- A compliance officer reads "NEVER execute trades" in the Markdown body
+- A policy engine reads the structured constraints from the YAML frontmatter
+- An auditor verifies they match — because they live in the same file,
+  there is no drift between what was approved and what is enforced
+
+agent-md-specs defines WHAT is enforced. Your runtime (OPA/Rego, API
+gateways, orchestration platforms, CI/CD pipelines) defines HOW it is
+enforced. The YAML frontmatter is the bridge between them.
+
+```
+LIMITS.md
+├── YAML frontmatter → parsed by machines → policy engine / API gateway / system prompt
+└── Markdown body    → read by humans    → compliance review / audit / approval
+```
+
+---
+
 ## Quick Start
 
 Five essential files every agent should have:

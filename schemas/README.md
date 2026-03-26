@@ -2,6 +2,15 @@
 
 Machine-readable schemas for validating agent-md-specs configuration files.
 
+## Why JSON Schemas for Markdown Files?
+
+The YAML frontmatter in every agent-md-specs file IS the machine-
+readable format. These schemas validate that frontmatter — ensuring
+field types, allowed values, and structural constraints are correct.
+The Markdown body provides the human-readable context that compliance
+officers need to understand and approve the policies. The schemas
+ensure the machine-readable portion is trustworthy and consistent.
+
 ## Usage
 
 These schemas define the expected structure for each spec type's YAML

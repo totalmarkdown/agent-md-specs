@@ -128,6 +128,18 @@ This means agent-md-specs is a **declarative policy specification**
 that compiles into machine-enforceable rules, not a file-based
 runtime system.
 
+### From Markdown to Runtime
+
+Every spec file contains YAML frontmatter — structured, typed,
+schema-validated metadata — inside a Markdown document. This means
+the same file serves as both the human-readable policy (the Markdown
+body, auditable by compliance officers) and the machine-consumable
+configuration (the YAML frontmatter, parseable by any standard YAML
+library in three lines of code). JSON Schema definitions for all
+Core specs enable automated conformance validation. No special
+compiler or translation layer is required — the policies humans
+approve are identical to the data machines enforce.
+
 ---
 
 ## Validation Tooling
