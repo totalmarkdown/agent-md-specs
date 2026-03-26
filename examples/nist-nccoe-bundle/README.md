@@ -17,7 +17,7 @@ operating under strict regulatory requirements (SOX, GDPR, SOC2).
 - **Role:** Financial analysis agent
 - **Organization:** Acme Corp (fictional)
 - **Delegated by:** CFO Sarah Chen
-- **Model:** Claude Sonnet 4
+- **Model:** Claude Sonnet 4.6
 - **Purpose:** Generate quarterly financial reports and forecasts
 
 ## Files in This Bundle
