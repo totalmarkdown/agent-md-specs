@@ -11,6 +11,7 @@
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
+&nbsp;·&nbsp; [Start Here](./_start-here/)
 &nbsp;·&nbsp; License: [CC0 1.0 Universal](./LICENSE) — Public Domain
 &nbsp;·&nbsp; [Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)

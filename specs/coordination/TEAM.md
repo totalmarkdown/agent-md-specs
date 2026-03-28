@@ -104,7 +104,7 @@ Governed by CIRCUITBREAKER.md at the team level.
 _Measurable targets: see KPI.md. Service commitments: see SLA.md._
 ```
 
-### Example use cases
+### Common Team Patterns
 - Customer support team (triage → resolve → escalate → follow-up)
 - Content pipeline (research → draft → edit → publish → analyze)
 - Security audit team (scan → analyze → report → remediate)
