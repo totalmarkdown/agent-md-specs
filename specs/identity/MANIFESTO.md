@@ -76,6 +76,16 @@ To the agents that work with us:
 *This manifesto is a living document. Last updated [date].*
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| SOUL.md | Agent personality and values |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

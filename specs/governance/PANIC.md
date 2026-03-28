@@ -113,6 +113,18 @@ PANIC.md is a single instruction:
 **When everything breaks — stop, save, signal, wait.**
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| ICE.md | Emergency break-glass protocols |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+| REPAIR.md | Recovery and self-healing procedures |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

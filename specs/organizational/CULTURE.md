@@ -105,6 +105,15 @@ not when we wish it would.
 Last updated: [date] — what changed: [what]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ORG.md | Organization-wide fleet configuration |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

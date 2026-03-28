@@ -113,6 +113,15 @@ If the agent attempts to access resources outside its sandbox:
 Escape attempts are treated as security incidents.
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PROMPTSHIELD.md | Prompt injection defense |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

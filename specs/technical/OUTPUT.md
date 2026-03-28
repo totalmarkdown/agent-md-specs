@@ -222,6 +222,19 @@ Previous schema versions: [changelog reference]
 - v1 → v2: [what changed and how to update parsers]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| INPUT.md | Accepted input formats |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MCP.md | Model Context Protocol connections |
+| PERMISSIONS.md | Static resource access control |
+| PROVENANCE.md | Data lineage and trust classification |
+| TESTSCORES.md | Benchmark results and quality metrics |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

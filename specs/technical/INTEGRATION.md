@@ -90,6 +90,17 @@ If any integration is unavailable, these tasks are affected:
 | [name] | [tasks blocked] | [severity] | [fallback behavior] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| INPUT.md | Accepted input formats |
+| MCP.md | Model Context Protocol connections |
+| OUTPUT.md | Output formats and delivery |
+| PERMISSIONS.md | Static resource access control |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

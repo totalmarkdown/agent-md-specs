@@ -105,6 +105,19 @@ Expected: [what good output looks like]
 Pass criteria: [EVAL.md reference]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| EVAL.md | Evaluation methodology |
+| INPUT.md | Accepted input formats |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MCP.md | Model Context Protocol connections |
+| OUTPUT.md | Output formats and delivery |
+| PERMISSIONS.md | Static resource access control |
+| SOUL.md | Agent personality and values |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

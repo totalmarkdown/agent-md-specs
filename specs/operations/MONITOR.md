@@ -69,6 +69,17 @@ updated: date
 - Required fields in every log line: timestamp, level, agent, task_id, message
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| SLA.md | Service level commitments |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

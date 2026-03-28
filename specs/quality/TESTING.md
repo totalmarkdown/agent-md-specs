@@ -94,6 +94,15 @@ When adding a new capability or fixing a bug:
 5. Update EVAL.md with new eval cases if capability changes
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| EVAL.md | Evaluation methodology |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

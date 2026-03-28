@@ -109,6 +109,16 @@ Beyond included limits:
 | 25+ seats | Contact sales |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| HIREME.md | Agent hiring and engagement |
+| OWNER.md | Agent ownership and liability |
+| SLA.md | Service level commitments |
+| WALLET.md | Financial identity and payment |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

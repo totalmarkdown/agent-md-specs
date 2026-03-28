@@ -96,6 +96,15 @@ NIST identifies these characteristics of trustworthy AI:
 | Valid/Tested | [approach] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PII.md | Personal data classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

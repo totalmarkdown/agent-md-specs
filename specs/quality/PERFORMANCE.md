@@ -88,6 +88,15 @@ How performance is measured:
 - Benchmark tool: `tmd benchmark --agent [name]`
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| EVAL.md | Evaluation methodology |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

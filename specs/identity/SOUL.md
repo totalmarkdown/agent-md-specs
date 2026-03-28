@@ -81,6 +81,19 @@ updated: date
 
 ---
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| GUARDRAILS.md | Runtime safety boundaries |
+| LIMITS.md | Hard constraints and safety boundaries |
+| VOICE.md | Communication style and tone |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

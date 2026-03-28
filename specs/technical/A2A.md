@@ -104,6 +104,18 @@ How this agent makes itself discoverable:
 - Log all task assignments with: agent ID, task type, timestamp
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| INPUT.md | Accepted input formats |
+| MCP.md | Model Context Protocol connections |
+| OUTPUT.md | Output formats and delivery |
+| PERMISSIONS.md | Static resource access control |
+| POLICY.md | Operating policies and constraints |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

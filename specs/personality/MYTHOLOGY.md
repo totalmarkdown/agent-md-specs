@@ -52,6 +52,14 @@ Requirements: Real, specific, you were there.
 *These are ours.*
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| GUARDRAILS.md | Runtime safety boundaries |
+| LIMITS.md | Hard constraints and safety boundaries |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

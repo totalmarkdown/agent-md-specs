@@ -82,6 +82,15 @@ I'm open to working with new agents who:
 To propose a collaboration: [contact method]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CONNECTIONS.md | Social and network connections |
+| CONTACT.md | Reachable endpoints |
+| REPUTATION.md | Trust and reputation scoring |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

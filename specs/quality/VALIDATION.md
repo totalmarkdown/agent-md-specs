@@ -124,6 +124,15 @@ All validated outputs can be traced via:
 - Timestamp of validation
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

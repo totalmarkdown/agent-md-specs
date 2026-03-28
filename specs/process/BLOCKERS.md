@@ -63,6 +63,14 @@ Contact: [how to reach agent owner]
 Response needed within: [timeframe based on severity]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DEADLINES.md | Time constraints and schedules |
+| GOALS.md | Objectives and success criteria |
+| WORKFLOW.md | Task execution flow |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

@@ -117,6 +117,17 @@ your purpose, and a willingness to begin.*
 *This is Hello, World.*
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ENFORCEMENT.md | Policy verification and compliance |
+| ID.md | Permanent cryptographic identifier |
+| MEMORY.md | Individual agent memory governance |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| SOUL.md | Agent personality and values |
+| WAKEUP.md | Bootstrap and initialization |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

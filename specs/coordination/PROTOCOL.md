@@ -100,6 +100,17 @@ If two agents receive conflicting instructions:
 3. If genuinely ambiguous: escalate per ESCALATION.md
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| ORG.md | Organization-wide fleet configuration |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

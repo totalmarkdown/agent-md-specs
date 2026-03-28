@@ -71,6 +71,17 @@ SLA does not apply to:
 - Dashboard: [location]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| MONITOR.md | Observability and alerting |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

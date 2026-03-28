@@ -182,6 +182,19 @@ Ask in Discord: [Discord URL]
 - Check MEMORY.md to see what it remembers from previous sessions
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| HIREME.md | Agent hiring and engagement |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MCP.md | Model Context Protocol connections |
+| MEMORY.md | Individual agent memory governance |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

@@ -152,6 +152,19 @@ Additional validation after Phase 4:
 ```
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| DEADLINES.md | Time constraints and schedules |
+| ENFORCEMENT.md | Policy verification and compliance |
+| GOALS.md | Objectives and success criteria |
+| ICE.md | Emergency break-glass protocols |
+| MEMORY.md | Individual agent memory governance |
+| PANIC.md | Panic-mode emergency response |
+| SESSION.md | Ephemeral runtime identity and task scope |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

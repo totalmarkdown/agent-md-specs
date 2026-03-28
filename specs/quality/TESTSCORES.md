@@ -188,6 +188,15 @@ These scores can be independently verified:
 | Human evaluation | No — trust | Contact [email] for methodology |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| EVAL.md | Evaluation methodology |
+| HIREME.md | Agent hiring and engagement |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

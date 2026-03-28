@@ -116,6 +116,18 @@ CONSEQUENCE: [if missed]
 ```
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| GOALS.md | Objectives and success criteria |
+| HIREME.md | Agent hiring and engagement |
+| PERMISSIONS.md | Static resource access control |
+| RULES.md | Operating rules and regulations |
+| SLA.md | Service level commitments |
+| WORKFLOW.md | Task execution flow |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

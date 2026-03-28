@@ -117,6 +117,17 @@ Available as a standalone crew bundle:
 - **Works with:** Any compatible swarm or standalone
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DELEGATION.md | Authority chain and authorization |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| ORG.md | Organization-wide fleet configuration |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| SWARM.md | Large operation structure |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

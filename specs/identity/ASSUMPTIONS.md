@@ -95,6 +95,16 @@ If you believe an assumption is wrong for your use case:
 4. If it's a real gap: [how it gets addressed]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| SOUL.md | Agent personality and values |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

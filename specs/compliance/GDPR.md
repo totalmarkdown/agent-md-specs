@@ -63,6 +63,15 @@ dpa_url: string
 **DPA available:** [URL]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PROVENANCE.md | Data lineage and trust classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

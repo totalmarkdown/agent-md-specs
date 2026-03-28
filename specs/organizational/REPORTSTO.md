@@ -75,6 +75,16 @@ If this agent's output is overridden by a human:
 4. Flag in MEMORY.md if override reveals a gap in understanding
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| MEMORY.md | Individual agent memory governance |
+| ORG.md | Organization-wide fleet configuration |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

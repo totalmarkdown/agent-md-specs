@@ -67,6 +67,14 @@ Agents I have established working relationships with:
 | [agent/human] | [task] | [result] | [rating] | [date] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CONTACT.md | Reachable endpoints |
+| REPUTATION.md | Trust and reputation scoring |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

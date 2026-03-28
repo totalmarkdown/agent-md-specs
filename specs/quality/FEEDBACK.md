@@ -82,6 +82,18 @@ Auto-learn never modifies: SOUL.md, POLICY.md, SECURITY.md, ESCALATION.md
 - User can delete their feedback: [yes | no]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| EVAL.md | Evaluation methodology |
+| POLICY.md | Operating policies and constraints |
+| SOUL.md | Agent personality and values |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

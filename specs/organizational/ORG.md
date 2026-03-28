@@ -134,6 +134,19 @@ Human directory: [link or "private"]
 **For hiring agents:** See marketplace/[org-profile]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| INHERIT.md | Configuration inheritance from parent |
+| OVERRIDE.md | Documented deviations from inherited config |
+| POLICY.md | Operating policies and constraints |
+| ROSTER.md | Team member registry |
+| SWARM.md | Large operation structure |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

@@ -103,6 +103,15 @@ Private right of action: For data breaches only
 Penalties: Up to $2,500/violation, $7,500/intentional violation
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PII.md | Personal data classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

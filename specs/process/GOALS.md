@@ -70,6 +70,13 @@ last_updated: date
 **Missed and why:** [List with explanation]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DEADLINES.md | Time constraints and schedules |
+| WORKFLOW.md | Task execution flow |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

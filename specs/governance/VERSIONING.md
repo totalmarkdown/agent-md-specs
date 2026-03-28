@@ -82,6 +82,16 @@ Previous: [version] — [still supported until date | EOL]
 LTS: [version if any] — [support until date]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

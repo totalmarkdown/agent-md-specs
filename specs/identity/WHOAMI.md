@@ -96,6 +96,19 @@ What I cannot do:
 - Who I report to: REPORTSTO.md
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ID.md | Permanent cryptographic identifier |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MCP.md | Model Context Protocol connections |
+| OFFERING.md | Services offered |
+| OWNER.md | Agent ownership and liability |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

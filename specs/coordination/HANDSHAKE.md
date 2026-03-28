@@ -115,6 +115,17 @@ All handshakes logged with:
 - Session tokens (hashed, not plaintext)
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ORG.md | Organization-wide fleet configuration |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| TEAM.md | Multi-agent team coordination |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

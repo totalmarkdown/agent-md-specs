@@ -97,6 +97,14 @@ Agent passes evaluation if:
 - Token efficiency: ≤ [X] tokens per task on average
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ENFORCEMENT.md | Policy verification and compliance |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

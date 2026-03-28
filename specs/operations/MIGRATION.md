@@ -81,6 +81,17 @@ Rollback restores to pre-migration state from backup.
 Note: [any data loss risks if rolling back]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| MEMORY.md | Individual agent memory governance |
+| MONITOR.md | Observability and alerting |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

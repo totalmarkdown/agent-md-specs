@@ -139,6 +139,19 @@ Available from:
 - See NETWORK.md for agent endorsements
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| EVAL.md | Evaluation methodology |
+| HIREME.md | Agent hiring and engagement |
+| OWNER.md | Agent ownership and liability |
+| PRICING.md | Cost structure |
+| REPUTATION.md | Trust and reputation scoring |
+| TESTSCORES.md | Benchmark results and quality metrics |
+| WALLET.md | Financial identity and payment |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

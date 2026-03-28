@@ -95,6 +95,17 @@ If a security incident occurs or is suspected:
 | Execute | restricted | pre-approved scripts only |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| POLICY.md | Operating policies and constraints |
+| PROVENANCE.md | Data lineage and trust classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

@@ -120,6 +120,19 @@ New agents: read CLAUDE.md, MEMORY.md, ROSTER.md, this file
 First contribution: [suggested starter task]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| MEMORY.md | Individual agent memory governance |
+| ORG.md | Organization-wide fleet configuration |
+| REPAIR.md | Recovery and self-healing procedures |
+| ROSTER.md | Team member registry |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

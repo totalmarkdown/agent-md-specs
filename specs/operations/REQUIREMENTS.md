@@ -207,6 +207,19 @@ cp .env.example .env.local
 ```
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| MCP.md | Model Context Protocol connections |
+| MONITOR.md | Observability and alerting |
+| SECRETS.md | Required credentials manifest |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

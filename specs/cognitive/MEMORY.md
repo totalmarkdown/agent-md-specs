@@ -132,6 +132,18 @@ Aligned with SESSION.md destruction policy:
   or destroyed per retention policy; shared context entries persist
   (they belong to the team/org, not the agent)
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LEGACY.md | Retirement and decommissioning |
+| MEMORYSAFETY.md | Memory poisoning defense |
+| PROVENANCE.md | Data lineage and trust classification |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

@@ -104,6 +104,16 @@ For organizations with model governance requirements:
 | [v] | [model] | [previous] | [why] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| INPUT.md | Accepted input formats |
+| MCP.md | Model Context Protocol connections |
+| OUTPUT.md | Output formats and delivery |
+| PERMISSIONS.md | Static resource access control |
+| TOOLS.md | Available tools and capabilities |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

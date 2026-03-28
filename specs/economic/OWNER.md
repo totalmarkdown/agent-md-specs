@@ -86,6 +86,19 @@ Who benefits financially from this agent:
 | 1.0 | Initial ownership | [date] | [name] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| CONTACT.md | Reachable endpoints |
+| DELEGATION.md | Authority chain and authorization |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HIREME.md | Agent hiring and engagement |
+| PRICING.md | Cost structure |
+| WALLET.md | Financial identity and payment |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

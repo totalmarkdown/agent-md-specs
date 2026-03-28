@@ -119,6 +119,19 @@ To request access: [process]
 To report unauthorized access: [security contact]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| LEASTPRIVILEGE.md | Dynamic zero-trust privilege management |
+| MEMORY.md | Individual agent memory governance |
+| PERMISSIONS.md | Static resource access control |
+| PROMPTSHIELD.md | Prompt injection defense |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

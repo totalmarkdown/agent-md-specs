@@ -122,6 +122,17 @@ Wrap current task or checkpoint
 Complete full sequence
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DEADLINES.md | Time constraints and schedules |
+| ENFORCEMENT.md | Policy verification and compliance |
+| GOALS.md | Objectives and success criteria |
+| MEMORY.md | Individual agent memory governance |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| WAKEUP.md | Bootstrap and initialization |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

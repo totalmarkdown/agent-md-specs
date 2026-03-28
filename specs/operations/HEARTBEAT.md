@@ -101,6 +101,17 @@ When this agent misses its own heartbeat schedule:
 5. If missed > [N]: trigger SELFHEALING.md procedures
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| ID.md | Permanent cryptographic identifier |
+| MONITOR.md | Observability and alerting |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

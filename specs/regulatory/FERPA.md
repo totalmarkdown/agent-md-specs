@@ -98,6 +98,15 @@ Loss of federal funding for institution
 institution bears liability for vendor violations)
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PII.md | Personal data classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

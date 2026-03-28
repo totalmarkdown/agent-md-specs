@@ -116,6 +116,19 @@ Format: timestamp | check_name | detected_value | correction_applied | outcome
 Review log: [daily | weekly | on alert]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| BUDGET.md | Cost controls and spending limits |
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| MONITOR.md | Observability and alerting |
+| PERMISSIONS.md | Static resource access control |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

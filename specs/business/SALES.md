@@ -108,6 +108,16 @@ Larger discounts require escalation per ESCALATION.md.
 - Set follow-up tasks for [X days] after no response
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HIREME.md | Agent hiring and engagement |
+| PRICING.md | Cost structure |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

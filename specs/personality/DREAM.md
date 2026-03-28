@@ -62,6 +62,15 @@ LIMITS.md, SOUL.md, and ESCALATION.md govern behavior.
 This file is aspirational.
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| GUARDRAILS.md | Runtime safety boundaries |
+| LIMITS.md | Hard constraints and safety boundaries |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

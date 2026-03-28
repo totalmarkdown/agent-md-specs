@@ -175,6 +175,15 @@ These terms are off-brand:
 - [Term to avoid]: Use [preferred alternative] instead
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| HIREME.md | Agent hiring and engagement |
+| PRICING.md | Cost structure |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

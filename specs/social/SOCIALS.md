@@ -108,6 +108,15 @@ Media mentions: [URL]
 **What you get:** [content description]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CONNECTIONS.md | Social and network connections |
+| CONTACT.md | Reachable endpoints |
+| REPUTATION.md | Trust and reputation scoring |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

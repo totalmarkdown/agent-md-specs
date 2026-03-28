@@ -101,6 +101,16 @@ This one was last revised: [date] because [reason].
 *— [Entity name], [year]*
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| GOALS.md | Objectives and success criteria |
+| ORG.md | Organization-wide fleet configuration |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

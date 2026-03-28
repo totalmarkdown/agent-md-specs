@@ -118,6 +118,17 @@ Retention: [X years] for tax purposes
 [If applicable — what protocols this agent participates in]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| BUDGET.md | Cost controls and spending limits |
+| HIREME.md | Agent hiring and engagement |
+| OWNER.md | Agent ownership and liability |
+| PERMISSIONS.md | Static resource access control |
+| PRICING.md | Cost structure |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

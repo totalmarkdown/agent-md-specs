@@ -83,6 +83,14 @@ updated: date
 
 ---
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DEADLINES.md | Time constraints and schedules |
+| GOALS.md | Objectives and success criteria |
+| REPAIR.md | Recovery and self-healing procedures |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

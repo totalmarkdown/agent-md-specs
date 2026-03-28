@@ -150,6 +150,16 @@ If you encounter a situation not covered by an SOP:
 4. This becomes SOP-[next number]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DEADLINES.md | Time constraints and schedules |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| GOALS.md | Objectives and success criteria |
+| RULES.md | Operating rules and regulations |
+| WORKFLOW.md | Task execution flow |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

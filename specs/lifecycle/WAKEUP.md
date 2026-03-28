@@ -125,6 +125,19 @@ Each wakeup logged to LOGS.md with:
 - State loaded from (MEMORY.md version/timestamp)
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| BUDGET.md | Cost controls and spending limits |
+| DEADLINES.md | Time constraints and schedules |
+| ENFORCEMENT.md | Policy verification and compliance |
+| GOALS.md | Objectives and success criteria |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| ID.md | Permanent cryptographic identifier |
+| MEMORY.md | Individual agent memory governance |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

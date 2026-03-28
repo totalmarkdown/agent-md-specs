@@ -62,6 +62,15 @@ Things users discovered that weren't designed:
 - Most common word in outputs: "[word]"
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CONNECTIONS.md | Social and network connections |
+| CONTACT.md | Reachable endpoints |
+| REPUTATION.md | Trust and reputation scoring |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

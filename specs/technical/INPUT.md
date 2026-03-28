@@ -206,6 +206,19 @@ Before the model sees the input, these transformations occur:
 - Use: `tmd count-tokens --text "[your input]"`
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| DEADLINES.md | Time constraints and schedules |
+| GOALS.md | Objectives and success criteria |
+| MCP.md | Model Context Protocol connections |
+| MEMORY.md | Individual agent memory governance |
+| OUTPUT.md | Output formats and delivery |
+| PERMISSIONS.md | Static resource access control |
+| PROMPTSHIELD.md | Prompt injection defense |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

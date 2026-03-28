@@ -85,6 +85,16 @@ This agent will be decommissioned if:
 | 1.0 | Initial charter | [approver] | [date] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ORG.md | Organization-wide fleet configuration |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

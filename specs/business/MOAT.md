@@ -190,6 +190,18 @@ Triggers for reassessment: [competitor launches, market changes]
 Last updated: [date]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| GDPR.md | GDPR compliance requirements |
+| HIREME.md | Agent hiring and engagement |
+| MEMORY.md | Individual agent memory governance |
+| PRICING.md | Cost structure |
+| SOUL.md | Agent personality and values |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

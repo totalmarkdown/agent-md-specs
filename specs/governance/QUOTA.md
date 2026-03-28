@@ -118,6 +118,18 @@ To request higher limits:
 Enterprise customers: [sales contact]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+| SLA.md | Service level commitments |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

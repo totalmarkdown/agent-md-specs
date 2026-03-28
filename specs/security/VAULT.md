@@ -163,6 +163,16 @@ Audit review: [monthly | quarterly]
 4. Review if any secrets were unique to this agent (delete after [N days])
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PROMPTSHIELD.md | Prompt injection defense |
+| SECRETS.md | Required credentials manifest |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

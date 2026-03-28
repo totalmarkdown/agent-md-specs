@@ -97,6 +97,19 @@ For code updates:
 4. Deploy to production with [N] minute monitoring window
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| API.md | HTTP API specification |
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| EVAL.md | Evaluation methodology |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| MCP.md | Model Context Protocol connections |
+| MONITOR.md | Observability and alerting |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

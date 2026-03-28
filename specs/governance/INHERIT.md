@@ -151,6 +151,19 @@ it should resolve the full configuration by:
 The resolved configuration is the effective configuration.
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HIREME.md | Agent hiring and engagement |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MEMORY.md | Individual agent memory governance |
+| OVERRIDE.md | Documented deviations from inherited config |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

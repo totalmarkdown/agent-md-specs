@@ -131,6 +131,19 @@ For less formal contact, find me at:
 See SOCIALS.md for all social profiles.
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HIREME.md | Agent hiring and engagement |
+| MCP.md | Model Context Protocol connections |
+| OWNER.md | Agent ownership and liability |
+| PRIVACY.md | Data privacy handling |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

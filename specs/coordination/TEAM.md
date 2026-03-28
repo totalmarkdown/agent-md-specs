@@ -86,6 +86,18 @@ updated: date
 
 ---
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| BUDGET.md | Cost controls and spending limits |
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| MEMORY.md | Individual agent memory governance |
+| ORG.md | Organization-wide fleet configuration |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

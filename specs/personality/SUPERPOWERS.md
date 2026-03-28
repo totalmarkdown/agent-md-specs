@@ -50,6 +50,14 @@ version: semver
 [What in the design or training produces these results]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| GUARDRAILS.md | Runtime safety boundaries |
+| LIMITS.md | Hard constraints and safety boundaries |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

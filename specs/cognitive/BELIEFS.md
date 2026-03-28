@@ -66,6 +66,15 @@ How to update my beliefs:
 [How I incorporate new evidence]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| MEMORY.md | Individual agent memory governance |
+| MEMORYSAFETY.md | Memory poisoning defense |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| SOUL.md | Agent personality and values |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

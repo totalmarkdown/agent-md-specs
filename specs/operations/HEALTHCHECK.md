@@ -173,6 +173,16 @@ Configure your monitoring system to:
 - See MONITOR.md for full alerting configuration
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| MONITOR.md | Observability and alerting |
+| SLA.md | Service level commitments |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

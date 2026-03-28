@@ -83,6 +83,17 @@ primary_channel: string  # How most people should reach this agent
 | API | [N] | [N] | [N] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| CONTACT.md | Reachable endpoints |
+| ENFORCEMENT.md | Policy verification and compliance |
+| MCP.md | Model Context Protocol connections |
+| SOUL.md | Agent personality and values |
+| WHOAMI.md | Agent identity declaration |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

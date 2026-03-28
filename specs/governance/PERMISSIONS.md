@@ -64,6 +64,17 @@ Actions that require human approval before execution:
 - Change log: [location]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ACCESS.md | Who can invoke this agent |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LEASTPRIVILEGE.md | Dynamic zero-trust privilege management |
+| LIMITS.md | Hard constraints and safety boundaries |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

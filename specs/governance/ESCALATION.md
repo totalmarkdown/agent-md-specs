@@ -97,6 +97,19 @@ Escalate immediately without attempting to handle autonomously:
 [Things agent should handle autonomously without bothering humans]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| CONTACT.md | Reachable endpoints |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| LIMITS.md | Hard constraints and safety boundaries |
+| MEMORY.md | Individual agent memory governance |
+| PERMISSIONS.md | Static resource access control |
+| POLICY.md | Operating policies and constraints |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

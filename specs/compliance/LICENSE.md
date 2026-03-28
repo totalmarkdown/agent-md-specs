@@ -79,8 +79,16 @@ Custom licensing available for enterprise deployments.
 ## Full License Text
 [Full text of chosen license, or link to standard license text]
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| CONSENT.md | User consent lifecycle |
+| ENFORCEMENT.md | Policy verification and compliance |
+| PROVENANCE.md | Data lineage and trust classification |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
 *Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
-```

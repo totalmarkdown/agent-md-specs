@@ -122,6 +122,17 @@ Changes since last review: [what changed and why]
 Next review: [date]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CREW.md | Working group structure |
+| DELEGATION.md | Authority chain and authorization |
+| ORG.md | Organization-wide fleet configuration |
+| POLICY.md | Operating policies and constraints |
+| SOUL.md | Agent personality and values |
+| TEAM.md | Multi-agent team coordination |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

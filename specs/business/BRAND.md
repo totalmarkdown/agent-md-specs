@@ -137,6 +137,16 @@ Why: [What it communicates that conflicts with brand essence]
 Contact: [brand owner or creative director]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| HIREME.md | Agent hiring and engagement |
+| PRICING.md | Cost structure |
+| SOUL.md | Agent personality and values |
+| VOICE.md | Communication style and tone |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

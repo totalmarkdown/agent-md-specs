@@ -134,6 +134,19 @@ Security incident process: See ICE.md
 | [date] | [rotated/revoked/granted] | [secret] | [who] | [why] |
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ICE.md | Emergency break-glass protocols |
+| PERMISSIONS.md | Static resource access control |
+| PROMPTSHIELD.md | Prompt injection defense |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| VAULT.md | Secrets storage governance |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

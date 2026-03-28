@@ -77,6 +77,15 @@ What future agents and humans should know from my operation:
 [Optional: humans and agents who helped this agent do good work]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ENFORCEMENT.md | Policy verification and compliance |
+| MEMORY.md | Individual agent memory governance |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| WAKEUP.md | Bootstrap and initialization |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

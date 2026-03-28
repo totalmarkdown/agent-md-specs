@@ -97,6 +97,17 @@ Last reviewed: [date]
 Reviewed by: [role]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+| POLICY.md | Operating policies and constraints |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

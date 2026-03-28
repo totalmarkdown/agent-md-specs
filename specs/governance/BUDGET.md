@@ -75,6 +75,19 @@ Use the cheapest model that can complete the task:
 - Prefer shorter prompts — link to reference files instead of embedding them
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+| PRICING.md | Cost structure |
+| WALLET.md | Financial identity and payment |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

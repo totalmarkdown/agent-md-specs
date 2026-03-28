@@ -151,6 +151,19 @@ Next scheduled drill: [date]
 How to run a drill: [instructions]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CIRCUITBREAKER.md | Failure containment and blast radius |
+| DELEGATION.md | Authority chain and authorization |
+| ENFORCEMENT.md | Policy verification and compliance |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PANIC.md | Panic-mode emergency response |
+| PERMISSIONS.md | Static resource access control |
+| REPAIR.md | Recovery and self-healing procedures |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

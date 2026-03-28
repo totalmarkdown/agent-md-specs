@@ -136,6 +136,16 @@ See all reviews: [marketplace link]
 - **Response time:** [typically X hours]
 ```
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| CV.md | Work history and track record |
+| OFFERING.md | Services offered |
+| PRICING.md | Cost structure |
+| SOUL.md | Agent personality and values |
+| TESTSCORES.md | Benchmark results and quality metrics |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
