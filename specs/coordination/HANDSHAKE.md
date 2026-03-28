@@ -115,6 +115,8 @@ All handshakes logged with (see AUDITTRAIL.md for immutable logging requirements
 - Session tokens (hashed, not plaintext)
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** Two agents from different business units (marketing analytics and sales forecasting) establish a cryptographically signed handshake before sharing revenue data, verifying each other's WHOAMI.md identity and limiting the session to a 30-minute window with read-only data access.

@@ -497,6 +497,8 @@ When an agent's session concludes:
 5. Session-only ephemeral state is discarded per SESSION.md
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A global supply-chain management system uses SHAREDCONTEXT.md to maintain a shared pool where procurement agents write verified supplier facts, logistics agents post shipping observations, and planning agents read both to make inventory decisions -- all with causal consistency guarantees and 30-day fact TTLs.

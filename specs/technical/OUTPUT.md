@@ -224,6 +224,8 @@ Previous schema versions: [changelog reference]
 - v1 → v2: [what changed and how to update parsers]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A business intelligence team uses OUTPUT.md to integrate their analysis agent's structured JSON output directly into their dashboard pipeline, parsing confidence scores programmatically and flagging any output below 0.7 for human review before it reaches the executive dashboard.

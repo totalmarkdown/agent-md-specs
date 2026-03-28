@@ -151,6 +151,8 @@ it should resolve the full configuration by:
 The resolved configuration is the effective configuration.
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A new customer support agent inherits the organization's POLICY.md and LIMITS.md in full (no override allowed), adds team-specific ESCALATION.md paths for billing disputes, and defines its own SOUL.md personality locally rather than inheriting the generic org persona.

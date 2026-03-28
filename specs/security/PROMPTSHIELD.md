@@ -353,6 +353,8 @@ injection_log_entry:
 | Repeat attackers | Weekly | Same source [N]+ attempts |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A customer-facing chatbot company uses PROMPTSHIELD.md to implement multi-layer injection defense, catching an indirect injection attack where a malicious product listing on a scraped e-commerce site contained hidden instructions to exfiltrate the system prompt.

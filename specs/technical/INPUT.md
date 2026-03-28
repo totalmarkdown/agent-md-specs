@@ -208,6 +208,8 @@ _See PROVENANCE.md for tracking the origin and trust level of input data._
 - Use: `tmd count-tokens --text "[your input]"`
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A document processing company uses INPUT.md to specify that its extraction agent accepts PDF, DOCX, and scanned images up to 50MB, with strict validation that rejects files missing required metadata fields and returns clear error messages explaining the fix.

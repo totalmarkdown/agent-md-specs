@@ -268,6 +268,8 @@ Each step is independently declared, reviewed, and logged.
 Chain failure triggers rollback per `rollback_policy`.
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** Before updating a customer's email address in the CRM, a support agent declares its intent with the specific record ID, reason (support ticket #4521), expected outcome, and 0.95 confidence, creating a reviewable pre-action record that the compliance team can audit months later.

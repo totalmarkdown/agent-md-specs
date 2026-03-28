@@ -96,6 +96,8 @@ When writing data, use these formats:
 - Alert destination: [log file | Slack | email]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A retail analytics company uses DATA.md to document its inventory agent's three data sources (PostgreSQL warehouse, Shopify API, CSV uploads), defining Bronze-to-Gold transformation rules and PII masking for customer email addresses.

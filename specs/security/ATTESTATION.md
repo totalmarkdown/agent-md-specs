@@ -278,6 +278,8 @@ When attestation fails, the agent MUST:
 5. Do NOT retry with weaker credentials or bypass verification
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A large tech company uses ATTESTATION.md with SPIFFE/SPIRE to provide zero-downtime credential rotation for its 150 production agents, with SVIDs rotating every hour and hardware-bound keys in AWS CloudHSM preventing credential theft.

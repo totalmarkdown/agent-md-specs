@@ -290,6 +290,8 @@ escalation increases one tier. At maximum escalation, trigger
 ICE.md emergency protocol.
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A payment processing company uses CIRCUITBREAKER.md to isolate its fraud-detection agent from a flaky third-party identity verification API, serving cached risk scores when the breaker opens rather than blocking all transactions.

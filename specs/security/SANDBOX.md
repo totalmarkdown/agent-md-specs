@@ -114,6 +114,8 @@ If the agent attempts to access resources outside its sandbox:
 Escape attempts are treated as security incidents (see ENFORCEMENT.md).
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A software development company uses SANDBOX.md to run its code generation agent in a read-only container with no network access and a 30-second execution timeout, preventing generated code from making unauthorized API calls or modifying the host filesystem.

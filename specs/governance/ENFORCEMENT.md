@@ -334,6 +334,8 @@ Exceptions are:
 - Reviewed at each compliance attestation
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A CI/CD pipeline runs the agent-md-validator against every agent configuration before deployment, blocking any release where required specs like PERMISSIONS.md or LIMITS.md fail validation checks.

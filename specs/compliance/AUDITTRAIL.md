@@ -308,6 +308,8 @@ The Chain of Thought Ledger is:
 - **Queryable** for pattern analysis across decisions
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A multinational bank's trading agents produce hash-chained audit entries for every order execution, enabling the compliance team to reconstruct the full decision chain during regulatory examinations without relying on agent self-reporting.

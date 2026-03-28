@@ -152,6 +152,8 @@ Next scheduled drill: [date]
 How to run a drill: [instructions]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A production data pipeline agent begins generating corrupted output at scale, and the on-call engineer follows the TYPE 1 protocol to immediately kill the process, preserve logs, and notify the data platform lead before any downstream systems consume bad data.

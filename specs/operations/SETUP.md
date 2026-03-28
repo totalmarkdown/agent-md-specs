@@ -183,6 +183,8 @@ Ask in Discord: [Discord URL]
 - Check MEMORY.md to see what it remembers from previous sessions
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A new team member at a marketing agency follows SETUP.md to get a content-generation agent running locally in 20 minutes, including troubleshooting guidance for the most common MCP server connection error they hit on their first attempt.

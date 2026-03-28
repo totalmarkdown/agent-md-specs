@@ -94,6 +94,8 @@ Subscribe to these to monitor this agent:
 | [agent-name].task.* | Task lifecycle |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A customer success team configures EVENTS.md so their support agent emits a `ticket.escalated` event whenever sentiment analysis detects frustration, triggering a separate agent to draft a proactive outreach email to the account manager.

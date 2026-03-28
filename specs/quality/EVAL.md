@@ -100,6 +100,8 @@ Agent passes evaluation if:
 Run TESTING.md's full test suite to verify these criteria before deployment.
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A SaaS company runs EVAL.md test suites nightly against their customer support agent, catching a 12% accuracy regression in billing-related queries before it reaches production.

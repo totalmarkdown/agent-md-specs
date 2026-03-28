@@ -289,6 +289,8 @@ multi_agent_consent:
 
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** An e-commerce platform's personalization agent collects granular, purpose-specific consent (product recommendations, email marketing, usage analytics) and immediately halts all processing for a user who revokes any single scope, propagating the revocation to all downstream agents within 5 minutes.

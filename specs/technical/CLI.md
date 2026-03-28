@@ -131,6 +131,8 @@ See ENV.md for the full environment variable specification.
 ```
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A DevOps team uses CLI.md to integrate their code review agent into CI/CD pipelines, piping git diffs into the CLI with `--format json --quiet` flags for machine-readable output and using exit codes to gate merge approvals.

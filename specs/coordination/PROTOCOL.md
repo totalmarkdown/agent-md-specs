@@ -101,6 +101,8 @@ If two agents receive conflicting instructions (see DELEGATION.md for the author
 3. If genuinely ambiguous: escalate per ESCALATION.md
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A customer support team's agents use PROTOCOL.md to define standardized message formats for ticket handoffs, ensuring every escalation from the triage agent to the specialist agent includes the full conversation context, customer sentiment score, and expected resolution format.

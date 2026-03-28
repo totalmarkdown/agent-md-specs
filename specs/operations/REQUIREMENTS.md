@@ -207,6 +207,8 @@ cp .env.example .env.local
 ```
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A multinational deploys its compliance-monitoring agent across AWS regions using REQUIREMENTS.md as the pre-flight checklist -- verifying that each region has the required Anthropic API access, minimum 8GB RAM instances, and outbound firewall rules for all dependency endpoints.

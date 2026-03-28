@@ -131,6 +131,8 @@ Requirements:
 Credit: [How contributors are credited]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A legal firm evaluating AI contract-review agents uses EXAMPLES.md to see real before/after comparisons of clause extraction on their specific contract types before committing to a subscription.

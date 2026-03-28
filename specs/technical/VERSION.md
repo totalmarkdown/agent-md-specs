@@ -85,6 +85,8 @@ tmd marketplace check-update [agent-name]
 ```
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A platform team uses VERSION.md to quickly check which version of their deployment agent is running in production, verify whether breaking changes exist, and run the one-line upgrade command when a new stable release is available.

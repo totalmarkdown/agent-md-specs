@@ -290,6 +290,8 @@ detection, see PROMPTSHIELD.md.
 6. Post-incident review within [24 hours]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A financial research agent tracks the trust level of every data source (Bloomberg API as "verified," web-scraped earnings estimates as "untrusted") and automatically downgrades output confidence when any untrusted source contributes to an investment recommendation.

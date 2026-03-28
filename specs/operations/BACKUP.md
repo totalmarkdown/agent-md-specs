@@ -74,6 +74,8 @@ _See AUDITTRAIL.md for compliance records that must survive restores._
 - For migrating backups between environments, see LEGACY.md
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** An e-commerce company backs up its product-recommendation agent's learned preferences and MEMORY.md every hour to S3, with a 4-hour RPO, so that a corrupted model state can be rolled back without losing an entire day of customer interaction data.

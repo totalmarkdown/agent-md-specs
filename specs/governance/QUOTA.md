@@ -119,6 +119,8 @@ To request higher limits:
 Enterprise customers: [sales contact]
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** An internal API agent enforces per-department rate limits so that the marketing team's heavy batch analysis jobs cannot starve the support team's real-time customer lookup requests, with each department receiving its own quota allocation from the shared capacity.

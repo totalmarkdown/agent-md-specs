@@ -189,6 +189,8 @@ These scores can be independently verified:
 | Human evaluation | No — trust | Contact [email] for methodology |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A consulting firm evaluates third-party agents by comparing TESTSCORES.md report cards side by side, selecting the agent with the highest output quality percentile for their client-facing research pipeline.

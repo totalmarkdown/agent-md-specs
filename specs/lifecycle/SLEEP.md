@@ -122,6 +122,8 @@ Wrap current task or checkpoint
 Complete full sequence
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** At the end of a 4-hour data analysis session, the agent runs its sleep sequence — updating MEMORY.md with findings, committing a checkpoint of its in-progress report, writing a HANDOFF.md note explaining where it left off, and signaling the orchestrator with an estimated return time for the next scheduled session.

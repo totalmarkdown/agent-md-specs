@@ -123,6 +123,8 @@ a clear error message listing what is missing.
 | `[VAR]` | [dev value] | [staging value] | [prod value] |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A platform team uses ENV.md to provide new developers with a copy-paste quick reference of the minimum required environment variables to run the agent locally, eliminating the "it works on my machine" problem across a 30-person engineering team.

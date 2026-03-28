@@ -103,6 +103,8 @@ When this agent misses its own heartbeat schedule:
 _See HEALTHCHECK.md for point-in-time liveness verification beyond the heartbeat signal._
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A media company's video-transcoding agents emit heartbeats every 60 seconds to a central monitoring service, triggering an on-call alert if any agent misses 3 consecutive beats during overnight batch processing runs.

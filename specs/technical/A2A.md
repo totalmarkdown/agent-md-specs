@@ -106,6 +106,8 @@ _See DELEGATION.md for the full authority chain and authorization model._
 - Log all task assignments with: agent ID, task type, timestamp
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A supply chain company configures A2A.md so its demand forecasting agent publishes an Agent Card at a well-known URL, allowing procurement agents from partner companies to discover its capabilities and delegate forecasting tasks via the A2A protocol.

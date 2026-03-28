@@ -94,6 +94,8 @@ When adding a new capability or fixing a bug:
 5. Update EVAL.md with new eval cases if capability changes
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A fintech startup requires all agent PRs to pass TESTING.md's full suite in CI before merge, catching a regression where the tax calculation agent mishandled negative amounts.

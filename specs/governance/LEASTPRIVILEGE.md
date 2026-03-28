@@ -289,6 +289,8 @@ restrictions:
 | Profile accuracy | Quarterly | [security role] | Do profiles match actual usage? |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A report generation agent starts each session with read-only access to its own config files, requests just-in-time write access to the analytics database only for the duration of the report task, and has that privilege automatically revoked the moment the report is saved.

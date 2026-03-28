@@ -113,6 +113,8 @@ PANIC.md is a single instruction:
 **When everything breaks — stop, save, signal, wait.**
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A production email-sending agent detects three consecutive output validation failures in under a second, immediately triggers the panic sequence — stops mid-batch, dumps its state including the last 10 sent messages, signals the monitoring system, and waits for the platform team to investigate before any more emails go out.

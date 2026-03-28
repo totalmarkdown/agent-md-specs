@@ -135,6 +135,8 @@ Certificate inspection proxies: [supported | not supported — explain]
 | Per day (at [N] tasks) | ~[X]MB |
 ```
 
+
+```
 ## Example Use Cases
 
 **Enterprise:** A Fortune 500 company uses NETWORK.md to generate firewall allowlist rules for their corporate proxy, enabling their research agent to reach api.anthropic.com:443 and three approved data provider domains while blocking all other outbound traffic.
