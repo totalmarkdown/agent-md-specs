@@ -116,8 +116,8 @@ do not propagate upward unless containment is exhausted.
 | Level | Containment Rule | Max Impact |
 |-------|-----------------|------------|
 | Agent | Single breaker trips for one dependency. Other agents independent. | 1 agent, 1 dependency |
-| Team | >50% of agents have open breakers for same dependency → team breaker trips (see TEAM.md for team composition). | All agents in team |
-| Crew (CREW.md) | >50% of teams have team-level breakers open → crew breaker trips. | All teams in crew |
+| Team | >50% of agents have open breakers for same dependency → team breaker trips (see TEAM.md for team composition and organizational containment). | All agents in team |
+| Crew | >50% of teams have team-level breakers open → crew breaker trips (see CREW.md for crew-level containment coordination). | All teams in crew |
 | Swarm | Multiple crews report open breakers → global fallback activates. | Entire fleet |
 
 ### Isolation Principle
@@ -244,7 +244,9 @@ Alerts are routed per ESCALATION.md based on severity:
 | Swarm-level degradation | Critical | Hard stop, all-hands alert (Level 3) |
 | Breaker closes after recovery | Info | Log only |
 
-### Dashboard Metrics (per MONITOR.md)
+### Dashboard Metrics
+Expose the following metrics on the operational dashboard
+(see MONITOR.md for dashboard configuration and alerting):
 - `circuit_breaker_state` — Current state per agent per dependency
 - `circuit_breaker_open_duration` — Time each breaker has been open
 - `circuit_breaker_trip_count` — Total trips in time window
@@ -261,12 +263,15 @@ time-of-day patterns, mean time to recovery, threshold tuning.
 When HALF-OPEN probes succeed:
 
 1. **Verify health** — Full health check per HEALTHCHECK.md (see HEALTHCHECK.md for probe definitions)
-2. **Close breaker** — Transition to CLOSED, reset failure counters
-3. **Replay queued requests** — Process dead letter queue FIFO,
+2. **Re-initialize agent** — If the agent was fully halted, follow the
+   startup sequence defined in WAKEUP.md before accepting traffic
+3. **Close breaker** — Transition to CLOSED, reset failure counters
+4. **Replay queued requests** — Process dead letter queue FIFO,
    rate-limited to avoid overwhelming the recovering dependency
-4. **Clear stale caches** — Invalidate entries so fresh data flows
-5. **Log recovery** — AUDITTRAIL.md: downtime, impact, strategy used
-6. **Notify contacts** — Recovery notification with duration and impact
+5. **Clear stale caches** — Invalidate entries so fresh data flows
+6. **Log recovery** — AUDITTRAIL.md: downtime, impact, strategy used
+7. **Notify contacts** — Recovery notification with duration and impact;
+   notify via ESCALATION.md to close the open incident
 
 ### Post-Recovery Validation
 After the breaker closes, monitor closely for re-trips:

@@ -107,9 +107,9 @@ pool_status: active | frozen | archived | draining
 
 ### Pool Hierarchy Position
 This pool exists at the **[scope]** level. It inherits from the
-pool above it in the organizational hierarchy and may propagate
-entries downward to child pools, subject to inheritance rules
-defined below.
+pool above it in the organizational hierarchy (see ORG.md for how
+organizational levels are defined) and may propagate entries
+downward to child pools, subject to inheritance rules defined below.
 
 ### Pool Lifecycle States
 - **active:** Normal read/write operations permitted
@@ -137,7 +137,8 @@ cannot self-grant pool access.
 
 1. **Read access** is the minimum grant. An agent with pool
    membership always has read access.
-2. **Write access** requires explicit delegation. The delegating
+2. **Write access** requires explicit delegation (see DELEGATION.md
+   for delegation authority requirements). The delegating
    principal must have write or admin access themselves.
 3. **Delete access** is restricted to pool administrators and
    agents with explicit delete delegation. Soft-delete is
@@ -233,7 +234,7 @@ memory_schema:
   provenance:
     type: object
     required: true
-    ref: PROVENANCE.md
+    ref: PROVENANCE.md    # See PROVENANCE.md — every entry tracks provenance
     properties:
       source_type:
         type: enum
@@ -305,7 +306,8 @@ window pollution.
 | `confidence_weighted` | Low-confidence entries evicted first during capacity pressure |
 | `classification_preserve` | Higher classification entries retained longer during eviction |
 
-Eviction order when pool reaches capacity:
+Eviction order when pool reaches capacity
+(see AUDITTRAIL.md — all evictions are logged for audit purposes):
 1. Expired entries (TTL exceeded) — always evicted first
 2. Superseded entries older than 7 days
 3. Low-confidence observations (confidence < 0.3)

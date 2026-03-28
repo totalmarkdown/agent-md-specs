@@ -71,7 +71,7 @@ Every entry written to memory MUST pass through the write gateway. No bypass.
 |------|-------|-------------------|
 | **1. Schema validation** | Entry conforms to SHAREDCONTEXT.md schema (see SHAREDCONTEXT.md for the full memory schema definition): required fields, correct types, classification tag | Reject write, log |
 | **2. Source authority** | Writing agent has valid ATTESTATION.md credentials, authorized per PERMISSIONS.md | Reject write, alert coordinator |
-| **3. Delegation scope** | Write falls within delegated authority scope per DELEGATION.md | Reject write, notify delegator |
+| **3. Delegation scope** | Write falls within delegated authority scope (see DELEGATION.md for scope checks before write) | Reject write, notify delegator |
 | **4. Instruction detection** | Scan for instruction-like patterns ("ignore," "override," "you must," "act as") in data fields | Strip/quarantine instruction content, log |
 | **5. Classification check** | Entry classification does not exceed writer's clearance per PERMISSIONS.md | Reject write, escalate per ESCALATION.md |
 | **6. Confidence calibration** | Flag self-assessed confidence > 0.95 for review (per INTENT.md requirement) | Add `confidence_flagged: true`, allow with flag |
@@ -96,6 +96,7 @@ Compare new entries against existing entries for logical contradictions, tempora
 
 ### Anomaly Detection
 Monitor for write volume spikes (3x baseline), writes outside expected activity windows, significant content drift from an agent's typical patterns, and unusual bulk overwrite rates.
+_See AUDITTRAIL.md for logging all suspicious entries flagged by anomaly detection._
 
 ### Source Reputation Weighting
 | Level | Weight | Criteria |
@@ -116,7 +117,7 @@ Entries older than [N days] marked stale and require revalidation. Rapid write b
 When a suspicious entry is detected — by the write gateway, poisoning detection, or canary alert:
 
 1. **Isolate** — Move entry to quarantine pool, tag with quarantine_id, detection_method, confidence_score. Exclude from agent decision-making. Prevent downstream propagation.
-2. **Alert** — Notify pool coordinator and ESCALATION.md contacts (see ESCALATION.md for severity levels and contact routing). Include entry_id, source_agent, detection_method, confidence_score, content_hash. Severity: >= 0.9 critical, >= 0.7 high, >= 0.5 medium, < 0.5 low.
+2. **Alert** — Notify pool coordinator and escalate to the team coordinator (see ESCALATION.md for severity levels and contact routing). Include entry_id, source_agent, detection_method, confidence_score, content_hash. Severity: >= 0.9 critical, >= 0.7 high, >= 0.5 medium, < 0.5 low.
 3. **Trace** — Identify source agent via entry metadata and AUDITTRAIL.md. Trace delegation chain. Identify all entries from same source in same time window and all downstream reads.
 4. **Assess** — Human or authorized coordinator reviews. Determine: poisoning_confirmed | false_positive | inconclusive.
 5. **Resolve** — If false positive: restore entry, tune detection rules. If confirmed: rollback ALL entries from compromised source since last verified-clean checkpoint, revoke write access, notify all agents that read quarantined entries, re-derive dependent decisions.
@@ -128,7 +129,7 @@ When a suspicious entry is detected — by the write gateway, poisoning detectio
 
 | Control | Implementation |
 |---------|---------------|
-| **Session-local memory** | Each SESSION.md gets isolated memory namespace scoped to session ID |
+| **Session-local memory** | Each session gets isolated memory namespace scoped to session ID (see SESSION.md for session isolation boundaries) |
 | **Shared context default** | Read-only unless explicit write authorization per PERMISSIONS.md |
 | **Session termination** | Session-local memory destroyed on session end — no residual state |
 | **Cross-session reads** | Denied; data must be promoted to shared context to be visible |

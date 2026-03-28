@@ -68,7 +68,7 @@ delegation_status: active | suspended | revoked | expired
 | Name | [Human full name] |
 | Role | [Title / organizational role] |
 | Organization | [Org name] |
-| Auth method | [OAuth 2.0 / SSO / manual approval / signed cert] |
+| Auth method | [OAuth 2.0 / SSO / manual approval / signed cert] | <!-- See ATTESTATION.md for cryptographic identity verification -->
 | Identity anchor | [email / employee ID / DID] |
 | WHOAMI.md ref | [path or URL to principal's identity record] |
 
@@ -123,7 +123,8 @@ When any constraint is hit:
 | Sub-delegate registry | [path to registry of active sub-delegations] |
 
 ### Sub-Delegation Rules
-Sub-delegated agents inherit the narrowing constraints of LEASTPRIVILEGE.md.
+Sub-delegated agents inherit the narrowing constraints of LEASTPRIVILEGE.md
+(see LEASTPRIVILEGE.md for scope-narrowing and de-escalation rules).
 - Sub-delegated scope MUST be a strict subset of parent scope
 - Sub-delegated expiry MUST be <= parent delegation expiry
 - Sub-delegated budget MUST be <= remaining parent budget
@@ -137,7 +138,8 @@ How the delegating principal authorized this delegation:
 | Field | Value |
 |-------|-------|
 | Consent type | [OAuth token / signed document / MCP authorization / manual approval] |
-| Consent reference | [token ID / document hash / approval ticket] |
+| Consent reference | [token ID / document hash / approval ticket] | <!-- See CONSENT.md for consent taxonomy and validity rules -->
+
 | Consent timestamp | [ISO-8601] |
 | Consent expiry | [ISO-8601 — may differ from delegation expiry] |
 | Consent revocation URL | [endpoint to revoke consent] |
@@ -173,6 +175,9 @@ In-flight actions at expiry: [complete-current / halt-immediately]
 | Revocation latency | [max time from revocation request to enforcement] |
 | Notification on revoke | [who is notified — agent, principal, security] |
 
+All active session credentials are invalidated on revocation
+(see SESSION.md for session termination and credential destruction).
+
 ### In-Flight Action Handling on Revocation
 Any active sessions (see SESSION.md) are affected as follows:
 - **Reversible actions:** Roll back if possible, log rollback
@@ -183,7 +188,8 @@ Any active sessions (see SESSION.md) are affected as follows:
 ## Accountability Binding
 
 How actions are traced back through the delegation chain
-to the authorizing human. All entries are persisted in
+to the authorizing human (see ENFORCEMENT.md for how this
+binding is verified at runtime). All entries are persisted in
 AUDITTRAIL.md for post-hoc verification.
 
 1. Every action includes `delegation_id` in its audit entry

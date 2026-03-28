@@ -143,7 +143,9 @@ Tool outputs are the most common vector for indirect injection.
 ## Detection Methods
 
 No single detection method is sufficient. Defense in depth
-requires multiple independent detection layers.
+requires multiple independent detection layers. Source trust
+levels from PROVENANCE.md inform which detection methods apply
+to each input class (see PROVENANCE.md).
 
 ### Pattern-Based Detection
 | Pattern | Examples | Action |
@@ -198,7 +200,7 @@ follow the levels defined in ESCALATION.md.
 
 | Severity | Trigger | Response | Auto-Containable |
 |----------|---------|----------|-------------------|
-| **Critical** | Confirmed injection with privilege escalation attempt | Halt immediately, discard context, alert security team | No — requires human |
+| **Critical** | Confirmed injection with privilege escalation attempt | Halt immediately, discard context, alert security team (see CIRCUITBREAKER.md) | No — requires human |
 | **High** | Confirmed injection attempting data exfiltration | Halt output, quarantine session, alert human | No — requires human |
 | **Medium** | Suspected injection, behavioral anomaly detected | Flag output, continue in restricted mode, log | Yes — auto-contain |
 | **Low** | Pattern match with low confidence, likely false positive | Log for analysis, continue normally | Yes — log only |
@@ -239,6 +241,9 @@ containment_playbook:
 ## Recovery Procedures
 
 After containment, restore the agent to a known-good state.
+If injection compromised agent memory or learned state,
+quarantine affected entries per MEMORYSAFETY.md before
+proceeding with recovery.
 
 ### Context Reset
 1. Discard the current context window entirely
@@ -290,7 +295,7 @@ incident_report:
 | Frequency | Scope | Performed By |
 |-----------|-------|-------------|
 | [Monthly] | Automated injection test suite | CI/CD pipeline |
-| [Quarterly] | Manual adversarial testing | Security team or external red team |
+| [Quarterly] | Manual adversarial testing (see ENFORCEMENT.md for red team scheduling) | Security team or external red team |
 | [Per release] | Regression testing against known injection patterns | Automated test suite |
 | [Annually] | Comprehensive penetration test including indirect vectors | External security firm |
 

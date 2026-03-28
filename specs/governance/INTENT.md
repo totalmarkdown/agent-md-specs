@@ -80,7 +80,8 @@ intent:
   expected_outcome: [what should happen if successful]
   confidence_level: [0.0 - 1.0]
   reversible: [true / false]
-  delegation_ref: [DELEGATION.md ID, if acting on behalf of]
+  delegation_ref: [DELEGATION.md ID, if acting on behalf of]  # See DELEGATION.md
+  session_id: [from SESSION.md — binds intent to active session]  # See SESSION.md
   parent_intent: [UUID of parent intent, if part of a chain]
 ```
 
@@ -137,7 +138,8 @@ Confidence should account for:
 
 **Important:** Confidence scores SHOULD be derived from external
 evaluation systems, deterministic checks, or probabilistic ensembles
-— not solely from the agent's own self-assessment. LLMs are known to
+— not solely from the agent's own self-assessment. _See ATTESTATION.md
+for identity binding that ensures non-repudiation of confidence claims._ LLMs are known to
 produce miscalibrated confidence estimates. Where the agent generates
 its own confidence score, an external validator or calibration layer
 SHOULD verify the score before it is used for authorization decisions.
@@ -151,7 +153,7 @@ Before proceeding, classify the expected impact:
 | Reversibility | Can this be undone? (see LIMITS.md for hard irreversibility constraints) | [fully / partially / irreversible] |
 | Data sensitivity | What data is touched? | [public / internal / confidential / restricted] |
 | Financial impact | Cost or value at risk | [$0 / $1-100 / $100-10k / $10k+] |
-| Blast radius | How many users/systems affected | [single / team / org / public] |
+| Blast radius | How many users/systems affected (see CIRCUITBREAKER.md for blast radius thresholds) | [single / team / org / public] |
 | Time pressure | How urgent is this action | [none / hours / minutes / immediate] |
 
 ### Impact Score

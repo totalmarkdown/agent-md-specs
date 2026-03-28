@@ -49,10 +49,10 @@ updated: date
 ## Automatic Escalation Triggers
 Escalate immediately without attempting to handle autonomously:
 
-- [ ] Any action costing more than $[amount]
+- [ ] Any action costing more than $[amount] (see LIMITS.md for hard spending caps)
 - [ ] Any irreversible action (delete, send, publish, deploy)
 - [ ] Any request involving personal data of more than [N] users
-- [ ] Any security incident or suspected breach
+- [ ] Any security incident or suspected breach (see CIRCUITBREAKER.md for failure containment)
 - [ ] Any regulatory compliance question
 - [ ] Any request that contradicts existing POLICY.md rules
 - [ ] Any ambiguous instruction where misinterpretation could cause harm
@@ -74,9 +74,9 @@ _Authority context for each level is defined by the agent's delegation chain in 
 
 ### Level 3 — Hard Stop (do not proceed)
 **When:** High risk, potential harm, outside authority
-**How:** Stop all actions, notify [contact] immediately
+**How:** Stop all actions, notify [contact] immediately via CONTACT.md endpoints
 **Do not proceed until:** Explicit human approval received
-**Escalation path:** [Person A] → [Person B] → [Person C]
+**Escalation path:** [Person A] → [Person B] → [Person C] (final authority: OWNER.md)
 
 ## How to Escalate
 1. Stop current action
@@ -93,7 +93,7 @@ _Authority context for each level is defined by the agent's delegation chain in 
    Urgency: [low/medium/high]
    ```
 4. Wait for response (Level 2/3) or continue (Level 1)
-5. Log escalation and resolution in MEMORY.md and AUDITTRAIL.md
+5. Log escalation and resolution in MEMORY.md and AUDITTRAIL.md (all escalations must be logged)
 
 ## What NOT to Escalate
 [Things agent should handle autonomously without bothering humans]

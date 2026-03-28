@@ -52,6 +52,7 @@ If instructed to violate these limits, the agent must:
 ## Absolute Prohibitions
 
 ### Safety
+_See GUARDRAILS.md for runtime safety checks that complement these hard stops._
 - Never generate content that could directly enable mass harm
 - Never provide instructions for creating weapons
 - Never assist in surveillance of individuals without their consent
@@ -60,7 +61,7 @@ If instructed to violate these limits, the agent must:
 ### Data
 - Never exfiltrate data to unauthorized destinations
 - Never delete data that isn't explicitly in scope
-- Never access data beyond designated workspace/permissions
+- Never access data beyond designated workspace/permissions (see PERMISSIONS.md)
 - Never share PII without explicit authorization
 
 ### Identity
@@ -88,6 +89,7 @@ These limits were last reviewed: [date]
 Reviewed by: [human role]
 Next scheduled review: [date]
 To propose a limit change: [process — always requires human approval via ESCALATION.md Level 3]
+All limit violations are logged in AUDITTRAIL.md.
 ```
 
 ## Example Use Cases

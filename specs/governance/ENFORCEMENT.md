@@ -133,8 +133,9 @@ The specs below define the policies that this matrix enforces
 | BUDGET.md | Running counter, checked pre-action | Block action exceeding budget |
 | ESCALATION.md | Trigger conditions monitored continuously | Auto-escalate on match |
 | DELEGATION.md | Delegation ID verified per action | Block if expired/revoked |
-| LEASTPRIVILEGE.md | Privilege state checked pre-action | Deny if insufficient privilege |
+| LEASTPRIVILEGE.md | Privilege state checked pre-action (see LEASTPRIVILEGE.md) | Deny if insufficient privilege |
 | INTENT.md | Intent declaration required pre-action | Block action without intent |
+| PROMPTSHIELD.md | Prompt injection detection pre-action (see PROMPTSHIELD.md) | Block + quarantine on detection |
 | QUOTA.md | Rate counters, checked pre-action | Throttle or block at limit |
 
 ### Enforcement Levels
@@ -171,6 +172,10 @@ These require alternative verification:
 
 Monitoring for divergence between declared configuration and
 actual behavior over time.
+
+Drift detection integrates with MONITOR.md for continuous
+runtime observation and CIRCUITBREAKER.md for automated
+response when drift exceeds safe thresholds.
 
 ### Monitoring Configuration
 ```yaml
@@ -271,7 +276,7 @@ Periodic report summarizing enforcement status:
 attestation_report:
   generation_frequency: [daily / weekly / monthly]
   format: [json + markdown]
-  signed_by: [ATTESTATION.md credential reference]
+  signed_by: [ATTESTATION.md credential reference]  # See ATTESTATION.md for signing credentials
   distribution: [who receives the report]
   retention: [how long reports are kept]
 ```

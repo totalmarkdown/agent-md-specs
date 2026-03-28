@@ -159,7 +159,8 @@ consent:
 
 ### Record Integrity
 - Consent records are append-only — never modified, only superseded
-- Each record is hashed and linked to AUDITTRAIL.md
+- Each record is hashed and linked to AUDITTRAIL.md; all consent
+  grants, revocations, and scope changes are logged there (see AUDITTRAIL.md)
 - Records survive for retention period plus [2 years] for regulatory proof
 - Storage encrypted at rest (ref PRIVACY.md)
 
@@ -211,7 +212,9 @@ verification:
 2. Agent verifies user identity (same standard as consent collection)
 3. Consent record updated: `revoked: true`, `revoked_at: [timestamp]`
 4. **Immediate cessation** of all processing under revoked consent
-5. Data deletion initiated per PRIVACY.md
+5. Data deletion initiated per PRIVACY.md, including purging
+   user data from agent memory stores (see MEMORY.md) and
+   shared state (see SHAREDCONTEXT.md)
 6. Confirmation to user within [24 hours]: what was revoked,
    data deletion timeline, any data retained under separate legal basis
 7. Revocation event logged to AUDITTRAIL.md
@@ -241,6 +244,7 @@ shared state propagation of consent scope, see SHAREDCONTEXT.md.
 - Users informed which **specific agents** process their data (ref WHOAMI.md)
 - Users notified when **new agents** join the processing chain
 - New agent with materially different capabilities triggers re-consent
+- Consent must cover all agents in a team roster (see TEAM.md for team composition)
 
 ### Sub-Delegation of Consent
 | Rule | Requirement |

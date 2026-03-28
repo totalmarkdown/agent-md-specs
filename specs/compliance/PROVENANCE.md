@@ -80,7 +80,7 @@ All data sources this agent consumes, with trust classification.
 | **Verified** | Source authenticated, integrity confirmed, content validated | Full processing, can inform high-stakes decisions |
 | **Trusted** | Source authenticated, integrity confirmed, content not independently validated | Full processing, flag in high-stakes outputs |
 | **Provisional** | Source identity known but not cryptographically verified | Process with reduced confidence, always disclose source |
-| **Untrusted** | Source cannot be authenticated or has known reliability issues | Process only with sandboxing, never use as sole basis for decisions |
+| **Untrusted** | Source cannot be authenticated or has known reliability issues | Process only with sandboxing, never use as sole basis for decisions. Apply extra injection scanning per PROMPTSHIELD.md |
 | **Unknown** | Source provenance cannot be determined | Treat as untrusted, flag for human review |
 
 _For memory and training data poisoning risks related to untrusted sources, see MEMORYSAFETY.md._
@@ -101,7 +101,7 @@ prompt_provenance:
   issuer_verified: true                # Was issuer identity verified via ATTESTATION
   channel: "api | cli | slack | agent" # How the prompt arrived
   channel_authenticated: true          # Was the channel itself authenticated
-  delegation_chain:                    # If prompt passed through other agents
+  delegation_chain:                    # If prompt passed through other agents (see DELEGATION.md)
     - agent: "orchestrator-01"
       received: "ISO-8601"
       modified: false                  # Did the intermediary modify the prompt
@@ -206,7 +206,7 @@ handle classification escalation.
 | Trigger | Escalation | Action |
 |---------|-----------|--------|
 | Combining 2+ "Internal" PII datasets | Internal -> Confidential | Reclassify output, restrict access, log escalation |
-| Aggregating anonymized data to re-identifiable level | Public -> Confidential | Halt processing, alert privacy officer, log |
+| Aggregating anonymized data to re-identifiable level | Public -> Confidential | Halt processing, alert privacy officer, log. Aggregated data may require new consent (see CONSENT.md) |
 | Enriching data with external sources | Maintain or escalate | Re-evaluate classification post-enrichment |
 | Cross-referencing datasets from different jurisdictions | Apply strictest jurisdiction | Apply most restrictive data handling rules |
 | Any input classified "Restricted" | Output is Restricted | Apply Restricted handling regardless of transformation |

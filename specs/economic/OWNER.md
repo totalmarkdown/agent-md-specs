@@ -44,7 +44,8 @@ created: date
 **Name:** [Individual name or company name]  
 **Type:** [Individual | LLC | Corporation | DAO | Collective]  
 **Jurisdiction:** [Country/state of registration]  
-**Registration:** [LLC/Corp number if applicable]  
+**Registration:** [LLC/Corp number if applicable]
+**Agent Identity:** [agent_id] <!-- See WHOAMI.md for agent identity vs owner identity -->
 **Contact:** [Legal contact email] <!-- See CONTACT.md for all reachable endpoints -->
 
 ## Beneficial Owner(s)
@@ -70,7 +71,7 @@ _See WALLET.md for payment endpoints and financial identity._
 **Liability limited to:** [description]
 **Insurance:** [none | professional liability | cyber | other]
 **Indemnification:** [who indemnifies whom for what]
-_See DELEGATION.md for how liability flows through the authority chain._
+_See DELEGATION.md for how liability flows through the authority chain — the owner is the ultimate delegating authority._
 
 ## Transfer and Assignment
 - **Transferable:** [yes | no | with conditions]
@@ -86,6 +87,8 @@ _See DELEGATION.md for how liability flows through the authority chain._
 | Version | Change | Date | Authorized by |
 |---------|--------|------|--------------|
 | 1.0 | Initial ownership | [date] | [name] |
+
+_See AUDITTRAIL.md — the owner is accountable for the full audit trail of ownership changes._
 ```
 
 ## Example Use Cases

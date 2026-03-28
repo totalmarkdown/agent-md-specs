@@ -75,7 +75,9 @@ verified independently. Trust is:
 ## Privilege Baseline
 
 Minimum permissions when the agent is idle (no active task).
-These map to the static resource grants declared in PERMISSIONS.md.
+These map to the static resource grants declared in PERMISSIONS.md
+(see PERMISSIONS.md for the full resource access list that defines
+baseline boundaries).
 
 | Resource | Idle Permission | Justification |
 |----------|----------------|---------------|
@@ -107,7 +109,7 @@ privilege_request:
   request_id: [UUID]
   agent_id: [from ID.md]
   timestamp: [ISO-8601]
-  task_ref: [task or intent ID that requires this privilege]
+  task_ref: [task or intent ID that requires this privilege]  # See INTENT.md — intent must be declared before requesting escalation
   requested_privileges:
     - resource: [target resource]
       permission: [read / write / delete / execute / admin]
@@ -158,7 +160,7 @@ retain elevated permissions between tasks.
 | Time-to-live expired | Revoke regardless of task state | At `expires_at` |
 | Task completed | Revoke all task-scoped privileges | Immediate |
 | Error or failure | Revoke and log failure context | Immediate |
-| Session end | Revoke everything to baseline | At SLEEP.md |
+| Session end | Revoke everything to baseline | At SLEEP.md | <!-- Session-scoped privileges expire with the session; see SESSION.md -->
 | Anomaly detected | Revoke to baseline + escalate | Immediate |
 
 ### De-escalation Procedure
@@ -169,7 +171,8 @@ retain elevated permissions between tasks.
 5. Agent returns to baseline privilege set
 
 ### Failure to De-escalate
-If automatic de-escalation fails:
+If automatic de-escalation fails (see MONITOR.md for drift
+detection that catches stale elevated privileges):
 1. Alert sent to MONITOR.md
 2. Agent enters degraded mode (all actions paused)
 3. Human intervention required to reset privilege state
@@ -183,7 +186,7 @@ what it plans to do before acting):
 
 | Policy | Behavior | When to Use |
 |--------|----------|-------------|
-| `deny_and_log` | Refuse action, log to AUDITTRAIL.md | Default — production |
+| `deny_and_log` | Refuse action, log to AUDITTRAIL.md (see AUDITTRAIL.md) | Default — production |
 | `request_escalation` | Pause and ask for guidance | When human is available |
 | `attempt_with_sandbox` | Try in isolated sandbox first | Testing / non-production only |
 

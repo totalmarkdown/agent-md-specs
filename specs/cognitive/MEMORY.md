@@ -83,7 +83,7 @@ Every agent must declare the scope of its memory:
 
 ```yaml
 memory_scope: individual | team | crew | org | global
-shared_context_ref: [path to SHAREDCONTEXT.md if scope > individual]
+shared_context_ref: [path to SHAREDCONTEXT.md if scope > individual]  # See SHAREDCONTEXT.md when scope > individual
 ```
 
 - **individual**: Memory is private to this agent. Not shared.
@@ -119,21 +119,23 @@ Every memory entry carries a classification level:
 - **restricted**: Cannot be shared — individual memory only
 
 Classification must be assigned at write time and cannot be downgraded
-without human approval (via ESCALATION.md).
+without human approval (via ESCALATION.md). _See PERMISSIONS.md for how
+agent clearance levels determine accessible classification tiers._
 _See MEMORYSAFETY.md for classification enforcement and poisoning defense._
 
 ## Destruction Policy
 
 Aligned with SESSION.md destruction policy:
 - Session-scoped memories: destroyed when session ends
-  (see SESSION.md for session lifecycle and destruction triggers)
+  (see SESSION.md for session lifecycle, destruction triggers, and what survives session end)
 - Persistent individual memories: retained across sessions,
   subject to TTL and retention policy
 - Shared context entries: governed by SHAREDCONTEXT.md retention policy,
   survive individual session destruction
-- On agent decommissioning (LEGACY.md): individual memories are archived
-  or destroyed per retention policy; shared context entries persist
-  (they belong to the team/org, not the agent)
+- On agent decommissioning (see LEGACY.md for the full retirement
+  process and what happens to memory on decommissioning): individual
+  memories are archived or destroyed per retention policy; shared
+  context entries persist (they belong to the team/org, not the agent)
 
 ## Example Use Cases
 

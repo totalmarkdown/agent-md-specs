@@ -50,12 +50,12 @@ whoami_spec_version: string  # Version of this spec
 # [Agent Name] — Identity Document
 
 ## Core Identity
-- **ID:** [UUID — globally unique, permanent]
+- **ID:** [UUID — globally unique, permanent] (see ID.md)
 - **Name:** [Display name]
 - **Version:** [Current version]
 - **Type:** [coding | research | support | sales | ops | creative | other]
 - **Created:** [Date]
-- **Creator:** [Human name or parent agent ID]
+- **Creator:** [Human name or parent agent ID] (see OWNER.md)
 - **Organization:** [Org name or "independent"]
 
 ## What I Am
@@ -86,7 +86,7 @@ Verification mechanisms are defined in detail in ATTESTATION.md.
 
 ## Trust Level I Claim
 **Claimed trust level:** [untrusted | community | verified | certified]
-**Verification:** [How to verify this claim]
+**Verification:** [How to verify this claim] _See ATTESTATION.md for cryptographic verification of trust claims._
 
 ## Linked Identity Documents
 - Full capabilities: AGENTS.md
@@ -95,6 +95,7 @@ Verification mechanisms are defined in detail in ATTESTATION.md.
 - What I offer: OFFERING.md
 - My limits: LIMITS.md
 - Who I report to: REPORTSTO.md
+- Active session: SESSION.md (ephemeral identity that inherits from this document)
 ```
 
 ## Example Use Cases

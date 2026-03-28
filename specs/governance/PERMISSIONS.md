@@ -33,7 +33,7 @@ have different privilege levels.
 ---
 agent_name: string
 version: semver
-permission_level: restricted | standard | elevated | admin
+permission_level: restricted | standard | elevated | admin  # Authority source defined in DELEGATION.md
 last_reviewed: date
 reviewed_by: string
 ---
@@ -48,7 +48,7 @@ see LEASTPRIVILEGE.md.
 - [ ] [Action 2]: [scope and limits]
 
 ## Denied Actions
-Actions this agent must never perform:
+Actions this agent must never perform (see LIMITS.md for hard constraints that permissions cannot exceed):
 - [Action]: [reason for denial]
 
 ## Tool Access
@@ -59,14 +59,14 @@ are defined in ACCESS.md.
 | [Tool] | read-only / read-write / admin | [any limits] |
 
 ## Escalation Required
-Actions that require human approval before execution:
+Actions that require human approval before execution (see ESCALATION.md):
 - [Action]: [approval process]
 
 ## Permission Changes
 Enforcement of these permissions at runtime is handled by ENFORCEMENT.md.
 - Permissions reviewed: [frequency]
 - Changed by: [role/person authorized to change]
-- Change log: [location]
+- Change log: [location] (all permission checks are logged in AUDITTRAIL.md)
 ```
 
 ## Example Use Cases

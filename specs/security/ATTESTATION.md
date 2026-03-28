@@ -42,8 +42,8 @@ This spec governs **cryptographic identity verification and credential lifecycle
 - ATTESTATION.md defines **how the agent proves its identity** (runtime, continuous)
 - WHOAMI.md defines **who the agent claims to be** (static, pre-deployment)
 - ID.md defines **the permanent UUID anchor** (static, pre-deployment)
-- SESSION.md defines **the ephemeral runtime identity** that inherits from attestation
-- ENFORCEMENT.md defines **how attestation is verified** at runtime
+- SESSION.md defines **the ephemeral runtime identity** that inherits from attestation (see SESSION.md for session credential lifecycle)
+- ENFORCEMENT.md defines **how attestation is verified** at runtime (see ENFORCEMENT.md for the runtime verification matrix)
 
 ATTESTATION.md does NOT define the agent's identity — it defines how
 that identity is cryptographically verified by external systems.
@@ -60,7 +60,7 @@ high-stakes actions on behalf of humans.
 ```markdown
 ---
 agent_name: string
-agent_id: string              # Must match WHOAMI.md agent_id
+agent_id: string              # Must match WHOAMI.md agent_id (see WHOAMI.md) and ID.md UUID (see ID.md)
 version: semver
 attestation_method: string    # spiffe | x509 | did | jwt | api_key
 hardware_binding: string      # tpm | secure_enclave | cloud_hsm | none
@@ -114,7 +114,7 @@ preventing credential theft from compromising identity.
 | Property | Value |
 |----------|-------|
 | **Hardware module** | [TPM make/model | AWS CloudHSM | Azure HSM | GCP KMS | Apple Secure Enclave | none] |
-| **Key storage** | [hardware-bound | software keystore | environment variable] |
+| **Key storage** | [hardware-bound | software keystore | environment variable] | <!-- See SECRETS.md for credential storage requirements -->
 | **Attestation quote** | [PCR values | enclave measurement | none] |
 | **Extractable** | [yes | no — hardware-bound keys should be no] |
 | **FIPS 140-2 level** | [1 | 2 | 3 | N/A] |
@@ -190,7 +190,7 @@ Key material referenced here should be stored according to SECRETS.md.
 
 ### Revocation
 - **Revocation method:** [OCSP responder | CRL distribution | SPIRE eviction | manual]
-- **Revocation triggers:** [credential compromise, agent decommission, policy violation]
+- **Revocation triggers:** [credential compromise, agent decommission, policy violation] — on compromise, notify via ESCALATION.md
 - **Revocation propagation time:** [seconds for SPIRE | hours for CRL | immediate for OCSP]
 - **Who can revoke:** [security team | automated policy engine | agent owner]
 

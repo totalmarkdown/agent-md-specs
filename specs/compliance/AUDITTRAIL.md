@@ -78,7 +78,7 @@ agent:
   attestation_ref: "credential-id"       # Reference to ATTESTATION.md credential used
 
 session:
-  session_id: "uuid-v4"                  # Current session identifier
+  session_id: "uuid-v4"                  # Current session identifier (see SESSION.md)
   delegation_chain:                      # Full authority chain
     - principal: "human:jane@org.com"    # Original authority
       granted: "ISO-8601"
@@ -88,7 +88,7 @@ session:
       scope: "subtask-description"
 
 action:
-  intent_hash: "sha256:..."             # Hash of INTENT or instruction
+  intent_hash: "sha256:..."             # Hash of INTENT or instruction (see INTENT.md)
   action_type: "enum"                   # query | create | update | delete |
                                         # execute | communicate | decide | escalate
   target_resource: "resource-uri"       # What was acted upon
@@ -130,6 +130,9 @@ Verification: Walk the chain from genesis event. If any hash
 does not match its recomputed value, the chain is broken at
 that point and all subsequent events are suspect.
 
+_See ENFORCEMENT.md for scheduled audit verification and
+automated integrity checks._
+
 ### Signed Entries
 Each event is signed using the agent's ATTESTATION.md credentials.
 - **Signing key:** [reference to attestation key]
@@ -158,7 +161,7 @@ or timestamping service for independent verification.
 
 | Regulatory Framework | Minimum Retention | This Agent's Policy |
 |---------------------|-------------------|---------------------|
-| **GDPR** | 3 years (data processing records; see GDPR.md) | [duration] |
+| **GDPR** | 3 years (data processing records; see GDPR.md and CONSENT.md for right-to-erasure interaction) | [duration] |
 | **HIPAA** | 6 years (access logs, audit trails) | [duration] |
 | **SOC 2** | 1 year (system activity logs) | [duration] |
 | **EU AI Act** | 10 years (high-risk AI system logs) | [duration] |
