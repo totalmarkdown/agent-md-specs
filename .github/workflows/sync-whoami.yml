@@ -14,16 +14,23 @@ jobs:
       - name: Checkout agent-md-specs
         uses: actions/checkout@v4
 
-      - name: Push spec file to standalone repo
-        uses: cpina/github-action-push-to-another-repository@main
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.SYNC_PAT }}
+      - name: Checkout standalone repo
+        uses: actions/checkout@v4
         with:
-          source-directory: 'specs/identity'
-          destination-github-username: 'totalmarkdown'
-          destination-repository-name: 'whoami.md'
-          user-email: 'sync@totalmarkdown.ai'
-          user-name: 'TotalMarkdown Sync'
-          commit-message: 'sync: update WHOAMI.md from agent-md-specs'
-          target-branch: 'main'
-          target-directory: '.'
+          repository: totalmarkdown/whoami.md
+          token: ${{ secrets.SYNC_PAT }}
+          path: standalone
+
+      - name: Copy spec file
+        run: cp specs/identity/WHOAMI.md standalone/WHOAMI.md
+
+      - name: Push if changed
+        run: |
+          cd standalone
+          git config user.name "TotalMarkdown Sync"
+          git config user.email "sync@totalmarkdown.ai"
+          git add WHOAMI.md
+          git diff --cached --quiet || {
+            git commit -m "sync: update WHOAMI.md from agent-md-specs"
+            git push
+          }
