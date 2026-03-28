@@ -38,9 +38,14 @@ related tasks.
 ---
 team_name: string          # Human-readable team name
 version: semver            # e.g. 1.0.0
-purpose: string            # One sentence describing what this team does
+purpose: string            # One sentence — see GOALS.md for detailed objectives
 orchestration: string      # sequential | parallel | conditional | lead-delegates
-shared_memory: boolean     # Do agents share a MEMORY.md file? # Governed by SHAREDCONTEXT.md
+shared_memory: boolean     # Governed by SHAREDCONTEXT.md and MEMORYSAFETY.md
+delegation_ref: string     # Path to team-level DELEGATION.md
+budget_ref: string         # Path to team-level BUDGET.md
+escalation_ref: string     # Path to team-level ESCALATION.md
+limits_ref: string         # Path to team-level LIMITS.md
+circuit_breaker_ref: string  # Path to CIRCUITBREAKER.md for failure containment
 created: date
 updated: date
 ---
@@ -53,31 +58,50 @@ updated: date
 ## Agents
 
 ### [Agent Name] — [Role]
-- **Bundle:** path/to/agent/CLAUDE.md
+- **Bundle:** path/to/agent/  _(must contain WHOAMI.md and SOUL.md at minimum)_
+- **Identity:** Verified via ATTESTATION.md
 - **Role:** lead | support | specialist | reporter | escalation
+- **Delegation:** Inherits from team DELEGATION.md (see INHERIT.md)
 - **Triggers:** ["list", "of", "trigger", "phrases"]
-- **Inputs:** What this agent receives
-- **Outputs:** What this agent produces
-- **Hands off to:** [Next agent name or "human"]
+- **Inputs:** What this agent receives (see INPUT.md)
+- **Outputs:** What this agent produces (see OUTPUT.md)
+- **Hands off to:** [Next agent name or "human"] — logged in AUDITTRAIL.md
 
 [Repeat for each agent]
 
 ## Handoff Protocol
 [How agents pass context between each other]
-[What format handoff messages take]
-[What triggers a handoff]
+[What format handoff messages take — recorded in AUDITTRAIL.md]
+[What triggers a handoff — may trigger ESCALATION.md if human needed]
+[Intent must be declared via INTENT.md before handoff execution]
 _See HANDSHAKE.md for inter-agent handoff protocol details._
 
 ## Shared Context
-[What all agents share — shared MEMORY.md path, shared data sources]
+Governed by SHAREDCONTEXT.md. All agents in this team read from and
+write to a shared context pool with access controls defined in the
+team's SHAREDCONTEXT.md file. Memory integrity is enforced via
+MEMORYSAFETY.md — including input sanitization, canary entries, and
+quarantine procedures for suspicious entries.
+
+- **Shared context path:** [path to team SHAREDCONTEXT.md]
+- **Memory safety path:** [path to team MEMORYSAFETY.md]
+- **Individual memory:** Each agent maintains its own MEMORY.md
+  which can sync to/from shared context per MEMORY.md scope rules.
 _See BUDGET.md for team-level cost controls and spending limits._
 
 ## Failure Handling
-[What happens when an agent fails or times out]
-[Which agent or human takes over]
+Governed by CIRCUITBREAKER.md at the team level.
+
+- **Agent failure:** [Which agent takes over — see team roster above]
+- **Circuit breaker trigger:** [N consecutive failures or N% error rate]
+- **Blast radius:** Agent-level halt; team continues with degraded capability
+- **Fallback:** [Cached results | graceful degradation | escalate to human]
+- **Escalation:** Per ESCALATION.md — L1 auto-retry, L2 team lead, L3 human
+- **Recovery:** CIRCUITBREAKER.md half-open testing before full restoration
 
 ## Success Criteria
 [How the team knows it has completed its goal]
+_Measurable targets: see KPI.md. Service commitments: see SLA.md._
 ```
 
 ### Example use cases

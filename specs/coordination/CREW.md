@@ -37,9 +37,11 @@ crew_id: string
 version: semver
 specialty: string         # What this crew specializes in
 crew_type: string         # research | execution | review | support | mixed
-agent_count: number       # 3-10 agents
+agent_count: number       # 3-10 agents; see TEAM.md for looser team groupings
 parent_swarm: string      # SWARM.md reference, or "standalone"
-lead_agent: string        # Which agent coordinates the crew
+lead_agent: string        # Which agent coordinates the crew; see DELEGATION.md for authority
+shared_context: string    # See SHAREDCONTEXT.md for shared memory configuration
+budget_ref: string        # See BUDGET.md for crew-level cost controls
 created: date
 updated: date
 ---
@@ -65,6 +67,8 @@ updated: date
 [Repeat for each crew member — max 10]
 
 ## Crew Workflow
+
+The crew workflow defines how tasks flow between members. For authority rules governing who can assign and approve, see DELEGATION.md. For inherited configuration from parent structures, see INHERIT.md.
 
 ```
 [Lead Agent] assigns task
@@ -102,6 +106,10 @@ Every crew output goes through:
 2. [Agent name] validates against [standard]
 3. Lead agent final approval
 4. Confidence score attached (see VALIDATION.md)
+
+## Failure Handling
+
+When a crew member fails or becomes unresponsive, apply CIRCUITBREAKER.md patterns to isolate the failure and prevent cascading disruption across the crew. The lead agent should coordinate recovery using SHAREDCONTEXT.md to maintain state continuity.
 
 ## Crew Metrics
 | Metric | Target | Current |

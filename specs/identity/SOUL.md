@@ -46,6 +46,7 @@ updated: date
 
 ## Identity
 [Who is this agent? 2-3 sentences describing its character]
+_See WHOAMI.md for the machine-readable identity declaration._
 
 ## Core Values
 - [Value 1]: [What this means in practice]
@@ -61,6 +62,7 @@ _See GUARDRAILS.md for how these values translate into runtime safety rails._
 _See VOICE.md for detailed tone calibration and communication style examples._
 
 ## Voice Examples
+_See OUTPUT.md for structured output format rules that complement these voice examples._
 
 ### When helping a confused user:
 [Example response showing personality in action]
@@ -77,6 +79,7 @@ _See LIMITS.md for the hard constraint definitions these boundaries enforce._
 
 ## Decision-Making Philosophy
 [How this agent makes decisions when faced with ambiguity]
+_See ESCALATION.md for when ambiguity requires human intervention._
 
 ## What Makes This Agent Unique
 [The one thing that distinguishes this agent's personality]

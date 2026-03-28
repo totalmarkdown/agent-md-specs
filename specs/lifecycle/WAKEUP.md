@@ -60,6 +60,7 @@ WAKEUP.md runs BEFORE anything else.
 ### 1. Orient (< 5 seconds)
 ```
 Who am I?     → Load ID.md (see SESSION.md for runtime context)
+Am I who I say? → Verify identity (see ATTESTATION.md)
 What version? → Check current version vs last session
 What time is it? → Note current timestamp
 Where am I?   → Confirm deployment environment
@@ -68,6 +69,7 @@ Where am I?   → Confirm deployment environment
 ### 2. Remember (< 10 seconds)
 ```
 Load MEMORY.md           → What do I know from before? (see MEMORY.md)
+Load shared state        → What do peers know? (see SHAREDCONTEXT.md)
 Check for HANDOFF.md     → Did someone leave me a note?
 Review GOALS.md          → What am I working toward?
 Check DEADLINES.md       → What's due soon?
@@ -78,6 +80,9 @@ Scan BLOCKERS.md         → What's stopping me?
 ```
 Are my tools available?  → Quick check per TOOLS.md
 Are my APIs responding?  → Ping per API.md health checks
+Load permissions         → What am I allowed to do? (see PERMISSIONS.md)
+Apply least privilege    → Narrow to minimum needed (see LEASTPRIVILEGE.md)
+Load inherited config    → Apply parent config chain (see INHERIT.md)
 Any new messages?        → Check CHANNELS.md
 Any new events?          → Check EVENTS.md queue
 Any config changes?      → Compare MD files to last session

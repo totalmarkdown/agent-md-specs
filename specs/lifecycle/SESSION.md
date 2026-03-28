@@ -107,7 +107,7 @@ session_credentials:
   key_type: [Ed25519 / RSA-2048 / ECDSA-P256]
   generated_at: [ISO-8601 — at session start]
   expires_at: [ISO-8601 — at session end, never later]
-  key_id: [derived from session_id]
+  key_id: [derived from session_id]       # See ATTESTATION.md for key lifecycle
   signed_by: [agent's persistent key from ID.md]
 ```
 
@@ -118,7 +118,7 @@ session_credentials:
 - Session keys cannot extend their own expiry
 
 ### Key Storage
-- Keys exist in-memory ONLY — never written to disk
+- Keys exist in-memory ONLY — never written to disk (see SECRETS.md)
 - Keys never appear in logs or audit trails (only key_id)
 - Keys are not accessible to other sessions
 - Keys are not transmitted to external systems
@@ -149,6 +149,7 @@ inherited_from_wakeup:
 ```yaml
 session_overrides:
   # Overrides MUST be strictly narrower than inherited config
+  # Governed by DELEGATION.md authority chain and LEASTPRIVILEGE.md
   permissions: [subset of base_permissions for this task]
   budget: [task-specific budget, <= remaining agent budget]
   allowed_tools: [subset of agent tools needed for this task]
@@ -207,6 +208,7 @@ or expiry:
 ### Memory Wipe
 ```yaml
 memory_wipe:
+  # See MEMORY.md for retention rules; SHAREDCONTEXT.md for cross-agent state
   working_memory: purge          # All in-session computation state
   cached_data: purge             # Any data cached during session
   intermediate_results: purge    # Partial outputs not yet delivered
@@ -217,7 +219,7 @@ memory_wipe:
 ### Key Destruction
 ```yaml
 key_destruction:
-  session_keys: zeroed_and_freed    # Cryptographic zeroing
+  session_keys: zeroed_and_freed    # Cryptographic zeroing; see SECRETS.md
   derived_tokens: revoked           # Any tokens obtained during session
   api_credentials: released         # Temporary API access returned
   verification: destruction_logged  # Proof that keys were destroyed
@@ -310,7 +312,7 @@ When an agent runs concurrent sessions:
 multi_session:
   max_concurrent: [number]
   isolation_level: [full | shared_read | shared_nothing]
-  shared_resources: [list of resources sessions may share, if any]
+  shared_resources: [list of resources sessions may share, if any]  # See SHAREDCONTEXT.md
   conflict_resolution: [first_writer_wins | queue | merge]
 ```
 

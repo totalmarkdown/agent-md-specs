@@ -43,9 +43,11 @@ swarm_id: string          # Globally unique
 version: semver
 objective: string         # One sentence: what this swarm achieves
 swarm_type: string        # sequential | parallel | hybrid | emergent
-crew_count: number
+crew_count: number        # See CREW.md for individual crew definitions
 agent_count: number       # Total across all crews
 orchestration: string     # rule-based | lead-crew | emergent | human-directed
+parent_org: string        # See ORG.md for fleet-wide configuration
+delegation_model: string  # See DELEGATION.md for authority chain rules
 active: boolean
 created: date
 updated: date
@@ -93,8 +95,8 @@ updated: date
 - [Crew D] starts when: Both [B] and [C] complete
 
 ### When to pause or stop
-- Pause all crews if: [condition]
-- Stop swarm and escalate if: [condition]
+- Pause all crews if: [condition] _(apply CIRCUITBREAKER.md to isolate failing crews)_
+- Stop swarm and escalate if: [condition] _(see DELEGATION.md for escalation authority)_
 - Complete swarm when: [success condition]
 
 ### Conflict resolution
@@ -105,7 +107,7 @@ When crews produce conflicting outputs:
 
 ## Shared Resources
 Resources all crews in this swarm share (see ORG.md for fleet-wide configuration):
-- **Shared memory:** swarm-memory.md
+- **Shared memory:** swarm-memory.md (see SHAREDCONTEXT.md for memory pool configuration)
 - **Shared context:** swarm-context.md
 - **Shared data:** [data source]
 - **Coordination channel:** [how crews signal each other]
@@ -130,9 +132,9 @@ Swarm is degraded when:
 - Handoff failures exceed [N]%
 
 Swarm stops when:
-- [N]+ crews are offline
+- [N]+ crews are offline (see CIRCUITBREAKER.md for failure isolation patterns)
 - Critical path crew is blocked > [X] minutes
-- Shared memory corruption detected
+- Shared memory corruption detected (see SHAREDCONTEXT.md for integrity rules)
 
 ## Scaling
 **Scale up** (add crews) when: [condition]  

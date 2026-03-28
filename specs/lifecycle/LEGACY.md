@@ -41,12 +41,14 @@ successor_agent: string  # ID of replacement agent
 [If deprecated/decommissioned: reason and date]
 
 ## Successor
-**Replacement agent:** [Agent name and ID] (see OWNER.md for transfer of responsibility)  
-**Migration guide:** [Link or inline instructions]  
+**Replacement agent:** [Agent name and ID] (see OWNER.md for transfer of responsibility)
+**Migration guide:** [Link or inline instructions]
 **What's different:** [Key differences users should know]
+**Owner notified via:** [Contact method] (see CONTACT.md)
 
 ## Knowledge Transfer
-What future agents and humans should know from my operation:
+What future agents and humans should know from my operation
+(see MEMORY.md for what persists; SHAREDCONTEXT.md for cross-agent state):
 
 ### What worked well
 - [Pattern or approach that succeeded]
@@ -59,16 +61,19 @@ What future agents and humans should know from my operation:
 ### Unfinished business
 - [Task that was in-progress when deprecated]
 - [Project that needs continuation]
+_All delegated authority is revoked on decommission (see DELEGATION.md)._
 
 ## Archive
-_See AUDITTRAIL.md for the complete activity log._
+_See AUDITTRAIL.md for the complete activity log and tamper-evidence guarantees._
 - **All outputs archived at:** [location]
 - **Configuration archived at:** [git repo + tag]
-- **MEMORY.md archived at:** [location]
+- **MEMORY.md archived at:** [location] (see MEMORY.md)
+- **Shared context archived at:** [location] (see SHAREDCONTEXT.md)
 - **Retention period:** [X years]
 - **Access:** [who can access the archive]
 
 ## Final Statistics
+_Derived from AUDITTRAIL.md session records._
 - **Total operational days:** [N]
 - **Total tasks completed:** [N]
 - **Peak performance:** [notable achievement]

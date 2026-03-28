@@ -42,8 +42,11 @@ org_id: string            # Globally unique org identifier
 version: semver
 founded: date             # When this org/fleet was established
 agent_count: number       # Total agents in org
-team_count: number        # Total teams
+team_count: number        # Total teams; see TEAM.md for team-level config
+swarm_count: number       # Active swarms; see SWARM.md for swarm definitions
+crew_count: number        # Active crews; see CREW.md for crew-level config
 human_count: number       # Human members
+delegation_model: string  # See DELEGATION.md for authority chain rules
 last_updated: date
 ---
 
@@ -111,10 +114,10 @@ See DELEGATION.md for detailed authority chains.
 | Policy changes | Human board | N/A |
 
 ### Policies
-All agents in this org operate under:
+All agents in this org operate under (see LIMITS.md and GUARDRAILS.md for fleet-wide operational boundaries):
 - POLICY.md: [link to org-wide policy file]
 - SECURITY.md: [link to org-wide security rules]
-- COMPLIANCE.md: [link to compliance requirements]
+- COMPLIANCE.md: [link to compliance requirements] _(see ENFORCEMENT.md for compliance enforcement and AUDITTRAIL.md for audit logging)_
 - BUDGET.md: [link to org-wide budget rules]
 
 ## Fleet Health
@@ -125,9 +128,12 @@ All agents in this org operate under:
 | Average quality score | [N]/100 | 85 | [↑/→/↓] |
 | Active incidents | [N] | 0 | [↑/→/↓] |
 
+## Shared Context
+All teams and swarms in this org share context through a common memory pool (see SHAREDCONTEXT.md). Memory safety rules from MEMORYSAFETY.md apply to all cross-team context access.
+
 ## Directory
-Full agent directory: [link to ROSTER.md or registry]  
-Team directory: [link]  
+Full agent directory: [link to ROSTER.md or registry]
+Team directory: [link]
 Human directory: [link or "private"]
 
 ## Contact
