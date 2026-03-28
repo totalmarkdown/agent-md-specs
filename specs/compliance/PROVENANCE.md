@@ -83,6 +83,8 @@ All data sources this agent consumes, with trust classification.
 | **Untrusted** | Source cannot be authenticated or has known reliability issues | Process only with sandboxing, never use as sole basis for decisions |
 | **Unknown** | Source provenance cannot be determined | Treat as untrusted, flag for human review |
 
+_For memory and training data poisoning risks related to untrusted sources, see MEMORYSAFETY.md._
+
 ---
 
 ## Prompt Provenance
@@ -154,7 +156,8 @@ Snapshot includes:
 ## Transformation Log
 
 Document how inputs are processed into outputs. Every
-transformation that modifies data is recorded.
+transformation that modifies data is recorded and logged
+to AUDITTRAIL.md for tamper-resistant retention.
 
 ```yaml
 transformation:
@@ -260,7 +263,8 @@ output_provenance:
 **Policy:** [halt | quarantine | flag_and_continue | reject_and_reprocess]
 
 Contamination occurs when untrusted, corrupted, or adversarial
-data enters the processing pipeline.
+data enters the processing pipeline. For adversarial input
+detection, see PROMPTSHIELD.md.
 
 ### Detection Triggers
 - Input from "untrusted" or "unknown" source used in high-stakes output

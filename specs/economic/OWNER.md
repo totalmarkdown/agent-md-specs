@@ -45,7 +45,7 @@ created: date
 **Type:** [Individual | LLC | Corporation | DAO | Collective]  
 **Jurisdiction:** [Country/state of registration]  
 **Registration:** [LLC/Corp number if applicable]  
-**Contact:** [Legal contact email]
+**Contact:** [Legal contact email] <!-- See CONTACT.md for all reachable endpoints -->
 
 ## Beneficial Owner(s)
 Who benefits financially from this agent:
@@ -61,14 +61,16 @@ Who benefits financially from this agent:
 - **Patents:** [none | pending | granted — list]
 
 ## Financial Responsibility
-**Who pays for this agent's operation:** [name/entity]  
-**Who receives revenue from this agent:** [name/entity]  
+**Who pays for this agent's operation:** [name/entity]
+**Who receives revenue from this agent:** [name/entity]
 **Tax jurisdiction:** [where income is reported]
+_See WALLET.md for payment endpoints and financial identity._
 
 ## Liability
-**Liability limited to:** [description]  
-**Insurance:** [none | professional liability | cyber | other]  
+**Liability limited to:** [description]
+**Insurance:** [none | professional liability | cyber | other]
 **Indemnification:** [who indemnifies whom for what]
+_See DELEGATION.md for how liability flows through the authority chain._
 
 ## Transfer and Assignment
 - **Transferable:** [yes | no | with conditions]

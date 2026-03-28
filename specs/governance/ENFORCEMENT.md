@@ -70,7 +70,8 @@ updated: date
 ## Pre-Deployment Validation
 
 Before this agent is deployed or updated, the following
-validation MUST pass:
+validation MUST pass. A reference implementation is available
+at [agent-md-validator](https://github.com/totalmarkdown/agent-md-validator).
 
 ### Validation Run
 ```yaml
@@ -121,7 +122,9 @@ notification_on_failure: [contact / channel]
 
 ## Runtime Enforcement Matrix
 
-How each core spec is enforced during agent operation:
+How each core spec is enforced during agent operation.
+The specs below define the policies that this matrix enforces
+(see LIMITS.md for hard boundaries, BUDGET.md for financial constraints).
 
 | Spec | Enforcement Method | Violation Action |
 |------|-------------------|-----------------|
@@ -218,7 +221,8 @@ auto_remediation:
 
 ## Audit Verification
 
-Ensuring the audit trail itself has not been tampered with:
+Ensuring the audit trail itself has not been tampered with
+(see AUDITTRAIL.md for the event schema and tamper-resistance mechanisms):
 
 ### External Anchor
 ```yaml

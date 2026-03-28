@@ -98,7 +98,8 @@ session:
 
 ## Ephemeral Credentials
 
-Each session generates its own short-lived credentials:
+Each session generates its own short-lived credentials,
+distinct from the long-lived keys anchored in ID.md:
 
 ### Key Generation
 ```yaml
@@ -134,6 +135,7 @@ session_credentials:
 What the session knows and how it was configured:
 
 ### Inherited Configuration
+Configuration is loaded during the bootstrap sequence defined in WAKEUP.md.
 ```yaml
 inherited_from_wakeup:
   agent_identity: [loaded from ID.md]
@@ -222,7 +224,8 @@ key_destruction:
 ```
 
 ### Audit Preservation
-Critically, audit data SURVIVES session destruction:
+Critically, audit data SURVIVES session destruction
+(see AUDITTRAIL.md for retention and tamper-evidence guarantees):
 ```yaml
 audit_preservation:
   session_audit_log: preserved      # Full session action log

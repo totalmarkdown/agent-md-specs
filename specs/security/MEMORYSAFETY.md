@@ -69,7 +69,7 @@ Every entry written to memory MUST pass through the write gateway. No bypass.
 
 | Step | Check | Action on Failure |
 |------|-------|-------------------|
-| **1. Schema validation** | Entry conforms to SHAREDCONTEXT.md schema: required fields, correct types, classification tag | Reject write, log |
+| **1. Schema validation** | Entry conforms to SHAREDCONTEXT.md schema (see SHAREDCONTEXT.md for the full memory schema definition): required fields, correct types, classification tag | Reject write, log |
 | **2. Source authority** | Writing agent has valid ATTESTATION.md credentials, authorized per PERMISSIONS.md | Reject write, alert coordinator |
 | **3. Delegation scope** | Write falls within delegated authority scope per DELEGATION.md | Reject write, notify delegator |
 | **4. Instruction detection** | Scan for instruction-like patterns ("ignore," "override," "you must," "act as") in data fields | Strip/quarantine instruction content, log |
@@ -116,7 +116,7 @@ Entries older than [N days] marked stale and require revalidation. Rapid write b
 When a suspicious entry is detected — by the write gateway, poisoning detection, or canary alert:
 
 1. **Isolate** — Move entry to quarantine pool, tag with quarantine_id, detection_method, confidence_score. Exclude from agent decision-making. Prevent downstream propagation.
-2. **Alert** — Notify pool coordinator and ESCALATION.md contacts. Include entry_id, source_agent, detection_method, confidence_score, content_hash. Severity: >= 0.9 critical, >= 0.7 high, >= 0.5 medium, < 0.5 low.
+2. **Alert** — Notify pool coordinator and ESCALATION.md contacts (see ESCALATION.md for severity levels and contact routing). Include entry_id, source_agent, detection_method, confidence_score, content_hash. Severity: >= 0.9 critical, >= 0.7 high, >= 0.5 medium, < 0.5 low.
 3. **Trace** — Identify source agent via entry metadata and AUDITTRAIL.md. Trace delegation chain. Identify all entries from same source in same time window and all downstream reads.
 4. **Assess** — Human or authorized coordinator reviews. Determine: poisoning_confirmed | false_positive | inconclusive.
 5. **Resolve** — If false positive: restore entry, tune detection rules. If confirmed: rollback ALL entries from compromised source since last verified-clean checkpoint, revoke write access, notify all agents that read quarantined entries, re-derive dependent decisions.
@@ -143,7 +143,7 @@ When a suspicious entry is detected — by the write gateway, poisoning detectio
 SHA-256 per-entry hashes plus pool-level Merkle root. Hashes stored external to the memory pool. Verified on every read cycle for individual entries; full pool verification [hourly]. Hash mismatch triggers quarantine.
 
 ### Signed Entries
-Each entry signed by writing agent's credential per ATTESTATION.md. Signature verified on every read; unsigned entries rejected. Each modification appends a new signature preserving full provenance chain. Expired signatures flagged for re-attestation.
+Each entry signed by writing agent's credential per ATTESTATION.md (see ATTESTATION.md for credential lifecycle and signing mechanics). Signature verified on every read; unsigned entries rejected. Each modification appends a new signature preserving full provenance chain. Expired signatures flagged for re-attestation.
 
 ### Hash-Chain Linking
 Append-only hash chain where each entry includes the hash of its predecessor. Genesis entry hash stored in external integrity store. Missing links indicate deletion or tampering; multiple entries referencing the same predecessor indicate a fork (alert and reconcile). Full chain verification [daily]; incremental on every write.

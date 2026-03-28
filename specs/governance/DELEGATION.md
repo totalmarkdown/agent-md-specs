@@ -123,6 +123,7 @@ When any constraint is hit:
 | Sub-delegate registry | [path to registry of active sub-delegations] |
 
 ### Sub-Delegation Rules
+Sub-delegated agents inherit the narrowing constraints of LEASTPRIVILEGE.md.
 - Sub-delegated scope MUST be a strict subset of parent scope
 - Sub-delegated expiry MUST be <= parent delegation expiry
 - Sub-delegated budget MUST be <= remaining parent budget
@@ -173,6 +174,7 @@ In-flight actions at expiry: [complete-current / halt-immediately]
 | Notification on revoke | [who is notified — agent, principal, security] |
 
 ### In-Flight Action Handling on Revocation
+Any active sessions (see SESSION.md) are affected as follows:
 - **Reversible actions:** Roll back if possible, log rollback
 - **Irreversible actions:** Complete if safe, flag for review
 - **Long-running tasks:** Checkpoint and halt, preserve state
@@ -181,7 +183,8 @@ In-flight actions at expiry: [complete-current / halt-immediately]
 ## Accountability Binding
 
 How actions are traced back through the delegation chain
-to the authorizing human:
+to the authorizing human. All entries are persisted in
+AUDITTRAIL.md for post-hoc verification.
 
 1. Every action includes `delegation_id` in its audit entry
 2. Audit entry references `delegating_principal` identity

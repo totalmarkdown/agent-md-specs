@@ -74,7 +74,8 @@ verified independently. Trust is:
 
 ## Privilege Baseline
 
-Minimum permissions when the agent is idle (no active task):
+Minimum permissions when the agent is idle (no active task).
+These map to the static resource grants declared in PERMISSIONS.md.
 
 | Resource | Idle Permission | Justification |
 |----------|----------------|---------------|
@@ -97,7 +98,8 @@ Minimum permissions when the agent is idle (no active task):
 ## Just-In-Time Escalation
 
 When a task requires privileges beyond baseline, the agent
-requests temporary escalation:
+requests temporary escalation. The authority to grant these
+privileges flows from DELEGATION.md.
 
 ### Escalation Request Format
 ```yaml
@@ -176,7 +178,8 @@ If automatic de-escalation fails:
 ## Unknown Action Policy
 
 When the agent encounters an action it has no explicit
-policy for:
+policy for (see INTENT.md for how the agent declares
+what it plans to do before acting):
 
 | Policy | Behavior | When to Use |
 |--------|----------|-------------|

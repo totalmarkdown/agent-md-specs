@@ -92,7 +92,8 @@ shared_context_ref: [path to SHAREDCONTEXT.md if scope > individual]
 
 ## Shared Context Integration
 
-How this agent's individual memory interacts with shared context:
+How this agent's individual memory interacts with shared context
+(see SHAREDCONTEXT.md for the full shared memory pool governance):
 
 ### Reading from Shared Context
 - Which shared context entries are loaded at session start
@@ -119,11 +120,13 @@ Every memory entry carries a classification level:
 
 Classification must be assigned at write time and cannot be downgraded
 without human approval (via ESCALATION.md).
+_See MEMORYSAFETY.md for classification enforcement and poisoning defense._
 
 ## Destruction Policy
 
 Aligned with SESSION.md destruction policy:
 - Session-scoped memories: destroyed when session ends
+  (see SESSION.md for session lifecycle and destruction triggers)
 - Persistent individual memories: retained across sessions,
   subject to TTL and retention policy
 - Shared context entries: governed by SHAREDCONTEXT.md retention policy,

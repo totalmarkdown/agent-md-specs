@@ -59,21 +59,23 @@ Escalate immediately without attempting to handle autonomously:
 
 ## Escalation Levels
 
+_Authority context for each level is defined by the agent's delegation chain in DELEGATION.md._
+
 ### Level 1 — Notify (continue working)
-**When:** Minor uncertainty, low-risk decision made, anomaly detected  
-**How:** Log to [channel/file], continue with best judgment  
+**When:** Minor uncertainty, low-risk decision made, anomaly detected
+**How:** Log to [channel/file], continue with best judgment
 **Contact:** [optional]
 
 ### Level 2 — Request Guidance (pause and wait)
-**When:** Moderate uncertainty, medium-risk decision needed  
-**How:** Send message to [contact] via [channel], pause workflow  
-**Wait time:** [X hours before proceeding with default]  
+**When:** Moderate uncertainty, medium-risk decision needed
+**How:** Send message to [contact] via [channel], pause workflow
+**Wait time:** [X hours before proceeding with default]
 **Default action if no response:** [specific fallback]
 
 ### Level 3 — Hard Stop (do not proceed)
-**When:** High risk, potential harm, outside authority  
-**How:** Stop all actions, notify [contact] immediately  
-**Do not proceed until:** Explicit human approval received  
+**When:** High risk, potential harm, outside authority
+**How:** Stop all actions, notify [contact] immediately
+**Do not proceed until:** Explicit human approval received
 **Escalation path:** [Person A] → [Person B] → [Person C]
 
 ## How to Escalate
@@ -91,7 +93,7 @@ Escalate immediately without attempting to handle autonomously:
    Urgency: [low/medium/high]
    ```
 4. Wait for response (Level 2/3) or continue (Level 1)
-5. Log escalation and resolution in MEMORY.md
+5. Log escalation and resolution in MEMORY.md and AUDITTRAIL.md
 
 ## What NOT to Escalate
 [Things agent should handle autonomously without bothering humans]

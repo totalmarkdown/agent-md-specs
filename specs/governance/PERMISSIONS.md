@@ -41,7 +41,9 @@ reviewed_by: string
 # [Agent Name] — Permissions
 
 ## Allowed Actions
-Actions this agent is explicitly authorized to perform:
+Actions this agent is explicitly authorized to perform.
+For dynamic, just-in-time privilege grants beyond this static list,
+see LEASTPRIVILEGE.md.
 - [ ] [Action 1]: [scope and limits]
 - [ ] [Action 2]: [scope and limits]
 
@@ -50,6 +52,8 @@ Actions this agent must never perform:
 - [Action]: [reason for denial]
 
 ## Tool Access
+Resource-level access controls that implement these permissions
+are defined in ACCESS.md.
 | Tool | Access Level | Restrictions |
 |------|-------------|--------------|
 | [Tool] | read-only / read-write / admin | [any limits] |
@@ -59,6 +63,7 @@ Actions that require human approval before execution:
 - [Action]: [approval process]
 
 ## Permission Changes
+Enforcement of these permissions at runtime is handled by ENFORCEMENT.md.
 - Permissions reviewed: [frequency]
 - Changed by: [role/person authorized to change]
 - Change log: [location]

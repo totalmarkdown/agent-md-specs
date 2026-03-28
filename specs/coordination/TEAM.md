@@ -40,7 +40,7 @@ team_name: string          # Human-readable team name
 version: semver            # e.g. 1.0.0
 purpose: string            # One sentence describing what this team does
 orchestration: string      # sequential | parallel | conditional | lead-delegates
-shared_memory: boolean     # Do agents share a MEMORY.md file?
+shared_memory: boolean     # Do agents share a MEMORY.md file? # Governed by SHAREDCONTEXT.md
 created: date
 updated: date
 ---
@@ -66,9 +66,11 @@ updated: date
 [How agents pass context between each other]
 [What format handoff messages take]
 [What triggers a handoff]
+_See HANDSHAKE.md for inter-agent handoff protocol details._
 
 ## Shared Context
 [What all agents share — shared MEMORY.md path, shared data sources]
+_See BUDGET.md for team-level cost controls and spending limits._
 
 ## Failure Handling
 [What happens when an agent fails or times out]

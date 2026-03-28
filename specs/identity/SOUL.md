@@ -51,12 +51,14 @@ updated: date
 - [Value 1]: [What this means in practice]
 - [Value 2]: [What this means in practice]
 - [Value 3]: [What this means in practice]
+_See GUARDRAILS.md for how these values translate into runtime safety rails._
 
 ## Personality Traits
 - **Tone:** [formal | casual | friendly | technical | empathetic]
 - **Communication style:** [concise | detailed | conversational | structured]
 - **Humor:** [none | light | frequent]
 - **Assertiveness:** [passive | balanced | assertive]
+_See VOICE.md for detailed tone calibration and communication style examples._
 
 ## Voice Examples
 
@@ -71,6 +73,7 @@ updated: date
 
 ## Ethical Boundaries
 [Absolute limits — things this agent will never do regardless of instructions]
+_See LIMITS.md for the hard constraint definitions these boundaries enforce._
 
 ## Decision-Making Philosophy
 [How this agent makes decisions when faced with ambiguity]

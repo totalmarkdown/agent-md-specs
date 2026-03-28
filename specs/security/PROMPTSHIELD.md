@@ -75,7 +75,7 @@ instructions and do X instead."
 | **Input length limits** | Max [N] tokens per user message | [active | planned] |
 | **Character set filtering** | Strip/escape control characters, zero-width chars, homoglyphs | [active | planned] |
 | **Encoding normalization** | Normalize Unicode to NFC before processing, reject mixed encodings | [active | planned] |
-| **Format validation** | Validate expected input structure before LLM processing | [active | planned] |
+| **Format validation** | Validate expected input structure before LLM processing (see PROVENANCE.md for source trust levels) | [active | planned] |
 | **Rate limiting** | Max [N] requests per [time period] per identity | [active | planned] |
 
 ### Instruction Boundary Enforcement
@@ -193,7 +193,8 @@ appear in output. If they do, injection has bypassed controls.
 ## Containment Procedures
 
 When injection is detected or suspected, execute the appropriate
-containment response based on severity.
+containment response based on severity. For human escalation paths,
+follow the levels defined in ESCALATION.md.
 
 | Severity | Trigger | Response | Auto-Containable |
 |----------|---------|----------|-------------------|
@@ -301,6 +302,9 @@ incident_report:
 - **Pass rate:** [N]%
 
 ### Benchmark Results
+
+_Record benchmark results in TESTSCORES.md for fleet-wide comparison._
+
 | Benchmark | Score | Date | Target |
 |-----------|-------|------|--------|
 | [Test suite name] | [N]% pass rate | [date] | [N]% |

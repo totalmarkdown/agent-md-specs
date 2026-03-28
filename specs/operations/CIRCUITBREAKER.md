@@ -116,7 +116,7 @@ do not propagate upward unless containment is exhausted.
 | Level | Containment Rule | Max Impact |
 |-------|-----------------|------------|
 | Agent | Single breaker trips for one dependency. Other agents independent. | 1 agent, 1 dependency |
-| Team (TEAM.md) | >50% of agents have open breakers for same dependency → team breaker trips. | All agents in team |
+| Team | >50% of agents have open breakers for same dependency → team breaker trips (see TEAM.md for team composition). | All agents in team |
 | Crew (CREW.md) | >50% of teams have team-level breakers open → crew breaker trips. | All teams in crew |
 | Swarm | Multiple crews report open breakers → global fallback activates. | Entire fleet |
 
@@ -217,7 +217,7 @@ auto-expired after [N] hours. Alert per ESCALATION.md Level 1.
 ## Monitoring and Alerting
 
 ### State Change Logging
-Every state transition is logged to AUDITTRAIL.md:
+Every state transition is logged to AUDITTRAIL.md (see AUDITTRAIL.md for the event schema and tamper-resistance guarantees):
 
 ```yaml
 circuit_breaker_event:
@@ -260,7 +260,7 @@ time-of-day patterns, mean time to recovery, threshold tuning.
 ### Recovery Sequence
 When HALF-OPEN probes succeed:
 
-1. **Verify health** — Full health check per HEALTHCHECK.md
+1. **Verify health** — Full health check per HEALTHCHECK.md (see HEALTHCHECK.md for probe definitions)
 2. **Close breaker** — Transition to CLOSED, reset failure counters
 3. **Replay queued requests** — Process dead letter queue FIFO,
    rate-limited to avoid overwhelming the recovering dependency

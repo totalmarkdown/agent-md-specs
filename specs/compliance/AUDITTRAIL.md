@@ -158,7 +158,7 @@ or timestamping service for independent verification.
 
 | Regulatory Framework | Minimum Retention | This Agent's Policy |
 |---------------------|-------------------|---------------------|
-| **GDPR** | 3 years (data processing records) | [duration] |
+| **GDPR** | 3 years (data processing records; see GDPR.md) | [duration] |
 | **HIPAA** | 6 years (access logs, audit trails) | [duration] |
 | **SOC 2** | 1 year (system activity logs) | [duration] |
 | **EU AI Act** | 10 years (high-risk AI system logs) | [duration] |
@@ -194,8 +194,9 @@ Every audit entry is non-repudiable — the agent that produced it
 cannot deny having produced it. This is achieved through:
 
 1. **Cryptographic signing:** Each entry signed with the agent's
-   ATTESTATION.md credentials (private key never leaves hardware
-   binding if applicable)
+   ATTESTATION.md credentials (see ATTESTATION.md for key management
+   and signing algorithms; private key never leaves hardware binding
+   if applicable)
 2. **Delegation chain inclusion:** Every entry includes the full
    chain of authority from human principal to executing agent
 3. **Timestamping:** Independent timestamp from trusted authority
@@ -214,7 +215,8 @@ Verification steps for any audit entry:
 ## Human Authority Binding
 
 Every consequential action links back to a human decision-maker
-through the delegation chain in DELEGATION.md.
+through the delegation chain (see DELEGATION.md for chain structure
+and depth limits).
 
 - **Delegation chain logged:** Every entry includes the full chain
 - **Chain breaks:** If delegation chain cannot be verified, action

@@ -79,7 +79,7 @@ spec_version: string
 **Fallback method:** [secondary method or "none"]
 
 Preference order (strongest to weakest):
-1. **SPIFFE/SPIRE** — Workload identity with automatic rotation,
+1. **SPIFFE/SPIRE** — Workload identity (spiffe.io) with automatic rotation,
    platform-agnostic, designed for zero-trust service meshes
 2. **X.509 certificates** — Industry standard PKI, widely supported,
    requires certificate authority infrastructure
@@ -174,6 +174,7 @@ Certificate chain:
 ## Credential Lifecycle
 
 ### Issuance
+Key material referenced here should be stored according to SECRETS.md.
 - **Issued by:** [CA, SPIRE server, DID registry, or manual process]
 - **Issuance requires:** [human approval | automated policy check | both]
 - **Initial verification:** [identity proofing steps before first credential]
@@ -235,7 +236,8 @@ Expected verification response:
 ## Human-in-the-Loop Binding
 
 For high-stakes actions, the agent's attestation is bound to a
-specific human operator's authentication.
+specific human operator's authentication (see DELEGATION.md for
+the authority chain linking agent actions to human principals).
 
 | Property | Value |
 |----------|-------|

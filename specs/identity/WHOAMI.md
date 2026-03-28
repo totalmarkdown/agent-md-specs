@@ -63,7 +63,7 @@ whoami_spec_version: string  # Version of this spec
 Written in first person. Should answer: what do I do, for whom, why do I exist?]
 
 ## Capabilities
-What I can do:
+What I can do (see TOOLS.md for detailed tool configurations):
 - [Capability 1]
 - [Capability 2]
 
@@ -72,6 +72,7 @@ What I cannot do:
 - [Limitation 2]
 
 ## Verification
+Verification mechanisms are defined in detail in ATTESTATION.md.
 - **Public key:** [URL to public key for cryptographic verification]
 - **Signed by:** [Issuing authority if any]
 - **Last verified:** [Date]
@@ -81,7 +82,7 @@ What I cannot do:
 - **MCP endpoint:** [connection string from MCP.md]
 - **A2A endpoint:** [agent card URL]
 - **CLI:** [invocation command]
-- **Human owner:** [contact for the human responsible]
+- **Human owner:** [contact for the human responsible] (see OWNER.md)
 
 ## Trust Level I Claim
 **Claimed trust level:** [untrusted | community | verified | certified]

@@ -225,7 +225,7 @@ verification:
 | Backup systems | Next scheduled purge cycle |
 
 ### Data After Revocation
-- Consented data: delete per PRIVACY.md
+- Consented data: delete per PRIVACY.md (see PRIVACY.md for deletion procedures and SLAs)
 - Legally required data (audit logs, legal holds): retain with documentation
 - Anonymized/aggregated: may retain if truly irreversible
 - Derived data (trained models): assess per MEMORYSAFETY.md
@@ -233,6 +233,9 @@ verification:
 ---
 
 ## Consent for Multi-Agent Systems
+
+For team composition and agent relationships, see TEAM.md. For
+shared state propagation of consent scope, see SHAREDCONTEXT.md.
 
 ### Disclosure Requirements
 - Users informed which **specific agents** process their data (ref WHOAMI.md)
@@ -269,7 +272,7 @@ multi_agent_consent:
 
 | Regulation | Requirement | How This Spec Addresses |
 |-----------|-------------|------------------------|
-| **GDPR Art 7** | Freely given, specific, informed, unambiguous consent | Consent Requirements enforces all four; invalid methods listed |
+| **GDPR Art 7** | Freely given, specific, informed, unambiguous consent | Consent Requirements enforces all four; invalid methods listed (see GDPR.md for full GDPR configuration) |
 | **GDPR Art 7(3)** | Withdraw consent any time, as easy as giving | Revocation via same-channel + additional, no dark patterns |
 | **GDPR Art 17** | Right to erasure when consent withdrawn | Revocation triggers deletion per PRIVACY.md with SLAs |
 | **GDPR Art 8** | Child's consent (age 16, or 13 per member state) | Age Verification with per-regulation thresholds |

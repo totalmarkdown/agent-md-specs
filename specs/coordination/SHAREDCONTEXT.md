@@ -121,7 +121,8 @@ defined below.
 ## Access Control Matrix
 
 Access to the shared context pool is governed by agent identity
-(WHOAMI.md) and delegated authority (DELEGATION.md). Every access
+(WHOAMI.md) and delegated authority (see DELEGATION.md for the
+full authority chain and delegation mechanics). Every access
 grant must be justified by a valid delegation chain — an agent
 cannot self-grant pool access.
 
@@ -321,8 +322,10 @@ Eviction order when pool reaches capacity:
 ## Inheritance Rules
 
 Shared context pools form a hierarchy that mirrors the
-organizational structure. Higher-level pools can propagate
-entries downward; lower-level pools can promote entries upward.
+organizational structure (see ORG.md and INHERIT.md for how
+organizational hierarchy and inheritance rules are defined).
+Higher-level pools can propagate entries downward; lower-level
+pools can promote entries upward.
 
 ### Hierarchy
 
@@ -396,6 +399,7 @@ A child pool entry can be promoted to a parent pool when:
 
 In distributed deployments, shared context pools may have
 replicas or may sync across network boundaries.
+_See MEMORYSAFETY.md for integrity verification of synchronized entries._
 
 ### Sync Configuration
 

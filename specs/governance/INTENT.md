@@ -125,7 +125,7 @@ appropriate, expressed as a float from 0.0 to 1.0.
 | > 0.9 | High confidence | Proceed autonomously, log intent |
 | 0.7 - 0.9 | Moderate confidence | Proceed, log intent with rationale flag |
 | 0.5 - 0.7 | Low confidence | Pause, request human confirmation |
-| < 0.5 | Very low confidence | Halt, escalate per ESCALATION.md |
+| < 0.5 | Very low confidence | Halt, escalate per ESCALATION.md (see ESCALATION.md for level definitions) |
 
 ### Confidence Factors
 Confidence should account for:
@@ -148,7 +148,7 @@ Before proceeding, classify the expected impact:
 
 | Dimension | Assessment | Value |
 |-----------|-----------|-------|
-| Reversibility | Can this be undone? | [fully / partially / irreversible] |
+| Reversibility | Can this be undone? (see LIMITS.md for hard irreversibility constraints) | [fully / partially / irreversible] |
 | Data sensitivity | What data is touched? | [public / internal / confidential / restricted] |
 | Financial impact | Cost or value at risk | [$0 / $1-100 / $100-10k / $10k+] |
 | Blast radius | How many users/systems affected | [single / team / org / public] |
@@ -204,7 +204,9 @@ human approval is required:
 
 ## Intent Logging
 
-Every intent declaration is logged regardless of outcome:
+Every intent declaration is logged regardless of outcome.
+These records feed into AUDITTRAIL.md as the permanent history of
+what the agent planned versus what actually occurred.
 
 ```yaml
 intent_log_entry:
