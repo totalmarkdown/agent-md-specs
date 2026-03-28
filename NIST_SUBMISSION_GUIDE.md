@@ -190,7 +190,7 @@ For questions about this submission or to discuss participation in
 future NCCoE workshops or demonstration projects:
 
 **TotalMarkdown.ai**
-Email: hello@totalmarkdown.ai
+Email: contact@totalmarkdown.ai
 Repository: https://github.com/totalmarkdown/agent-md-specs
 Discussions: https://github.com/totalmarkdown/agent-md-specs/discussions
 
