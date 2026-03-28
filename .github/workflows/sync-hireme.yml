@@ -17,7 +17,7 @@ jobs:
       - name: Push spec file to standalone repo
         uses: cpina/github-action-push-to-another-repository@main
         env:
-          SSH_DEPLOY_KEY: ${{ secrets.SYNC_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.SYNC_PAT }}
         with:
           source-directory: 'specs/business'
           destination-github-username: 'totalmarkdown'
