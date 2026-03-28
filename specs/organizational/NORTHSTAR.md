@@ -24,9 +24,10 @@ that this entity optimizes for above all others.
 Having a north star metric forces clarity about what 
 success actually means. Everything else is secondary.
 
-This is not the same as GOALS.md (many goals, current period) 
-or PERFORMANCE.md (many metrics tracked) — NORTHSTAR.md is 
-the one metric to rule them all.
+This is not the same as GOALS.md (many goals, current period)
+or PERFORMANCE.md (many metrics tracked) -- NORTHSTAR.md is
+the one metric to rule them all. For measuring progress toward
+it, see KPI.md.
 
 ### Spec
 

@@ -27,8 +27,8 @@ Different from:
 - SECURITY.md — security prohibitions
 
 CENSOR.md is specifically content restrictions:
-**topics, subject matter, and output types** this agent 
-will not engage with, and why.
+**topics, subject matter, and output types** this agent
+will not engage with, and why. _See GUARDRAILS.md for runtime output filtering._
 
 ### Spec
 
@@ -102,9 +102,9 @@ Topics restricted in specific regions/languages:
 | [topic] | [region] | [legal/regulatory] |
 
 ## Restriction Review
-These restrictions were last reviewed: [date]  
-To request an exception: [process]  
-To report a missing restriction: [process]  
+These restrictions were last reviewed: [date]
+To request an exception: [process] (see ESCALATION.md)
+To report a missing restriction: [process]
 Next scheduled review: [date]
 ```
 

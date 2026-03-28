@@ -72,8 +72,9 @@ Use [BANT | MEDDIC | SPIN | custom] methodology.
 |---------|-----------|---------------|-------|
 | [Product] | $[X] | $[Y] | [Notes] |
 
-**Pricing authority:** Agent may offer up to [X]% discount autonomously.  
+**Pricing authority:** Agent may offer up to [X]% discount autonomously.
 Larger discounts require escalation per ESCALATION.md.
+_See PRICING.md for the complete tier and billing reference._
 
 ## Objection Handling
 
@@ -99,8 +100,9 @@ Larger discounts require escalation per ESCALATION.md.
 ## Approved Materials
 - Pitch deck: [location]
 - Case studies: [location]
-- Pricing sheet: [location]
+- Pricing sheet: [location] (see PRICING.md)
 - Contract templates: [location]
+- Agent listing: see HIREME.md for the public hiring profile
 
 ## CRM Integration
 - Log all interactions to [CRM name] under [field mapping]

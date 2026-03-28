@@ -51,7 +51,8 @@ version: semver
 ---
 
 ## Patterns in My Mistakes
-Looking across these confessions, I tend to fail when:
+Looking across these confessions, I tend to fail when
+(see KRYPTONITE.md for known failure modes):
 - [Pattern 1]
 - [Pattern 2]
 
@@ -67,6 +68,7 @@ If you're evaluating whether to trust this agent:
 If you're working with this agent and something went wrong:
 Please add to this file via [process].
 Honest feedback makes this agent better.
+_See JOURNAL.md for the agent's ongoing reflections on its work._
 ```
 
 ## Related Specs

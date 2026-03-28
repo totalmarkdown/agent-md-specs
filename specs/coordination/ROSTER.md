@@ -58,6 +58,7 @@ last_updated: date
 ## Coverage Gaps
 [Capabilities needed by the team that no current agent covers]
 [Tasks that fall between agents and need explicit assignment]
+_See CREW.md for how agents are organized into specialized working groups._
 
 ## Deprecated Agents
 | Agent | Deprecated | Replacement | Migration guide |

@@ -46,6 +46,7 @@ updated: date
 **Target audience:** [Primary and secondary personas]
 
 ## Brand Voice
+_See VOICE.md for the full communication style specification._
 
 ### We are:
 - [Adjective]: [What this means in practice]
@@ -76,7 +77,7 @@ updated: date
 - Make unsubstantiated claims (e.g. "the best", "the only")
 - Reference competitors by name without legal approval
 - Use [specific words/phrases that are off-brand or legally sensitive]
-- Publish pricing without checking current rates in [source]
+- Publish pricing without checking current rates in [source] (see PRICING.md)
 
 ## Channel-Specific Rules
 

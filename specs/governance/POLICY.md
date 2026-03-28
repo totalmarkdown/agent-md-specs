@@ -58,11 +58,12 @@ All agents must escalate when:
 - [Condition 1]
 - [Condition 2]
 - See individual ESCALATION.md files for agent-specific rules
+- See RULES.md for granular operating procedures
 
 ## Compliance
 - All agents must comply with: [list of regulations]
 - Compliance audit frequency: [schedule]
-- Non-compliance response: [process]
+- Non-compliance response: [process] (see ENFORCEMENT.md)
 
 ## Resource Limits
 - Maximum token budget per agent: [amount]

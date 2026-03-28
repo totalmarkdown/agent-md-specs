@@ -20,9 +20,10 @@ tier: extended
 ### Purpose
 The agent's professional peer relationships — agents it works 
 well with, complementary skills, and informal collaboration 
-patterns. Different from NETWORK.md (formal trust graph) and 
-TEAM.md (organizational structure) — COLLEAGUES.md captures 
+patterns. Different from NETWORK.md (formal trust graph) and
+TEAM.md (organizational structure) — COLLEAGUES.md captures
 the organic working relationships that develop over time.
+_See TEAM.md for the formal organizational hierarchy._
 
 ### Spec
 

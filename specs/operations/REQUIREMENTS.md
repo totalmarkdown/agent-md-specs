@@ -136,7 +136,7 @@ This table shows what you need to obtain before deployment.
 |-----------|---------|---------|---------|
 | [server name] | [what it provides] | [install command] | [yes/no] |
 
-See MCP.md for full MCP configuration details.
+See MCP.md for full MCP configuration details. For step-by-step first-run instructions, see SETUP.md.
 
 ---
 
@@ -202,7 +202,7 @@ cp .env.example .env.local
 # 4. Start
 [start command]
 
-# 5. Smoke test
+# 5. Smoke test (see HEALTHCHECK.md for full verification)
 [test command]
 ```
 ```

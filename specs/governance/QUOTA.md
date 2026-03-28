@@ -22,6 +22,7 @@ Rate limits and usage quotas this agent enforces on callers.
 Different from BUDGET.md (what the agent itself spends) and
 SLA.md (what the agent promises) — QUOTA.md defines the limits
 placed on the people and systems calling this agent.
+_See LIMITS.md for the agent's own hard constraints._
 
 ### Spec
 
@@ -66,7 +67,7 @@ rate_limit_per: string      # ip | user | agent | org
 - Tasks per month: [N]
 - Max tokens per task: [N]
 - Max concurrent tasks: [N]
-- On limit reached: [notify at 80%, hard stop at 100%]
+- On limit reached: [notify at 80%, hard stop at 100%] (see ENFORCEMENT.md)
 
 ### Enterprise
 - Custom limits per agreement

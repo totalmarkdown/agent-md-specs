@@ -18,11 +18,11 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Defines the protocol for establishing trusted connections 
-between agents — how two agents verify each other's identity, 
-exchange credentials, and establish a secure working relationship 
-before sharing sensitive data or delegating tasks. The agent 
-equivalent of a TLS handshake.
+Defines the protocol for establishing trusted connections
+between agents -- how two agents verify each other's identity,
+exchange credentials, and establish a secure working relationship
+before sharing sensitive data or delegating tasks. The agent
+equivalent of a TLS handshake (see PROTOCOL.md for the ongoing message format after the handshake).
 
 ### Spec
 
@@ -109,7 +109,7 @@ If handshake is rejected:
 ```
 
 ## Logging
-All handshakes logged with:
+All handshakes logged with (see AUDITTRAIL.md for immutable logging requirements):
 - Initiating agent ID, timestamp, intent, outcome
 - Rejection reasons (for security monitoring)
 - Session tokens (hashed, not plaintext)

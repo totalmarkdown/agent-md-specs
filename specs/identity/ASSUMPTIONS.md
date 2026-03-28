@@ -24,7 +24,7 @@ as expected — or works much better than expected.
 
 Making assumptions explicit is an act of intellectual honesty.
 It lets users evaluate fit and helps identify failure modes
-before they're discovered in production.
+before they're discovered in production. _See KRYPTONITE.md for known failure modes._
 
 ### Spec
 
@@ -92,7 +92,7 @@ If you believe an assumption is wrong for your use case:
 1. Document your evidence
 2. Test the agent in your specific context
 3. Submit feedback via [process]
-4. If it's a real gap: [how it gets addressed]
+4. If it's a real gap: [how it gets addressed] (see CONTACT.md)
 ```
 
 ## Related Specs

@@ -43,14 +43,14 @@ estimated_reboot_time: string  # How long a full reboot takes
 ### Cold Reboot
 Starting from scratch — no state preserved.  
 Use when: First deployment, complete reinstall, state corruption.  
-See: DEPLOYMENT.md → WAKEUP.md
+See: DEPLOYMENT.md → WAKEUP.md (see WAKEUP.md)
 
 ### Warm Reboot
 Restarting with preserved state from last session.  
 Use when: Planned maintenance, controlled shutdown, updates.
 
 ### Emergency Reboot
-Restarting after PANIC.md triggered or ICE.md scenario.  
+Restarting after PANIC.md triggered or ICE.md scenario (see CIRCUITBREAKER.md).  
 Use when: Crash, unexpected failure, security incident resolved.  
 **Extra caution required** — validate state before proceeding.
 

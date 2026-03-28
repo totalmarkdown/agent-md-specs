@@ -22,7 +22,8 @@ Step-by-step guide to get this agent running from scratch.
 Where DEPLOYMENT.md covers production deployment procedures
 and REQUIREMENTS.md lists what you need, SETUP.md is the
 narrative walkthrough for someone setting up this agent
-for the first time.
+for the first time. After setup, run HEALTHCHECK.md to
+verify everything is working.
 
 ### Spec
 
@@ -176,7 +177,7 @@ Ask in Discord: [Discord URL]
 
 ## Next Steps
 
-- Read SOUL.md to understand this agent's personality
+- Read SOUL.md to understand this agent's personality and values
 - Read LIMITS.md to understand what it won't do
 - Read HIREME.md if you want to use it professionally
 - Check MEMORY.md to see what it remembers from previous sessions

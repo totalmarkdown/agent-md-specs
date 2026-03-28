@@ -44,6 +44,8 @@ mood_since: datetime
 ## How Mood Affects Output
 I'll always tell you if mood might affect quality.
 I won't produce degraded output silently.
+
+_See SOUL.md for the personality behind these moods and STATUS.md for real-time operational state._
 ```
 
 ## Related Specs

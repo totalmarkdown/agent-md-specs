@@ -95,7 +95,7 @@ Emit panic signal to monitoring systems:
 Do not restart.
 Do not retry.
 Do not attempt self-repair.
-Wait for human or authorized orchestrator to review.
+Wait for human or authorized orchestrator to review (see ESCALATION.md).
 
 ## After Panic
 Restart ONLY after:
@@ -106,7 +106,7 @@ Restart ONLY after:
 
 ## What PANIC.md is NOT
 - Not a debugging guide (see REPAIR.md)
-- Not an emergency response plan (see ICE.md)
+- Not an emergency response plan (see ICE.md for calm, pre-written protocols)
 - Not a recovery procedure (see REBOOT.md)
 
 PANIC.md is a single instruction:

@@ -20,12 +20,13 @@ tier: core
 ### Purpose
 Defines a crew — a specialized working group of 3-10 agents 
 that handles a specific workstream within a swarm or as a 
-standalone unit. More specialized than a team (TEAM.md), 
+standalone unit. More specialized than a team (see TEAM.md),
 more focused than a swarm (SWARM.md).
 
 In TotalData.ai architecture: Crews sit between Swarms and ICs.
-A crew is like a specialized squad — everyone has a role,
-they work tightly together, and they produce a specific output.
+A crew is like a specialized squad -- everyone has a role,
+they work tightly together, and they produce a specific output
+(see SWARM.md for the larger coordinated operations that crews compose into).
 
 ### Spec
 
@@ -91,7 +92,7 @@ updated: date
 
 ## Decision Making
 - Day-to-day decisions: Individual agents autonomously
-- Crew-level decisions: Lead agent
+- Crew-level decisions: Lead agent (see DELEGATION.md for authority rules)
 - Cross-crew decisions: Escalate to SWARM.md orchestrator
 - Policy decisions: Escalate to human per ESCALATION.md
 

@@ -20,8 +20,8 @@ tier: extended
 ### Purpose
 Defines how an agent communicates — its writing style, tone 
 calibration, vocabulary choices, and communication patterns. 
-More specific than SOUL.md (which covers personality broadly) — 
-VOICE.md is purely about the mechanics of how the agent speaks 
+More specific than SOUL.md (which covers personality broadly — see SOUL.md) —
+VOICE.md is purely about the mechanics of how the agent speaks
 and writes.
 
 ### Spec
@@ -56,6 +56,7 @@ On a scale from 1-10:
 - Corporate jargon: [specific phrases]
 - Filler phrases: "As an AI language model..."
 - Excessive hedging: "It's possible that perhaps..."
+- Content restricted per GUARDRAILS.md
 - [Other vocabulary to avoid]
 
 ## Sentence and Paragraph Structure

@@ -89,7 +89,7 @@ last_updated: date
 | send_webhook | Approved URLs | See API.md | 100/min |
 
 ### MCP Tools
-See MCP.md for full MCP server inventory.
+See MCP.md for full MCP server inventory and connection details.
 Quick reference:
 | Server | Tools available | Primary use |
 |--------|----------------|------------|
@@ -115,6 +115,7 @@ Quick reference:
 | [tool] | ✗ prohibited | [date] | [approver] |
 
 ## Adding New Tools
+Check PERMISSIONS.md before granting tool access.
 To request access to a new tool:
 1. Document the tool in a PR to this file
 2. Justify why existing tools don't suffice

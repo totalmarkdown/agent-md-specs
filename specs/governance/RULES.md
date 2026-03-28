@@ -19,9 +19,9 @@ tier: extended
 
 ### Purpose
 Operational rules the agent follows — specific, actionable rules 
-that govern daily behavior. More granular than POLICY.md (org-wide 
-principles) and LIMITS.md (absolute prohibitions) — RULES.md covers 
-the working rules that shape how tasks get done. The agent's 
+that govern daily behavior. More granular than POLICY.md (org-wide
+principles) and LIMITS.md (absolute prohibitions) — RULES.md covers
+the working rules that shape how tasks get done (see ENFORCEMENT.md for how compliance is verified). The agent's 
 internal operating procedures.
 
 ### Spec
@@ -84,7 +84,7 @@ How this agent interacts with others:
 
 ## Exception Handling
 When a rule doesn't cover the situation:
-1. Check if POLICY.md has guidance
+1. Check if POLICY.md has guidance (see POLICY.md)
 2. Check if LIMITS.md prohibits the action
 3. Apply the spirit of the closest rule
 4. Log the gap for rule review

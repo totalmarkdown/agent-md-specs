@@ -65,10 +65,13 @@ updated: date
 - RTO (Recovery Time): < [X hours]
 - RPO (Recovery Point): < [X hours] of data loss acceptable
 
+_See AUDITTRAIL.md for compliance records that must survive restores._
+
 ## Backup Monitoring
 - Alert if backup fails: [yes — via MONITOR.md alert rules]
 - Verify backup integrity: [weekly test restore]
 - Backup size trending: [monitor for unexpected growth]
+- For migrating backups between environments, see LEGACY.md
 ```
 
 ## Related Specs

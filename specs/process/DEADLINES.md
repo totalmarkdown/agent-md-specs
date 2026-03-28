@@ -22,9 +22,9 @@ Active time-bound commitments this agent is working against —
 hard deadlines with consequences for missing them.
 
 Different from:
-- GOALS.md — what to achieve (no specific deadline)
-- AVAILABILITY.md — when the agent runs
-- SLA.md — service level agreements
+- GOALS.md -- what to achieve (no specific deadline)
+- AVAILABILITY.md -- when the agent runs
+- SLA.md -- service level agreements and commitments
 
 DEADLINES.md is the commitments made to specific 
 people or systems, with specific dates and consequences.
@@ -83,7 +83,7 @@ last_updated: datetime
 1. Flag immediately in BLOCKERS.md
 2. Notify committed party [N] hours/days before due date
 3. Propose revised timeline if possible
-4. Escalate per ESCALATION.md if impact is significant
+4. Escalate per ESCALATION.md if impact is significant (see SLA.md for penalty thresholds)
 
 **When a deadline is missed:**
 1. Notify committed party immediately

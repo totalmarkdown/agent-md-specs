@@ -31,7 +31,7 @@ Different from:
 - ESCALATION.md — decision escalation (planned)
 - REPAIR.md — technical recovery (methodical)
 - SELFHEALING.md — proactive health (automated)
-- PANIC.md — reflexive immediate response
+- PANIC.md — reflexive immediate response (see PANIC.md)
 
 ICE.md is the calm, pre-written emergency protocol.
 Written when things are fine, to be read when they're not.
@@ -102,7 +102,7 @@ If you are reading this because something is wrong:
 ---
 
 ### TYPE 4: Runaway spending / resource exhaustion
-**Signs:** Budget alerts, unexpected API charges, system resource maxed  
+**Signs:** Budget alerts, unexpected API charges, system resource maxed (see CIRCUITBREAKER.md)  
 **Immediate action:**
 ```bash
 # Hard stop all agent processes
@@ -141,7 +141,8 @@ If you are reading this because something is wrong:
 Once the immediate situation is stable:
 1. Write an incident report: what happened, when, impact, resolution
 2. Update this file if the emergency type wasn't covered
-3. Run a post-mortem within [N] days
+3. Notify relevant contacts per ESCALATION.md
+4. Run a post-mortem within [N] days
 4. Update REPAIR.md and SELFHEALING.md with learnings
 5. Schedule a drill of this protocol: [cadence]
 

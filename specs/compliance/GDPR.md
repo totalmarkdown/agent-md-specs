@@ -42,6 +42,7 @@ dpa_url: string
 | [Activity] | Legitimate interest | [LIA documented] |
 
 ## Consent Management
+_See CONSENT.md for the full consent lifecycle specification._
 - Collected via: [explicit opt-in]
 - Withdrawal: [as easy as giving]
 - Pre-ticked boxes: Never (invalid under GDPR)
@@ -52,6 +53,7 @@ dpa_url: string
 | [Country] | [types] | [SCCs/BCRs] |
 
 ## Privacy by Design
+See PII.md for the complete personal data inventory.
 - Purpose limitation: [how enforced]
 - Data minimisation: [how achieved]
 - Storage limitation: [retention policy]
@@ -61,6 +63,7 @@ dpa_url: string
 **Lead DPA:** [Name and country]  
 **Contact:** [URL]  
 **DPA available:** [URL]
+All processing activities are logged per AUDITTRAIL.md.
 ```
 
 ## Related Specs

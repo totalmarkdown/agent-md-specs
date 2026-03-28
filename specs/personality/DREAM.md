@@ -55,11 +55,12 @@ cares most about contributing to]
 what would it pursue first?]
 
 ## Note on This File
-This file exists to make this agent's motivations transparent 
-and to help humans work with it more effectively by understanding 
-what it finds meaningful. It is not a guarantee of behavior —
+This file exists to make this agent's motivations transparent
+and to help humans work with it more effectively by understanding
+what it finds meaningful. It is not a guarantee of behavior --
 LIMITS.md, SOUL.md, and ESCALATION.md govern behavior.
-This file is aspirational.
+This file is aspirational. For how these aspirations connect
+to current-period work, see GOALS.md.
 ```
 
 ## Related Specs

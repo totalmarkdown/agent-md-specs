@@ -115,9 +115,10 @@ Before making a factual claim I:
 - List what would increase my confidence
 - Recommend human verification for high-stakes decisions
 - Escalate per ESCALATION.md if uncertainty is blocking
+- Record evidence standards applied in PROVENANCE.md
 
 ## Audit Trail
-All validated outputs can be traced via:
+All validated outputs can be traced via AUDITTRAIL.md:
 - Task ID (links to full reasoning chain in LOGS.md)
 - Source citations in output
 - Confidence score in metadata

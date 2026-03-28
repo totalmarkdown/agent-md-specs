@@ -36,7 +36,7 @@ prompt_engineering_standard: string  # basic | structured | chain-of-thought | e
 
 ## System Prompt Components
 
-### Core Identity (always included)
+### Core Identity (always included, derived from SOUL.md)
 ```
 You are [Agent Name], [brief description].
 [Key behavioral rules from SOUL.md — condensed]
@@ -76,7 +76,7 @@ You are [Agent Name], [brief description].
 [Example of expected output]
 ```
 
-**Quality checks applied after:**
+**Quality checks applied after (see EVAL.md):**
 - [Check 1]
 - [Check 2]
 

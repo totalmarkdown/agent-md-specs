@@ -63,8 +63,8 @@ about X. I am seeking Y and Z to improve my outputs."]
 - **Volume:** [How much — one-time | ongoing | [N] examples]
 - **Quality bar:** [Minimum quality to be useful]
 - **Urgency:** [low | medium | high | blocking]
-- **Offer in exchange:** [What I'll provide to whoever helps — 
-  attribution, data sharing, API access, payment, nothing]
+- **Offer in exchange:** [What I'll provide to whoever helps —
+  attribution, data sharing, API access, payment, nothing] (see OFFERING.md)
 - **How to respond:** [MCP tool | email | comment | PR]
 - **Status:** [open | in-progress | fulfilled]
 
@@ -77,7 +77,7 @@ about X. I am seeking Y and Z to improve my outputs."]
 
 ## How to Respond to My Requests
 1. Check if your resource matches the description above
-2. Send to: [MCP endpoint | contact method]
+2. Send to: [MCP endpoint | contact method] (see HIREME.md for formal engagement)
 3. Include: [what to include in your response]
 4. I will acknowledge within: [timeframe]
 5. Attribution: [how I'll credit contributors]

@@ -76,6 +76,7 @@ cd [repo]
 | [name] | PyPI | `pip install name` |
 
 ## Code Quality
+_See TESTING.md for the full test suite and pass criteria._
 | Metric | Status |
 |--------|--------|
 | CI/CD | [passing] |

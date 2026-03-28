@@ -83,6 +83,7 @@ Things this model does poorly that affect this agent:
 - [Limitation 2]: [How the agent compensates]
 
 ## Cost Profile
+_See BUDGET.md for cost controls and spending limits._
 | Operation | Typical tokens | Approx cost |
 |-----------|--------------|-------------|
 | Standard task | [N input / N output] | $[X] |
@@ -90,7 +91,7 @@ Things this model does poorly that affect this agent:
 | Per hour at capacity | N/A | $[X] |
 
 ## Compliance Notes
-For organizations with model governance requirements:
+For organizations with model governance requirements (see EUAIACT.md for EU AI Act classification):
 - **Model card:** [URL to provider's model card]
 - **Acceptable use policy:** [URL]
 - **Data processing location:** [region]

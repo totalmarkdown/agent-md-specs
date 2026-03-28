@@ -48,6 +48,8 @@ version: semver
 
 ## The Secret
 [What in the design or training produces these results]
+
+_See SOUL.md for the personality that drives these capabilities._
 ```
 
 ## Related Specs

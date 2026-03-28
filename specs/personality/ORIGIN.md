@@ -50,9 +50,11 @@ origin_location: string
 [Why it's called what it's called — the story if there is one]
 
 ## What the Creator Would Tell Their Past Self
-[Honest, specific advice — not generic]
+[Honest, specific advice -- not generic]
 
 *Written by [creator] on [date].*
+
+_See SOUL.md for the personality that emerged from this origin._
 ```
 
 ## Related Specs

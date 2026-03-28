@@ -73,7 +73,7 @@ or transmit cardholder data.
 | 7 | Restrict access by need-to-know | [✓/⚠/✗] | |
 | 8 | Identify users and authenticate | [✓/⚠/✗] | |
 | 9 | Restrict physical access | [✓/⚠/✗] | |
-| 10 | Log and monitor all access | [✓/⚠/✗] | |
+| 10 | Log and monitor all access (see AUDITTRAIL.md) | [✓/⚠/✗] | |
 | 11 | Test systems and networks | [✓/⚠/✗] | |
 | 12 | Support information security | [✓/⚠/✗] | |
 
@@ -84,6 +84,7 @@ Sensitive Authentication Data — NEVER stored post-authorization:
 - PINs/PIN blocks
 
 ## Incident Response
+_See CONSENT.md for any cardholder consent obligations._
 If cardholder data breach suspected:
 1. Do not delete any data — preserve evidence
 2. Isolate affected systems

@@ -58,7 +58,7 @@ last_updated: date
 | [package] | [version] | [feature] | [degraded behavior] |
 
 ## Agent Dependencies
-Other agents this agent depends on:
+Other agents this agent depends on (see VERSION.md for version compatibility):
 | Agent | Version | Purpose | Critical | Fallback |
 |-------|---------|---------|---------|---------|
 | [agent] | [version] | [why needed] | [yes/no] | [what if unavailable] |

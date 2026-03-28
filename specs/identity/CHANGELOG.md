@@ -21,6 +21,7 @@ tier: extended
 Version history for an agent bundle — what changed in each version, 
 what was fixed, what was added, and whether updates are breaking.
 Standard CHANGELOG.md format adapted for agent configuration files.
+_See VERSIONING.md for the versioning strategy that drives this log._
 
 ### Spec
 
@@ -64,7 +65,7 @@ Changes being developed but not yet released.
 - [Feature removed in this version]
 
 ### Security
-- [Security fix — describe without giving exploit details]
+- [Security fix — describe without giving exploit details] (see AUDITTRAIL.md)
 
 ---
 

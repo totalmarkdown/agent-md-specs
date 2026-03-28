@@ -67,6 +67,7 @@ All connections use MCP protocol version [X].
 [Repeat for each server]
 
 ## Tool Selection Guidelines
+See TOOLS.md for the full tool inventory and approval status.
 When multiple tools could accomplish a task, prefer:
 1. Most specific tool (narrowest scope)
 2. Read-only over read-write

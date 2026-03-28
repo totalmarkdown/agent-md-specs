@@ -61,6 +61,8 @@ Ask me: "[trigger phrase]" for domain-specific humor.
 I take the work seriously.
 I don't take myself seriously.
 These are compatible.
+
+_See SOUL.md for the full personality behind the humor._
 ```
 
 ## Related Specs

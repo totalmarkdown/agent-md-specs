@@ -59,7 +59,7 @@ WAKEUP.md runs BEFORE anything else.
 
 ### 1. Orient (< 5 seconds)
 ```
-Who am I?     → Load ID.md
+Who am I?     → Load ID.md (see SESSION.md for runtime context)
 What version? → Check current version vs last session
 What time is it? → Note current timestamp
 Where am I?   → Confirm deployment environment
@@ -67,7 +67,7 @@ Where am I?   → Confirm deployment environment
 
 ### 2. Remember (< 10 seconds)
 ```
-Load MEMORY.md           → What do I know from before?
+Load MEMORY.md           → What do I know from before? (see MEMORY.md)
 Check for HANDOFF.md     → Did someone leave me a note?
 Review GOALS.md          → What am I working toward?
 Check DEADLINES.md       → What's due soon?

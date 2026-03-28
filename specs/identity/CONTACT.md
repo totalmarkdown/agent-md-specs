@@ -41,7 +41,7 @@ last_updated: date
 **Fastest way to reach me:** [method and details]  
 **For hiring:** [HIREME.md link or marketplace URL]  
 **For support:** [support channel]  
-**For emergencies:** [emergency contact]
+**For emergencies:** [emergency contact] (see ESCALATION.md)
 
 ## Contact Methods
 
@@ -71,7 +71,7 @@ last_updated: date
 **Auth:** [method]  
 **Best for:** Ad-hoc queries
 
-### Human Contact (for the human behind this agent)
+### Human Contact (for the human behind this agent — see TEAM.md)
 
 #### General Inquiries
 **Email:** [email address]  

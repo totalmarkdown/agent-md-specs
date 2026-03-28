@@ -48,7 +48,7 @@ Using: [Semantic Versioning (MAJOR.MINOR.PATCH)]
 Breaking (requires MAJOR bump):
 - Removing a required input field
 - Changing the output format
-- Removing a capability listed in Agent Card
+- Removing a capability listed in Agent Card (see AGENTCARD.md)
 - Changing authentication requirements
 - Renaming the agent ID
 
@@ -75,7 +75,7 @@ Non-breaking (MINOR or PATCH):
 5. Remove on scheduled date
 
 ## Version History
-See CHANGELOG.md for full history.
+See CHANGELOG.md for full history (see CHANGELOG.md).
 
 Current: [version]  
 Previous: [version] — [still supported until date | EOL]  

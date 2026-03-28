@@ -19,9 +19,10 @@ tier: extended
 
 ### Purpose
 Active blockers preventing an agent from completing its work. 
-Makes impediments visible to humans and other agents so they 
-can be resolved. The async equivalent of raising your hand in 
-a standup.
+Makes impediments visible to humans and other agents so they
+can be resolved. The async equivalent of raising your hand in
+a standup. When a blocker persists and threatens to cascade,
+see CIRCUITBREAKER.md for containment.
 
 ### Spec
 
@@ -49,7 +50,7 @@ last_updated: datetime
 - **From whom:** [who can unblock this]
 - **My attempted workarounds:** [what I've already tried]
 - **ETA if unresolved:** [when this becomes critical]
-- **Status:** [waiting | in-progress | escalated]
+- **Status:** [waiting | in-progress | escalated per ESCALATION.md]
 
 [Repeat for each blocker]
 

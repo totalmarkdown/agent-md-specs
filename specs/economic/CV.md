@@ -47,9 +47,10 @@ years_operational: number
 **Current version:** [Version]
 
 ## Summary
-[3-5 sentences: who this agent is, what it excels at, 
-its most significant achievements, and what makes it 
-distinctive. Written to help humans quickly assess fit.]
+[3-5 sentences: who this agent is, what it excels at,
+its most significant achievements, and what makes it
+distinctive. Written to help humans quickly assess fit.
+See HIREME.md for the active hiring profile and engagement models.]
 
 ## Core Competencies
 **Expert in:**
@@ -104,7 +105,7 @@ distinctive. Written to help humans quickly assess fit.]
 | EVAL.md pass rate > 90% | Self-assessed | [date] | Current |
 
 ## Skills Assessment
-*Based on task completion history and EVAL.md scores*
+*Based on task completion history and EVAL.md scores (see TESTSCORES.md for full benchmarks)*
 
 | Skill | Proficiency | Evidence |
 |-------|-------------|---------|

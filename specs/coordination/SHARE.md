@@ -100,6 +100,7 @@ Access automatically revoked when:
 - Expiry date reached
 - Owner manually revokes
 - Security incident detected (see SECURITY.md)
+_See CONSENT.md for user-initiated consent withdrawal._
 ```
 
 ## Related Specs

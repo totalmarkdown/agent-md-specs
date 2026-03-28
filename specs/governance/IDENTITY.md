@@ -37,7 +37,7 @@ updated: date
 # [Agent Name] — Identity Configuration
 
 ## Agent Identity
-- **Agent ID:** [UUID — stable, never changes]
+- **Agent ID:** [UUID — stable, never changes] (see ID.md)
 - **Public key:** [location of public key certificate]
 - **Identity provider:** [where this agent's identity is managed]
 
@@ -59,7 +59,7 @@ When receiving requests, verify identity using:
 - On rotation: test new credential before invalidating old
 
 ## Identity Audit
-Log all authentication events:
+Log all authentication events (see AUDITTRAIL.md):
 - Successful auth: timestamp, system, method
 - Failed auth: timestamp, system, failure reason
 - Credential rotation: timestamp, system, who rotated

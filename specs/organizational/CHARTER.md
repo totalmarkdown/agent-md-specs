@@ -18,10 +18,11 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-The formal mandate authorizing this agent's existence and operation — 
-who approved it, for what purpose, under what constraints, 
-and what would cause it to be decommissioned. The agent's 
-founding document.
+The formal mandate authorizing this agent's existence and operation --
+who approved it, for what purpose, under what constraints,
+and what would cause it to be decommissioned. The agent's
+founding document. For the agent's character and behavioral
+identity, see SOUL.md.
 
 ### Spec
 
@@ -47,7 +48,7 @@ charter_status: string       # active | under-review | suspended | revoked
 **Valid until:** [Expiry date — must be renewed]
 
 ## Scope of Authority
-This agent is authorized to:
+This agent is authorized to (see POLICY.md for detailed rules):
 - [Specific authorized activity 1]
 - [Specific authorized activity 2]
 

@@ -48,7 +48,7 @@ created: date
 | [config field] | [old] | [new] | [yes/no + how] |
 
 ## Pre-Migration Checklist
-- [ ] Backup current state: [backup command]
+- [ ] Backup current state: [backup command] (see BACKUP.md)
 - [ ] Verify backups are accessible
 - [ ] Notify dependent agents/teams [N hours] in advance
 - [ ] Run current test suite — all passing
@@ -69,7 +69,7 @@ created: date
 ## Post-Migration Verification
 - [ ] All tests passing with new version
 - [ ] Key workflows functioning: [list]
-- [ ] Monitor for [X hours] for unexpected behavior
+- [ ] Monitor for [X hours] for unexpected behavior (see HEALTHCHECK.md)
 - [ ] Update HANDOFF.md and MEMORY.md if needed
 
 ## Rollback Procedure

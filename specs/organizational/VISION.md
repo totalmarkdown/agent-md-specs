@@ -30,9 +30,10 @@ GOALS.md     ← What we're doing this quarter
 ```
 
 VISION.md is the answer to "why does any of this matter?"
-It's the north star — distant, aspirational, orienting.
+It's the north star -- distant, aspirational, orienting.
 It doesn't have to be achievable in a lifetime.
-It just has to be worth aiming at.
+It just has to be worth aiming at. For the present-tense
+vehicle that drives toward this vision, see MISSION.md.
 
 ### Spec
 
@@ -83,7 +84,7 @@ Where do we fit? What's our specific contribution?
 What would be missing if we didn't exist?]
 
 ## How We'll Know We're Getting There
-Leading indicators that the vision is being realized:
+Leading indicators that the vision is being realized (see NORTHSTAR.md for the primary metric):
 - [Indicator 1] — if we see this, we're on track
 - [Indicator 2] — if we see this, we're on track
 

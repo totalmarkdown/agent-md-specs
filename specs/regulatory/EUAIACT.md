@@ -101,7 +101,7 @@ Most AI systems fall here — games, spam filters, etc.
 - [ ] Available to authorities on request
 
 ### Record Keeping
-- [ ] Automatic logs kept (where technically feasible)
+- [ ] Automatic logs kept per AUDITTRAIL.md (where technically feasible)
 - [ ] Logs retained for appropriate period
 
 ### Transparency and User Information
@@ -149,6 +149,7 @@ The AI Act requires users have sufficient AI literacy.
 - [Training offered if relevant]
 
 ## Prohibited Practices Confirmation
+Verify compliance using ENFORCEMENT.md checks.
 I confirm this agent does NOT:
 - [ ] Deploy subliminal manipulation techniques
 - [ ] Exploit vulnerabilities of specific groups

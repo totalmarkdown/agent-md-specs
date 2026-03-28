@@ -36,6 +36,7 @@ updated: date
 # [Agent Name] — Integration Map
 
 ## Integration Overview
+See API.md and MCP.md for detailed connection specifications.
 ```
 [Agent Name]
 ├── APIs (see API.md)

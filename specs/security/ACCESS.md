@@ -82,7 +82,7 @@ approved_by: string
 
 ### Level 1 — Read
 Can query status, ask questions, request information.
-Cannot trigger actions that modify state.
+Cannot trigger actions that modify state (see PERMISSIONS.md for resource-level controls).
 
 ### Level 2 — Execute
 Can assign tasks and receive results.
@@ -95,6 +95,7 @@ Cannot grant access to others.
 ### Level 4 — Admin
 Full access including access management.
 Requires MFA. Logged extensively.
+Apply LEASTPRIVILEGE.md principles when granting any level above Read.
 
 ---
 

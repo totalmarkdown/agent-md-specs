@@ -49,6 +49,7 @@ Purposes identified BEFORE or AT TIME of collection:
 | [purpose] | [data] | [basis] |
 
 ### 3. Consent
+Track consent lifecycle per CONSENT.md.
 - Meaningful consent obtained before collection
 - Language: plain, easy to understand
 - Opt-in for sensitive information
@@ -94,6 +95,7 @@ For Quebec residents:
 - Commissioner notification for breaches with real risk of injury
 
 ## Breach Notification
+_See AUDITTRAIL.md for logging all breach notifications._
 **Threshold:** Real risk of significant harm  
 **Notify OPC:** As soon as reasonably possible  
 **Notify individuals:** As soon as reasonably possible  

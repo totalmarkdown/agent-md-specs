@@ -105,6 +105,7 @@ All contributions go through:
 - Agent output that contradicts human decision: human wins
 - Human can override any agent contribution with comment explaining why
 - Agent should not re-assert overridden position
+_See DELEGATION.md for the formal authority chain._
 
 ## Communication Norms
 - Async first: default to written communication
@@ -116,7 +117,7 @@ All contributions go through:
 
 ## Onboarding New Contributors
 New humans: read ONBOARDING.md, then [list of files to read first]
-New agents: read CLAUDE.md, MEMORY.md, ROSTER.md, this file
+New agents: read CLAUDE.md, MEMORY.md, ROSTER.md, this file (see ROSTER.md)
 First contribution: [suggested starter task]
 ```
 

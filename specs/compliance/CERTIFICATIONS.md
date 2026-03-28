@@ -42,6 +42,7 @@ last_updated: date
 | [Other] | [status] | [issuer] | [date] | [link] |
 
 ## Privacy Certifications
+_See GDPR.md for full GDPR compliance configuration._
 | Certification | Status | Scope | Valid until |
 |--------------|--------|-------|------------|
 | GDPR compliant | ✓ Self-attested | EU user data | Ongoing |
@@ -68,7 +69,7 @@ last_updated: date
 | [type] | [firm] | [date] | [summary] | [link] |
 
 ## Data Processing Agreements
-Available DPAs:
+Available DPAs (see COMPLIANCE.md for the full regulatory framework):
 - Standard DPA: [download link]
 - Custom DPA: [contact] for negotiation
 - GDPR Article 28 addendum: [download link]

@@ -31,8 +31,9 @@ A commoditized agent can be replaced in minutes.
 A moated agent is genuinely sticky.
 
 Different from SPECIALSAUCE.md (the capability mechanism)
-and COMPETITIVE.md (the market comparison) —
-MOAT.md is the strategic defensibility analysis.
+and COMPETITIVE.md (the market comparison) --
+MOAT.md is the strategic defensibility analysis
+(see COMPETITIVE.md for the head-to-head comparison view).
 
 ### Spec
 
@@ -127,8 +128,8 @@ Sources:
       published TESTSCORES.md
 - [ ] **Community trust** — [N] reviews, [N]/5 average
 - [ ] **Expert endorsements** — recognized by [authorities]
-- [ ] **Vulnerability disclosure** — KRYPTONITE.md and 
-      CONFESSION.md signal unusual honesty → unusual trust
+- [ ] **Vulnerability disclosure** -- KRYPTONITE.md and
+      CONFESSION.md signal unusual honesty (see SPECIALSAUCE.md)
 - [ ] **First mover** — established the category or standard
 
 **Brand moat evidence:** [Observable trust signals]

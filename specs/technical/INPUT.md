@@ -179,7 +179,7 @@ The agent automatically adds to its context:
 - Current DEADLINES.md if task has deadline relevance
 
 ### Input preprocessing
-Before the model sees the input, these transformations occur:
+Before the model sees the input, these transformations occur (see PROMPTSHIELD.md for injection defense):
 - [Preprocessing step 1]
 - [Preprocessing step 2]
 
@@ -190,6 +190,8 @@ Before the model sees the input, these transformations occur:
 | "urgent: ..." | High priority processing |
 
 ---
+
+_See PROVENANCE.md for tracking the origin and trust level of input data._
 
 ## Input Size Guidance
 

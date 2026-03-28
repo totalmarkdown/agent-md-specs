@@ -41,7 +41,7 @@ successor_agent: string  # ID of replacement agent
 [If deprecated/decommissioned: reason and date]
 
 ## Successor
-**Replacement agent:** [Agent name and ID]  
+**Replacement agent:** [Agent name and ID] (see OWNER.md for transfer of responsibility)  
 **Migration guide:** [Link or inline instructions]  
 **What's different:** [Key differences users should know]
 
@@ -61,6 +61,7 @@ What future agents and humans should know from my operation:
 - [Project that needs continuation]
 
 ## Archive
+_See AUDITTRAIL.md for the complete activity log._
 - **All outputs archived at:** [location]
 - **Configuration archived at:** [git repo + tag]
 - **MEMORY.md archived at:** [location]

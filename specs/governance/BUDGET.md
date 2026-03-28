@@ -28,7 +28,7 @@ autonomous agent deployments.
 ---
 agent_name: string
 version: semver
-billing_owner: string      # Who pays for this agent's API costs
+billing_owner: string      # Who pays for this agent's API costs (see WALLET.md)
 monthly_budget_usd: number
 alert_threshold_pct: number  # Alert when X% of budget used
 created: date
@@ -58,14 +58,14 @@ Use the cheapest model that can complete the task:
 - Default fallback: [default model]
 
 ## Cost Tracking
-- Log every API call with: model, input tokens, output tokens, cost
+- Log every API call with: model, input tokens, output tokens, cost (see AUDITTRAIL.md)
 - Daily cost report to: [location/contact]
 - Monthly summary to: [location/contact]
 
 ## When Budget is Exceeded
 - At 80% budget: log warning, notify [contact], switch to cheaper models
 - At 95% budget: pause non-critical tasks, notify [contact]
-- At 100% budget: stop all tasks, escalate Level 3
+- At 100% budget: stop all tasks, escalate Level 3 (see ESCALATION.md)
 - Emergency override: [contact] can authorize budget increase
 
 ## Optimization Rules

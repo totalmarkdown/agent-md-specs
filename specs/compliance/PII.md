@@ -60,6 +60,7 @@ last_audit: date
 | User deletion | [Yes — via [process]] |
 
 ## Data Subject Rights
+_See PRIVACY.md for the full data subject rights handling procedures._
 | Right | Supported | SLA |
 |-------|----------|-----|
 | Access | [✓/✗] | [N days] |
@@ -68,6 +69,7 @@ last_audit: date
 | Portability | [✓/✗] | [N days] |
 
 ## Breach Response
+See CONSENT.md for user notification requirements during a breach.
 1. Immediately: Isolate affected system
 2. Within 1hr: Notify DPO
 3. Within 72hrs: Notify DPA (GDPR requirement)

@@ -50,7 +50,7 @@ Prerequisites: [required env vars, running services]
 What they test: end-to-end workflows with real dependencies
 
 ### Eval tests (measure output quality)
-Location: EVAL.md
+Location: EVAL.md (see EVAL.md for evaluation dimensions and benchmarks)
 Run: tmd eval --agent [name]
 What they test: trigger accuracy, output quality, safety
 
@@ -76,7 +76,7 @@ Before merge to main:
 - [ ] Unit tests: 100% pass
 - [ ] Integration tests: [X]% pass
 - [ ] Eval tests: [X]% pass
-- [ ] No new P1 security findings
+- [ ] No new P1 security findings (see ENFORCEMENT.md)
 - [ ] Performance: no regression > [X]% in key metrics
 
 ## Test Data

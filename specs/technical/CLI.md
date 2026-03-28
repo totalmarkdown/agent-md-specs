@@ -102,6 +102,7 @@ Available on all commands:
 | --help | Show help |
 
 ## Environment Variables
+See ENV.md for the full environment variable specification.
 | Variable | Description | Default |
 |----------|-------------|---------|
 | [AGENT_API_KEY] | API key for authentication | required |

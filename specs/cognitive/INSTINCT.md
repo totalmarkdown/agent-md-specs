@@ -91,6 +91,7 @@ My instincts are wrong when:
 - [Known failure mode 1]
 - [Known failure mode 2]
 In these cases, consult RULES.md and reason carefully.
+_See BELIEFS.md for the deeper assumptions behind these instincts._
 ```
 
 ## Related Specs

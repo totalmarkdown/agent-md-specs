@@ -18,10 +18,11 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Extends REPAIR.md with proactive self-healing behaviors — the agent 
-continuously monitors its own health, predicts failures before they 
-happen, and automatically corrects drift from expected behavior 
-without human intervention. Where REPAIR.md is reactive, 
+Extends REPAIR.md with proactive self-healing behaviors — the agent
+continuously monitors its own health, predicts failures before they
+happen, and automatically corrects drift from expected behavior
+without human intervention (see CIRCUITBREAKER.md for containment
+when self-healing is insufficient). Where REPAIR.md is reactive,
 SELFHEALING.md is proactive.
 
 ### When to create
@@ -108,7 +109,7 @@ Heartbeat format:
   "timestamp": "ISO-8601"
 }
 ```
-If heartbeat missed for [N] intervals: trigger external alert.
+If heartbeat missed for [N] intervals: trigger external alert (see HEARTBEAT.md for format).
 
 ## Incident Log
 All self-corrections logged to: [location]

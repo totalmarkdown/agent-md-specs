@@ -18,8 +18,9 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Defines the communication format and rules between agents in a team — 
+Defines the communication format and rules between agents in a team --
 message structure, acknowledgment requirements, and handoff formats.
+For the initial connection establishment, see HANDSHAKE.md.
 
 ### Spec
 
@@ -94,7 +95,7 @@ Before handing off to another agent, sending agent must include:
 - [ ] Expected output format
 
 ## Conflict Resolution
-If two agents receive conflicting instructions:
+If two agents receive conflicting instructions (see DELEGATION.md for the authority chain):
 1. Higher priority message takes precedence
 2. If same priority: most recent message takes precedence
 3. If genuinely ambiguous: escalate per ESCALATION.md

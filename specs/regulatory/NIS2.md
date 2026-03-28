@@ -73,6 +73,7 @@ chemicals, food, manufacturing, digital providers, research
 - [ ] SIEM / security monitoring
 
 ## Incident Reporting (Article 23)
+Log all incidents per AUDITTRAIL.md.
 **What to report:** Significant incidents affecting service delivery
 
 **Reporting timeline:**
@@ -91,6 +92,7 @@ ICT products and services used:
 - [ ] Software bill of materials (SBOM) maintained
 
 ## Management Accountability
+_See CONSENT.md for user consent obligations in affected services._
 Senior management responsibilities:
 - [ ] Approve cybersecurity measures
 - [ ] Oversee implementation

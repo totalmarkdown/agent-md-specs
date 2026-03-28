@@ -18,10 +18,11 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Operational logging configuration — where logs go, what gets logged, 
-log format, retention policy, and how to query them. Different from 
-AUDITTRAIL.md (compliance/security audit trail) — LOGS.md covers 
-operational observability logs.
+Operational logging configuration — where logs go, what gets logged,
+log format, retention policy, and how to query them. Different from
+AUDITTRAIL.md (compliance/security audit trail) — LOGS.md covers
+operational observability logs. For alert rules built on these logs,
+see MONITOR.md.
 
 ### Spec
 

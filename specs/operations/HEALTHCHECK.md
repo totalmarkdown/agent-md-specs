@@ -22,7 +22,8 @@ Exact commands and endpoints to verify this agent is running
 correctly. Different from MONITOR.md (ongoing observability)
 and SELFHEALING.md (proactive health) — HEALTHCHECK.md is
 the specific checks a deployment system, load balancer, or
-human uses to verify liveness and readiness.
+human uses to verify liveness and readiness. When checks fail
+repeatedly, CIRCUITBREAKER.md governs containment.
 
 ### Spec
 
@@ -171,6 +172,8 @@ Configure your monitoring system to:
 - Alert if [N] consecutive failures
 - Check /ready before routing traffic
 - See MONITOR.md for full alerting configuration
+
+_See MONITOR.md for ongoing observability beyond point-in-time checks._
 ```
 
 ## Related Specs

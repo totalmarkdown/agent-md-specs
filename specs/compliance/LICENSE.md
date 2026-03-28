@@ -18,9 +18,9 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Defines the license terms for an agent bundle on the marketplace — 
-what buyers can and cannot do with the files, attribution requirements, 
-commercial use rules, and modification rights.
+Defines the license terms for an agent bundle on the marketplace --
+what buyers can and cannot do with the files, attribution requirements,
+commercial use rules, and modification rights (see PRICING.md for the commercial terms).
 
 ### Spec
 

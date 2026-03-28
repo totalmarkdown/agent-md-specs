@@ -23,6 +23,7 @@ its inherited configuration — what was overridden, why,
 who approved it, and whether it's still justified.
 
 OVERRIDE.md exists for one reason: **accountability**.
+It is the companion to INHERIT.md, which declares the inheritance chain.
 
 Anyone with access to ORG-level config and this file
 can instantly see every deviation from standard policy
@@ -142,7 +143,7 @@ To remove an override:
 
 ## Audit Trail
 
-All changes to this file are tracked in git history.
+All changes to this file are tracked in git history (see AUDITTRAIL.md).
 For compliance purposes, this file should never be
 force-pushed or have history rewritten.
 

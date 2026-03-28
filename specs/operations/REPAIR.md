@@ -63,12 +63,12 @@ Errors that require corrective action before retrying:
 - Disk space — clean temp files, retry
 
 ### Fatal (stop and escalate)
-Errors that cannot be resolved autonomously:
+Errors that cannot be resolved autonomously (see ESCALATION.md for routing):
 - Authentication failure (invalid credentials)
 - Permission denied
 - Data corruption detected
 - Schema mismatch
-- Any error that repeats more than [N] times
+- Any error that repeats more than [N] times — triggers CIRCUITBREAKER.md
 - [Agent-specific fatal errors]
 
 ## Retry Configuration

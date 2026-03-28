@@ -24,6 +24,8 @@ and why — right now, in the present tense.
 Where VISION.md is aspirational and future-facing,
 MISSION.md is operational and present-tense.
 VISION.md is the destination. MISSION.md is the vehicle.
+For how the mission breaks into current-period objectives,
+see GOALS.md.
 
 The best mission statements are:
 - Present tense (what we DO, not what we will do)

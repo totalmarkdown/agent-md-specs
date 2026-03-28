@@ -59,6 +59,7 @@ Financial entities must have robust ICT risk frameworks.
 | Communication plan for ICT incidents | [✓/✗] | |
 
 ### 2. ICT Incident Management and Reporting
+All incidents should be logged per AUDITTRAIL.md.
 **Classification:**  
 Major ICT incident criteria:
 - Number of clients affected
@@ -88,7 +89,7 @@ Major ICT incident criteria:
 **Contractual arrangements with ICT providers include:**
 - [ ] Service level descriptions
 - [ ] Data location and processing
-- [ ] Right to audit
+- [ ] Right to audit (see CONSENT.md for consent to data processing)
 - [ ] Exit strategy provisions
 - [ ] Incident reporting by provider
 

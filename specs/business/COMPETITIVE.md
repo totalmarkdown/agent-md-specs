@@ -55,10 +55,11 @@ Sometimes that's us. Sometimes it isn't.*
 - [Our advantage 1]
 - [Our advantage 2]
 
-**Choose them when:** [Specific situations where the alternative is better]  
+**Choose them when:** [Specific situations where the alternative is better]
 **Choose us when:** [Specific situations where we're better]
 
 **The key difference:** [One sentence that captures the fundamental distinction]
+_See MOAT.md for a deeper analysis of sustainable competitive advantages._
 
 ---
 
@@ -79,6 +80,7 @@ Sometimes that's us. Sometimes it isn't.*
 | Price | $[X] | $[X] | $[X] | $[X] |
 
 *Last verified: [date] — competitors change fast*
+*For full pricing details, see PRICING.md.*
 
 ---
 

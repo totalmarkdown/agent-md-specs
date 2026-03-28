@@ -52,7 +52,7 @@ updated: date
 - **Queue depth limit:** [N tasks]
 
 ## Escalation Triggers
-Escalate to human ops when:
+Escalate to human ops when (see ESCALATION.md for routing):
 - Response time exceeds [X minutes]
 - Error rate exceeds [X]% in any [Y] minute window
 - Queue depth exceeds [N] tasks
@@ -66,9 +66,10 @@ SLA does not apply to:
 - Third-party API outages
 
 ## Measurement and Reporting
-- Metrics collected: [list]
+- Metrics collected: [list] (see MONITOR.md for full metric definitions)
 - Reporting cadence: [daily | weekly | monthly]
 - Dashboard: [location]
+- Cost tracking: see BUDGET.md for spending guardrails
 ```
 
 ## Related Specs

@@ -24,9 +24,10 @@ defines complete end-to-end processes with decision points, loops,
 and conditional branches.
 
 ### When to create
-When a task has 5+ steps, involves conditional logic, requires 
-human approval at specific points, or needs to be reproducible 
-across different sessions or agents.
+When a task has 5+ steps, involves conditional logic, requires
+human approval at specific points, or needs to be reproducible
+across different sessions or agents. For multi-agent coordination,
+see TEAM.md.
 
 ### Spec
 
@@ -68,8 +69,8 @@ updated: date
 - **If uncertain:** [Escalate | Ask human | Use default]
 
 ### Human Approval Gate (if required)
-**Requires approval from:** [Role or person]  
-**What to present:** [What information to show the human]  
+**Requires approval from:** [Role or person] (see ESCALATION.md for routing)
+**What to present:** [What information to show the human]
 **Timeout:** [What to do if no response in X hours]
 
 ## Completion

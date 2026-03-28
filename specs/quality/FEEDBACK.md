@@ -39,7 +39,7 @@ updated: date
 ## Feedback Collection
 
 ### Automated feedback (always on)
-- Eval scores from EVAL.md test suite: [run frequency]
+- Eval scores from EVAL.md test suite (see EVAL.md): [run frequency]
 - Task completion rate: tracked automatically
 - Error rate: tracked automatically
 - User correction rate: [how often users edit agent output]
@@ -70,7 +70,7 @@ If auto_learn is enabled:
 2. Collect [N] examples of corrected output
 3. When [threshold] reached: propose TRAINING.md update
 4. Human reviews proposed changes before applying
-5. Re-run EVAL.md suite to verify improvement
+5. Re-run EVAL.md suite to verify improvement (see TESTSCORES.md for results)
 
 Auto-learn never modifies: SOUL.md, POLICY.md, SECURITY.md, ESCALATION.md
 (Only updates: TRAINING.md, optionally SKILL.md descriptions)

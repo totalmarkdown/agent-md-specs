@@ -27,8 +27,9 @@ Different from:
 - MOAT.md — the strategic defensibility (the *protection*)
 - KRYPTONITE.md — the failure modes
 
-SPECIALSAUCE.md is the *why behind the superpower* —
-the mechanism, the insight, the approach.
+SPECIALSAUCE.md is the *why behind the superpower* --
+the mechanism, the insight, the approach
+(see MOAT.md for how this translates into defensible advantage).
 
 The level of detail here is a business decision.
 Share enough to build trust. Protect what's truly proprietary.
@@ -121,8 +122,9 @@ special is not to read about it — it's to try it.
 
 **Best demo task:** "[Prompt that reliably demonstrates the special sauce]"
 
-**What to notice:** [What to pay attention to that 
+**What to notice:** [What to pay attention to that
 shows the difference from alternative approaches]
+_See EXAMPLES.md for complete input/output demonstrations._
 ```
 
 ## Related Specs

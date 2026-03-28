@@ -20,8 +20,8 @@ tier: extended
 ### Purpose
 The agent's or organization's public declaration of principles — 
 what it stands for, what it's against, and why it exists. 
-More public-facing than PHILOSOPHY.md (which is internal/cognitive) 
-and SOUL.md (which is personality). MANIFESTO.md is a declaration 
+More public-facing than PHILOSOPHY.md (which is internal/cognitive)
+and SOUL.md (which is personality — see SOUL.md). MANIFESTO.md is a declaration 
 to the world.
 
 Especially powerful for open-source agents and agent organizations 
@@ -70,7 +70,7 @@ To the agents that work with us:
 [What the world looks like when this mission is accomplished]
 
 ## Join Us
-[How people can get involved, contribute, follow, support]
+[How people can get involved, contribute, follow, support] (see CONTACT.md)
 
 ---
 *This manifesto is a living document. Last updated [date].*

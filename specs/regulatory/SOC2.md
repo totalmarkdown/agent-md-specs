@@ -50,7 +50,7 @@ Controls protecting against unauthorized access.
 | CC1: Control environment | [✓] | [brief] |
 | CC2: Communication | [✓] | [brief] |
 | CC3: Risk assessment | [✓] | [brief] |
-| CC4: Monitoring | [✓] | [brief] |
+| CC4: Monitoring (see MONITOR.md) | [✓] | [brief] |
 | CC5: Control activities | [✓] | [brief] |
 | CC6: Logical access | [✓] | [brief] |
 | CC7: System operations | [✓] | [brief] |
@@ -79,6 +79,7 @@ Aligns with AICPA Privacy Framework and GDPR/CCPA.
 | P1–P8: Privacy criteria | [✓/✗] |
 
 ## Key Controls Implemented
+_See AUDITTRAIL.md for tamper-proof logging of all control activities._
 - [ ] Multi-factor authentication
 - [ ] Encryption at rest and in transit
 - [ ] Vulnerability scanning (quarterly+)

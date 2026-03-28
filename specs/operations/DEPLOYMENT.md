@@ -43,7 +43,7 @@ updated: date
 | production | Live | [URL] | Doppler/production |
 
 ## Prerequisites
-Before deploying:
+Before deploying (see ENFORCEMENT.md for policy compliance checks):
 - [ ] All required env vars set in [secrets manager]
 - [ ] MCP servers in MCP.md are accessible from deployment environment
 - [ ] API endpoints in API.md are accessible
@@ -61,7 +61,7 @@ tmd eval --agent [name] --threshold [X]
 # 3. Deploy
 [deployment command]
 
-# 4. Health check
+# 4. Health check (see HEALTHCHECK.md for full check definitions)
 curl [health endpoint] # Expect 200 OK
 
 # 5. Smoke test

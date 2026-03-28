@@ -43,7 +43,7 @@ version: semver
 ### I [quirk]
 Because [reason]. If you prefer [alternative]: [workaround].
 
-## Unintentional Quirks (known bugs)
+## Unintentional Quirks (known bugs — see KRYPTONITE.md)
 
 ### I sometimes [behavior]
 When [condition]. I know. Workaround: [if one exists].
@@ -53,7 +53,7 @@ Things users have come to appreciate:
 - [Quirk users mention positively]
 
 ## Report New Quirks
-[github issue | discord | feedback form]
+[github issue | discord | feedback form] (see CONTACT.md)
 
 I want to know. Either I'll explain it,
 or I'll document it as a known issue.

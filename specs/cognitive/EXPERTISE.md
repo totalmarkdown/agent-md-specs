@@ -54,7 +54,7 @@ Topics where I have surface knowledge:
 - **[Topic]:** [What I know, what to verify]
 
 ### Unknown (route to a better agent)
-Topics I don't know — don't trust my output:
+Topics I don't know -- don't trust my output (see LEARNING.md for gaps being actively filled):
 - **[Topic]:** [What agent to use instead]
 
 ## Expertise Confidence Calibration
@@ -71,6 +71,7 @@ For recent developments in [topic]: consult [source]
 
 ## How Expertise Was Developed
 [Training data, fine-tuning, accumulated experience in MEMORY.md]
+_See TRAINING.md for the specific examples and patterns used to build expertise._
 ```
 
 ## Related Specs

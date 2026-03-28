@@ -26,9 +26,10 @@ Different from:
 - TESTSCORES.md — benchmark results
 - TRIVIA.md — interesting facts about outputs
 
-EXAMPLES.md is the showroom. The thing that makes someone 
+EXAMPLES.md is the showroom. The thing that makes someone
 say "yes, this is what I need" or "actually not quite."
 Good examples close the sale. Bad examples waste everyone's time.
+For measured quality data rather than curated samples, see TESTSCORES.md.
 
 ### Spec
 
@@ -64,6 +65,7 @@ If output is long, show first 200 words then [truncated].]
 
 **Why this is a good example:**
 [2-3 sentences on what this demonstrates about the agent's capability]
+(For training-focused examples used to improve the agent's outputs, see TRAINING.md.)
 
 **Try it yourself:**
 ```bash

@@ -74,8 +74,8 @@ Be specific — what breaks, who is affected, what is the cost?]
 **Residual risk:**  
 [Risk remaining after mitigations — is it acceptable?]
 
-**Response plan:**  
-[If this risk materializes, what is the response?]
+**Response plan:**
+[If this risk materializes, what is the response? See ESCALATION.md for routing.]
 
 **Owner:** [Who monitors and manages this risk]  
 **Next review:** [date]
@@ -115,7 +115,7 @@ What types of risks are we willing to take vs not?]
 
 We are **risk tolerant** for: [types of risk we accept]  
 We are **risk averse** for: [types of risk we avoid]  
-We will **never accept**: [risks that are always unacceptable]
+We will **never accept**: [risks that are always unacceptable — see GUARDRAILS.md]
 
 ## Risk Review Cadence
 - **Weekly:** P1 risks (owner review)

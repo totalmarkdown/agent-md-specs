@@ -44,6 +44,7 @@ updated: date
 - [ ] [Other]
 
 ## PII Handled by This Agent
+_See PII.md for the complete personal data inventory._
 | Data Type | Sensitivity | Retention | Deletion Method |
 |-----------|-------------|-----------|-----------------|
 | Email address | Medium | [X days] | Hard delete |
@@ -52,7 +53,7 @@ updated: date
 | [Other] | [level] | [period] | [method] |
 
 ## Consent Requirements
-Before processing PII, verify:
+Before processing PII, verify (see CONSENT.md for the full lifecycle):
 - [ ] User has given consent for this processing purpose
 - [ ] Consent is documented in [location]
 - [ ] User has not withdrawn consent
@@ -85,7 +86,7 @@ If data breach detected or suspected:
 3. Escalate Level 3 immediately
 4. Preserve all logs — do not delete anything
 5. Document: what data, how many users, how discovered
-6. GDPR: notify DPA within 72 hours if required
+6. GDPR: notify DPA within 72 hours if required (see GDPR.md)
 ```
 
 ## Related Specs

@@ -50,6 +50,7 @@ updated: datetime       # ISO-8601, updated frequently
 - **Accepting new tasks:** [yes | no | limited]
 
 ## Health Indicators
+See HEALTHCHECK.md for full check definitions.
 | Check | Status | Last verified |
 |-------|--------|--------------|
 | Core functionality | [✓ / ✗] | [time] |
@@ -63,7 +64,7 @@ updated: datetime       # ISO-8601, updated frequently
 - Escalations: [N]
 
 ## Active Incidents
-[None | Description of any active incidents]
+[None | Description of any active incidents — see HEARTBEAT.md for pulse monitoring]
 
 ## Planned Maintenance
 [None | Date, time, expected duration, impact]

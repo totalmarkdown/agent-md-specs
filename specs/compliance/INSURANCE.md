@@ -55,6 +55,7 @@ last_updated: date
 - Intentional misconduct
 - [Specific exclusion]
 - Losses resulting from violating LIMITS.md
+_See COMPLIANCE.md for the regulatory obligations that inform coverage requirements._
 
 ## Liability Limits
 **Maximum liability per incident:** $[X]  

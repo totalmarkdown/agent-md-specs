@@ -25,6 +25,7 @@ model for secrets at scale.
 
 Where SECRETS.md is per-agent (what THIS agent needs),
 VAULT.md is fleet-wide (how ALL secrets are managed).
+_See SECRETS.md for each agent's required credentials manifest._
 
 ### Spec
 
@@ -148,6 +149,7 @@ Audit review: [monthly | quarterly]
 6. Document: add to fleet registry
 
 ### Rotating a compromised credential
+Verify identity of the new credential via ATTESTATION.md before deployment.
 1. Identify all agents using the credential (search SECRETS.md files)
 2. Generate replacement at source service
 3. Add new credential to vault under new version

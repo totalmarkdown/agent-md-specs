@@ -52,7 +52,7 @@ audited_by: string
 This file declares what secrets this agent requires.
 It does NOT contain secret values.
 Never commit actual credentials to this file.
-Secret values live in: [vault system name]
+Secret values live in: [vault system name] (see VAULT.md for fleet-wide vault governance)
 
 ---
 
@@ -114,6 +114,7 @@ Secret values live in: [vault system name]
 ---
 
 ## Breach Response
+Verify credential provenance via ATTESTATION.md before re-issuing.
 
 If any secret in this file is compromised:
 1. **Immediately:** Revoke the compromised credential at the source service

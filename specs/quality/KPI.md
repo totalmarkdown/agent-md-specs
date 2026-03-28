@@ -27,7 +27,7 @@ NORTHSTAR.md    ← The one number that matters most
 KPI.md          ← The balanced scorecard (8-15 metrics)
 PERFORMANCE.md  ← Operational benchmarks over time
 TESTSCORES.md   ← Assessment results
-GOALS.md        ← Objectives with timeframes
+GOALS.md        ← Objectives with timeframes (see GOALS.md)
 ```
 
 Good KPIs are:
@@ -149,7 +149,7 @@ Any KPI below threshold:
 | [period] | [N] | [N] | [N] | [N] |
 
 ## KPI Review Cadence
-- **Daily:** Speed + reliability (automated)
+- **Daily:** Speed + reliability — automated (see MONITOR.md)
 - **Weekly:** Quality + efficiency (owner review)
 - **Monthly:** All KPIs + trend analysis (team review)
 - **Quarterly:** KPI set itself — are these the right metrics?

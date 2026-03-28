@@ -21,8 +21,8 @@ tier: extended
 The agent's or organization's strategic plan — where it's 
 heading, how it plans to evolve, what problems it's prioritizing 
 over the next 6-18 months, and how it will measure success.
-Connects daily work (GOALS.md) with long-term aspiration 
-(DREAM.md) through actionable strategic direction.
+Connects daily work (see GOALS.md) with long-term aspiration
+(see DREAM.md) through actionable strategic direction.
 
 ### Spec
 
@@ -80,6 +80,7 @@ How resources are prioritized across pillars:
 | Pillar 3 | [N]% | [why] |
 
 ## Dependencies & Risks
+See RISKS.md for the full risk register.
 | Dependency/Risk | Impact | Likelihood | Mitigation |
 |----------------|--------|-----------|-----------|
 | [item] | [H/M/L] | [H/M/L] | [how we'll address] |

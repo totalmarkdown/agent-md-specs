@@ -60,6 +60,7 @@ This agent may only make external calls to:
 - [domain2.com] — [purpose]
 
 ## Credential Handling
+See SECRETS.md for the complete secrets management specification.
 - API keys must be read from environment variables only
 - Never log or display credentials even partially
 - Never include credentials in file output
@@ -87,6 +88,7 @@ If a security incident occurs or is suspected:
 4. Document: what happened, what data may be affected, timeline
 
 ## Approved Tools and Permissions
+_See ATTESTATION.md for identity verification and credential lifecycle._
 | Tool | Permission | Scope |
 |------|-----------|-------|
 | File read | allowed | workspace only |

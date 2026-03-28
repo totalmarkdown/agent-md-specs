@@ -33,8 +33,8 @@ last_updated: date
 # [Domain] Glossary
 
 ## How to Use This File
-Before performing tasks in this domain, load this file to ensure 
-consistent use of terminology. When generating output, use the 
+Before performing tasks in this domain, load this file to ensure
+consistent use of terminology (see ONBOARDING.md for first-time setup). When generating output, use the 
 exact terms defined here.
 
 ## Terms
@@ -54,7 +54,7 @@ exact terms defined here.
 | [Abbrev] | [Full] | [Usage note] |
 
 ## Deprecated Terms
-These terms should no longer be used:
+These terms should no longer be used (see VERSIONING.md for deprecation timelines):
 | Old term | Replacement | Reason |
 |----------|-------------|--------|
 | [Old] | [New] | [Why changed] |

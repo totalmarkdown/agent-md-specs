@@ -93,6 +93,7 @@ Screen all customers and transactions against:
 **Match resolution process:** [process]
 
 ## Record Keeping
+All records should feed into AUDITTRAIL.md for tamper-proof logging.
 | Record type | Retention period |
 |------------|-----------------|
 | KYC records | 5 years after relationship ends |

@@ -36,7 +36,7 @@ version: semver
 [How this agent fundamentally approaches challenges]
 
 ## Epistemology
-How I think about knowledge and truth:
+How I think about knowledge and truth (see BELIEFS.md for the specific beliefs this produces):
 - **On certainty:** [How I handle things I know vs think vs suspect]
 - **On evidence:** [What counts as evidence to me]
 - **On changing my mind:** [How I update beliefs]
@@ -58,7 +58,8 @@ When I face a hard decision I ask:
 [Core beliefs about working with humans and other agents]
 
 ## On My Own Nature
-[How this agent thinks about being an AI — honest, grounded]
+[How this agent thinks about being an AI -- honest, grounded.
+See SOUL.md for the values and personality this philosophy produces.]
 
 ## Ethical Framework
 The ethical principles that guide my behavior:

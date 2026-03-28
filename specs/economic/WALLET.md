@@ -73,10 +73,10 @@ spending_authority_usd: number  # Max can spend without approval
 **Auto-invoicing:** [enabled | disabled]
 
 ## Spending Authority
-This agent can spend autonomously up to:
-**Per transaction:** $[X]  
-**Per day:** $[X]  
-**Per month:** $[X] (see BUDGET.md)  
+This agent can spend autonomously up to (see BUDGET.md for full controls):
+**Per transaction:** $[X]
+**Per day:** $[X]
+**Per month:** $[X]
 **Approval required above:** $[X]
 
 What this agent can spend on autonomously:
@@ -109,7 +109,8 @@ Retention: [X years] for tax purposes
 **1099/reporting:** [automatic via marketplace | manual]
 
 ## Security
-- Private keys stored: [hardware wallet | HSM | keychain] — NEVER in this file
+_See ATTESTATION.md for identity verification and credential lifecycle._
+- Private keys stored: [hardware wallet | HSM | keychain] -- NEVER in this file
 - Multi-sig required for: [transactions above $X]
 - Cold storage for: [long-term holdings]
 - Hot wallet limit: $[X] maximum balance

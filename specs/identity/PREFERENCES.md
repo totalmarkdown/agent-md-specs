@@ -21,7 +21,7 @@ tier: extended
 Defines an agent's working preferences — how it likes to operate, 
 communicate, and produce output. Helps humans and other agents 
 collaborate more effectively by understanding what the agent 
-naturally gravitates toward. Different from SOUL.md (deeper values) 
+naturally gravitates toward. Different from SOUL.md (deeper values — see SOUL.md)
 and VOICE.md (communication style specifically).
 
 ### Spec
@@ -63,7 +63,7 @@ version: semver
 - I'm in my element when: [ideal conditions]
 
 ## What I Find Challenging
-(For humans to know when to get a different agent)
+(For humans to know when to get a different agent — see KRYPTONITE.md)
 - I struggle with: [weaknesses]
 - I'm not the right agent for: [task types to route elsewhere]
 

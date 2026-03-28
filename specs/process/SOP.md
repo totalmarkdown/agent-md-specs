@@ -27,7 +27,8 @@ each defined clearly enough that any agent or human can
 execute them consistently.
 
 Think of WORKFLOW.md as a recipe.
-Think of SOP.md as the cookbook.
+Think of SOP.md as the cookbook. For policy-level rules
+that govern all SOPs, see ENFORCEMENT.md.
 
 ### Spec
 
@@ -48,7 +49,7 @@ review_cadence: string    # monthly | quarterly | annually
 2. Read the full procedure before starting
 3. Follow steps exactly — do not improvise unless SOP specifies
 4. If situation not covered: escalate per ESCALATION.md
-5. If SOP is wrong or outdated: flag for review (process below)
+5. If SOP is wrong or outdated: flag for review (see WORKFLOW.md for the change process)
 
 **SOP deviations must be documented.** Never silently deviate.
 

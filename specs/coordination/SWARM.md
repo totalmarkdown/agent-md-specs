@@ -66,8 +66,8 @@ updated: date
 
 ## Crews in This Swarm
 
-### [Crew Name] — [Role in swarm]
-- **File:** crews/[crew-name]/CREW.md
+### [Crew Name] -- [Role in swarm]
+- **File:** crews/[crew-name]/CREW.md (see CREW.md for crew-level config)
 - **Purpose:** [What this crew contributes to the swarm objective]
 - **Depends on:** [Which crew's output it needs before starting]
 - **Feeds into:** [Which crew receives its output]
@@ -104,9 +104,9 @@ When crews produce conflicting outputs:
 3. Escalate to: [human or lead crew]
 
 ## Shared Resources
-Resources all crews in this swarm share:
+Resources all crews in this swarm share (see ORG.md for fleet-wide configuration):
 - **Shared memory:** swarm-memory.md
-- **Shared context:** swarm-context.md  
+- **Shared context:** swarm-context.md
 - **Shared data:** [data source]
 - **Coordination channel:** [how crews signal each other]
 

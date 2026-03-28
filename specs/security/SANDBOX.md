@@ -45,6 +45,7 @@ execution_risk: string    # low | medium | high | critical
 ## What This Agent Can Do
 
 ### Filesystem
+Apply LEASTPRIVILEGE.md — grant only the minimum access required.
 - Read: [paths it can read from]
 - Write: [paths it can write to]
 - Execute: [whether it can run executables]
@@ -110,7 +111,7 @@ If the agent attempts to access resources outside its sandbox:
 3. If [N] escape attempts in [N] minutes: agent is suspended
 4. Incident reviewed before restarting
 
-Escape attempts are treated as security incidents.
+Escape attempts are treated as security incidents (see ENFORCEMENT.md).
 ```
 
 ## Related Specs

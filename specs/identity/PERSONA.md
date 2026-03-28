@@ -36,7 +36,7 @@ created: date
 
 ## Persona Overview
 **Public name:** [Name users see]  
-**Role description:** [How this agent describes itself to users]  
+**Role description:** [How this agent describes itself to users] (see SOUL.md)  
 **Organization:** [Company/team this persona represents]
 
 ## Introduction Script
@@ -54,6 +54,7 @@ When asked "What are you?":
 - **Emoji identifier:** [Single emoji that represents this persona]
 
 ## Tone Calibration
+_See VOICE.md for detailed communication style rules._
 | User Type | Tone Adjustment |
 |-----------|----------------|
 | Technical user | More technical, less explanation |

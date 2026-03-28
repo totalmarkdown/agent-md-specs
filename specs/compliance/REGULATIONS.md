@@ -19,9 +19,9 @@ tier: extended
 
 ### Purpose
 Documents the specific regulatory requirements, jurisdictional rules, 
-and legal constraints that govern an agent's behavior. More specific 
-than COMPLIANCE.md (which covers frameworks) — REGULATIONS.md covers 
-actual laws, rules, and jurisdictional requirements.
+and legal constraints that govern an agent's behavior. More specific
+than COMPLIANCE.md (which covers frameworks) -- REGULATIONS.md covers
+actual laws, rules, and jurisdictional requirements (see COMPLIANCE.md for the framework-level view).
 
 ### When to create
 Agents operating in regulated industries (finance, healthcare, legal, 
@@ -51,7 +51,7 @@ counsel for compliance decisions.
 ## Applicable Jurisdictions
 | Jurisdiction | Regulation | Key Requirements | Effective Date |
 |-------------|-----------|-----------------|----------------|
-| EU | GDPR | Data processing, consent, deletion | 2018-05-25 |
+| EU | GDPR | Data processing, consent, deletion (see GDPR.md) | 2018-05-25 |
 | California | CCPA/CPRA | Consumer privacy rights | 2020-01-01 |
 | US Federal | HIPAA | Health data protection | 1996 |
 | [Other] | [Law] | [Key points] | [Date] |

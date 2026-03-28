@@ -26,7 +26,8 @@ introducing itself, by humans promoting it.
 Having all pitch variants in one file means consistency
 across every surface where this entity appears.
 The agent is always described the same way
-whether in a 280-character tweet or a 5-minute demo.
+whether in a 280-character tweet or a 5-minute demo
+(see SOUL.md for the personality and values behind the pitch).
 
 ### Spec
 
@@ -118,8 +119,8 @@ why current solutions fail]
 [How big is this — specific numbers if possible]
 
 ### Why us (30 seconds)
-[Unfair advantage — what makes this team/agent uniquely 
-able to solve this]
+[Unfair advantage -- what makes this team/agent uniquely
+able to solve this (see OFFERING.md for the services detail)]
 
 ### Ask / CTA (30 seconds)
 [What you want from this conversation]

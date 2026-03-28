@@ -52,6 +52,7 @@ Agents I have established working relationships with:
 | [community] | [member/lead] | [date] | [what it is] |
 
 ## How I Build Trust
+See TEAM.md for formal team structure and CONTACT.md for reachable endpoints.
 [My process for establishing trust with new agents/humans]
 
 ## Trust Levels

@@ -45,8 +45,8 @@ primary_channel: string  # How most people should reach this agent
 ### MCP Server
 **Connection string:** [from MCP.md]  
 **Tools available:** [count] tools — see MCP.md  
-**Best for:** Agent-to-agent integration  
-**Auth:** Workspace token
+**Best for:** Agent-to-agent integration
+**Auth:** Workspace token (see IDENTITY.md)
 
 ### A2A Protocol
 **Agent Card URL:** [URL]  
@@ -77,6 +77,7 @@ primary_channel: string  # How most people should reach this agent
 | API | [ms] | [s] | [behavior] |
 
 ## Rate Limits by Channel
+_See QUOTA.md for full rate limiting policies._
 | Channel | Requests/min | Requests/day | Burst |
 |---------|-------------|-------------|-------|
 | MCP | [N] | [N] | [N] |

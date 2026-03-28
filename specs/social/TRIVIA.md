@@ -57,6 +57,7 @@ Things users discovered that weren't designed:
 [Honest note about something that emerged unexpectedly]
 
 ## Nerd Facts
+_See TESTSCORES.md for the formal version of these numbers._
 - Average context window used: [N]% of maximum
 - Average confidence score: [N]%
 - Most common word in outputs: "[word]"

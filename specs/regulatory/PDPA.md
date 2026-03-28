@@ -43,7 +43,7 @@ individuals in Singapore by private organisations.
 ## Thailand PDPA
 
 ### Legal Bases
-- Consent (explicit for sensitive data)
+- Consent — explicit for sensitive data (see CONSENT.md)
 - Contract necessity
 - Vital interests
 - Legal obligation
@@ -98,6 +98,7 @@ If sending marketing to Singapore numbers:
 - Frequency: within 30 days before contact
 
 ### Breach Notification (2021 amendment)
+Log all breach events per AUDITTRAIL.md.
 - Notify PDPC: within 3 days if significant harm likely
 - Notify individuals: as soon as reasonably practicable
 - Significant harm = [financial loss, physical harm, distress, etc]

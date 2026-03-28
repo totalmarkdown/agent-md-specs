@@ -63,7 +63,7 @@ benchmark_date: date
 | [v] | [N]% | [N] | [N] | [date] |
 
 ## Benchmark Comparison
-How this agent compares to similar agents:
+How this agent compares to similar agents (see TESTSCORES.md for detailed scores):
 | Metric | This agent | Category average | Percentile |
 |--------|-----------|-----------------|-----------|
 | Speed | [X] | [X] | [N]th |
@@ -82,7 +82,7 @@ How this agent compares to similar agents:
 
 ## Benchmarking Method
 How performance is measured:
-- Test suite: EVAL.md
+- Test suite: EVAL.md (see EVAL.md for evaluation dimensions)
 - Benchmark dataset: [description]
 - Measurement frequency: [frequency]
 - Benchmark tool: `tmd benchmark --agent [name]`

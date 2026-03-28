@@ -41,11 +41,11 @@ last_updated: date
 
 ### Objective 1: [Name]
 **Why this matters:** [Strategic rationale]  
-**Success looks like:** [Concrete, measurable outcome]  
-**Progress:** [N]% complete  
-**Key results:**
-- KR1: [Measurable result] — [current status]
-- KR2: [Measurable result] — [current status]
+**Success looks like:** [Concrete, measurable outcome]
+**Progress:** [N]% complete
+**Key results:** (see KPI.md for metric definitions)
+- KR1: [Measurable result] -- [current status]
+- KR2: [Measurable result] -- [current status]
 **Blockers:** [None | description of blockers]
 
 [Repeat for each objective]
@@ -66,8 +66,10 @@ last_updated: date
 ## Previous Period Performance
 **Period:** [Last period]  
 **Objectives achieved:** [N/N]  
-**Notable wins:** [List]  
+**Notable wins:** [List]
 **Missed and why:** [List with explanation]
+
+_See TESTSCORES.md for quantitative performance benchmarks._
 ```
 
 ## Related Specs

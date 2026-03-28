@@ -60,6 +60,7 @@ field_name  TYPE    -- [description]
 ```
 
 ## Data Quality Rules
+_See PROVENANCE.md for data lineage and trust classification._
 - Required fields: [list fields that must never be null]
 - Valid value ranges: [field]: [min] to [max]
 - Date format: [ISO 8601 | other]
@@ -69,6 +70,7 @@ field_name  TYPE    -- [description]
 ## Data Handling Rules
 
 ### PII (Personal Identifiable Information)
+Classify fields according to PII.md.
 - PII fields in this dataset: [list]
 - PII handling: [mask | encrypt | avoid logging | other]
 - Retention: [how long data can be kept]

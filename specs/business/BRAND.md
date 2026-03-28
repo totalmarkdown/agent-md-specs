@@ -28,7 +28,7 @@ Different from:
 
 BRAND.md is the complete brand identity system:
 who we are visually and verbally, and what makes us
-recognizable across every surface we appear on.
+recognizable across every surface we appear on (see SOUL.md for the values that underpin the brand).
 
 ### Spec
 
@@ -84,9 +84,10 @@ The thing that should be true of every brand expression.]
 - **Screenshots:** [How product screenshots should look]
 
 ## Brand Voice (summary — full detail in VOICE.md)
-**We sound like:** [3 adjectives]  
-**We don't sound like:** [3 things to avoid]  
+**We sound like:** [3 adjectives]
+**We don't sound like:** [3 things to avoid]
 **Read this and tell me if it sounds like us:** [Example sentence]
+_See VOICE.md for the complete communication style guide._
 
 ## Brand Positioning
 

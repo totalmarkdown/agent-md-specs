@@ -25,7 +25,7 @@ The closing routine. The commit-before-shutdown.
 The moment between being active and being still.
 
 SLEEP.md is the inverse of WAKEUP.md.
-Run at end of session, not at start.
+Run at end of session, not at start. _See MEMORY.md for what persists between sessions._
 
 ### Spec
 
@@ -71,7 +71,7 @@ Clear temp files      → Clean up working space
 ```bash
 # Save all updated MD files
 git add -A
-git commit -m "Session [timestamp]: [one-line summary]"
+git commit -m "Session [timestamp]: [one-line summary]"  # See AUDITTRAIL.md
 ```
 
 ### 4. Signal

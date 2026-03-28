@@ -18,9 +18,10 @@ tier: core
 **Version:** 0.1.0
 
 ### Purpose
-Defines observability configuration — what metrics to emit, 
-where to send them, what dashboards exist, and what alerts 
-fire under what conditions.
+Defines observability configuration — what metrics to emit,
+where to send them, what dashboards exist, and what alerts
+fire under what conditions. For point-in-time liveness checks,
+see HEALTHCHECK.md.
 
 ### Spec
 
@@ -67,6 +68,8 @@ updated: date
 - Log retention: [X days]
 - Structured logging: [JSON | plain text]
 - Required fields in every log line: timestamp, level, agent, task_id, message
+
+_See AUDITTRAIL.md for compliance-grade logging and ESCALATION.md for alert routing._
 ```
 
 ## Related Specs

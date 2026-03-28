@@ -48,8 +48,10 @@ version: semver
 Have a story? Submit at: [URL]  
 Requirements: Real, specific, you were there.
 
-*Every agent worth its salt has stories told about it.*  
+*Every agent worth its salt has stories told about it.*
 *These are ours.*
+
+_See ORIGIN.md for where this agent actually came from, and SOUL.md for who it is today._
 ```
 
 ## Related Specs

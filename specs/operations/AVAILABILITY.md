@@ -73,6 +73,8 @@ Planned periods of reduced availability:
 ## Emergency Contact
 For urgent tasks when agent is at capacity:
 [Alternative agent or escalation contact]
+
+_See STATUS.md for real-time operational state and ESCALATION.md for emergency routing._
 ```
 
 ## Related Specs

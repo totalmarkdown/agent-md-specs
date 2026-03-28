@@ -44,6 +44,8 @@ PHI includes any information that:
 - Relates to healthcare provision or payment
 - Can identify the individual (18 specific identifiers)
 
+_See PII.md for personal data classification standards._
+
 ### PHI Categories This Agent Handles
 - [ ] Names
 - [ ] Geographic data (smaller than state)
@@ -107,7 +109,7 @@ If PHI breach occurs:
 **Breach contact:** [email/phone]
 
 ## Audit Trail
-All PHI access logged with:
+All PHI access logged per AUDITTRAIL.md with:
 - Who accessed, when, what was accessed
 - Purpose of access
 - Log retention: minimum 6 years

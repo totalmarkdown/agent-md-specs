@@ -18,8 +18,9 @@ tier: extended
 **Version:** 0.1.0
 
 ### Purpose
-Documents regulatory compliance requirements, approved procedures, 
+Documents regulatory compliance requirements, approved procedures,
 and audit trail requirements for agents operating in regulated industries.
+For jurisdiction-specific rules, see REGULATIONS.md.
 
 ### Spec
 
@@ -42,7 +43,7 @@ next_review_due: date
 | [Other] | [scope] | [controls] |
 
 ## Required Audit Trail
-Every action must be logged with:
+Every action must be logged per AUDITTRAIL.md with:
 - Timestamp (UTC, millisecond precision)
 - Action type
 - Input data (hash only for PII)

@@ -38,6 +38,7 @@ last_updated: date
 These examples show the agent the expected quality and style of outputs
 for this specific domain and use case. Load this file before completing
 tasks when high consistency is required.
+See LEARNING.md for the agent's forward-looking learning agenda.
 
 ## Domain Knowledge
 [Key facts, terminology, and context the agent should know for this domain]
@@ -81,7 +82,7 @@ tasks when high consistency is required.
 [Recurring patterns the agent should recognize and handle consistently]
 
 ## Edge Cases
-[Known edge cases and how to handle them]
+[Known edge cases and how to handle them — see EVAL.md for how these are tested]
 
 ## Terminology
 | Term | Definition | How to use |

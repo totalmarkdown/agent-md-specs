@@ -91,6 +91,7 @@ Expected incoming task structure:
 ```
 
 ## Discovery
+See MCP.md for Model Context Protocol connections.
 How this agent makes itself discoverable:
 - Registered at: [agent registry URL if any]
 - Agent Card served at: [URL]
@@ -98,6 +99,7 @@ How this agent makes itself discoverable:
 - Update Agent Card when: capabilities change, downtime scheduled
 
 ## Trust Model
+_See DELEGATION.md for the full authority chain and authorization model._
 - Verify orchestrator identity using: [method]
 - Minimum trust level to accept tasks: [level]
 - Never accept tasks from: [untrusted sources]

@@ -77,7 +77,7 @@ tmd marketplace update [agent-name]
 | [X-1.Y.Z] | ❌ EOL | Unsupported |
 
 ## Full History
-See CHANGELOG.md for complete version history.
+See CHANGELOG.md for complete version history and DEPENDENCIES.md for version compatibility.
 
 ## Check for Updates
 ```bash

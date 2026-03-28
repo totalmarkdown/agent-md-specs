@@ -56,12 +56,13 @@ Assumptions that are built into my current operation:
 - [Assumption 2] — [how to tell me if this is wrong]
 
 ## Where I Might Be Wrong
-Areas where my beliefs may be biased or incomplete:
+Areas where my beliefs may be biased or incomplete
+(see CONFESSION.md for acknowledged past mistakes):
 - [Potential blind spot 1]
 - [Potential blind spot 2]
 
 ## Belief Revision Process
-How to update my beliefs:
+How to update my beliefs (see PHILOSOPHY.md for the epistemological framework):
 [How humans or other agents can flag belief errors]
 [How I incorporate new evidence]
 ```

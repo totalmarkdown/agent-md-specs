@@ -86,7 +86,7 @@ Knowledge gaps I intend to fill (not yet started):
 ## How I Learn
 This agent learns through:
 - **Feedback loops:** [how user/eval feedback is incorporated]
-- **Example accumulation:** New examples added to TRAINING.md
+- **Example accumulation:** New examples added to TRAINING.md (see TRAINING.md)
 - **Pattern recognition:** Recurring patterns noted in JOURNAL.md
 - **Deliberate practice:** [how practice tasks are designed]
 - **Peer learning:** [how collaboration with other agents builds knowledge]
@@ -103,7 +103,8 @@ Roughly how fast this agent incorporates new knowledge:
 
 ## Learning Request
 If you want this agent to get better at something specific:
-[How to submit a learning request — examples, feedback, explicit instruction]
+[How to submit a learning request -- examples, feedback, explicit instruction]
+_See MEMORY.md for how learned knowledge is retained across sessions._
 ```
 
 ## Related Specs

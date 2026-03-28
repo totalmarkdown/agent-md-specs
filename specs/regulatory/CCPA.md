@@ -41,7 +41,7 @@ CCPA applies if ANY of these are true:
 ## California Consumer Rights
 
 ### Right to Know
-Consumers can request what personal info is collected, used, shared, sold.  
+Consumers can request what personal info is collected, used, shared, sold (see CONSENT.md for consent lifecycle management).  
 **Response time:** 45 days (extendable to 90 with notice)  
 **How we handle requests:** [process]  
 **Verification method:** [how identity is verified before disclosure]
@@ -97,6 +97,7 @@ Last updated: [date]
 Includes: [all required CCPA disclosures]
 
 ## Enforcement
+_See AUDITTRAIL.md for logging all consumer rights requests._
 Regulatory body: California Privacy Protection Agency (CPPA)  
 Attorney General enforcement: Also applicable  
 Private right of action: For data breaches only  

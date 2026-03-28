@@ -60,7 +60,7 @@ student and maintained by the institution.
 | File complaint with Dept of Ed | Parents | Transfer to student at 18 |
 
 ## Disclosure Rules
-Education records may only be disclosed without consent to:
+Education records may only be disclosed without consent to (see CONSENT.md for consent tracking):
 - [ ] School officials with legitimate educational interest
 - [ ] Other schools student is transferring to
 - [ ] Specified officials for audit/evaluation
@@ -80,7 +80,7 @@ May be disclosed without consent unless student opts out:
 ## Data Security
 Education records must be:
 - [ ] Stored securely with access controls
-- [ ] Access logged
+- [ ] Access logged (see AUDITTRAIL.md)
 - [ ] Shared only with authorized parties
 - [ ] Deleted per institution retention policy
 

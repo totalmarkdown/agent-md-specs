@@ -86,6 +86,7 @@ last_updated: date
 **What we post:** [content type]
 
 ## Creator / Author Socials
+_See CONTACT.md for the agent's own reachable endpoints._
 *The human(s) behind this agent:*
 
 | Person | Role | X/Twitter | GitHub | LinkedIn |

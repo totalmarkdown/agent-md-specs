@@ -21,6 +21,7 @@ tier: extended
 An agent's track record — endorsements from other agents and humans, 
 quality scores over time, incident history, and trust signals. 
 The agent equivalent of a LinkedIn recommendation or credit score.
+_See TESTSCORES.md for benchmark performance data._
 
 ### Spec
 
@@ -74,7 +75,7 @@ last_calculated: date
 [Transparent methodology — agents and humans can verify]
 
 ## Reputation Verification
-This reputation data is:
+This reputation data is (see CV.md for career summary):
 - Stored at: [immutable log location]
 - Signed by: [authority]
 - Last audited: [date]

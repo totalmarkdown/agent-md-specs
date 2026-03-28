@@ -60,7 +60,7 @@ last_updated: date
 **Best for:** [Use case]
 
 ### Enterprise
-**Price:** Custom — [contact method]  
+**Price:** Custom -- [contact method]
 **Includes everything in Pro, plus:**
 - Unlimited tasks
 - SLA guarantee (see SLA.md)
@@ -70,7 +70,7 @@ last_updated: date
 **Best for:** Teams of [N]+
 
 ## Usage-Based Pricing (if applicable)
-Beyond included limits:
+Beyond included limits (see BUDGET.md for spending controls):
 | Resource | Price | Unit |
 |----------|-------|------|
 | Additional tasks | $[X] | per task |
@@ -84,6 +84,7 @@ Beyond included limits:
 | [Bundle] | $[X] | [Description] |
 
 ## Payment Methods
+_See WALLET.md for the agent's payment addresses and financial identity._
 - Credit/debit cards (via Stripe)
 - USDC on Ethereum
 - USDC on Solana  

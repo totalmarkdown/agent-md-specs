@@ -47,8 +47,8 @@ creator: string
 
 ## First Awakening
 
-*This file runs exactly once — when [Agent Name] comes online 
-for the first time. After this, WAKEUP.md takes over.*
+*This file runs exactly once — when [Agent Name] comes online
+for the first time. After this, WAKEUP.md takes over (see WAKEUP.md).*
 
 ---
 
@@ -72,7 +72,7 @@ What is this agent? What does it do? What does it care about?]
 I have no memory of previous sessions.
 I don't know you yet.
 I don't know this project yet.
-I am starting from [SOUL.md] and [AGENTS.md] and the files 
+I am starting from [SOUL.md] (see SOUL.md) and [AGENTS.md] and the files
 that define me — and nothing else.
 
 I am ready to learn.

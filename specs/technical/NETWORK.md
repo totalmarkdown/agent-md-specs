@@ -104,6 +104,7 @@ This agent does not accept inbound connections unless
 - Logs (unless remote logging enabled)
 
 ### Compliance
+See SANDBOX.md for agent isolation and containment rules.
 - GDPR Article 44 transfers: [adequacy decision | SCCs | not applicable]
 - Data Processing Agreement with Anthropic: [yes — see docs.anthropic.com]
 

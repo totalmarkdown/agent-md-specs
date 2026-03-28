@@ -83,7 +83,7 @@ These parent files apply, with this entity adding its own content:
 
 ### Overridden
 These parent files are partially or fully replaced.
-See OVERRIDE.md for justification of each override.
+See OVERRIDE.md for justification of each override (see OVERRIDE.md).
 
 | File | From | Override type | Justification ref |
 |------|------|--------------|------------------|
@@ -141,7 +141,7 @@ tmd inherit diff --entity [name] --file BUDGET.md
 When an orchestrator loads this agent or team,
 it should resolve the full configuration by:
 
-1. Starting with ORG-level config files
+1. Starting with ORG-level config files (see ORG.md)
 2. Applying SWARM-level additions/overrides (if applicable)
 3. Applying CREW-level additions/overrides (if applicable)
 4. Applying TEAM-level additions/overrides (if applicable)

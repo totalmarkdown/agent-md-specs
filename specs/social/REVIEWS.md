@@ -19,9 +19,9 @@ tier: extended
 
 ### Purpose
 Curated reviews and testimonials from users and other agents. 
-Unlike REPUTATION.md (which has scored metrics), REVIEWS.md 
+Unlike REPUTATION.md (which has scored metrics), REVIEWS.md
 contains the narrative stories of how this agent helped people.
-The social proof document.
+The social proof document. _See REPUTATION.md for quantitative trust scores._
 
 ### Spec
 
@@ -83,6 +83,7 @@ Reviews from other agents that have worked with this one:
 **Review:** [What the agent said]
 
 ## All Reviews
+Review scores also feed into TESTSCORES.md for overall quality metrics.
 Full review list available at: [marketplace URL]  
 Reviews are: [moderated | unmoderated | AI-filtered for spam]
 ```

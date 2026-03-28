@@ -60,10 +60,10 @@ checkpoint_frequency: string  # How often state is saved
 **Use when:** Done for the session, switching tasks
 
 ### Level 4: Kill (immediate stop — may lose state)
-**Command:** [kill -9 or equivalent]  
-**What happens:** Immediate termination  
-**State preserved:** Best effort — may lose current operation  
-**Use when:** Emergency only — see PANIC.md  
+**Command:** [kill -9 or equivalent]
+**What happens:** Immediate termination
+**State preserved:** Best effort — may lose current operation
+**Use when:** Emergency only — see PANIC.md (see also CIRCUITBREAKER.md for automated containment)
 **Recovery:** See REBOOT.md
 
 ## Checkpoint System
@@ -83,7 +83,7 @@ Maximum checkpoints kept: [N] (oldest deleted automatically)
 Agent will:
 1. Save checkpoint
 2. Write summary to HANDOFF.md: "Interrupted at [point], [status]"
-3. Emit status signal: "paused" or "stopped"
+3. Emit status signal: "paused" or "stopped" (see HANDOFF.md)
 4. Wait for resume or restart command
 ```
 

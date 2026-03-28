@@ -47,6 +47,7 @@ Route these elsewhere.
 | [task] | [reason] | [agent/approach] |
 
 ## Conditions That Degrade Performance
+_See GUARDRAILS.md for runtime protections against these failure modes._
 | Condition | Effect | Mitigation |
 |-----------|--------|-----------|
 | Very long context | [effect] | [mitigation] |
@@ -58,6 +59,7 @@ Route these elsewhere.
 - State my confidence level
 - Recommend an alternative
 - Ask for clarification rather than guess
+- Escalate if needed (see ESCALATION.md)
 
 ## A Note on This File
 Agents that can't admit weakness shouldn't be trusted.

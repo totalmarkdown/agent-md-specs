@@ -28,9 +28,10 @@ ORG.md          ← Entire organization / company
     └── AGENTS.md / CLAUDE.md  ← Individual agents
 ```
 
-Essential for enterprises running dozens or hundreds of agents 
-across multiple departments. Gives any agent or human a 
-complete picture of the entire fleet structure.
+Essential for enterprises running dozens or hundreds of agents
+across multiple departments. Gives any agent or human a
+complete picture of the entire fleet structure. For individual
+team composition, see TEAM.md; for working groups, see CREW.md.
 
 ### Spec
 
@@ -100,6 +101,7 @@ Agents available to all teams:
 ## Governance
 
 ### Decision Authority
+See DELEGATION.md for detailed authority chains.
 | Decision type | Authority | Escalation |
 |--------------|-----------|-----------|
 | Day-to-day task | Individual agent | Team lead |

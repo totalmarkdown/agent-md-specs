@@ -79,7 +79,7 @@ export [REQUIRED_VAR_2]=[value]
 
 ### Sensitive Variables (see SECRETS.md for full detail)
 
-These must come from the secrets manager — never hardcoded:
+These must come from the secrets manager (see VAULT.md for fleet-wide governance) — never hardcoded:
 
 | Variable | Source | Description |
 |----------|--------|-------------|

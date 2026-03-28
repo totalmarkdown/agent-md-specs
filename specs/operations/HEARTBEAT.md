@@ -24,7 +24,7 @@ monitoring systems, orchestrators, and humans who need to
 know when an agent has gone silent. The pacemaker spec.
 
 This file defines the FORMAT and FREQUENCY of heartbeats.
-Actual heartbeat emission is in MONITOR.md and SELFHEALING.md.
+Actual heartbeat emission is configured in MONITOR.md and SELFHEALING.md.
 
 ### Spec
 
@@ -99,6 +99,8 @@ When this agent misses its own heartbeat schedule:
 3. Include "missed_heartbeats": N in next payload
 4. Log incident in LOGS.md
 5. If missed > [N]: trigger SELFHEALING.md procedures
+
+_See HEALTHCHECK.md for point-in-time liveness verification beyond the heartbeat signal._
 ```
 
 ## Related Specs

@@ -53,7 +53,7 @@ worth noting beyond the task log.*
 [Something unexpected I encountered]
 
 ### What I learned
-[Something I didn't know before]
+[Something I didn't know before — persist important learnings to MEMORY.md]
 
 ### What I'm thinking about
 [Open question or puzzle I'm sitting with]
@@ -74,6 +74,7 @@ When this file exceeds [N] entries:
 - Archive entries older than [N days] to journal-archive/
 - Keep: surprising, pivotal, and recurring observations
 - Condense: routine entries into weekly summaries
+- Record actions taken for audit purposes in AUDITTRAIL.md
 
 ## Note on Privacy
 This journal is:

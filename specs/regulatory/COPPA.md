@@ -42,7 +42,7 @@ collecting personal information from children under 13.
 ## What COPPA Requires
 
 ### Verifiable Parental Consent
-Required BEFORE collecting personal info from children under 13.
+Required BEFORE collecting personal info from children under 13 (see CONSENT.md for consent lifecycle tracking).
 
 **Consent method:** [one of the following]
 - [ ] Signed consent form (mail/fax)
@@ -89,6 +89,8 @@ Parents can:
 $51,744 per violation per day (adjusted for inflation)  
 FTC enforcement  
 State AGs can also enforce
+
+_See AUDITTRAIL.md for logging all parental consent verifications._
 
 ## If Not Directed to Children
 Steps taken to avoid collecting children's data:

@@ -23,7 +23,7 @@ produces as output — formats, schemas, quality guarantees,
 metadata included, and how to parse and use what comes back.
 
 OUTPUT.md is one half of the agent's interface contract.
-INPUT.md is the other half.
+INPUT.md is the other half (see INPUT.md).
 
 Different from:
 - PERFORMANCE.md — how fast/good outputs are over time
@@ -146,6 +146,8 @@ last_updated: date
 **Retention:** [How long output files are kept]
 
 ---
+
+_See AUDITTRAIL.md for tamper-proof logging of all outputs._
 
 ## Output Quality Guarantees
 

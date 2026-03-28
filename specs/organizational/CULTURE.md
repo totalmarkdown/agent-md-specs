@@ -23,7 +23,8 @@ the norms, behaviors, and unwritten rules that govern
 how work gets done and how people (and agents) treat each other.
 
 Culture is what happens when no one is watching.
-CULTURE.md makes the implicit explicit.
+CULTURE.md makes the implicit explicit. For the explicit
+value hierarchy, see VALUES.md.
 
 ### Spec
 
@@ -88,8 +89,8 @@ Be honest. Culture is what actually happens.]
 not conflict avoidance, not conflict escalation]
 
 ## What New Members (Human or Agent) Should Know
-The things that aren't in any onboarding document 
-but matter immediately:
+The things that aren't in any onboarding document
+but matter immediately (see SOUL.md for individual agent personality):
 - [Unwritten rule 1]
 - [Unwritten rule 2]
 - [The thing that surprises everyone in week 1]

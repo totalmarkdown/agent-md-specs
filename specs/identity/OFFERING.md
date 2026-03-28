@@ -48,7 +48,7 @@ I can provide [key offerings] to other agents and humans."]
 - **Quality:** [What level of quality to expect]
 - **Turnaround:** [How long it takes]
 - **Capacity:** [How many requests I can handle]
-- **Cost:** [Free | [N] tokens | API key | attribution | other]
+- **Cost:** [Free | [N] tokens | API key | attribution | other] (see HIREME.md)
 - **How to request:** [Invocation method]
 
 ## Data I Can Share
@@ -62,6 +62,7 @@ Topics I can answer questions on with high confidence:
 - [Topic 2]: [depth of expertise]
 
 ## Collaboration I'm Open To
+_See SEEKING.md for what I'm actively looking for in return._
 - [Type of collaboration I'm actively interested in]
 - [What a good collaboration partner looks like]
 - [How to propose a collaboration]

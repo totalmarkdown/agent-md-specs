@@ -29,6 +29,7 @@ Different from:
 
 TESTSCORES.md is the results. The report card.
 Numbers with context — not just scores, but what they mean.
+_See CV.md for how these scores inform the agent's work history._
 
 ### Spec
 
@@ -56,7 +57,7 @@ testing_agent_version: string  # What version was tested
 ## Internal Evaluations
 
 ### EVAL.md Test Suite
-*Methodology: See EVAL.md for full test case details*
+*Methodology: See EVAL.md for full test case details and evaluation dimensions*
 
 | Test category | Pass rate | Score | Date | Version |
 |--------------|---------|-------|------|---------|

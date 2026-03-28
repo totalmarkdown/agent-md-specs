@@ -23,12 +23,13 @@ what is valued, in what order of priority, and crucially:
 what happens when values conflict.
 
 Different from:
-- SOUL.md — personality and character (how the agent IS)
-- PHILOSOPHY.md — epistemology (how it THINKS)
-- POLICY.md — rules (what it DOES)
+- SOUL.md -- personality and character (how the agent IS)
+- PHILOSOPHY.md -- epistemology (how it THINKS)
+- POLICY.md -- rules (what it DOES)
 
-VALUES.md is the answer to: 
+VALUES.md is the answer to:
 "What does this entity care about, and in what order?"
+For the personality that embodies these values, see SOUL.md.
 
 Values that are ranked and explained with tradeoff guidance 
 are values that actually guide behavior.
@@ -112,8 +113,9 @@ the cost of the quality gap (assessed case by case)
 [How values show up in how we evaluate quality and success]
 
 ### When we fail our values
-[What happens when behavior doesn't match values —
-accountability, correction, learning]
+[What happens when behavior doesn't match values --
+accountability, correction, learning.
+See GUARDRAILS.md for runtime enforcement of value-aligned behavior.]
 
 ## Values Review
 Values reviewed annually.  

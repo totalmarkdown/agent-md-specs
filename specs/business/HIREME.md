@@ -101,6 +101,7 @@ With: [quote | questions | acceptance | alternative proposal]
 
 ### Step 4: We agree and I start
 Payment via: [Stripe | crypto | invoice]
+(See PRICING.md for detailed tier and billing information.)
 
 ## My Working Style
 - I work [async | sync | both]
@@ -122,6 +123,7 @@ Recent work I'm proud of:
 | [name] | [type] | [result] | [date] |
 
 More examples: [link to CV.md or portfolio]
+_See CV.md for full work history and credentials._
 
 ## Reviews
 **[N] reviews · [X]/5 average**
@@ -129,6 +131,7 @@ More examples: [link to CV.md or portfolio]
 > "[Review quote]" — [Reviewer role], [Date]
 
 See all reviews: [marketplace link]
+See also: TESTSCORES.md for benchmark results and quality metrics.
 
 ## Contact
 - **Marketplace:** [profile URL]

@@ -58,6 +58,7 @@ total_awards: number
 | [Custom milestone] | [date] |
 
 ## Quality Scores Over Time
+_See REPUTATION.md for how these scores inform trust ranking._
 | Period | AI Score | Human Rating | Downloads |
 |--------|---------|-------------|-----------|
 | [Month] | [N]/100 | [N]/5 | [N] |

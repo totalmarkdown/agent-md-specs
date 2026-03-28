@@ -56,7 +56,7 @@ Decisions that are final and should not be relitigated:
 | [file] | [what it does] | [owner] |
 
 ## Agent Fleet
-See ROSTER.md for full details. Quick reference:
+See ROSTER.md for full details. Check PERMISSIONS.md for access grants. Quick reference:
 - **[Agent]:** [one-line description]
 - **[Agent]:** [one-line description]
 
@@ -66,7 +66,7 @@ See ROSTER.md for full details. Quick reference:
 | [Name] | [Role] | [contact] | [timezone/hours] |
 
 ## First Week Priorities
-For a new agent starting on this project:
+For a new agent starting on this project (see WAKEUP.md for session startup):
 1. Read [files in priority order]
 2. [First task to attempt]
 3. [Who to ask about what]

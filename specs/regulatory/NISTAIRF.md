@@ -84,11 +84,11 @@ AI risks prioritized and addressed.
 NIST identifies these characteristics of trustworthy AI:
 | Characteristic | How this agent addresses it |
 |---------------|---------------------------|
-| Accountable | [approach] |
+| Accountable (see AUDITTRAIL.md) | [approach] |
 | Explainable | [approach] |
 | Fair/Bias-managed | [approach] |
 | Interpretable | [approach] |
-| Privacy-enhanced | [approach] |
+| Privacy-enhanced (see CONSENT.md) | [approach] |
 | Reliable | [approach] |
 | Safe | [approach] |
 | Secure/Resilient | [approach] |

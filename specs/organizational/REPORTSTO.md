@@ -46,7 +46,7 @@ Who can give this agent instructions, in order of authority:
 4. **[Any user]** — limited to pre-approved request types
 
 ## Escalation Path
-When this agent needs human input:
+When this agent needs human input (see ESCALATION.md for trigger conditions):
 1. First contact: [name/role] via [channel]
 2. If unavailable: [backup] via [channel]
 3. If urgent and neither available: [emergency contact]
@@ -58,6 +58,7 @@ Metrics reviewed: [list key metrics]
 Review stored in: [location]
 
 ## Delegation Authority
+For full delegation rules and constraints, see DELEGATION.md.
 This agent CAN delegate to:
 | Agent | What can be delegated | Limits |
 |-------|----------------------|--------|

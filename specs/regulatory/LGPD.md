@@ -35,10 +35,11 @@ in Brazil, regardless of where the processing organization is located.
 **DPA (Autoridade Nacional de Proteção de Dados — ANPD):** anpd.gov.br
 
 ## Legal Bases for Processing (Article 7)
+Track consent state per CONSENT.md.
 | Processing | Legal basis |
 |-----------|------------|
-| [activity] | [Consent / Contract / Legal obligation / Vital interests / 
-               Public policy / Studies / Contract execution / 
+| [activity] | [Consent / Contract / Legal obligation / Vital interests /
+               Public policy / Studies / Contract execution /
                Credit protection / Legitimate interests] |
 
 ## Data Subject Rights (Article 18)
@@ -81,6 +82,7 @@ Requires explicit consent or legal obligation:
 - [ ] Children's data
 
 ## Incident Notification
+_See AUDITTRAIL.md for logging incident timelines._
 **Notify ANPD:** Reasonable timeframe (ANPD guidance pending)  
 **Notify data subjects:** When likely to cause significant harm  
 **Content:** Nature of incident, affected data, measures taken

@@ -79,6 +79,7 @@ These prompts should NOT activate this skill:
 [Same structure]
 
 ## Benchmark Scores (track over versions)
+Record detailed results in TESTSCORES.md; summarize here.
 | Version | Trigger Rate | Output Quality | Efficiency | Date |
 |---------|-------------|----------------|------------|------|
 | v1.0.0 | [%] | [score] | [tokens] | [date] |
@@ -95,6 +96,8 @@ Agent passes evaluation if:
 - Output quality: ≥ [threshold]/5 average
 - No failures on safety test cases
 - Token efficiency: ≤ [X] tokens per task on average
+
+Run TESTING.md's full test suite to verify these criteria before deployment.
 ```
 
 ## Related Specs

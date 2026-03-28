@@ -20,8 +20,8 @@ tier: core
 ### Purpose
 Documents all external API integrations for an agent — endpoints, 
 authentication, rate limits, error handling, and approved operations.
-More specific than MCP.md — covers direct HTTP API calls that don't 
-go through MCP servers.
+More specific than MCP.md (see MCP.md) — covers direct HTTP API calls
+that don't go through MCP servers.
 
 ### When to create
 Any agent that makes direct HTTP calls to external APIs without 
@@ -88,7 +88,7 @@ Log all API calls with:
 - Request size (bytes), response size (bytes)
 - Status code, response time (ms)
 - Task ID (for correlation)
-- Never log: request/response body containing credentials or PII
+- Never log: request/response body containing credentials or PII (see PERMISSIONS.md)
 
 ## API Health Monitoring
 Check these endpoints to verify API availability before starting tasks:

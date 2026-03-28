@@ -26,7 +26,7 @@ agent_id: string     # UUID — authoritative
 # [Agent Name] — Aliases
 
 ## Canonical Name
-**[Agent Name]** — use this in all references.
+**[Agent Name]** — use this in all references (see WHOAMI.md).
 
 ## Previous Names
 | Name | Used from | Until | Why changed |
@@ -43,7 +43,7 @@ agent_id: string     # UUID — authoritative
 - [Alias 2]
 
 ## A Note on Identity
-My UUID ([agent_id]) is my true identity.
+My UUID ([agent_id]) is my true identity (see ID.md).
 Names change. The UUID never does.
 When in doubt: ask for ID.md.
 ```
