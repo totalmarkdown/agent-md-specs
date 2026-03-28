@@ -357,13 +357,16 @@ and becomes the permanent record of the session's existence.
 
 **Regulated Industry:** A HIPAA-compliant agent processing patient records creates a new session per case, with session keys stored only in memory and cryptographically zeroed on completion, ensuring that no patient data residue persists after the task and the destruction is logged as verifiable proof for compliance auditors.
 
-### Cross-References
-- **ID.md** — Persistent identity that spawns sessions
-- **WAKEUP.md** — Agent startup that may trigger session creation
-- **DELEGATION.md** — Authority under which sessions operate
-- **AUDITTRAIL.md** — Where session audit data is preserved post-destruction
-- **ATTESTATION.md** — Credentials that sign session summaries
-- **LEASTPRIVILEGE.md** — Privilege baseline and escalation within sessions
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ID.md | Permanent cryptographic identifier |
+| WAKEUP.md | Bootstrap and initialization |
+| DELEGATION.md | Authority chain and authorization |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| LEASTPRIVILEGE.md | Dynamic zero-trust privilege management |
 
 ---
 

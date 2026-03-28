@@ -298,16 +298,19 @@ ICE.md emergency protocol.
 
 **Regulated Industry:** A banking platform's loan-underwriting agent uses blast radius boundaries to ensure that a credit bureau API failure only affects new applications, never interrupts in-progress approvals or existing customer account operations.
 
-### Cross-References
-- **ICE.md** — Emergency break-glass protocols when circuit breakers and automated recovery are insufficient
-- **ESCALATION.md** — Notification routing and severity levels for breaker events
-- **REPAIR.md** — Post-containment repair and root cause analysis procedures
-- **HEALTHCHECK.md** — Health verification used during HALF-OPEN probing and recovery
-- **TEAM.md** — Team-level blast radius boundaries and backup agent assignments
-- **CREW.md** — Crew-level containment coordination
-- **AUDITTRAIL.md** — Append-only log where all breaker state changes are recorded
-- **ENFORCEMENT.md** — Runtime enforcement of circuit breaker policies
-- **MONITOR.md** — Dashboard metrics and operational observability
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| ICE.md | Emergency break-glass protocols |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| REPAIR.md | Post-containment repair and root cause analysis procedures |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| TEAM.md | Multi-agent team coordination |
+| CREW.md | Working group structure |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ENFORCEMENT.md | Policy verification and compliance |
+| MONITOR.md | Observability and alerting |
 
 ---
 

@@ -316,15 +316,18 @@ The Chain of Thought Ledger is:
 
 **Regulated Industry:** A healthcare system's patient-data agents maintain signed, timestamped audit entries with delegation chains linking every data access back to the authorizing physician, satisfying HIPAA audit trail requirements and enabling 6-year retention compliance.
 
-### Cross-References
-- **DELEGATION.md** — Authority chains logged in every audit entry
-- **INTENT.md** — Intent hashes referenced in action records
-- **WHOAMI.md** — Agent identity verified against audit entries
-- **ID.md** — Machine-readable identifier in every event
-- **SESSION.md** — Session context for grouping related events
-- **ATTESTATION.md** — Credentials used to sign audit entries
-- **PROVENANCE.md** — Data lineage tracked alongside audit events
-- **PRIVACY.md** — Retention and deletion rules for PII in audit logs
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| DELEGATION.md | Authority chain and authorization |
+| INTENT.md | Pre-action declaration and confidence scoring |
+| WHOAMI.md | Agent identity declaration |
+| ID.md | Permanent cryptographic identifier |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| PROVENANCE.md | Data lineage and trust classification |
+| PRIVACY.md | Data privacy handling |
 
 ---
 

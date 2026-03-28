@@ -298,15 +298,18 @@ detection, see PROMPTSHIELD.md.
 
 **Regulated Industry:** A pharmaceutical company's drug-interaction analysis agent maintains forensic-level provenance records so that FDA auditors can trace any safety recommendation back to its source clinical trial data, transformation logic, and the trust level assigned to each input.
 
-### Cross-References
-- **INPUT.md** — Input format specifications complemented by provenance tracking
-- **OUTPUT.md** — Output format specifications that include provenance statements
-- **DATA.md** — Data handling rules that provenance enforces
-- **AUDITTRAIL.md** — Immutable log where provenance events are recorded
-- **PROMPTSHIELD.md** — Prompt injection detection that triggers contamination policy
-- **ATTESTATION.md** — Credential verification for input source authentication
-- **PRIVACY.md** — PII handling rules that intersect with data classification escalation
-- **DELEGATION.md** — Authority chains verified in prompt provenance
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| INPUT.md | Accepted input formats |
+| OUTPUT.md | Output formats and delivery |
+| DATA.md | Data handling and governance |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| PROMPTSHIELD.md | Prompt injection defense |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| PRIVACY.md | Data privacy handling |
+| DELEGATION.md | Authority chain and authorization |
 
 ---
 

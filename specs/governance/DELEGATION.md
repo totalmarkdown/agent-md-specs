@@ -237,13 +237,16 @@ action_hash: [SHA-256 of action details]
 
 **Regulated Industry:** A compliance officer at a bank delegates an agent to review loan applications against regulatory criteria, with the delegation grant cryptographically signed, time-bound to audit season, and automatically revoked if the officer's own credentials expire.
 
-### Cross-References
-- **WHOAMI.md** — Identity of the agent receiving delegation
-- **PERMISSIONS.md** — Static permission boundaries (delegation operates within these)
-- **ESCALATION.md** — What happens when delegation scope is exceeded
-- **AUDITTRAIL.md** — Where delegation chain and actions are logged
-- **ACCESS.md** — Technical access controls that implement delegation scope
-- **REPORTSTO.md** — Organizational hierarchy context for delegation authority
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| WHOAMI.md | Agent identity declaration |
+| PERMISSIONS.md | Static resource access control |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ACCESS.md | Who can invoke this agent |
+| REPORTSTO.md | Organizational hierarchy context for delegation authority |
 
 ---
 

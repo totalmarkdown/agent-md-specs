@@ -103,6 +103,16 @@ This file should be:
 
 **Regulated Industry:** A SOX-compliant financial reporting pipeline requires that every automated action traces back to a specific agent identity; the UUID from ID.md serves as the permanent, non-reusable anchor that auditors verify has never been reassigned to a different entity.
 
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| WHOAMI.md | Agent identity declaration |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| LEGACY.md | Retirement and decommissioning |
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

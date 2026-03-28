@@ -286,13 +286,16 @@ When attestation fails, the agent MUST:
 
 **Regulated Industry:** A defense contractor uses ATTESTATION.md with TPM 2.0 hardware binding and NIST SP 800-207 zero-trust alignment for its intelligence analysis agents, ensuring credentials cannot be extracted from compromised hosts and every agent-to-agent interaction is mutually authenticated.
 
-### Cross-References
-- **WHOAMI.md** — Identity declaration that ATTESTATION.md verifies
-- **ID.md** — Machine-readable identifier bound to attestation credentials
-- **SECRETS.md** — Secret storage for attestation key material
-- **DELEGATION.md** — Authority chains that attestation validates
-- **AUDITTRAIL.md** — Logs of attestation events and failures
-- **ACCESS.md** — Access decisions informed by attestation status
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| WHOAMI.md | Agent identity declaration |
+| ID.md | Permanent cryptographic identifier |
+| SECRETS.md | Required credentials manifest |
+| DELEGATION.md | Authority chain and authorization |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ACCESS.md | Who can invoke this agent |
 
 ---
 

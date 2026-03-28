@@ -297,16 +297,19 @@ multi_agent_consent:
 
 **Regulated Industry:** A children's education platform enforces COPPA-compliant parental consent collection with double opt-in verification before any agent can process data from users under 13, with age-verification checks applied at every session start.
 
-### Cross-References
-- **PRIVACY.md** — Data handling procedures after consent; deletion on revocation
-- **PII.md** — Definitions of personal data categories subject to consent
-- **GDPR.md** — Full GDPR compliance configuration this spec implements
-- **CCPA.md** — CCPA-specific consent and opt-out requirements
-- **DELEGATION.md** — Organizational authority chain (complements user consent)
-- **AUDITTRAIL.md** — Where consent events and verifications are logged
-- **ESCALATION.md** — Handling of consent verification failures
-- **SHAREDCONTEXT.md** — Consent scope propagation in multi-agent systems
-- **MEMORYSAFETY.md** — Data lifecycle controls for derived/retained data post-revocation
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| PRIVACY.md | Data privacy handling |
+| PII.md | Personal data classification |
+| GDPR.md | GDPR compliance requirements |
+| CCPA.md | CCPA compliance requirements |
+| DELEGATION.md | Authority chain and authorization |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| MEMORYSAFETY.md | Memory poisoning defense |
 
 ---
 

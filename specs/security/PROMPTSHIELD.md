@@ -361,15 +361,18 @@ injection_log_entry:
 
 **Regulated Industry:** A banking compliance team uses PROMPTSHIELD.md's red team schedule to run quarterly adversarial testing against their loan origination agent, documenting pass rates and false positive rates as evidence for OCC examiners evaluating AI operational risk controls.
 
-### Cross-References
-- **GUARDRAILS.md** — Runtime safety rails that PROMPTSHIELD.md reinforces against adversarial bypass
-- **LIMITS.md** — Hard boundaries that injection cannot override
-- **ESCALATION.md** — Escalation paths for confirmed injection incidents
-- **AUDITTRAIL.md** — Immutable log where all injection events are recorded
-- **PROVENANCE.md** — Data lineage tracking that detects contaminated inputs
-- **ATTESTATION.md** — Re-authentication during recovery procedures
-- **SECRETS.md** — Credential isolation preventing injection-driven exfiltration
-- **SANDBOX.md** — Execution sandboxing that limits injection blast radius
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| GUARDRAILS.md | Runtime safety boundaries |
+| LIMITS.md | Hard constraints and safety boundaries |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| PROVENANCE.md | Data lineage and trust classification |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| SECRETS.md | Required credentials manifest |
+| SANDBOX.md | Execution sandboxing that limits injection blast radius |
 
 ---
 

@@ -175,15 +175,18 @@ Attestation required for access above "internal." All access to confidential+ en
 
 **Regulated Industry:** A pharmaceutical company uses MEMORYSAFETY.md's classification enforcement to ensure agents processing restricted clinical trial data cannot write entries below their clearance level, preventing accidental declassification of patient outcomes data across the shared memory pool.
 
-### Cross-References
-- **SHAREDCONTEXT.md** — Shared memory pool structure and access rules that MEMORYSAFETY.md secures
-- **MEMORY.md** — Individual agent memory governance that MEMORYSAFETY.md protects from poisoning
-- **PROMPTSHIELD.md** — Prompt injection defenses; MEMORYSAFETY.md extends these to memory-resident vectors
-- **AUDITTRAIL.md** — Immutable log where all memory safety events and quarantines are recorded
-- **ATTESTATION.md** — Cryptographic identity verification for signed entries and source authentication
-- **ESCALATION.md** — Escalation paths for confirmed poisoning incidents and classification violations
-- **SESSION.md** — Session lifecycle that MEMORYSAFETY.md isolates at the memory layer
-- **PROVENANCE.md** — Data lineage tracking for contamination tracing and classification escalation
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| SHAREDCONTEXT.md | Multi-agent shared memory pool |
+| MEMORY.md | Individual agent memory governance |
+| PROMPTSHIELD.md | Prompt injection defense |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| SESSION.md | Ephemeral runtime identity and task scope |
+| PROVENANCE.md | Data lineage and trust classification |
 
 ---
 

@@ -505,17 +505,20 @@ When an agent's session concludes:
 
 **Regulated Industry:** A banking compliance fleet uses SHAREDCONTEXT.md with strict access controls and classification ceilings so that transaction-monitoring agents can write "alert" entries visible to investigation agents, while client-confidential data remains restricted to authorized agents with documented delegation chains.
 
-### Cross-References
-- **TEAM.md** — Team-level organizational unit and its shared context scope
-- **CREW.md** — Crew-level organizational unit with its own context pool
-- **SWARM.md** — Swarm-level coordination and context propagation
-- **ORG.md** — Organization-level context pool at the top of the hierarchy
-- **MEMORY.md** — Individual agent memory that feeds into and draws from shared context
-- **MEMORYSAFETY.md** — Security controls protecting memory pools from poisoning and tampering
-- **DELEGATION.md** — Authority chain that governs who can read/write the shared pool
-- **PERMISSIONS.md** — Static permission boundaries for pool access
-- **PROVENANCE.md** — Provenance tracking for every shared context entry
-- **SESSION.md** — Ephemeral session state and auto-load/write-back integration
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| TEAM.md | Multi-agent team coordination |
+| CREW.md | Working group structure |
+| SWARM.md | Large operation structure |
+| ORG.md | Organization-wide fleet configuration |
+| MEMORY.md | Individual agent memory governance |
+| MEMORYSAFETY.md | Memory poisoning defense |
+| DELEGATION.md | Authority chain and authorization |
+| PERMISSIONS.md | Static resource access control |
+| PROVENANCE.md | Data lineage and trust classification |
+| SESSION.md | Ephemeral runtime identity and task scope |
 
 ---
 

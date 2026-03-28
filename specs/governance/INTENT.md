@@ -276,12 +276,15 @@ Chain failure triggers rollback per `rollback_policy`.
 
 **Regulated Industry:** A loan underwriting agent must declare intent before accessing each applicant's credit file, with the intent-action binding cryptographically proving that every data access was pre-declared and justified, satisfying FCRA audit requirements.
 
-### Cross-References
-- **AUDITTRAIL.md** — Where intent declarations and outcomes are permanently logged
-- **ESCALATION.md** — Triggered when confidence is low or impact is high
-- **LIMITS.md** — Absolute boundaries that override any intent
-- **DELEGATION.md** — Authority under which intent is declared
-- **LEASTPRIVILEGE.md** — Privilege constraints on what intents are valid
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ESCALATION.md | Human-in-the-loop triggers and contacts |
+| LIMITS.md | Hard constraints and safety boundaries |
+| DELEGATION.md | Authority chain and authorization |
+| LEASTPRIVILEGE.md | Dynamic zero-trust privilege management |
 
 ---
 

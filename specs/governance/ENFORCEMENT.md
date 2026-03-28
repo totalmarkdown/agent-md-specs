@@ -342,15 +342,18 @@ Exceptions are:
 
 **Regulated Industry:** A HIPAA-compliant healthcare platform generates tamper-evident compliance attestation reports with cryptographic signatures, anchoring audit hashes to an external ledger so regulators can independently verify that patient data access patterns match declared policies.
 
-### Cross-References
-- **AUDITTRAIL.md** — The audit data that enforcement verifies
-- **ATTESTATION.md** — Credentials used to sign compliance reports
-- **MONITOR.md** — Runtime monitoring that feeds drift detection
-- **HEALTHCHECK.md** — Operational health checks complementing enforcement
-- **LIMITS.md** — Hard limits that enforcement guarantees
-- **PERMISSIONS.md** — Permission boundaries enforced at runtime
-- **BUDGET.md** — Financial constraints enforced pre-action
-- **DELEGATION.md** — Delegation validity verified per action
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| AUDITTRAIL.md | Tamper-proof action logging |
+| ATTESTATION.md | Identity verification and credential lifecycle |
+| MONITOR.md | Observability and alerting |
+| HEALTHCHECK.md | Liveness and readiness checks |
+| LIMITS.md | Hard constraints and safety boundaries |
+| PERMISSIONS.md | Static resource access control |
+| BUDGET.md | Cost controls and spending limits |
+| DELEGATION.md | Authority chain and authorization |
 
 ---
 

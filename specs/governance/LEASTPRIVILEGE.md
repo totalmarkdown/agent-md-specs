@@ -297,12 +297,15 @@ restrictions:
 
 **Regulated Industry:** A PCI-DSS compliant payment processing agent receives read access to the credentials vault for exactly 300 seconds to retrieve a payment gateway token, after which the privilege is physically revoked and any cached credentials are destroyed from memory.
 
-### Cross-References
-- **PERMISSIONS.md** — Static permission definitions (LEASTPRIVILEGE governs dynamic grants)
-- **ACCESS.md** — Technical access control implementation
-- **DELEGATION.md** — Authority under which privileges are granted
-- **AUDITTRAIL.md** — Where all privilege events are logged
-- **INTENT.md** — Intent declarations that trigger privilege escalation
+## Related Specs
+
+| Spec | Relationship |
+|------|-------------|
+| PERMISSIONS.md | Static resource access control |
+| ACCESS.md | Who can invoke this agent |
+| DELEGATION.md | Authority chain and authorization |
+| AUDITTRAIL.md | Tamper-proof action logging |
+| INTENT.md | Pre-action declaration and confidence scoring |
 
 ---
 
