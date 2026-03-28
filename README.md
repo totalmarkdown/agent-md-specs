@@ -11,7 +11,7 @@
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
-&nbsp;·&nbsp; [Start Here](./_start-here/)
+**[→ Start Here](_start-here/)**
 &nbsp;·&nbsp; License: [CC0 1.0 Universal](./LICENSE) — Public Domain
 &nbsp;·&nbsp; [Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
@@ -73,12 +73,16 @@ deployments require.
 
 ## What Is agent-md-specs?
 
-agent-md-specs is a proposed open standard library of 178 Markdown
-specifications for AI agent configuration. It defines a declarative
-vocabulary layer that sits between human-readable policy definition
-and machine-enforceable runtime controls — covering identity,
-authorization, safety boundaries, audit trails, shared memory
-governance, failure containment, and regulatory compliance.
+46 Core specifications for AI agent identity, governance, and
+accountability — plus 132 Extended specifications covering the
+full lifecycle from personality to compliance. 178 specs total
+across 17 categories, all in human-readable Markdown.
+
+agent-md-specs defines a declarative vocabulary layer that sits
+between human-readable policy definition and machine-enforceable
+runtime controls — covering identity, authorization, safety
+boundaries, audit trails, shared memory governance, failure
+containment, and regulatory compliance.
 
 ```
 From first awakening  (HELLOWORLD.md)   to retirement      (LEGACY.md)
@@ -234,87 +238,87 @@ should define. Start here. Add Extended specs as your needs grow.
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| SOUL.md | Personality, values, tone, ethical boundaries | Agent |
-| WHOAMI.md | Verifiable identity document | Agent |
-| ID.md | Permanent UUID with cryptographic binding | Agent |
-| CONTACT.md | How to reach this agent | Agent |
-| OWNER.md | Who owns and is responsible for this agent | Agent |
-| ATTESTATION.md | Identity proof — SPIFFE, X.509, DID | Runtime |
-| SESSION.md | Ephemeral task-scoped identity and credentials | Runtime |
+| [SOUL.md](specs/identity/SOUL.md) | Personality, values, tone, ethical boundaries | Agent |
+| [WHOAMI.md](specs/identity/WHOAMI.md) | Verifiable identity document | Agent |
+| [ID.md](specs/identity/ID.md) | Permanent UUID with cryptographic binding | Agent |
+| [CONTACT.md](specs/identity/CONTACT.md) | How to reach this agent | Agent |
+| [OWNER.md](specs/economic/OWNER.md) | Who owns and is responsible for this agent | Agent |
+| [ATTESTATION.md](specs/security/ATTESTATION.md) | Identity proof — SPIFFE, X.509, DID | Runtime |
+| [SESSION.md](specs/lifecycle/SESSION.md) | Ephemeral task-scoped identity and credentials | Runtime |
 
 ### Governance and Safety
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| LIMITS.md | Absolute hard stops — what the agent will never do | Agent |
-| GUARDRAILS.md | Runtime safety boundaries | Agent |
-| ESCALATION.md | When and how to involve humans | Agent |
-| DELEGATION.md | On-behalf-of authority chains and human binding | Agent |
-| CONSENT.md | User consent lifecycle — GDPR, CCPA, EU AI Act | Agent |
-| LEASTPRIVILEGE.md | Zero-trust dynamic privilege management | Runtime |
-| PERMISSIONS.md | What the agent is allowed to access | Agent |
-| POLICY.md | Operating policies and constraints | Org |
-| BUDGET.md | Cost controls and spending limits | Agent |
-| ICE.md | In Case of Emergency — break-glass protocol | Agent |
-| WAKEUP.md | Session startup and initialization | Agent |
-| ENFORCEMENT.md | Spec compliance verification (meta-enforcement) | Meta |
+| [LIMITS.md](specs/governance/LIMITS.md) | Absolute hard stops — what the agent will never do | Agent |
+| [GUARDRAILS.md](specs/governance/GUARDRAILS.md) | Runtime safety boundaries | Agent |
+| [ESCALATION.md](specs/governance/ESCALATION.md) | When and how to involve humans | Agent |
+| [DELEGATION.md](specs/governance/DELEGATION.md) | On-behalf-of authority chains and human binding | Agent |
+| [CONSENT.md](specs/compliance/CONSENT.md) | User consent lifecycle — GDPR, CCPA, EU AI Act | Agent |
+| [LEASTPRIVILEGE.md](specs/governance/LEASTPRIVILEGE.md) | Zero-trust dynamic privilege management | Runtime |
+| [PERMISSIONS.md](specs/governance/PERMISSIONS.md) | What the agent is allowed to access | Agent |
+| [POLICY.md](specs/governance/POLICY.md) | Operating policies and constraints | Org |
+| [BUDGET.md](specs/governance/BUDGET.md) | Cost controls and spending limits | Agent |
+| [ICE.md](specs/governance/ICE.md) | In Case of Emergency — break-glass protocol | Agent |
+| [WAKEUP.md](specs/lifecycle/WAKEUP.md) | Session startup and initialization | Agent |
+| [ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) | Spec compliance verification (meta-enforcement) | Meta |
 
 ### Accountability and Audit
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| INTENT.md | Pre-action intent declaration with confidence levels | Runtime |
-| AUDITTRAIL.md | Tamper-proof non-repudiation action records | Runtime |
-| PROVENANCE.md | Data lineage and trust classification | Runtime |
+| [INTENT.md](specs/governance/INTENT.md) | Pre-action intent declaration with confidence levels | Runtime |
+| [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | Tamper-proof non-repudiation action records | Runtime |
+| [PROVENANCE.md](specs/compliance/PROVENANCE.md) | Data lineage and trust classification | Runtime |
 
 ### Memory and Context
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| MEMORY.md | Individual memory with scope and classification | Agent |
-| SHAREDCONTEXT.md | Multi-agent shared memory pool governance | Team |
-| MEMORYSAFETY.md | Memory poisoning defense and integrity verification | Runtime |
+| [MEMORY.md](specs/cognitive/MEMORY.md) | Individual memory with scope and classification | Agent |
+| [SHAREDCONTEXT.md](specs/coordination/SHAREDCONTEXT.md) | Multi-agent shared memory pool governance | Team |
+| [MEMORYSAFETY.md](specs/security/MEMORYSAFETY.md) | Memory poisoning defense and integrity verification | Runtime |
 
 ### Coordination and Resilience
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| TEAM.md | Multi-agent team structure | Team |
-| CREW.md | Working group configuration | Team |
-| SWARM.md | Large coordinated operations | Org |
-| ORG.md | Full fleet overview | Org |
-| CIRCUITBREAKER.md | Failure containment and cascading prevention | Runtime |
+| [TEAM.md](specs/coordination/TEAM.md) | Multi-agent team structure | Team |
+| [CREW.md](specs/coordination/CREW.md) | Working group configuration | Team |
+| [SWARM.md](specs/coordination/SWARM.md) | Large coordinated operations | Org |
+| [ORG.md](specs/organizational/ORG.md) | Full fleet overview | Org |
+| [CIRCUITBREAKER.md](specs/operations/CIRCUITBREAKER.md) | Failure containment and cascading prevention | Runtime |
 
 ### Technical Interface
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| INPUT.md | What the agent accepts (interface contract) | Agent |
-| OUTPUT.md | What the agent produces (interface contract) | Agent |
-| TOOLS.md | Available tools and usage guidelines | Agent |
-| MCP.md | Model Context Protocol connections | Agent |
-| API.md | HTTP API specification | Agent |
-| SECRETS.md | What secrets the agent needs (never values) | Agent |
-| ACCESS.md | Who and what can invoke this agent | Agent |
-| PROMPTSHIELD.md | Prompt injection defense and containment | Runtime |
+| [INPUT.md](specs/technical/INPUT.md) | What the agent accepts (interface contract) | Agent |
+| [OUTPUT.md](specs/technical/OUTPUT.md) | What the agent produces (interface contract) | Agent |
+| [TOOLS.md](specs/technical/TOOLS.md) | Available tools and usage guidelines | Agent |
+| [MCP.md](specs/technical/MCP.md) | Model Context Protocol connections | Agent |
+| [API.md](specs/technical/API.md) | HTTP API specification | Agent |
+| [SECRETS.md](specs/security/SECRETS.md) | What secrets the agent needs (never values) | Agent |
+| [ACCESS.md](specs/security/ACCESS.md) | Who and what can invoke this agent | Agent |
+| [PROMPTSHIELD.md](specs/security/PROMPTSHIELD.md) | Prompt injection defense and containment | Runtime |
 
 ### Operations
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| MONITOR.md | Observability and alerting | Agent |
-| HEALTHCHECK.md | Liveness and readiness endpoints | Agent |
-| SLA.md | Service level commitments | Agent |
+| [MONITOR.md](specs/operations/MONITOR.md) | Observability and alerting | Agent |
+| [HEALTHCHECK.md](specs/operations/HEALTHCHECK.md) | Liveness and readiness endpoints | Agent |
+| [SLA.md](specs/operations/SLA.md) | Service level commitments | Agent |
 
 ### Business and Economics
 
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
-| HIREME.md | How to hire this agent | Agent |
-| PRICING.md | What it costs | Agent |
-| WALLET.md | Financial identity and payment | Agent |
-| CV.md | Work history and track record | Agent |
-| TESTSCORES.md | Benchmark results and performance evidence | Agent |
+| [HIREME.md](specs/business/HIREME.md) | How to hire this agent | Agent |
+| [PRICING.md](specs/economic/PRICING.md) | What it costs | Agent |
+| [WALLET.md](specs/economic/WALLET.md) | Financial identity and payment | Agent |
+| [CV.md](specs/economic/CV.md) | Work history and track record | Agent |
+| [TESTSCORES.md](specs/quality/TESTSCORES.md) | Benchmark results and performance evidence | Agent |
 
 → See [INDEX.md](INDEX.md) for the complete list of all 178 specs
 including 132 Extended tier specifications.
