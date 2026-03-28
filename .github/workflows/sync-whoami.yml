@@ -1,4 +1,4 @@
-name: Sync WHOAMI.md to canonical repo
+name: Sync WHOAMI.md to totalmarkdown/whoami.md
 
 on:
   push:
@@ -14,14 +14,16 @@ jobs:
       - name: Checkout agent-md-specs
         uses: actions/checkout@v4
 
-      - name: Open PR on canonical repo
-        uses: peter-evans/create-pull-request@v6
+      - name: Push spec file to standalone repo
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SYNC_DEPLOY_KEY }}
         with:
-          token: ${{ secrets.SYNC_TOKEN }}
+          source-directory: 'specs/identity'
+          destination-github-username: 'totalmarkdown'
+          destination-repository-name: 'whoami.md'
+          user-email: 'sync@totalmarkdown.ai'
+          user-name: 'TotalMarkdown Sync'
           commit-message: 'sync: update WHOAMI.md from agent-md-specs'
-          title: 'sync: update from agent-md-specs'
-          body: |
-            Automated sync from agent-md-specs repository.
-            agent-md-specs is the source of truth for this spec.
-            Review and merge to update the canonical repo.
-          branch: sync-from-agent-md-specs
+          target-branch: 'main'
+          target-directory: '.'
