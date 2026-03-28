@@ -156,10 +156,10 @@ approve are identical to the data machines enforce.
 | Referenced Standard | How We Align |
 |--------------------|-------------|
 | SP 800-207 Zero Trust | Accountability chain maps to PEP/PDP/PIP |
-| SP 800-63-4 Digital Identity | WHOAMI.md + ATTESTATION.md |
-| SPIFFE/SPIRE | ATTESTATION.md primary verification method |
-| OAuth 2.0 / OIDC | DELEGATION.md maps to OBO token exchange |
-| NGAC | LEASTPRIVILEGE.md defines dynamic policies |
+| SP 800-63-4 Digital Identity | [WHOAMI.md](specs/identity/WHOAMI.md) + [ATTESTATION.md](specs/security/ATTESTATION.md) |
+| SPIFFE/SPIRE | [ATTESTATION.md](specs/security/ATTESTATION.md) primary verification method |
+| OAuth 2.0 / OIDC | [DELEGATION.md](specs/governance/DELEGATION.md) maps to OBO token exchange |
+| NGAC | [LEASTPRIVILEGE.md](specs/governance/LEASTPRIVILEGE.md) defines dynamic policies |
 | MCP (AAIF) | agent-md-specs governs MCP connections |
 | AGENTS.md (AAIF) | Complementary — we add identity/governance |
 | OWASP Agentic Top 10 | ASI06 → MEMORYSAFETY, ASI08 → CIRCUITBREAKER |
