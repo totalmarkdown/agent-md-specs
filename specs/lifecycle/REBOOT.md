@@ -28,7 +28,7 @@ Now I'm back. What do I do first?"
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -150,10 +150,8 @@ Additional validation after Phase 4:
 [ ] Orchestrator notified
 [ ] Ready for tasks
 ```
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** After a planned infrastructure migration, a customer support agent executes a warm reboot — restoring its MEMORY.md, verifying all API connections are healthy in the new environment, syncing messages received during the 2-hour maintenance window, and notifying the support team lead before resuming ticket processing.

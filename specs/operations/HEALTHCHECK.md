@@ -27,7 +27,7 @@ repeatedly, CIRCUITBREAKER.md governs containment.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -174,10 +174,8 @@ Configure your monitoring system to:
 - See MONITOR.md for full alerting configuration
 
 _See MONITOR.md for ongoing observability beyond point-in-time checks._
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A retail company's inventory-management agent exposes /health and /ready endpoints behind a Kubernetes load balancer, which automatically stops routing traffic to unhealthy instances during peak Black Friday traffic.

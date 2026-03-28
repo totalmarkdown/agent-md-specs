@@ -25,7 +25,7 @@ versioned, and improvable.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -103,10 +103,8 @@ tmd prompt-test --agent [name] --prompt [name] --input [test-input]
 ```
 Expected: [what good output looks like]
 Pass criteria: [EVAL.md reference]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A content agency uses PROMPTS.md to version-control their writing agent's prompt library, tracking a 23% quality improvement when they switched from basic to chain-of-thought prompting for long-form article generation.

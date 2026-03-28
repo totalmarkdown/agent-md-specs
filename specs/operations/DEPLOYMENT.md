@@ -23,7 +23,7 @@ agent in production environments.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -95,10 +95,8 @@ For code updates:
 2. Deploy to staging first
 3. Smoke test in staging
 4. Deploy to production with [N] minute monitoring window
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A logistics company uses DEPLOYMENT.md to define blue-green deployment steps for its route-optimization agent, including automatic rollback if the error rate exceeds 2% within 15 minutes of a new version going live.

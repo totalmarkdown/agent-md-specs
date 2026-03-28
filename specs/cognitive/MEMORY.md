@@ -20,7 +20,7 @@ tier: core
 **Note:** MEMORY.md is already used by Claude Code.  
 This is the ENHANCED spec for TotalMarkdown compatibility.
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -84,7 +84,7 @@ Every agent must declare the scope of its memory:
 ```yaml
 memory_scope: individual | team | crew | org | global
 shared_context_ref: [path to SHAREDCONTEXT.md if scope > individual]  # See SHAREDCONTEXT.md when scope > individual
-```
+````
 
 - **individual**: Memory is private to this agent. Not shared.
 - **team/crew/org/global**: Agent participates in a shared context pool.

@@ -28,7 +28,7 @@ Actual heartbeat emission is configured in MONITOR.md and SELFHEALING.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -101,10 +101,8 @@ When this agent misses its own heartbeat schedule:
 5. If missed > [N]: trigger SELFHEALING.md procedures
 
 _See HEALTHCHECK.md for point-in-time liveness verification beyond the heartbeat signal._
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A media company's video-transcoding agents emit heartbeats every 60 seconds to a central monitoring service, triggering an on-call alert if any agent misses 3 consecutive beats during overnight batch processing runs.

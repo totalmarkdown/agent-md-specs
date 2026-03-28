@@ -24,7 +24,7 @@ how to add new tests.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -92,10 +92,8 @@ When adding a new capability or fixing a bug:
 3. Verify test passes (green)
 4. Add to regression suite if it was a bug fix
 5. Update EVAL.md with new eval cases if capability changes
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A fintech startup requires all agent PRs to pass TESTING.md's full suite in CI before merge, catching a regression where the tax calculation agent mishandled negative amounts.

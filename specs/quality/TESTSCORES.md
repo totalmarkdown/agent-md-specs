@@ -33,7 +33,7 @@ _See CV.md for how these scores inform the agent's work history._
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -187,10 +187,8 @@ These scores can be independently verified:
 | EVAL.md results | Yes | Run eval suite from REPO.md |
 | Benchmark scores | Yes | [verification link] |
 | Human evaluation | No — trust | Contact [email] for methodology |
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A consulting firm evaluates third-party agents by comparing TESTSCORES.md report cards side by side, selecting the agent with the highest output quality percentile for their client-facing research pipeline.

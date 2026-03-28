@@ -24,7 +24,7 @@ agent from the terminal, what flags exist, what output to expect.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 cli_name: string        # The actual command name (e.g. 'tmd', 'myagent')
@@ -129,10 +129,8 @@ See ENV.md for the full environment variable specification.
 # Fish
 [cli-name] completion fish > ~/.config/fish/completions/[cli-name].fish
 ```
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A DevOps team uses CLI.md to integrate their code review agent into CI/CD pipelines, piping git diffs into the CLI with `--format json --quiet` flags for machine-readable output and using exit codes to gate merge approvals.

@@ -36,7 +36,7 @@ is no, and the override gets removed before it's documented.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 entity_name: string
 entity_type: string      # agent | team | crew | swarm
@@ -152,10 +152,8 @@ Override history is automatically available via:
 git log --follow OVERRIDE.md
 git diff [commit]...[commit] OVERRIDE.md
 ```
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** An enterprise batch processing crew overrides its inherited BUDGET.md to increase the daily spending limit from $50 to $200, documenting that the higher limit is justified by average daily job costs of $150 and that the previous limit caused three manual interventions per week.

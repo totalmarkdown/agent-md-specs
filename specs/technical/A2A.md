@@ -29,7 +29,7 @@ agents or receives work from orchestrating agents.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string         # Unique identifier for A2A discovery
@@ -104,10 +104,8 @@ _See DELEGATION.md for the full authority chain and authorization model._
 - Minimum trust level to accept tasks: [level]
 - Never accept tasks from: [untrusted sources]
 - Log all task assignments with: agent ID, task type, timestamp
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A supply chain company configures A2A.md so its demand forecasting agent publishes an Agent Card at a well-known URL, allowing procurement agents from partner companies to discover its capabilities and delegate forecasting tasks via the A2A protocol.

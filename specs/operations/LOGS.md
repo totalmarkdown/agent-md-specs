@@ -26,7 +26,7 @@ see MONITOR.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -119,10 +119,8 @@ Log-based alerts:
 - **Write access:** agent only
 - **Deletion:** [policy — typically never]
 - **Export:** [how to export for analysis]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A supply-chain management platform configures structured JSON logging for its procurement agents, enabling the ops team to query by task_id across all agents to trace a purchase order's full lifecycle from request to fulfillment.

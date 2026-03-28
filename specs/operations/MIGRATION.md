@@ -24,7 +24,7 @@ environments.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 from_version: semver
 to_version: semver
@@ -79,10 +79,8 @@ If migration fails:
 ```
 Rollback restores to pre-migration state from backup.
 Note: [any data loss risks if rolling back]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** An advertising platform migrates its campaign-optimization agents from GPT-4 to Claude, using MIGRATION.md to document prompt format changes, MEMORY.md schema updates, and a 48-hour parallel-run verification period before cutting over.

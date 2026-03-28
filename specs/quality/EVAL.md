@@ -24,7 +24,7 @@ automated improvement loop.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -98,10 +98,8 @@ Agent passes evaluation if:
 - Token efficiency: ≤ [X] tokens per task on average
 
 Run TESTING.md's full test suite to verify these criteria before deployment.
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A SaaS company runs EVAL.md test suites nightly against their customer support agent, catching a 12% accuracy regression in billing-related queries before it reaches production.

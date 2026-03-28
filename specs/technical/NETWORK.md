@@ -27,7 +27,7 @@ and for compliance with data residency requirements.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -133,10 +133,8 @@ Certificate inspection proxies: [supported | not supported — explain]
 | Large document task | ~100KB |
 | Per 1000 tasks | ~10MB |
 | Per day (at [N] tasks) | ~[X]MB |
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A Fortune 500 company uses NETWORK.md to generate firewall allowlist rules for their corporate proxy, enabling their research agent to reach api.anthropic.com:443 and three approved data provider domains while blocking all other outbound traffic.

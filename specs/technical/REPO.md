@@ -17,7 +17,7 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -82,10 +82,8 @@ _See TESTING.md for the full test suite and pass criteria._
 | CI/CD | [passing] |
 | Test coverage | [N]% |
 | Last security audit | [date] |
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** An open-source agent developer uses REPO.md to provide a single reference page linking to their GitHub repo, npm package, full documentation site, and contribution guide, reducing onboarding time for new contributors from hours to minutes.

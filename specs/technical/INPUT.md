@@ -37,7 +37,7 @@ INPUT.md is specifically: what do you give this agent?
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -206,10 +206,8 @@ _See PROVENANCE.md for tracking the origin and trust level of input data._
 - 1 token ≈ 4 characters in English
 - 1 page of text ≈ 500 tokens
 - Use: `tmd count-tokens --text "[your input]"`
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A document processing company uses INPUT.md to specify that its extraction agent accepts PDF, DOCX, and scanned images up to 50MB, with strict validation that rejects files missing required metadata fields and returns clear error messages explaining the fix.

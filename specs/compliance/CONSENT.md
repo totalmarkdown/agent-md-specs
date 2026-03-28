@@ -51,7 +51,7 @@ profiles/tracks user behavior. If none apply, document exemption in COMPLIANCE.m
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string                # Must match WHOAMI.md agent_id
@@ -287,10 +287,8 @@ multi_agent_consent:
 | **COPPA** | Verifiable parental consent under 13 | Parental consent required; strictest threshold default |
 | **HIPAA** | Authorization for PHI use/disclosure | Data categories in consent record; evidence preserved |
 
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** An e-commerce platform's personalization agent collects granular, purpose-specific consent (product recommendations, email marketing, usage analytics) and immediately halts all processing for a user who revokes any single scope, propagating the revocation to all downstream agents within 5 minutes.

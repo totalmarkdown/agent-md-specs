@@ -48,7 +48,7 @@ where privilege boundaries prevent lateral movement.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -287,10 +287,8 @@ restrictions:
 | Escalation patterns | Weekly | [automated] | Are the same privileges requested repeatedly? |
 | De-escalation compliance | Daily | [automated] | Are privileges being properly revoked? |
 | Profile accuracy | Quarterly | [security role] | Do profiles match actual usage? |
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A report generation agent starts each session with read-only access to its own config files, requests just-in-time write access to the analytics database only for the duration of the report task, and has that privilege automatically revoked the moment the report is saved.

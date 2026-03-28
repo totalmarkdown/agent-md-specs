@@ -27,7 +27,7 @@ verify everything is working.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -181,10 +181,8 @@ Ask in Discord: [Discord URL]
 - Read LIMITS.md to understand what it won't do
 - Read HIREME.md if you want to use it professionally
 - Check MEMORY.md to see what it remembers from previous sessions
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A new team member at a marketing agency follows SETUP.md to get a content-generation agent running locally in 20 minutes, including troubleshooting guidance for the most common MCP server connection error they hit on their first attempt.

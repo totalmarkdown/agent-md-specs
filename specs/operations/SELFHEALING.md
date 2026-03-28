@@ -32,7 +32,7 @@ downtime has business cost.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -115,10 +115,8 @@ If heartbeat missed for [N] intervals: trigger external alert (see HEARTBEAT.md 
 All self-corrections logged to: [location]
 Format: timestamp | check_name | detected_value | correction_applied | outcome
 Review log: [daily | weekly | on alert]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A 24/7 customer-support agent auto-detects rising response latency at 2 AM, automatically reduces its batch size and flushes stale cache entries, resolving the performance degradation before the morning shift notices any impact.

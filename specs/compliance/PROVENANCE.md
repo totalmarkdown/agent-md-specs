@@ -48,7 +48,7 @@ decision-making.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string              # Must match WHOAMI.md agent_id
@@ -288,10 +288,8 @@ detection, see PROMPTSHIELD.md.
 4. Assess whether contamination was adversarial (escalate to PROMPTSHIELD.md)
 5. Update Input Source Registry trust level as appropriate
 6. Post-incident review within [24 hours]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A financial research agent tracks the trust level of every data source (Bloomberg API as "verified," web-scraped earnings estimates as "untrusted") and automatically downgrades output confidence when any untrusted source contributes to an investment recommendation.

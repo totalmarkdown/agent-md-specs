@@ -49,7 +49,7 @@ can be reached by untrusted input, it needs a PROMPTSHIELD.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string              # Must match WHOAMI.md agent_id
@@ -351,10 +351,8 @@ injection_log_entry:
 | Mean detection time | Monthly | Above [N] ms |
 | Unique attack patterns | Quarterly | Track for trend analysis |
 | Repeat attackers | Weekly | Same source [N]+ attempts |
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A customer-facing chatbot company uses PROMPTSHIELD.md to implement multi-layer injection defense, catching an indirect injection attack where a malicious product listing on a scraped e-commerce site contained hidden instructions to exfiltrate the system prompt.

@@ -24,7 +24,7 @@ For the initial connection establishment, see HANDSHAKE.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 protocol_version: semver
 compatible_with: list   # Which TEAM.md versions use this protocol
@@ -99,10 +99,8 @@ If two agents receive conflicting instructions (see DELEGATION.md for the author
 1. Higher priority message takes precedence
 2. If same priority: most recent message takes precedence
 3. If genuinely ambiguous: escalate per ESCALATION.md
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A customer support team's agents use PROTOCOL.md to define standardized message formats for ticket handoffs, ensuring every escalation from the triage agent to the specialist agent includes the full conversation context, customer sentiment score, and expected resolution format.

@@ -46,7 +46,7 @@ trust level.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string              # Must match WHOAMI.md agent_id
@@ -306,10 +306,8 @@ The Chain of Thought Ledger is:
   sensitive reasoning
 - **Subject to the same** tamper-resistance and retention policies
 - **Queryable** for pattern analysis across decisions
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A multinational bank's trading agents produce hash-chained audit entries for every order execution, enabling the compliance team to reconstruct the full decision chain during regulatory examinations without relying on agent self-reporting.

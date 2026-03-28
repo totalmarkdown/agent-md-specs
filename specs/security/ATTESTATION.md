@@ -57,7 +57,7 @@ high-stakes actions on behalf of humans.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 agent_id: string              # Must match WHOAMI.md agent_id (see WHOAMI.md) and ID.md UUID (see ID.md)
@@ -276,10 +276,8 @@ When attestation fails, the agent MUST:
 3. Notify the security contact: [contact]
 4. Enter degraded mode (read-only, no external actions)
 5. Do NOT retry with weaker credentials or bypass verification
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A large tech company uses ATTESTATION.md with SPIFFE/SPIRE to provide zero-downtime credential rotation for its 150 production agents, with SVIDs rotating every hour and hardware-bound keys in AWS CloudHSM preventing credential theft.

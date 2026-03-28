@@ -38,7 +38,7 @@ Written when things are fine, to be read when they're not.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -150,10 +150,8 @@ Once the immediate situation is stable:
 This protocol was last tested: [date]  
 Next scheduled drill: [date]  
 How to run a drill: [instructions]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A production data pipeline agent begins generating corrupted output at scale, and the on-call engineer follows the TYPE 1 protocol to immediately kill the process, preserve logs, and notify the data platform lead before any downstream systems consume bad data.

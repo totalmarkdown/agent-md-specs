@@ -33,7 +33,7 @@ For measured quality data rather than curated samples, see TESTSCORES.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -129,10 +129,8 @@ Requirements:
 - Adds something not already in the examples above
 
 Credit: [How contributors are credited]
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A legal firm evaluating AI contract-review agents uses EXAMPLES.md to see real before/after comparisons of clause extraction on their specific contract types before committing to a subscription.

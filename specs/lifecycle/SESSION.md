@@ -50,7 +50,7 @@ task isolation prevents cross-contamination.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -347,10 +347,8 @@ session_summary:
 
 This summary is the last thing written before destruction
 and becomes the permanent record of the session's existence.
-```
+````
 
-
-```
 ## Example Use Cases
 
 **Enterprise:** A support agent handling tickets from multiple clients spawns a separate session for each client interaction, with unique ephemeral credentials and data scope locks ensuring that one client's session can never access another client's data — even though the same persistent agent serves both.
