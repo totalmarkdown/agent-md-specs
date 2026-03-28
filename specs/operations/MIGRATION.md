@@ -81,6 +81,14 @@ Rollback restores to pre-migration state from backup.
 Note: [any data loss risks if rolling back]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An advertising platform migrates its campaign-optimization agents from GPT-4 to Claude, using MIGRATION.md to document prompt format changes, MEMORY.md schema updates, and a 48-hour parallel-run verification period before cutting over.
+
+**Multi-Agent Fleet:** A fleet-wide migration from v2 to v3 of the agent framework rolls out team-by-team over two weeks, with each team's MIGRATION.md documenting its specific config changes, rollback commands, and post-migration health monitoring windows.
+
+**Regulated Industry:** A banking compliance agent migrating to a new transaction-monitoring schema documents the exact field mappings, data validation steps, and regulatory sign-off requirements, ensuring no gap in suspicious-activity detection during the transition.
+
 ## Related Specs
 
 | Spec | Relationship |

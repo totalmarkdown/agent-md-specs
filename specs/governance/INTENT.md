@@ -266,6 +266,14 @@ Each step is independently declared, reviewed, and logged.
 Chain failure triggers rollback per `rollback_policy`.
 ```
 
+## Example Use Cases
+
+**Enterprise:** Before updating a customer's email address in the CRM, a support agent declares its intent with the specific record ID, reason (support ticket #4521), expected outcome, and 0.95 confidence, creating a reviewable pre-action record that the compliance team can audit months later.
+
+**Multi-Agent Fleet:** An orchestrator agent declares a multi-step intent chain for a data migration task, where each step (extract, transform, load) has its own intent declaration with dependency links, and the entire chain rolls back automatically if the final validation step fails.
+
+**Regulated Industry:** A loan underwriting agent must declare intent before accessing each applicant's credit file, with the intent-action binding cryptographically proving that every data access was pre-declared and justified, satisfying FCRA audit requirements.
+
 ### Cross-References
 - **AUDITTRAIL.md** — Where intent declarations and outcomes are permanently logged
 - **ESCALATION.md** — Triggered when confidence is low or impact is high

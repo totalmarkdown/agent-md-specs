@@ -125,6 +125,14 @@ All validated outputs can be traced via AUDITTRAIL.md:
 - Timestamp of validation
 ```
 
+## Example Use Cases
+
+**Enterprise:** A market research firm configures VALIDATION.md to require corroborated evidence for all competitive analysis claims, preventing their agent from presenting single-source rumors as market facts.
+
+**Multi-Agent Fleet:** An orchestrator checks downstream agents' VALIDATION.md confidence scores before aggregating results, routing any output below 70% confidence to a human analyst for verification.
+
+**Regulated Industry:** An accounting firm uses VALIDATION.md citation requirements so their tax advisory agent always links to specific IRS publications or court rulings, creating a verifiable trail for SOX compliance.
+
 ## Related Specs
 
 | Spec | Relationship |

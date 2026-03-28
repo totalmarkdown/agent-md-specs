@@ -160,6 +160,14 @@ To propose a KPI change: [process]
 Changes require: [approval level]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A logistics company tracks KPI.md across their dispatch planning agent, monitoring cost-per-task and task success rate weekly to justify ROI to the board and catch efficiency regressions before they impact delivery SLAs.
+
+**Multi-Agent Fleet:** A platform team uses KPI.md red/yellow/green thresholds to build an automated dashboard that surfaces which of their 200 agents need immediate attention, replacing manual spot-checks.
+
+**Regulated Industry:** An investment bank uses KPI.md escalation-rate tracking on their trade compliance agent to demonstrate to regulators that guardrail triggers remain below acceptable thresholds quarter-over-quarter.
+
 ## Related Specs
 
 | Spec | Relationship |

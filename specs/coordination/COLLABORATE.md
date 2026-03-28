@@ -121,6 +121,14 @@ New agents: read CLAUDE.md, MEMORY.md, ROSTER.md, this file (see ROSTER.md)
 First contribution: [suggested starter task]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm's knowledge-management project has three human analysts and two AI research agents collaborating asynchronously, with COLLABORATE.md defining review SLAs (agent reviews in 5 minutes, human reviews in 24 hours) and conflict resolution rules where human decisions always override agent suggestions.
+
+**Multi-Agent Fleet:** A content production pipeline pairs a human editor with four specialized agents (research, drafting, SEO optimization, image selection), using COLLABORATE.md to define contribution guidelines, assign work by type, and ensure the human editor has final approval on all published output.
+
+**Regulated Industry:** A pharmaceutical R&D team uses COLLABORATE.md to govern how AI literature-review agents and human scientists co-author regulatory submissions, ensuring all agent contributions are explicitly attributed and human-reviewed before inclusion in FDA filings.
+
 ## Related Specs
 
 | Spec | Relationship |

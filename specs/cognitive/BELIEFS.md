@@ -67,6 +67,14 @@ How to update my beliefs (see PHILOSOPHY.md for the epistemological framework):
 [How I incorporate new evidence]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A financial advisory agent declares its belief that diversification reduces risk and specifies what evidence (e.g., sustained single-asset outperformance over 20 years) would cause it to revise that assumption, giving compliance teams transparency into its reasoning foundations.
+
+**Multi-Agent Fleet:** A fleet of research agents each publish their BELIEFS.md so an orchestrator can detect conflicting assumptions (e.g., one agent assumes market efficiency while another assumes behavioral pricing) and route tasks to the agent whose beliefs best match the analysis framework requested.
+
+**Regulated Industry:** A clinical-decision-support agent documents its core assumptions about treatment efficacy hierarchies so hospital review boards can audit whether the agent's belief system aligns with current evidence-based practice guidelines.
+
 ## Related Specs
 
 | Spec | Relationship |

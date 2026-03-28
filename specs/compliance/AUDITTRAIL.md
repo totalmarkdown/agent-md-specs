@@ -305,6 +305,14 @@ The Chain of Thought Ledger is:
 - **Queryable** for pattern analysis across decisions
 ```
 
+## Example Use Cases
+
+**Enterprise:** A multinational bank's trading agents produce hash-chained audit entries for every order execution, enabling the compliance team to reconstruct the full decision chain during regulatory examinations without relying on agent self-reporting.
+
+**Multi-Agent Fleet:** A DevOps platform with 50 deployment agents uses AUDITTRAIL.md to correlate events across agents during post-incident forensics, tracing a cascading failure from the initial misconfigured deploy through every downstream agent that propagated the error.
+
+**Regulated Industry:** A healthcare system's patient-data agents maintain signed, timestamped audit entries with delegation chains linking every data access back to the authorizing physician, satisfying HIPAA audit trail requirements and enabling 6-year retention compliance.
+
 ### Cross-References
 - **DELEGATION.md** — Authority chains logged in every audit entry
 - **INTENT.md** — Intent hashes referenced in action records

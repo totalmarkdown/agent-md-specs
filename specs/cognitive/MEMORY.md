@@ -135,6 +135,14 @@ Aligned with SESSION.md destruction policy:
   or destroyed per retention policy; shared context entries persist
   (they belong to the team/org, not the agent)
 
+## Example Use Cases
+
+**Enterprise:** A project management agent maintains persistent memory of key architectural decisions, team preferences, and past sprint outcomes so that each new session starts with full project context rather than requiring re-explanation.
+
+**Multi-Agent Fleet:** A fleet of support agents each maintain individual memories classified as "internal" while promoting confirmed resolution patterns to a shared context pool, ensuring institutional knowledge survives individual agent session boundaries.
+
+**Regulated Industry:** A banking compliance agent's memory entries carry classification levels (confidential for client data, public for regulatory guidance), with destruction policies aligned to data-retention regulations that automatically archive entries after the mandated holding period.
+
 ## Related Specs
 
 | Spec | Relationship |

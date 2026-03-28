@@ -88,6 +88,14 @@ _See DELEGATION.md for how liability flows through the authority chain._
 | 1.0 | Initial ownership | [date] | [name] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A corporate procurement team reviews OWNER.md to verify that a code-review agent is owned by a registered LLC in a known jurisdiction with professional liability insurance, satisfying their vendor due-diligence requirements before signing an enterprise contract.
+
+**Multi-Agent Fleet:** A platform operator uses OWNER.md across the fleet to maintain a complete registry of which legal entities own which agents, enabling quick identification of responsible parties when an agent produces incorrect output or exceeds its authorized scope.
+
+**Marketplace:** A marketplace buyer evaluating two competing translation agents checks OWNER.md to understand IP ownership of outputs (user-owned vs shared), transfer eligibility, and which entity holds revenue liability before selecting one for a high-volume localization contract.
+
 ## Related Specs
 
 | Spec | Relationship |

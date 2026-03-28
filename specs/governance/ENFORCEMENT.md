@@ -329,6 +329,14 @@ Exceptions are:
 - Reviewed at each compliance attestation
 ```
 
+## Example Use Cases
+
+**Enterprise:** A CI/CD pipeline runs the agent-md-validator against every agent configuration before deployment, blocking any release where required specs like PERMISSIONS.md or LIMITS.md fail validation checks.
+
+**Multi-Agent Fleet:** A fleet management platform performs drift detection every six hours across 200 agents, automatically revoking excess privileges from any agent whose runtime behavior diverges from its declared PERMISSIONS.md and generating a weekly compliance attestation report for the security team.
+
+**Regulated Industry:** A HIPAA-compliant healthcare platform generates tamper-evident compliance attestation reports with cryptographic signatures, anchoring audit hashes to an external ledger so regulators can independently verify that patient data access patterns match declared policies.
+
 ### Cross-References
 - **AUDITTRAIL.md** — The audit data that enforcement verifies
 - **ATTESTATION.md** — Credentials used to sign compliance reports

@@ -97,6 +97,14 @@ _See ATTESTATION.md for identity verification and credential lifecycle._
 | Execute | restricted | pre-approved scripts only |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A code-generation agent's SECURITY.md restricts file system access to the designated workspace directory, whitelists only three approved external API domains, and mandates that any prompt injection attempt triggers an immediate Level 2 escalation with full logging.
+
+**Multi-Agent Fleet:** A DevOps platform configures SECURITY.md for each CI/CD agent to enforce least-privilege access: build agents can read source but not secrets, deployment agents can access secrets but not modify source, and all credential handling flows through the vault exclusively.
+
+**Regulated Industry:** A banking platform's transaction-monitoring agent follows SECURITY.md rules that prohibit outputting account numbers even partially, restrict network calls to the core banking API and fraud-detection service, and require immediate incident response procedures if anomalous data exfiltration patterns are detected.
+
 ## Related Specs
 
 | Spec | Relationship |

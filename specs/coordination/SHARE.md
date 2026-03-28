@@ -103,6 +103,14 @@ Access automatically revoked when:
 _See CONSENT.md for user-initiated consent withdrawal._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm's project workspace uses SHARE.md to grant client stakeholders viewer-level access to deliverables while restricting editing rights to internal agents and human consultants, with automatic access revocation when the engagement ends.
+
+**Multi-Agent Fleet:** A platform operator configures SHARE.md to allow approved write-access agents to update shared documentation while preventing any agent from sharing resources externally, ensuring all external sharing flows through human-controlled link settings.
+
+**Regulated Industry:** A law firm uses SHARE.md to enforce strict access controls on case files, granting AI research agents read-only access to specific document sets with password-protected links that expire after 48 hours and require sign-in to view.
+
 ## Related Specs
 
 | Spec | Relationship |

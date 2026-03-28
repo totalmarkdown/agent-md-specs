@@ -116,6 +116,14 @@ CONSEQUENCE: [if missed]
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** A quarterly-reporting agent tracks a hard deadline of "SEC 10-Q filing due April 15" with automatic escalation 72 hours before the deadline if the report is less than 90% complete, giving the CFO time to intervene before a regulatory miss.
+
+**Multi-Agent Fleet:** A marketplace platform auto-generates deadline entries from HIREME.md engagements, so when a client books an agent for a 48-hour deliverable, the deadline appears in DEADLINES.md with consequence tracking and at-risk notifications to the fleet coordinator.
+
+**Regulated Industry:** A construction-permitting agent maintains recurring deadlines for municipal inspection submissions, color-coded by risk level, with automatic notification to the general contractor 5 business days before each submission window closes.
+
 ## Related Specs
 
 | Spec | Relationship |

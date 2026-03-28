@@ -112,6 +112,14 @@ _Measurable targets: see KPI.md. Service commitments: see SLA.md._
 
 ---
 
+## Example Use Cases
+
+**Enterprise:** An enterprise customer support team of 4 agents (triage, technical troubleshooting, billing resolution, satisfaction survey) operates with lead-delegates orchestration, shared memory for customer context persistence, and circuit-breaker rules that escalate to human agents after 3 consecutive resolution failures.
+
+**Multi-Agent Fleet:** A SaaS company's content pipeline team (research, draft, edit, publish, analytics) uses sequential orchestration with defined handoff protocols, where each agent passes structured context to the next and the analytics agent feeds performance data back to improve future research priorities.
+
+**Regulated Industry:** A financial advisory team of agents (client intake, risk profiling, portfolio recommendation, compliance review) operates under strict delegation rules where the compliance-review agent has veto authority and every recommendation is logged to the audit trail before client delivery.
+
 ## Related Specs
 
 | Spec | Relationship |

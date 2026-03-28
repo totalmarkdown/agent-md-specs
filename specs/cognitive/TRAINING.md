@@ -90,6 +90,14 @@ See LEARNING.md for the agent's forward-looking learning agenda.
 | [Term] | [Definition] | [Usage note] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** An e-commerce product-description agent loads TRAINING.md with 15 curated input/output examples in the brand's voice before each batch run, ensuring consistent tone and format across thousands of SKU descriptions.
+
+**Multi-Agent Fleet:** A platform operator maintains domain-specific TRAINING.md files for each vertical (healthcare, legal, finance) and loads the appropriate one when spinning up a general-purpose agent for a specialized task, achieving domain quality without maintaining separate models.
+
+**Regulated Industry:** A regulatory filing agent's TRAINING.md includes counter-examples of common SEC formatting errors and explains why each is wrong, reducing submission rejection rates by teaching the agent to recognize and avoid known compliance pitfalls.
+
 ## Related Specs
 
 | Spec | Relationship |

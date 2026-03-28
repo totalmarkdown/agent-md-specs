@@ -78,6 +78,14 @@ See CONSENT.md for user notification requirements during a breach.
 **DPO:** [contact]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer-analytics agent maintains a complete PII inventory documenting that it processes email addresses (medium sensitivity, 90-day retention) and behavioral data (low sensitivity, anonymized after 30 days), enabling the DPO to respond to data-subject access requests within the 30-day SLA.
+
+**Multi-Agent Fleet:** A fleet operator uses PII.md across all agents to generate a unified data map showing which agents handle which PII categories, automatically detecting when a new agent begins processing a data type not covered by existing consent records.
+
+**Regulated Industry:** A healthcare platform's billing agent uses PII.md to document its handling of patient financial information with HIPAA-compliant encryption standards and breach notification procedures, including the 72-hour DPA notification requirement for any data exposure.
+
 ## Related Specs
 
 | Spec | Relationship |

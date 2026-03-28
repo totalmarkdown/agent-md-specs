@@ -208,6 +208,14 @@ _See PROVENANCE.md for tracking the origin and trust level of input data._
 - Use: `tmd count-tokens --text "[your input]"`
 ```
 
+## Example Use Cases
+
+**Enterprise:** A document processing company uses INPUT.md to specify that its extraction agent accepts PDF, DOCX, and scanned images up to 50MB, with strict validation that rejects files missing required metadata fields and returns clear error messages explaining the fix.
+
+**Multi-Agent Fleet:** An orchestrator agent reads INPUT.md from each worker agent before delegating tasks, programmatically matching the task's data format to agents that accept it and routing structured JSON to one agent while sending freeform text to another.
+
+**Regulated Industry:** A legal discovery platform uses INPUT.md to enforce UTF-8 encoding, 8000-token maximum per document, and mandatory task_id metadata on every input to its review agent, ensuring complete audit trail traceability for court proceedings.
+
 ## Related Specs
 
 | Spec | Relationship |

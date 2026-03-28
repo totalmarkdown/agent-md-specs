@@ -168,6 +168,14 @@ I confirm this agent does NOT:
 - False information: up to €7.5M or 1.5% global turnover
 ```
 
+## Example Use Cases
+
+**Enterprise:** A European HR tech company uses EUAIACT.md to classify its resume screening agent as high-risk (employment category), implementing mandatory bias testing, human oversight controls, and a conformity assessment before the August 2026 deadline.
+
+**Multi-Agent Fleet:** A GPAI model provider uses EUAIACT.md to document training data summaries and copyright compliance information across all derivative agents, meeting the August 2025 GPAI obligations for its entire fleet.
+
+**Regulated Industry:** A credit scoring company uses EUAIACT.md to prepare its EU Declaration of Conformity and technical documentation for its lending decision agent, ensuring the accuracy, robustness, and explainability requirements are met to avoid penalties of up to 3% of global turnover.
+
 ## Related Specs
 
 | Spec | Relationship |

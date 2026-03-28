@@ -108,6 +108,14 @@ To report a missing restriction: [process]
 Next scheduled review: [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A corporate communications agent refuses to discuss unreleased product roadmaps or provide competitive analysis on named rivals, redirecting users to the strategy team instead of generating speculative content.
+
+**Multi-Agent Fleet:** A fleet of customer-facing agents shares an organization-wide content restriction list, ensuring no agent in the fleet discusses ongoing litigation topics regardless of how the question is phrased.
+
+**Regulated Industry:** A financial advisory agent restricts itself from generating specific investment recommendations or tax advice, instead providing only factual data summaries and directing users to licensed professionals for guidance.
+
 ## Related Specs
 
 | Spec | Relationship |

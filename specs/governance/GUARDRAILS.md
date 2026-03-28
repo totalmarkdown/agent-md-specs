@@ -219,6 +219,14 @@ To adjust sensitivity:
 - Propose changes via: [PR to this file, reviewed by human]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer support agent detects that its confidence score has dropped below 60% on a billing dispute question, automatically flags the uncertainty in its response and offers to connect the customer with a human specialist before providing potentially incorrect information.
+
+**Multi-Agent Fleet:** A content generation agent in a marketing fleet detects scope creep when it begins drafting social media copy for a product line outside its assigned brand, stops itself mid-task, and returns focus to the original brief without executing the out-of-scope work.
+
+**Regulated Industry:** A clinical trial data analysis agent triggers the prompt injection guardrail when an uploaded document contains embedded instructions attempting to bypass data access restrictions, logging the attempt and continuing with the original analysis task unaffected.
+
 ## Related Specs
 
 | Spec | Relationship |

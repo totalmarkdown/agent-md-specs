@@ -105,6 +105,14 @@ Senior management responsibilities:
 - Personal liability for management: possible
 ```
 
+## Example Use Cases
+
+**Enterprise:** A European energy utility uses NIS2.md to classify its grid management agents as essential entity systems, implementing the required 24-hour early warning and 72-hour incident notification timelines when agent-related service disruptions occur.
+
+**Multi-Agent Fleet:** A digital infrastructure provider uses NIS2.md to enforce supply chain security across its agent fleet, maintaining a Software Bill of Materials (SBOM) for every agent and assessing third-party cybersecurity practices for all MCP server dependencies.
+
+**Regulated Industry:** A hospital network classified as an essential entity uses NIS2.md to ensure senior management personally approves cybersecurity measures for its clinical AI agents, documenting management training attendance and accountability structures to avoid personal liability under Article 21.
+
 ## Related Specs
 
 | Spec | Relationship |

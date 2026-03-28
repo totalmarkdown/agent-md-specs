@@ -348,6 +348,14 @@ injection_log_entry:
 | Repeat attackers | Weekly | Same source [N]+ attempts |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer-facing chatbot company uses PROMPTSHIELD.md to implement multi-layer injection defense, catching an indirect injection attack where a malicious product listing on a scraped e-commerce site contained hidden instructions to exfiltrate the system prompt.
+
+**Multi-Agent Fleet:** A fleet security team uses PROMPTSHIELD.md to standardize containment playbooks across all agents, so when one agent detects a novel injection pattern, the detection rule propagates fleet-wide and all agents quarantine matching inputs within minutes.
+
+**Regulated Industry:** A banking compliance team uses PROMPTSHIELD.md's red team schedule to run quarterly adversarial testing against their loan origination agent, documenting pass rates and false positive rates as evidence for OCC examiners evaluating AI operational risk controls.
+
 ### Cross-References
 - **GUARDRAILS.md** — Runtime safety rails that PROMPTSHIELD.md reinforces against adversarial bypass
 - **LIMITS.md** — Hard boundaries that injection cannot override

@@ -97,6 +97,14 @@ For code updates:
 4. Deploy to production with [N] minute monitoring window
 ```
 
+## Example Use Cases
+
+**Enterprise:** A logistics company uses DEPLOYMENT.md to define blue-green deployment steps for its route-optimization agent, including automatic rollback if the error rate exceeds 2% within 15 minutes of a new version going live.
+
+**Multi-Agent Fleet:** A SaaS platform deploys agent updates in canary waves -- 5% of fleet first, then 25%, then 100% -- with each stage gated by EVAL.md pass rates and HEALTHCHECK.md verification documented in the deployment guide.
+
+**Regulated Industry:** An insurance company's claims-processing agent deployment requires pre-deployment compliance checks against state regulatory requirements, with staging environment validation and sign-off before any production push.
+
 ## Related Specs
 
 | Spec | Relationship |

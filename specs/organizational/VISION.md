@@ -102,6 +102,14 @@ This one was last revised: [date] because [reason].
 *— [Entity name], [year]*
 ```
 
+## Example Use Cases
+
+**Enterprise:** A logistics company's VISION.md declares "A world where no package is ever lost or delayed," giving its 30 route-optimization and tracking agents a shared aspirational anchor that informs daily tradeoffs between cost and delivery reliability.
+
+**Multi-Agent Fleet:** A developer-tools fleet publishes its vision -- "Every developer ships production-quality code on their first day" -- and uses the vision alignment check to evaluate whether proposed new agent capabilities serve that future state or are tangential.
+
+**Regulated Industry:** A renewable energy company's grid-management agent fleet operates under the vision "A power grid that is 100% renewable and 100% reliable," with leading indicators in NORTHSTAR.md tracking the percentage of renewable energy dispatched without outages.
+
 ## Related Specs
 
 | Spec | Relationship |

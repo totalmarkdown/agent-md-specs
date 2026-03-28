@@ -126,6 +126,14 @@ Available as a standalone crew bundle:
 - **Works with:** Any compatible swarm or standalone
 ```
 
+## Example Use Cases
+
+**Enterprise:** A financial services firm assembles a 5-agent due-diligence crew (data extraction, financial analysis, risk assessment, regulatory check, report generation) that processes acquisition targets with defined input/output contracts and a 4-hour SLA from brief to final report.
+
+**Multi-Agent Fleet:** A DevOps platform organizes agents into specialized crews (monitoring, incident response, post-mortem analysis) within a larger operations swarm, where each crew has its own lead agent, quality metrics, and failure-handling procedures independent of other crews.
+
+**Regulated Industry:** A clinical trials data crew of 7 agents handles patient data extraction, statistical analysis, and adverse-event detection, with the crew lead enforcing quality control checkpoints that satisfy FDA 21 CFR Part 11 requirements before any output leaves the crew.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -176,6 +176,14 @@ Configure your monitoring system to:
 _See MONITOR.md for ongoing observability beyond point-in-time checks._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A retail company's inventory-management agent exposes /health and /ready endpoints behind a Kubernetes load balancer, which automatically stops routing traffic to unhealthy instances during peak Black Friday traffic.
+
+**Multi-Agent Fleet:** An orchestrator polls HEALTHCHECK.md endpoints for all 80 agents in a data-pipeline fleet every 30 seconds, displaying a real-time fleet health dashboard and automatically rerouting tasks away from agents with failing readiness checks.
+
+**Regulated Industry:** A telehealth platform's appointment-scheduling agent runs extended health checks that verify HIPAA-compliant encryption is active on all database connections before reporting readiness, preventing unencrypted patient data handling.
+
 ## Related Specs
 
 | Spec | Relationship |

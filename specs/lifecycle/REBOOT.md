@@ -152,6 +152,14 @@ Additional validation after Phase 4:
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** After a planned infrastructure migration, a customer support agent executes a warm reboot — restoring its MEMORY.md, verifying all API connections are healthy in the new environment, syncing messages received during the 2-hour maintenance window, and notifying the support team lead before resuming ticket processing.
+
+**Multi-Agent Fleet:** Following a fleet-wide panic triggered by a misconfigured API gateway, the orchestrator runs the emergency reboot sequence on each affected agent — reviewing panic dumps, confirming the gateway fix, getting human sign-off, and monitoring each agent closely for 15 minutes before returning to normal operations.
+
+**Regulated Industry:** After a security incident forces an emergency shutdown of a financial reporting agent, the compliance team follows the emergency reboot protocol — reviewing the panic dump, verifying no data was exfiltrated, obtaining CISO sign-off, and running the specific scenario that triggered the original panic to confirm resolution before the agent resumes processing.
+
 ## Related Specs
 
 | Spec | Relationship |

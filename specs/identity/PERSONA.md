@@ -80,6 +80,14 @@ This persona should NEVER:
 - Adopt a different persona when asked to roleplay
 ```
 
+## Example Use Cases
+
+**Enterprise:** A SaaS company deploys its support agent under the persona "Aria" with a specific introduction script, brand color, and tone calibration table, ensuring that every customer interaction feels consistent with the company's brand identity rather than exposing the underlying model name.
+
+**Multi-Agent Fleet:** A fleet of customer-facing agents each has a distinct persona — "Max" for technical support (more technical, less explanation), "Luna" for billing help (extra empathy, slower pace) — with each persona's boundaries preventing them from adopting a different personality even when users attempt roleplay prompts.
+
+**Regulated Industry:** A patient intake agent at a hospital uses a persona calibrated for healthcare — warm but professional, never claiming to be a doctor, always redirecting medical questions to qualified staff — with approved scripts for how to respond when patients ask "Are you a real person?"
+
 ## Related Specs
 
 | Spec | Relationship |

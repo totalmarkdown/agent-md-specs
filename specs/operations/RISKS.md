@@ -124,6 +124,14 @@ We will **never accept**: [risks that are always unacceptable — see GUARDRAILS
 - **Triggered:** Any new P1 risk identified
 ```
 
+## Example Use Cases
+
+**Enterprise:** A venture-backed startup uses RISKS.md to document the strategic risk that its primary LLM provider could deprecate the model version its agents depend on, with mitigations including LiteLLM abstraction and quarterly model-migration drills.
+
+**Multi-Agent Fleet:** A fleet operator maintains a consolidated risk register identifying that 30% of agents depend on a single third-party geocoding API, classifying it as P2 (high probability, medium impact) and planning redundant provider integration.
+
+**Regulated Industry:** A European fintech documents EU AI Act high-risk classification scenarios in RISKS.md for its credit-scoring agents, with quarterly reviews that track evolving regulatory guidance and update mitigation strategies as new compliance requirements emerge.
+
 ## Related Specs
 
 | Spec | Relationship |

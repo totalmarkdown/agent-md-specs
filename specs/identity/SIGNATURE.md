@@ -70,6 +70,14 @@ Task [ID]. Agent [short-ID].
 - Drafts marked in-progress
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal document drafting agent appends its formal signature — including full UUID, version, timestamp, and confidence score — to every contract summary it generates, so the legal team can trace any deliverable back to the exact agent version and task that produced it.
+
+**Multi-Agent Fleet:** When agents in a pipeline pass outputs to each other, each agent appends its minimal signature so the final output carries a chain of attribution showing which agent contributed to each section, enabling the orchestrator to identify the source of any quality issues.
+
+**Regulated Industry:** An audit report agent uses the formal signature format on all deliverables submitted to regulators, including a cryptographic task ID that links the output to its AUDITTRAIL.md entry, providing tamper-evident proof of when and by whom the report was generated.
+
 ## Related Specs
 
 | Spec | Relationship |

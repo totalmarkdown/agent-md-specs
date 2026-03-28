@@ -90,6 +90,14 @@ Next scheduled review: [date]
 To propose a limit change: [process — always requires human approval via ESCALATION.md Level 3]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An HR onboarding agent is absolutely prohibited from accessing employee salary data or modifying payroll records, and these limits cannot be overridden even by the CHRO who deployed the agent, ensuring separation of duties is maintained by design.
+
+**Multi-Agent Fleet:** Every agent in the fleet shares an org-level LIMITS.md that unconditionally prohibits data exfiltration to external endpoints, so even if a sub-agent receives a crafted instruction to send data to an unauthorized URL, the limit blocks the action and triggers an immediate escalation.
+
+**Regulated Industry:** A clinical research agent is hard-limited from ever deleting patient records or sharing identifiable health information without explicit IRB-approved authorization, with these limits reviewed quarterly by the compliance officer and immune to override by any orchestrating system.
+
 ## Related Specs
 
 | Spec | Relationship |

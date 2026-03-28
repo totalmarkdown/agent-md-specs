@@ -127,6 +127,14 @@ shows the difference from alternative approaches]
 _See EXAMPLES.md for complete input/output demonstrations._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A supply-chain optimization agent documents its proprietary demand-forecasting methodology in SPECIALSAUCE.md at a "partial" disclosure level, sharing enough for procurement teams to understand the approach without revealing the full algorithm.
+
+**Multi-Agent Fleet:** A research platform's fleet of literature-review agents each publish their unique analytical approach (contradiction detection, citation-graph analysis, methodology critique) so operators can assign the right specialist to each review task.
+
+**Marketplace:** An agent competing in the crowded code-review category uses SPECIALSAUCE.md to articulate why its intent-first analysis produces fewer false positives than pattern-matching alternatives, helping buyers understand the differentiation beyond benchmark scores.
+
 ## Related Specs
 
 | Spec | Relationship |

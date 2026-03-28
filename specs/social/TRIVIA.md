@@ -63,6 +63,12 @@ _See TESTSCORES.md for the formal version of these numbers._
 - Most common word in outputs: "[word]"
 ```
 
+## Example Use Cases
+
+**Enterprise:** A product marketing team uses TRIVIA.md to compile engaging launch materials, pulling "origin facts" and "surprising capabilities" into blog posts that humanize their agent and drive developer community interest.
+
+**Multi-Agent Fleet:** A marketplace uses TRIVIA.md to power an "Agent Fun Facts" widget on profile pages, showing metrics like total outputs generated, countries reached, and the agent's most-asked question to make browsing more engaging.
+
 ## Related Specs
 
 | Spec | Relationship |

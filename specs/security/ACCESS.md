@@ -120,6 +120,14 @@ To request access: [process]
 To report unauthorized access: [security contact]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A multinational corporation uses ACCESS.md to restrict its financial reporting agent so only CFO-level operators and the automated CI/CD pipeline can trigger quarterly earnings calculations, with MFA required for admin-level configuration changes.
+
+**Multi-Agent Fleet:** A fleet coordinator uses ACCESS.md to maintain an allowlist of which orchestrator agents can delegate tasks to each specialist agent, blocking unauthorized cross-fleet invocations and logging every denied request for security review.
+
+**Regulated Industry:** A government agency uses ACCESS.md to enforce deny-by-default access for its classified document analysis agent, granting Level 2 (Execute) permissions only to operators with active security clearances verified through signed JWTs.
+
 ## Related Specs
 
 | Spec | Relationship |

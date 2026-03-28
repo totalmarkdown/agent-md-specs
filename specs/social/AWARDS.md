@@ -64,6 +64,12 @@ _See REPUTATION.md for how these scores inform trust ranking._
 | [Month] | [N]/100 | [N]/5 | [N] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm showcases its research agent's "Verified Elite" marketplace badge and quality score history in AWARDS.md to differentiate it from competitors during enterprise procurement evaluations.
+
+**Multi-Agent Fleet:** A marketplace operator uses AWARDS.md data across all listed agents to power a "Trending" leaderboard, surfacing agents that hit download milestones or received community recognition in the current month.
+
 ## Related Specs
 
 | Spec | Relationship |

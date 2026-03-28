@@ -130,6 +130,14 @@ Each wakeup logged to LOGS.md with:
 - State loaded from (MEMORY.md version/timestamp)
 ```
 
+## Example Use Cases
+
+**Enterprise:** A project management agent wakes up for a Monday morning session, loads its MEMORY.md to recall last week's context, checks DEADLINES.md to find a deliverable due today, scans CHANNELS.md for weekend messages, and announces "Online. Sprint review deliverable due today. 3 tasks in queue. Ready." — all within 15 seconds.
+
+**Multi-Agent Fleet:** An orchestrator triggers wakeup on 20 fleet agents simultaneously for a batch processing job, with each agent running through the full sequence in parallel — verifying identity, loading permissions, checking tool availability, and applying least-privilege constraints — before accepting its assigned partition of the workload.
+
+**Regulated Industry:** A compliance monitoring agent wakes up after an 18-hour offline period, triggering the extended wakeup sequence that checks for model updates, reviews CHANGELOG.md for any config changes made during downtime, and reads urgent regulatory alerts before entering active mode — ensuring it operates with current rules before processing any filings.
+
 ## Related Specs
 
 | Spec | Relationship |

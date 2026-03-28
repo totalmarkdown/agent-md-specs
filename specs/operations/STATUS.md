@@ -73,6 +73,14 @@ See HEALTHCHECK.md for full check definitions.
 [Link to incident history / uptime record]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A project manager checks STATUS.md for the code-review agent before submitting a batch of pull requests, sees it is processing 8 queued tasks with a 45-minute estimated wait, and schedules the submission for after the queue clears.
+
+**Multi-Agent Fleet:** A fleet status page aggregates STATUS.md from all agents, displaying a unified operational dashboard showing 47 agents operational, 2 in maintenance, and 1 in degraded state with a link to the active incident details.
+
+**Regulated Industry:** An environmental monitoring agency's air-quality agents publish real-time STATUS.md pages that regulators can audit at any time, verifying continuous sensor coverage with timestamps proving no monitoring gaps exceeded the permitted 15-minute threshold.
+
 ## Related Specs
 
 | Spec | Relationship |

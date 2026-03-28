@@ -106,6 +106,14 @@ _See DELEGATION.md for the full authority chain and authorization model._
 - Log all task assignments with: agent ID, task type, timestamp
 ```
 
+## Example Use Cases
+
+**Enterprise:** A supply chain company configures A2A.md so its demand forecasting agent publishes an Agent Card at a well-known URL, allowing procurement agents from partner companies to discover its capabilities and delegate forecasting tasks via the A2A protocol.
+
+**Multi-Agent Fleet:** An orchestrator agent uses A2A.md's task acceptance rules to route incoming analysis requests to the most appropriate specialist agent based on Agent Card capabilities, verifying each worker's identity before delegation and respecting budget limits per task.
+
+**Regulated Industry:** A financial services firm uses A2A.md's trust model to ensure its trade execution agent only accepts tasks from orchestrators with signed JWTs, rejecting any delegation from unverified sources and logging every task assignment for regulatory audit trails.
+
 ## Related Specs
 
 | Spec | Relationship |

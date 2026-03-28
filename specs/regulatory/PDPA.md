@@ -108,6 +108,14 @@ Log all breach events per AUDITTRAIL.md.
 - Enhanced financial penalties (2021): up to 10% of annual turnover
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Singapore-based fintech uses PDPA.md (Singapore) to configure its marketing agent to check the Do Not Call registry within 30 days before sending any promotional SMS, avoiding penalties of up to 10% of annual turnover.
+
+**Multi-Agent Fleet:** A Southeast Asian e-commerce platform uses PDPA.md to apply Thailand PDPA rules to agents serving Thai customers and Singapore PDPA rules to agents serving Singaporean customers, with breach notification timelines set to 72 hours and 3 days respectively.
+
+**Regulated Industry:** A Thai hospital group uses PDPA.md (Thailand) to require explicit consent before its patient intake agent collects health data classified as sensitive personal data, with a designated DPO contact accessible to all data subjects within 30 days of any access request.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -278,6 +278,14 @@ When attestation fails, the agent MUST:
 5. Do NOT retry with weaker credentials or bypass verification
 ```
 
+## Example Use Cases
+
+**Enterprise:** A large tech company uses ATTESTATION.md with SPIFFE/SPIRE to provide zero-downtime credential rotation for its 150 production agents, with SVIDs rotating every hour and hardware-bound keys in AWS CloudHSM preventing credential theft.
+
+**Multi-Agent Fleet:** A marketplace platform requires every listed agent to have a valid ATTESTATION.md with organizational binding, creating a verifiable certificate chain from the agent back to a known legal entity before the agent can serve any customer.
+
+**Regulated Industry:** A defense contractor uses ATTESTATION.md with TPM 2.0 hardware binding and NIST SP 800-207 zero-trust alignment for its intelligence analysis agents, ensuring credentials cannot be extracted from compromised hosts and every agent-to-agent interaction is mutually authenticated.
+
 ### Cross-References
 - **WHOAMI.md** — Identity declaration that ATTESTATION.md verifies
 - **ID.md** — Machine-readable identifier bound to attestation credentials

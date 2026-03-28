@@ -72,6 +72,14 @@ updated: date
 _See AUDITTRAIL.md for compliance-grade logging and ESCALATION.md for alert routing._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A fintech company configures Grafana dashboards for its transaction-processing agents, with P1 alerts firing to PagerDuty when error rates exceed 5% in any 5-minute window or token spend exceeds 80% of the monthly budget.
+
+**Multi-Agent Fleet:** A platform team builds a unified monitoring dashboard across 100+ agents using standardized MONITOR.md metrics, enabling fleet-wide anomaly detection that catches a gradual latency increase across the data-ingestion team before it impacts SLAs.
+
+**Regulated Industry:** An aerospace manufacturer's quality-inspection agents emit metrics to a compliance-certified monitoring stack, with tamper-proof retention for 15 years to satisfy FAA airworthiness documentation requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

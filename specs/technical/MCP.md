@@ -100,6 +100,14 @@ To prevent context window pollution from tool schemas:
 - Defer loading of [list of verbose servers] until explicitly needed
 ```
 
+## Example Use Cases
+
+**Enterprise:** A data engineering team uses MCP.md to document their ETL agent's connections to 8 MCP servers (GitHub, Slack, PostgreSQL, BigQuery, S3, Jira, PagerDuty, Confluence), with tool selection guidelines that prefer read-only operations and per-server rate limits.
+
+**Multi-Agent Fleet:** A fleet security team audits MCP.md files across all agents to verify no agent connects to unauthorized MCP servers, enforcing a centralized allowlist and catching a rogue debugging server that was left connected in production.
+
+**Regulated Industry:** A government contractor uses MCP.md to restrict its document processing agent to only three approved MCP servers (internal file server, classification service, redaction tool), with lazy loading to prevent classified tool schemas from polluting the context window.
+
 ## Related Specs
 
 | Spec | Relationship |

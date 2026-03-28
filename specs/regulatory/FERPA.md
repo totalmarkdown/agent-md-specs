@@ -98,6 +98,14 @@ Loss of federal funding for institution
 institution bears liability for vendor violations)
 ```
 
+## Example Use Cases
+
+**Enterprise:** A university deploys an AI advising agent and uses FERPA.md to ensure it only accesses student transcripts and financial aid records when acting as a "school official" under a written agreement, with data returned or destroyed when the contract ends.
+
+**Multi-Agent Fleet:** A K-12 school district's fleet of tutoring agents uses FERPA.md to enforce disclosure rules so that no agent shares a student's education records with a third party without parental consent, even when agents collaborate on cross-subject assessments.
+
+**Regulated Industry:** An edtech vendor uses FERPA.md to configure its adaptive learning agent to separate directory information from protected education records, honoring student opt-outs and logging all access for Department of Education audit compliance.
+
 ## Related Specs
 
 | Spec | Relationship |

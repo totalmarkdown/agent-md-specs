@@ -96,6 +96,14 @@ NIST identifies these characteristics of trustworthy AI:
 | Valid/Tested | [approach] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A US federal contractor uses NISTAIRF.md to structure its AI risk management program at Tier 3 (Repeatable), documenting all four functions (GOVERN, MAP, MEASURE, MANAGE) for its document analysis agents to satisfy government procurement requirements.
+
+**Multi-Agent Fleet:** A platform company uses NISTAIRF.md's trustworthy AI characteristics to create a standardized scorecard for all agents in its fleet, ensuring each agent demonstrates accountability, fairness, and transparency before being approved for production.
+
+**Regulated Industry:** A US banking institution uses NISTAIRF.md to complement its existing risk management framework, documenting bias testing results and risk treatment plans for its lending decision agent to satisfy OCC and Federal Reserve AI governance expectations.
+
 ## Related Specs
 
 | Spec | Relationship |

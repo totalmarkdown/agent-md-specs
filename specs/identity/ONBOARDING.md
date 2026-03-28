@@ -81,6 +81,14 @@ Key terms for quick reference:
 - **[Term]:** [Brief definition]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A new agent joining a 6-month-old data platform project reads the onboarding guide to learn which architectural decisions are final (database choice, API format), what's currently broken (known issues with pagination), and who to ask about the deployment pipeline, avoiding weeks of context-building.
+
+**Multi-Agent Fleet:** When a replacement agent is swapped into a fleet to take over from a decommissioned agent, the onboarding guide provides the file map, current project phase, and first-week priorities so the new agent can become productive within its first session without disrupting ongoing workflows.
+
+**Regulated Industry:** A newly provisioned audit agent onboards to a GxP-validated pharmaceutical project by reading the key decisions table (validated system boundaries, data retention requirements) and the common mistakes section (never modify validated records directly), ensuring compliance from its very first task.
+
 ## Related Specs
 
 | Spec | Relationship |

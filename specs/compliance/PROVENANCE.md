@@ -290,6 +290,14 @@ detection, see PROMPTSHIELD.md.
 6. Post-incident review within [24 hours]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A financial research agent tracks the trust level of every data source (Bloomberg API as "verified," web-scraped earnings estimates as "untrusted") and automatically downgrades output confidence when any untrusted source contributes to an investment recommendation.
+
+**Multi-Agent Fleet:** A content-generation pipeline of five agents uses PROVENANCE.md to trace a published article back through each transformation step (research, drafting, fact-checking, editing, formatting), enabling editors to pinpoint exactly where an inaccuracy was introduced.
+
+**Regulated Industry:** A pharmaceutical company's drug-interaction analysis agent maintains forensic-level provenance records so that FDA auditors can trace any safety recommendation back to its source clinical trial data, transformation logic, and the trust level assigned to each input.
+
 ### Cross-References
 - **INPUT.md** — Input format specifications complemented by provenance tracking
 - **OUTPUT.md** — Output format specifications that include provenance statements

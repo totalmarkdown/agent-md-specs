@@ -65,6 +65,14 @@ Log all authentication events (see AUDITTRAIL.md):
 - Credential rotation: timestamp, system, who rotated
 ```
 
+## Example Use Cases
+
+**Enterprise:** A DevOps agent authenticates to AWS, GitHub, and Jira using separate OAuth credentials stored in a secrets vault, with each credential rotated on a 90-day schedule and tested against the target system before the old credential is invalidated.
+
+**Multi-Agent Fleet:** Each agent in a 100-agent fleet presents its unique certificate when communicating with peer agents via MCP, and the receiving agent verifies the certificate against the fleet's identity provider before accepting any delegated task.
+
+**Regulated Industry:** A SOX-compliant financial reporting agent logs every authentication event to an immutable audit trail, including failed login attempts from unrecognized orchestrators, enabling auditors to verify that only authorized systems accessed the reporting pipeline.
+
 ## Related Specs
 
 | Spec | Relationship |

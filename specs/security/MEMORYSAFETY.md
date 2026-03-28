@@ -166,6 +166,14 @@ Entries tagged with classification levels from SHAREDCONTEXT.md schema. Agents r
 Attestation required for access above "internal." All access to confidential+ entries logged to AUDITTRAIL.md. Violations denied and alerted.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm uses MEMORYSAFETY.md canary entries in its research agent's shared context pool, detecting when a compromised data source injects false market data that contradicts known-true benchmark values before the bad data influences client reports.
+
+**Multi-Agent Fleet:** A 200-agent fleet uses MEMORYSAFETY.md's write gateway and source reputation weighting to prevent a single newly provisioned agent (weight 0.5) from overwriting established facts in the shared context pool, requiring consensus from verified agents before high-confidence entries are modified.
+
+**Regulated Industry:** A pharmaceutical company uses MEMORYSAFETY.md's classification enforcement to ensure agents processing restricted clinical trial data cannot write entries below their clearance level, preventing accidental declassification of patient outcomes data across the shared memory pool.
+
 ### Cross-References
 - **SHAREDCONTEXT.md** — Shared memory pool structure and access rules that MEMORYSAFETY.md secures
 - **MEMORY.md** — Individual agent memory governance that MEMORYSAFETY.md protects from poisoning

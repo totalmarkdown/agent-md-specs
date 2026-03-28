@@ -103,6 +103,14 @@ When this agent misses its own heartbeat schedule:
 _See HEALTHCHECK.md for point-in-time liveness verification beyond the heartbeat signal._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A media company's video-transcoding agents emit heartbeats every 60 seconds to a central monitoring service, triggering an on-call alert if any agent misses 3 consecutive beats during overnight batch processing runs.
+
+**Multi-Agent Fleet:** A fleet coordinator aggregates heartbeat signals from 150 agents across 12 teams, using the embedded queue_depth and error_count fields to build a live fleet capacity heatmap and predict which agents are approaching overload.
+
+**Regulated Industry:** An energy utility's grid-monitoring agents send heartbeats that include current_task metadata, allowing regulators to verify continuous coverage of critical infrastructure monitoring with no gaps exceeding the configured alert threshold.
+
 ## Related Specs
 
 | Spec | Relationship |

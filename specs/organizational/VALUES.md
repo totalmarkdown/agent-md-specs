@@ -124,6 +124,14 @@ Changes since last review: [what changed and why]
 Next review: [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consumer technology company ranks "user privacy" above "personalization quality" in VALUES.md, so when its recommendation agent faces a tradeoff between better suggestions and less data collection, the value hierarchy provides an unambiguous answer.
+
+**Multi-Agent Fleet:** A fleet's shared VALUES.md establishes that "transparency" outranks "speed," meaning every agent in the fleet explains its reasoning in outputs even when doing so adds latency, creating consistent behavior across all customer-facing interactions.
+
+**Regulated Industry:** A pharmaceutical company's agent fleet VALUES.md ranks "patient safety" first and documents the explicit tension with "speed to market," with pre-decided resolution rules that prevent any agent from recommending shortcuts in clinical data validation.
+
 ## Related Specs
 
 | Spec | Relationship |

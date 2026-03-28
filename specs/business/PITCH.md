@@ -176,6 +176,14 @@ These terms are off-brand:
 - [Term to avoid]: Use [preferred alternative] instead
 ```
 
+## Example Use Cases
+
+**Enterprise:** A B2B data-analytics agent maintains pitch variants from a 6-word tagline to a 5-minute investor deck so its description stays consistent across the enterprise marketplace listing, partner portal, and conference demos.
+
+**Multi-Agent Fleet:** A platform operator uses PITCH.md for each agent in the fleet so that internal tooling dashboards, Slack bot introductions, and external API docs all describe each agent's purpose with identical messaging.
+
+**Marketplace:** An independent agent developer publishes PITCH.md with platform-specific versions (Product Hunt, GitHub, marketplace listing) to maximize discovery and ensure consistent positioning across every channel simultaneously.
+
 ## Related Specs
 
 | Spec | Relationship |

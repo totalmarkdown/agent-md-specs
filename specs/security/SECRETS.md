@@ -135,6 +135,14 @@ Security incident process: See ICE.md
 | [date] | [rotated/revoked/granted] | [secret] | [who] | [why] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A media company uses SECRETS.md to declare all API keys its content moderation agent requires — Anthropic, OpenAI, and a custom vision API — specifying that each is stored in Doppler with 90-day rotation, enabling automated rotation without downtime.
+
+**Multi-Agent Fleet:** A platform team uses SECRETS.md manifests across 80 agents to quickly identify every agent affected when a shared database credential is compromised, completing rotation and revocation of the old credential within the 1-hour breach response window.
+
+**Regulated Industry:** A healthcare technology company uses SECRETS.md to ensure its patient data agent's credentials are never hardcoded, with the breach response procedure requiring immediate revocation, 5-minute security notification, and incident documentation meeting HIPAA administrative safeguard requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

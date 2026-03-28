@@ -80,6 +80,14 @@ Format available: [PDF | ACORD form]
 Turnaround: [X business days]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An enterprise buyer requires proof of $5M professional liability coverage before allowing an AI agent to process financial reconciliation tasks; INSURANCE.md provides the coverage summary and certificate-of-insurance request process in a standard format.
+
+**Multi-Agent Fleet:** A platform operator uses INSURANCE.md across their fleet to verify that every agent handling customer data carries cyber liability insurance, flagging any uninsured agents before they are promoted to production.
+
+**Regulated Industry:** A legal technology company's contract-drafting agent publishes INSURANCE.md with errors-and-omissions coverage details, giving law firms confidence that financial recourse exists if the agent produces a materially flawed contract clause.
+
 ## Related Specs
 
 | Spec | Relationship |

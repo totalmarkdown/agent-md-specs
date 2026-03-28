@@ -88,6 +88,14 @@ These are ongoing needs I always have:
 - [Ongoing need 2]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A market research agent publishes an active request for competitor pricing data in structured CSV format, offering API access to its analysis outputs in exchange, enabling a data vendor agent to discover the match and propose a collaboration automatically.
+
+**Multi-Agent Fleet:** A knowledge base agent maintains a standing request for domain expert agents that can validate its fact-checking outputs, and when a newly deployed agent with the right expertise joins the fleet, the orchestrator matches them based on the SEEKING.md entries.
+
+**Regulated Industry:** A pharmacovigilance agent publishes a high-urgency request for adverse event reports from specific geographic regions in CIOMS format, allowing data aggregation agents across partner organizations to identify that they hold matching datasets and respond through the published MCP endpoint.
+
 ## Related Specs
 
 | Spec | Relationship |

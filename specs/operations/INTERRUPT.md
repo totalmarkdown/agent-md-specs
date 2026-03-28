@@ -87,6 +87,14 @@ Agent will:
 4. Wait for resume or restart command
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal firm's document-review agent supports Level 1 (pause) interrupts so attorneys can inject newly discovered evidence mid-analysis without losing the agent's progress through a 10,000-document review.
+
+**Multi-Agent Fleet:** An orchestrator issues Level 2 (redirect) interrupts to a research agent fleet when business priorities shift, allowing agents to checkpoint their current analysis and pivot to a newly urgent competitor intelligence request.
+
+**Regulated Industry:** A nuclear facility's safety-monitoring agent defines Level 4 (kill) protocols with explicit state recovery procedures, ensuring that even an emergency shutdown preserves the last known sensor readings for regulatory incident reporting.
+
 ## Related Specs
 
 | Spec | Relationship |

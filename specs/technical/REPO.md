@@ -84,6 +84,14 @@ _See TESTING.md for the full test suite and pass criteria._
 | Last security audit | [date] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** An open-source agent developer uses REPO.md to provide a single reference page linking to their GitHub repo, npm package, full documentation site, and contribution guide, reducing onboarding time for new contributors from hours to minutes.
+
+**Multi-Agent Fleet:** A marketplace operator uses REPO.md data from all listed agents to display code quality badges (CI status, test coverage percentage, last security audit date) on each agent's profile page, helping buyers assess reliability.
+
+**Regulated Industry:** A security auditor uses REPO.md to locate the agent's test suite, changelog, and SECURITY.md contact before performing a penetration test, following the documented responsible disclosure process instead of opening public issues.
+
 ## Related Specs
 
 | Spec | Relationship |

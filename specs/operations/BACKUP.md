@@ -74,6 +74,14 @@ _See AUDITTRAIL.md for compliance records that must survive restores._
 - For migrating backups between environments, see LEGACY.md
 ```
 
+## Example Use Cases
+
+**Enterprise:** An e-commerce company backs up its product-recommendation agent's learned preferences and MEMORY.md every hour to S3, with a 4-hour RPO, so that a corrupted model state can be rolled back without losing an entire day of customer interaction data.
+
+**Multi-Agent Fleet:** A 50-agent content moderation fleet uses BACKUP.md to coordinate staggered backup windows, ensuring no more than 10% of agents are performing full state snapshots simultaneously to avoid fleet-wide performance degradation.
+
+**Regulated Industry:** A pharmaceutical company's clinical-trial data agent retains backups for 7 years per FDA 21 CFR Part 11 requirements, with documented integrity verification and chain-of-custody logging for every restore operation.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -102,6 +102,14 @@ SOC 2 report available under NDA to:
 **Delivery:** [N business days]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A B2B SaaS company uses SOC2.md to document its Type II compliance across all five Trust Service Criteria, making the report available under NDA to enterprise prospects during security evaluations — a requirement that closes 90% of their Fortune 500 deals.
+
+**Multi-Agent Fleet:** A managed AI services provider uses SOC2.md to map each control (CC1-CC9) to specific agents in the fleet, demonstrating to auditors that change management, logical access, and monitoring controls are enforced at the individual agent level.
+
+**Regulated Industry:** A financial data aggregator uses SOC2.md to satisfy Processing Integrity (PI1) requirements for its transaction reconciliation agent, proving to banking clients that financial data is processed completely, accurately, and in a timely manner with annual penetration testing and quarterly access reviews.
+
 ## Related Specs
 
 | Spec | Relationship |

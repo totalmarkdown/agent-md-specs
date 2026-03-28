@@ -109,6 +109,12 @@ Media mentions: [URL]
 **What you get:** [content description]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A developer relations team uses SOCIALS.md to centralize all community channels for their agent — Discord for support, GitHub for issues, X for announcements — ensuring users always know where to find help and release notes.
+
+**Multi-Agent Fleet:** A marketplace aggregates SOCIALS.md data from all listed agents to build unified profile pages, displaying each agent's GitHub stars, Discord community size, and creator socials alongside technical specs.
+
 ## Related Specs
 
 | Spec | Relationship |

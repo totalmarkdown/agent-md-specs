@@ -93,6 +93,14 @@ Changes being developed but not yet released.
 - [1.x → 2.x](./migrations/v1-to-v2.md)
 ```
 
+## Example Use Cases
+
+**Enterprise:** Before upgrading an agent from v1.x to v2.x, a platform team reviews the changelog to identify breaking changes — discovering the output format changed from JSON to structured markdown — and schedules downstream consumer updates before deploying the new version.
+
+**Multi-Agent Fleet:** A fleet management dashboard aggregates changelogs from all 50 agents to generate a weekly "what changed" digest for the operations team, highlighting any security fixes or deprecated features that need attention.
+
+**Regulated Industry:** An FDA-regulated manufacturing agent maintains a changelog that maps every configuration change to a specific change control ticket, providing auditors with a complete, timestamped history of what was modified and why for each validated version.
+
 ## Related Specs
 
 | Spec | Relationship |

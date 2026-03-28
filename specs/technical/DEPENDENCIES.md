@@ -97,6 +97,14 @@ Next scheduled audit: [date]
 Audit command: `[audit command]`
 ```
 
+## Example Use Cases
+
+**Enterprise:** A fintech company uses DEPENDENCIES.md to identify that its payment processing agent depends on three critical external services (Stripe, Plaid, SendGrid), each with documented fallback behaviors — so when Plaid has an outage, the agent degrades gracefully to manual bank verification.
+
+**Multi-Agent Fleet:** A fleet manager uses DEPENDENCIES.md across all agents to build a dependency graph, discovering that 12 agents share a critical dependency on a single translation service and creating a redundancy plan before the next incident.
+
+**Regulated Industry:** An aerospace manufacturer uses DEPENDENCIES.md to document human input dependencies for its quality inspection agent, specifying that engineer sign-off is required within 4 hours for critical defect findings and defining timeout behavior when approval is not received.
+
 ## Related Specs
 
 | Spec | Relationship |

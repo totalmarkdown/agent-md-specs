@@ -88,6 +88,14 @@ How performance is measured:
 - Benchmark tool: `tmd benchmark --agent [name]`
 ```
 
+## Example Use Cases
+
+**Enterprise:** An e-commerce company uses PERFORMANCE.md to track their product recommendation agent's p95 response time, ensuring it stays below 200ms to avoid impacting checkout page load speeds.
+
+**Multi-Agent Fleet:** A marketplace operator compares PERFORMANCE.md benchmark scores across competing agents in the same category, surfacing the top performers to prospective buyers.
+
+**Regulated Industry:** An insurance underwriting firm documents optimization history in PERFORMANCE.md to show auditors that model changes improved claim assessment accuracy by 15% without introducing bias.
+
 ## Related Specs
 
 | Spec | Relationship |

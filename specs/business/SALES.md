@@ -110,6 +110,14 @@ _See PRICING.md for the complete tier and billing reference._
 - Set follow-up tasks for [X days] after no response
 ```
 
+## Example Use Cases
+
+**Enterprise:** A cybersecurity vendor's sales agent uses SALES.md to qualify inbound leads with MEDDIC methodology, autonomously offering up to 15% discount on standard tiers while escalating enterprise deals above $100K to human reps.
+
+**Multi-Agent Fleet:** An e-commerce platform deploys regional sales agents for APAC, EMEA, and Americas, each with territory-specific SALES.md configs defining local pricing authority, objection-handling scripts, and CRM field mappings.
+
+**Regulated Industry:** A medical-device company's sales agent follows SALES.md rules that prohibit unapproved efficacy claims, require legal review on proposals over $50K, and enforce FDA-compliant communication guidelines in all prospect interactions.
+
 ## Related Specs
 
 | Spec | Relationship |

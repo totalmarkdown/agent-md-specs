@@ -110,6 +110,14 @@ _See WALLET.md for the agent's payment addresses and financial identity._
 | 25+ seats | Contact sales |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A SaaS company evaluates PRICING.md for a customer-analytics agent to compare the Pro tier ($99/month for 1,000 tasks) against the Enterprise tier (custom pricing with SLA guarantees and private deployment) before committing to a 25-seat annual contract with volume discounts.
+
+**Multi-Agent Fleet:** A platform operator uses PRICING.md across all agents in the fleet to calculate total monthly operating costs, identifying which agents have usage-based overages that could be reduced by upgrading to higher tiers with included task allowances.
+
+**Marketplace:** An independent developer publishes a transparent PRICING.md with a free tier (50 tasks/month), a Pro tier ($29/month), and crypto payment options (USDC on Solana) to maximize marketplace discoverability and lower the barrier for first-time buyers to try the agent risk-free.
+
 ## Related Specs
 
 | Spec | Relationship |

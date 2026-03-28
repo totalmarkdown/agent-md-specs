@@ -94,6 +94,14 @@ Subscribe to these to monitor this agent:
 | [agent-name].task.* | Task lifecycle |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer success team configures EVENTS.md so their support agent emits a `ticket.escalated` event whenever sentiment analysis detects frustration, triggering a separate agent to draft a proactive outreach email to the account manager.
+
+**Multi-Agent Fleet:** An orchestrator subscribes to `task.completed` events from all worker agents via EVENTS.md, using correlation IDs to track end-to-end workflow progress and triggering the next agent in the pipeline within seconds of completion.
+
+**Regulated Industry:** A trading firm uses EVENTS.md to ensure its compliance monitoring agent emits `error.critical` events for every trade that exceeds risk thresholds, with the event bus configured for exactly-once delivery so no violation alert is lost or duplicated.
+
 ## Related Specs
 
 | Spec | Relationship |

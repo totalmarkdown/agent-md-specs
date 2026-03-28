@@ -117,6 +117,14 @@ Format: timestamp | check_name | detected_value | correction_applied | outcome
 Review log: [daily | weekly | on alert]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A 24/7 customer-support agent auto-detects rising response latency at 2 AM, automatically reduces its batch size and flushes stale cache entries, resolving the performance degradation before the morning shift notices any impact.
+
+**Multi-Agent Fleet:** Overnight data-processing agents monitor their own token usage per task; when an agent detects a 40% increase (indicating prompt bloat from accumulated context), it triggers automatic context compression and logs the self-correction for morning review.
+
+**Regulated Industry:** A pharmaceutical adverse-event monitoring agent continuously checks its output confidence scores against a baseline; when scores drop below the configured threshold, it automatically recalibrates against the validated test suite before processing any new case reports.
+
 ## Related Specs
 
 | Spec | Relationship |

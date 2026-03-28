@@ -112,6 +112,14 @@ Criminal: Up to 20 years imprisonment
 Asset forfeiture: Proceeds of violations
 ```
 
+## Example Use Cases
+
+**Enterprise:** A cryptocurrency exchange configures AML.md for its onboarding agent, requiring Enhanced Due Diligence for customers from FATF-listed jurisdictions and automated SAR filing when structuring patterns are detected.
+
+**Multi-Agent Fleet:** A neobank's transaction monitoring fleet uses AML.md rules so each regional agent applies jurisdiction-specific thresholds (e.g., $10,000 CTR in the US, EUR 15,000 in the EU) while feeding alerts to a centralized compliance agent.
+
+**Regulated Industry:** A money services business uses AML.md to ensure its payment processing agent screens every outbound transfer against OFAC, EU, and UN sanctions lists in real-time, blocking matches within milliseconds and preserving evidence for FinCEN reporting.
+
 ## Related Specs
 
 | Spec | Relationship |

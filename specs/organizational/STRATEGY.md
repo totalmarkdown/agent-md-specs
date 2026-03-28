@@ -99,6 +99,14 @@ prioritize options that:
 **Approved by:** [name/role] on [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A marketplace company's H1 2026 strategy allocates 60% of agent capacity to buyer-experience improvements and 30% to seller tools, with STRATEGY.md explicitly documenting that international expansion is deprioritized until H2 to maintain focus.
+
+**Multi-Agent Fleet:** A fleet's strategy document defines three capability pillars -- reliability, speed, and cost efficiency -- with resource allocation percentages that guide which agents get upgraded first and which initiatives get funded in the current period.
+
+**Regulated Industry:** An insurance company's claims-processing strategy documents a shift from manual review to agent-assisted adjudication, with a capability roadmap showing target states for each quarter and dependency risks tied to pending state regulatory approvals.
+
 ## Related Specs
 
 | Spec | Relationship |

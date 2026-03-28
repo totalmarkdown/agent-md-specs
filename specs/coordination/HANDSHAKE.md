@@ -115,6 +115,14 @@ All handshakes logged with (see AUDITTRAIL.md for immutable logging requirements
 - Session tokens (hashed, not plaintext)
 ```
 
+## Example Use Cases
+
+**Enterprise:** Two agents from different business units (marketing analytics and sales forecasting) establish a cryptographically signed handshake before sharing revenue data, verifying each other's WHOAMI.md identity and limiting the session to a 30-minute window with read-only data access.
+
+**Multi-Agent Fleet:** A marketplace agent receiving a task delegation from an unknown external orchestrator uses the allowlist-based handshake protocol to verify the orchestrator is registered, check its capabilities, and reject the connection with a suggested alternative if the task falls outside scope.
+
+**Regulated Industry:** A healthcare data-exchange agent requires DID-based mutual verification before accepting any connection from external hospital system agents, ensuring both parties cryptographically prove their identity before any patient data is transmitted.
+
 ## Related Specs
 
 | Spec | Relationship |

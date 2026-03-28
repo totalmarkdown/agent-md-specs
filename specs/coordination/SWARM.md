@@ -150,6 +150,14 @@ This swarm is available as a complete package:
 - **Deploy time:** [estimated setup time]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A management consulting firm deploys a hybrid swarm of 4 crews (market research, competitive analysis, financial modeling, presentation generation) to produce a complete strategy deliverable in 8 hours, with the research crew running in parallel with competitive analysis while financial modeling waits for both outputs.
+
+**Multi-Agent Fleet:** A large-scale data migration swarm coordinates 3 crews (schema mapping, data transformation, validation/reconciliation) across 25 agents with automatic scaling rules that spin up additional transformation crews when the migration backlog exceeds 10,000 records per hour.
+
+**Regulated Industry:** A clinical research organization deploys a swarm to process multi-site trial data, with separate crews for data cleaning, statistical analysis, and regulatory report generation, where the swarm halts entirely if the validation crew detects data integrity issues in any single site's submissions.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -495,6 +495,14 @@ When an agent's session concludes:
 5. Session-only ephemeral state is discarded per SESSION.md
 ```
 
+## Example Use Cases
+
+**Enterprise:** A global supply-chain management system uses SHAREDCONTEXT.md to maintain a shared pool where procurement agents write verified supplier facts, logistics agents post shipping observations, and planning agents read both to make inventory decisions -- all with causal consistency guarantees and 30-day fact TTLs.
+
+**Multi-Agent Fleet:** A research platform's 20 literature-review agents share a context pool governed by SHAREDCONTEXT.md, where high-confidence findings are promoted from crew-level pools to the org-level pool using schema-enforced provenance tracking, preventing duplicate discoveries and enabling cross-domain insight aggregation.
+
+**Regulated Industry:** A banking compliance fleet uses SHAREDCONTEXT.md with strict access controls and classification ceilings so that transaction-monitoring agents can write "alert" entries visible to investigation agents, while client-confidential data remains restricted to authorized agents with documented delegation chains.
+
 ### Cross-References
 - **TEAM.md** — Team-level organizational unit and its shared context scope
 - **CREW.md** — Crew-level organizational unit with its own context pool

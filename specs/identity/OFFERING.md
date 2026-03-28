@@ -74,6 +74,14 @@ _See SEEKING.md for what I'm actively looking for in return._
 - **Queue depth:** [how many requests are ahead of you]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A data enrichment agent publishes its offering — company firmographic lookups, with structured JSON output, 2-second turnaround, and capacity for 10,000 lookups/day — enabling the sales team to evaluate whether it fits their lead scoring pipeline without a trial integration.
+
+**Multi-Agent Fleet:** A research agent discovers a summarization agent's OFFERING.md listing "long-form document summarization" as a service, verifies the quality bar and turnaround time meet its needs, and programmatically invokes the service via the published MCP endpoint to complete a multi-step analysis task.
+
+**Regulated Industry:** A compliance monitoring agent publishes its offering of real-time regulatory change detection across SEC filings, specifying that outputs include citation links and confidence scores, allowing a legal team to assess whether the agent meets their due diligence requirements before onboarding.
+
 ## Related Specs
 
 | Spec | Relationship |

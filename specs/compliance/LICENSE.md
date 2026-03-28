@@ -79,6 +79,14 @@ Custom licensing available for enterprise deployments.
 ## Full License Text
 [Full text of chosen license, or link to standard license text]
 
+## Example Use Cases
+
+**Enterprise:** A large consulting firm evaluates an agent bundle's LICENSE.md to confirm that Apache-2.0 terms permit internal modification and redistribution to client environments without requiring open-sourcing of their proprietary configurations.
+
+**Multi-Agent Fleet:** A platform operator checks LICENSE.md for every agent in the fleet to ensure all license conditions (attribution, same-license derivatives) are satisfied before bundling agents into a commercial product offering.
+
+**Regulated Industry:** A financial services company's compliance team reviews LICENSE.md to verify that a data-analysis agent's license permits use in regulated environments and does not include clauses that conflict with their data-retention or audit obligations.
+
 ## Related Specs
 
 | Spec | Relationship |

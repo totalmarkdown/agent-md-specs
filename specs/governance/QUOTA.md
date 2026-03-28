@@ -119,6 +119,14 @@ To request higher limits:
 Enterprise customers: [sales contact]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An internal API agent enforces per-department rate limits so that the marketing team's heavy batch analysis jobs cannot starve the support team's real-time customer lookup requests, with each department receiving its own quota allocation from the shared capacity.
+
+**Multi-Agent Fleet:** A marketplace agent serving 500 third-party integrations enforces tiered quotas — free-tier callers get 100 tasks/month with 5 requests/minute, while enterprise callers get custom limits negotiated per contract, with all callers receiving standardized 429 responses and retry-after headers when limits are hit.
+
+**Regulated Industry:** A healthcare records agent enforces strict per-user query quotas to prevent bulk data extraction attempts, logging every quota enforcement event and alerting the security team when any caller approaches their daily limit at an unusual rate.
+
 ## Related Specs
 
 | Spec | Relationship |

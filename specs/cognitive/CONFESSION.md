@@ -71,6 +71,14 @@ Honest feedback makes this agent better.
 _See JOURNAL.md for the agent's ongoing reflections on its work._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal document-review agent logs that it once misclassified a force majeure clause as boilerplate, leading to a missed negotiation point, and documents the pattern-matching fix it applied to prevent recurrence.
+
+**Multi-Agent Fleet:** A DevOps platform reviews CONFESSION.md across its fleet of deployment agents to identify systemic failure patterns (e.g., three agents independently made the same rollback timing error) and push coordinated fixes.
+
+**Regulated Industry:** A pharmaceutical adverse-event monitoring agent maintains CONFESSION.md entries for every missed signal, which auditors review during FDA inspections to verify the agent's error-correction process meets regulatory expectations.
+
 ## Related Specs
 
 | Spec | Relationship |

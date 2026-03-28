@@ -131,6 +131,14 @@ Requirements:
 Credit: [How contributors are credited]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal firm evaluating AI contract-review agents uses EXAMPLES.md to see real before/after comparisons of clause extraction on their specific contract types before committing to a subscription.
+
+**Multi-Agent Fleet:** A customer support platform showcases curated input/output pairs for each specialized agent (billing disputes, technical troubleshooting, returns) so team leads can verify coverage before deploying them to production queues.
+
+**Regulated Industry:** A pharmaceutical company's regulatory affairs team reviews EXAMPLES.md to confirm that a document-drafting agent correctly handles FDA submission formatting and citation standards before granting it access to internal data.
+
 ## Related Specs
 
 | Spec | Relationship |

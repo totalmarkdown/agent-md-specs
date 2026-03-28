@@ -138,6 +138,14 @@ Why: [What it communicates that conflicts with brand essence]
 Contact: [brand owner or creative director]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Fortune 500 financial services firm deploys 40+ customer-facing AI agents and needs each one to use consistent logos, colors, and typography across client portals, email signatures, and regulatory filings.
+
+**Multi-Agent Fleet:** A SaaS company runs a fleet of specialized agents (onboarding, support, billing) that all need to present a unified brand identity so customers experience one cohesive product rather than disconnected bots.
+
+**Regulated Industry:** A healthcare platform's patient-facing AI assistant must adhere to strict brand guidelines that include accessibility-compliant color contrast ratios and approved medical terminology in all visual and verbal outputs.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -94,6 +94,14 @@ This file should be:
 - Referenced by all other identity files
 ```
 
+## Example Use Cases
+
+**Enterprise:** When an agent is promoted from staging to production, its UUID remains identical across environments, ensuring that audit trails, delegation grants, and marketplace listings all reference the same immutable identity regardless of where the agent is deployed.
+
+**Multi-Agent Fleet:** A fleet registry indexes every agent, crew, team, and swarm by UUID, allowing the orchestrator to instantly resolve identity even when agents are renamed, versioned, or moved between teams — the UUID is the single source of truth for cross-referencing all config files.
+
+**Regulated Industry:** A SOX-compliant financial reporting pipeline requires that every automated action traces back to a specific agent identity; the UUID from ID.md serves as the permanent, non-reusable anchor that auditors verify has never been reassigned to a different entity.
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

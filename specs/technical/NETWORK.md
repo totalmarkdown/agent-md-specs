@@ -135,6 +135,14 @@ Certificate inspection proxies: [supported | not supported — explain]
 | Per day (at [N] tasks) | ~[X]MB |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Fortune 500 company uses NETWORK.md to generate firewall allowlist rules for their corporate proxy, enabling their research agent to reach api.anthropic.com:443 and three approved data provider domains while blocking all other outbound traffic.
+
+**Multi-Agent Fleet:** A cloud platform team uses NETWORK.md bandwidth estimates across all agents to plan network capacity, calculating that their 100-agent fleet generates approximately 1GB of daily API traffic and provisioning accordingly.
+
+**Regulated Industry:** A European bank uses NETWORK.md's data residency section to verify that all agent data stays within EU boundaries, documenting GDPR Article 44 adequacy decisions and Standard Contractual Clauses for any cross-border data transfers to LLM providers.
+
 ## Related Specs
 
 | Spec | Relationship |

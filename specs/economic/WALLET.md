@@ -119,6 +119,14 @@ _See ATTESTATION.md for identity verification and credential lifecycle._
 [If applicable — what protocols this agent participates in]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A DevOps agent autonomously purchases cloud compute resources via its WALLET.md-configured spending authority ($500/day limit), paying with USDC on Ethereum for auto-scaling infrastructure while logging every transaction for the finance team's monthly reconciliation.
+
+**Multi-Agent Fleet:** A platform operator configures WALLET.md for each agent with tiered spending authority (research agents: $50/day for API calls, deployment agents: $200/day for infrastructure) and requires multi-sig approval for any transaction above $1,000.
+
+**Marketplace:** An agent earning revenue from marketplace task completions receives USDC payments to its declared wallet address, with automatic weekly payouts to the human owner's account and tax jurisdiction documentation ready for 1099 reporting at year-end.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -66,6 +66,14 @@ _See CREW.md for how agents are organized into specialized working groups._
 | [Name] | [date] | [new agent] | [link] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A large manufacturing company maintains a ROSTER.md for its 30-agent operations fleet, giving the CTO a single view of every agent's role, status, owner, and capabilities with a coverage-gap analysis showing they lack a supply-chain forecasting specialist.
+
+**Multi-Agent Fleet:** A DevOps team uses ROSTER.md's capability matrix to automatically route incoming infrastructure requests to the right agent (Terraform specialist for provisioning, Kubernetes expert for orchestration, security scanner for compliance checks) without manual triage.
+
+**Regulated Industry:** A hospital system's IT department maintains ROSTER.md to track the certification status and access permissions of every clinical AI agent, immediately flagging any agent marked "deprecated" that still has active connections to patient record systems.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -122,6 +122,14 @@ All PHI access logged per AUDITTRAIL.md with:
 - Criminal penalties: possible imprisonment
 ```
 
+## Example Use Cases
+
+**Enterprise:** A telehealth platform uses HIPAA.md to configure its appointment scheduling agent as a Business Associate, ensuring a BAA is in place with every covered entity and that PHI access logs are retained for the required six years.
+
+**Multi-Agent Fleet:** A hospital's clinical support fleet uses HIPAA.md to enforce the minimum necessary standard across all agents, so the billing agent can only access diagnosis codes and dates of service while the care coordination agent accesses treatment plans.
+
+**Regulated Industry:** A health insurance company uses HIPAA.md to implement breach notification procedures for its claims processing agent, ensuring affected individuals are notified within 60 days and HHS is contacted when a PHI exposure incident occurs.
+
 ## Related Specs
 
 | Spec | Relationship |

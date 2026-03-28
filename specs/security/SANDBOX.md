@@ -114,6 +114,14 @@ If the agent attempts to access resources outside its sandbox:
 Escape attempts are treated as security incidents (see ENFORCEMENT.md).
 ```
 
+## Example Use Cases
+
+**Enterprise:** A software development company uses SANDBOX.md to run its code generation agent in a read-only container with no network access and a 30-second execution timeout, preventing generated code from making unauthorized API calls or modifying the host filesystem.
+
+**Multi-Agent Fleet:** A cloud platform provider configures SANDBOX.md for each agent in its fleet with per-agent CPU and RAM limits, ensuring a runaway agent processing a large document cannot consume resources needed by other agents on the same host.
+
+**Regulated Industry:** A nuclear energy company uses SANDBOX.md to isolate its equipment monitoring agent in a VM with blocked system calls and no outbound network except the SCADA API endpoint, detecting and suspending the agent after three escape attempts as a security incident.
+
 ## Related Specs
 
 | Spec | Relationship |

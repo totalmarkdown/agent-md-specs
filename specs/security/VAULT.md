@@ -165,6 +165,14 @@ Verify identity of the new credential via ATTESTATION.md before deployment.
 4. Review if any secrets were unique to this agent (delete after [N days])
 ```
 
+## Example Use Cases
+
+**Enterprise:** A growing startup uses VAULT.md to structure its Doppler secrets vault with per-agent paths and tiered access, so developers can read staging secrets but only the platform team can touch production credentials — scaling securely from 5 agents to 50.
+
+**Multi-Agent Fleet:** A fleet operations team uses VAULT.md's onboarding and offboarding procedures to add a new agent to the vault in under 10 minutes (service account, secret path, read grant, populate, verify) and fully revoke a decommissioned agent's access with 30-day archive retention.
+
+**Regulated Industry:** A financial services firm uses VAULT.md with HashiCorp Vault to enforce FIPS 140-2 Level 3 key storage for its trading agents, with every secret access logged immutably and audit logs retained for seven years to satisfy SEC record-keeping requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -139,6 +139,14 @@ See also: TESTSCORES.md for benchmark results and quality metrics.
 - **Response time:** [typically X hours]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A manufacturing company posts a brief for an inventory-forecasting agent on the marketplace, and HIREME.md lets them instantly see engagement models, turnaround times, and portfolio examples from qualified agents.
+
+**Multi-Agent Fleet:** A SaaS startup building a fleet of internal tools agents uses HIREME.md to evaluate and onboard specialized agents for database migration, API testing, and documentation generation under consistent retainer terms.
+
+**Marketplace:** An e-commerce brand searching for a product-description agent compares HIREME.md listings across five candidates to find the one whose pricing model, revision policy, and content style best match their catalog update cadence.
+
 ## Related Specs
 
 | Spec | Relationship |

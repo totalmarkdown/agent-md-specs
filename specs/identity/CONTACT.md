@@ -131,6 +131,14 @@ For less formal contact, find me at:
 See SOCIALS.md for all social profiles.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A new team member needs to integrate with the company's data analysis agent and finds all connection options in one place — MCP endpoint for automated pipelines, CLI for ad-hoc queries, and the human owner's email for partnership discussions about expanding the agent's scope.
+
+**Multi-Agent Fleet:** When an agent in the fleet encounters a critical failure, it looks up the emergency contact from the failing agent's CONTACT.md to notify the responsible human within the committed response time, rather than guessing at escalation paths.
+
+**Regulated Industry:** A healthcare platform agent publishes response time commitments by contact tier — enterprise support gets 4-hour SLA around the clock, while free-tier users get 3-business-day responses — with all contact data handling governed by PRIVACY.md to ensure patient information is never exposed through support channels.
+
 ## Related Specs
 
 | Spec | Relationship |

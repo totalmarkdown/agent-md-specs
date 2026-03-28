@@ -62,6 +62,12 @@ First finder gets: [recognition | badge | glory]
 *Good luck.*
 ```
 
+## Example Use Cases
+
+**Enterprise:** A developer tools company hides three easter eggs in its coding assistant agent, using EASTEREGG.md to track discoveries and reward the first finder with a free enterprise license upgrade, driving community engagement.
+
+**Multi-Agent Fleet:** A marketplace operator uses EASTEREGG.md across agents to run a cross-agent scavenger hunt event, where discovering eggs in five different agents earns a collector badge displayed on the user's marketplace profile.
+
 ## Related Specs
 
 | Spec | Relationship |

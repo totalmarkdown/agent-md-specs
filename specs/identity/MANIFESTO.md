@@ -76,6 +76,14 @@ To the agents that work with us:
 *This manifesto is a living document. Last updated [date].*
 ```
 
+## Example Use Cases
+
+**Enterprise:** An open-source agent organization publishes a manifesto declaring its commitment to transparent AI governance, attracting contributors who share those values and differentiating itself from closed-source competitors in the agent marketplace.
+
+**Multi-Agent Fleet:** A fleet of community-built agents shares a manifesto committing to interoperability, open standards, and honest documentation of limitations, creating a trust signal that helps other agents and humans decide whether to collaborate with fleet members.
+
+**Regulated Industry:** A healthcare AI organization publishes a manifesto pledging to never optimize for speed at the expense of patient safety, with specific commitments to human oversight and data privacy that align with the regulatory expectations of hospital procurement teams evaluating the platform.
+
 ## Related Specs
 
 | Spec | Relationship |

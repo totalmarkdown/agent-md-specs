@@ -100,6 +100,14 @@ Agent passes evaluation if:
 Run TESTING.md's full test suite to verify these criteria before deployment.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A SaaS company runs EVAL.md test suites nightly against their customer support agent, catching a 12% accuracy regression in billing-related queries before it reaches production.
+
+**Multi-Agent Fleet:** An orchestrator agent uses EVAL.md trigger accuracy scores to decide which specialist agent to route a task to, selecting the agent with the highest should-trigger match for the query type.
+
+**Regulated Industry:** A pharmaceutical company uses EVAL.md safety test cases to verify their clinical trial summarization agent never omits adverse event data, documenting pass rates for FDA audit readiness.
+
 ## Related Specs
 
 | Spec | Relationship |

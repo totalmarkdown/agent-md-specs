@@ -83,6 +83,14 @@ _Derived from AUDITTRAIL.md session records._
 [Optional: humans and agents who helped this agent do good work]
 ```
 
+## Example Use Cases
+
+**Enterprise:** When a v1 data analysis agent is replaced by a v2 successor, its LEGACY.md documents that the regex-based extraction approach failed on multi-language documents and that the successor should use an NLP pipeline instead, preventing the new agent from repeating the same mistake.
+
+**Multi-Agent Fleet:** A decommissioned fleet member's LEGACY.md designates its successor agent by UUID, includes a migration guide for consumers who were calling the old agent's API, and archives all outputs to a versioned storage location so the fleet orchestrator can seamlessly redirect traffic.
+
+**Regulated Industry:** A deprecated claims processing agent's LEGACY.md preserves its complete configuration and output archive with a 10-year retention period as required by insurance regulations, while transferring its active caseload and unfinished reviews to the designated successor agent with full knowledge transfer documentation.
+
 ## Related Specs
 
 | Spec | Relationship |

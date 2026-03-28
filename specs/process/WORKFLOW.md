@@ -88,6 +88,14 @@ Apply CIRCUITBREAKER.md patterns when step failures risk cascading to downstream
 
 ---
 
+## Example Use Cases
+
+**Enterprise:** A content-publishing agent follows a 7-step WORKFLOW.md that includes a human approval gate at step 5 (editorial review) with a 4-hour timeout, after which the workflow auto-escalates to the managing editor rather than publishing unapproved content.
+
+**Multi-Agent Fleet:** A CI/CD pipeline fleet defines interconnected workflows where the build agent's completion triggers the test agent's workflow, which upon success triggers the deployment agent's workflow -- each with explicit failure recovery and rollback steps documented per-agent.
+
+**Regulated Industry:** A loan-origination agent follows a WORKFLOW.md with mandatory decision points at credit check, income verification, and regulatory disclosure steps, where each branch documents the exact conditions for approval, denial, or escalation to a licensed loan officer.
+
 ## Related Specs
 
 | Spec | Relationship |

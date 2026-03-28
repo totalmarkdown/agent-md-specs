@@ -119,6 +119,14 @@ We commit to:
 - Acknowledging when alternatives are genuinely better
 ```
 
+## Example Use Cases
+
+**Enterprise:** An enterprise procurement team evaluating AI code-review agents uses the COMPETITIVE.md file from each candidate to quickly understand honest trade-offs, reducing vendor evaluation time from weeks to days.
+
+**Multi-Agent Fleet:** A DevOps platform operator compares three competing log-analysis agents side-by-side using their COMPETITIVE.md specs to select the best fit for each monitoring tier in their observability stack.
+
+**Marketplace:** An agent marketplace surfaces COMPETITIVE.md data in search results so buyers can see at a glance which agent is best for their specific use case rather than relying solely on marketing claims.
+
 ## Related Specs
 
 | Spec | Relationship |

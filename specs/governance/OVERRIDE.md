@@ -154,6 +154,14 @@ git diff [commit]...[commit] OVERRIDE.md
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** An enterprise batch processing crew overrides its inherited BUDGET.md to increase the daily spending limit from $50 to $200, documenting that the higher limit is justified by average daily job costs of $150 and that the previous limit caused three manual interventions per week.
+
+**Multi-Agent Fleet:** A fleet security audit reviews all OVERRIDE.md files across 80 agents in minutes, identifying two agents with expired override justifications and one agent whose voice override was never re-approved, flagging all three for immediate review.
+
+**Regulated Industry:** A pharmaceutical manufacturing agent documents an override to its inherited RULES.md that relaxes a data retention period from 10 years to 7 years for non-GMP data, with explicit approval from the quality assurance director and a re-evaluation date tied to the next FDA inspection cycle.
+
 ## Related Specs
 
 | Spec | Relationship |

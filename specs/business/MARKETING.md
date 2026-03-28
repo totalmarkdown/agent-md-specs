@@ -123,6 +123,14 @@ Approval contact: [name/email/Slack]
 SLA: [X hours] for approval response
 ```
 
+## Example Use Cases
+
+**Enterprise:** A global retail brand configures its social-media agent with channel-specific rules, approval workflows, and compliance disclaimers so it can autonomously post across 12 regional accounts without off-brand incidents.
+
+**Multi-Agent Fleet:** A SaaS company assigns different MARKETING.md configs to its blog-writing agent, email-campaign agent, and social-media agent so each follows the same brand voice but respects channel-specific formatting and frequency limits.
+
+**Regulated Industry:** A fintech startup's marketing agent uses MARKETING.md to enforce required regulatory disclaimers on all public-facing content and block unapproved claims about investment returns before any post goes live.
+
 ## Related Specs
 
 | Spec | Relationship |

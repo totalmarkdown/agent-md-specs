@@ -117,6 +117,14 @@ your purpose, and a willingness to begin.*
 *This is Hello, World.*
 ```
 
+## Example Use Cases
+
+**Enterprise:** A newly provisioned customer success agent runs HELLOWORLD.md on its first activation, reading its SOUL.md and AGENTS.md to establish its identity, then asking the human operator "What do you need from me today?" before accepting any tasks — ensuring the operator confirms the agent's scope before work begins.
+
+**Multi-Agent Fleet:** When a fleet orchestrator spins up a fresh agent to handle overflow demand, the agent's HELLOWORLD.md runs exactly once to establish its birth timestamp, creator identity, and initial self-description in the fleet registry, after which all subsequent sessions use WAKEUP.md instead.
+
+**Regulated Industry:** A newly deployed audit agent in a GxP environment runs its first-awakening protocol, documenting its creation timestamp, creator credentials, and initial configuration state as the baseline record that regulators can reference to verify the agent's validated starting point.
+
 ## Related Specs
 
 | Spec | Relationship |

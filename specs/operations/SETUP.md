@@ -183,6 +183,14 @@ Ask in Discord: [Discord URL]
 - Check MEMORY.md to see what it remembers from previous sessions
 ```
 
+## Example Use Cases
+
+**Enterprise:** A new team member at a marketing agency follows SETUP.md to get a content-generation agent running locally in 20 minutes, including troubleshooting guidance for the most common MCP server connection error they hit on their first attempt.
+
+**Multi-Agent Fleet:** A platform engineer uses SETUP.md templates across 15 new agents being onboarded simultaneously, ensuring consistent environment configuration, dependency installation, and smoke-test verification for every agent in the fleet.
+
+**Regulated Industry:** A hospital IT team follows the SETUP.md walkthrough to deploy a medical-coding agent in an air-gapped environment, with step-by-step instructions covering offline dependency installation and network-restricted API credential configuration.
+
 ## Related Specs
 
 | Spec | Relationship |

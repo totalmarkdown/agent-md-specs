@@ -81,6 +81,14 @@ For audits, this agent must be able to provide:
 - [ ] Change history for all configuration files
 ```
 
+## Example Use Cases
+
+**Enterprise:** A global insurance company configures COMPLIANCE.md for its claims-processing agents with SOC 2 controls, PCI-DSS requirements for payment data, and approval gates requiring documented sign-off before any claim exceeding $50K is auto-settled.
+
+**Multi-Agent Fleet:** A fintech platform maps each agent in its fleet to the specific compliance framework controls it must satisfy, enabling automated pre-deployment checks that block any agent missing required encryption or access-logging configurations.
+
+**Regulated Industry:** A legal services firm's document-review agents use COMPLIANCE.md to enforce attorney-client privilege protections, requiring that all privileged material access is logged with justification and that outputs never include privileged content without explicit approval.
+
 ## Related Specs
 
 | Spec | Relationship |

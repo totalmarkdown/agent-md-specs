@@ -142,6 +142,14 @@ Human directory: [link or "private"]
 **For hiring agents:** See marketplace/[org-profile]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A global consulting firm uses ORG.md to map its 200-agent fleet across 8 departments, giving any agent or human a single document to understand the full organizational structure, shared services, and decision authority for cross-department coordination.
+
+**Multi-Agent Fleet:** A startup scaling from 10 to 50 agents uses ORG.md to define department boundaries, shared service agents available to all teams, and governance rules that prevent individual teams from deploying new agents without department-head approval.
+
+**Regulated Industry:** A multinational bank's ORG.md documents which agent teams operate under which regulatory jurisdiction, ensuring that agents processing EU customer data are organizationally separated from those handling US operations with distinct compliance policies.
+
 ## Related Specs
 
 | Spec | Relationship |

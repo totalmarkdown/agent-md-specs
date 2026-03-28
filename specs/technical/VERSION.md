@@ -85,6 +85,14 @@ tmd marketplace check-update [agent-name]
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** A platform team uses VERSION.md to quickly check which version of their deployment agent is running in production, verify whether breaking changes exist, and run the one-line upgrade command when a new stable release is available.
+
+**Multi-Agent Fleet:** A marketplace operator reads VERSION.md from all listed agents to display version badges, support status (current/maintenance/EOL), and "update available" notifications to users who have installed older versions.
+
+**Regulated Industry:** A compliance officer uses VERSION.md's version support table to verify that the organization's regulatory filing agent is on a currently supported version, scheduling an upgrade before the maintenance version reaches end-of-life to maintain audit compliance.
+
 ## Related Specs
 
 | Spec | Relationship |

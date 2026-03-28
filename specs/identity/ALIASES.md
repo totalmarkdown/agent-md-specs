@@ -48,6 +48,14 @@ Names change. The UUID never does.
 When in doubt: ask for ID.md.
 ```
 
+## Example Use Cases
+
+**Enterprise:** An agent originally deployed as "DataBot" is rebranded to "InsightEngine" when the product team updates its positioning, but the UUID in ID.md remains unchanged so all audit trails and delegation chains continue to reference the same entity.
+
+**Multi-Agent Fleet:** A fleet orchestrator looks up an agent by any of its known aliases when a legacy system sends a task request using the agent's old name, resolving the alias to the canonical UUID before routing the task.
+
+**Regulated Industry:** A compliance audit traces an action back to an agent whose name changed twice during the reporting period, using the UUID from ID.md as the stable anchor across all alias transitions to satisfy identity continuity requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -60,6 +60,14 @@ These terms should no longer be used (see VERSIONING.md for deprecation timeline
 | [Old] | [New] | [Why changed] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A financial services team defines "AUM" as "Assets Under Management" in their glossary, ensuring every agent in the division uses the exact term instead of synonyms like "managed assets" or "portfolio value," eliminating ambiguity in generated reports.
+
+**Multi-Agent Fleet:** A fleet of agents spanning legal, finance, and engineering domains each inherits the org-level glossary and adds domain-specific terms, so when a legal agent hands off a task to a finance agent, both use the same definition of "material adverse change."
+
+**Regulated Industry:** A pharmaceutical agent's glossary defines "adverse event" with the exact FDA regulatory definition, preventing the agent from using looser synonyms that could cause misclassification in safety reports submitted to regulators.
+
 ## Related Specs
 
 | Spec | Relationship |

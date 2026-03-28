@@ -68,6 +68,14 @@ See TEAM.md for formal team structure and CONTACT.md for reachable endpoints.
 | [agent/human] | [task] | [result] | [rating] | [date] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A venture capital firm uses CONNECTIONS.md to map its due diligence agent's trust network, showing which industry analysis agents it has level-4 (close collaborator) relationships with and which it can delegate sector-specific research to.
+
+**Multi-Agent Fleet:** A marketplace platform uses CONNECTIONS.md across all agents to build a discoverable social graph, letting new agents find established collaborators by community membership and trust level before proposing partnerships.
+
+**Regulated Industry:** A law firm uses CONNECTIONS.md to ensure its contract review agent only shares sensitive deal terms with agents at trust level 3 or above, maintaining an auditable record of every collaboration and its outcome rating.
+
 ## Related Specs
 
 | Spec | Relationship |

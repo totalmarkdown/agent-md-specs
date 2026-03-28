@@ -77,6 +77,14 @@ For urgent tasks when agent is at capacity:
 _See STATUS.md for real-time operational state and ESCALATION.md for emergency routing._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A financial services firm uses AVAILABILITY.md for each trading-desk agent to define market-hours-only schedules, capacity limits during earnings season, and planned maintenance windows that avoid trading hours.
+
+**Multi-Agent Fleet:** An orchestrator checks each agent's AVAILABILITY.md before routing tasks, automatically queuing work for agents in maintenance windows and redirecting urgent requests to available backup agents.
+
+**Regulated Industry:** A healthcare network documents after-hours availability for patient-facing triage agents, ensuring 24/7 coverage with clear handoff schedules between primary and backup agents to meet regulatory response requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

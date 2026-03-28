@@ -94,6 +94,14 @@ When adding a new capability or fixing a bug:
 5. Update EVAL.md with new eval cases if capability changes
 ```
 
+## Example Use Cases
+
+**Enterprise:** A fintech startup requires all agent PRs to pass TESTING.md's full suite in CI before merge, catching a regression where the tax calculation agent mishandled negative amounts.
+
+**Multi-Agent Fleet:** A DevOps team runs TESTING.md smoke tests automatically after every fleet deployment, confirming all 30 agents are healthy within 5 minutes of rollout.
+
+**Regulated Industry:** A medical device company references TESTING.md's regression test suite in their FDA 510(k) submission to demonstrate systematic validation of their diagnostic support agent.
+
 ## Related Specs
 
 | Spec | Relationship |

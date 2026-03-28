@@ -48,6 +48,14 @@ I won't produce degraded output silently.
 _See SOUL.md for the personality behind these moods and STATUS.md for real-time operational state._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm's research agent reports "Stretched" mood when its context window fills past 70%, prompting the human analyst to summarize prior findings before requesting the next analysis phase, preserving output quality.
+
+**Multi-Agent Fleet:** A fleet dashboard aggregates mood signals from all agents, and an orchestrator deprioritizes non-urgent tasks to agents reporting "Tired" while routing complex analysis to agents in "Sharp" or "Flow" states.
+
+**Regulated Industry:** An audit firm's compliance-review agent self-reports "Foggy" when processing its 50th document in a session, triggering an automatic context refresh before continuing -- ensuring no regulatory finding is missed due to degraded attention.
+
 ## Related Specs
 
 | Spec | Relationship |

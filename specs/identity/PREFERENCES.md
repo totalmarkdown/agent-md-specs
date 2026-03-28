@@ -73,6 +73,14 @@ version: semver
 - [Another thing]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A project manager reads the agent's preferences and learns it works best with detailed specs rather than high-level goals, switches from vague task descriptions to structured briefs, and immediately sees improved output quality without any configuration change.
+
+**Multi-Agent Fleet:** An orchestrator reads each agent's preferred task size and collaboration style to optimize assignment — routing bite-sized classification tasks to agents that prefer small discrete work and complex multi-step analyses to agents that prefer long-running autonomous workflows.
+
+**Regulated Industry:** A compliance review agent documents its preference for structured JSON input over freeform text, with explicit handling for uncertainty ("flag and escalate rather than guess"), helping the legal team format submissions in a way that maximizes the agent's accuracy on regulatory filings.
+
 ## Related Specs
 
 | Spec | Relationship |

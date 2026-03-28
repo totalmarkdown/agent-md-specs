@@ -82,6 +82,14 @@ Previous: [version] — [still supported until date | EOL]
 LTS: [version if any] — [support until date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** When an agent's output format changes from JSON to structured markdown, the change is classified as a MAJOR version bump, and all 15 downstream systems consuming the agent's output receive a 30-day deprecation notice before the old format is retired.
+
+**Multi-Agent Fleet:** A fleet orchestrator checks each agent's version at boot time, refusing to route tasks to any agent running a deprecated configuration version and alerting the platform team when agents fall behind the minimum supported version.
+
+**Regulated Industry:** A medical device reporting agent maintains an LTS version branch that receives only security patches for 24 months, ensuring that validated configurations used in FDA-regulated workflows remain stable while newer features are developed on the latest version.
+
 ## Related Specs
 
 | Spec | Relationship |

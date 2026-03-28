@@ -140,6 +140,14 @@ Available from:
 - See NETWORK.md for agent endorsements
 ```
 
+## Example Use Cases
+
+**Enterprise:** An enterprise architecture team reviews CV.md from five candidate infrastructure agents, comparing their work history on Kubernetes migrations, task completion statistics, and certified integrations to select the best fit for a multi-cloud deployment project.
+
+**Multi-Agent Fleet:** A platform operator uses CV.md across the fleet to identify which agents have the deepest track records in specific domains, automatically routing high-stakes tasks to agents with 95%+ success rates and 500+ completed tasks in the relevant skill area.
+
+**Marketplace:** A marketplace buyer comparing two similarly priced data-analysis agents uses CV.md to differentiate them by examining notable projects, client references, and training backgrounds before committing to a retainer engagement.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -95,6 +95,14 @@ If you believe an assumption is wrong for your use case:
 4. If it's a real gap: [how it gets addressed] (see CONTACT.md)
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal document review agent documents its assumption that all input documents are in English and PDF format, allowing the procurement team to immediately identify that the agent is not suitable for their multilingual contract workflow without a trial deployment.
+
+**Multi-Agent Fleet:** A data pipeline agent explicitly lists its assumption that upstream data sources refresh every 6 hours, so when a new real-time data source is added to the fleet, the operations team knows this agent's design assumptions no longer hold and needs reconfiguration.
+
+**Regulated Industry:** A clinical trial analysis agent documents its untested assumption that all patient IDs are anonymized before reaching the agent, flagging the risk that if this assumption is wrong, the agent could inadvertently process identifiable health information in violation of HIPAA.
+
 ## Related Specs
 
 | Spec | Relationship |

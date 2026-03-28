@@ -75,6 +75,14 @@ Use the cheapest model that can complete the task:
 - Prefer shorter prompts — link to reference files instead of embedding them
 ```
 
+## Example Use Cases
+
+**Enterprise:** A 50-agent customer service fleet shares a $10,000/month API budget, with per-agent daily caps preventing any single agent from consuming more than 5% of the total allocation during peak ticket volume.
+
+**Multi-Agent Fleet:** An orchestrator dynamically routes complex queries to GPT-4 and simple classification tasks to a cheaper model, switching all agents to the economy model when fleet spending hits 80% of the monthly budget.
+
+**Regulated Industry:** A healthcare claims processing agent enforces strict per-claim cost ceilings to ensure AI processing costs never exceed the contractually agreed percentage of claim value, with automatic escalation when approaching thresholds.
+
 ## Related Specs
 
 | Spec | Relationship |

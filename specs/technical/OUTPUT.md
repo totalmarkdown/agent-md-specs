@@ -224,6 +224,14 @@ Previous schema versions: [changelog reference]
 - v1 → v2: [what changed and how to update parsers]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A business intelligence team uses OUTPUT.md to integrate their analysis agent's structured JSON output directly into their dashboard pipeline, parsing confidence scores programmatically and flagging any output below 0.7 for human review before it reaches the executive dashboard.
+
+**Multi-Agent Fleet:** An orchestrator agent reads OUTPUT.md schemas from downstream worker agents to automatically parse and aggregate results, using the metadata.tokens_used field to track fleet-wide token consumption and the quality.caveats array to surface warnings to the end user.
+
+**Regulated Industry:** An insurance company uses OUTPUT.md's "never produced" guarantees to assure regulators that its claims assessment agent never outputs PII beyond what was provided in the input, with every output logged to an immutable audit trail including task_id and session_id for traceability.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -122,6 +122,14 @@ Wrap current task or checkpoint
 Complete full sequence
 ```
 
+## Example Use Cases
+
+**Enterprise:** At the end of a 4-hour data analysis session, the agent runs its sleep sequence — updating MEMORY.md with findings, committing a checkpoint of its in-progress report, writing a HANDOFF.md note explaining where it left off, and signaling the orchestrator with an estimated return time for the next scheduled session.
+
+**Multi-Agent Fleet:** When a fleet-wide maintenance window is scheduled, each agent receives a "wrap up" signal 5 minutes before the cutoff, triggering the scheduled sleep mode so every agent checkpoints its current task, saves queue state, and commits its session summary before the coordinated shutdown.
+
+**Regulated Industry:** An audit processing agent runs its graceful sleep sequence at the end of each business day, saving all progress to MEMORY.md and committing a git snapshot of updated MD files, ensuring that if the agent does not wake up the next day, a complete record of its last known state is preserved for regulatory continuity.
+
 ## Related Specs
 
 | Spec | Relationship |

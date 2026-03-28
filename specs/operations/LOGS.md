@@ -121,6 +121,14 @@ Log-based alerts:
 - **Export:** [how to export for analysis]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A supply-chain management platform configures structured JSON logging for its procurement agents, enabling the ops team to query by task_id across all agents to trace a purchase order's full lifecycle from request to fulfillment.
+
+**Multi-Agent Fleet:** A DevOps team aggregates logs from 60 agents into Datadog, using the standardized log format to build cross-agent correlation dashboards that surface which upstream agent failures are causing downstream task failures.
+
+**Regulated Industry:** A government contractor's document-classification agents log all tool call inputs and outputs (sanitized of classified content) with 10-year retention, meeting NIST 800-53 audit requirements while ensuring no PII leaks into log storage.
+
 ## Related Specs
 
 | Spec | Relationship |

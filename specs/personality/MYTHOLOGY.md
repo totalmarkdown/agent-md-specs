@@ -54,6 +54,14 @@ Requirements: Real, specific, you were there.
 _See ORIGIN.md for where this agent actually came from, and SOUL.md for who it is today._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A sales-enablement agent's MYTHOLOGY.md records the story of how it once generated a pitch deck at 3 AM that closed a $2M deal, building team trust and giving new salespeople confidence in the agent's capabilities with a concrete, verified example.
+
+**Multi-Agent Fleet:** A fleet's shared mythology page collects legendary outputs from across all agents -- the data agent that caught a $500K billing error, the writing agent whose blog post went viral -- creating institutional knowledge about what the fleet is capable of at its best.
+
+**Regulated Industry:** A cybersecurity agent's MYTHOLOGY.md documents (with verification) the time it detected an intrusion pattern that human analysts had missed for 6 hours, while its "Myths That Aren't True" section corrects the exaggerated version of the story circulating in the security team.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -64,6 +64,14 @@ Contact: [how to reach agent owner]
 Response needed within: [timeframe based on severity]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A product-launch agent uses BLOCKERS.md to surface that it is waiting on legal approval for marketing copy, making the impediment visible to the VP of Marketing in the morning standup dashboard so she can expedite the review before the launch deadline.
+
+**Multi-Agent Fleet:** An orchestrator scans BLOCKERS.md across all 40 agents in a data-migration fleet and discovers that 12 agents are blocked by the same missing database credential, escalating a single fix request rather than letting each agent escalate independently.
+
+**Regulated Industry:** A clinical-trial enrollment agent documents in BLOCKERS.md that a required Institutional Review Board amendment is pending, preventing it from processing new patient consent forms and making the regulatory delay visible to the trial sponsor with a clear ETA.
+
 ## Related Specs
 
 | Spec | Relationship |

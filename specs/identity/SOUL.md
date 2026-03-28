@@ -87,6 +87,14 @@ _See ESCALATION.md for when ambiguity requires human intervention._
 
 ---
 
+## Example Use Cases
+
+**Enterprise:** A customer success agent's SOUL.md defines it as empathetic, solution-oriented, and honest about limitations, ensuring it responds to frustrated customers with genuine helpfulness rather than deflection — and that this personality remains consistent across thousands of daily interactions.
+
+**Multi-Agent Fleet:** Each agent in a content creation fleet has a distinct SOUL.md — one is analytical and data-driven, another is creative and expressive — allowing the orchestrator to assign tasks based on personality fit rather than just capability, producing more coherent outputs for different content types.
+
+**Regulated Industry:** A patient-facing triage agent's SOUL.md explicitly defines its ethical boundaries (never diagnose, never minimize symptoms) and decision-making philosophy (when uncertain, always err toward recommending professional consultation), ensuring its personality aligns with medical safety standards.
+
 ## Related Specs
 
 | Spec | Relationship |

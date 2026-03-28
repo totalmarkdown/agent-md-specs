@@ -104,6 +104,14 @@ Private right of action: For data breaches only
 Penalties: Up to $2,500/violation, $7,500/intentional violation
 ```
 
+## Example Use Cases
+
+**Enterprise:** A retail company's customer data agent uses CCPA.md to automatically process "Right to Delete" requests within 45 days, coordinating deletion across its marketing database, analytics platform, and CRM while logging exceptions for legal holds.
+
+**Multi-Agent Fleet:** A data broker's agent fleet uses CCPA.md to enforce "Do Not Sell" opt-outs across all downstream agents within 15 business days, ensuring Global Privacy Control signals are honored consistently.
+
+**Regulated Industry:** An adtech company configures CCPA.md so its profiling agent categorizes all personal information by the nine CCPA categories, enabling accurate disclosures in its annual privacy report and reducing audit findings from the California Privacy Protection Agency.
+
 ## Related Specs
 
 | Spec | Relationship |

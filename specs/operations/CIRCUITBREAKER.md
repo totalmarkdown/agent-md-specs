@@ -285,6 +285,14 @@ escalation increases one tier. At maximum escalation, trigger
 ICE.md emergency protocol.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A payment processing company uses CIRCUITBREAKER.md to isolate its fraud-detection agent from a flaky third-party identity verification API, serving cached risk scores when the breaker opens rather than blocking all transactions.
+
+**Multi-Agent Fleet:** A fleet of 200 customer-support agents shares a common knowledge-base service; team-level breakers prevent a knowledge-base outage from cascading into every agent simultaneously, while individual agents fall back to local cached FAQ data.
+
+**Regulated Industry:** A banking platform's loan-underwriting agent uses blast radius boundaries to ensure that a credit bureau API failure only affects new applications, never interrupts in-progress approvals or existing customer account operations.
+
 ### Cross-References
 - **ICE.md** — Emergency break-glass protocols when circuit breakers and automated recovery are insufficient
 - **ESCALATION.md** — Notification routing and severity levels for breaker events

@@ -349,6 +349,14 @@ This summary is the last thing written before destruction
 and becomes the permanent record of the session's existence.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A support agent handling tickets from multiple clients spawns a separate session for each client interaction, with unique ephemeral credentials and data scope locks ensuring that one client's session can never access another client's data — even though the same persistent agent serves both.
+
+**Multi-Agent Fleet:** An orchestrator assigns three concurrent tasks to a single agent, each running in its own session with independent budget caps, privilege grants, and audit trails, so when one session's budget is exhausted the other two continue unaffected and the failed session's audit hash is preserved for review.
+
+**Regulated Industry:** A HIPAA-compliant agent processing patient records creates a new session per case, with session keys stored only in memory and cryptographically zeroed on completion, ensuring that no patient data residue persists after the task and the destruction is logged as verifiable proof for compliance auditors.
+
 ### Cross-References
 - **ID.md** — Persistent identity that spawns sessions
 - **WAKEUP.md** — Agent startup that may trigger session creation

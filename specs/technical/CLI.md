@@ -131,6 +131,14 @@ See ENV.md for the full environment variable specification.
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** A DevOps team uses CLI.md to integrate their code review agent into CI/CD pipelines, piping git diffs into the CLI with `--format json --quiet` flags for machine-readable output and using exit codes to gate merge approvals.
+
+**Multi-Agent Fleet:** A platform team uses CLI.md documentation to build shell scripts that invoke multiple agents sequentially, using `--dry-run` to preview each agent's actions before committing to a full deployment workflow.
+
+**Regulated Industry:** An accounting firm uses CLI.md to run their tax calculation agent locally with `--config` pointing to client-specific configuration files, ensuring sensitive financial data never leaves the local machine by using offline mode.
+
 ## Related Specs
 
 | Spec | Relationship |

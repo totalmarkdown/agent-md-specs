@@ -86,6 +86,14 @@ Treat accordingly. Do not include information that
 shouldn't be visible at the declared privacy level.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A long-running data-migration agent journals daily observations about schema inconsistencies it encounters, giving the engineering team a running narrative of data quality issues that structured logs alone would miss.
+
+**Multi-Agent Fleet:** A research platform's fleet of literature-review agents each maintain journals where they note surprising findings and emerging themes, which a supervisor agent periodically reads to identify cross-domain insights no single agent would catch.
+
+**Regulated Industry:** A compliance-monitoring agent journals its reasoning when borderline transactions are flagged or cleared, providing regulators with a human-readable narrative that supplements the structured audit trail during examinations.
+
 ## Related Specs
 
 | Spec | Relationship |

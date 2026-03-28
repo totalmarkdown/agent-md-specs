@@ -84,6 +84,14 @@ _See QUOTA.md for full rate limiting policies._
 | API | [N] | [N] | [N] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A DevOps agent publishes its available channels — MCP for agent-to-agent orchestration, CLI for developer scripting, and REST API for custom integrations — so each team can connect via whichever method best fits their existing toolchain.
+
+**Multi-Agent Fleet:** An orchestrator reads each agent's CHANNELS.md to determine the fastest available endpoint, routing latency-sensitive tasks through the MCP server (sub-second response) and bulk batch jobs through the REST API with higher rate limits.
+
+**Regulated Industry:** A compliance reporting agent documents that its chat interface is available only during business hours with human-reviewed outputs, while its MCP endpoint operates 24/7 for automated audit data collection with full logging on every channel.
+
 ## Related Specs
 
 | Spec | Relationship |

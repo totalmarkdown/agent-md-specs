@@ -84,6 +84,14 @@ change or expire.
 **Verification contact:** [Email for verification requests]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An enterprise procurement team requires SOC 2 Type II and ISO 27001 documentation before approving any AI agent for internal use; CERTIFICATIONS.md provides a single, verifiable checklist that shortens the vendor approval cycle from months to weeks.
+
+**Multi-Agent Fleet:** A SaaS platform operator audits CERTIFICATIONS.md across their entire agent fleet quarterly to identify expiring certifications and ensure every production agent maintains current compliance attestations before renewal deadlines.
+
+**Regulated Industry:** A hospital system's vendor management office uses CERTIFICATIONS.md to verify that a clinical-documentation agent holds a current HIPAA BAA and has passed penetration testing before granting it access to electronic health records.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -76,6 +76,14 @@ If this agent's output is overridden by a human:
 4. Flag in MEMORY.md if override reveals a gap in understanding
 ```
 
+## Example Use Cases
+
+**Enterprise:** A product company's design agent reports to both the Design Director (full authority) and the Product Manager (task-assignment authority within sprint scope), with REPORTSTO.md making clear which override protocol applies when instructions conflict.
+
+**Multi-Agent Fleet:** A hierarchical fleet uses REPORTSTO.md to establish that sub-agents can only accept task assignments from their designated orchestrator agent, preventing unauthorized agents from injecting work into another team's pipeline.
+
+**Regulated Industry:** A law firm's contract-review agent defines a strict authority hierarchy where only licensed attorneys can override the agent's risk assessments, and the agent logs every override in MEMORY.md to maintain a defensible record of human-in-the-loop decisions.
+
 ## Related Specs
 
 | Spec | Relationship |

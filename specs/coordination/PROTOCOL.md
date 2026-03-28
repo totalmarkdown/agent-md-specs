@@ -101,6 +101,14 @@ If two agents receive conflicting instructions (see DELEGATION.md for the author
 3. If genuinely ambiguous: escalate per ESCALATION.md
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer support team's agents use PROTOCOL.md to define standardized message formats for ticket handoffs, ensuring every escalation from the triage agent to the specialist agent includes the full conversation context, customer sentiment score, and expected resolution format.
+
+**Multi-Agent Fleet:** A CI/CD pipeline's build, test, and deploy agents communicate via PROTOCOL.md-defined message types with strict acknowledgment requirements (urgent deploy messages acknowledged within 10 seconds, normal build results within 5 minutes) to prevent silent failures.
+
+**Regulated Industry:** A legal discovery platform's agents follow PROTOCOL.md to pass document review results between classification, privilege detection, and redaction agents, with every handoff including task IDs and provenance data required for chain-of-custody documentation.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -151,6 +151,14 @@ it should resolve the full configuration by:
 The resolved configuration is the effective configuration.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A new customer support agent inherits the organization's POLICY.md and LIMITS.md in full (no override allowed), adds team-specific ESCALATION.md paths for billing disputes, and defines its own SOUL.md personality locally rather than inheriting the generic org persona.
+
+**Multi-Agent Fleet:** A crew of data analysis agents inherits budget constraints from the swarm level but uses selective inheritance mode to pull only the TOOLS.md and GLOSSARY.md from the parent, keeping domain-specific RULES.md defined at the crew level for specialized financial modeling tasks.
+
+**Regulated Industry:** A healthcare organization enforces strict inheritance mode so that every agent in the fleet inherits COMPLIANCE.md and SECURITY.md from the org level without exception, and any attempt to override these files triggers a validation failure and security alert.
+
 ## Related Specs
 
 | Spec | Relationship |

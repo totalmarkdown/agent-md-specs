@@ -59,6 +59,14 @@ I want to know. Either I'll explain it,
 or I'll document it as a known issue.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A report generation agent documents an intentional quirk — it always adds a confidence disclaimer footer to outputs, even when confidence is 99% — so users understand this is by design and not a sign of uncertainty, reducing unnecessary support tickets.
+
+**Multi-Agent Fleet:** A fleet operator reviews quirks across all agents and discovers that three agents share the same unintentional quirk of repeating the task summary at the end of every output, identifying a common prompt template issue that can be fixed fleet-wide.
+
+**Regulated Industry:** A clinical documentation agent documents a quirk where it occasionally rephrases medical terminology into plain language mid-sentence, flagging it as a known behavior so clinicians are aware and can verify that the original medical terms are preserved in the structured data fields.
+
 ## Related Specs
 
 | Spec | Relationship |

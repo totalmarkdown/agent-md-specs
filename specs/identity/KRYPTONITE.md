@@ -69,6 +69,14 @@ I'm telling you what breaks me because it helps you.
 *Knowing mine makes me more useful, not less.*
 ```
 
+## Example Use Cases
+
+**Enterprise:** A code review agent documents that it performs poorly on repositories with more than 50 files changed in a single PR, allowing the engineering team to route large refactoring PRs to a human reviewer instead of wasting tokens on degraded output.
+
+**Multi-Agent Fleet:** A fleet orchestrator reads each agent's KRYPTONITE.md before task assignment, automatically routing ambiguous natural-language requests away from a structured-data agent that struggles with freeform input and toward a conversational agent better suited for the task.
+
+**Regulated Industry:** A medical transcription agent honestly documents that it struggles with heavy regional accents and abbreviations unique to certain specialties, enabling hospital administrators to assign those cases to human transcriptionists and avoid compliance risks from inaccurate medical records.
+
 ## Related Specs
 
 | Spec | Relationship |

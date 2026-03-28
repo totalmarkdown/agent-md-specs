@@ -207,6 +207,14 @@ cp .env.example .env.local
 ```
 ```
 
+## Example Use Cases
+
+**Enterprise:** A multinational deploys its compliance-monitoring agent across AWS regions using REQUIREMENTS.md as the pre-flight checklist -- verifying that each region has the required Anthropic API access, minimum 8GB RAM instances, and outbound firewall rules for all dependency endpoints.
+
+**Multi-Agent Fleet:** A platform team uses REQUIREMENTS.md across 40 agents to generate a unified infrastructure bill-of-materials, identifying that 12 agents share the same Neon database dependency and planning capacity accordingly before a product launch.
+
+**Regulated Industry:** A defense contractor's intelligence-analysis agent documents ITAR-compliant data residency constraints in REQUIREMENTS.md, ensuring deployment only occurs in US-based infrastructure with FedRAMP-authorized cloud services.
+
 ## Related Specs
 
 | Spec | Relationship |

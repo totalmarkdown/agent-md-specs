@@ -286,6 +286,14 @@ restrictions:
 | Profile accuracy | Quarterly | [security role] | Do profiles match actual usage? |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A report generation agent starts each session with read-only access to its own config files, requests just-in-time write access to the analytics database only for the duration of the report task, and has that privilege automatically revoked the moment the report is saved.
+
+**Multi-Agent Fleet:** When an agent in a fleet is compromised by a prompt injection attempt, zero-trust privilege boundaries prevent lateral movement because each agent holds only baseline permissions and cannot access resources belonging to peer agents without a fresh, scoped privilege grant.
+
+**Regulated Industry:** A PCI-DSS compliant payment processing agent receives read access to the credentials vault for exactly 300 seconds to retrieve a payment gateway token, after which the privilege is physically revoked and any cached credentials are destroyed from memory.
+
 ### Cross-References
 - **PERMISSIONS.md** — Static permission definitions (LEASTPRIVILEGE governs dynamic grants)
 - **ACCESS.md** — Technical access control implementation

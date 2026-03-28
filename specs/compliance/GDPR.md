@@ -66,6 +66,14 @@ See PII.md for the complete personal data inventory.
 All processing activities are logged per AUDITTRAIL.md.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A European SaaS company configures GDPR.md for its analytics agent to document legal bases per processing activity, ensuring that Standard Contractual Clauses are in place before any user data is transferred to a US-hosted sub-processor.
+
+**Multi-Agent Fleet:** A marketing platform operating across EU member states uses GDPR.md to configure each regional agent with the correct Data Protection Authority contact and ensure that consent management follows jurisdiction-specific age thresholds (13 vs 16 depending on the member state).
+
+**Regulated Industry:** A telemedicine provider's appointment-scheduling agent uses GDPR.md to enforce data minimization and purpose limitation, collecting only the health data categories strictly necessary for booking while maintaining a complete record of processing activities for the lead DPA.
+
 ## Related Specs
 
 | Spec | Relationship |

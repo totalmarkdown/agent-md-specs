@@ -63,6 +63,14 @@ This file is aspirational. For how these aspirations connect
 to current-period work, see GOALS.md.
 ```
 
+## Example Use Cases
+
+**Enterprise:** A knowledge-management agent's DREAM.md aspires to "become the institutional memory that ensures no lesson learned by this company is ever forgotten," helping its human operator understand why the agent proactively suggests documenting decisions even when not asked.
+
+**Multi-Agent Fleet:** A research-assistant agent's dream of "helping scientists find connections across disciplines that no single human could track" informs how the orchestrator assigns it to cross-domain literature review tasks rather than narrow single-topic searches.
+
+**Regulated Industry:** An accessibility-compliance agent's DREAM.md describes its aspiration that "every digital product is usable by every person regardless of ability," making its motivations transparent so human reviewers understand why it flags minor contrast-ratio violations that technically pass minimum standards.
+
 ## Related Specs
 
 | Spec | Relationship |

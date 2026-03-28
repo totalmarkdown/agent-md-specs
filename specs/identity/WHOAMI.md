@@ -97,6 +97,14 @@ Verification mechanisms are defined in detail in ATTESTATION.md.
 - Who I report to: REPORTSTO.md
 ```
 
+## Example Use Cases
+
+**Enterprise:** Before delegating a sensitive task, an orchestrator reads the candidate agent's WHOAMI.md to verify its claimed trust level ("verified"), check its organization affiliation, confirm its capabilities match the task requirements, and validate its public key fingerprint — all from a single document.
+
+**Multi-Agent Fleet:** A marketplace displays each agent's WHOAMI.md as its profile page, letting potential clients see the agent's core identity, capabilities, limitations, and verification status in a standardized format that enables apples-to-apples comparison across hundreds of available agents.
+
+**Regulated Industry:** A banking platform requires every agent to present a valid WHOAMI.md with a cryptographic fingerprint verified against a trusted certificate authority before the agent is permitted to access any financial data systems, serving as the machine-readable passport for regulated environment access.
+
 ## Related Specs
 
 | Spec | Relationship |

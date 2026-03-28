@@ -113,6 +113,14 @@ PANIC.md is a single instruction:
 **When everything breaks — stop, save, signal, wait.**
 ```
 
+## Example Use Cases
+
+**Enterprise:** A production email-sending agent detects three consecutive output validation failures in under a second, immediately triggers the panic sequence — stops mid-batch, dumps its state including the last 10 sent messages, signals the monitoring system, and waits for the platform team to investigate before any more emails go out.
+
+**Multi-Agent Fleet:** An orchestrator agent receives commands from an unverified source during a fleet-wide task, enters panic mode across all child agents simultaneously, saving each agent's state to individual panic dumps so the security team can reconstruct exactly what each agent was doing at the moment of the incident.
+
+**Regulated Industry:** A trading execution agent detects a cost spike of 50x normal in under three seconds, executes the panic sequence to halt all pending orders, preserves the full order book state, and signals compliance so they can determine whether any erroneous trades require regulatory reporting.
+
 ## Related Specs
 
 | Spec | Relationship |

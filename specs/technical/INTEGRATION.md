@@ -91,6 +91,14 @@ If any integration is unavailable, these tasks are affected:
 | [name] | [tasks blocked] | [severity] | [fallback behavior] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A media company uses INTEGRATION.md to map all connection points for its content pipeline agent — PostgreSQL for metadata, S3 for asset storage, Kafka for publish events, and inbound webhooks from the CMS — giving the infrastructure team a single reference for firewall and access provisioning.
+
+**Multi-Agent Fleet:** A platform team uses INTEGRATION.md dependency maps across all agents to perform impact analysis before a database migration, identifying which agents will be affected and planning fallback behaviors for each.
+
+**Regulated Industry:** A pharmaceutical company uses INTEGRATION.md to document its clinical data agent's database connections (read-only to the trial database, read-write to the analysis store) with retention policies for each file system path, satisfying GxP data integrity requirements.
+
 ## Related Specs
 
 | Spec | Relationship |

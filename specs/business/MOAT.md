@@ -191,6 +191,14 @@ Triggers for reassessment: [competitor launches, market changes]
 Last updated: [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A large insurance company uses MOAT.md to evaluate whether a claims-processing agent has durable switching costs and compliance history that justify a multi-year contract over cheaper alternatives.
+
+**Multi-Agent Fleet:** An AI platform operator assesses the moat strength of each agent in their fleet quarterly, identifying which agents have deep integration moats worth investing in and which are commodity-replaceable.
+
+**Regulated Industry:** A healthcare AI vendor documents their HIPAA audit history and proprietary clinical-data moat in MOAT.md, giving hospital procurement teams confidence that no new entrant can replicate their regulatory standing overnight.
+
 ## Related Specs
 
 | Spec | Relationship |

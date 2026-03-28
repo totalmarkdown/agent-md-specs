@@ -97,6 +97,14 @@ Check these endpoints to verify API availability before starting tasks:
 | [API name] | [endpoint] | [expected status/body] | [interval] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A marketing agency uses API.md to document all approved endpoints for its social media management agent, specifying rate limits per platform (Twitter: 300/15min, LinkedIn: 100/day) and prohibiting DELETE operations on published posts without human approval.
+
+**Multi-Agent Fleet:** A fleet operations team uses API.md health monitoring tables to verify all external API dependencies are available before deploying a new agent version, catching a Stripe API sandbox outage before it caused deployment failures.
+
+**Regulated Industry:** A healthcare data platform uses API.md to restrict its patient record agent to read-only GET endpoints on the EHR system, with explicit prohibition of any write or delete operations and request logging that excludes PII from response bodies.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -152,6 +152,14 @@ Next scheduled drill: [date]
 How to run a drill: [instructions]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A production data pipeline agent begins generating corrupted output at scale, and the on-call engineer follows the TYPE 1 protocol to immediately kill the process, preserve logs, and notify the data platform lead before any downstream systems consume bad data.
+
+**Multi-Agent Fleet:** A fleet orchestrator detects runaway API spending from a malfunctioning agent that entered an infinite retry loop, follows the TYPE 4 protocol to hard-stop the agent, check cumulative costs, and identify the root cause before allowing any fleet member to restart.
+
+**Regulated Industry:** A securities trading agent's health check stops responding during market hours, and the operations team follows the TYPE 2 protocol to diagnose whether the outage is safe to recover from or requires regulatory notification before restart.
+
 ## Related Specs
 
 | Spec | Relationship |

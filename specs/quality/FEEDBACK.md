@@ -82,6 +82,14 @@ Auto-learn never modifies: SOUL.md, POLICY.md, SECURITY.md, ESCALATION.md
 - User can delete their feedback: [yes | no]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A legal services firm configures FEEDBACK.md so that attorneys' corrections to contract review outputs are automatically saved as few-shot examples, improving the agent's clause interpretation over time.
+
+**Multi-Agent Fleet:** A fleet coordinator aggregates FEEDBACK.md data across 50 agents to identify which agents consistently receive low ratings, triggering automated retraining proposals for underperformers.
+
+**Regulated Industry:** A healthcare organization uses FEEDBACK.md's privacy controls to ensure all patient-facing feedback is anonymized within 48 hours, meeting HIPAA requirements for incidental PHI in user comments.
+
 ## Related Specs
 
 | Spec | Relationship |

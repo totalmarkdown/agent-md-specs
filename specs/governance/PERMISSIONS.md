@@ -69,6 +69,14 @@ Enforcement of these permissions at runtime is handled by ENFORCEMENT.md.
 - Change log: [location]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A marketing analytics agent is granted read-only access to the campaign database and read-write access to its own reporting workspace, with any attempt to modify campaign configurations or access the finance database explicitly denied and logged.
+
+**Multi-Agent Fleet:** Each agent in a content moderation fleet is assigned different permission levels — junior agents get read-only access to flagged content, while senior agents get read-write access to moderation decisions, enforcing a tiered review workflow through static permission boundaries.
+
+**Regulated Industry:** A GDPR-compliant data processing agent has explicit permissions to read anonymized analytics data but is denied access to any table containing raw PII, with every permission change requiring sign-off from the Data Protection Officer and logged in the change history.
+
 ## Related Specs
 
 | Spec | Relationship |

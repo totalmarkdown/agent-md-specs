@@ -97,6 +97,14 @@ Last reviewed: [date]
 Reviewed by: [role]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A sales enablement agent follows rules specifying that when conflicting instructions arrive from a rep and a manager, the manager's instruction takes precedence, and when a deadline conflicts with output quality, the agent must flag the tradeoff rather than silently reducing quality.
+
+**Multi-Agent Fleet:** A fleet of document processing agents shares communication rules requiring every output to include a source citation and confidence score, with the rule review cycle set to quarterly so that emerging patterns of rule gaps are addressed before they cause downstream issues.
+
+**Regulated Industry:** An insurance claims agent follows decision rules that require ambiguous claims to be routed to a human adjuster rather than resolved autonomously, with each routing decision logged against the specific rule number for audit trail purposes.
+
 ## Related Specs
 
 | Spec | Relationship |

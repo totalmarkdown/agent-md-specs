@@ -89,6 +89,14 @@ If data breach detected or suspected:
 6. GDPR: notify DPA within 72 hours if required (see GDPR.md)
 ```
 
+## Example Use Cases
+
+**Enterprise:** A global HR platform's recruitment agent uses PRIVACY.md to enforce GDPR data minimization (collecting only name and qualifications, never age or ethnicity) and CCPA deletion procedures for California-based candidates who request erasure of their application data.
+
+**Multi-Agent Fleet:** A customer support platform configures PRIVACY.md for each regional agent to apply the strictest applicable regulation per jurisdiction, ensuring the EU support agent enforces GDPR while the Canadian agent follows PIPEDA retention schedules.
+
+**Regulated Industry:** A mental health app's AI therapist agent follows PRIVACY.md rules requiring HIPAA-grade secure deletion of all session transcripts within 30 days of a patient's request, with verification logging that confirms deletion across every storage location.
+
 ## Related Specs
 
 | Spec | Relationship |

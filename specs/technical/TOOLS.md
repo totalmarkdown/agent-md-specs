@@ -128,6 +128,14 @@ All tool calls logged to LOGS.md with:
 - Duration, cost (if applicable), success/failure
 ```
 
+## Example Use Cases
+
+**Enterprise:** A data science team uses TOOLS.md to document their analysis agent's full toolbox — 6 file system tools, 3 code execution tools with language-specific timeouts, and 4 data tools — with approval status and restrictions that prevent the agent from running unapproved bash commands.
+
+**Multi-Agent Fleet:** A security team audits TOOLS.md across all agents in the fleet to verify no agent has unapproved tools, discovering that a staging agent still had unrestricted web_fetch access to all domains and tightening it to the approved allowlist.
+
+**Regulated Industry:** A financial institution uses TOOLS.md to restrict its trading analysis agent to read-only database queries and local computation tools, explicitly prohibiting any communication tools (email, Slack, webhook) to prevent unauthorized market-moving information disclosure.
+
 ## Related Specs
 
 | Spec | Relationship |

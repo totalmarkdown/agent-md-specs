@@ -105,6 +105,14 @@ Expected: [what good output looks like]
 Pass criteria: [EVAL.md reference]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A content agency uses PROMPTS.md to version-control their writing agent's prompt library, tracking a 23% quality improvement when they switched from basic to chain-of-thought prompting for long-form article generation.
+
+**Multi-Agent Fleet:** A platform team uses PROMPTS.md to standardize system prompt components across all agents in the fleet, ensuring every agent loads SOUL.md identity and LIMITS.md constraints from signed, version-controlled sources rather than hardcoded strings.
+
+**Regulated Industry:** A compliance team uses PROMPTS.md to audit the exact prompts their regulatory filing agent uses, verifying that no prompt instructs the agent to speculate or omit required disclosures, with full version history showing who changed each prompt and why.
+
 ## Related Specs
 
 | Spec | Relationship |

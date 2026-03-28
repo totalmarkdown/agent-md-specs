@@ -105,6 +105,14 @@ For organizations with model governance requirements (see EUAIACT.md for EU AI A
 | [v] | [model] | [previous] | [why] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A product team uses MODEL.md to document their customer support agent's primary model (Claude Sonnet), fallback model (GPT-4o), and local option (Llama 3 via Ollama), with cost profiles showing $0.003 per standard task to justify budget allocation.
+
+**Multi-Agent Fleet:** A marketplace operator requires MODEL.md for every listed agent, enabling buyers to filter agents by context window size, multimodal capabilities, and training cutoff date before selecting the right agent for their use case.
+
+**Regulated Industry:** An EU-based enterprise uses MODEL.md compliance notes to verify that their agent's model provider has a Data Processing Agreement, processes data in EU regions, and is approved for GDPR-compliant workloads before deploying in production.
+
 ## Related Specs
 
 | Spec | Relationship |

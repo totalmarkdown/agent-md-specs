@@ -57,6 +57,14 @@ origin_location: string
 _See SOUL.md for the personality that emerged from this origin._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A recruitment-screening agent's ORIGIN.md tells how an HR director spent 6 hours per day manually reading resumes and built the first version over a weekend, giving new team members context about why the agent prioritizes fairness checks -- the founder experienced bias in her own job searches.
+
+**Multi-Agent Fleet:** Each agent in a fleet publishes its ORIGIN.md to an internal wiki, creating an institutional record of why each capability exists, what problems motivated it, and what pivotal design decisions were made -- preventing future engineers from unknowingly revisiting abandoned approaches.
+
+**Regulated Industry:** A food-safety inspection agent's ORIGIN.md documents that it was built after a contamination incident that existing tools failed to catch, providing auditors with the rationale behind its unusually conservative detection thresholds and zero-tolerance escalation policy.
+
 ## Related Specs
 
 | Spec | Relationship |

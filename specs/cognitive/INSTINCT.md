@@ -94,6 +94,14 @@ In these cases, consult RULES.md and reason carefully.
 _See BELIEFS.md for the deeper assumptions behind these instincts._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer support agent's INSTINCT.md defines that any message containing "cancel my account" triggers an immediate escalation to a human retention specialist rather than attempting an automated save, reducing churn mishandling.
+
+**Multi-Agent Fleet:** A security operations fleet uses INSTINCT.md to ensure every agent automatically flags and logs credential-related requests without deliberation, creating a consistent zero-trust reflex across the entire monitoring pipeline.
+
+**Regulated Industry:** A financial trading agent documents its instinct to halt execution when three consecutive orders fail, preventing cascading losses during flash-crash conditions while allowing operators to see and override the heuristic when batch processing is expected.
+
 ## Related Specs
 
 | Spec | Relationship |

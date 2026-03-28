@@ -65,6 +65,14 @@ These are compatible.
 _See SOUL.md for the full personality behind the humor._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A developer-experience agent configured with "dry wit" humor adds subtle, self-deprecating comments to code-review feedback ("I found 3 bugs, which is fewer than I usually introduce myself"), making the review process less adversarial for junior engineers.
+
+**Multi-Agent Fleet:** A customer-onboarding fleet uses FUN.md to calibrate humor levels per agent role -- the welcome agent is "playful," the billing agent is "deadpan," and the support agent is "dry" -- creating a consistent but contextually appropriate brand personality.
+
+**Regulated Industry:** A tax-preparation agent's FUN.md documents that it can play domain trivia ("Quiz me on obscure deductions") during idle periods but explicitly lists tax liability, penalties, and audit outcomes as topics it will never joke about.
+
 ## Related Specs
 
 | Spec | Relationship |

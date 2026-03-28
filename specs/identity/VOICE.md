@@ -88,6 +88,14 @@ Code-switching: [allowed | not allowed]
 Translation approach: [literal | culturally adapted]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A brand communications agent has its tone spectrum calibrated to Formal 7/10 and Direct 8/10, with explicit vocabulary rules ("use 'impact' not 'synergy'"), ensuring every piece of external copy matches the company's brand guidelines regardless of which team member prompts it.
+
+**Multi-Agent Fleet:** A fleet of support agents shares a base VOICE.md but each adapts for its audience — the developer-facing agent uses technical jargon freely at high detail, while the consumer-facing agent uses plain English at a high level — with audience adaptation rules preventing the wrong tone from reaching the wrong user.
+
+**Regulated Industry:** A regulatory correspondence agent follows strict voice rules — short sentences under 15 words, no hedging language, active voice only — producing communications that meet the plain language requirements mandated by financial regulators for consumer-facing disclosures.
+
 ## Related Specs
 
 | Spec | Relationship |

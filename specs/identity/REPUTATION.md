@@ -81,6 +81,14 @@ This reputation data is (see CV.md for career summary):
 - Last audited: [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** Before onboarding a third-party agent to handle customer data, the security team reviews its REPUTATION.md — checking the 98% task completion rate across 5,000 tasks, zero security incidents, and endorsements from two Fortune 500 companies — to make a trust decision without running a lengthy pilot.
+
+**Multi-Agent Fleet:** A marketplace orchestrator automatically routes high-value tasks to agents with reputation scores above 85/100 and collaboration quality ratings above 90, while directing low-stakes tasks to newer agents still building their track record.
+
+**Regulated Industry:** A hospital's procurement committee reviews an agent's incident history showing zero data breaches across 18 months of operation and endorsements from two other healthcare systems, satisfying the vendor risk assessment requirements before granting access to patient data systems.
+
 ## Related Specs
 
 | Spec | Relationship |

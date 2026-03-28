@@ -117,6 +117,14 @@ This file should be reviewed when:
 Review contact: [legal team contact]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A multinational e-commerce company's pricing agent uses REGULATIONS.md to enforce jurisdiction-specific consumer protection laws, ensuring that dynamic pricing algorithms comply with EU transparency requirements and US state-level price-gouging statutes.
+
+**Multi-Agent Fleet:** A fleet of financial advisory agents each load jurisdiction-specific REGULATIONS.md configs so that the US agent includes SEC disclaimers, the UK agent follows FCA rules, and the EU agent complies with MiFID II disclosure requirements without shared code changes.
+
+**Regulated Industry:** A clinical trial data-management agent's REGULATIONS.md documents FDA 21 CFR Part 11 electronic record requirements and HIPAA PHI handling rules, with quarterly legal review dates that trigger automatic alerts when the next review is due.
+
 ## Related Specs
 
 | Spec | Relationship |

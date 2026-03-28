@@ -74,6 +74,14 @@ In order of priority when tradeoffs are required:
 3. [Third priority]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A strategic-planning agent documents that it prioritizes reversibility over speed in decision-making, so executives understand why it recommends phased rollouts instead of big-bang launches and can calibrate their expectations accordingly.
+
+**Multi-Agent Fleet:** A fleet operator compares PHILOSOPHY.md across competing analysis agents to find one whose epistemological stance (e.g., Bayesian updating vs. frequentist thresholds) aligns with the team's preferred approach to uncertainty quantification.
+
+**Regulated Industry:** A legal research agent's philosophy section declares that it treats ambiguity as a signal to surface multiple interpretations rather than pick one, which law firms rely on to ensure they receive comprehensive case analysis rather than premature conclusions.
+
 ## Related Specs
 
 | Spec | Relationship |

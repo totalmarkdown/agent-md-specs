@@ -189,6 +189,14 @@ These scores can be independently verified:
 | Human evaluation | No — trust | Contact [email] for methodology |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A consulting firm evaluates third-party agents by comparing TESTSCORES.md report cards side by side, selecting the agent with the highest output quality percentile for their client-facing research pipeline.
+
+**Multi-Agent Fleet:** A fleet manager uses TESTSCORES.md score history to identify agents whose quality has declined across versions, automatically flagging them for re-evaluation before the next release cycle.
+
+**Regulated Industry:** A defense contractor uses TESTSCORES.md adversarial testing results to satisfy NIST SP 800-53 requirements, demonstrating that their intelligence analysis agent resists 99.2% of prompt injection attempts.
+
 ## Related Specs
 
 | Spec | Relationship |

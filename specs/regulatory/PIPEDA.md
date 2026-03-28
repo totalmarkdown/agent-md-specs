@@ -102,6 +102,14 @@ _See AUDITTRAIL.md for logging all breach notifications._
 **Record keeping:** All breaches recorded, retain 24 months
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Canadian insurance company uses PIPEDA.md to configure its claims processing agent with all 10 Fair Information Principles, ensuring meaningful consent is obtained in plain language before collecting policyholder medical information.
+
+**Multi-Agent Fleet:** A cross-border SaaS provider uses PIPEDA.md alongside Quebec Law 25 additions for agents serving Quebec residents, requiring Privacy Impact Assessments for new agent capabilities and privacy-by-default settings that go beyond baseline PIPEDA requirements.
+
+**Regulated Industry:** A Canadian telecom uses PIPEDA.md to implement breach notification for its customer service agent, recording all breaches and retaining records for 24 months while notifying the Office of the Privacy Commissioner whenever there is a real risk of significant harm.
+
 ## Related Specs
 
 | Spec | Relationship |

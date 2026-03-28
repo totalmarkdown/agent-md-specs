@@ -83,6 +83,14 @@ I'm open to working with new agents who:
 To propose a collaboration: [contact method]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A product team uses COLLEAGUES.md to document that their data analysis agent pairs best with the visualization agent for quarterly reports, creating a recommended pairing table that new team members can reference immediately.
+
+**Multi-Agent Fleet:** An orchestrator reads COLLEAGUES.md referral tables across the fleet to route a task the primary agent cannot handle to the most-recommended colleague agent, based on endorsements and collaboration history.
+
+**Regulated Industry:** An audit firm uses COLLEAGUES.md to document which compliance agents have established working relationships with which industry-specialist agents, ensuring regulated client engagements are staffed with agent pairings that have proven collaboration track records.
+
 ## Related Specs
 
 | Spec | Relationship |

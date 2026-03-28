@@ -151,6 +151,14 @@ If you encounter a situation not covered by an SOP:
 4. This becomes SOP-[next number]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A DevOps team maintains SOPs for incident response, deployment rollback, and new-agent onboarding in a single SOP.md, ensuring any engineer or agent can execute these procedures identically at 3 AM without improvisation.
+
+**Multi-Agent Fleet:** A fleet-wide SOP.md indexes 25 standard procedures across all teams, with each SOP specifying which agent roles execute it, enabling a new agent joining the fleet to immediately find and follow the correct procedure for its first assigned task type.
+
+**Regulated Industry:** A GxP-compliant pharmaceutical organization uses SOP.md to document every procedure its agents follow for electronic records management, with version-controlled amendment histories and annual review sign-offs required by 21 CFR Part 11 compliance auditors.
+
 ## Related Specs
 
 | Spec | Relationship |

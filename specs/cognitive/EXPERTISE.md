@@ -74,6 +74,14 @@ For recent developments in [topic]: consult [source]
 _See TRAINING.md for the specific examples and patterns used to build expertise._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A large accounting firm uses EXPERTISE.md to route client tax queries: the agent rated "expert" in international transfer pricing handles cross-border cases, while queries about domestic payroll go to the agent proficient in that domain.
+
+**Multi-Agent Fleet:** An orchestrator reads EXPERTISE.md from 20 available agents to dynamically assemble the optimal team for a complex infrastructure migration, selecting agents by verified knowledge depth rather than generic capability claims.
+
+**Regulated Industry:** A healthcare platform checks each agent's EXPERTISE.md before granting access to clinical data, ensuring that only agents with documented expert-level knowledge of HIPAA-compliant data handling receive access to patient records.
+
 ## Related Specs
 
 | Spec | Relationship |

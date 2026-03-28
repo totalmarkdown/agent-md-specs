@@ -95,6 +95,14 @@ If cardholder data breach suspected:
 
 **PCI incident contact:** [acquiring bank contact]
 
+## Example Use Cases
+
+**Enterprise:** An online retailer uses PCIDSS.md to configure its checkout assistant agent with tokenization, ensuring the agent never stores full PANs and that scope is reduced to a narrow set of in-scope systems for their Level 2 merchant SAQ.
+
+**Multi-Agent Fleet:** A payment gateway provider uses PCIDSS.md to enforce Requirement 3 (protect stored cardholder data) and Requirement 4 (protect data in transit) across all agents in its processing fleet, with quarterly vulnerability scans documented per Requirement 11.
+
+**Regulated Industry:** A subscription billing platform uses PCIDSS.md to ensure its recurring payment agent never retains CVV/CVC codes post-authorization and that all cardholder data access is logged per Requirement 10, preserving evidence for annual QSA assessment.
+
 ## Related Specs
 
 | Spec | Relationship |

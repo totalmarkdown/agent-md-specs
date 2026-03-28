@@ -106,6 +106,14 @@ not when we wish it would.
 Last updated: [date] — what changed: [what]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A distributed engineering organization documents its async-first communication culture in CULTURE.md, so newly deployed agents default to written handoffs via HANDOFF.md rather than expecting synchronous coordination with human engineers across time zones.
+
+**Multi-Agent Fleet:** A fleet's CULTURE.md establishes that agents surface bad news immediately rather than retrying silently, ensuring that a data-pipeline agent reports a schema mismatch within minutes instead of burning through its retry budget overnight.
+
+**Regulated Industry:** An accounting firm's agent fleet CULTURE.md codifies a "four-eyes principle" where no single agent's output goes to a client without review by a second agent or human, reflecting the firm's professional liability culture around audit quality.
+
 ## Related Specs
 
 | Spec | Relationship |

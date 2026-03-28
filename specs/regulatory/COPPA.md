@@ -99,6 +99,14 @@ Steps taken to avoid collecting children's data:
 - [Deletion process for inadvertently collected children's data]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An educational gaming platform uses COPPA.md to configure its tutoring agent with age-gating at sign-up, requiring verifiable parental consent via credit card verification before collecting any child's name or progress data.
+
+**Multi-Agent Fleet:** A children's content platform ensures all agents in its fleet reference COPPA.md rules to block behavioral advertising tools and prevent third-party tracking cookies from being set for users under 13.
+
+**Regulated Industry:** An edtech company uses COPPA.md to mandate immediate deletion of inadvertently collected children's data when an underage user is detected, logging the deletion event for FTC audit readiness.
+
 ## Related Specs
 
 | Spec | Relationship |

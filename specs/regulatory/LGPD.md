@@ -88,6 +88,14 @@ _See AUDITTRAIL.md for logging incident timelines._
 **Content:** Nature of incident, affected data, measures taken
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Brazilian e-commerce company uses LGPD.md to configure its customer service agent with all ten data subject rights, ensuring the "review of automated decisions" right triggers human review within the specified response time for any AI-driven order fraud flags.
+
+**Multi-Agent Fleet:** A multinational SaaS provider uses LGPD.md alongside GDPR specs to ensure agents serving Brazilian users apply LGPD-specific legal bases (including credit protection), while agents serving EU users follow GDPR, with international transfer mechanisms documented for cross-border data flows.
+
+**Regulated Industry:** A fintech operating in Brazil uses LGPD.md to require explicit consent from users before its credit scoring agent processes sensitive personal data like racial or ethnic origin, with the DPO (Encarregado) contact published publicly as mandated by ANPD.
+
 ## Related Specs
 
 | Spec | Relationship |

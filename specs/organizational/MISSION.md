@@ -108,6 +108,14 @@ This mission was last revised: [date] because [reason].
 *"[Mission statement]"*
 ```
 
+## Example Use Cases
+
+**Enterprise:** A real estate technology company defines its property-valuation agent's mission as "We deliver accurate, explainable property valuations within 30 seconds for residential lenders," which guides daily prioritization -- speed and explainability over maximum precision.
+
+**Multi-Agent Fleet:** Each agent in a content-creation fleet has a distinct MISSION.md -- the research agent's mission focuses on source accuracy, the writing agent's on reader engagement, and the editing agent's on brand consistency -- preventing scope creep between roles.
+
+**Regulated Industry:** A medical device company's post-market surveillance agent defines its mission as monitoring adverse event reports for signal detection, with the mission alignment check preventing it from being repurposed for marketing analytics despite having access to the same data.
+
 ## Related Specs
 
 | Spec | Relationship |

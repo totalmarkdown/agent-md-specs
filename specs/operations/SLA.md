@@ -72,6 +72,14 @@ SLA does not apply to:
 - Cost tracking: see BUDGET.md for spending guardrails
 ```
 
+## Example Use Cases
+
+**Enterprise:** A SaaS company defines gold-tier SLAs for its enterprise clients' dedicated agents -- 99.9% uptime, 2-minute response time for urgent tasks -- with automatic escalation to human ops when any metric approaches the SLA threshold.
+
+**Multi-Agent Fleet:** A marketplace platform publishes SLA.md for each agent available for hire, letting customers compare response time targets and throughput guarantees before selecting which agent to engage for a project.
+
+**Regulated Industry:** A securities trading firm's order-execution agent commits to sub-500ms response times during market hours with 99.99% availability, with SLA exclusions clearly documenting that third-party exchange outages are not counted against uptime.
+
 ## Related Specs
 
 | Spec | Relationship |

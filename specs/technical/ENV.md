@@ -123,6 +123,14 @@ a clear error message listing what is missing.
 | `[VAR]` | [dev value] | [staging value] | [prod value] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A platform team uses ENV.md to provide new developers with a copy-paste quick reference of the minimum required environment variables to run the agent locally, eliminating the "it works on my machine" problem across a 30-person engineering team.
+
+**Multi-Agent Fleet:** A fleet deployment system reads ENV.md from each agent to auto-generate .env files per environment, validating all required variables are set before startup and failing fast with a clear error listing any missing configuration.
+
+**Regulated Industry:** A government agency uses ENV.md to separate sensitive variables (loaded from a FedRAMP-authorized secrets manager) from non-sensitive configuration (LOG_LEVEL, PORT), ensuring environment files committed to git never contain classified values.
+
 ## Related Specs
 
 | Spec | Relationship |

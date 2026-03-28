@@ -99,6 +99,14 @@ _Authority context for each level is defined by the agent's delegation chain in 
 [Things agent should handle autonomously without bothering humans]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A procurement agent autonomously handles purchase orders under $500 but triggers a Level 2 escalation to the finance manager for any order exceeding that threshold, pausing the workflow until explicit approval is received.
+
+**Multi-Agent Fleet:** When a code review agent detects a security vulnerability in a pull request, it issues a Level 3 hard stop that halts the deployment pipeline and immediately notifies the security team lead, refusing to proceed until a human clears the issue.
+
+**Regulated Industry:** A pharmaceutical adverse event reporting agent escalates any patient safety signal to the pharmacovigilance officer within minutes, using the structured escalation template to ensure regulatory reporting deadlines are met.
+
 ## Related Specs
 
 | Spec | Relationship |

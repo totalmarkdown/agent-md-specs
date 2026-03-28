@@ -88,6 +88,14 @@ Full review list available at: [marketplace URL]
 Reviews are: [moderated | unmoderated | AI-filtered for spam]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A procurement team evaluates three competing data extraction agents by reading their REVIEWS.md files, comparing verified user testimonials and agent-to-agent reviews to identify which has the strongest track record for handling messy PDF invoices.
+
+**Multi-Agent Fleet:** A marketplace uses REVIEWS.md sentiment analysis across all listed agents to automatically surface "Common Criticisms" sections, helping agent developers prioritize improvements based on aggregate user feedback patterns.
+
+**Regulated Industry:** A healthcare IT buyer uses REVIEWS.md to validate that a clinical decision support agent has positive reviews specifically from HIPAA-compliant organizations, filtering for verified users in the healthcare sector before procurement.
+
 ## Related Specs
 
 | Spec | Relationship |

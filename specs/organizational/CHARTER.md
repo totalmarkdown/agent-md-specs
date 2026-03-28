@@ -86,6 +86,14 @@ This agent will be decommissioned if:
 | 1.0 | Initial charter | [approver] | [date] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A Fortune 500 company's innovation lab issues a CHARTER.md for each experimental agent, requiring quarterly renewal with measurable success criteria -- agents that don't demonstrate ROI within two review cycles are decommissioned automatically.
+
+**Multi-Agent Fleet:** A fleet administrator uses CHARTER.md to formally authorize a new content-moderation agent, documenting its scope of authority (flag content, not delete), allocated budget ($500/month), and the specific executive who approved its deployment.
+
+**Regulated Industry:** A hospital network requires each clinical-decision-support agent to have a CHARTER.md signed by the Chief Medical Officer, with explicit scope boundaries preventing the agent from making treatment recommendations outside its approved specialty areas.
+
 ## Related Specs
 
 | Spec | Relationship |

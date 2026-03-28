@@ -96,6 +96,14 @@ When writing data, use these formats:
 - Alert destination: [log file | Slack | email]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A retail analytics company uses DATA.md to document its inventory agent's three data sources (PostgreSQL warehouse, Shopify API, CSV uploads), defining Bronze-to-Gold transformation rules and PII masking for customer email addresses.
+
+**Multi-Agent Fleet:** A data platform team uses DATA.md across all ETL agents to map which agents read from which sources and write to which destinations, enabling impact analysis when a database schema change affects multiple agents.
+
+**Regulated Industry:** A clinical research organization uses DATA.md to define data quality rules for its trial data agent, requiring ISO 8601 date formats, non-null patient IDs, and 90-day retention limits with automated deletion for de-identified datasets.
+
 ## Related Specs
 
 | Spec | Relationship |

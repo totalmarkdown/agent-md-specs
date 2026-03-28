@@ -110,6 +110,14 @@ If this agent/org is an ICT provider to financial entities:
 - Every 3 years: Advanced resilience testing
 ```
 
+## Example Use Cases
+
+**Enterprise:** A European bank uses DORA.md to document its ICT risk management framework for the AI agents processing loan applications, ensuring incident reporting timelines (4-hour initial notification) are met when agent outages affect customer-facing services.
+
+**Multi-Agent Fleet:** An AI platform designated as a critical ICT third-party provider uses DORA.md to structure its resilience testing program, running threat-led penetration tests every three years across its entire agent infrastructure as required by ESA oversight.
+
+**Regulated Industry:** An insurance company uses DORA.md to maintain a register of all ICT third-party agent providers, including contractual audit rights and exit strategies, satisfying Pillar 4 requirements during supervisory examinations.
+
 ## Related Specs
 
 | Spec | Relationship |

@@ -285,6 +285,14 @@ multi_agent_consent:
 
 ```
 
+## Example Use Cases
+
+**Enterprise:** An e-commerce platform's personalization agent collects granular, purpose-specific consent (product recommendations, email marketing, usage analytics) and immediately halts all processing for a user who revokes any single scope, propagating the revocation to all downstream agents within 5 minutes.
+
+**Multi-Agent Fleet:** A multi-agent customer service platform uses CONSENT.md to ensure every agent in the processing chain inherits a strict subset of the original consent scope, automatically notifying users when a new specialist agent is added to their support ticket's processing chain.
+
+**Regulated Industry:** A children's education platform enforces COPPA-compliant parental consent collection with double opt-in verification before any agent can process data from users under 13, with age-verification checks applied at every session start.
+
 ### Cross-References
 - **PRIVACY.md** — Data handling procedures after consent; deletion on revocation
 - **PII.md** — Definitions of personal data categories subject to consent

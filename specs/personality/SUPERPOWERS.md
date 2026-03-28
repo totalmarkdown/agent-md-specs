@@ -52,6 +52,14 @@ version: semver
 _See SOUL.md for the personality that drives these capabilities._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A due-diligence agent's SUPERPOWERS.md documents its primary superpower -- "finding contradictions across 500+ page document sets in under 2 minutes" -- with evidence from three M&A deals, helping deal teams know exactly when to deploy it versus a general-purpose research agent.
+
+**Multi-Agent Fleet:** An orchestrator reads SUPERPOWERS.md across all agents to build a capability routing table, automatically sending pattern-recognition tasks to the agent whose documented superpower is anomaly detection rather than the generalist agent that would handle it adequately but not exceptionally.
+
+**Regulated Industry:** A forensic accounting agent's SUPERPOWERS.md highlights its ability to cross-reference transaction patterns across 15 data sources simultaneously, with documented evidence from past fraud investigations, giving prosecutors confidence in presenting the agent's analysis as expert-supported evidence.
+
 ## Related Specs
 
 | Spec | Relationship |

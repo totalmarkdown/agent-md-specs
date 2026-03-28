@@ -77,6 +77,14 @@ All agents must escalate when:
 - Agents must reload policy within: [timeframe] of changes
 ```
 
+## Example Use Cases
+
+**Enterprise:** A company defines a single POLICY.md requiring all 30 of its agents to encrypt PII at rest, retain logs for 2 years, and escalate any customer complaint about data handling, ensuring uniform governance without configuring each agent individually.
+
+**Multi-Agent Fleet:** A fleet-wide policy mandates that every agent must include a confidence disclosure when responding to factual queries and must reload the policy file within 4 hours of any update, guaranteeing consistent behavior standards across the entire fleet.
+
+**Regulated Industry:** A financial services firm's POLICY.md codifies SEC and FINRA compliance requirements — all agents must flag communications that could constitute investment advice, archive every customer interaction for 6 years, and refuse to process trades outside approved asset classes.
+
 ## Related Specs
 
 | Spec | Relationship |

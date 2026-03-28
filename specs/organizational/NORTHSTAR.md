@@ -96,6 +96,14 @@ We ask: is this still the right thing to optimize for?
 Last reviewed: [date]
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer success platform's agent fleet tracks "time-to-resolution" as its north star metric, with leading indicators including first-response time and escalation rate, allowing the team to diagnose exactly which upstream factor is causing resolution times to creep up.
+
+**Multi-Agent Fleet:** A data-engineering fleet establishes "pipeline freshness (minutes since last successful run)" as its north star, aligning all 25 agents -- ingestion, transformation, validation, and delivery -- around a single metric that reflects end-to-end system health.
+
+**Regulated Industry:** A clinical trial management organization tracks "days from adverse event report to regulatory submission" as its north star, ensuring every agent in the pharmacovigilance pipeline optimizes for the same regulatory timeline rather than local throughput.
+
 ## Related Specs
 
 | Spec | Relationship |

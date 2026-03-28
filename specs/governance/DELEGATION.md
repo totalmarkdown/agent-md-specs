@@ -223,6 +223,14 @@ action_hash: [SHA-256 of action details]
 | Full delegation renewal | [at expiry] | [delegating principal] |
 ```
 
+## Example Use Cases
+
+**Enterprise:** A VP of Engineering delegates an agent to create Jira tickets and assign them to team members, scoped to only the "Platform" project, limited to priority levels below "Critical," with the delegation expiring at the end of the quarter.
+
+**Multi-Agent Fleet:** A primary orchestrator agent sub-delegates data retrieval authority to three specialized research agents, each constrained to a strict subset of databases, with the sub-delegation chain fully logged so any query result traces back to the original human principal.
+
+**Regulated Industry:** A compliance officer at a bank delegates an agent to review loan applications against regulatory criteria, with the delegation grant cryptographically signed, time-bound to audit season, and automatically revoked if the officer's own credentials expire.
+
 ### Cross-References
 - **WHOAMI.md** — Identity of the agent receiving delegation
 - **PERMISSIONS.md** — Static permission boundaries (delegation operates within these)

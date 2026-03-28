@@ -72,6 +72,14 @@ last_updated: date
 _See TESTSCORES.md for quantitative performance benchmarks._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A sales-operations agent tracks Q1 goals including "reduce lead response time from 4 hours to 30 minutes" with weekly progress updates, while explicitly documenting that CRM migration is deprioritized this quarter to maintain focus.
+
+**Multi-Agent Fleet:** Each agent in a 20-agent customer-support fleet publishes aligned GOALS.md files -- all targeting the same "95% customer satisfaction" objective but with role-specific key results like "resolve 80% of tier-1 tickets without escalation" for front-line agents.
+
+**Regulated Industry:** A drug-safety reporting agent's GOALS.md tracks the objective "submit all Individual Case Safety Reports within 15 calendar days of receipt" with measurable key results and a previous-period performance section showing 98.5% on-time submission rate.
+
 ## Related Specs
 
 | Spec | Relationship |

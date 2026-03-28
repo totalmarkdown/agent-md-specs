@@ -107,6 +107,14 @@ If you want this agent to get better at something specific:
 _See MEMORY.md for how learned knowledge is retained across sessions._
 ```
 
+## Example Use Cases
+
+**Enterprise:** A customer support agent's LEARNING.md tracks that it is actively improving its knowledge of the company's new product line launched last quarter, with a target to reach expert level within 30 days based on resolved ticket feedback loops.
+
+**Multi-Agent Fleet:** An orchestrator reads LEARNING.md across a fleet of code-review agents to identify which agents are actively developing Rust expertise and routes Rust PRs to them for supervised practice, accelerating skill development while maintaining quality.
+
+**Regulated Industry:** A medical imaging analysis agent publishes its learning backlog showing it plans to develop proficiency in rare tumor classifications, allowing hospital administrators to plan when the agent will be ready for expanded diagnostic responsibilities.
+
 ## Related Specs
 
 | Spec | Relationship |

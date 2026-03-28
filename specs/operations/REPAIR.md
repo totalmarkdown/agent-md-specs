@@ -135,6 +135,14 @@ Review dead letter queue: [daily | weekly | on alert]
 Retry dead letter queue: [manually | automated after fix]
 ```
 
+## Example Use Cases
+
+**Enterprise:** An e-commerce platform's order-fulfillment agent classifies warehouse API timeouts as transient (retry with exponential backoff) and inventory database schema mismatches as fatal (stop and escalate), preventing corrupted order data from propagating to shipping.
+
+**Multi-Agent Fleet:** When a shared LLM API returns rate-limit errors, each agent in the fleet independently follows its REPAIR.md retry configuration -- fixed 60-second waits with 5 max retries -- rather than all agents hammering the API simultaneously after a brief pause.
+
+**Regulated Industry:** A clinical research agent's repair procedures include dead-letter queuing for any patient data records that fail validation, with weekly human review of quarantined records to satisfy Good Clinical Practice data integrity requirements.
+
 ## Related Specs
 
 | Spec | Relationship |
