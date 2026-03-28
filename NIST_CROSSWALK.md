@@ -196,24 +196,24 @@ not a file-based runtime system.
 These specs together create a complete, auditable chain
 from human authorization to tamper-proof record:
 
-```
-DELEGATION.md      -> Who authorized this agent?
-CONSENT.md         -> Did the end user give permission?
-WHOAMI.md + ID.md  -> Who is this agent?
-ATTESTATION.md     -> Can it prove its identity?
-SESSION.md         -> What is its current runtime scope?
-LEASTPRIVILEGE.md  -> What is it allowed to do right now?
-INTENT.md          -> What does it intend to do?
-PROMPTSHIELD.md    -> Is the input safe to act on?
-PROVENANCE.md      -> Where did the data come from?
-SHAREDCONTEXT.md   -> Is the shared memory trustworthy?
-MEMORYSAFETY.md    -> Has the memory been poisoned or tampered with?
-     [ACTION TAKEN]
-CIRCUITBREAKER.md  -> Did something fail? Contain the blast radius.
-AUDITTRAIL.md      -> What happened, provably?
-ENFORCEMENT.md     -> Can we verify all of the above?
-ESCALATION.md      -> Should a human review this?
-```
+| Step | Spec | Question Answered |
+|------|------|-------------------|
+| 1 | [DELEGATION.md](specs/governance/DELEGATION.md) | Who authorized this agent? |
+| 2 | [CONSENT.md](specs/compliance/CONSENT.md) | Did the end user give permission? |
+| 3 | [WHOAMI.md](specs/identity/WHOAMI.md) + [ID.md](specs/identity/ID.md) | Who is this agent? |
+| 4 | [ATTESTATION.md](specs/security/ATTESTATION.md) | Can it prove its identity? |
+| 5 | [SESSION.md](specs/lifecycle/SESSION.md) | What is its current runtime scope? |
+| 6 | [LEASTPRIVILEGE.md](specs/governance/LEASTPRIVILEGE.md) | What is it allowed to do right now? |
+| 7 | [INTENT.md](specs/governance/INTENT.md) | What does it intend to do? |
+| 8 | [PROMPTSHIELD.md](specs/security/PROMPTSHIELD.md) | Is the input safe to act on? |
+| 9 | [PROVENANCE.md](specs/compliance/PROVENANCE.md) | Where did the data come from? |
+| 10 | [SHAREDCONTEXT.md](specs/coordination/SHAREDCONTEXT.md) | Is the shared memory trustworthy? |
+| 11 | [MEMORYSAFETY.md](specs/security/MEMORYSAFETY.md) | Has the memory been poisoned? |
+| | **[ACTION TAKEN]** | |
+| 12 | [CIRCUITBREAKER.md](specs/operations/CIRCUITBREAKER.md) | Did something fail? Contain the blast radius. |
+| 13 | [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | What happened, provably? |
+| 14 | [ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) | Can we verify all of the above? |
+| 15 | [ESCALATION.md](specs/governance/ESCALATION.md) | Should a human review this? |
 
 ---
 

@@ -384,22 +384,22 @@ authorization to tamper-proof record:
 
 | Step | Spec | What It Answers | Phase |
 |------|------|-----------------|-------|
-| 1. Authority | DELEGATION.md | Who authorized this agent? | Pre-deployment |
-| 2. Consent | CONSENT.md | Did the end user give permission? | Pre-action |
-| 3. Identity | WHOAMI.md + ID.md | Who is this agent? | Pre-deployment |
-| 4. Verification | ATTESTATION.md | Can it prove its identity? | Runtime (continuous) |
-| 5. Runtime Scope | SESSION.md | What is its current task boundary? | Runtime (per-task) |
-| 6. Privileges | LEASTPRIVILEGE.md | What is it allowed to do right now? | Runtime (per-action) |
-| 7. Intent | INTENT.md | What does it intend to do? | Runtime (per-action) |
-| 8. Input Safety | PROMPTSHIELD.md | Is the input safe to act on? | Runtime (per-input) |
-| 9. Data Lineage | PROVENANCE.md | Where did the data come from? | Runtime (per-input) |
-| 10. Memory Safety | SHAREDCONTEXT.md | Is the shared memory trustworthy? | Runtime (per-read) |
-| | MEMORYSAFETY.md | Has the memory been poisoned? | Runtime (per-write) |
+| 1. Authority | [DELEGATION.md](specs/governance/DELEGATION.md) | Who authorized this agent? | Pre-deployment |
+| 2. Consent | [CONSENT.md](specs/compliance/CONSENT.md) | Did the end user give permission? | Pre-action |
+| 3. Identity | [WHOAMI.md](specs/identity/WHOAMI.md) + [ID.md](specs/identity/ID.md) | Who is this agent? | Pre-deployment |
+| 4. Verification | [ATTESTATION.md](specs/security/ATTESTATION.md) | Can it prove its identity? | Runtime (continuous) |
+| 5. Runtime Scope | [SESSION.md](specs/lifecycle/SESSION.md) | What is its current task boundary? | Runtime (per-task) |
+| 6. Privileges | [LEASTPRIVILEGE.md](specs/governance/LEASTPRIVILEGE.md) | What is it allowed to do right now? | Runtime (per-action) |
+| 7. Intent | [INTENT.md](specs/governance/INTENT.md) | What does it intend to do? | Runtime (per-action) |
+| 8. Input Safety | [PROMPTSHIELD.md](specs/security/PROMPTSHIELD.md) | Is the input safe to act on? | Runtime (per-input) |
+| 9. Data Lineage | [PROVENANCE.md](specs/compliance/PROVENANCE.md) | Where did the data come from? | Runtime (per-input) |
+| 10. Memory Safety | [SHAREDCONTEXT.md](specs/coordination/SHAREDCONTEXT.md) | Is the shared memory trustworthy? | Runtime (per-read) |
+| | [MEMORYSAFETY.md](specs/security/MEMORYSAFETY.md) | Has the memory been poisoned? | Runtime (per-write) |
 | | **[ACTION TAKEN]** | | |
-| 11. Containment | CIRCUITBREAKER.md | Did something fail? Contain the blast radius. | On-failure |
-| 12. Audit | AUDITTRAIL.md | What happened, provably? | Post-action |
-| 13. Enforcement | ENFORCEMENT.md | Can we verify all of the above? | Continuous |
-| 14. Escalation | ESCALATION.md | Should a human review this? | On-trigger |
+| 11. Containment | [CIRCUITBREAKER.md](specs/operations/CIRCUITBREAKER.md) | Did something fail? Contain the blast radius. | On-failure |
+| 12. Audit | [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | What happened, provably? | Post-action |
+| 13. Enforcement | [ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) | Can we verify all of the above? | Continuous |
+| 14. Escalation | [ESCALATION.md](specs/governance/ESCALATION.md) | Should a human review this? | On-trigger |
 
 → See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
 to NIST AI RMF and NCCoE concept paper requirements.
