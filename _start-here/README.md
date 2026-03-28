@@ -3,6 +3,8 @@
 > The quick guide to the specs that matter most.
 > For the full library of 178 specs, see [INDEX.md](../INDEX.md).
 
+→ **[Full README](../README.md)** — complete documentation, architecture overview, and all 178 specs
+
 ---
 
 ## If You're a NIST Reviewer

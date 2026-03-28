@@ -2,6 +2,37 @@
 
 All notable changes to agent-md-specs are documented here.
 
+## [1.1.0-nist-submission] — 2026-03-28
+
+### Added
+- _start-here/ directory — curated entry point for 5 audiences
+- Inline cross-references across all 178 specs (~500+ references)
+- Example Use Cases section added to all 178 specs
+- Related Specs navigation tables on all 178 specs
+- Category READMEs enriched with descriptions, relationships, and use cases
+- CI workflows: validate-specs.yml and check-links.yml
+- Canonical source notices on all 10 standalone repos
+- Issue template redirects on all standalone repos
+- NIST alignment callout in README
+
+### Fixed
+- PyPI install claim → git+https install from GitHub
+- Schema count claim corrected (24, not 46)
+- OWASP/NIST peer-review language softened
+- Ghost references (AGENTCARD.md, HANDOFF.md) removed
+- Stale counts in SPEC_LIFECYCLE.md and GOVERNANCE.md
+- Domain typos (HIREME.md, NISTAIRF.md)
+- Duplicate Example Use Cases sections renamed
+- ASCII diagram rendering in 6 specs (4-backtick fences)
+- Standalone repo READMEs standardized to consistent structure
+- All 10 standalone repos synced with latest spec files
+
+### Changed
+- README subtitle tightened with Zero Trust positioning
+- README leads with "46 Core specs" instead of "178 specs"
+- Core Specs tables now have clickable links to spec files
+- README framing: "proposed standard" throughout
+
 ## [1.1.0] — 2026-03-26
 
 ### Added
