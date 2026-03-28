@@ -23,7 +23,7 @@ agent-md-specs is currently maintained by TotalMarkdown.ai. As the project matur
 
 ### Versioning
 - Individual specs use semver in their YAML frontmatter
-- The library itself is versioned by volume (Vol 1-13)
+- The library itself is versioned by volume (Vol 1-16)
 - Breaking changes to Core specs require a new major version
 
 ## Future Governance

@@ -98,7 +98,7 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | HEARTBEAT.md | Operations | Extended | heartbeatmd.dev | High | Vol 6 | [specs/operations/HEARTBEAT.md](specs/operations/HEARTBEAT.md) |
 | HELLOWORLD.md | Lifecycle | Extended | helloworldmd.dev | High | Vol 7 | [specs/lifecycle/HELLOWORLD.md](specs/lifecycle/HELLOWORLD.md) |
 | HIPAA.md | Regulatory Compliance | Extended | hipaamd.dev | High | Vol 9 | [specs/regulatory/HIPAA.md](specs/regulatory/HIPAA.md) |
-| HIREME.md | Business | Core | hiremd.dev | High | Vol 4 | [specs/business/HIREME.md](specs/business/HIREME.md) |
+| HIREME.md | Business | Core | hirememd.dev | High | Vol 4 | [specs/business/HIREME.md](specs/business/HIREME.md) |
 | ICE.md | Safety | Core | icemd.dev | High | Vol 7 | [specs/governance/ICE.md](specs/governance/ICE.md) |
 | ID.md | Identity | Core | idmd.dev | High | Vol 6 | [specs/identity/ID.md](specs/identity/ID.md) |
 | IDENTITY.md | Governance | Extended | identitymd.dev | High | Vol 2 | [specs/governance/IDENTITY.md](specs/governance/IDENTITY.md) |

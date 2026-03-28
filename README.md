@@ -1,7 +1,8 @@
 # agent-md-specs
 
-> A proposed open standard for AI agent configuration — identity,
-> governance, memory, and accountability in human-readable Markdown.
+> A proposed open standard for AI agent identity, governance, and
+> accountability — bridging human-readable policy with machine-enforceable
+> Zero Trust security schemas. CC0 public domain.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Specs](https://img.shields.io/badge/specs-178-blue)](./INDEX.md)
@@ -18,6 +19,9 @@
 &nbsp;·&nbsp; [Spec Lifecycle](./SPEC_LIFECYCLE.md)
 &nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
 &nbsp;·&nbsp; [NIST Reviewer Guide](./NIST_SUBMISSION_GUIDE.md)
+
+_Developed in alignment with the [NIST AI RMF](https://www.nist.gov/artificial-intelligence/ai-risk-management-framework)
+and the [NCCoE Initiative on AI Agent Identity and Authorization](https://www.nist.gov/caisi/ai-agent-standards-initiative)._
 
 ---
 
@@ -214,7 +218,7 @@ Rename each file (remove `.template`), fill in the `[REPLACE]` fields,
 and validate:
 
 ```bash
-pip install agent-md-validator
+pip install git+https://github.com/totalmarkdown/agent-md-validator.git
 agent-md-validate ./my-agent/
 ```
 
@@ -507,7 +511,7 @@ domains, priorities, tiers, and file paths.
 ### CLI Validator
 
 ```bash
-pip install agent-md-validator
+pip install git+https://github.com/totalmarkdown/agent-md-validator.git
 
 # Validate a single file
 agent-md-validate specs/identity/SOUL.md
@@ -521,8 +525,9 @@ agent-md-validate --format json ./my-agent/
 
 ### JSON Schemas
 
-Machine-readable [JSON Schemas](schemas/) are available for all
-46 Core specs, enabling Level 3 validation of frontmatter content
+Machine-readable [JSON Schemas](schemas/) are available for 24 Core
+specs (covering identity, governance, security, compliance, coordination,
+and operations), enabling Level 3 validation of frontmatter content
 and field constraints.
 
 ### Conformance Levels

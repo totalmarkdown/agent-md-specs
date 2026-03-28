@@ -2,7 +2,7 @@
 spec_name: HIREME.md
 spec_version: 0.1.0
 category: Business
-domain: hiremd.dev
+domain: hirememd.dev
 priority: High
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai

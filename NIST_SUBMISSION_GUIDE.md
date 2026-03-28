@@ -79,7 +79,7 @@ concept paper. Links go directly to the spec files.
   recovery, and red team testing
 
 ### Cross-Cutting: Memory Security
-*Addresses OWASP ASI06 (Memory Poisoning) — NIST-peer-reviewed*
+*Addresses OWASP ASI06 (Memory Poisoning) — recognized by NIST CAISI*
 
 - [SHAREDCONTEXT.md](specs/coordination/SHAREDCONTEXT.md) — Multi-agent
   shared memory governance
@@ -87,7 +87,7 @@ concept paper. Links go directly to the spec files.
   defense and integrity verification
 
 ### Cross-Cutting: Failure Containment
-*Addresses OWASP ASI08 (Cascading Failures) — NIST-peer-reviewed*
+*Addresses OWASP ASI08 (Cascading Failures) — recognized by NIST CAISI*
 
 - [CIRCUITBREAKER.md](specs/operations/CIRCUITBREAKER.md) — Blast
   radius limits, retry policies, cascading prevention

@@ -48,7 +48,7 @@ Using: [Semantic Versioning (MAJOR.MINOR.PATCH)]
 Breaking (requires MAJOR bump):
 - Removing a required input field
 - Changing the output format
-- Removing a capability listed in Agent Card (see AGENTCARD.md)
+- Removing a capability listed in Agent Card (see WHOAMI.md)
 - Changing authentication requirements
 - Renaming the agent ID
 

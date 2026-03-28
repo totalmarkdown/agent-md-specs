@@ -116,7 +116,7 @@ not a file-based runtime system.
 | SESSION.md | Ephemeral credential scope prevents lateral movement | Microsegmentation boundary |
 
 ### 8. Shared Memory and Context Security
-> Addresses OWASP ASI06 (Memory Poisoning) — peer-reviewed by NIST
+> Addresses OWASP ASI06 (Memory Poisoning) — recognized in the NIST CAISI AI Agent Security initiative
 > and cited in the NIST CAISI RFI on AI Agent Security as
 > "memory management vulnerabilities"
 
