@@ -1,0 +1,81 @@
+name: Validate Specs
+
+on:
+  push:
+    paths:
+      - 'specs/**'
+      - 'examples/**'
+      - 'schemas/**'
+  pull_request:
+    paths:
+      - 'specs/**'
+      - 'examples/**'
+      - 'schemas/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout agent-md-specs
+        uses: actions/checkout@v4
+
+      - name: Checkout validator
+        uses: actions/checkout@v4
+        with:
+          repository: totalmarkdown/agent-md-validator
+          path: validator
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install validator
+        run: |
+          cd validator
+          pip install -e .
+
+      - name: Validate all specs
+        run: |
+          echo "=== Validating specs ==="
+          agent-md-validate specs/
+
+      - name: Validate all example bundles
+        run: |
+          for bundle in examples/*/; do
+            echo "=== $(basename $bundle) ==="
+            agent-md-validate "$bundle"
+          done
+
+      - name: Validate JSON Schemas
+        run: |
+          pip install jsonschema pyyaml
+          python3 -c "
+          import yaml, json, jsonschema, glob, sys
+          schema = json.load(open('schemas/frontmatter.schema.json'))
+          errors = 0
+          total = 0
+          for f in sorted(glob.glob('specs/**/*.md', recursive=True)):
+              if f.endswith('README.md'):
+                  continue
+              total += 1
+              try:
+                  with open(f) as fh:
+                      parts = fh.read().split('---')
+                      if len(parts) >= 3:
+                          data = yaml.safe_load(parts[1])
+                          jsonschema.validate(data, schema)
+              except Exception as e:
+                  errors += 1
+                  print(f'FAIL: {f}: {e}')
+          print(f'Schema validation: {errors} errors out of {total} files')
+          if errors > 0:
+              sys.exit(1)
+          "
+
+      - name: Count verification
+        run: |
+          total=$(find specs/ -name '*.md' -not -name 'README.md' -type f | wc -l)
+          core=$(grep -rl '^tier: core' specs/ | wc -l)
+          extended=$(grep -rl '^tier: extended' specs/ | wc -l)
+          echo "Total: $total | Core: $core | Extended: $extended"

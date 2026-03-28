@@ -1,0 +1,60 @@
+name: Check Internal Links
+
+on:
+  push:
+    paths:
+      - '**.md'
+  pull_request:
+    paths:
+      - '**.md'
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check internal Markdown links
+        run: |
+          echo "=== Checking internal .md links ==="
+          errors=0
+
+          for source in README.md INDEX.md NIST_CROSSWALK.md NIST_SUBMISSION_GUIDE.md SPEC_LIFECYCLE.md CONTRIBUTING.md GOVERNANCE.md; do
+            if [ ! -f "$source" ]; then
+              continue
+            fi
+
+            grep -oE '\[.*?\]\((\./)?[^)]+\.md\)' "$source" 2>/dev/null | \
+            grep -v http | \
+            sed 's/.*(\(.*\))/\1/' | sed 's|^\./||' | \
+            while read target; do
+              file=$(echo "$target" | cut -d'#' -f1)
+              if [ -n "$file" ] && [ ! -f "$file" ]; then
+                echo "BROKEN: $source -> $file"
+                errors=$((errors + 1))
+              fi
+            done
+          done
+
+          for source in examples/*/README.md; do
+            if [ ! -f "$source" ]; then
+              continue
+            fi
+            dir=$(dirname "$source")
+
+            grep -oE '\[.*?\]\((\./)?[^)]+\.md\)' "$source" 2>/dev/null | \
+            grep -v http | \
+            sed 's/.*(\(.*\))/\1/' | sed 's|^\./||' | \
+            while read target; do
+              file=$(echo "$target" | cut -d'#' -f1)
+              if [ -n "$file" ]; then
+                if [ ! -f "$dir/$file" ] && [ ! -f "$file" ]; then
+                  echo "BROKEN: $source -> $target"
+                  errors=$((errors + 1))
+                fi
+              fi
+            done
+          done
+
+          echo "Link check complete"
