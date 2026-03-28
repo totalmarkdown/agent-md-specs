@@ -70,7 +70,7 @@ created: date
 - [ ] All tests passing with new version
 - [ ] Key workflows functioning: [list]
 - [ ] Monitor for [X hours] for unexpected behavior (see HEALTHCHECK.md)
-- [ ] Update HANDOFF.md and MEMORY.md if needed
+- [ ] Update handoff notes and MEMORY.md if needed
 
 ## Rollback Procedure
 If migration fails:

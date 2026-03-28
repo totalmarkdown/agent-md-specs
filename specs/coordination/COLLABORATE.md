@@ -75,7 +75,7 @@ All contributions go through:
 ## Contribution Guidelines
 
 ### For Humans
-- Before starting: check [HANDOFF.md | task board] for current status
+- Before starting: check [handoff notes | task board] for current status
 - Minimum change size: [avoid trivial edits — batch small changes]
 - Documentation: update [relevant MD files] when making changes
 - Communication: notify team in [channel] for changes affecting others
@@ -98,7 +98,7 @@ All contributions go through:
 ### Opinion conflicts (disagreement on approach)
 1. Both positions documented in a comment thread
 2. Decision escalated to [role] for final call
-3. Decision logged in HANDOFF.md with rationale
+3. Decision logged in session handoff notes with rationale
 4. No contribution blocked more than [X hours] waiting for resolution
 
 ### Human vs Agent conflict

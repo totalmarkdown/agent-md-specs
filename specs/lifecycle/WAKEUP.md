@@ -70,7 +70,7 @@ Where am I?   → Confirm deployment environment
 ```
 Load MEMORY.md           → What do I know from before? (see MEMORY.md)
 Load shared state        → What do peers know? (see SHAREDCONTEXT.md)
-Check for HANDOFF.md     → Did someone leave me a note?
+Check for handoff notes     → Did someone leave me a note?
 Review GOALS.md          → What am I working toward?
 Check DEADLINES.md       → What's due soon?
 Scan BLOCKERS.md         → What's stopping me?

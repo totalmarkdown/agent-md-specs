@@ -63,7 +63,7 @@ Update MEMORY.md      → What happened this session?
 Update STATUS.md      → What's the current state?
 Update GOALS.md       → Progress made toward goals?
 Update DEADLINES.md   → Any deadlines updated or met?
-Write HANDOFF.md      → Leave notes for next session
+Write handoff notes      → Leave notes for next session
 Clear temp files      → Clean up working space
 ```
 
@@ -78,7 +78,7 @@ git commit -m "Session [timestamp]: [one-line summary]"  # See AUDITTRAIL.md
 ```
 Notify orchestrator: "Going offline, estimated return: [time]"
 Emit final heartbeat with status: "sleeping"
-Update STATUS.md: "offline — see HANDOFF.md"
+Update STATUS.md: "offline — see handoff notes"
 ```
 
 ### 5. Rest
@@ -99,7 +99,7 @@ Session ends.
 - PERFORMANCE.md metrics
 
 **Leave for next session:**
-- HANDOFF.md with clear notes
+- handoff notes with clear context
 - Clear task queue state
 - Pending decisions needing human input
 
@@ -111,7 +111,7 @@ Full SLEEP.md sequence. Takes [N] seconds.
 ### Immediate (forced)
 ```
 Save MEMORY.md only — everything else secondary
-Write crash note to HANDOFF.md
+Write crash note to handoff notes
 Signal offline
 Exit
 ```
@@ -124,7 +124,7 @@ Complete full sequence
 
 ## Example Use Cases
 
-**Enterprise:** At the end of a 4-hour data analysis session, the agent runs its sleep sequence — updating MEMORY.md with findings, committing a checkpoint of its in-progress report, writing a HANDOFF.md note explaining where it left off, and signaling the orchestrator with an estimated return time for the next scheduled session.
+**Enterprise:** At the end of a 4-hour data analysis session, the agent runs its sleep sequence — updating MEMORY.md with findings, committing a checkpoint of its in-progress report, writing a handoff note explaining where it left off, and signaling the orchestrator with an estimated return time for the next scheduled session.
 
 **Multi-Agent Fleet:** When a fleet-wide maintenance window is scheduled, each agent receives a "wrap up" signal 5 minutes before the cutoff, triggering the scheduled sleep mode so every agent checkpoints its current task, saves queue state, and commits its session summary before the coordinated shutdown.
 

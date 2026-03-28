@@ -1,5 +1,9 @@
 # NIST NCCoE Reviewer Guide
 
+> *"Markdown is becoming the human-readable contract for what the
+> agent should do, when it should do it, and what resources it
+> should use."* — Visual Studio Magazine, February 2026
+
 A guided tour of agent-md-specs for reviewers evaluating this
 submission in response to the NCCoE concept paper "Accelerating
 the Adoption of Software and AI Agent Identity and Authorization."
@@ -135,10 +139,15 @@ schema-validated metadata — inside a Markdown document. This means
 the same file serves as both the human-readable policy (the Markdown
 body, auditable by compliance officers) and the machine-consumable
 configuration (the YAML frontmatter, parseable by any standard YAML
-library in three lines of code). JSON Schema definitions for all
+library in three lines of code). JSON Schema definitions for 24
 Core specs enable automated conformance validation. No special
 compiler or translation layer is required — the policies humans
 approve are identical to the data machines enforce.
+
+> **No new infrastructure required.** agent-md-specs integrates
+> directly into your existing API gateways, OPA/Rego policies,
+> CI/CD pipelines, and identity providers. It defines the policy
+> layer — your existing runtime enforces it.
 
 ---
 
@@ -146,7 +155,7 @@ approve are identical to the data machines enforce.
 
 - **[agent-md-validator](https://github.com/totalmarkdown/agent-md-validator)**
   — CLI tool validating frontmatter, required sections, and cross-references
-- **[schemas/](schemas/)** — JSON Schema definitions for all Core specs,
+- **[schemas/](schemas/)** — JSON Schema definitions for 24 Core specs,
   enabling automated conformance validation
 
 ---
@@ -181,7 +190,7 @@ For questions about this submission or to discuss participation in
 future NCCoE workshops or demonstration projects:
 
 **TotalMarkdown.ai**
-Email: totalmarkdown@gmail.com
+Email: hello@totalmarkdown.ai
 Repository: https://github.com/totalmarkdown/agent-md-specs
 Discussions: https://github.com/totalmarkdown/agent-md-specs/discussions
 

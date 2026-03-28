@@ -38,11 +38,11 @@ they should behave, and what they're allowed to access.
 
 | Platform | Markdown File | What It Configures | Scale |
 |----------|--------------|-------------------|-------|
-| OpenAI Codex | `AGENTS.md` | Project instructions for coding agents | 60,000+ repos, AAIF standard |
+| OpenAI Codex | `AGENTS.md` | Project instructions for coding agents | 67,000+ repos, AAIF standard |
 | Anthropic Claude Code | `CLAUDE.md` | Agent behavior in codebases | Ecosystem standard |
 | Anthropic Claude Code | `SKILL.md` | Reusable agent capabilities | Ecosystem standard |
 | GitHub Copilot | `.agent.md` | Custom agent definitions in VS Code / Visual Studio | Native IDE integration |
-| Karpathy autoresearch | `program.md` | Autonomous ML research agent | 51,900+ stars |
+| Karpathy autoresearch | `program.md` | Autonomous ML research agent | 59,000+ stars |
 | Cursor | `.cursorrules` | Editor AI behavior rules | Ecosystem standard |
 | Google Gemini CLI | `GEMINI.md` | Agent project context | Ecosystem standard |
 
@@ -403,6 +403,95 @@ authorization to tamper-proof record:
 
 → See [NIST_CROSSWALK.md](NIST_CROSSWALK.md) for the complete mapping
 to NIST AI RMF and NCCoE concept paper requirements.
+
+---
+
+## How Specs Relate to Each Other
+
+The diagram below shows how the major spec clusters connect.
+Solid lines show direct dependencies. Dotted lines show
+verification relationships (ENFORCEMENT.md verifies other specs).
+
+```mermaid
+graph TB
+    subgraph Identity ["Identity"]
+        WHOAMI[WHOAMI.md]
+        ID[ID.md]
+        ATTESTATION[ATTESTATION.md]
+        SESSION[SESSION.md]
+    end
+
+    subgraph Governance ["Governance"]
+        DELEGATION[DELEGATION.md]
+        LIMITS[LIMITS.md]
+        PERMISSIONS[PERMISSIONS.md]
+        LEASTPRIVILEGE[LEASTPRIVILEGE.md]
+        CONSENT[CONSENT.md]
+        ESCALATION[ESCALATION.md]
+        GUARDRAILS[GUARDRAILS.md]
+    end
+
+    subgraph Accountability ["Accountability"]
+        INTENT[INTENT.md]
+        AUDITTRAIL[AUDITTRAIL.md]
+        PROVENANCE[PROVENANCE.md]
+        ENFORCEMENT[ENFORCEMENT.md]
+    end
+
+    subgraph Memory ["Memory"]
+        MEMORY_SPEC[MEMORY.md]
+        SHAREDCONTEXT[SHAREDCONTEXT.md]
+        MEMORYSAFETY[MEMORYSAFETY.md]
+    end
+
+    subgraph Safety ["Safety"]
+        PROMPTSHIELD[PROMPTSHIELD.md]
+        CIRCUITBREAKER[CIRCUITBREAKER.md]
+    end
+
+    subgraph Coordination ["Coordination"]
+        TEAM[TEAM.md]
+        CREW[CREW.md]
+        ORG[ORG.md]
+    end
+
+    WHOAMI --> ATTESTATION
+    ID --> ATTESTATION
+    ATTESTATION --> SESSION
+    DELEGATION --> LEASTPRIVILEGE
+    DELEGATION --> CONSENT
+    DELEGATION --> SESSION
+    PERMISSIONS --> LEASTPRIVILEGE
+    LIMITS --> GUARDRAILS
+    LIMITS --> ESCALATION
+    LEASTPRIVILEGE --> INTENT
+    INTENT --> AUDITTRAIL
+    PROVENANCE --> AUDITTRAIL
+    ENFORCEMENT --> AUDITTRAIL
+    MEMORY_SPEC --> SHAREDCONTEXT
+    SHAREDCONTEXT --> MEMORYSAFETY
+    MEMORYSAFETY --> AUDITTRAIL
+    PROMPTSHIELD --> ESCALATION
+    PROMPTSHIELD --> AUDITTRAIL
+    CIRCUITBREAKER --> ESCALATION
+    CIRCUITBREAKER --> AUDITTRAIL
+    ORG --> CREW
+    CREW --> TEAM
+    TEAM --> SHAREDCONTEXT
+    TEAM --> DELEGATION
+    ENFORCEMENT -.-> ATTESTATION
+    ENFORCEMENT -.-> LEASTPRIVILEGE
+    ENFORCEMENT -.-> INTENT
+    ENFORCEMENT -.-> LIMITS
+    ESCALATION -.-> DELEGATION
+
+    style Identity fill:#1a365d,color:#fff
+    style Governance fill:#744210,color:#fff
+    style Accountability fill:#22543d,color:#fff
+    style Memory fill:#553c9a,color:#fff
+    style Safety fill:#9b2c2c,color:#fff
+    style Coordination fill:#2a4365,color:#fff
+```
 
 ---
 

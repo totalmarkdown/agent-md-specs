@@ -108,7 +108,7 @@ Last updated: [date] — what changed: [what]
 
 ## Example Use Cases
 
-**Enterprise:** A distributed engineering organization documents its async-first communication culture in CULTURE.md, so newly deployed agents default to written handoffs via HANDOFF.md rather than expecting synchronous coordination with human engineers across time zones.
+**Enterprise:** A distributed engineering organization documents its async-first communication culture in CULTURE.md, so newly deployed agents default to written handoffs via session handoff notes rather than expecting synchronous coordination with human engineers across time zones.
 
 **Multi-Agent Fleet:** A fleet's CULTURE.md establishes that agents surface bad news immediately rather than retrying silently, ensuring that a data-pipeline agent reports a schema mismatch within minutes instead of burning through its retry budget overnight.
 

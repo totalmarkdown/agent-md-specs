@@ -70,7 +70,7 @@ Each spec has its own semantic version in YAML frontmatter:
 
 ### Library Version
 The agent-md-specs library as a whole uses date-based volume versioning
-(Vol 1-16) combined with semantic releases (v1.0.0).
+(Vol 1-16) combined with semantic releases (v1.1.0).
 - **Patch**: Bug fixes, frontmatter corrections
 - **Minor**: New Extended specs, non-breaking additions to existing specs
 - **Major**: New Core specs, breaking changes to Core spec structure,

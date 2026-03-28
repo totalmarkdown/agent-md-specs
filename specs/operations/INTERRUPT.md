@@ -82,8 +82,8 @@ Maximum checkpoints kept: [N] (oldest deleted automatically)
 ## After Interrupt
 Agent will:
 1. Save checkpoint
-2. Write summary to HANDOFF.md: "Interrupted at [point], [status]"
-3. Emit status signal: "paused" or "stopped" (see HANDOFF.md)
+2. Write summary to handoff notes: "Interrupted at [point], [status]"
+3. Emit status signal: "paused" or "stopped" (see handoff notes)
 4. Wait for resume or restart command
 ```
 
