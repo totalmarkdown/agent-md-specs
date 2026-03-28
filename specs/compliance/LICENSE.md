@@ -78,6 +78,7 @@ Custom licensing available for enterprise deployments.
 
 ## Full License Text
 [Full text of chosen license, or link to standard license text]
+```
 
 ## Example Use Cases
 
