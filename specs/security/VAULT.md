@@ -29,7 +29,7 @@ _See SECRETS.md for each agent's required credentials manifest._
 
 ### Spec
 
-```markdown
+````markdown
 ---
 org_name: string
 version: semver
@@ -163,7 +163,7 @@ Verify identity of the new credential via ATTESTATION.md before deployment.
 2. Archive (don't delete) secret path for [N days]
 3. Remove from fleet registry
 4. Review if any secrets were unique to this agent (delete after [N days])
-```
+````
 
 ## Example Use Cases
 

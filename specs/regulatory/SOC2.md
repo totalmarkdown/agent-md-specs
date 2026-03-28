@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with SOC 2 Trust Service Criteria, documenting control status across security, availability, processing integrity, confidentiality, and privacy. This spec enables agents to demonstrate organizational controls to enterprise customers and auditors, which is often a prerequisite for B2B sales and procurement.
+
 **Framework:** SOC 2 (System and Organization Controls 2)  
 **Version:** 0.1.0
 

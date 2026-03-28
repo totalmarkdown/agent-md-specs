@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Declares the agent's strongest capabilities with evidence, activation instructions, and honest explanations of why they work. This enables orchestrators and users to route high-value tasks to the agent best equipped to handle them, rather than relying on generic task assignment.
+
 ```markdown
 ---
 agent_name: string

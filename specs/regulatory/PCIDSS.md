@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with PCI DSS for agents that store, process, or transmit cardholder data, covering the 12 core requirements, scope reduction strategies, and incident response procedures. This spec prevents payment card data breaches that can result in significant fines from card brands and loss of the ability to process payments.
+
 ```markdown
 ---
 agent_name: string

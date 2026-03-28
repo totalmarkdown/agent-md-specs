@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with Anti-Money Laundering and Know Your Customer regulations for agents that process financial transactions or handle customer financial data. This spec covers customer identification, transaction monitoring, sanctions screening, and suspicious activity reporting -- critical controls where non-compliance can result in criminal penalties including imprisonment.
+
 ```markdown
 ---
 agent_name: string

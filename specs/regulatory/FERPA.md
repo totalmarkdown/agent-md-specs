@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with FERPA for agents handling student education records in institutions that receive federal funding. This spec governs disclosure rules, parent and student rights, and vendor obligations to ensure education records are only shared with authorized parties under legally permitted conditions.
+
 ```markdown
 ---
 agent_name: string

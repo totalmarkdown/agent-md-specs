@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with Canada's PIPEDA and Quebec's Law 25, structuring privacy obligations around the 10 Fair Information Principles. This spec ensures agents handling personal information of Canadian residents implement meaningful consent, breach notification, and privacy-by-default requirements that vary by province.
+
 ```markdown
 ---
 agent_name: string

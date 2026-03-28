@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with Brazil's LGPD (Lei Geral de Protecao de Dados), covering legal bases for processing, data subject rights including automated decision review, and DPO requirements. This spec is required for any agent processing personal data of individuals in Brazil, regardless of where the processing organization is located.
+
 ```markdown
 ---
 agent_name: string

@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Low
 **Version:** 0.1.0
 
+### Purpose
+
+Lists all names this agent is known by, including previous names, nicknames, and informal aliases. This ensures that references to an agent by any of its known names can be resolved to a single canonical identity, maintaining continuity across rebranding events and legacy system integrations.
+
 ```markdown
 ---
 agent_name: string   # Canonical current name

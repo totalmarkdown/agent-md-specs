@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with California's CCPA and CPRA, covering consumer rights to know, delete, correct, and opt out of the sale or sharing of personal information. This spec is essential for agents handling data of California residents where the business meets CCPA revenue, volume, or revenue-source thresholds.
+
 ```markdown
 ---
 agent_name: string

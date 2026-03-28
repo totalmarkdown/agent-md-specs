@@ -36,7 +36,7 @@ WAKEUP.md runs every single session.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -128,7 +128,7 @@ Each wakeup logged to LOGS.md with:
 - Timestamp, duration, mode
 - Any anomalies detected during wakeup
 - State loaded from (MEMORY.md version/timestamp)
-```
+````
 
 ## Example Use Cases
 

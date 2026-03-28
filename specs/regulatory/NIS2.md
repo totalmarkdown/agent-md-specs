@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with the EU NIS2 Directive for network and information security, covering entity classification, security measures under Article 21, and incident reporting timelines. This is essential for agents operating within essential or important entity sectors in the EU, where non-compliance can result in penalties up to 2% of global turnover.
+
 ```markdown
 ---
 agent_name: string

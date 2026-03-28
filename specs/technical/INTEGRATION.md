@@ -24,7 +24,7 @@ databases, and any other external connection points.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 agent_name: string
 version: semver
@@ -89,7 +89,7 @@ If any integration is unavailable, these tasks are affected:
 | Integration | If unavailable | Impact | Fallback |
 |------------|---------------|--------|----------|
 | [name] | [tasks blocked] | [severity] | [fallback behavior] |
-```
+````
 
 ## Example Use Cases
 

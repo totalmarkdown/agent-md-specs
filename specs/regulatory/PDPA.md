@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with the Personal Data Protection Acts of Thailand and Singapore, two distinct regulations that share a name but differ in requirements. This spec enables agents serving Southeast Asian users to apply the correct legal bases, data subject rights, and breach notification timelines for each jurisdiction.
+
 ```markdown
 ---
 agent_name: string

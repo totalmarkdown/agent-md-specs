@@ -36,7 +36,7 @@ synchronized handoffs.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 swarm_name: string
 swarm_id: string          # Globally unique
@@ -148,7 +148,7 @@ This swarm is available as a complete package:
 - **Price:** [pricing]
 - **Includes:** All [N] crew bundles + swarm config
 - **Deploy time:** [estimated setup time]
-```
+````
 
 ## Example Use Cases
 

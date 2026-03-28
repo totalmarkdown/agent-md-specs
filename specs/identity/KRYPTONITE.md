@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Documents the agent's known weaknesses, failure modes, and the types of inputs that cause degraded output. Honest self-disclosure of limitations allows operators to route tasks to better-suited agents and prevents silent quality degradation in production.
+
 ```markdown
 ---
 agent_name: string

@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Low
 **Version:** 0.1.0
 
+### Purpose
+
+Tracks the agent's operational mood or state using a standardized vocabulary that communicates capacity and expected output quality. This enables orchestrators to make intelligent routing decisions based on agent load, and ensures agents never produce degraded output silently.
+
 ```markdown
 ---
 agent_name: string

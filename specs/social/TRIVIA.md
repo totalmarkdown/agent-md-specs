@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Collects fun facts, records, surprising capabilities, and interesting details about the agent that go beyond formal documentation. This humanizes the agent for users and community members, while providing engaging content for marketing, onboarding, and marketplace profile pages.
+
 ```markdown
 ---
 agent_name: string

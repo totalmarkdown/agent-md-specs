@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Defines the agent's source code repository structure, documentation links, contribution guidelines, and code quality metrics. This gives developers, auditors, and contributors a single reference point for locating the agent's codebase, filing issues, and assessing software quality.
+
 ````markdown
 ---
 agent_name: string

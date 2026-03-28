@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures the agent's GDPR compliance posture, covering legal bases for processing, consent management, international data transfers, and privacy-by-design principles. This spec is required for any agent processing personal data of individuals in the EU or UK, where non-compliance penalties can reach 4% of global annual turnover.
+
 ```markdown
 ---
 agent_name: string

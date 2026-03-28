@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Low
 **Version:** 0.1.0
 
+### Purpose
+
+Creates the agent's mythos and lore by collecting legendary outputs, user stories, and correcting myths that are not true. This institutional storytelling builds trust through concrete examples of exceptional performance while ensuring exaggerated claims are addressed with verified facts.
+
 ```markdown
 ---
 agent_name: string

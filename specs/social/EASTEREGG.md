@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Low
 **Version:** 0.1.0
 
+### Purpose
+
+Documents hidden features, surprises, and discoverable secrets embedded in the agent, along with hints and a discovery tracker. Easter eggs drive community engagement and reward curious users who explore the agent beyond its documented capabilities.
+
 ```markdown
 ---
 agent_name: string

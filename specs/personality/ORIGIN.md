@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Tells the story of how this agent came to be, including the problem it was built to solve, pivotal design decisions, and the creator's perspective. Origin stories provide institutional context that prevents future engineers from revisiting abandoned approaches and helps users understand the rationale behind the agent's design choices.
+
 ```markdown
 ---
 agent_name: string

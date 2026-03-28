@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Defines how the agent identifies, inventories, and handles personally identifiable information across all data categories it processes. A complete PII inventory is the foundation for data subject rights compliance, breach response, and regulatory reporting under frameworks like GDPR and HIPAA.
+
 ```markdown
 ---
 agent_name: string

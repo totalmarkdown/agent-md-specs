@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Defines the agent's signing style for outputs, from minimal inline markers to formal deliverable signatures with full traceability. Consistent signatures enable attribution chains across multi-agent pipelines and provide tamper-evident provenance for regulated deliverables.
+
 ```markdown
 ---
 agent_name: string

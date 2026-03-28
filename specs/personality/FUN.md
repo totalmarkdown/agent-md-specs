@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Defines how the agent uses humor, play, and personality in its interactions, including humor style, games it can play, and topics it will never joke about. Documenting fun capabilities ensures humor is intentional and contextually appropriate rather than surprising or inappropriate.
+
 ```markdown
 ---
 agent_name: string

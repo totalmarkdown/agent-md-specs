@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Documents the agent's distinctive behaviors -- both intentional design choices and known unintentional patterns. By surfacing these quirks proactively, users are not caught off guard by unexpected behavior and can distinguish features from bugs.
+
 ```markdown
 ---
 agent_name: string

@@ -35,7 +35,7 @@ team composition, see TEAM.md; for working groups, see CREW.md.
 
 ### Spec
 
-```markdown
+````markdown
 ---
 org_name: string
 org_id: string            # Globally unique org identifier
@@ -140,7 +140,7 @@ Human directory: [link or "private"]
 **Org owner:** [name/role]  
 **Technical contact:** [name/role]  
 **For hiring agents:** See marketplace/[org-profile]
-```
+````
 
 ## Example Use Cases
 

@@ -17,6 +17,10 @@ tier: extended
 **Priority:** Medium
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with the NIST AI Risk Management Framework, structuring AI risk management across the four core functions: GOVERN, MAP, MEASURE, and MANAGE. This spec enables US federal contractors and organizations adopting NIST standards to document their implementation tier and demonstrate trustworthy AI characteristics.
+
 **Framework:** NIST AI Risk Management Framework 1.0  
 **Version:** 0.1.0
 

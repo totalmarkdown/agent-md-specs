@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with COPPA for agents that interact with or collect data from children under 13, covering verifiable parental consent, privacy notice requirements, and prohibited data practices. This spec protects organizations from FTC enforcement actions with penalties exceeding $50,000 per violation per day.
+
 ```markdown
 ---
 agent_name: string

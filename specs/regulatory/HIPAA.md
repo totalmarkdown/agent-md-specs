@@ -17,6 +17,10 @@ tier: extended
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Configures compliance with HIPAA for agents that handle Protected Health Information, covering entity classification, safeguard requirements, and breach notification procedures. This spec is critical for any agent operating as a covered entity or business associate in the US healthcare ecosystem, where violations carry civil and criminal penalties.
+
 ```markdown
 ---
 agent_name: string

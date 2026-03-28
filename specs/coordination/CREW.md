@@ -30,7 +30,7 @@ they work tightly together, and they produce a specific output
 
 ### Spec
 
-```markdown
+````markdown
 ---
 crew_name: string
 crew_id: string
@@ -124,7 +124,7 @@ Available as a standalone crew bundle:
 - **Listing:** [TotalAgents.ai URL]
 - **Price:** [pricing]
 - **Works with:** Any compatible swarm or standalone
-```
+````
 
 ## Example Use Cases
 

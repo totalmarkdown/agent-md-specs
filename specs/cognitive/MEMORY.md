@@ -17,6 +17,10 @@ tier: core
 **Priority:** High
 **Version:** 0.1.0
 
+### Purpose
+
+Defines what an agent remembers across sessions and how that memory is structured, classified, and curated. Without persistent memory governance, agents lose institutional knowledge at every session boundary, forcing users to re-explain context and risking inconsistent behavior over time.
+
 **Note:** MEMORY.md is already used by Claude Code.  
 This is the ENHANCED spec for TotalMarkdown compatibility.
 
