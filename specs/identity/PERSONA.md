@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # PERSONA.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Identity
 **Domain:** personamd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines the public-facing identity of an agent when it interacts 

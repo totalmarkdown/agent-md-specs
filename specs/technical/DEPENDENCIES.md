@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # DEPENDENCIES.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Technical
 **Domain:** dependenciesmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Complete list of everything this agent depends on to function — 

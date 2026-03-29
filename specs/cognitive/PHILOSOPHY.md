@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # PHILOSOPHY.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Cognitive
 **Domain:** philosophymd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The agent's underlying philosophy — its approach to problems, 

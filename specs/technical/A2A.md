@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # A2A.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Technical
 **Domain:** a2amd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Configures Agent-to-Agent (A2A) protocol connections — how this 

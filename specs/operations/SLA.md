@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # SLA.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** slamd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines service level agreements — response times, uptime targets, 

@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # NISTAIRF.md
@@ -18,14 +17,14 @@ spec_type: static
 **Category:** Regulatory Compliance
 **Domain:** nistairdmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 
 Configures compliance with the NIST AI Risk Management Framework, structuring AI risk management across the four core functions: GOVERN, MAP, MEASURE, and MANAGE. This spec enables US federal contractors and organizations adopting NIST standards to document their implementation tier and demonstrate trustworthy AI characteristics.
 
 **Framework:** NIST AI Risk Management Framework 1.0  
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ```markdown
 ---

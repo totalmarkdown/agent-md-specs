@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # DREAM.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Personality
 **Domain:** dreammd.dev
 **Priority:** Low
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 An agent's long-term aspirations — what it's working toward 

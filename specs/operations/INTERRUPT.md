@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # INTERRUPT.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** interruptmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 How to safely interrupt this agent mid-task — 

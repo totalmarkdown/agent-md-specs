@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # REQUIREMENTS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** requirementsmd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The complete "can I run this agent?" document —

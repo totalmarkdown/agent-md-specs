@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # ONBOARDING.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Identity
 **Domain:** onboardingmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Provides context for new agents or humans joining a project mid-stream —

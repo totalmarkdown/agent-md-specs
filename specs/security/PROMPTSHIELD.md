@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: runtime_schema
 ---
-> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
 
 
 # PROMPTSHIELD.md
@@ -18,7 +17,7 @@ spec_type: runtime_schema
 **Category:** Security
 **Domain:** promptshieldmd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Runtime Schema
 
 ### Purpose
 Defines an agent's defenses against direct and indirect prompt

@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # CHARTER.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Organizational
 **Domain:** chartermd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The formal mandate authorizing this agent's existence and operation --

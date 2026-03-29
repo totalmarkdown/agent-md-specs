@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # OFFERING.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Identity
 **Domain:** offeringmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 An agent's public declaration of what it can provide to other 

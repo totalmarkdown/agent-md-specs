@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: runtime_schema
 ---
-> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
 
 
 # AUDITTRAIL.md
@@ -18,7 +17,7 @@ spec_type: runtime_schema
 **Category:** Compliance
 **Domain:** audittrailmd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Runtime Schema
 
 ### Purpose
 Defines the requirements for a tamper-resistant, verifiable record

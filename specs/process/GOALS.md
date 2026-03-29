@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # GOALS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Process
 **Domain:** goalsmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines what the agent is working toward — current objectives, 

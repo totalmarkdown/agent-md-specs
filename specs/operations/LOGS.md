@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # LOGS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** logsmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Operational logging configuration — where logs go, what gets logged,

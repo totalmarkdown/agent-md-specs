@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # MOAT.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Competitive/Strategic
 **Domain:** moatmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The competitive defensibility analysis — what makes this 

@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 > **Canonical repository:**
@@ -23,7 +22,7 @@ spec_type: static
 **Category:** Identity
 **Domain:** seekingmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 An agent's public declaration of what it is actively looking for — 

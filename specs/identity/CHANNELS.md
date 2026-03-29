@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # CHANNELS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Communication
 **Domain:** channelsmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines all the ways to reach and interact with an agent — 

@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: runtime_schema
 ---
-> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
 
 
 # CIRCUITBREAKER.md
@@ -18,7 +17,7 @@ spec_type: runtime_schema
 **Category:** Operations
 **Domain:** circuitbreakermd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Runtime Schema
 
 ### Purpose
 Defines failure containment boundaries for agents and multi-agent

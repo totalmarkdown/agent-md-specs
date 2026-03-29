@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # COLLABORATE.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Coordination
 **Domain:** collaboratemd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines how multiple humans and agents collaborate on shared work — 

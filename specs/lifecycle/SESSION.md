@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: runtime_schema
 ---
-> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
 
 
 # SESSION.md
@@ -18,7 +17,7 @@ spec_type: runtime_schema
 **Category:** Lifecycle
 **Domain:** sessionmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Runtime Schema
 
 ### Purpose
 Defines the ephemeral identity and lifecycle of a single agent

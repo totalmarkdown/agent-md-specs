@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: runtime_schema
 ---
-> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
 
 
 # MEMORYSAFETY.md
@@ -18,7 +17,7 @@ spec_type: runtime_schema
 **Category:** Security
 **Domain:** memorysafetymd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Runtime Schema
 
 ### Purpose
 Defines defenses against memory poisoning, cross-session contamination, and unauthorized memory manipulation in both individual and shared agent memory. MEMORYSAFETY.md is the security complement to MEMORY.md (what to remember) and SHAREDCONTEXT.md (how to share) — it governs how memory is protected from adversarial and accidental corruption.

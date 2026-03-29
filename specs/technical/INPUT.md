@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # INPUT.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Technical/Interface
 **Domain:** inputmd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The complete formal specification of everything this agent 

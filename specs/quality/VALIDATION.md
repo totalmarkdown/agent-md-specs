@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # VALIDATION.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Quality
 **Domain:** validationmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 How an agent validates its own outputs — evidence standards, 

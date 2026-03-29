@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # INSTINCT.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Cognitive
 **Domain:** instinctmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The agent's fast patterns — heuristics, reflexes, and 

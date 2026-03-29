@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # EUAIACT.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Regulatory Compliance
 **Domain:** euaiactmd.dev
 **Priority:** Very High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The EU AI Act is the world's first comprehensive AI regulation.

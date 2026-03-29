@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # TRAINING.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Cognitive
 **Domain:** trainingmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Provides few-shot examples, reference patterns, and domain-specific 

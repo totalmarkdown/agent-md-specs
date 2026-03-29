@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 > **Canonical repository:**
@@ -23,7 +22,7 @@ spec_type: static
 **Category:** Lifecycle
 **Domain:** wakeupmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 What the agent does at the beginning of every session —

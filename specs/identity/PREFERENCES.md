@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # PREFERENCES.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Identity
 **Domain:** preferencesmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines an agent's working preferences — how it likes to operate, 

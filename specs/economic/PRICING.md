@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # PRICING.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Economic
 **Domain:** pricingmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Complete pricing information for an agent — all tiers, what's 

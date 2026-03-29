@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # STATUS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** statusmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Real-time or near-real-time operational status of an agent — 

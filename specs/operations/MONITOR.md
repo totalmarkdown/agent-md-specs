@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # MONITOR.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Operations
 **Domain:** monitormd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Defines observability configuration — what metrics to emit,

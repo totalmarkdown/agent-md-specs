@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # PANIC.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Safety
 **Domain:** panicmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The agent's reflexive response to sudden catastrophic failure —

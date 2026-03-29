@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # LEGACY.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Lifecycle
 **Domain:** legacymd.dev
 **Priority:** Low
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 What an agent leaves behind when it is deprecated or decommissioned — 

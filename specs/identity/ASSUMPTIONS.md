@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # ASSUMPTIONS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Transparency/Trust
 **Domain:** assumptionsmd.dev
 **Priority:** Medium
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 The key assumptions this agent's design is built on.

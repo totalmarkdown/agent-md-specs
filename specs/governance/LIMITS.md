@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: core
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # LIMITS.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Safety
 **Domain:** limitsmd.dev
 **Priority:** High
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Explicit, unconditional limits on what this agent will never do, 

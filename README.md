@@ -413,88 +413,85 @@ Each dot is a spec. Lines show direct relationships.
 
 ```mermaid
 graph LR
-    WHOAMI((WHOAMI)) --- ID((ID))
-    WHOAMI --- ATTESTATION((ATTESTATION))
-    WHOAMI --- OWNER((OWNER))
-    WHOAMI --- CONTACT((CONTACT))
-    ID --- ATTESTATION
-    ATTESTATION --- SESSION((SESSION))
-    DELEGATION((DELEGATION)) --- LEASTPRIVILEGE((LEASTPRIVILEGE))
-    DELEGATION --- PERMISSIONS((PERMISSIONS))
-    DELEGATION --- CONSENT((CONSENT))
+    subgraph Identity
+        SOUL((SOUL)) --- WHOAMI((WHOAMI))
+        WHOAMI --- ID((ID))
+        WHOAMI --- OWNER((OWNER))
+        WHOAMI --- CONTACT((CONTACT))
+        ID --- ATTESTATION((ATTESTATION))
+        ATTESTATION --- SESSION((SESSION))
+    end
+
+    subgraph Governance
+        DELEGATION((DELEGATION)) --- LEASTPRIVILEGE((LEASTPRIVILEGE))
+        DELEGATION --- PERMISSIONS((PERMISSIONS))
+        DELEGATION --- CONSENT((CONSENT))
+        LIMITS((LIMITS)) --- GUARDRAILS((GUARDRAILS))
+        LIMITS --- ESCALATION((ESCALATION))
+        ESCALATION --- DELEGATION
+        ENFORCEMENT((ENFORCEMENT)) --- LIMITS
+        ENFORCEMENT --- LEASTPRIVILEGE
+    end
+
+    subgraph Accountability
+        INTENT((INTENT)) --- AUDITTRAIL((AUDITTRAIL))
+        PROVENANCE((PROVENANCE)) --- AUDITTRAIL
+    end
+
+    subgraph Memory
+        MEMORY((MEMORY)) --- SHAREDCONTEXT((SHAREDCONTEXT))
+        SHAREDCONTEXT --- MEMORYSAFETY((MEMORYSAFETY))
+    end
+
+    subgraph Safety
+        PROMPTSHIELD((PROMPTSHIELD))
+        CIRCUITBREAKER((CIRCUITBREAKER))
+    end
+
+    subgraph Coordination
+        ORG((ORG)) --- CREW((CREW))
+        CREW --- TEAM((TEAM))
+    end
+
+    subgraph Technical
+        INPUT((INPUT)) --- OUTPUT((OUTPUT))
+        TOOLS((TOOLS)) --- MCP((MCP))
+        MONITOR((MONITOR)) --- SLA((SLA))
+    end
+
+    subgraph Economic
+        BUDGET((BUDGET)) --- WALLET((WALLET))
+        WALLET --- HIREME((HIREME))
+        HIREME --- PRICING((PRICING))
+    end
+
+    %% Cross-cluster connections
     DELEGATION --- SESSION
-    LIMITS((LIMITS)) --- GUARDRAILS((GUARDRAILS))
-    LIMITS --- ESCALATION((ESCALATION))
-    ESCALATION --- DELEGATION
-    ENFORCEMENT((ENFORCEMENT)) --- LIMITS
-    ENFORCEMENT --- LEASTPRIVILEGE
-    INTENT((INTENT)) --- AUDITTRAIL((AUDITTRAIL))
     LEASTPRIVILEGE --- INTENT
-    PROVENANCE((PROVENANCE)) --- AUDITTRAIL
     ENFORCEMENT --- AUDITTRAIL
     ENFORCEMENT --- INTENT
-    MEMORY((MEMORY)) --- SHAREDCONTEXT((SHAREDCONTEXT))
-    SHAREDCONTEXT --- MEMORYSAFETY((MEMORYSAFETY))
     MEMORYSAFETY --- AUDITTRAIL
-    PROMPTSHIELD((PROMPTSHIELD)) --- ESCALATION
+    PROMPTSHIELD --- ESCALATION
     PROMPTSHIELD --- AUDITTRAIL
-    CIRCUITBREAKER((CIRCUITBREAKER)) --- ESCALATION
+    CIRCUITBREAKER --- ESCALATION
     CIRCUITBREAKER --- AUDITTRAIL
-    ORG((ORG)) --- CREW((CREW))
-    CREW --- TEAM((TEAM))
     TEAM --- SHAREDCONTEXT
     TEAM --- DELEGATION
-    SOUL((SOUL)) --- WHOAMI
-    SOUL --- GUARDRAILS
-    INPUT((INPUT)) --- OUTPUT((OUTPUT))
-    TOOLS((TOOLS)) --- MCP((MCP))
     TOOLS --- PERMISSIONS
-    MONITOR((MONITOR)) --- CIRCUITBREAKER
-    SLA((SLA)) --- MONITOR
-    BUDGET((BUDGET)) --- LIMITS
-    WALLET((WALLET)) --- BUDGET
-    HIREME((HIREME)) --- WALLET
-    PRICING((PRICING)) --- HIREME
+    MONITOR --- CIRCUITBREAKER
+    BUDGET --- LIMITS
 
-    style WHOAMI fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style ID fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style ATTESTATION fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style SESSION fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style OWNER fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style CONTACT fill:#4299e1,color:#fff,stroke:#2b6cb0
-    style DELEGATION fill:#ed8936,color:#fff,stroke:#c05621
-    style LEASTPRIVILEGE fill:#ed8936,color:#fff,stroke:#c05621
-    style PERMISSIONS fill:#ed8936,color:#fff,stroke:#c05621
-    style CONSENT fill:#ed8936,color:#fff,stroke:#c05621
-    style LIMITS fill:#ed8936,color:#fff,stroke:#c05621
-    style GUARDRAILS fill:#ed8936,color:#fff,stroke:#c05621
-    style ESCALATION fill:#ed8936,color:#fff,stroke:#c05621
-    style ENFORCEMENT fill:#ed8936,color:#fff,stroke:#c05621
-    style INTENT fill:#48bb78,color:#fff,stroke:#276749
-    style AUDITTRAIL fill:#48bb78,color:#fff,stroke:#276749
-    style PROVENANCE fill:#48bb78,color:#fff,stroke:#276749
-    style MEMORY fill:#9f7aea,color:#fff,stroke:#6b46c1
-    style SHAREDCONTEXT fill:#9f7aea,color:#fff,stroke:#6b46c1
-    style MEMORYSAFETY fill:#9f7aea,color:#fff,stroke:#6b46c1
-    style PROMPTSHIELD fill:#fc8181,color:#fff,stroke:#c53030
-    style CIRCUITBREAKER fill:#fc8181,color:#fff,stroke:#c53030
-    style SOUL fill:#f6ad55,color:#fff,stroke:#c05621
-    style TEAM fill:#63b3ed,color:#fff,stroke:#2b6cb0
-    style CREW fill:#63b3ed,color:#fff,stroke:#2b6cb0
-    style ORG fill:#63b3ed,color:#fff,stroke:#2b6cb0
-    style INPUT fill:#a0aec0,color:#fff,stroke:#718096
-    style OUTPUT fill:#a0aec0,color:#fff,stroke:#718096
-    style TOOLS fill:#a0aec0,color:#fff,stroke:#718096
-    style MCP fill:#a0aec0,color:#fff,stroke:#718096
-    style MONITOR fill:#a0aec0,color:#fff,stroke:#718096
-    style SLA fill:#a0aec0,color:#fff,stroke:#718096
-    style BUDGET fill:#f6e05e,color:#333,stroke:#d69e2e
-    style WALLET fill:#f6e05e,color:#333,stroke:#d69e2e
-    style HIREME fill:#f6e05e,color:#333,stroke:#d69e2e
-    style PRICING fill:#f6e05e,color:#333,stroke:#d69e2e
+    style Identity fill:#1a365d,color:#fff,stroke:#2b6cb0
+    style Governance fill:#744210,color:#fff,stroke:#c05621
+    style Accountability fill:#22543d,color:#fff,stroke:#276749
+    style Memory fill:#44337a,color:#fff,stroke:#6b46c1
+    style Safety fill:#742a2a,color:#fff,stroke:#c53030
+    style Coordination fill:#2a4365,color:#fff,stroke:#2b6cb0
+    style Technical fill:#1a202c,color:#fff,stroke:#718096
+    style Economic fill:#744210,color:#fff,stroke:#d69e2e
 ```
 
-Identity · Governance · Accountability · Memory · Safety · Coordination · Technical · Economic
+**Legend:** Identity · Governance · Accountability · Memory · Safety · Coordination · Technical · Economic
 
 ---
 

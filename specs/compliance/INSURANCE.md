@@ -10,7 +10,6 @@ license: CC0 1.0 Universal
 tier: extended
 spec_type: static
 ---
-> **Static Configuration** — committed to your repository
 
 
 # INSURANCE.md
@@ -18,7 +17,7 @@ spec_type: static
 **Category:** Legal
 **Domain:** insurancemd.dev
 **Priority:** Low
-**Version:** 0.1.0
+**Version:** 0.1.0 **Type:** Static
 
 ### Purpose
 Insurance and liability coverage for an agent or agent fleet.
