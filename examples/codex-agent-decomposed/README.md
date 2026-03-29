@@ -13,15 +13,15 @@
 ```
 AGENTS.md              agent-md-specs
 (project context)      (everything else about the agent)
-┌──────────────┐       ┌────────────────────────┐
-│ Build cmds   │       │ SOUL.md — personality   │
+┌──────────────┐       ┌──────────────────────────┐
+│ Build cmds   │       │ SOUL.md — personality    │
 │ Test cmds    │       │ WHOAMI.md — identity     │
 │ Code style   │       │ DELEGATION.md — authority│
 │ PR rules     │       │ LIMITS.md — hard stops   │
 │ Lint config  │       │ ESCALATION.md — safety   │
 └──────────────┘       │ AUDITTRAIL.md — records  │
                        │ ENFORCEMENT.md — verify  │
-                       └────────────────────────┘
+                       └──────────────────────────┘
 ```
 
 ## Specs Included
