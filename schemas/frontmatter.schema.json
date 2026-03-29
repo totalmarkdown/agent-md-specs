@@ -74,6 +74,14 @@
         "extended"
       ]
     },
+    "spec_type": {
+      "type": "string",
+      "enum": [
+        "static",
+        "runtime_schema"
+      ],
+      "description": "Whether this spec defines static configuration or runtime data schemas"
+    },
     "priority": {
       "type": "string",
       "enum": [

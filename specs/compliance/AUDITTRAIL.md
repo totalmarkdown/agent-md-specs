@@ -8,7 +8,10 @@ volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 tier: core
+spec_type: runtime_schema
 ---
+> **Runtime Schema** — defines the format for API payloads, session tokens, or log entries
+
 
 # AUDITTRAIL.md
 

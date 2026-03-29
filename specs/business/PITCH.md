@@ -8,7 +8,10 @@ volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 tier: extended
+spec_type: static
 ---
+> **Static Configuration** — committed to your repository
+
 
 # PITCH.md
 

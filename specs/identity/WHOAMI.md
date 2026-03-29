@@ -8,7 +8,10 @@ volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 tier: core
+spec_type: static
 ---
+> **Static Configuration** — committed to your repository
+
 
 > **Canonical repository:**
 > [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md)
