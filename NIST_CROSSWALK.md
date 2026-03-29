@@ -221,7 +221,7 @@ from human authorization to tamper-proof record:
 
 The following walkthrough shows how the accountability chain operates
 in practice, using the Atlas financial agent example
-([Atlas — Enterprise Finance](examples/nist-nccoe-bundle/)).
+([Atlas — NIST NCCoE Enterprise Finance Bundle](examples/nist-nccoe-bundle/)).
 
 **1. Authority Establishment (Pre-Deployment)**
 CFO Sarah Chen delegates financial analysis authority to Atlas

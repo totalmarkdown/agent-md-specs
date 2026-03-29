@@ -1,4 +1,4 @@
-# Nova — Autonomous ML Research Agent
+# Nova — Autoresearch Decomposed Bundle
 
 > *A monolithic agent config decomposed into standardized, reusable agent-md-specs files.*
 

@@ -1,4 +1,4 @@
-# Aria — Customer Support Agent
+# Aria — Customer Support Bundle
 
 > *A tier-1 support agent with clear escalation boundaries and a consistent, patient personality.*
 

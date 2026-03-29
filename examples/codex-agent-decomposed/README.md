@@ -1,4 +1,4 @@
-# Forge — Code Review & Deployment Agent
+# Forge — Codex Agent Decomposed Bundle
 
 > *A code review agent that uses AGENTS.md for project context alongside agent-md-specs for identity, governance, and accountability.*
 

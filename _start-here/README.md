@@ -16,7 +16,7 @@ guided tour answering all 6 NCCoE concept paper questions
 → **[NIST Crosswalk](../NIST_CROSSWALK.md)** — Direct mapping to
 AI RMF (Govern, Map, Measure, Manage) and SP 800-207 Zero Trust
 
-→ **[NIST NCCOE Bundle (Atlas) Enterprise Example](../examples/nist-nccoe-bundle/)** —
+→ **[Atlas — NIST NCCoE Enterprise Finance Bundle](../examples/nist-nccoe-bundle/)** —
 Complete financial agent with accountability chain + failure scenarios
 
 ---
@@ -33,13 +33,10 @@ Start with these 5 files:
 | [ESCALATION.md](../specs/governance/ESCALATION.md) | Human-in-the-loop | `curl -O https://raw.githubusercontent.com/totalmarkdown/escalation.md/main/ESCALATION.md` |
 | [DELEGATION.md](../specs/governance/DELEGATION.md) | Who authorized this agent | `curl -O https://raw.githubusercontent.com/totalmarkdown/delegation.md/main/DELEGATION.md` |
 
-Or download a complete starter bundle:
+Or download the basic agent bundle (these 5 specs):
 ```bash
-# Aria (customer support agent — 7 specs)
-curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/customer-support-bundle/bundle.zip
-
-# Atlas (enterprise financial agent — 19 specs, NIST-aligned)
-curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/bundle.zip
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/basic-agent/bundle.zip
+unzip bundle.zip -d my-agent/
 ```
 
 Then validate:
@@ -62,8 +59,11 @@ Add these on top of the 5 above:
 | [CIRCUITBREAKER.md](../specs/operations/CIRCUITBREAKER.md) | Failure containment | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/CIRCUITBREAKER.template.md` |
 | [BUDGET.md](../specs/governance/BUDGET.md) | Team cost controls | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/BUDGET.template.md` |
 
-→ See the [Sentinel Crew example](../examples/multi-agent-fleet/) for
-a working 3-agent fleet configuration.
+Or download the [Sentinel — Multi-Agent Fleet Bundle](../examples/multi-agent-fleet/):
+```bash
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/multi-agent-fleet/bundle.zip
+unzip bundle.zip -d my-fleet/
+```
 
 ---
 
@@ -76,6 +76,12 @@ a working 3-agent fleet configuration.
 | [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/PROVENANCE.template.md` |
 | [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ENFORCEMENT.template.md` |
 | [ATTESTATION.md](../specs/security/ATTESTATION.md) | Cryptographic identity proof | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ATTESTATION.template.md` |
+
+Or download the [Atlas — NIST NCCoE Enterprise Finance Bundle](../examples/nist-nccoe-bundle/):
+```bash
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/bundle.zip
+unzip bundle.zip -d my-agent/
+```
 
 → See [NIST Crosswalk](../NIST_CROSSWALK.md) for regulatory mapping.
 
@@ -91,17 +97,25 @@ a working 3-agent fleet configuration.
 | [CV.md](../specs/economic/CV.md) | Work history | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/CV.md` |
 | [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/quality/TESTSCORES.md` |
 
+Or download the [Marketplace Agent — Listing Bundle](../examples/marketplace-agent/):
+```bash
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/marketplace-agent/bundle.zip
+unzip bundle.zip -d my-agent/
+```
+
 ---
 
 ## Example Bundles
 
 | Bundle | What It Shows |
 |--------|--------------|
-| [Atlas — Enterprise Finance](../examples/nist-nccoe-bundle/) | Enterprise financial agent — full accountability chain |
-| [Sentinel Crew — Fleet](../examples/multi-agent-fleet/) | 3-agent financial pipeline with hierarchy |
-| [Aria — Customer Support](../examples/customer-support-bundle/) | Simple customer support agent |
-| [Nova — ML Research](../examples/autoresearch-decomposed/) | Monolithic config → decomposed specs |
-| [Forge — Code Review](../examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs together |
+| [Basic Agent — Starter Bundle](../examples/basic-agent/) | The 5 essential specs every agent needs |
+| [Aria — Customer Support Bundle](../examples/customer-support-bundle/) | Simple customer support agent |
+| [Atlas — NIST NCCoE Enterprise Finance Bundle](../examples/nist-nccoe-bundle/) | Enterprise financial agent — full accountability chain |
+| [Nova — Autoresearch Decomposed Bundle](../examples/autoresearch-decomposed/) | Monolithic config → decomposed specs |
+| [Forge — Codex Agent Decomposed Bundle](../examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs together |
+| [Sentinel — Multi-Agent Fleet Bundle](../examples/multi-agent-fleet/) | 3-agent financial pipeline with hierarchy |
+| [Marketplace Agent — Listing Bundle](../examples/marketplace-agent/) | Agent hiring, pricing, and benchmarks |
 
 ---
 

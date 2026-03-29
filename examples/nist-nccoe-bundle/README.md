@@ -1,4 +1,4 @@
-# Atlas — Enterprise Financial Agent (NIST-Aligned)
+# Atlas — NIST NCCoE Enterprise Finance Bundle
 
 > *A fully governed financial analysis agent implementing the complete NIST NCCoE accountability chain from human delegation to tamper-proof audit trail.*
 

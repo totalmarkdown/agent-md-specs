@@ -1,4 +1,4 @@
-# Sentinel Crew — Multi-Agent Financial Pipeline
+# Sentinel — Multi-Agent Fleet Bundle
 
 > *A 3-agent financial data pipeline governed entirely by human-readable Markdown specs.*
 

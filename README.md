@@ -378,11 +378,13 @@ against poisoning, cross-session contamination, and instruction injection.
 
 | Bundle | What It Demonstrates |
 |--------|---------------------|
-| [Aria — Customer Support](examples/customer-support-bundle/) | Customer support agent using 7 core specs |
-| [Atlas — Enterprise Finance](examples/nist-nccoe-bundle/) | Enterprise financial agent with full NIST accountability chain |
-| [Nova — ML Research](examples/autoresearch-decomposed/) | How monolithic agent configs (like program.md) decompose into specs |
-| [Forge — Code Review](examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs working together |
-| [Sentinel Crew — Fleet](examples/multi-agent-fleet/) | 3-agent team with hierarchy and coordination |
+| [Basic Agent — Starter Bundle](examples/basic-agent/) | The 5 essential specs every agent needs |
+| [Aria — Customer Support Bundle](examples/customer-support-bundle/) | Customer support agent using 7 core specs |
+| [Atlas — NIST NCCoE Enterprise Finance Bundle](examples/nist-nccoe-bundle/) | Enterprise financial agent with full NIST accountability chain |
+| [Nova — Autoresearch Decomposed Bundle](examples/autoresearch-decomposed/) | How monolithic agent configs (like program.md) decompose into specs |
+| [Forge — Codex Agent Decomposed Bundle](examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs working together |
+| [Sentinel — Multi-Agent Fleet Bundle](examples/multi-agent-fleet/) | 3-agent team with hierarchy and coordination |
+| [Marketplace Agent — Listing Bundle](examples/marketplace-agent/) | Agent hiring, pricing, work history, and benchmarks |
 
 ---
 
