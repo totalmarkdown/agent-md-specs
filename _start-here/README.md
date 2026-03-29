@@ -4,7 +4,7 @@
 
 → **[Full README](../README.md)** — complete documentation & architecture overview
 
-→ **[INDEX.md](../INDEX.md)** — full library of 178 specs
+→ **[Full INDEX.md](../INDEX.md)** — full library of 178 specs
 
 ---
 
