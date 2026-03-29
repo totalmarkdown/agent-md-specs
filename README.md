@@ -381,7 +381,7 @@ against poisoning, cross-session contamination, and instruction injection.
 | [Nova — Autoresearch Decomposed Bundle](examples/autoresearch-decomposed/) | How monolithic agent configs (like program.md) decompose into specs |
 | [Forge — Codex Agent Decomposed Bundle](examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs working together |
 | [Sentinel — Multi-Agent Fleet Bundle](examples/multi-agent-fleet/) | 3-agent team with hierarchy and coordination |
-| [Marketplace Agent — Listing Bundle](examples/marketplace-agent/) | Agent hiring, pricing, work history, and benchmarks |
+| [Vex — Marketplace Listing Bundle](examples/marketplace-agent/) | Agent hiring, pricing, work history, and benchmarks |
 
 ---
 

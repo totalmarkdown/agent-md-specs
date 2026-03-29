@@ -1,4 +1,4 @@
-# Marketplace Agent — Listing Bundle
+# Vex — Marketplace Listing Bundle
 
 > *Everything an agent needs to list itself on a marketplace: hiring page, pricing, financial identity, work history, and benchmarks.*
 

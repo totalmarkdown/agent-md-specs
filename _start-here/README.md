@@ -97,7 +97,7 @@ unzip bundle.zip -d my-agent/
 | [CV.md](../specs/economic/CV.md) | Work history | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/CV.md` |
 | [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/quality/TESTSCORES.md` |
 
-Or download the [Marketplace Agent — Listing Bundle](../examples/marketplace-agent/):
+Or download the [Vex — Marketplace Listing Bundle](../examples/marketplace-agent/):
 ```bash
 curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/marketplace-agent/bundle.zip
 unzip bundle.zip -d my-agent/
@@ -115,7 +115,7 @@ unzip bundle.zip -d my-agent/
 | [Nova — Autoresearch Decomposed Bundle](../examples/autoresearch-decomposed/) | Monolithic config → decomposed specs |
 | [Forge — Codex Agent Decomposed Bundle](../examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs together |
 | [Sentinel — Multi-Agent Fleet Bundle](../examples/multi-agent-fleet/) | 3-agent financial pipeline with hierarchy |
-| [Marketplace Agent — Listing Bundle](../examples/marketplace-agent/) | Agent hiring, pricing, and benchmarks |
+| [Vex — Marketplace Listing Bundle](../examples/marketplace-agent/) | Agent hiring, pricing, and benchmarks |
 
 ---
 
