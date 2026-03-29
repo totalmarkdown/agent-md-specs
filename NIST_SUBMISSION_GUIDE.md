@@ -108,7 +108,7 @@ concept paper. Links go directly to the spec files.
 
 ## See It in Practice (10 Minutes)
 
-**[examples/nist-nccoe-bundle/](examples/nist-nccoe-bundle/)** —
+**[Atlas — Enterprise Finance](examples/nist-nccoe-bundle/)** —
 A complete enterprise financial agent ("Atlas" at Acme Corp) configured
 with all 20 specs above. Shows realistic delegation from a CFO,
 SPIFFE workload identity, 30-minute session boundaries, hash-chain

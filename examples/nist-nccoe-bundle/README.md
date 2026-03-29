@@ -1,15 +1,6 @@
-# Example Bundle: Atlas — Enterprise Financial Agent (NIST-Aligned)
+# Atlas — Enterprise Financial Agent (NIST-Aligned)
 
-This bundle demonstrates how agent-md-specs configures a production
-financial analysis agent with full NIST NCCoE alignment, including
-the complete accountability chain from human delegation to
-tamper-proof audit trail.
-
-## Why This Bundle Matters
-
-This is the reference example for the NIST NCCoE submission. It shows
-how core specs work together to govern a real enterprise agent
-operating under strict regulatory requirements (SOX, GDPR, SOC2).
+> *A fully governed financial analysis agent implementing the complete NIST NCCoE accountability chain from human delegation to tamper-proof audit trail.*
 
 ## Agent Profile
 
@@ -20,10 +11,18 @@ operating under strict regulatory requirements (SOX, GDPR, SOC2).
 - **Model:** Claude Sonnet 4.6
 - **Purpose:** Generate quarterly financial reports and forecasts
 
-## Files in This Bundle
+## What This Bundle Demonstrates
 
-| File | What It Configures | NIST Question |
-|------|-------------------|---------------|
+- Complete NIST NCCoE accountability chain for enterprise agents
+- How 18 specs work together to govern a real agent under strict regulatory requirements (SOX, GDPR, SOC2)
+- Human delegation, identity attestation, least-privilege access, intent declaration, and tamper-proof auditing
+- Failure containment via circuit breakers and multi-level escalation
+- Prompt injection defense and memory safety patterns
+
+## Specs Included
+
+| Spec | Purpose | NIST Question |
+|------|---------|---------------|
 | WHOAMI.md | Agent identity | Identification |
 | DELEGATION.md | Authority chain from CFO | Authorization (delegation) |
 | ATTESTATION.md | SPIFFE/X.509 verification | Authentication |
@@ -43,9 +42,44 @@ operating under strict regulatory requirements (SOX, GDPR, SOC2).
 | ENFORCEMENT.md | Compliance verification | Cross-cutting |
 | SOUL.md | Professional persona | Agent behavior |
 
-## The Accountability Chain in Action
+## Quick Start
+
+Download the complete bundle:
+```bash
+# Clone just this example
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/totalmarkdown/agent-md-specs.git
+cd agent-md-specs
+git sparse-checkout set examples/nist-nccoe-bundle
+```
+
+Or download individual files:
+```bash
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/ATTESTATION.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/AUDITTRAIL.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/CIRCUITBREAKER.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/CONSENT.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/DELEGATION.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/ENFORCEMENT.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/ESCALATION.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/ID.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/INTENT.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/LEASTPRIVILEGE.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/LIMITS.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/MEMORYSAFETY.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/PERMISSIONS.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/PROMPTSHIELD.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/PROVENANCE.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/SESSION.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/SHAREDCONTEXT.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/SOUL.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/WHOAMI.md
+```
+
+## The Accountability Chain
 
 This bundle implements the complete accountability chain:
+
 1. CFO Sarah Chen delegates read-only financial analysis authority
 2. Employee consent covers AI-assisted analysis (form FIN-AI-001)
 3. Atlas identifies as spiffe://acme.corp/finance/agents/atlas
@@ -88,3 +122,30 @@ Bloomberg API becomes unavailable during report generation.
 - ESCALATION.md notifies Finance Analyst team (L2)
 - 5-minute cooldown, then half-open testing
 - 2 successful calls required to close circuit
+
+## Related Specs
+
+Full spec definitions:
+[SOUL.md](../../specs/identity/SOUL.md) ·
+[WHOAMI.md](../../specs/identity/WHOAMI.md) ·
+[ID.md](../../specs/identity/ID.md) ·
+[DELEGATION.md](../../specs/governance/DELEGATION.md) ·
+[ATTESTATION.md](../../specs/security/ATTESTATION.md) ·
+[SESSION.md](../../specs/lifecycle/SESSION.md) ·
+[LEASTPRIVILEGE.md](../../specs/governance/LEASTPRIVILEGE.md) ·
+[INTENT.md](../../specs/governance/INTENT.md) ·
+[PROMPTSHIELD.md](../../specs/security/PROMPTSHIELD.md) ·
+[PROVENANCE.md](../../specs/compliance/PROVENANCE.md) ·
+[SHAREDCONTEXT.md](../../specs/coordination/SHAREDCONTEXT.md) ·
+[MEMORYSAFETY.md](../../specs/security/MEMORYSAFETY.md) ·
+[AUDITTRAIL.md](../../specs/compliance/AUDITTRAIL.md) ·
+[CIRCUITBREAKER.md](../../specs/operations/CIRCUITBREAKER.md) ·
+[CONSENT.md](../../specs/compliance/CONSENT.md) ·
+[ESCALATION.md](../../specs/governance/ESCALATION.md) ·
+[LIMITS.md](../../specs/governance/LIMITS.md) ·
+[PERMISSIONS.md](../../specs/governance/PERMISSIONS.md) ·
+[ENFORCEMENT.md](../../specs/governance/ENFORCEMENT.md)
+
+---
+
+*Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

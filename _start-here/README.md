@@ -44,13 +44,13 @@ agent-md-validate ./my-agent/
 
 Add these on top of the 5 above:
 
-| File | What It Does |
-|------|-------------|
-| [TEAM.md](../specs/coordination/TEAM.md) | Team structure and handoff protocols |
-| [SHAREDCONTEXT.md](../specs/coordination/SHAREDCONTEXT.md) | Shared memory governance |
-| [MEMORYSAFETY.md](../specs/security/MEMORYSAFETY.md) | Memory poisoning defense |
-| [CIRCUITBREAKER.md](../specs/operations/CIRCUITBREAKER.md) | Failure containment |
-| [BUDGET.md](../specs/governance/BUDGET.md) | Team cost controls |
+| File | What It Does | Get It |
+|------|-------------|--------|
+| [TEAM.md](../specs/coordination/TEAM.md) | Team structure and handoff protocols | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/TEAM.template.md` |
+| [SHAREDCONTEXT.md](../specs/coordination/SHAREDCONTEXT.md) | Shared memory governance | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/SHAREDCONTEXT.template.md` |
+| [MEMORYSAFETY.md](../specs/security/MEMORYSAFETY.md) | Memory poisoning defense | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/MEMORYSAFETY.template.md` |
+| [CIRCUITBREAKER.md](../specs/operations/CIRCUITBREAKER.md) | Failure containment | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/CIRCUITBREAKER.template.md` |
+| [BUDGET.md](../specs/governance/BUDGET.md) | Team cost controls | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/BUDGET.template.md` |
 
 → See the [Sentinel Crew example](../examples/multi-agent-fleet/) for
 a working 3-agent fleet configuration.
@@ -59,13 +59,13 @@ a working 3-agent fleet configuration.
 
 ## If You Need Enterprise Compliance
 
-| File | What It Does |
-|------|-------------|
-| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-proof action logging |
-| [CONSENT.md](../specs/compliance/CONSENT.md) | User consent lifecycle (GDPR/CCPA) |
-| [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking |
-| [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification |
-| [ATTESTATION.md](../specs/security/ATTESTATION.md) | Cryptographic identity proof |
+| File | What It Does | Get It |
+|------|-------------|--------|
+| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-proof action logging | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/AUDITTRAIL.template.md` |
+| [CONSENT.md](../specs/compliance/CONSENT.md) | User consent lifecycle (GDPR/CCPA) | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/CONSENT.template.md` |
+| [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/PROVENANCE.template.md` |
+| [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ENFORCEMENT.template.md` |
+| [ATTESTATION.md](../specs/security/ATTESTATION.md) | Cryptographic identity proof | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ATTESTATION.template.md` |
 
 → See [NIST Crosswalk](../NIST_CROSSWALK.md) for regulatory mapping.
 
@@ -73,13 +73,13 @@ a working 3-agent fleet configuration.
 
 ## If You're Listing Agents on a Marketplace
 
-| File | What It Does |
-|------|-------------|
-| [HIREME.md](../specs/business/HIREME.md) | Agent hiring listing |
-| [PRICING.md](../specs/economic/PRICING.md) | Cost structure |
-| [WALLET.md](../specs/economic/WALLET.md) | Financial identity |
-| [CV.md](../specs/economic/CV.md) | Work history |
-| [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results |
+| File | What It Does | Get It |
+|------|-------------|--------|
+| [HIREME.md](../specs/business/HIREME.md) | Agent hiring listing | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/HIREME.template.md` |
+| [PRICING.md](../specs/economic/PRICING.md) | Cost structure | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/PRICING.md` |
+| [WALLET.md](../specs/economic/WALLET.md) | Financial identity | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/WALLET.md` |
+| [CV.md](../specs/economic/CV.md) | Work history | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/CV.md` |
+| [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/quality/TESTSCORES.md` |
 
 ---
 
@@ -87,11 +87,11 @@ a working 3-agent fleet configuration.
 
 | Bundle | What It Shows |
 |--------|--------------|
-| [Atlas (NIST)](../examples/nist-nccoe-bundle/) | Enterprise financial agent — full accountability chain |
-| [Sentinel Crew](../examples/multi-agent-fleet/) | 3-agent team with hierarchy |
-| [Aria](../examples/customer-support-bundle/) | Simple customer support agent |
-| [Nova](../examples/autoresearch-decomposed/) | Monolithic config → decomposed specs |
-| [Forge](../examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs together |
+| [Atlas — Enterprise Finance](../examples/nist-nccoe-bundle/) | Enterprise financial agent — full accountability chain |
+| [Sentinel Crew — Fleet](../examples/multi-agent-fleet/) | 3-agent financial pipeline with hierarchy |
+| [Aria — Customer Support](../examples/customer-support-bundle/) | Simple customer support agent |
+| [Nova — ML Research](../examples/autoresearch-decomposed/) | Monolithic config → decomposed specs |
+| [Forge — Code Review](../examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs together |
 
 ---
 

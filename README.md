@@ -91,7 +91,12 @@ From emergency stops  (ICE.md)          to shared memory    (SHAREDCONTEXT.md)
 From who authorized it (DELEGATION.md)  to did it comply    (ENFORCEMENT.md)
 ```
 
-46 Core + 132 Extended specs. 178 total file types. 16 volumes. 17 categories. 
+46 Core + 132 Extended specs. 178 total file types. 16 volumes. 17 categories.
+
+Whether configuring a single agent or orchestrating a fleet of
+hundreds — from individual identity (WHOAMI.md) to team coordination
+(TEAM.md) to organization-wide policies (ORG.md) — every level of
+the agent hierarchy is covered.
 
 ---
 
@@ -101,7 +106,11 @@ In 2024, developers asked: *"What can this AI do?"*
 In 2026, developers ask: *"How do I work with this agent?"*
 In 2028, they will ask: *"Who is this agent?"*
 
-This library builds the vocabulary for that third question. The agents
+And as agents begin working in teams, crews, and fleets, the
+questions multiply: *Who coordinates them? How do they share context
+safely? What happens when one agent in a team fails?*
+
+This library builds the vocabulary for those questions. The agents
 that will matter aren't the ones with the best models — they're the
 ones with the best governance, the most honest documentation of their
 boundaries, and provable accountability for their actions.
@@ -369,11 +378,11 @@ against poisoning, cross-session contamination, and instruction injection.
 
 | Bundle | What It Demonstrates |
 |--------|---------------------|
-| [customer-support-bundle](examples/customer-support-bundle/) | Aria — customer support agent using 7 core specs |
-| [nist-nccoe-bundle](examples/nist-nccoe-bundle/) | Atlas — enterprise financial agent with full NIST accountability chain |
-| [autoresearch-decomposed](examples/autoresearch-decomposed/) | Nova — how monolithic agent configs (like program.md) decompose into specs |
-| [codex-agent-decomposed](examples/codex-agent-decomposed/) | Forge — AGENTS.md + agent-md-specs working together |
-| [multi-agent-fleet](examples/multi-agent-fleet/) | Sentinel Crew — 3-agent team with hierarchy and coordination |
+| [Aria — Customer Support](examples/customer-support-bundle/) | Customer support agent using 7 core specs |
+| [Atlas — Enterprise Finance](examples/nist-nccoe-bundle/) | Enterprise financial agent with full NIST accountability chain |
+| [Nova — ML Research](examples/autoresearch-decomposed/) | How monolithic agent configs (like program.md) decompose into specs |
+| [Forge — Code Review](examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs working together |
+| [Sentinel Crew — Fleet](examples/multi-agent-fleet/) | 3-agent team with hierarchy and coordination |
 
 ---
 
