@@ -1,9 +1,9 @@
 # Start Here
 
 > The quick guide to the specs that matter most.
-> For the full library of 178 specs, see [INDEX.md](../INDEX.md).
 
-→ **[Full README](../README.md)** — complete documentation, architecture overview, and all 178 specs
+→ **[Full README](../README.md)** — complete documentation & architecture overview
+→ **[INDEX.md](../INDEX.md)** — full library of 178 specs
 
 ---
 
@@ -15,7 +15,7 @@ guided tour answering all 6 NCCoE concept paper questions
 → **[NIST Crosswalk](../NIST_CROSSWALK.md)** — Direct mapping to
 AI RMF (Govern, Map, Measure, Manage) and SP 800-207 Zero Trust
 
-→ **[Atlas Enterprise Example](../examples/nist-nccoe-bundle/)** —
+→ **[NIST-NCCOE-Bundle (Atlas_ Enterprise Example](../examples/nist-nccoe-bundle/)** —
 Complete financial agent with accountability chain + failure scenarios
 
 ---
