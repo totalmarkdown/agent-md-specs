@@ -1,4 +1,8 @@
 ---
+spec_name: WHOAMI.md
+spec_version: 0.1.0
+category: Identity
+tier: core
 agent_id: "[REPLACE THIS — UUID v4]"
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"

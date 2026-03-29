@@ -1,9 +1,7 @@
 ---
 spec_name: DELEGATION.md
 spec_version: 0.1.0
-category: Identity
-domain: specmd.dev
-priority: P1
+category: Governance
 tier: core
 ---
 

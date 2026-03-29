@@ -1,4 +1,8 @@
 ---
+spec_name: LIMITS.md
+spec_version: 0.1.0
+category: Governance
+tier: core
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 last_reviewed: "[REPLACE THIS — YYYY-MM-DD]"
