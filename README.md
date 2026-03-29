@@ -106,7 +106,7 @@ In 2024, developers asked: *"What can this AI do?"*
 In 2026, developers ask: *"How do I work with this agent?"*
 In 2028, they will ask: *"Who is this agent?"*
 
-And as agents begin working in teams, crews, and fleets, the
+And as agents begin working in teams, or across departments for large organisations, the
 questions multiply: *Who coordinates them? How do they share context
 safely? What happens when one agent in a team fails?*
 
