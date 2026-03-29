@@ -16,7 +16,7 @@ guided tour answering all 6 NCCoE concept paper questions
 → **[NIST Crosswalk](../NIST_CROSSWALK.md)** — Direct mapping to
 AI RMF (Govern, Map, Measure, Manage) and SP 800-207 Zero Trust
 
-→ **[NIST-NCCOE-Bundle (Atlas_ Enterprise Example](../examples/nist-nccoe-bundle/)** —
+→ **[NIST-NCCOE-Bundle (Atlas) Enterprise Example](../examples/nist-nccoe-bundle/)** —
 Complete financial agent with accountability chain + failure scenarios
 
 ---
