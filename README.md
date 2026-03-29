@@ -413,57 +413,51 @@ Each dot is a spec. Lines show direct relationships.
 
 ```mermaid
 graph LR
-    subgraph Identity
-        SOUL((SOUL)) --- WHOAMI((WHOAMI))
-        WHOAMI --- ID((ID))
-        WHOAMI --- OWNER((OWNER))
-        WHOAMI --- CONTACT((CONTACT))
-        ID --- ATTESTATION((ATTESTATION))
-        ATTESTATION --- SESSION((SESSION))
-    end
+    %% Identity cluster (blue)
+    SOUL((SOUL)) --- WHOAMI((WHOAMI))
+    WHOAMI --- ID((ID))
+    WHOAMI --- OWNER((OWNER))
+    WHOAMI --- CONTACT((CONTACT))
+    ID --- ATTESTATION((ATTESTATION))
+    ATTESTATION --- SESSION((SESSION))
 
-    subgraph Governance
-        DELEGATION((DELEGATION)) --- LEASTPRIVILEGE((LEASTPRIVILEGE))
-        DELEGATION --- PERMISSIONS((PERMISSIONS))
-        DELEGATION --- CONSENT((CONSENT))
-        LIMITS((LIMITS)) --- GUARDRAILS((GUARDRAILS))
-        LIMITS --- ESCALATION((ESCALATION))
-        ESCALATION --- DELEGATION
-        ENFORCEMENT((ENFORCEMENT)) --- LIMITS
-        ENFORCEMENT --- LEASTPRIVILEGE
-    end
+    %% Governance cluster (orange)
+    DELEGATION((DELEGATION)) --- LEASTPRIVILEGE((LEASTPRIVILEGE))
+    DELEGATION --- PERMISSIONS((PERMISSIONS))
+    DELEGATION --- CONSENT((CONSENT))
+    LIMITS((LIMITS)) --- GUARDRAILS((GUARDRAILS))
+    LIMITS --- ESCALATION((ESCALATION))
+    ESCALATION --- DELEGATION
+    ENFORCEMENT((ENFORCEMENT)) --- LIMITS
+    ENFORCEMENT --- LEASTPRIVILEGE
 
-    subgraph Accountability
-        INTENT((INTENT)) --- AUDITTRAIL((AUDITTRAIL))
-        PROVENANCE((PROVENANCE)) --- AUDITTRAIL
-    end
+    %% Accountability cluster (green)
+    INTENT((INTENT)) --- AUDITTRAIL((AUDITTRAIL))
+    PROVENANCE((PROVENANCE)) --- AUDITTRAIL
 
-    subgraph Memory
-        MEMORY((MEMORY)) --- SHAREDCONTEXT((SHAREDCONTEXT))
-        SHAREDCONTEXT --- MEMORYSAFETY((MEMORYSAFETY))
-    end
+    %% Memory cluster (purple)
+    MEMORY((MEMORY)) --- SHAREDCONTEXT((SHAREDCONTEXT))
+    SHAREDCONTEXT --- MEMORYSAFETY((MEMORYSAFETY))
 
-    subgraph Safety
-        PROMPTSHIELD((PROMPTSHIELD))
-        CIRCUITBREAKER((CIRCUITBREAKER))
-    end
+    %% Safety cluster (red)
+    PROMPTSHIELD((PROMPTSHIELD)) --- ESCALATION
+    PROMPTSHIELD --- AUDITTRAIL
+    CIRCUITBREAKER((CIRCUITBREAKER)) --- ESCALATION
+    CIRCUITBREAKER --- AUDITTRAIL
 
-    subgraph Coordination
-        ORG((ORG)) --- CREW((CREW))
-        CREW --- TEAM((TEAM))
-    end
+    %% Coordination cluster (teal)
+    ORG((ORG)) --- CREW((CREW))
+    CREW --- TEAM((TEAM))
 
-    subgraph Technical
-        INPUT((INPUT)) --- OUTPUT((OUTPUT))
-        TOOLS((TOOLS)) --- MCP((MCP))
-        MONITOR((MONITOR)) --- SLA((SLA))
-    end
+    %% Technical cluster (gray)
+    INPUT((INPUT)) --- OUTPUT((OUTPUT))
+    TOOLS((TOOLS)) --- MCP((MCP))
+    MONITOR((MONITOR)) --- SLA((SLA))
 
-    subgraph Economic
-        BUDGET((BUDGET)) --- WALLET((WALLET))
-        WALLET --- HIREME((HIREME))
-        HIREME --- PRICING((PRICING))
-    end
+    %% Economic cluster (gold)
+    BUDGET((BUDGET)) --- WALLET((WALLET))
+    WALLET --- HIREME((HIREME))
+    HIREME --- PRICING((PRICING))
 
     %% Cross-cluster connections
     DELEGATION --- SESSION
@@ -471,27 +465,59 @@ graph LR
     ENFORCEMENT --- AUDITTRAIL
     ENFORCEMENT --- INTENT
     MEMORYSAFETY --- AUDITTRAIL
-    PROMPTSHIELD --- ESCALATION
-    PROMPTSHIELD --- AUDITTRAIL
-    CIRCUITBREAKER --- ESCALATION
-    CIRCUITBREAKER --- AUDITTRAIL
     TEAM --- SHAREDCONTEXT
     TEAM --- DELEGATION
     TOOLS --- PERMISSIONS
     MONITOR --- CIRCUITBREAKER
     BUDGET --- LIMITS
 
-    style Identity fill:#1a365d,color:#fff,stroke:#2b6cb0
-    style Governance fill:#744210,color:#fff,stroke:#c05621
-    style Accountability fill:#22543d,color:#fff,stroke:#276749
-    style Memory fill:#44337a,color:#fff,stroke:#6b46c1
-    style Safety fill:#742a2a,color:#fff,stroke:#c53030
-    style Coordination fill:#2a4365,color:#fff,stroke:#2b6cb0
-    style Technical fill:#1a202c,color:#fff,stroke:#718096
-    style Economic fill:#744210,color:#fff,stroke:#d69e2e
+    %% Identity (blue)
+    style SOUL fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style WHOAMI fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style ID fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style ATTESTATION fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style SESSION fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style OWNER fill:#4299e1,color:#fff,stroke:#2b6cb0
+    style CONTACT fill:#4299e1,color:#fff,stroke:#2b6cb0
+    %% Governance (orange)
+    style DELEGATION fill:#ed8936,color:#fff,stroke:#c05621
+    style LEASTPRIVILEGE fill:#ed8936,color:#fff,stroke:#c05621
+    style PERMISSIONS fill:#ed8936,color:#fff,stroke:#c05621
+    style CONSENT fill:#ed8936,color:#fff,stroke:#c05621
+    style LIMITS fill:#ed8936,color:#fff,stroke:#c05621
+    style GUARDRAILS fill:#ed8936,color:#fff,stroke:#c05621
+    style ESCALATION fill:#ed8936,color:#fff,stroke:#c05621
+    style ENFORCEMENT fill:#ed8936,color:#fff,stroke:#c05621
+    %% Accountability (green)
+    style INTENT fill:#48bb78,color:#fff,stroke:#276749
+    style AUDITTRAIL fill:#48bb78,color:#fff,stroke:#276749
+    style PROVENANCE fill:#48bb78,color:#fff,stroke:#276749
+    %% Memory (purple)
+    style MEMORY fill:#9f7aea,color:#fff,stroke:#6b46c1
+    style SHAREDCONTEXT fill:#9f7aea,color:#fff,stroke:#6b46c1
+    style MEMORYSAFETY fill:#9f7aea,color:#fff,stroke:#6b46c1
+    %% Safety (red)
+    style PROMPTSHIELD fill:#fc8181,color:#fff,stroke:#c53030
+    style CIRCUITBREAKER fill:#fc8181,color:#fff,stroke:#c53030
+    %% Coordination (teal)
+    style ORG fill:#4fd1c5,color:#fff,stroke:#285e61
+    style CREW fill:#4fd1c5,color:#fff,stroke:#285e61
+    style TEAM fill:#4fd1c5,color:#fff,stroke:#285e61
+    %% Technical (gray)
+    style INPUT fill:#a0aec0,color:#fff,stroke:#718096
+    style OUTPUT fill:#a0aec0,color:#fff,stroke:#718096
+    style TOOLS fill:#a0aec0,color:#fff,stroke:#718096
+    style MCP fill:#a0aec0,color:#fff,stroke:#718096
+    style MONITOR fill:#a0aec0,color:#fff,stroke:#718096
+    style SLA fill:#a0aec0,color:#fff,stroke:#718096
+    %% Economic (gold)
+    style BUDGET fill:#ecc94b,color:#333,stroke:#d69e2e
+    style WALLET fill:#ecc94b,color:#333,stroke:#d69e2e
+    style HIREME fill:#ecc94b,color:#333,stroke:#d69e2e
+    style PRICING fill:#ecc94b,color:#333,stroke:#d69e2e
 ```
 
-**Legend:** Identity · Governance · Accountability · Memory · Safety · Coordination · Technical · Economic
+**Legend:** 🔵 Identity · 🟠 Governance · 🟢 Accountability · 🟣 Memory · 🔴 Safety · 🟢 Coordination · ⚪ Technical · 🟡 Economic
 
 ---
 
