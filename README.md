@@ -62,7 +62,7 @@ that enterprise, compliance, and security teams are now asking:
 How do we prove what it did? What happens when it fails?
 Is its shared memory trustworthy? Did the user consent?*
 
-**agent-md-specs answers these questions.** 178 Markdown file type
+**agent-md-specs answers these questions.** A collection of Markdown file type
 specifications covering every dimension of agent governance — from
 identity and delegation to audit trails and memory safety. The same
 human-readable format the industry already chose, extended into the
