@@ -209,32 +209,29 @@ LIMITS.md
 
 ## Quick Start
 
-Five essential files every agent should have:
+Download the 5 essential files every agent should have:
 
 ```bash
-# 1. Who is this agent?
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/SOUL.template.md
-
-# 2. Verifiable identity
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/WHOAMI.template.md
-
-# 3. What will it never do?
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/LIMITS.template.md
-
-# 4. When does a human get involved?
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ESCALATION.template.md
-
-# 5. Who authorized this agent?
-curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/DELEGATION.template.md
+# Download the Basic Agent starter bundle
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/basic-agent/bundle.zip
+unzip bundle.zip -d my-agent/
 ```
 
-Rename each file (remove `.template`), fill in the `[REPLACE]` fields,
-and validate:
+This gives you:
+1. **SOUL.md** — Who is this agent?
+2. **WHOAMI.md** — Verifiable identity
+3. **LIMITS.md** — What will it never do?
+4. **ESCALATION.md** — When does a human get involved?
+5. **DELEGATION.md** — Who authorized this agent?
+
+Fill in the `[REPLACE]` fields, then validate:
 
 ```bash
 pip install git+https://github.com/totalmarkdown/agent-md-validator.git
 agent-md-validate ./my-agent/
 ```
+
+→ See the [Basic Agent — Starter Bundle](examples/basic-agent/) for details and individual file downloads.
 
 ---
 
