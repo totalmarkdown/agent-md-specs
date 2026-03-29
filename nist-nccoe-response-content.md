@@ -27,6 +27,8 @@ The specifications serve two distinct purposes:
 
 This distinction means agent-md-specs functions as a declarative policy specification that compiles down into machine-enforceable rules via policy engines (e.g., OPA/Rego), API gateways, and identity providers — not as a file-based runtime system.
 
+Crucially, while authored in human-readable Markdown, every Core specification is governed by a corresponding JSON Schema, enabling native integration into Zero Trust Policy Enforcement Points (PEPs) and API gateways without format translation.
+
 ### Why Markdown
 
 While machine-native formats (JSON, YAML) are necessary for runtime execution, they fail as human-auditable governance artifacts. Compliance officers, security architects, and enterprise CISOs need to read and approve the policies that govern agent behavior. Markdown provides this human readability while remaining machine-parseable via YAML frontmatter and structured sections. JSON Schema definitions are provided for all core specifications, enabling automated validation at three levels: syntax, completeness, and content conformance.
@@ -37,11 +39,11 @@ Every spec file contains YAML frontmatter — structured, typed, schema-validate
 
 > *"Markdown is becoming the human-readable contract for what the agent should do, when it should do it, and what resources it should use."* — Visual Studio Magazine, February 2026
 
-The markdown-as-agent-configuration pattern is already an industry standard: AGENTS.md (60,000+ repositories), CLAUDE.md and SKILL.md (Anthropic ecosystem), and Karpathy's program.md (51,900+ stars). agent-md-specs standardizes and extends this pattern into the identity, governance, compliance, and accountability dimensions that production deployments require.
+The markdown-as-agent-configuration pattern is already an industry standard: AGENTS.md (60,000+ repositories), CLAUDE.md and SKILL.md (Anthropic ecosystem), and Karpathy's program.md (59,000+ stars). agent-md-specs standardizes and extends this pattern into the identity, governance, compliance, and accountability dimensions that production deployments require.
 
 **No new infrastructure required.** agent-md-specs integrates directly into existing API gateways, OPA/Rego policies, CI/CD pipelines, and identity providers. It defines the policy layer — existing runtime systems enforce it.
 
-This submission aligns with the White House's March 2026 AI Legislative Recommendations, which direct NIST to foster industry-led, technology-neutral AI standards and establish regulatory sandboxes for AI innovation.
+This submission aligns with the White House's March 2026 AI Legislative Recommendations, which emphasize the need for industry-led AI standards and the establishment of regulatory sandboxes for AI innovation.
 
 ---
 
@@ -186,8 +188,7 @@ agent-md-specs is designed as a complementary vocabulary layer that works alongs
 | SP 800-207 | Zero Trust Architecture | The 15-step accountability chain maps to PEP, PDP, and PIP components |
 | SP 800-63-4 | Digital Identity Guidelines | WHOAMI.md + ATTESTATION.md implement identity assurance levels |
 | NGAC | Attribute-based access control | LEASTPRIVILEGE.md defines the dynamic policies that NGAC enforces |
-| SCIM | Identity lifecycle management | SESSION.md and ATTESTATION.md credential lifecycle maps to SCIM provisioning/deprovisioning |
-| OWASP Agentic Top 10 (2026) | Agentic security threats (NIST-peer-reviewed) | ASI06 → MEMORYSAFETY.md, ASI08 → CIRCUITBREAKER.md |
+| OWASP Agentic Top 10 (2026) | Agentic security threats (recognized by NIST CAISI) | ASI06 → MEMORYSAFETY.md, ASI08 → CIRCUITBREAKER.md |
 
 ### Tooling and Validation
 
@@ -200,7 +201,7 @@ The project follows a formal specification lifecycle (Draft, Proposed, Stable, D
 
 ### Invitation
 
-We welcome the opportunity to participate in future NCCoE workshops, demonstration projects, or working groups related to AI agent identity and authorization. The complete framework — including all 178 specifications, JSON schemas, validator tooling, seven example bundles, and the NIST crosswalk mapping — is available at:
+We welcome the opportunity to participate in future NCCoE workshops, demonstration projects, or working groups related to AI agent identity and authorization — including collaboration on building a demonstrable reference architecture using the agent-md-specs framework. The complete framework — including all 178 specifications, JSON schemas, validator tooling, seven example bundles, and the NIST crosswalk mapping — is available at:
 
 **https://github.com/totalmarkdown/agent-md-specs**
 
