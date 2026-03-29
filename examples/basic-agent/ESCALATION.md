@@ -3,6 +3,8 @@ spec_name: ESCALATION.md
 spec_version: 0.1.0
 category: Governance
 tier: core
+priority: Very High
+domain: escalationmd.dev
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 default_escalation: "[REPLACE THIS — email | Slack | PagerDuty]"
