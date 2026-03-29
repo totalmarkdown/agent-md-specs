@@ -21,7 +21,7 @@
 &nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
 &nbsp;·&nbsp; [NIST Reviewer Guide](./NIST_SUBMISSION_GUIDE.md)
 
-_Developed in alignment with the [NIST AI RMF](https://www.nist.gov/artificial-intelligence/ai-risk-management-framework)
+_Developed in alignment with the [NIST AI RMF](https://www.nist.gov/artificial-intelligence)
 and the [NCCoE Initiative on AI Agent Identity and Authorization](https://www.nist.gov/caisi/ai-agent-standards-initiative)._
 
 ---
