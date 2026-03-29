@@ -85,10 +85,10 @@ boundaries, audit trails, shared memory governance, failure
 containment, and regulatory compliance.
 
 ```
-From first awakening  (HELLOWORLD.md)   to retirement      (LEGACY.md)
-From personality      (SOUL.md)         to audit trail      (AUDITTRAIL.md)
-From emergency stops  (ICE.md)          to shared memory    (SHAREDCONTEXT.md)
-From who authorized it (DELEGATION.md)  to did it comply    (ENFORCEMENT.md)
+From first awakening   (HELLOWORLD.md)   to retirement      (LEGACY.md)
+From personality       (SOUL.md)         to audit trail     (AUDITTRAIL.md)
+From emergency stops   (ICE.md)          to shared memory   (SHAREDCONTEXT.md)
+From who authorized it (DELEGATION.md)   to did it comply   (ENFORCEMENT.md)
 ```
 
 46 Core + 132 Extended specs. 178 total file types. 16 volumes. 17 categories.
