@@ -421,66 +421,59 @@ Each cluster addresses a different dimension of agent governance.
 Arrows show how the clusters depend on and feed into each other.
 
 ```mermaid
-graph TB
-    subgraph Identity["🔑 Identity (7 specs)"]
-        direction LR
+graph LR
+    subgraph Identity["🔑 Identity · 7 specs"]
         id1["SOUL · WHOAMI · ID · CONTACT · OWNER · ATTESTATION · SESSION"]
     end
 
-    subgraph Governance["🛡️ Governance (12 specs)"]
-        direction LR
+    subgraph Governance["🛡️ Governance · 12 specs"]
         gov1["DELEGATION · LEASTPRIVILEGE · PERMISSIONS · CONSENT · LIMITS · GUARDRAILS · ESCALATION · ENFORCEMENT · POLICY · BUDGET · ICE · WAKEUP"]
     end
 
-    subgraph Accountability["📋 Accountability (3 specs)"]
-        direction LR
-        acc1["INTENT · AUDITTRAIL · PROVENANCE"]
-    end
-
-    subgraph Memory["🧠 Memory (3 specs)"]
-        direction LR
+    subgraph Memory["🧠 Memory · 3 specs"]
         mem1["MEMORY · SHAREDCONTEXT · MEMORYSAFETY"]
     end
 
-    subgraph Safety["🔒 Safety (2 specs)"]
-        direction LR
+    subgraph Safety["🔒 Safety · 2 specs"]
         saf1["PROMPTSHIELD · CIRCUITBREAKER"]
     end
 
-    subgraph Coordination["👥 Coordination (5 specs)"]
-        direction LR
+    subgraph Coordination["👥 Coordination · 4 specs"]
         coord1["TEAM · CREW · SWARM · ORG"]
     end
 
-    subgraph Technical["⚙️ Technical (8 specs)"]
-        direction LR
-        tech1["INPUT · OUTPUT · TOOLS · MCP · API · SECRETS · ACCESS · PROMPTSHIELD"]
+    subgraph Technical["⚙️ Technical · 8 specs"]
+        tech1["INPUT · OUTPUT · TOOLS · MCP · API · SECRETS · ACCESS"]
     end
 
-    subgraph Operations["📊 Operations (3 specs)"]
-        direction LR
+    subgraph Accountability["📋 Accountability · 3 specs"]
+        acc1["INTENT · AUDITTRAIL · PROVENANCE"]
+    end
+
+    subgraph Operations["📊 Operations · 3 specs"]
         ops1["MONITOR · HEALTHCHECK · SLA"]
     end
 
-    subgraph Economic["💰 Economic (5 specs)"]
-        direction LR
+    subgraph Economic["💰 Economic · 6 specs"]
         econ1["BUDGET · PRICING · WALLET · HIREME · CV · TESTSCORES"]
     end
 
-    %% Block-level connections (the important relationships)
+    %% Outer ring: clockwise flow
     Identity -->|"proves identity for"| Governance
-    Identity -->|"establishes who acts"| Accountability
-    Governance -->|"constrains"| Accountability
-    Governance -->|"delegates authority to"| Coordination
-    Governance -->|"enforces safety on"| Memory
-    Accountability -->|"logs all actions to"| Safety
-    Safety -->|"escalates failures to"| Governance
-    Memory -->|"shared across"| Coordination
-    Safety -->|"contains failures in"| Operations
+    Governance -->|"delegates to"| Coordination
     Coordination -->|"uses"| Technical
     Technical -->|"monitored by"| Operations
-    Economic -->|"constrained by"| Governance
     Operations -->|"reports to"| Accountability
+    Accountability -->|"audits"| Identity
+
+    %% Inner connections
+    Governance -->|"enforces on"| Memory
+    Memory -->|"shared across"| Coordination
+    Safety -->|"escalates to"| Governance
+    Operations -->|"detects failures for"| Safety
+    Economic -->|"agents hire via"| Coordination
+    Economic -->|"constrained by"| Governance
+    Safety -->|"contains in"| Operations
 
     %% Styling
     style Identity fill:#4299e1,color:#fff,stroke:#2b6cb0
