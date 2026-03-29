@@ -53,9 +53,14 @@ shared/                    # Crew-wide governance
 
 ## Quick Start
 
-Download the complete bundle:
+Download all specs in this bundle:
 ```bash
-# Clone just this example
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/multi-agent-fleet/bundle.zip
+unzip bundle.zip -d my-agent/
+```
+
+Or clone just this example:
+```bash
 git clone --depth 1 --filter=blob:none --sparse \
   https://github.com/totalmarkdown/agent-md-specs.git
 cd agent-md-specs

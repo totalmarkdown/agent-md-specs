@@ -32,6 +32,15 @@ Start with these 5 files:
 | [ESCALATION.md](../specs/governance/ESCALATION.md) | Human-in-the-loop | `curl -O https://raw.githubusercontent.com/totalmarkdown/escalation.md/main/ESCALATION.md` |
 | [DELEGATION.md](../specs/governance/DELEGATION.md) | Who authorized this agent | `curl -O https://raw.githubusercontent.com/totalmarkdown/delegation.md/main/DELEGATION.md` |
 
+Or download a complete starter bundle:
+```bash
+# Aria (customer support agent — 7 specs)
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/customer-support-bundle/bundle.zip
+
+# Atlas (enterprise financial agent — 19 specs, NIST-aligned)
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/bundle.zip
+```
+
 Then validate:
 ```bash
 pip install git+https://github.com/totalmarkdown/agent-md-validator.git
