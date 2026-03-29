@@ -2,7 +2,27 @@
 
 All notable changes to agent-md-specs are documented here.
 
-## [1.1.0-nist-submission] — 2026-03-28
+## [1.2.0-nist-submission] — 2026-03-29
+
+### Added
+- 2 new example bundles: Basic Agent (5 starter specs), Marketplace Agent (5 listing specs)
+- bundle.zip downloads for all 7 example bundles
+- curl download commands in every _start-here section (multi-agent team, enterprise compliance, marketplace)
+- Team/fleet context added to README intro and "Why Does This Exist?" section
+- Mermaid diagram replaced: individual nodes → block-level cluster view (9 functional clusters)
+- spec_type field (static/runtime_schema) added to all 178 specs
+
+### Fixed
+- Missing required frontmatter in basic-agent and marketplace-agent template files
+- Validation errors: 16 errors → 0 errors in basic-agent bundle
+
+### Changed
+- All example bundle display names aligned to folder names (e.g., "Aria — Customer Support Bundle", "Atlas — NIST NCCoE Enterprise Finance Bundle")
+- Example READMEs standardized to consistent structure across all 7 bundles
+- Metadata display refactored from banner to inline format across all specs
+- NIST Submission Guide and Crosswalk references updated with consistent naming
+
+## [1.1.0] — 2026-03-28
 
 ### Added
 - _start-here/ directory — curated entry point for 5 audiences
