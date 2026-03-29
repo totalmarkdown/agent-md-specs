@@ -422,58 +422,75 @@ Arrows show how the clusters depend on and feed into each other.
 
 ```mermaid
 graph LR
-    subgraph Identity["🔑 Identity · 7 specs"]
-        id1["SOUL · WHOAMI · ID · CONTACT · OWNER · ATTESTATION · SESSION"]
+    subgraph Identity["🔑 Identity · 7"]
+        id1["SOUL · WHOAMI · ID
+        CONTACT · OWNER
+        ATTESTATION · SESSION"]
     end
 
-    subgraph Governance["🛡️ Governance · 12 specs"]
-        gov1["DELEGATION · LEASTPRIVILEGE · PERMISSIONS · CONSENT · LIMITS · GUARDRAILS · ESCALATION · ENFORCEMENT · POLICY · BUDGET · ICE · WAKEUP"]
+    subgraph Governance["🛡️ Governance · 12"]
+        gov1["DELEGATION · PERMISSIONS
+        LEASTPRIVILEGE · CONSENT
+        LIMITS · GUARDRAILS
+        ESCALATION · ENFORCEMENT
+        POLICY · BUDGET · ICE · WAKEUP"]
     end
 
-    subgraph Memory["🧠 Memory · 3 specs"]
-        mem1["MEMORY · SHAREDCONTEXT · MEMORYSAFETY"]
+    subgraph Memory["🧠 Memory · 3"]
+        mem1["MEMORY
+        SHAREDCONTEXT
+        MEMORYSAFETY"]
     end
 
-    subgraph Safety["🔒 Safety · 2 specs"]
-        saf1["PROMPTSHIELD · CIRCUITBREAKER"]
+    subgraph Safety["🔒 Safety · 2"]
+        saf1["PROMPTSHIELD
+        CIRCUITBREAKER"]
     end
 
-    subgraph Coordination["👥 Coordination · 4 specs"]
-        coord1["TEAM · CREW · SWARM · ORG"]
+    subgraph Accountability["📋 Accountability · 3"]
+        acc1["INTENT
+        AUDITTRAIL
+        PROVENANCE"]
     end
 
-    subgraph Technical["⚙️ Technical · 8 specs"]
-        tech1["INPUT · OUTPUT · TOOLS · MCP · API · SECRETS · ACCESS"]
+    subgraph Coordination["👥 Coordination · 4"]
+        coord1["TEAM · CREW
+        SWARM · ORG"]
     end
 
-    subgraph Accountability["📋 Accountability · 3 specs"]
-        acc1["INTENT · AUDITTRAIL · PROVENANCE"]
+    subgraph Technical["⚙️ Technical · 8"]
+        tech1["INPUT · OUTPUT
+        TOOLS · MCP · API
+        SECRETS · ACCESS"]
     end
 
-    subgraph Operations["📊 Operations · 3 specs"]
-        ops1["MONITOR · HEALTHCHECK · SLA"]
+    subgraph Operations["📊 Operations · 3"]
+        ops1["MONITOR
+        HEALTHCHECK · SLA"]
     end
 
-    subgraph Economic["💰 Economic · 6 specs"]
-        econ1["BUDGET · PRICING · WALLET · HIREME · CV · TESTSCORES"]
+    subgraph Economic["💰 Economic · 6"]
+        econ1["BUDGET · PRICING
+        WALLET · HIREME
+        CV · TESTSCORES"]
     end
 
     %% Outer ring: clockwise flow
-    Identity -->|"proves identity for"| Governance
-    Governance -->|"delegates to"| Coordination
+    Identity -->|"identity"| Governance
+    Governance -->|"delegates"| Coordination
     Coordination -->|"uses"| Technical
-    Technical -->|"monitored by"| Operations
-    Operations -->|"reports to"| Accountability
+    Technical -->|"monitored"| Operations
+    Operations -->|"reports"| Accountability
     Accountability -->|"audits"| Identity
 
     %% Inner connections
-    Governance -->|"enforces on"| Memory
-    Memory -->|"shared across"| Coordination
-    Safety -->|"escalates to"| Governance
-    Operations -->|"detects failures for"| Safety
-    Economic -->|"agents hire via"| Coordination
-    Economic -->|"constrained by"| Governance
-    Safety -->|"contains in"| Operations
+    Governance -->|"enforces"| Memory
+    Memory -->|"shared"| Coordination
+    Safety -->|"escalates"| Governance
+    Operations -->|"detects"| Safety
+    Economic -->|"hires"| Coordination
+    Economic -->|"bounded"| Governance
+    Safety -->|"contains"| Operations
 
     %% Styling
     style Identity fill:#4299e1,color:#fff,stroke:#2b6cb0
