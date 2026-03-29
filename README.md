@@ -91,7 +91,7 @@ From emergency stops  (ICE.md)          to shared memory    (SHAREDCONTEXT.md)
 From who authorized it (DELEGATION.md)  to did it comply    (ENFORCEMENT.md)
 ```
 
-178 file types. 16 volumes. 17 categories. 46 Core + 132 Extended.
+46 Core + 132 Extended specs. 178 total file types. 16 volumes. 17 categories. 
 
 ---
 
