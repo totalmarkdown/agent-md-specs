@@ -179,7 +179,7 @@ approve are identical to the data machines enforce.
 
 - **CC0 Public Domain** — zero licensing friction for government adoption
 - **Markdown format** — human-readable for compliance officers, machine-parseable via YAML frontmatter and JSON Schema
-- **46 Core + 133 Extended** — tiered for progressive adoption
+- **47 Core + 132 Extended** — tiered for progressive adoption
 - **External enforcement** — specs define policy, runtime systems enforce it (not on-agent self-policing)
 
 ---

@@ -6,7 +6,7 @@ Complete alphabetical index of all 179 agent-md-specs file type specifications.
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Core | 46 | Essential specs recommended for all production agents |
+| Core | 47 | Essential specs recommended for all production agents |
 | Extended | 133 | Valuable specs for specific use cases and advanced configurations |
 | **Total** | **179** | |
 
@@ -96,7 +96,7 @@ Complete alphabetical index of all 179 agent-md-specs file type specifications.
 | GUARDRAILS.md | Safety/Governance | Core | guardrailsmd.dev | Very High | Vol 9 | [specs/governance/GUARDRAILS.md](specs/governance/GUARDRAILS.md) |
 | HANDSHAKE.md | Coordination | Extended | handshakemd.dev | High | Vol 6 | [specs/coordination/HANDSHAKE.md](specs/coordination/HANDSHAKE.md) |
 | HEALTHCHECK.md | Operations | Core | healthcheckmd.dev | High | Vol 12 | [specs/operations/HEALTHCHECK.md](specs/operations/HEALTHCHECK.md) |
-| HEARTBEAT.md | Operations | Extended | heartbeatmd.dev | High | Vol 6 | [specs/operations/HEARTBEAT.md](specs/operations/HEARTBEAT.md) |
+| HEARTBEAT.md | Operations | Core | heartbeatmd.dev | High | Vol 8 | [specs/operations/HEARTBEAT.md](specs/operations/HEARTBEAT.md) |
 | HELLOWORLD.md | Lifecycle | Extended | helloworldmd.dev | High | Vol 7 | [specs/lifecycle/HELLOWORLD.md](specs/lifecycle/HELLOWORLD.md) |
 | HIPAA.md | Regulatory Compliance | Extended | hipaamd.dev | High | Vol 9 | [specs/regulatory/HIPAA.md](specs/regulatory/HIPAA.md) |
 | HIREME.md | Business | Core | hirememd.dev | High | Vol 4 | [specs/business/HIREME.md](specs/business/HIREME.md) |

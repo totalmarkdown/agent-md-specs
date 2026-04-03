@@ -15,7 +15,7 @@ The operational stack has three layers. The foundation layer handles deployment:
 | CIRCUITBREAKER.md | core | Failure containment, blast radius limits, and halt conditions | Per-agent/team |
 | DEPLOYMENT.md | extended | Deploy, configure, update, and roll back in production | Per-agent |
 | HEALTHCHECK.md | core | Exact commands and endpoints to verify correct operation | Per-agent |
-| HEARTBEAT.md | extended | Regular pulse proving the agent is alive and functioning | Per-agent |
+| HEARTBEAT.md | core | Periodic proactive execution cycle and status reporting | Per-agent |
 | INTERRUPT.md | extended | Safe mid-task interruption without losing work or state | Per-agent |
 | LOGS.md | extended | Logging config, format, retention, and query access | Per-agent |
 | MIGRATION.md | extended | State and config migration for major version upgrades | Per-agent |

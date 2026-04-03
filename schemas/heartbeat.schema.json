@@ -1,0 +1,138 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/heartbeat.schema.json",
+  "title": "HEARTBEAT.md Schema",
+  "description": "Schema for periodic proactive execution cycles and status reporting",
+  "allOf": [{ "$ref": "frontmatter.schema.json" }],
+  "properties": {
+    "required_sections": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": [
+        "Heartbeat Schedule",
+        "Heartbeat Actions",
+        "Status Report Format",
+        "Delivery Channels",
+        "Cost Budget Per Cycle",
+        "Failure Behavior",
+        "Quiet Hours",
+        "Escalation on Anomaly",
+        "Health Check Integration"
+      ]
+    },
+    "heartbeat_interval": {
+      "type": "string",
+      "pattern": "^\\d+(s|m|h|d)$|^daily$|^hourly$",
+      "description": "How often the heartbeat cycle runs (e.g., 5m, 1h, daily)"
+    },
+    "heartbeat_actions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action", "description"],
+        "properties": {
+          "action": { "type": "string" },
+          "description": { "type": "string" },
+          "timeout_seconds": { "type": "integer", "minimum": 1 },
+          "on_failure": {
+            "type": "string",
+            "enum": ["log_continue", "flag_degraded", "escalate", "retry", "halt"]
+          }
+        }
+      }
+    },
+    "status_report_format": {
+      "type": "string",
+      "enum": ["json", "markdown", "structured"]
+    },
+    "delivery_channels": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["channel_type", "destination"],
+        "properties": {
+          "channel_type": {
+            "type": "string",
+            "enum": ["slack", "email", "webhook", "pagerduty", "log", "file"]
+          },
+          "destination": { "type": "string" },
+          "priority_filter": {
+            "type": "string",
+            "enum": ["all", "degraded_and_critical", "critical_only"]
+          }
+        }
+      }
+    },
+    "cost_budget_per_cycle": {
+      "type": "object",
+      "properties": {
+        "max_per_cycle": { "type": "string" },
+        "max_daily": { "type": "string" },
+        "max_monthly": { "type": "string" },
+        "alert_threshold_percent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "halt_threshold_percent": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "failure_behavior": {
+      "type": "string",
+      "enum": ["retry", "escalate", "halt"]
+    },
+    "quiet_hours": {
+      "type": "object",
+      "properties": {
+        "schedule": { "type": "string" },
+        "behavior": {
+          "type": "string",
+          "enum": ["suspend", "reduce_frequency"]
+        },
+        "reduced_interval": { "type": "string" },
+        "resume_action": { "type": "string" }
+      }
+    },
+    "escalation_on_anomaly": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["anomaly_type", "severity", "notify"],
+        "properties": {
+          "anomaly_type": { "type": "string" },
+          "severity": {
+            "type": "string",
+            "enum": ["warning", "medium", "high", "critical"]
+          },
+          "notify": { "type": "string" },
+          "response_time": { "type": "string" }
+        }
+      }
+    },
+    "max_consecutive_failures": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Number of consecutive heartbeat failures before circuit breaker triggers"
+    },
+    "health_check_integration": {
+      "type": "object",
+      "properties": {
+        "run_probes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "probe_timeout_ms": { "type": "integer", "minimum": 1 },
+        "include_in_report": { "type": "boolean" },
+        "on_probe_failure": {
+          "type": "object",
+          "properties": {
+            "liveness": {
+              "type": "string",
+              "enum": ["escalate_immediately", "flag_degraded", "log_continue"]
+            },
+            "readiness": {
+              "type": "string",
+              "enum": ["escalate_immediately", "flag_degraded", "log_continue"]
+            }
+          }
+        }
+      }
+    }
+  }
+}

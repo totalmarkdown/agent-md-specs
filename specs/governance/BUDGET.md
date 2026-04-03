@@ -94,6 +94,7 @@ Use the cheapest model that can complete the task:
 | ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | LIMITS.md | Hard constraints and safety boundaries |
 | PERMISSIONS.md | Static resource access control |
 | PRICING.md | Cost structure |

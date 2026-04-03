@@ -306,6 +306,7 @@ ICE.md emergency protocol.
 |------|-------------|
 | ICE.md | Emergency break-glass protocols |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | REPAIR.md | Post-containment repair and root cause analysis procedures |
 | HEALTHCHECK.md | Liveness and readiness checks |
 | TEAM.md | Multi-agent team coordination |

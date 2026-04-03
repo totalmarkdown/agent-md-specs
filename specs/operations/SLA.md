@@ -91,6 +91,7 @@ SLA does not apply to:
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | HEALTHCHECK.md | Liveness and readiness checks |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | MONITOR.md | Observability and alerting |
 
 ---

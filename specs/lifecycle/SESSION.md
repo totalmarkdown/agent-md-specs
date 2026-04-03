@@ -365,6 +365,7 @@ and becomes the permanent record of the session's existence.
 |------|-------------|
 | ID.md | Permanent cryptographic identifier |
 | WAKEUP.md | Bootstrap and initialization |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | DELEGATION.md | Authority chain and authorization |
 | AUDITTRAIL.md | Tamper-proof action logging |
 | ATTESTATION.md | Identity verification and credential lifecycle |

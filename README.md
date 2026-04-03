@@ -7,7 +7,7 @@
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Specs](https://img.shields.io/badge/specs-179-blue)](./INDEX.md)
 [![Volumes](https://img.shields.io/badge/volumes-16-purple)](./INDEX.md)
-[![Core](https://img.shields.io/badge/core-46-green)](./INDEX.md)
+[![Core](https://img.shields.io/badge/core-47-green)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
@@ -73,8 +73,8 @@ deployments require.
 
 ## What Is agent-md-specs?
 
-46 Core specifications for AI agent identity, governance, and
-accountability — plus 133 Extended specifications covering the
+47 Core specifications for AI agent identity, governance, and
+accountability — plus 132 Extended specifications covering the
 full lifecycle from personality to compliance. 179 specs total
 across 17 categories, all in human-readable Markdown.
 
@@ -91,7 +91,7 @@ From emergency stops   (ICE.md)          to shared memory   (SHAREDCONTEXT.md)
 From who authorized it (DELEGATION.md)   to did it comply   (ENFORCEMENT.md)
 ```
 
-46 Core + 133 Extended specs. 179 total file types. 16 volumes. 17 categories.
+47 Core + 132 Extended specs. 179 total file types. 16 volumes. 17 categories.
 
 Whether configuring a single agent or orchestrating a fleet of
 hundreds — from individual identity (WHOAMI.md) to team coordination
@@ -235,9 +235,9 @@ agent-md-validate ./my-agent/
 
 ---
 
-## Core Specs (46 Recommended for Production Agents)
+## Core Specs (47 Recommended for Production Agents)
 
-The 46 Core specs cover the essential dimensions every production agent
+The 47 Core specs cover the essential dimensions every production agent
 should define. Start here. Add Extended specs as your needs grow.
 
 ### Identity and Verification
@@ -313,6 +313,7 @@ should define. Start here. Add Extended specs as your needs grow.
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
 | [MONITOR.md](specs/operations/MONITOR.md) | Observability and alerting | Agent |
+| [HEARTBEAT.md](specs/operations/HEARTBEAT.md) | Periodic proactive execution cycle and status reporting | Agent |
 | [HEALTHCHECK.md](specs/operations/HEALTHCHECK.md) | Liveness and readiness endpoints | Agent |
 | [SLA.md](specs/operations/SLA.md) | Service level commitments | Agent |
 
@@ -327,7 +328,7 @@ should define. Start here. Add Extended specs as your needs grow.
 | [TESTSCORES.md](specs/quality/TESTSCORES.md) | Benchmark results and performance evidence | Agent |
 
 → See [INDEX.md](INDEX.md) for the complete list of all 179 specs
-including 133 Extended tier specifications.
+including 132 Extended tier specifications.
 
 ---
 
@@ -416,7 +417,7 @@ to NIST AI RMF and NCCoE concept paper requirements.
 
 ## How Spec Categories Connect
 
-The 46 Core specs are organized into 9 functional clusters.
+The 47 Core specs are organized into 9 functional clusters.
 Each cluster addresses a different dimension of agent governance.
 Arrows show how the clusters depend on and feed into each other.
 
@@ -464,8 +465,8 @@ graph LR
         SECRETS · ACCESS"]
     end
 
-    subgraph Operations["📊 Operations · 3"]
-        ops1["MONITOR
+    subgraph Operations["📊 Operations · 4"]
+        ops1["MONITOR · HEARTBEAT
         HEALTHCHECK · SLA"]
     end
 
@@ -515,18 +516,18 @@ happens, Accountability records everything, and Safety contains failures.
 
 These Core specs have their own repositories for independent adoption:
 
-| Spec | Repo | What It Standardizes |
-|------|------|---------------------|
-| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values |
-| TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination |
-| ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety |
-| WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification |
-| LIMITS.md | [totalmarkdown/limits.md](https://github.com/totalmarkdown/limits.md) | Hard constraints and safety boundaries |
-| DELEGATION.md | [totalmarkdown/delegation.md](https://github.com/totalmarkdown/delegation.md) | Authority delegation chains |
-| AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-proof action logging |
-| CONSENT.md | [totalmarkdown/consent.md](https://github.com/totalmarkdown/consent.md) | User consent lifecycle (GDPR/CCPA) |
-| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity |
-| HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement |
+| Spec | Repo | What It Standardizes | Domain |
+|------|------|---------------------|--------|
+| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values | soulmd.dev *(not owned)* |
+| TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination | [teammd.dev](https://teammd.dev) |
+| ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety | [escalationmd.dev](https://escalationmd.dev) |
+| WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification | [whoamimd.dev](https://whoamimd.dev) |
+| LIMITS.md | [totalmarkdown/limits.md](https://github.com/totalmarkdown/limits.md) | Hard constraints and safety boundaries | [limitsmd.dev](https://limitsmd.dev) |
+| DELEGATION.md | [totalmarkdown/delegation.md](https://github.com/totalmarkdown/delegation.md) | Authority delegation chains | [delegationmd.dev](https://delegationmd.dev) |
+| AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-proof action logging | [audittrailmd.dev](https://audittrailmd.dev) |
+| CONSENT.md | [totalmarkdown/consent.md](https://github.com/totalmarkdown/consent.md) | User consent lifecycle (GDPR/CCPA) | [consentmd.dev](https://consentmd.dev) |
+| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity | walletmd.dev *(not owned)* |
+| HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement | [hirememd.dev](https://hirememd.dev) |
 
 ---
 

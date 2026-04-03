@@ -193,7 +193,7 @@ agent-md-specs is designed as a complementary vocabulary layer that works alongs
 ### Tooling and Validation
 
 - **agent-md-validator** (v0.1.0): Open-source CLI tool that validates YAML frontmatter, required sections, cross-references, and tier compliance across spec files. Repository: https://github.com/totalmarkdown/agent-md-validator
-- **JSON Schemas**: Machine-readable schema definitions for all 46 Core specifications, enabling automated conformance validation at three levels: Level 1 (syntax), Level 2 (completeness), Level 3 (content constraints).
+- **JSON Schemas**: Machine-readable schema definitions for all 47 Core specifications, enabling automated conformance validation at three levels: Level 1 (syntax), Level 2 (completeness), Level 3 (content constraints).
 
 ### Governance
 

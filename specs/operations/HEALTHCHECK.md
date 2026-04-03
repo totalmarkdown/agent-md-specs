@@ -194,6 +194,7 @@ _See MONITOR.md for ongoing observability beyond point-in-time checks._
 | ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | MONITOR.md | Observability and alerting |
 | SLA.md | Service level commitments |
 

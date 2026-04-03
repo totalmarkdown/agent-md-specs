@@ -150,6 +150,7 @@ Each wakeup logged to LOGS.md with:
 | ENFORCEMENT.md | Policy verification and compliance |
 | GOALS.md | Objectives and success criteria |
 | HEALTHCHECK.md | Liveness and readiness checks |
+| HEARTBEAT.md | Periodic proactive execution cycle |
 | ID.md | Permanent cryptographic identifier |
 | MEMORY.md | Individual agent memory governance |
 

@@ -2,6 +2,18 @@
 
 All notable changes to agent-md-specs are documented here.
 
+## [1.3.0] — 2026-04-03
+
+### Added
+- HEARTBEAT.md promoted to Core tier — periodic proactive execution cycles, status reporting, cost controls, and delivery routing
+- HEARTBEAT.template.md template for quick adoption
+- heartbeat.schema.json JSON Schema for validation
+- Domain column added to Standalone Standards table in README.md
+
+### Changed
+- Spec counts updated: 47 Core, 132 Extended, 179 total
+- Cross-references added to HEALTHCHECK.md, MONITOR.md, SLA.md, CIRCUITBREAKER.md, WAKEUP.md, SESSION.md, BUDGET.md
+
 ## [1.2.0-nist-submission] — 2026-03-29
 
 ### Added
