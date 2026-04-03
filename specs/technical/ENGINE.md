@@ -148,6 +148,7 @@ and MONITOR.md for engine performance observability._
 | Spec | Relationship |
 |------|-------------|
 | [BUDGET.md](../governance/BUDGET.md) | Spending controls and cost thresholds |
+| [CLI.md](CLI.md) | Command-line interface contract |
 | [HEALTHCHECK.md](../operations/HEALTHCHECK.md) | Liveness and readiness checks for engine |
 | [LIMITS.md](../governance/LIMITS.md) | Hard constraints and safety boundaries |
 | [MODEL.md](MODEL.md) | Underlying AI model identity and capabilities |

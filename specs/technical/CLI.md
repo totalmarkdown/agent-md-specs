@@ -20,18 +20,28 @@ spec_type: static
 **Version:** 0.1.0 **Type:** Static
 
 ### Purpose
-Complete command-line interface documentation for an agent. 
-Tells developers and other agents exactly how to invoke this 
-agent from the terminal, what flags exist, what output to expect.
+Command-line interface contract for agents invoked via terminal.
+Together with API.md (HTTP) and MCP.md (Model Context Protocol),
+CLI.md completes the interface triad — defining commands, arguments,
+flags, stdin/stdout behavior, exit codes, and shell integration.
+Tells developers and other agents exactly how to invoke this
+agent from the terminal, what flags exist, what output to expect,
+and how to chain it with other CLI tools via pipes.
 
 ### Spec
 
 ````markdown
 ---
 agent_name: string
-cli_name: string        # The actual command name (e.g. 'tmd', 'myagent')
+cli_name: string            # The actual command name (e.g. 'tmd', 'myagent')
 version: semver
-requires: string        # Runtime requirements (node 18+, python 3.10+, etc.)
+requires: string            # Runtime requirements (node 18+, python 3.10+, etc.)
+stdin_behavior: string      # accepts_piped | interactive_only | none
+stdout_behavior: string     # structured_json | streaming_text | mixed
+stderr_behavior: string     # errors_only | errors_and_logs | silent
+interactive_mode: boolean   # Supports REPL/interactive session
+piping_support: boolean     # Can chain with other CLI tools via pipes
+shell_completion: list      # [bash, zsh, fish]
 ---
 
 # [Agent Name] — CLI Reference
@@ -120,6 +130,39 @@ See ENV.md for the full environment variable specification.
 }
 ```
 
+## stdin Behavior
+- **Accepts piped input:** [yes/no]
+- **Expected format:** [json | csv | markdown | plain text | auto-detect]
+- **Max input size:** [N bytes or unlimited]
+- **Example:** `cat data.csv | [cli-name] analyze --stdin`
+
+## stdout Behavior
+- **Default format:** [text | json | markdown]
+- **Streaming:** [enabled/disabled — progressive output]
+- **Structured output:** [always valid JSON when --format json]
+- **Quiet mode:** [--quiet suppresses all non-error output]
+
+## stderr Behavior
+- **Errors:** Structured error messages to stderr
+- **Logs:** [--verbose sends debug logs to stderr]
+- **Progress:** [progress indicators sent to stderr, not stdout]
+
+## Piping Support
+Designed for Unix pipeline composition. See INPUT.md for accepted
+formats and OUTPUT.md for output schemas.
+```bash
+# Chain with other tools
+[cli-name] export --format json | jq '.results[]' | [other-tool]
+
+# Pipe input and redirect output
+cat input.md | [cli-name] process --stdin > output.json 2> errors.log
+```
+
+## Interactive Mode
+- **REPL support:** [yes/no]
+- **Start:** `[cli-name] --interactive` or `[cli-name] shell`
+- **Exit:** `exit`, `quit`, or Ctrl+D
+
 ## Shell Completion
 ```bash
 # Bash
@@ -145,6 +188,8 @@ See ENV.md for the full environment variable specification.
 
 | Spec | Relationship |
 |------|-------------|
+| API.md | HTTP API specification (complementary interface) |
+| ENGINE.md | Runtime execution configuration |
 | INPUT.md | Accepted input formats |
 | MCP.md | Model Context Protocol connections |
 | OUTPUT.md | Output formats and delivery |

@@ -111,6 +111,7 @@ Check these endpoints to verify API availability before starting tasks:
 
 | Spec | Relationship |
 |------|-------------|
+| CLI.md | Command-line interface contract |
 | INPUT.md | Accepted input formats |
 | MCP.md | Model Context Protocol connections |
 | OUTPUT.md | Output formats and delivery |

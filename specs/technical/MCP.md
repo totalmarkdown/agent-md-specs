@@ -116,6 +116,7 @@ To prevent context window pollution from tool schemas:
 |------|-------------|
 | API.md | HTTP API specification |
 | ATTESTATION.md | Identity verification and credential lifecycle |
+| CLI.md | Command-line interface contract |
 | INPUT.md | Accepted input formats |
 | OUTPUT.md | Output formats and delivery |
 | PERMISSIONS.md | Static resource access control |
