@@ -191,6 +191,7 @@ _See MONITOR.md for ongoing observability beyond point-in-time checks._
 | Spec | Relationship |
 |------|-------------|
 | CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | MONITOR.md | Observability and alerting |

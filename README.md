@@ -5,7 +5,7 @@
 > Zero Trust security schemas. CC0 public domain.
 
 [![License: CC0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Specs](https://img.shields.io/badge/specs-178-blue)](./INDEX.md)
+[![Specs](https://img.shields.io/badge/specs-179-blue)](./INDEX.md)
 [![Volumes](https://img.shields.io/badge/volumes-16-purple)](./INDEX.md)
 [![Core](https://img.shields.io/badge/core-46-green)](./INDEX.md)
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
@@ -74,8 +74,8 @@ deployments require.
 ## What Is agent-md-specs?
 
 46 Core specifications for AI agent identity, governance, and
-accountability — plus 132 Extended specifications covering the
-full lifecycle from personality to compliance. 178 specs total
+accountability — plus 133 Extended specifications covering the
+full lifecycle from personality to compliance. 179 specs total
 across 17 categories, all in human-readable Markdown.
 
 agent-md-specs defines a declarative vocabulary layer that sits
@@ -91,7 +91,7 @@ From emergency stops   (ICE.md)          to shared memory   (SHAREDCONTEXT.md)
 From who authorized it (DELEGATION.md)   to did it comply   (ENFORCEMENT.md)
 ```
 
-46 Core + 132 Extended specs. 178 total file types. 16 volumes. 17 categories.
+46 Core + 133 Extended specs. 179 total file types. 16 volumes. 17 categories.
 
 Whether configuring a single agent or orchestrating a fleet of
 hundreds — from individual identity (WHOAMI.md) to team coordination
@@ -326,8 +326,8 @@ should define. Start here. Add Extended specs as your needs grow.
 | [CV.md](specs/economic/CV.md) | Work history and track record | Agent |
 | [TESTSCORES.md](specs/quality/TESTSCORES.md) | Benchmark results and performance evidence | Agent |
 
-→ See [INDEX.md](INDEX.md) for the complete list of all 178 specs
-including 132 Extended tier specifications.
+→ See [INDEX.md](INDEX.md) for the complete list of all 179 specs
+including 133 Extended tier specifications.
 
 ---
 
@@ -538,7 +538,7 @@ works alongside — not against — existing standards and protocols:
 ```
 Infrastructure layer:  AGENTS.md + MCP + goose    (AAIF / Linux Foundation)
                        ↕ complementary
-Vocabulary layer:      agent-md-specs (178 specs)  (this repo)
+Vocabulary layer:      agent-md-specs (179 specs)  (this repo)
 ```
 
 AGENTS.md tells an agent *how to work on your project*.
@@ -589,7 +589,7 @@ Specs mapping to major regulatory frameworks:
 
 ## All Spec Categories
 
-178 specs across 17 categories:
+179 specs across 17 categories:
 
 | Category | Count | What It Covers |
 |----------|------:|----------------|
@@ -670,7 +670,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 [CC0 1.0 Universal](./LICENSE) — Public Domain.
 
-All 178 specifications are released with zero licensing friction.
+All 179 specifications are released with zero licensing friction.
 Government agencies, enterprises, and standards bodies can adopt,
 modify, and redistribute without restriction.
 

@@ -17,7 +17,7 @@ AI agents operating in production environments need to declare far more than tas
 
 ### Our Approach
 
-agent-md-specs is a proposed open standard library of 178 Markdown file type specifications covering every dimension of AI agent governance. The framework defines a declarative vocabulary layer that sits between human-readable policy definition and machine-enforceable runtime controls.
+agent-md-specs is a proposed open standard library of 179 Markdown file type specifications covering every dimension of AI agent governance. The framework defines a declarative vocabulary layer that sits between human-readable policy definition and machine-enforceable runtime controls.
 
 The specifications serve two distinct purposes:
 
@@ -197,11 +197,11 @@ agent-md-specs is designed as a complementary vocabulary layer that works alongs
 
 ### Governance
 
-The project follows a formal specification lifecycle (Draft, Proposed, Stable, Deprecated, Retired) with an RFC process for Core spec changes, defined criteria for tier promotion and demotion, and semantic versioning for both individual specs and the library as a whole. All 178 specifications are CC0 public domain with zero licensing friction for adoption by government agencies, enterprises, or standards bodies.
+The project follows a formal specification lifecycle (Draft, Proposed, Stable, Deprecated, Retired) with an RFC process for Core spec changes, defined criteria for tier promotion and demotion, and semantic versioning for both individual specs and the library as a whole. All 179 specifications are CC0 public domain with zero licensing friction for adoption by government agencies, enterprises, or standards bodies.
 
 ### Invitation
 
-We welcome the opportunity to participate in future NCCoE workshops, demonstration projects, or working groups related to AI agent identity and authorization — including collaboration on building a demonstrable reference architecture using the agent-md-specs framework. The complete framework — including all 178 specifications, JSON schemas, validator tooling, seven example bundles, and the NIST crosswalk mapping — is available at:
+We welcome the opportunity to participate in future NCCoE workshops, demonstration projects, or working groups related to AI agent identity and authorization — including collaboration on building a demonstrable reference architecture using the agent-md-specs framework. The complete framework — including all 179 specifications, JSON schemas, validator tooling, seven example bundles, and the NIST crosswalk mapping — is available at:
 
 **https://github.com/totalmarkdown/agent-md-specs**
 

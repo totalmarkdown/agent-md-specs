@@ -51,7 +51,7 @@ Draft -> Proposed -> Stable -> Deprecated -> Retired
 
 ## Current Status
 
-All 178 specs in agent-md-specs v1.1.0 are at **Draft** stage.
+All 179 specs in agent-md-specs v1.1.0 are at **Draft** stage.
 
 The Vol 14 NIST-aligned specs (DELEGATION, INTENT, LEASTPRIVILEGE,
 ENFORCEMENT, ATTESTATION, PROMPTSHIELD, AUDITTRAIL, PROVENANCE,

@@ -4,7 +4,7 @@ Interface contracts, infrastructure, and integration definitions for agents. The
 
 ## How These Specs Work Together
 
-INPUT and OUTPUT are the foundational interface contracts -- they define what goes in and what comes out. API, MCP, and A2A specify communication protocols for humans, tool servers, and other agents respectively. TOOLS inventories everything the agent can do, while MODEL documents the underlying LLM. DATA, ENV, and DEPENDENCIES define the runtime requirements. CLI, EVENTS, and INTEGRATION cover additional interaction surfaces. NETWORK, PROMPTS, REPO, and VERSION handle infrastructure, prompt management, source code, and release tracking. Start with INPUT, OUTPUT, and TOOLS for any agent; layer on protocol specs as integration needs grow.
+INPUT and OUTPUT are the foundational interface contracts -- they define what goes in and what comes out. API, MCP, and A2A specify communication protocols for humans, tool servers, and other agents respectively. TOOLS inventories everything the agent can do, while MODEL documents the underlying LLM and ENGINE configures how it executes at runtime. DATA, ENV, and DEPENDENCIES define the runtime requirements. CLI, EVENTS, and INTEGRATION cover additional interaction surfaces. NETWORK, PROMPTS, REPO, and VERSION handle infrastructure, prompt management, source code, and release tracking. Start with INPUT, OUTPUT, and TOOLS for any agent; layer on protocol specs as integration needs grow.
 
 ## Specs in This Category
 
@@ -15,6 +15,7 @@ INPUT and OUTPUT are the foundational interface contracts -- they define what go
 | [CLI.md](CLI.md) | Extended | Command-line interface documentation and invocation syntax | Terminal interaction |
 | [DATA.md](DATA.md) | Extended | Data sources, schemas, and data handling procedures | Data pipeline config |
 | [DEPENDENCIES.md](DEPENDENCIES.md) | Extended | Everything the agent depends on to function | Runtime requirements |
+| [ENGINE.md](ENGINE.md) | Extended | Runtime LLM execution configuration and inference parameters | Engine tuning |
 | [ENV.md](ENV.md) | Extended | Environment variable specification and defaults | Configuration management |
 | [EVENTS.md](EVENTS.md) | Extended | Events emitted and listened for by the agent | Event-driven interfaces |
 | [INPUT.md](INPUT.md) | Core | Formal specification of accepted input formats and schemas | Inbound data contracts |

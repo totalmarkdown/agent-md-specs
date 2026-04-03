@@ -10,7 +10,7 @@ All notable changes to agent-md-specs are documented here.
 - curl download commands in every _start-here section (multi-agent team, enterprise compliance, marketplace)
 - Team/fleet context added to README intro and "Why Does This Exist?" section
 - Mermaid diagram replaced: individual nodes → block-level cluster view (9 functional clusters)
-- spec_type field (static/runtime_schema) added to all 178 specs
+- spec_type field (static/runtime_schema) added to all 179 specs
 
 ### Fixed
 - Missing required frontmatter in basic-agent and marketplace-agent template files
@@ -26,9 +26,9 @@ All notable changes to agent-md-specs are documented here.
 
 ### Added
 - _start-here/ directory — curated entry point for 5 audiences
-- Inline cross-references across all 178 specs (~500+ references)
-- Example Use Cases section added to all 178 specs
-- Related Specs navigation tables on all 178 specs
+- Inline cross-references across all 179 specs (~500+ references)
+- Example Use Cases section added to all 179 specs
+- Related Specs navigation tables on all 179 specs
 - Category READMEs enriched with descriptions, relationships, and use cases
 - CI workflows: validate-specs.yml and check-links.yml
 - Canonical source notices on all 10 standalone repos
@@ -49,7 +49,7 @@ All notable changes to agent-md-specs are documented here.
 
 ### Changed
 - README subtitle tightened with Zero Trust positioning
-- README leads with "46 Core specs" instead of "178 specs"
+- README leads with "46 Core specs" instead of "179 specs"
 - Core Specs tables now have clickable links to spec files
 - README framing: "proposed standard" throughout
 
@@ -76,10 +76,10 @@ All notable changes to agent-md-specs are documented here.
 
 ### Fixed
 - All broken cross-references resolved
-- Frontmatter consistency across all 178 specs
+- Frontmatter consistency across all 179 specs
 - Schema category enum expanded to match all specs
 - All 5 example bundles pass validator with 0 errors
-- Standalone repos updated to 178 count
+- Standalone repos updated to 179 count
 - README softened to "proposed standard"
 - NIST_CROSSWALK.md enforcement mapping expanded with ZTA references
 

@@ -1,14 +1,14 @@
 # Index
 
-Complete alphabetical index of all 178 agent-md-specs file type specifications.
+Complete alphabetical index of all 179 agent-md-specs file type specifications.
 
 ## Tier Summary
 
 | Tier | Count | Description |
 |------|-------|-------------|
 | Core | 46 | Essential specs recommended for all production agents |
-| Extended | 132 | Valuable specs for specific use cases and advanced configurations |
-| **Total** | **178** | |
+| Extended | 133 | Valuable specs for specific use cases and advanced configurations |
+| **Total** | **179** | |
 
 ## Category Summary
 
@@ -30,8 +30,8 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | Regulatory | 15 |
 | Security | 7 |
 | Social | 7 |
-| Technical | 17 |
-| **Total** | **178** |
+| Technical | 18 |
+| **Total** | **179** |
 
 ## All Specs
 
@@ -81,6 +81,7 @@ Complete alphabetical index of all 178 agent-md-specs file type specifications.
 | ESCALATION.md | Safety | Core | escalationmd.dev | High | Vol 1 | [specs/governance/ESCALATION.md](specs/governance/ESCALATION.md) |
 | EUAIACT.md | Regulatory Compliance | Extended | euaiactmd.dev | Very High | Vol 9 | [specs/regulatory/EUAIACT.md](specs/regulatory/EUAIACT.md) |
 | ENFORCEMENT.md | Governance | Core | enforcementmd.dev | Very High | Vol 14 | [specs/governance/ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) |
+| ENGINE.md | Technical | Extended | enginemd.dev | Medium | Vol 8 | [specs/technical/ENGINE.md](specs/technical/ENGINE.md) |
 | ENV.md | Technical | Extended | envmd.dev | High | Vol 12 | [specs/technical/ENV.md](specs/technical/ENV.md) |
 | EVAL.md | Quality | Extended | evalmd.dev | High | Vol 1 | [specs/quality/EVAL.md](specs/quality/EVAL.md) |
 | EVENTS.md | Technical | Extended | eventsmd.dev | Medium | Vol 6 | [specs/technical/EVENTS.md](specs/technical/EVENTS.md) |

@@ -88,6 +88,7 @@ _See AUDITTRAIL.md for compliance-grade logging and ESCALATION.md for alert rout
 |------|-------------|
 | AUDITTRAIL.md | Tamper-proof action logging |
 | CIRCUITBREAKER.md | Failure containment and blast radius |
+| ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | HEALTHCHECK.md | Liveness and readiness checks |

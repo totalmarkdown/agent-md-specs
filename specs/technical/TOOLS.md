@@ -143,6 +143,7 @@ All tool calls logged to LOGS.md with:
 | Spec | Relationship |
 |------|-------------|
 | API.md | HTTP API specification |
+| ENGINE.md | Runtime execution configuration |
 | INPUT.md | Accepted input formats |
 | MCP.md | Model Context Protocol connections |
 | OUTPUT.md | Output formats and delivery |

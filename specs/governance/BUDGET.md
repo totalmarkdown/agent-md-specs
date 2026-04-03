@@ -91,6 +91,7 @@ Use the cheapest model that can complete the task:
 |------|-------------|
 | AUDITTRAIL.md | Tamper-proof action logging |
 | DELEGATION.md | Authority chain and authorization |
+| ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | LIMITS.md | Hard constraints and safety boundaries |
