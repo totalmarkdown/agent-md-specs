@@ -2,6 +2,101 @@
 
 All notable changes to agent-md-specs are documented here.
 
+## [1.3.1] — 2026-04-18
+
+This release addresses findings from two independent pre-launch
+reviews. No Core specs change semantically; all changes are corrections,
+community-file additions, governance formalization, and five spec
+promotions from Draft to Proposed stage.
+
+### Added
+
+- **CODE_OF_CONDUCT.md** (Contributor Covenant v2.1).
+- **ROADMAP.md** (Now / Next / Later / Out of Scope + contributor
+  onboarding path).
+- **SUPPORT.md** (routes for questions, bugs, security, governance).
+- **CITATION.cff** (academic citation metadata).
+- **COMPARISON.md** (side-by-side vs AGENTS.md, CLAUDE.md, SKILL.md,
+  .cursorrules, program.md, MCP, Markform).
+- **CRITICISM.md** (pre-emptive answers to 5 predictable objections).
+- **Issue templates** (`.github/ISSUE_TEMPLATE/{bug_report,spec_proposal,new_spec_rfc,config}.yml`)
+  and PR template (`.github/PULL_REQUEST_TEMPLATE.md`) with CC0 ack
+  and validator checkbox.
+- **CODEOWNERS** at `.github/CODEOWNERS`.
+- **"Project Status and Timeline"** section in README — honest framing
+  of the 8-day v0.1.0 → v1.2.0-nist-submission cadence and the Draft
+  stage of all specs.
+- **"About This Draft"** section in README — one-person-24-days origin
+  disclosure, explicit ask for reviewers and pilot adopters.
+- **Proposed stage** for 5 Core specs (14-day public comment windows
+  opened): AUDITTRAIL, DELEGATION, ATTESTATION, INTENT, LEASTPRIVILEGE.
+  Frontmatter now carries `status: proposed` and `proposed_on: 2026-04-18`.
+- **Custom GitHub labels** (`rfc`, `rfc:core`, `spec:new`, `spec:amendment`,
+  `schema`, `tier:core`, `tier:extended`, `roadmap`, `validator`).
+- **Companion repo**
+  [totalmarkdown/agent-md-opa-demo](https://github.com/totalmarkdown/agent-md-opa-demo)
+  — working OPA/Rego reference integration that enforces `LIMITS.md`
+  frontmatter at runtime; linked from README "See it enforce" section.
+
+### Changed
+
+- **agent-md-validator v0.2.0** — `--strict` mode no longer fails on
+  missing recommended section headings or absent cross-references.
+  These are now `info`-level notices. `--strict` still fails on
+  frontmatter errors, missing required fields, and invalid tier values.
+  Result: `agent-md-validate --strict specs/` and all 7 example bundles
+  now PASS.
+- **GOVERNANCE.md** expanded from 40 → 200 lines. Adds RFC specifics
+  (2 approvals + 14-day window), TSC scoping (1 seat → 5 target by
+  Q4 2026, nomination process), DCO policy, succession / bus-factor
+  clause, naming policy, decision-log pointer, multi-contact security
+  reviewer plan.
+- **SPEC_LIFECYCLE.md** — stale references updated (`v1.1.0` → `v1.3.0`,
+  Core count `39` → `47`).
+- **INDEX.md** — Extended count corrected (`133` → `132`).
+- **README.md** — Technical category count corrected (`17` → `18`);
+  "Standalone Standards" section renamed to "Standalone Companion
+  Repositories"; "NIST Alignment" renamed to "Mapping to NIST
+  Publications" with explicit non-endorsement language; opening prose
+  tightened (removed AI-prose "Something remarkable…", 7-question
+  barrage reduced to 3, fabricated 2028 tense cut); "5 files to start,
+  47 Core for production, 132 Extended when you need them" framing
+  added.
+- **schemas/README.md** — "agent-md-specs standard" → "agent-md-specs
+  specification"; added missing HEARTBEAT.md row.
+- **_start-here/README.md** — reordered: "Building an Agent" now first,
+  "Evaluating the Framework" second, "Reviewing the NCCoE Submission"
+  third; 4-command TL;DR added to top; expected-output line added
+  after `agent-md-validate`; 5 individual curl commands collapsed into
+  `<details>` fallback.
+- **NIST_SUBMISSION_GUIDE.md** — title changed from "NIST NCCoE
+  Reviewer Guide" to "Reviewer Guide for the NCCoE Submission".
+- **nist-nccoe-response-content.md** — JSON Schema overclaim corrected
+  (3 instances: "every Core spec has a schema" → truth: 24 of 47,
+  remaining 23 planned); AI-prose rewrite on lines 16 and 93.
+- **GitHub repo description** updated to include "draft, seeking review"
+  and correct spec count (179, was 178).
+
+### Fixed
+
+- **10 broken relative links** in `examples/basic-agent/README.md` and
+  `examples/marketplace-agent/README.md` — used `../specs/` but the
+  correct path is `../../specs/`.
+- **Duplicate CHANGELOG [1.1.0] entry** — the 2026-03-26 entry is now
+  correctly labelled `[1.0.1]`.
+- **`.github/workflows/check-links.yml`** — rewritten in Python so
+  relative `..` segments are normalized and fenced code blocks are
+  skipped. The previous script hardcoded a file list and missed the
+  `../specs/` bugs.
+
+### Seeded
+
+- 11 Issues (10 `good first issue` + 1 tracking Issue for the C1
+  proper fix).
+- 5 RFC Issues (one per Draft → Proposed promotion, `rfc:core` label).
+- 3 substantive Discussions in Ideas category (Core/Extended boundary,
+  Markdown format rationale, AGENTS.md complementarity).
+
 ## [1.3.0] — 2026-04-03
 
 ### Added

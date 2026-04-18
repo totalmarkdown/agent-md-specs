@@ -13,7 +13,7 @@
 
 ### The Problem
 
-AI agents operating in production environments need to declare far more than task instructions. They need verifiable identity, scoped authority, auditable intent, tamper-proof action records, and provable compliance with declared constraints. Current agent configuration approaches — including AGENTS.md (AAIF), CLAUDE.md (Anthropic), and ad-hoc program files — address behavior and project instructions but leave identity, authorization, and accountability undefined. As frontier model capabilities continue to advance rapidly, the need for declarative, verifiable governance frameworks for autonomous agents becomes increasingly urgent — not as a constraint on innovation, but as the infrastructure that enables responsible deployment at scale.
+AI agents operating in production environments need to declare far more than task instructions. They need verifiable identity, scoped authority, auditable intent, tamper-proof action records, and provable compliance with declared constraints. Current agent configuration approaches — including AGENTS.md (AAIF), CLAUDE.md (Anthropic), and ad-hoc program files — address behavior and project instructions but leave identity, authorization, and accountability undefined. Model capabilities are advancing quickly, and governance frameworks for autonomous agents have not kept pace.
 
 ### Our Approach
 
@@ -90,7 +90,7 @@ This submission aligns with the White House's March 2026 AI Legislative Recommen
 
 *"What controls help prevent direct and indirect prompt injections? After injection occurs, what controls minimize the impact?"*
 
-- **PROMPTSHIELD.md** — Comprehensive defense-in-depth specification covering instruction boundary enforcement, privilege separation between user instructions and retrieved content, content sandboxing for untrusted tool outputs, canary token detection, containment procedures (halt, quarantine, rollback), recovery playbooks, and red team testing requirements. Treats prompt injection as a capability integrity problem — ensuring malicious inputs cannot alter the agent's fundamental authorization boundaries — rather than merely an input filtering challenge.
+- **PROMPTSHIELD.md** — Defines defense-in-depth controls for prompt injection: instruction-boundary enforcement, privilege separation between user instructions and retrieved content, tool-output sandboxing, canary tokens, and containment procedures (halt, quarantine, rollback). It also covers recovery playbooks and red-team testing requirements. The spec treats prompt injection as a capability-integrity problem — malicious inputs must not alter the agent's authorization boundaries — rather than as an input-filtering challenge.
 
 ### 2.7 Shared Memory Security
 

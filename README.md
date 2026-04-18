@@ -696,6 +696,17 @@ enables Level 3 checking.
 
 → See [agent-md-validator](https://github.com/totalmarkdown/agent-md-validator)
 
+### See it enforce
+
+For a working demonstration of how agent-md-specs files become runtime
+enforcement policies, see
+[agent-md-opa-demo](https://github.com/totalmarkdown/agent-md-opa-demo)
+— a ~50-line Open Policy Agent (OPA/Rego) policy that reads `LIMITS.md`
+directly, evaluates tool-call requests against its frontmatter, and
+writes AUDITTRAIL-shaped entries for every decision. No compilation,
+no format translation — the same Markdown a compliance officer signs
+off is the policy the runtime enforces.
+
 ---
 
 ## Contributing
