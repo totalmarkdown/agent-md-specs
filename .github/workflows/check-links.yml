@@ -17,44 +17,56 @@ jobs:
 
       - name: Check internal Markdown links
         run: |
-          echo "=== Checking internal .md links ==="
-          errors=0
+          set -u
+          echo "=== Checking internal .md links across the repo ==="
 
-          for source in README.md INDEX.md NIST_CROSSWALK.md NIST_SUBMISSION_GUIDE.md SPEC_LIFECYCLE.md CONTRIBUTING.md GOVERNANCE.md; do
-            if [ ! -f "$source" ]; then
-              continue
-            fi
+          # Write the check as a Python script so that relative paths
+          # (including ..) resolve correctly and we catch all .md files,
+          # not just a hardcoded list.
+          python3 <<'PY'
+          import os
+          import re
+          import sys
 
-            grep -oE '\[.*?\]\((\./)?[^)]+\.md\)' "$source" 2>/dev/null | \
-            grep -v http | \
-            sed 's/.*(\(.*\))/\1/' | sed 's|^\./||' | \
-            while read target; do
-              file=$(echo "$target" | cut -d'#' -f1)
-              if [ -n "$file" ] && [ ! -f "$file" ]; then
-                echo "BROKEN: $source -> $file"
-                errors=$((errors + 1))
-              fi
-            done
-          done
+          errors = []
+          md_re = re.compile(r'\[[^\]]*\]\(([^)]+\.md)(?:#[^)]*)?\)')
 
-          for source in examples/*/README.md; do
-            if [ ! -f "$source" ]; then
-              continue
-            fi
-            dir=$(dirname "$source")
+          for root, _dirs, files in os.walk('.'):
+              if any(seg in root for seg in ('/.git', '/archive', '/node_modules')):
+                  continue
+              for name in files:
+                  if not name.endswith('.md'):
+                      continue
+                  path = os.path.join(root, name)
+                  with open(path, encoding='utf-8', errors='replace') as fh:
+                      content = fh.read()
 
-            grep -oE '\[.*?\]\((\./)?[^)]+\.md\)' "$source" 2>/dev/null | \
-            grep -v http | \
-            sed 's/.*(\(.*\))/\1/' | sed 's|^\./||' | \
-            while read target; do
-              file=$(echo "$target" | cut -d'#' -f1)
-              if [ -n "$file" ]; then
-                if [ ! -f "$dir/$file" ] && [ ! -f "$file" ]; then
-                  echo "BROKEN: $source -> $target"
-                  errors=$((errors + 1))
-                fi
-              fi
-            done
-          done
+                  # Skip fenced code blocks so example snippets aren't checked.
+                  lines = []
+                  in_fence = False
+                  for line in content.splitlines():
+                      stripped = line.strip()
+                      if stripped.startswith('```'):
+                          in_fence = not in_fence
+                          continue
+                      if not in_fence:
+                          lines.append(line)
+                  text = '\n'.join(lines)
 
-          echo "Link check complete"
+                  for target in md_re.findall(text):
+                      if target.startswith(('http://', 'https://', 'mailto:')):
+                          continue
+                      resolved = os.path.normpath(
+                          os.path.join(os.path.dirname(path), target)
+                      )
+                      if not os.path.isfile(resolved):
+                          errors.append(f'{path} -> {target} (resolves to {resolved})')
+
+          if errors:
+              print('BROKEN LINKS FOUND:')
+              for err in errors:
+                  print(f'  {err}')
+              sys.exit(1)
+          else:
+              print('All internal .md links resolve. ✓')
+          PY
