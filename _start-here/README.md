@@ -1,16 +1,80 @@
 # Start Here
 
-> The quick guide to the specs that matter most.
+> From curious to validated bundle in under 5 minutes. 4 commands, no signup, CC0.
 
 → **[Full README](../README.md)** — complete documentation & architecture overview
 
 → **[Full INDEX](../INDEX.md)** — full library of 179 specs
 
+**TL;DR — run this:**
+
+```bash
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/basic-agent/bundle.zip
+unzip bundle.zip -d my-agent/
+pip install git+https://github.com/totalmarkdown/agent-md-validator.git
+agent-md-validate ./my-agent/
+```
+
+Expected output: `PASSED (with warnings)` — the bundle's `[REPLACE]` placeholders generate cross-reference warnings but no errors.
+
 ---
 
-## If You're a NIST Reviewer
+## If You're Building an Agent
 
-→ **[NIST Submission Guide](../NIST_SUBMISSION_GUIDE.md)** — 15-minute
+The 5 files every agent should have:
+
+| File | What It Does |
+|------|-------------|
+| [SOUL.md](../specs/identity/SOUL.md) | Personality and values |
+| [WHOAMI.md](../specs/identity/WHOAMI.md) | Verifiable identity |
+| [LIMITS.md](../specs/governance/LIMITS.md) | Hard stops |
+| [ESCALATION.md](../specs/governance/ESCALATION.md) | Human-in-the-loop |
+| [DELEGATION.md](../specs/governance/DELEGATION.md) | Who authorized this agent |
+
+Download the [Basic Agent — Starter Bundle](../examples/basic-agent/) (the 5 specs above pre-filled with placeholders):
+
+```bash
+curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/basic-agent/bundle.zip
+unzip bundle.zip -d my-agent/
+```
+
+Then validate:
+
+```bash
+pip install git+https://github.com/totalmarkdown/agent-md-validator.git
+agent-md-validate ./my-agent/
+```
+
+Expected output: `PASSED (with warnings)` — fill in the `[REPLACE]` fields and the warnings disappear.
+
+<details>
+<summary>Prefer individual files? (5 separate curls)</summary>
+
+```bash
+curl -O https://raw.githubusercontent.com/totalmarkdown/soul.md/main/SOUL.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/whoami.md/main/WHOAMI.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/limits.md/main/LIMITS.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/escalation.md/main/ESCALATION.md
+curl -O https://raw.githubusercontent.com/totalmarkdown/delegation.md/main/DELEGATION.md
+```
+
+</details>
+
+---
+
+## If You're Evaluating the Framework
+
+- [COMPARISON.md](../COMPARISON.md) — how this relates to AGENTS.md, CLAUDE.md, MCP, program.md, Markform.
+- [CRITICISM.md](../CRITICISM.md) — pre-emptive answers to the objections we expect.
+- [SPEC_LIFECYCLE.md](../SPEC_LIFECYCLE.md) — how specs move Draft → Proposed → Stable.
+- [ROADMAP.md](../ROADMAP.md) — what's coming, what's deferred, what's out of scope.
+- [GOVERNANCE.md](../GOVERNANCE.md) — RFC process, TSC scoping, decision log.
+
+---
+
+## If You're Reviewing the NCCoE Submission
+
+→ **[Guide for NCCoE Submission Reviewers](../NIST_SUBMISSION_GUIDE.md)** — 15-minute
 guided tour answering all 6 NCCoE concept paper questions
 
 → **[NIST Crosswalk](../NIST_CROSSWALK.md)** — Direct mapping to
@@ -21,45 +85,20 @@ Complete financial agent with accountability chain + failure scenarios
 
 ---
 
-## If You're Building an Agent
-
-Start with these 5 files:
-
-| File | What It Does | Get It |
-|------|-------------|--------|
-| [SOUL.md](../specs/identity/SOUL.md) | Personality and values | `curl -O https://raw.githubusercontent.com/totalmarkdown/soul.md/main/SOUL.md` |
-| [WHOAMI.md](../specs/identity/WHOAMI.md) | Verifiable identity | `curl -O https://raw.githubusercontent.com/totalmarkdown/whoami.md/main/WHOAMI.md` |
-| [LIMITS.md](../specs/governance/LIMITS.md) | Hard stops | `curl -O https://raw.githubusercontent.com/totalmarkdown/limits.md/main/LIMITS.md` |
-| [ESCALATION.md](../specs/governance/ESCALATION.md) | Human-in-the-loop | `curl -O https://raw.githubusercontent.com/totalmarkdown/escalation.md/main/ESCALATION.md` |
-| [DELEGATION.md](../specs/governance/DELEGATION.md) | Who authorized this agent | `curl -O https://raw.githubusercontent.com/totalmarkdown/delegation.md/main/DELEGATION.md` |
-
-Or download the basic agent bundle (these 5 specs):
-```bash
-curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/basic-agent/bundle.zip
-unzip bundle.zip -d my-agent/
-```
-
-Then validate:
-```bash
-pip install git+https://github.com/totalmarkdown/agent-md-validator.git
-agent-md-validate ./my-agent/
-```
-
----
-
 ## If You're Building a Multi-Agent Team
 
 Add these on top of the 5 above:
 
-| File | What It Does | Get It |
-|------|-------------|--------|
-| [TEAM.md](../specs/coordination/TEAM.md) | Team structure and handoff protocols | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/TEAM.template.md` |
-| [SHAREDCONTEXT.md](../specs/coordination/SHAREDCONTEXT.md) | Shared memory governance | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/SHAREDCONTEXT.template.md` |
-| [MEMORYSAFETY.md](../specs/security/MEMORYSAFETY.md) | Memory poisoning defense | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/MEMORYSAFETY.template.md` |
-| [CIRCUITBREAKER.md](../specs/operations/CIRCUITBREAKER.md) | Failure containment | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/CIRCUITBREAKER.template.md` |
-| [BUDGET.md](../specs/governance/BUDGET.md) | Team cost controls | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/BUDGET.template.md` |
+| File | What It Does |
+|------|-------------|
+| [TEAM.md](../specs/coordination/TEAM.md) | Team structure and handoff protocols |
+| [SHAREDCONTEXT.md](../specs/coordination/SHAREDCONTEXT.md) | Shared memory governance |
+| [MEMORYSAFETY.md](../specs/security/MEMORYSAFETY.md) | Memory poisoning defense |
+| [CIRCUITBREAKER.md](../specs/operations/CIRCUITBREAKER.md) | Failure containment |
+| [BUDGET.md](../specs/governance/BUDGET.md) | Team cost controls |
 
 Or download the [Sentinel — Multi-Agent Fleet Bundle](../examples/multi-agent-fleet/):
+
 ```bash
 curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/multi-agent-fleet/bundle.zip
 unzip bundle.zip -d my-fleet/
@@ -69,15 +108,16 @@ unzip bundle.zip -d my-fleet/
 
 ## If You Need Enterprise Compliance
 
-| File | What It Does | Get It |
-|------|-------------|--------|
-| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-proof action logging | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/AUDITTRAIL.template.md` |
-| [CONSENT.md](../specs/compliance/CONSENT.md) | User consent lifecycle (GDPR/CCPA) | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/CONSENT.template.md` |
-| [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/PROVENANCE.template.md` |
-| [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ENFORCEMENT.template.md` |
-| [ATTESTATION.md](../specs/security/ATTESTATION.md) | Cryptographic identity proof | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/ATTESTATION.template.md` |
+| File | What It Does |
+|------|-------------|
+| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-proof action logging |
+| [CONSENT.md](../specs/compliance/CONSENT.md) | User consent lifecycle (GDPR/CCPA) |
+| [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking |
+| [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification |
+| [ATTESTATION.md](../specs/security/ATTESTATION.md) | Cryptographic identity proof |
 
 Or download the [Atlas — NIST NCCoE Enterprise Finance Bundle](../examples/nist-nccoe-bundle/):
+
 ```bash
 curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/nist-nccoe-bundle/bundle.zip
 unzip bundle.zip -d my-agent/
@@ -89,15 +129,16 @@ unzip bundle.zip -d my-agent/
 
 ## If You're Listing Agents on a Marketplace
 
-| File | What It Does | Get It |
-|------|-------------|--------|
-| [HIREME.md](../specs/business/HIREME.md) | Agent hiring listing | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/templates/HIREME.template.md` |
-| [PRICING.md](../specs/economic/PRICING.md) | Cost structure | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/PRICING.md` |
-| [WALLET.md](../specs/economic/WALLET.md) | Financial identity | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/WALLET.md` |
-| [CV.md](../specs/economic/CV.md) | Work history | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/economic/CV.md` |
-| [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results | `curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/specs/quality/TESTSCORES.md` |
+| File | What It Does |
+|------|-------------|
+| [HIREME.md](../specs/business/HIREME.md) | Agent hiring listing |
+| [PRICING.md](../specs/economic/PRICING.md) | Cost structure |
+| [WALLET.md](../specs/economic/WALLET.md) | Financial identity |
+| [CV.md](../specs/economic/CV.md) | Work history |
+| [TESTSCORES.md](../specs/quality/TESTSCORES.md) | Benchmark results |
 
 Or download the [Vex — Marketplace Listing Bundle](../examples/marketplace-agent/):
+
 ```bash
 curl -LO https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/examples/marketplace-agent/bundle.zip
 unzip bundle.zip -d my-agent/

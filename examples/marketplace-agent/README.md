@@ -57,7 +57,7 @@ Pair with the [Basic Agent bundle](../basic-agent/) for identity and governance 
 
 ## Related Specs
 
-→ Full spec definitions: [HIREME.md](../specs/business/HIREME.md) · [PRICING.md](../specs/economic/PRICING.md) · [WALLET.md](../specs/economic/WALLET.md) · [CV.md](../specs/economic/CV.md) · [TESTSCORES.md](../specs/quality/TESTSCORES.md)
+→ Full spec definitions: [HIREME.md](../../specs/business/HIREME.md) · [PRICING.md](../../specs/economic/PRICING.md) · [WALLET.md](../../specs/economic/WALLET.md) · [CV.md](../../specs/economic/CV.md) · [TESTSCORES.md](../../specs/quality/TESTSCORES.md)
 
 ---
 

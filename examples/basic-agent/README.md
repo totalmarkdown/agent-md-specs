@@ -57,7 +57,7 @@ Start here, then add specs as your needs grow: TEAM.md for multi-agent coordinat
 
 ## Related Specs
 
-→ Full spec definitions: [SOUL.md](../specs/identity/SOUL.md) · [WHOAMI.md](../specs/identity/WHOAMI.md) · [LIMITS.md](../specs/governance/LIMITS.md) · [ESCALATION.md](../specs/governance/ESCALATION.md) · [DELEGATION.md](../specs/governance/DELEGATION.md)
+→ Full spec definitions: [SOUL.md](../../specs/identity/SOUL.md) · [WHOAMI.md](../../specs/identity/WHOAMI.md) · [LIMITS.md](../../specs/governance/LIMITS.md) · [ESCALATION.md](../../specs/governance/ESCALATION.md) · [DELEGATION.md](../../specs/governance/DELEGATION.md)
 
 ---
 

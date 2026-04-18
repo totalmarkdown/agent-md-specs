@@ -27,13 +27,13 @@ The specifications serve two distinct purposes:
 
 This distinction means agent-md-specs functions as a declarative policy specification that compiles down into machine-enforceable rules via policy engines (e.g., OPA/Rego), API gateways, and identity providers — not as a file-based runtime system.
 
-Crucially, while authored in human-readable Markdown, every Core specification is governed by a corresponding JSON Schema, enabling native integration into Zero Trust Policy Enforcement Points (PEPs) and API gateways without format translation.
+Each Core spec can be paired with a JSON Schema for machine validation. 24 of the 47 Core specs have a JSON Schema today; the remaining 23 are planned (see ROADMAP.md). The schemas enable integration with Zero Trust Policy Enforcement Points (PEPs) and API gateways without format translation.
 
 ### Why Markdown
 
-While machine-native formats (JSON, YAML) are necessary for runtime execution, they fail as human-auditable governance artifacts. Compliance officers, security architects, and enterprise CISOs need to read and approve the policies that govern agent behavior. Markdown provides this human readability while remaining machine-parseable via YAML frontmatter and structured sections. JSON Schema definitions are provided for all core specifications, enabling automated validation at three levels: syntax, completeness, and content conformance.
+While machine-native formats (JSON, YAML) are necessary for runtime execution, they fail as human-auditable governance artifacts. Compliance officers, security architects, and enterprise CISOs need to read and approve the policies that govern agent behavior. Markdown provides this human readability while remaining machine-parseable via YAML frontmatter and structured sections. JSON Schema definitions are provided for 24 of the 47 Core specs today (the remaining 23 Core schemas are planned — see ROADMAP.md), enabling automated validation at three levels: syntax, completeness, and content conformance.
 
-Every spec file contains YAML frontmatter — structured, typed, schema-validated metadata — inside a Markdown document. The same file serves as both the human-readable policy (auditable by compliance officers) and the machine-consumable configuration (parseable by any standard YAML library in three lines of code). JSON Schema definitions for all Core specs enable automated conformance validation. No special compiler is required — the policies humans approve are identical to the data machines enforce.
+Every spec file contains YAML frontmatter — structured, typed, schema-validated metadata — inside a Markdown document. The same file serves as both the human-readable policy (auditable by compliance officers) and the machine-consumable configuration (parseable by any standard YAML library in three lines of code). JSON Schema definitions for 24 of the 47 Core specs enable automated conformance validation today; the remaining 23 Core schemas are on the roadmap. No special compiler is required — the policies humans approve are identical to the data machines enforce.
 
 ### Ecosystem Context
 
@@ -193,7 +193,7 @@ agent-md-specs is designed as a complementary vocabulary layer that works alongs
 ### Tooling and Validation
 
 - **agent-md-validator** (v0.1.0): Open-source CLI tool that validates YAML frontmatter, required sections, cross-references, and tier compliance across spec files. Repository: https://github.com/totalmarkdown/agent-md-validator
-- **JSON Schemas**: Machine-readable schema definitions for all 47 Core specifications, enabling automated conformance validation at three levels: Level 1 (syntax), Level 2 (completeness), Level 3 (content constraints).
+- **JSON Schemas**: Machine-readable schema definitions for 24 Core specifications today (remaining 23 planned — see ROADMAP.md), enabling automated conformance validation at three levels: Level 1 (syntax), Level 2 (completeness), Level 3 (content constraints).
 
 ### Governance
 

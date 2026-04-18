@@ -51,7 +51,7 @@ Draft -> Proposed -> Stable -> Deprecated -> Retired
 
 ## Current Status
 
-All 179 specs in agent-md-specs v1.1.0 are at **Draft** stage.
+All 179 specs in agent-md-specs v1.3.0 are at **Draft** stage.
 
 The Vol 14 NIST-aligned specs (DELEGATION, INTENT, LEASTPRIVILEGE,
 ENFORCEMENT, ATTESTATION, PROMPTSHIELD, AUDITTRAIL, PROVENANCE,
@@ -70,7 +70,7 @@ Each spec has its own semantic version in YAML frontmatter:
 
 ### Library Version
 The agent-md-specs library as a whole uses date-based volume versioning
-(Vol 1-16) combined with semantic releases (v1.1.0).
+(Vol 1-16) combined with semantic releases (current: v1.3.0).
 - **Patch**: Bug fixes, frontmatter corrections
 - **Minor**: New Extended specs, non-breaking additions to existing specs
 - **Major**: New Core specs, breaking changes to Core spec structure,
@@ -80,7 +80,7 @@ The agent-md-specs library as a whole uses date-based volume versioning
 
 ## RFC Process (for Core Spec Changes)
 
-Changes to Core tier specs (39 specs) require a lightweight RFC:
+Changes to Core tier specs (47 specs) require a lightweight RFC:
 
 1. **Open a GitHub Discussion** in the "Ideas" category
 2. **Title format:** `RFC: [Change description] for [SPEC.md]`

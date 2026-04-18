@@ -19,22 +19,20 @@
 &nbsp;·&nbsp; [JSON Schemas](./schemas/)
 &nbsp;·&nbsp; [Spec Lifecycle](./SPEC_LIFECYCLE.md)
 &nbsp;·&nbsp; [NIST Crosswalk](./NIST_CROSSWALK.md)
-&nbsp;·&nbsp; [NIST Reviewer Guide](./NIST_SUBMISSION_GUIDE.md)
+&nbsp;·&nbsp; [Guide for NCCoE Submission Reviewers](./NIST_SUBMISSION_GUIDE.md)
 
-_Developed in alignment with the [NIST AI RMF](https://www.nist.gov/artificial-intelligence)
-and the [NCCoE Initiative on AI Agent Identity and Authorization](https://www.nist.gov/caisi/ai-agent-standards-initiative)._
+_Mapped to the [NIST AI RMF (AI 100-1)](https://www.nist.gov/artificial-intelligence)
+and submitted as a public comment on the [NCCoE concept paper on AI Agent Identity and Authorization](https://www.nist.gov/caisi/ai-agent-standards-initiative) (February 2026). Submission does not imply NIST review, endorsement, or affiliation._
 
 ---
 
 ## Markdown Is Becoming the Universal Language of AI Agents
 
-Something remarkable is happening across the AI industry: **Markdown
-files are becoming the standard way humans communicate with AI agents.**
-
-Not JSON. Not YAML. Not proprietary config files. Plain Markdown —
-the same format developers already use for README.md — is now how
-the world's leading AI platforms define what agents should do, how
-they should behave, and what they're allowed to access.
+Across the AI industry, **Markdown has become the common way humans
+configure AI agents** — not JSON, not YAML, not proprietary config
+files. Plain Markdown, the same format developers already use for
+README.md, is how the world's leading AI platforms define what agents
+should do, how they should behave, and what they're allowed to access.
 
 | Platform | Markdown File | What It Configures | Scale |
 |----------|--------------|-------------------|-------|
@@ -58,9 +56,8 @@ AGENTS.md handles project instructions. CLAUDE.md handles coding behavior.
 program.md handles research workflows. None of them address the questions
 that enterprise, compliance, and security teams are now asking:
 
-*Who is this agent? Who authorized it? What will it never do?
-How do we prove what it did? What happens when it fails?
-Is its shared memory trustworthy? Did the user consent?*
+*Who is this agent? Who authorized it? What will it never do? How do
+we prove what it did when something goes wrong?*
 
 **agent-md-specs answers these questions.** A collection of Markdown file type
 specifications covering every dimension of agent governance — from
@@ -73,10 +70,13 @@ deployments require.
 
 ## What Is agent-md-specs?
 
-47 Core specifications for AI agent identity, governance, and
-accountability — plus 132 Extended specifications covering the
-full lifecycle from personality to compliance. 179 specs total
-across 17 categories, all in human-readable Markdown.
+**5 files to start, 47 Core for production, 132 Extended when you need them.**
+179 Markdown spec types total across 17 categories — all CC0 public domain.
+
+The 47 Core specifications cover AI agent identity, governance, and
+accountability. The 132 Extended specifications cover the full lifecycle
+from personality to regulatory compliance. Every spec is human-readable
+Markdown with YAML frontmatter that any runtime can parse.
 
 agent-md-specs defines a declarative vocabulary layer that sits
 between human-readable policy definition and machine-enforceable
@@ -102,18 +102,61 @@ the agent hierarchy is covered.
 
 ## Why Does This Exist?
 
-In 2024, developers asked: *"What can this AI do?"*
-In 2026, developers ask: *"How do I work with this agent?"*
-In 2028, they will ask: *"Who is this agent?"*
-
-And as agents begin working in teams, or across departments for large organisations, the
-questions multiply: *Who coordinates them? How do they share context
+In 2024, developers asked: *"What can this AI do?"* By 2026 the
+question had shifted to *"How do I work with this agent?"* As agents
+begin working in teams — or across departments for large organisations —
+the questions multiply: *Who coordinates them? How do they share context
 safely? What happens when one agent in a team fails?*
 
 This library builds the vocabulary for those questions. The agents
 that will matter aren't the ones with the best models — they're the
 ones with the best governance, the most honest documentation of their
 boundaries, and provable accountability for their actions.
+
+---
+
+## Project Status and Timeline
+
+agent-md-specs grew quickly. v0.1.0 (165 specs) was tagged 2026-03-21.
+v1.2.0-nist-submission was tagged 2026-03-29 — 8 days later — to meet
+the NCCoE comment deadline. That cadence was driven by the deadline,
+not by maturity.
+
+Full transparency:
+- All 179 specs are at **Draft** stage (see [SPEC_LIFECYCLE.md](./SPEC_LIFECYCLE.md)).
+- The library has **not** been reviewed, adopted, or endorsed by NIST,
+  OWASP, AAIF, or any standards body.
+- Submitting to the NCCoE concept paper means NIST *received* the work
+  as a public comment. It does not mean NIST *reviewed* or *endorsed* it.
+- We're actively seeking expert review, critique, and contributions —
+  not claiming the specs are production-ready or final.
+
+---
+
+## About This Draft
+
+agent-md-specs was written by one person over 24 days, March 5–29, 2026.
+It is a first draft. It is CC0 public domain.
+
+**What I'm asking for:**
+- **10 reviewers** who will read 2-3 specs closely and tell me where I'm wrong
+- **3 pilot adopters** willing to try the Basic Agent bundle in a real project
+- **Expert critique** from security architects, compliance professionals, and agent developers
+
+**What this isn't:**
+- A finalized standard
+- An endorsed framework
+- A production-ready governance solution
+- Anything that has been reviewed or adopted by a standards body
+
+**What it is:**
+- A proposed vocabulary
+- A first attempt at the declarative layer AGENTS.md and MCP don't cover
+- An invitation for experts to tell me what needs to change
+
+See also: [CRITICISM.md](./CRITICISM.md) (the objections I expect and my
+honest answers) · [COMPARISON.md](./COMPARISON.md) (how this fits with
+AGENTS.md, CLAUDE.md, MCP, program.md).
 
 ---
 
@@ -378,7 +421,7 @@ against poisoning, cross-session contamination, and instruction injection.
 |--------|---------------------|
 | [Basic Agent — Starter Bundle](examples/basic-agent/) | The 5 essential specs every agent needs |
 | [Aria — Customer Support Bundle](examples/customer-support-bundle/) | Customer support agent using 7 core specs |
-| [Atlas — NIST NCCoE Enterprise Finance Bundle](examples/nist-nccoe-bundle/) | Enterprise financial agent with full NIST accountability chain |
+| [Atlas — NIST NCCoE Enterprise Finance Bundle](examples/nist-nccoe-bundle/) | Enterprise financial agent with accountability chain mapped to the NCCoE concept-paper questions |
 | [Nova — Autoresearch Decomposed Bundle](examples/autoresearch-decomposed/) | How monolithic agent configs (like program.md) decompose into specs |
 | [Forge — Codex Agent Decomposed Bundle](examples/codex-agent-decomposed/) | AGENTS.md + agent-md-specs working together |
 | [Sentinel — Multi-Agent Fleet Bundle](examples/multi-agent-fleet/) | 3-agent team with hierarchy and coordination |
@@ -512,11 +555,11 @@ happens, Accountability records everything, and Safety contains failures.
 
 ---
 
-## Standalone Standards
+## Standalone Companion Repositories
 
 These Core specs have their own repositories for independent adoption:
 
-| Spec | Repo | What It Standardizes | Domain |
+| Spec | Repo | Scope | Domain |
 |------|------|---------------------|--------|
 | SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values | soulmd.dev *(not owned)* |
 | TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination | [teammd.dev](https://teammd.dev) |
@@ -547,11 +590,12 @@ agent-md-specs tells the world *who this agent is*.
 
 ---
 
-## NIST Alignment
+## Mapping to NIST Publications
 
 agent-md-specs addresses the identity, authorization, and accountability
-requirements outlined in NIST's AI Agent Standards Initiative and the
-NCCoE concept paper on AI Agent Identity and Authorization.
+questions posed in NIST's NCCoE concept paper on AI Agent Identity and
+Authorization (February 2026). NIST has not reviewed or endorsed this
+project.
 
 | NIST Concern | Specs That Address It |
 |-------------|----------------------|
@@ -610,7 +654,7 @@ Specs mapping to major regulatory frameworks:
 | [Regulatory](./specs/regulatory/) | 15 | GDPR, HIPAA, EU AI Act, SOC2 |
 | [Security](./specs/security/) | 7 | Secrets, access, attestation, memory safety |
 | [Social](./specs/social/) | 7 | Community, reviews, relationships |
-| [Technical](./specs/technical/) | 17 | APIs, tools, data, integration |
+| [Technical](./specs/technical/) | 18 | APIs, tools, data, integration |
 
 → See [INDEX.md](INDEX.md) for the complete alphabetical index with
 domains, priorities, tiers, and file paths.

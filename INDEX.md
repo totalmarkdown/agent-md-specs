@@ -7,7 +7,7 @@ Complete alphabetical index of all 179 agent-md-specs file type specifications.
 | Tier | Count | Description |
 |------|-------|-------------|
 | Core | 47 | Essential specs recommended for all production agents |
-| Extended | 133 | Valuable specs for specific use cases and advanced configurations |
+| Extended | 132 | Valuable specs for specific use cases and advanced configurations |
 | **Total** | **179** | |
 
 ## Category Summary

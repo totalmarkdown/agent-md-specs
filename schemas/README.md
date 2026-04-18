@@ -16,7 +16,7 @@ ensure the machine-readable portion is trustworthy and consistent.
 These schemas define the expected structure for each spec type's YAML
 frontmatter and content fields. They can be used with any JSON Schema
 validator to verify that agent configuration files conform to the
-agent-md-specs standard.
+agent-md-specs specification.
 
 ### Validation Example
 
@@ -51,6 +51,7 @@ print('Valid!')
 | enforcement.schema.json | ENFORCEMENT.md | Core |
 | escalation.schema.json | ESCALATION.md | Core |
 | guardrails.schema.json | GUARDRAILS.md | Core |
+| heartbeat.schema.json | HEARTBEAT.md | Core |
 | id.schema.json | ID.md | Core |
 | intent.schema.json | INTENT.md | Core |
 | leastprivilege.schema.json | LEASTPRIVILEGE.md | Core |

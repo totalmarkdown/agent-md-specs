@@ -1,4 +1,4 @@
-# NIST NCCoE Reviewer Guide
+# Reviewer Guide for the NCCoE Submission
 
 > *"Markdown is becoming the human-readable contract for what the
 > agent should do, when it should do it, and what resources it

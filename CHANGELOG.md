@@ -8,7 +8,7 @@ All notable changes to agent-md-specs are documented here.
 - HEARTBEAT.md promoted to Core tier — periodic proactive execution cycles, status reporting, cost controls, and delivery routing
 - HEARTBEAT.template.md template for quick adoption
 - heartbeat.schema.json JSON Schema for validation
-- Domain column added to Standalone Standards table in README.md
+- Domain column added to Standalone Companion Repositories table in README.md
 
 ### Changed
 - Spec counts updated: 47 Core, 132 Extended, 179 total
@@ -65,7 +65,7 @@ All notable changes to agent-md-specs are documented here.
 - Core Specs tables now have clickable links to spec files
 - README framing: "proposed standard" throughout
 
-## [1.1.0] — 2026-03-26
+## [1.0.1] — 2026-03-26
 
 ### Added
 - Vol 15: Shared Context & Memory Governance
