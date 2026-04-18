@@ -1,0 +1,28 @@
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Monitor Schema",
+  "type": "object",
+  "properties": {
+    "pollingInterval": {
+      "type": "integer",
+      "description": "The interval at which the monitor checks for updates"
+    },
+    "alertTargets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The targets to alert when a monitoring event occurs"
+    },
+    "sloReferences": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "The SLO references for the monitor"
+    }
+  },
+  "required": ["pollingInterval", "alertTargets", "sloReferences"]
+}
+```
