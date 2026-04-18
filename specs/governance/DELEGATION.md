@@ -8,6 +8,8 @@ volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 tier: core
+status: proposed
+proposed_on: 2026-04-18
 spec_type: static
 ---
 
