@@ -1,0 +1,94 @@
+name: Core spec RFC (new or breaking change)
+description: Propose a new Core-tier spec, a tier promotion, or a breaking change to an existing Core spec.
+title: "RFC: <change description> for <SPEC.md>"
+labels: ["rfc", "rfc:core"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This template is for changes that require the formal RFC
+        process defined in [SPEC_LIFECYCLE.md](../../SPEC_LIFECYCLE.md)
+        and [GOVERNANCE.md](../../GOVERNANCE.md):
+
+        - New Core-tier spec
+        - Extended → Core promotion
+        - Core → Extended demotion
+        - Breaking change to an existing Core spec
+
+        Review period: **14 days minimum** for Proposed specs, **30
+        days** for Stable. Approval requires: 2 maintainer approvals
+        + no unresolved blocking objections.
+
+  - type: input
+    id: spec
+    attributes:
+      label: Affected spec
+      description: e.g. `specs/governance/LIMITS.md` or "NEW: specs/identity/LINEAGE.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change type
+      options:
+        - New Core spec
+        - Extended → Core promotion
+        - Core → Extended demotion
+        - Breaking change (frontmatter/structure) to existing Core spec
+        - Proposed → Stable promotion
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this change needed? What's the problem with the current state?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Concrete description of the change. Include before/after diffs or full spec text for new specs.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: compat
+    attributes:
+      label: Backward compatibility impact
+      description: What breaks? Who is affected? How do existing users migrate?
+    validations:
+      required: true
+
+  - type: textarea
+    id: migration
+    attributes:
+      label: Migration guide (if breaking)
+      description: Step-by-step instructions for users of the current version.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: What other approaches did you consider? Why this one?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I agree to release any proposed spec text under CC0 1.0 Universal.
+          required: true
+        - label: I have read [SPEC_LIFECYCLE.md](../../SPEC_LIFECYCLE.md) and understand the RFC process.
+          required: true
+        - label: I will keep this RFC open for at least 14 days (30 for Stable specs) before requesting merge.
+          required: true

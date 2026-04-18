@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you reference agent-md-specs in academic work, please cite it as below."
+title: "agent-md-specs: A Proposed Vocabulary for AI Agent Identity, Governance, and Accountability"
+abstract: >
+  agent-md-specs is a proposed open vocabulary (draft, seeking review)
+  of 179 Markdown file type specifications for AI agent identity,
+  governance, and accountability — bridging human-readable policy with
+  machine-enforceable Zero Trust security schemas. Released CC0 public
+  domain. Submitted as a public comment to the NIST NCCoE AI Agent
+  Standards Initiative (February 2026).
+type: software
+authors:
+  - name: "TotalMarkdown.ai"
+    website: "https://totalmarkdown.ai"
+repository-code: "https://github.com/totalmarkdown/agent-md-specs"
+url: "https://github.com/totalmarkdown/agent-md-specs"
+license: CC0-1.0
+version: 1.3.0
+date-released: 2026-04-03
+keywords:
+  - "ai agents"
+  - "agent governance"
+  - "zero trust"
+  - "agent identity"
+  - "ai safety"
+  - "accountability"
+  - "markdown"
+  - "nist"
+  - "nccoe"

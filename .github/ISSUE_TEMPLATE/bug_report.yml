@@ -1,0 +1,74 @@
+name: Bug report
+description: Report a bug in a spec, schema, validator, or docs.
+title: "[bug] <short description>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug. Please fill out the
+        sections below. If this is a security vulnerability, do NOT
+        file a public issue — see [SECURITY.md](../../SECURITY.md) instead.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      description: Which part of the repo is affected?
+      options:
+        - Core spec (specs/)
+        - Extended spec (specs/)
+        - JSON Schema (schemas/)
+        - Template (templates/)
+        - Example bundle (examples/)
+        - Validator (external repo)
+        - Documentation (README, CONTRIBUTING, etc.)
+        - CI / GitHub Actions
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: spec
+    attributes:
+      label: Spec or file
+      description: Which specific file? (e.g. `specs/governance/LIMITS.md`)
+      placeholder: specs/governance/LIMITS.md
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the bug
+      description: What did you expect? What happened? Include minimal repro steps if runtime/validator-related.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Shell commands, inputs, expected vs actual output.
+      render: bash
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: agent-md-specs version
+      description: Which release are you using? (check CHANGELOG.md)
+      placeholder: "1.3.0"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and Discussions before filing.
+          required: true
+        - label: I understand agent-md-specs is a Draft-stage vocabulary, not a runtime system.
+          required: true

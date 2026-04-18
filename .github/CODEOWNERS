@@ -1,0 +1,26 @@
+# Code owners for agent-md-specs
+# See https://docs.github.com/en/repositories/managing-your-repositories-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything in the repo
+*                                     @totalmarkdown
+
+# Core specs (highest scrutiny)
+/specs/identity/                      @totalmarkdown
+/specs/governance/                    @totalmarkdown
+/specs/security/                      @totalmarkdown
+/specs/compliance/                    @totalmarkdown
+/specs/coordination/                  @totalmarkdown
+
+# JSON Schemas
+/schemas/                             @totalmarkdown
+
+# NIST submission materials
+/NIST_CROSSWALK.md                    @totalmarkdown
+/NIST_SUBMISSION_GUIDE.md             @totalmarkdown
+/nist-nccoe-response-content.md       @totalmarkdown
+
+# Governance + community
+/GOVERNANCE.md                        @totalmarkdown
+/CODE_OF_CONDUCT.md                   @totalmarkdown
+/ROADMAP.md                           @totalmarkdown
+/.github/                             @totalmarkdown

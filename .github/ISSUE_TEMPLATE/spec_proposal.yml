@@ -1,0 +1,86 @@
+name: Spec proposal (Extended tier)
+description: Propose a new Extended-tier spec or amendments to an existing one.
+title: "[spec] <SPEC_NAME> — <short description>"
+labels: ["spec:new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for Extended-tier proposals and for
+        amendments to existing specs. For **new Core-tier specs or
+        breaking changes to existing Core specs**, use the "Core spec
+        RFC" template instead (14-day public comment window).
+
+        Before filing, please confirm the gap isn't already covered by
+        an existing spec — check [INDEX.md](../../INDEX.md).
+
+  - type: input
+    id: name
+    attributes:
+      label: Spec name
+      description: Filename in UPPERCASE (e.g. `MYSPEC.md`).
+      placeholder: MYSPEC.md
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Category
+      description: Which `specs/<category>/` folder? (business, cognitive, compliance, coordination, economic, governance, identity, lifecycle, operations, organizational, personality, process, quality, regulatory, security, social, technical)
+    validations:
+      required: true
+
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: The .dev domain for the spec (e.g. `myspecmd.dev`). Verify availability.
+      placeholder: myspecmd.dev
+    validations:
+      required: true
+
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: One paragraph — what problem does this spec solve that existing specs don't?
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_cases
+    attributes:
+      label: Use cases
+      description: At least two concrete, specific real-world use cases.
+    validations:
+      required: true
+
+  - type: textarea
+    id: draft
+    attributes:
+      label: Draft content
+      description: First attempt at the spec. Paste the Markdown (frontmatter + body). Minimum — Purpose, When to create, Spec sections with a YAML example.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: overlap
+    attributes:
+      label: Overlap analysis
+      description: Which existing specs come closest? Why isn't this just a section in one of them?
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmation
+      options:
+        - label: I agree to release this contribution under CC0 1.0 Universal (public domain).
+          required: true
+        - label: I verified the .dev domain is available (or I own it).
+          required: true
+        - label: I have read [CONTRIBUTING.md](../../CONTRIBUTING.md) and [GOVERNANCE.md](../../GOVERNANCE.md).
+          required: true

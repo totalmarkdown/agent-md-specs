@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and general discussion
+    url: https://github.com/totalmarkdown/agent-md-specs/discussions/categories/q-a
+    about: For usage questions and general conversation, please use Discussions.
+  - name: Propose a new spec (Extended tier idea)
+    url: https://github.com/totalmarkdown/agent-md-specs/discussions/categories/ideas
+    about: For early-stage spec ideas, start in Discussions → Ideas for feedback before filing an issue.
+  - name: Security vulnerabilities
+    url: https://github.com/totalmarkdown/agent-md-specs/security/policy
+    about: Please DO NOT file public issues for security vulnerabilities. See SECURITY.md for the responsible disclosure process.
+  - name: Roadmap and project direction
+    url: https://github.com/totalmarkdown/agent-md-specs/blob/main/ROADMAP.md
+    about: See ROADMAP.md for current and planned work.
