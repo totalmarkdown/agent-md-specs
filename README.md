@@ -698,14 +698,24 @@ enables Level 3 checking.
 
 ### See it enforce
 
-For a working demonstration of how agent-md-specs files become runtime
-enforcement policies, see
+For a working runtime-enforcement demo, see
 [agent-md-opa-demo](https://github.com/totalmarkdown/agent-md-opa-demo)
-— a ~50-line Open Policy Agent (OPA/Rego) policy that reads `LIMITS.md`
-directly, evaluates tool-call requests against its frontmatter, and
-writes AUDITTRAIL-shaped entries for every decision. No compilation,
-no format translation — the same Markdown a compliance officer signs
-off is the policy the runtime enforces.
+(v0.2.0). It walks the full accountability chain — **ATTESTATION →
+DELEGATION → LIMITS → AUDITTRAIL** — through ~250 lines of Rego:
+
+- **ATTESTATION.md** declares verifiable identity (SPIFFE / X.509 / DID).
+- **DELEGATION.md** declares who authorized the agent and for what scope.
+- **LIMITS.md** declares hard deny lists.
+- **AUDITTRAIL.md** defines the shape of the hash-chained audit entries
+  every policy evaluation appends.
+
+Three scenarios run end-to-end (happy path, scope violation, identity
+failure), every decision generates an AUDITTRAIL entry, and the chain
+is verified tamper-evident. 11 Rego unit tests + 5 shell tests cover
+the demo. `brew install opa yq jq && ./test/test_full_flow.sh`.
+
+No compilation step, no format translation — the Markdown a compliance
+officer signs off is the policy the runtime enforces.
 
 ---
 
