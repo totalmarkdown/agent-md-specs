@@ -698,6 +698,8 @@ enables Level 3 checking.
 
 ### See it enforce
 
+[![asciicast](https://asciinema.org/a/948586.svg)](https://asciinema.org/a/948586)
+
 For a working runtime-enforcement demo, see
 [agent-md-opa-demo](https://github.com/totalmarkdown/agent-md-opa-demo)
 (v0.2.0). It walks the full accountability chain — **ATTESTATION →
