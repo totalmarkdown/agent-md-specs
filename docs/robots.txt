@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://totalmarkdown.github.io/agent-md-specs/sitemap.xml
