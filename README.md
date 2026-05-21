@@ -11,7 +11,8 @@
 [![Maintained by TotalMarkdown](https://img.shields.io/badge/maintained%20by-TotalMarkdown.ai-8B5CF6)](https://totalmarkdown.ai)
 
 **Created and maintained by TotalMarkdown.ai**
-**[→ Start Here](_start-here/)**
+&nbsp;·&nbsp; **[Public GitHub Pages site](https://totalmarkdown.github.io/agent-md-specs/)**
+&nbsp;·&nbsp; **[→ Start Here](_start-here/)**
 &nbsp;·&nbsp; License: [CC0 1.0 Universal](./LICENSE) — Public Domain
 &nbsp;·&nbsp; [Discussions](https://github.com/totalmarkdown/agent-md-specs/discussions)
 &nbsp;·&nbsp; [Contributing](./CONTRIBUTING.md)
@@ -23,6 +24,22 @@
 
 _Mapped to the [NIST AI RMF (AI 100-1)](https://www.nist.gov/artificial-intelligence)
 and submitted as a public comment on the [NCCoE concept paper on AI Agent Identity and Authorization](https://www.nist.gov/caisi/ai-agent-standards-initiative) (February 2026). Submission does not imply NIST review, endorsement, or affiliation._
+
+---
+
+## TotalMarkdown and Project Links
+
+**TotalMarkdown** is the Markdown-first standards and tooling project
+behind agent-md-specs. This repository is the canonical source for
+TotalMarkdown's public-domain Markdown specifications for AI agent
+identity, governance, safety, accountability, and compliance.
+
+- **Public GitHub Pages site:** <https://totalmarkdown.github.io/agent-md-specs/>
+- **GitHub repository:** <https://github.com/totalmarkdown/agent-md-specs>
+- **Complete spec index:** [INDEX.md](./INDEX.md)
+- **Starter guide:** [_start-here/README.md](./_start-here/README.md)
+- **JSON Schemas:** [schemas/](./schemas/)
+- **Search/indexing files:** [docs/robots.txt](./docs/robots.txt) and [docs/sitemap.xml](./docs/sitemap.xml)
 
 ---
 
@@ -275,6 +292,25 @@ agent-md-validate ./my-agent/
 ```
 
 → See the [Basic Agent — Starter Bundle](examples/basic-agent/) for details and individual file downloads.
+
+---
+
+## Install, Run, and Build
+
+There is no application runtime or generated documentation build step in
+this repository. The source of truth is static Markdown files, JSON
+Schemas, and example bundles.
+
+- **Use the specs:** copy a spec file or bundle into your project, fill
+  in the Markdown and YAML frontmatter, then validate it.
+- **Validate locally:** install
+  [`agent-md-validator`](https://github.com/totalmarkdown/agent-md-validator)
+  and run `agent-md-validate ./my-agent/`.
+- **Browse the public site locally:** run
+  `python3 -m http.server 8000 --directory docs` and open the local
+  address printed by Python.
+- **Publish the public site:** enable GitHub Pages for this repository
+  from the `main` branch and `/docs` folder.
 
 ---
 
