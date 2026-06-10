@@ -353,7 +353,7 @@ should define. Start here. Add Extended specs as your needs grow.
 | Spec | What It Defines | Scope |
 |------|----------------|-------|
 | [INTENT.md](specs/governance/INTENT.md) | Pre-action intent declaration with confidence levels | Runtime |
-| [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | Tamper-proof non-repudiation action records | Runtime |
+| [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | Tamper-evident non-repudiation action records | Runtime |
 | [PROVENANCE.md](specs/compliance/PROVENANCE.md) | Data lineage and trust classification | Runtime |
 
 ### Memory and Context
@@ -468,7 +468,7 @@ against poisoning, cross-session contamination, and instruction injection.
 ## The Accountability Chain
 
 These specs create a complete, verifiable chain from human
-authorization to tamper-proof record:
+authorization to tamper-evident record:
 
 | Step | Spec | What It Answers | Phase |
 |------|------|-----------------|-------|
@@ -603,7 +603,7 @@ These Core specs have their own repositories for independent adoption:
 | WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification | [whoamimd.dev](https://whoamimd.dev) |
 | LIMITS.md | [totalmarkdown/limits.md](https://github.com/totalmarkdown/limits.md) | Hard constraints and safety boundaries | [limitsmd.dev](https://limitsmd.dev) |
 | DELEGATION.md | [totalmarkdown/delegation.md](https://github.com/totalmarkdown/delegation.md) | Authority delegation chains | [delegationmd.dev](https://delegationmd.dev) |
-| AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-proof action logging | [audittrailmd.dev](https://audittrailmd.dev) |
+| AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-evident action logging | [audittrailmd.dev](https://audittrailmd.dev) |
 | CONSENT.md | [totalmarkdown/consent.md](https://github.com/totalmarkdown/consent.md) | User consent lifecycle (GDPR/CCPA) | [consentmd.dev](https://consentmd.dev) |
 | WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity | walletmd.dev *(not owned)* |
 | HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement | [hirememd.dev](https://hirememd.dev) |

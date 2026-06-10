@@ -180,7 +180,7 @@ Verify identity of the new credential via ATTESTATION.md before deployment.
 | Spec | Relationship |
 |------|-------------|
 | ATTESTATION.md | Identity verification and credential lifecycle |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PROMPTSHIELD.md | Prompt injection defense |
 | SECRETS.md | Required credentials manifest |

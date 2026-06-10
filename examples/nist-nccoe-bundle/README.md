@@ -1,6 +1,6 @@
 # Atlas — NIST NCCoE Enterprise Finance Bundle
 
-> *A fully governed financial analysis agent implementing the complete NIST NCCoE accountability chain from human delegation to tamper-proof audit trail.*
+> *A fully governed financial analysis agent implementing the complete NIST NCCoE accountability chain from human delegation to tamper-evident audit trail.*
 
 ## Agent Profile
 
@@ -15,7 +15,7 @@
 
 - Complete NIST NCCoE accountability chain for enterprise agents
 - How 18 specs work together to govern a real agent under strict regulatory requirements (SOX, GDPR, SOC2)
-- Human delegation, identity attestation, least-privilege access, intent declaration, and tamper-proof auditing
+- Human delegation, identity attestation, least-privilege access, intent declaration, and tamper-evident auditing
 - Failure containment via circuit breakers and multi-level escalation
 - Prompt injection defense and memory safety patterns
 

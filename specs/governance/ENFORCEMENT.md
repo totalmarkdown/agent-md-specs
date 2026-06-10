@@ -348,7 +348,7 @@ Exceptions are:
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ATTESTATION.md | Identity verification and credential lifecycle |
 | MONITOR.md | Observability and alerting |
 | HEALTHCHECK.md | Liveness and readiness checks |

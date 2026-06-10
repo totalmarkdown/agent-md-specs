@@ -80,13 +80,13 @@ _See AUDITTRAIL.md for compliance-grade logging and ESCALATION.md for alert rout
 
 **Multi-Agent Fleet:** A platform team builds a unified monitoring dashboard across 100+ agents using standardized MONITOR.md metrics, enabling fleet-wide anomaly detection that catches a gradual latency increase across the data-ingestion team before it impacts SLAs.
 
-**Regulated Industry:** An aerospace manufacturer's quality-inspection agents emit metrics to a compliance-certified monitoring stack, with tamper-proof retention for 15 years to satisfy FAA airworthiness documentation requirements.
+**Regulated Industry:** An aerospace manufacturer's quality-inspection agents emit metrics to a compliance-certified monitoring stack, with tamper-evident retention for 15 years to satisfy FAA airworthiness documentation requirements.
 
 ## Related Specs
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CIRCUITBREAKER.md | Failure containment and blast radius |
 | ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |

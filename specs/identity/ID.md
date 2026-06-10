@@ -112,7 +112,7 @@ This file should be:
 | WHOAMI.md | Agent identity declaration |
 | ATTESTATION.md | Identity verification and credential lifecycle |
 | SESSION.md | Ephemeral runtime identity and task scope |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | LEGACY.md | Retirement and decommissioning |
 
 ---

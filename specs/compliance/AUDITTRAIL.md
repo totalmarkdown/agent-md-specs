@@ -333,6 +333,28 @@ The Chain of Thought Ledger is:
 | PROVENANCE.md | Data lineage and trust classification |
 | PRIVACY.md | Data privacy handling |
 
+## Hardening path
+
+The hash chain defined here is **tamper-evident** under an append-only assumption: each
+entry's `previous_entry_hash` is the SHA-256 of the canonical prior entry, so any
+modification to a historical record breaks all subsequent hashes. However, a writer
+with full file access can recompute the entire chain. Tamper-*resistance* requires
+anchoring:
+
+| Technique | What it adds |
+|-----------|-------------|
+| **Signed entries** | Cryptographic signature per entry (agent X.509, sigstore) binds the record to a verifiable identity and prevents silent substitution |
+| **Periodic signed checkpoints** | Sign and publish the chain head at regular intervals; any rewrite before the last checkpoint is detectable even without per-entry signatures |
+| **WORM storage** | Append-only object storage (S3 Object Lock, Azure Immutable Blob) prevents deletion and post-write modification at the infrastructure layer |
+| **External transparency log** | Submit chain-head hashes to a public or enterprise log (SCITT, Rekor, Certificate Transparency analogue); independent witnesses verify non-equivocation |
+| **Blockchain anchor** | Periodic Merkle root publication to an immutable ledger provides externally timestamped proof of existence |
+
+The `tamper_resistance` frontmatter field (see schema above) declares which technique
+an agent deployment uses. Implementations **SHOULD** combine at least signed entries
+with WORM storage for regulated environments. The bare hash chain remains appropriate
+for development, low-stakes auditing, and as a foundation that higher-assurance
+techniques build on.
+
 ---
 
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*

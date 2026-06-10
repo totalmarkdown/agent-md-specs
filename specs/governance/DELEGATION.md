@@ -248,7 +248,7 @@ action_hash: [SHA-256 of action details]
 | WHOAMI.md | Agent identity declaration |
 | PERMISSIONS.md | Static resource access control |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ACCESS.md | Who can invoke this agent |
 | REPORTSTO.md | Organizational hierarchy context for delegation authority |
 

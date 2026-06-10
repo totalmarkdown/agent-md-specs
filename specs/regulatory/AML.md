@@ -99,7 +99,7 @@ Screen all customers and transactions against:
 **Match resolution process:** [process]
 
 ## Record Keeping
-All records should feed into AUDITTRAIL.md for tamper-proof logging.
+All records should feed into AUDITTRAIL.md for tamper-evident logging.
 | Record type | Retention period |
 |------------|-----------------|
 | KYC records | 5 years after relationship ends |
@@ -130,7 +130,7 @@ Asset forfeiture: Proceeds of violations
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CONSENT.md | User consent lifecycle |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PII.md | Personal data classification |

@@ -150,7 +150,7 @@ Security incident process: See ICE.md
 | Spec | Relationship |
 |------|-------------|
 | ATTESTATION.md | Identity verification and credential lifecycle |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ENFORCEMENT.md | Policy verification and compliance |
 | ICE.md | Emergency break-glass protocols |
 | PERMISSIONS.md | Static resource access control |

@@ -76,7 +76,7 @@ not a file-based runtime system.
 
 | Spec | What It Provides |
 |------|-----------------|
-| [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | Tamper-proof action records, non-repudiation, compliance mapping |
+| [AUDITTRAIL.md](specs/compliance/AUDITTRAIL.md) | Tamper-evident action records, non-repudiation, compliance mapping |
 | [INTENT.md](specs/governance/INTENT.md) | Intent-action cryptographic binding (proves agent did what it said) |
 | [DELEGATION.md](specs/governance/DELEGATION.md) | Accountability chain linking actions to human authorization |
 | [ENFORCEMENT.md](specs/governance/ENFORCEMENT.md) | Audit verification and tamper detection mechanisms |
@@ -194,7 +194,7 @@ not a file-based runtime system.
 ## The Accountability Chain
 
 These specs together create a complete, auditable chain
-from human authorization to tamper-proof record:
+from human authorization to tamper-evident record:
 
 | Step | Spec | Question Answered |
 |------|------|-------------------|
@@ -267,7 +267,7 @@ Finance Team continues with degraded capability. Cached reports
 served with staleness warnings.
 
 **9. Audit Record (Post-Action)**
-The action is recorded as a tamper-proof hash-chain entry
+The action is recorded as a tamper-evident hash-chain entry
 (AUDITTRAIL.md), signed with Atlas's X.509 certificate. Entry
 includes: delegation reference, intent hash, I/O hashes, session ID,
 timestamp. Retention: 7 years per SOX compliance.
@@ -284,7 +284,7 @@ it, AUDITTRAIL.md records the violation, and ESCALATION.md notifies
 the CFO and compliance team.
 
 This walkthrough demonstrates a complete, verifiable chain from human
-delegation to tamper-proof record, implemented through infrastructure-
+delegation to tamper-evident record, implemented through infrastructure-
 level policy enforcement points — not on-agent self-policing.
 
 ---

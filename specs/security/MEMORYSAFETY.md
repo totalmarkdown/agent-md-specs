@@ -184,7 +184,7 @@ Attestation required for access above "internal." All access to confidential+ en
 | SHAREDCONTEXT.md | Multi-agent shared memory pool |
 | MEMORY.md | Individual agent memory governance |
 | PROMPTSHIELD.md | Prompt injection defense |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ATTESTATION.md | Identity verification and credential lifecycle |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | SESSION.md | Ephemeral runtime identity and task scope |

@@ -110,7 +110,7 @@ unzip bundle.zip -d my-fleet/
 
 | File | What It Does |
 |------|-------------|
-| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-proof action logging |
+| [AUDITTRAIL.md](../specs/compliance/AUDITTRAIL.md) | Tamper-evident action logging |
 | [CONSENT.md](../specs/compliance/CONSENT.md) | User consent lifecycle (GDPR/CCPA) |
 | [PROVENANCE.md](../specs/compliance/PROVENANCE.md) | Data lineage tracking |
 | [ENFORCEMENT.md](../specs/governance/ENFORCEMENT.md) | Policy verification |

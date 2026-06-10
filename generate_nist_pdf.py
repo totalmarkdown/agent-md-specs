@@ -213,7 +213,7 @@ def build_pdf():
     story.append(Paragraph("The Problem", s['SubHead']))
     story.append(Paragraph(
         "AI agents operating in production environments need to declare far more than task instructions. "
-        "They need verifiable identity, scoped authority, auditable intent, tamper-proof action records, "
+        "They need verifiable identity, scoped authority, auditable intent, tamper-evident action records, "
         "and provable compliance with declared constraints. Current agent configuration approaches — "
         "including AGENTS.md (AAIF), CLAUDE.md (Anthropic), and ad-hoc program files — address behavior "
         "and project instructions but leave identity, authorization, and accountability undefined.",
@@ -357,7 +357,7 @@ def build_pdf():
     # ── Section 3: Accountability Chain ──
     story.append(Paragraph("3. The Accountability Chain", s['SectionHead']))
     story.append(Paragraph(
-        "These specifications create a complete, verifiable chain from human authorization to tamper-proof "
+        "These specifications create a complete, verifiable chain from human authorization to tamper-evident "
         "record, mapped to operational phases and SP 800-207 Zero Trust Architecture components:",
         s['Body']
     ))

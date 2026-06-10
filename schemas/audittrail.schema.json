@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://totalmarkdown.ai/schemas/audittrail.schema.json",
   "title": "AUDITTRAIL.md Schema",
-  "description": "Schema for tamper-proof non-repudiation action records",
+  "description": "Schema for tamper-evident non-repudiation action records",
   "allOf": [
     {
       "$ref": "frontmatter.schema.json"

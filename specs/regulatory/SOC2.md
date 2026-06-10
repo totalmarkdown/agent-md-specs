@@ -85,7 +85,7 @@ Aligns with AICPA Privacy Framework and GDPR/CCPA.
 | P1–P8: Privacy criteria | [✓/✗] |
 
 ## Key Controls Implemented
-_See AUDITTRAIL.md for tamper-proof logging of all control activities._
+_See AUDITTRAIL.md for tamper-evident logging of all control activities._
 - [ ] Multi-factor authentication
 - [ ] Encryption at rest and in transit
 - [ ] Vulnerability scanning (quarterly+)
@@ -120,7 +120,7 @@ SOC 2 report available under NDA to:
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CONSENT.md | User consent lifecycle |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PII.md | Personal data classification |

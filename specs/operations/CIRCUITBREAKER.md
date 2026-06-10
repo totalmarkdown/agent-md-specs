@@ -311,7 +311,7 @@ ICE.md emergency protocol.
 | HEALTHCHECK.md | Liveness and readiness checks |
 | TEAM.md | Multi-agent team coordination |
 | CREW.md | Working group structure |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ENFORCEMENT.md | Policy verification and compliance |
 | MONITOR.md | Observability and alerting |
 

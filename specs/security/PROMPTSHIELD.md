@@ -370,7 +370,7 @@ injection_log_entry:
 | GUARDRAILS.md | Runtime safety boundaries |
 | LIMITS.md | Hard constraints and safety boundaries |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | PROVENANCE.md | Data lineage and trust classification |
 | ATTESTATION.md | Identity verification and credential lifecycle |
 | SECRETS.md | Required credentials manifest |

@@ -131,7 +131,7 @@ Review contact: [legal team contact]
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CONSENT.md | User consent lifecycle |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PROVENANCE.md | Data lineage and trust classification |

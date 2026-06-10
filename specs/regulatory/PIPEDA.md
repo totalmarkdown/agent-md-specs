@@ -120,7 +120,7 @@ _See AUDITTRAIL.md for logging all breach notifications._
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CONSENT.md | User consent lifecycle |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PII.md | Personal data classification |

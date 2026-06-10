@@ -9,7 +9,7 @@ tier: core
 
 # [REPLACE THIS — Agent Name] — Audit Trail
 
-<!-- Tamper-proof logging of all agent actions for accountability and forensics -->
+<!-- Tamper-evident logging of all agent actions for accountability and forensics -->
 
 ## What Gets Logged
 <!-- Every logged event must include: timestamp, agent_id, action, target, outcome -->

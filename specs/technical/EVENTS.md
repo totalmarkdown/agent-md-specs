@@ -80,7 +80,7 @@ Events this agent responds to:
 **Retry policy:** [N retries with [backoff] backoff]  
 **Dead letter:** [where failed events go]
 
-_See AUDITTRAIL.md for tamper-proof logging of all emitted events._
+_See AUDITTRAIL.md for tamper-evident logging of all emitted events._
 
 ## Event Ordering Guarantees
 - Events within a task: [ordered | best-effort]

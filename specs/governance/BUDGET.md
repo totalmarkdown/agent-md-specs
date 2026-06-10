@@ -89,7 +89,7 @@ Use the cheapest model that can complete the task:
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | DELEGATION.md | Authority chain and authorization |
 | ENGINE.md | Runtime execution configuration |
 | ENFORCEMENT.md | Policy verification and compliance |

@@ -308,7 +308,7 @@ restrictions:
 | PERMISSIONS.md | Static resource access control |
 | ACCESS.md | Who can invoke this agent |
 | DELEGATION.md | Authority chain and authorization |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | INTENT.md | Pre-action declaration and confidence scoring |
 
 ---

@@ -284,7 +284,7 @@ Chain failure triggers rollback per `rollback_policy`.
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | LIMITS.md | Hard constraints and safety boundaries |
 | DELEGATION.md | Authority chain and authorization |

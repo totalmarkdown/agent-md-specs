@@ -298,7 +298,7 @@ When attestation fails, the agent MUST:
 | ID.md | Permanent cryptographic identifier |
 | SECRETS.md | Required credentials manifest |
 | DELEGATION.md | Authority chain and authorization |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ACCESS.md | Who can invoke this agent |
 
 ---

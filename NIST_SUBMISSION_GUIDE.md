@@ -18,7 +18,7 @@ the Adoption of Software and AI Agent Identity and Authorization."
 
 2. **[The Accountability Chain](README.md#the-accountability-chain)** in
    the README — Our 14-step verification chain from human delegation
-   to tamper-proof audit trail, mapped to SP 800-207 Zero Trust
+   to tamper-evident audit trail, mapped to SP 800-207 Zero Trust
    Architecture components (PEP/PDP/PIP).
 
 ---

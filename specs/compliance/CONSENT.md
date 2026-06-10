@@ -308,7 +308,7 @@ multi_agent_consent:
 | GDPR.md | GDPR compliance requirements |
 | CCPA.md | CCPA compliance requirements |
 | DELEGATION.md | Authority chain and authorization |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | ESCALATION.md | Human-in-the-loop triggers and contacts |
 | SHAREDCONTEXT.md | Multi-agent shared memory pool |
 | MEMORYSAFETY.md | Memory poisoning defense |

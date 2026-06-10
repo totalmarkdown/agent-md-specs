@@ -307,7 +307,7 @@ detection, see PROMPTSHIELD.md.
 | INPUT.md | Accepted input formats |
 | OUTPUT.md | Output formats and delivery |
 | DATA.md | Data handling and governance |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | PROMPTSHIELD.md | Prompt injection defense |
 | ATTESTATION.md | Identity verification and credential lifecycle |
 | PRIVACY.md | Data privacy handling |

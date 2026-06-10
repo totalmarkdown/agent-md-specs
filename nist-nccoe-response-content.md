@@ -13,7 +13,7 @@
 
 ### The Problem
 
-AI agents operating in production environments need to declare far more than task instructions. They need verifiable identity, scoped authority, auditable intent, tamper-proof action records, and provable compliance with declared constraints. Current agent configuration approaches — including AGENTS.md (AAIF), CLAUDE.md (Anthropic), and ad-hoc program files — address behavior and project instructions but leave identity, authorization, and accountability undefined. Model capabilities are advancing quickly, and governance frameworks for autonomous agents have not kept pace.
+AI agents operating in production environments need to declare far more than task instructions. They need verifiable identity, scoped authority, auditable intent, tamper-evident action records, and provable compliance with declared constraints. Current agent configuration approaches — including AGENTS.md (AAIF), CLAUDE.md (Anthropic), and ad-hoc program files — address behavior and project instructions but leave identity, authorization, and accountability undefined. Model capabilities are advancing quickly, and governance frameworks for autonomous agents have not kept pace.
 
 ### Our Approach
 
@@ -115,7 +115,7 @@ OWASP's ASI08 notes that "one agent's error propagates across an entire multi-ag
 
 ## 3. The Accountability Chain
 
-These specifications create a complete, verifiable chain from human authorization to tamper-proof record, with each step mapped to its operational phase and SP 800-207 Zero Trust Architecture component:
+These specifications create a complete, verifiable chain from human authorization to tamper-evident record, with each step mapped to its operational phase and SP 800-207 Zero Trust Architecture component:
 
 | Step | Specification | Question Answered | Phase | ZTA Component |
 |------|--------------|-------------------|-------|---------------|
@@ -163,7 +163,7 @@ The Atlas bundle contains 19 fully configured specification files showing:
 - **Just-in-time privilege escalation** requiring CFO FIDO2 digital approval for email sending, with automatic de-escalation after single use
 - **Shared memory governance** with financial data canary entries, write gateway sanitization, and cross-session isolation
 - **Failure containment** via circuit breaker with 3-failure threshold, cached report fallback, and cascading prevention
-- **Tamper-proof audit trail** using SHA-256 hash chains with 7-year retention for SOX compliance, signed entries using the agent's X.509 certificate, and a query endpoint for auditor access
+- **Tamper-resistant audit trail** using SHA-256 hash chains with 7-year retention for SOX compliance, signed entries using the agent's X.509 certificate, and a query endpoint for auditor access
 - **Prompt injection defenses** including financial-domain canary tokens, SQL injection pattern blocking, and a containment procedure that halts execution and alerts the compliance team
 - **Hard limits** that can never be overridden: never execute trades, never access HR/personnel data, never communicate outside the acme.corp network, never process data from OFAC-sanctioned entities
 

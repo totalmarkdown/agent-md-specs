@@ -149,7 +149,7 @@ last_updated: date
 
 ---
 
-_See AUDITTRAIL.md for tamper-proof logging of all outputs._
+_See AUDITTRAIL.md for tamper-evident logging of all outputs._
 
 ## Output Quality Guarantees
 
@@ -238,7 +238,7 @@ Previous schema versions: [changelog reference]
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | INPUT.md | Accepted input formats |
 | LIMITS.md | Hard constraints and safety boundaries |
 | MCP.md | Model Context Protocol connections |

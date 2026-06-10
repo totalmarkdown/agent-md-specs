@@ -47,7 +47,7 @@ mv SOUL.template.md SOUL.md
 | Template | What It Configures | Tier |
 |----------|-------------------|------|
 | [INTENT.template.md](INTENT.template.md) | Pre-action intent declaration | Core |
-| [AUDITTRAIL.template.md](AUDITTRAIL.template.md) | Tamper-proof action logging | Core |
+| [AUDITTRAIL.template.md](AUDITTRAIL.template.md) | Tamper-evident action logging | Core |
 | [PROVENANCE.template.md](PROVENANCE.template.md) | Data lineage tracking | Core |
 
 ### Memory and Context

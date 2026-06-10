@@ -254,7 +254,7 @@ _See HEALTHCHECK.md for probe definitions and MONITOR.md for metrics collection.
 
 **Multi-Agent Fleet:** A fleet of 50 customer-support agents reports heartbeats every 15 minutes to a central orchestrator, which aggregates workload metrics to rebalance ticket routing, detects agents approaching budget limits before they halt, and identifies anomalous error patterns across the fleet before they cascade.
 
-**Regulated Industry:** A pharmaceutical company's clinical-trial data agents run hourly heartbeats that verify data pipeline integrity, confirm encryption status on all patient data connections, log compliance metrics to a tamper-proof audit system per AUDITTRAIL.md, and automatically suspend operations during defined quiet hours to align with data processing windows approved by the IRB.
+**Regulated Industry:** A pharmaceutical company's clinical-trial data agents run hourly heartbeats that verify data pipeline integrity, confirm encryption status on all patient data connections, log compliance metrics to a tamper-evident audit system per AUDITTRAIL.md, and automatically suspend operations during defined quiet hours to align with data processing windows approved by the IRB.
 
 ## Related Specs
 

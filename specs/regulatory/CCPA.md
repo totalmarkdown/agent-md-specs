@@ -122,7 +122,7 @@ Penalties: Up to $2,500/violation, $7,500/intentional violation
 
 | Spec | Relationship |
 |------|-------------|
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | CONSENT.md | User consent lifecycle |
 | ENFORCEMENT.md | Policy verification and compliance |
 | PII.md | Personal data classification |

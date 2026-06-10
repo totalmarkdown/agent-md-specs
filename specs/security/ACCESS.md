@@ -135,7 +135,7 @@ To report unauthorized access: [security contact]
 | Spec | Relationship |
 |------|-------------|
 | ATTESTATION.md | Identity verification and credential lifecycle |
-| AUDITTRAIL.md | Tamper-proof action logging |
+| AUDITTRAIL.md | Tamper-evident action logging |
 | DELEGATION.md | Authority chain and authorization |
 | ENFORCEMENT.md | Policy verification and compliance |
 | LEASTPRIVILEGE.md | Dynamic zero-trust privilege management |
