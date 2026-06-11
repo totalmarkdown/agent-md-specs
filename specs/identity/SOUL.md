@@ -115,5 +115,3 @@ _See ESCALATION.md for when ambiguity requires human intervention._
 *Part of [agent-md-specs](https://github.com/totalmarkdown/agent-md-specs)*
 *Maintained by TotalMarkdown.ai · License: CC0 1.0 Universal*
 
-
-<!-- sync-verify: TOTA-29 fine-grained SYNC_PAT rotation check 2026-06-11; reverted in next commit -->
