@@ -2,7 +2,6 @@
 spec_name: REPO.md
 spec_version: 0.1.0
 category: Technical/Documentation
-domain: repomd.dev
 priority: High
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REPO.md
 
 **Category:** Technical/Documentation
-**Domain:** repomd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

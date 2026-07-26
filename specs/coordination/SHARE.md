@@ -2,7 +2,6 @@
 spec_name: SHARE.md
 spec_version: 0.1.0
 category: Coordination
-domain: sharemd.dev
 priority: Medium
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SHARE.md
 
 **Category:** Coordination
-**Domain:** sharemd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

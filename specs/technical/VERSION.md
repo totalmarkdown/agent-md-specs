@@ -2,7 +2,6 @@
 spec_name: VERSION.md
 spec_version: 0.1.0
 category: Technical
-domain: versionmd.dev
 priority: Medium
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # VERSION.md
 
 **Category:** Technical
-**Domain:** versionmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

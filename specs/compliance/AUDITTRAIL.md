@@ -2,7 +2,6 @@
 spec_name: AUDITTRAIL.md
 spec_version: 0.1.0
 category: Compliance
-domain: audittrailmd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -17,7 +16,6 @@ spec_type: runtime_schema
 # AUDITTRAIL.md
 
 **Category:** Compliance
-**Domain:** audittrailmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

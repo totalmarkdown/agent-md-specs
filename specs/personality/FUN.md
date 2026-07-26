@@ -2,7 +2,6 @@
 spec_name: FUN.md
 spec_version: 0.1.0
 category: Personality
-domain: funmd.dev
 priority: Medium
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # FUN.md
 
 **Category:** Personality
-**Domain:** funmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

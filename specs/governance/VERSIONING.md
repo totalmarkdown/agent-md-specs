@@ -2,7 +2,6 @@
 spec_name: VERSIONING.md
 spec_version: 0.1.0
 category: Governance
-domain: versioningmd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # VERSIONING.md
 
 **Category:** Governance
-**Domain:** versioningmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

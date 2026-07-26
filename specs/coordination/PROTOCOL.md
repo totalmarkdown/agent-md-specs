@@ -2,7 +2,6 @@
 spec_name: PROTOCOL.md
 spec_version: 0.1.0
 category: Coordination
-domain: protocolmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PROTOCOL.md
 
 **Category:** Coordination
-**Domain:** protocolmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

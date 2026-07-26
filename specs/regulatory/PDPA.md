@@ -2,7 +2,6 @@
 spec_name: PDPA.md
 spec_version: 0.1.0
 category: Regulatory Compliance
-domain: pdpamd.dev
 priority: Medium
 volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PDPA.md
 
 **Category:** Regulatory Compliance
-**Domain:** pdpamd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

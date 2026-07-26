@@ -2,7 +2,6 @@
 spec_name: LEGACY.md
 spec_version: 0.1.0
 category: Lifecycle
-domain: legacymd.dev
 priority: Low
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # LEGACY.md
 
 **Category:** Lifecycle
-**Domain:** legacymd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

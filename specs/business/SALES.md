@@ -2,7 +2,6 @@
 spec_name: SALES.md
 spec_version: 0.1.0
 category: Business
-domain: salesmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SALES.md
 
 **Category:** Business
-**Domain:** salesmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

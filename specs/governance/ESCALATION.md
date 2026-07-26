@@ -2,7 +2,6 @@
 spec_name: ESCALATION.md
 spec_version: 0.1.0
 category: Safety
-domain: escalationmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # ESCALATION.md
 
 **Category:** Safety
-**Domain:** escalationmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

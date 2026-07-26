@@ -2,7 +2,6 @@
 spec_name: TRAINING.md
 spec_version: 0.1.0
 category: Cognitive
-domain: trainingmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # TRAINING.md
 
 **Category:** Cognitive
-**Domain:** trainingmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: BLOCKERS.md
 spec_version: 0.1.0
 category: Process
-domain: blockersmd.dev
 priority: Medium
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # BLOCKERS.md
 
 **Category:** Process
-**Domain:** blockersmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

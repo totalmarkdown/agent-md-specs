@@ -2,7 +2,6 @@
 spec_name: INHERIT.md
 spec_version: 0.1.0
 category: Governance
-domain: inheritmd.dev
 priority: High
 volume: "Vol 13 — Hierarchy & Inheritance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # INHERIT.md
 
 **Category:** Governance
-**Domain:** inheritmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

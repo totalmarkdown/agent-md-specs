@@ -2,7 +2,6 @@
 spec_name: ALIASES.md
 spec_version: 0.1.0
 category: Identity
-domain: aliasesmd.dev
 priority: Low
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ALIASES.md
 
 **Category:** Identity
-**Domain:** aliasesmd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

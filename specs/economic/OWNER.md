@@ -2,7 +2,6 @@
 spec_name: OWNER.md
 spec_version: 0.1.0
 category: Economic
-domain: ownermd.dev
 priority: High
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # OWNER.md
 
 **Category:** Economic
-**Domain:** ownermd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

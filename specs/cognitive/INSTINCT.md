@@ -2,7 +2,6 @@
 spec_name: INSTINCT.md
 spec_version: 0.1.0
 category: Cognitive
-domain: instinctmd.dev
 priority: Medium
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # INSTINCT.md
 
 **Category:** Cognitive
-**Domain:** instinctmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

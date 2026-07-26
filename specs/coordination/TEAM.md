@@ -2,7 +2,6 @@
 spec_name: TEAM.md
 spec_version: 0.1.0
 category: Coordination
-domain: teammd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # TEAM.md
 
 **Category:** Coordination
-**Domain:** teammd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

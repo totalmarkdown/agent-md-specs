@@ -2,7 +2,6 @@
 spec_name: COPPA.md
 spec_version: 0.1.0
 category: Regulatory Compliance
-domain: coppamd.dev
 priority: High
 volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # COPPA.md
 
 **Category:** Regulatory Compliance
-**Domain:** coppamd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

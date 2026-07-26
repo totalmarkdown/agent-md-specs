@@ -2,7 +2,6 @@
 spec_name: SOP.md
 spec_version: 0.1.0
 category: Process/Governance
-domain: sopmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SOP.md
 
 **Category:** Process/Governance
-**Domain:** sopmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

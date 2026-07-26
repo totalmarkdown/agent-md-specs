@@ -2,7 +2,6 @@
 spec_name: LGPD.md
 spec_version: 0.1.0
 category: Regulatory Compliance
-domain: lgpdmd.dev
 priority: Medium
 volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # LGPD.md
 
 **Category:** Regulatory Compliance
-**Domain:** lgpdmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: VOICE.md
 spec_version: 0.1.0
 category: Communication
-domain: voicemd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # VOICE.md
 
 **Category:** Communication
-**Domain:** voicemd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

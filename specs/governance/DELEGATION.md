@@ -2,7 +2,6 @@
 spec_name: DELEGATION.md
 spec_version: 0.1.0
 category: Governance
-domain: delegationmd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -17,7 +16,6 @@ spec_type: static
 # DELEGATION.md
 
 **Category:** Governance
-**Domain:** delegationmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

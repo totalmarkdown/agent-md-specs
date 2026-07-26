@@ -2,7 +2,6 @@
 spec_name: SOCIALS.md
 spec_version: 0.1.0
 category: Social
-domain: socialsmd.dev
 priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SOCIALS.md
 
 **Category:** Social
-**Domain:** socialsmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

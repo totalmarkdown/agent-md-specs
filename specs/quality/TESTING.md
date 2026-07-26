@@ -2,7 +2,6 @@
 spec_name: TESTING.md
 spec_version: 0.1.0
 category: Quality
-domain: testingmd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # TESTING.md
 
 **Category:** Quality
-**Domain:** testingmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

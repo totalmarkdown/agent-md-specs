@@ -2,7 +2,6 @@
 spec_name: DREAM.md
 spec_version: 0.1.0
 category: Personality
-domain: dreammd.dev
 priority: Low
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # DREAM.md
 
 **Category:** Personality
-**Domain:** dreammd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: MISSION.md
 spec_version: 0.1.0
 category: Organizational Identity
-domain: missionmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MISSION.md
 
 **Category:** Organizational Identity
-**Domain:** missionmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

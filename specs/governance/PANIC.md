@@ -2,7 +2,6 @@
 spec_name: PANIC.md
 spec_version: 0.1.0
 category: Safety
-domain: panicmd.dev
 priority: High
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PANIC.md
 
 **Category:** Safety
-**Domain:** panicmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

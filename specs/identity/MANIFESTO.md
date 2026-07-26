@@ -2,7 +2,6 @@
 spec_name: MANIFESTO.md
 spec_version: 0.1.0
 category: Identity
-domain: manifestomd.dev
 priority: Medium
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MANIFESTO.md
 
 **Category:** Identity
-**Domain:** manifestomd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

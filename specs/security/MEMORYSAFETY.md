@@ -2,7 +2,6 @@
 spec_name: MEMORYSAFETY.md
 spec_version: 0.1.0
 category: Security
-domain: memorysafetymd.dev
 priority: Very High
 volume: "Vol 15 — Shared Context & Memory Governance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # MEMORYSAFETY.md
 
 **Category:** Security
-**Domain:** memorysafetymd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

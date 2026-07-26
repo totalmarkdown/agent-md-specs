@@ -2,7 +2,6 @@
 spec_name: PROMPTSHIELD.md
 spec_version: 0.1.0
 category: Security
-domain: promptshieldmd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # PROMPTSHIELD.md
 
 **Category:** Security
-**Domain:** promptshieldmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

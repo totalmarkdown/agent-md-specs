@@ -2,7 +2,6 @@
 spec_name: STATUS.md
 spec_version: 0.1.0
 category: Operations
-domain: statusmd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # STATUS.md
 
 **Category:** Operations
-**Domain:** statusmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

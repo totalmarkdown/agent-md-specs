@@ -2,7 +2,6 @@
 spec_name: SPECIALSAUCE.md
 spec_version: 0.1.0
 category: Competitive/Identity
-domain: specialsaucemd.dev
 priority: High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SPECIALSAUCE.md
 
 **Category:** Competitive/Identity
-**Domain:** specialsaucemd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

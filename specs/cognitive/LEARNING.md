@@ -2,7 +2,6 @@
 spec_name: LEARNING.md
 spec_version: 0.1.0
 category: Cognitive/Growth
-domain: learningmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # LEARNING.md
 
 **Category:** Cognitive/Growth
-**Domain:** learningmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

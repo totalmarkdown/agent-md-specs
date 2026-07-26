@@ -2,7 +2,6 @@
 spec_name: STRATEGY.md
 spec_version: 0.1.0
 category: Organizational
-domain: strategymd.dev
 priority: Medium
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # STRATEGY.md
 
 **Category:** Organizational
-**Domain:** strategymd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: BRAND.md
 spec_version: 0.1.0
 category: Marketing/Identity
-domain: brandmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # BRAND.md
 
 **Category:** Marketing/Identity
-**Domain:** brandmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: GUARDRAILS.md
 spec_version: 0.1.0
 category: Safety/Governance
-domain: guardrailsmd.dev
 priority: Very High
 volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # GUARDRAILS.md
 
 **Category:** Safety/Governance
-**Domain:** guardrailsmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

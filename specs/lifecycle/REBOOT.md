@@ -2,7 +2,6 @@
 spec_name: REBOOT.md
 spec_version: 0.1.0
 category: Lifecycle
-domain: rebootmd.dev
 priority: High
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REBOOT.md
 
 **Category:** Lifecycle
-**Domain:** rebootmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

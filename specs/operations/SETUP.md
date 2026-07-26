@@ -2,7 +2,6 @@
 spec_name: SETUP.md
 spec_version: 0.1.0
 category: Operations
-domain: setupmd.dev
 priority: High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SETUP.md
 
 **Category:** Operations
-**Domain:** setupmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

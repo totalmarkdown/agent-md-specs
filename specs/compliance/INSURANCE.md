@@ -2,7 +2,6 @@
 spec_name: INSURANCE.md
 spec_version: 0.1.0
 category: Legal
-domain: insurancemd.dev
 priority: Low
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # INSURANCE.md
 
 **Category:** Legal
-**Domain:** insurancemd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

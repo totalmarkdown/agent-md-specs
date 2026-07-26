@@ -2,7 +2,6 @@
 spec_name: PERSONA.md
 spec_version: 0.1.0
 category: Identity
-domain: personamd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PERSONA.md
 
 **Category:** Identity
-**Domain:** personamd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

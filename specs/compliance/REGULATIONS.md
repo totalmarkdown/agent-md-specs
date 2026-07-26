@@ -2,7 +2,6 @@
 spec_name: REGULATIONS.md
 spec_version: 0.1.0
 category: Compliance
-domain: regulationsmd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REGULATIONS.md
 
 **Category:** Compliance
-**Domain:** regulationsmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

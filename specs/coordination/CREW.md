@@ -2,7 +2,6 @@
 spec_name: CREW.md
 spec_version: 0.1.0
 category: Coordination
-domain: crewmd.dev
 priority: High
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CREW.md
 
 **Category:** Coordination
-**Domain:** crewmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: IDENTITY.md
 spec_version: 0.1.0
 category: Governance
-domain: identitymd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # IDENTITY.md
 
 **Category:** Governance
-**Domain:** identitymd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

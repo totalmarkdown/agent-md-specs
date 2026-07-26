@@ -2,7 +2,6 @@
 spec_name: SHAREDCONTEXT.md
 spec_version: 0.1.0
 category: Coordination
-domain: sharedcontextmd.dev
 priority: Very High
 volume: "Vol 15 — Shared Context & Memory Governance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # SHAREDCONTEXT.md
 
 **Category:** Coordination
-**Domain:** sharedcontextmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

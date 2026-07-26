@@ -2,7 +2,6 @@
 spec_name: WHOAMI.md
 spec_version: 0.1.0
 category: Identity
-domain: whoamimd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # WHOAMI.md
 
 **Category:** Identity
-**Domain:** whoamimd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

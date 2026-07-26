@@ -2,7 +2,6 @@
 spec_name: GDPR.md
 spec_version: 0.1.0
 category: Compliance
-domain: gdprmd.dev
 priority: High
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # GDPR.md
 
 **Category:** Compliance
-**Domain:** gdprmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

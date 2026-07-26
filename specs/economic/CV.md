@@ -2,7 +2,6 @@
 spec_name: CV.md
 spec_version: 0.1.0
 category: Economic
-domain: cvmd.dev
 priority: High
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CV.md
 
 **Category:** Economic
-**Domain:** cvmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

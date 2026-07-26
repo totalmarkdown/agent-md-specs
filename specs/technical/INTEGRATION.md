@@ -2,7 +2,6 @@
 spec_name: INTEGRATION.md
 spec_version: 0.1.0
 category: Technical
-domain: integrationmd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # INTEGRATION.md
 
 **Category:** Technical
-**Domain:** integrationmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

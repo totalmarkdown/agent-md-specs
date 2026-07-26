@@ -2,7 +2,6 @@
 spec_name: PITCH.md
 spec_version: 0.1.0
 category: Marketing/Discovery
-domain: pitchmd.dev
 priority: Very High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PITCH.md
 
 **Category:** Marketing/Discovery
-**Domain:** pitchmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: OUTPUT.md
 spec_version: 0.1.0
 category: Technical/Interface
-domain: outputmd.dev
 priority: Very High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # OUTPUT.md
 
 **Category:** Technical/Interface
-**Domain:** outputmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

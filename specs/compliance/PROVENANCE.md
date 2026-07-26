@@ -2,7 +2,6 @@
 spec_name: PROVENANCE.md
 spec_version: 0.1.0
 category: Compliance
-domain: provenancemd.dev
 priority: High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # PROVENANCE.md
 
 **Category:** Compliance
-**Domain:** provenancemd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

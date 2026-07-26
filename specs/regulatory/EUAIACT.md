@@ -2,7 +2,6 @@
 spec_name: EUAIACT.md
 spec_version: 0.1.0
 category: Regulatory Compliance
-domain: euaiactmd.dev
 priority: Very High
 volume: "Vol 9 — Guardrails & Regulatory Compliance Library"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # EUAIACT.md
 
 **Category:** Regulatory Compliance
-**Domain:** euaiactmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

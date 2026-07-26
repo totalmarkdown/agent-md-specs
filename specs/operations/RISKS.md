@@ -2,7 +2,6 @@
 spec_name: RISKS.md
 spec_version: 0.1.0
 category: Strategic/Operations
-domain: risksmd.dev
 priority: Medium
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # RISKS.md
 
 **Category:** Strategic/Operations
-**Domain:** risksmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 
