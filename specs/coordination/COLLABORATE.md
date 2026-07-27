@@ -2,7 +2,6 @@
 spec_name: COLLABORATE.md
 spec_version: 0.1.0
 category: Coordination
-domain: collaboratemd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # COLLABORATE.md
 
 **Category:** Coordination
-**Domain:** collaboratemd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

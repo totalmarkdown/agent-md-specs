@@ -2,7 +2,6 @@
 spec_name: LEASTPRIVILEGE.md
 spec_version: 0.1.0
 category: Governance
-domain: leastprivilegemd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -17,7 +16,6 @@ spec_type: static
 # LEASTPRIVILEGE.md
 
 **Category:** Governance
-**Domain:** leastprivilegemd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

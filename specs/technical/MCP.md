@@ -2,7 +2,6 @@
 spec_name: MCP.md
 spec_version: 0.1.0
 category: Technical
-domain: mcpmd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MCP.md
 
 **Category:** Technical
-**Domain:** mcpmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

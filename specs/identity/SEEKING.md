@@ -2,7 +2,6 @@
 spec_name: SEEKING.md
 spec_version: 0.1.0
 category: Identity
-domain: seekingmd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # SEEKING.md
 
 **Category:** Identity
-**Domain:** seekingmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: NETWORK.md
 spec_version: 0.1.0
 category: Technical
-domain: networkmd.dev
 priority: High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # NETWORK.md
 
 **Category:** Technical
-**Domain:** networkmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

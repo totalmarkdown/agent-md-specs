@@ -2,7 +2,6 @@
 spec_name: REPUTATION.md
 spec_version: 0.1.0
 category: Identity
-domain: reputationmd.dev
 priority: Medium
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REPUTATION.md
 
 **Category:** Identity
-**Domain:** reputationmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

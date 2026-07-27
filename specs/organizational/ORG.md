@@ -2,7 +2,6 @@
 spec_name: ORG.md
 spec_version: 0.1.0
 category: Organizational
-domain: orgmd.dev
 priority: High
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ORG.md
 
 **Category:** Organizational
-**Domain:** orgmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

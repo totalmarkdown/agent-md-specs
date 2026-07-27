@@ -2,7 +2,6 @@
 spec_name: ONBOARDING.md
 spec_version: 0.1.0
 category: Identity
-domain: onboardingmd.dev
 priority: Medium
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ONBOARDING.md
 
 **Category:** Identity
-**Domain:** onboardingmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

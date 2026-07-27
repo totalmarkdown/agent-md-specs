@@ -2,7 +2,6 @@
 spec_name: ENV.md
 spec_version: 0.1.0
 category: Technical
-domain: envmd.dev
 priority: High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ENV.md
 
 **Category:** Technical
-**Domain:** envmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

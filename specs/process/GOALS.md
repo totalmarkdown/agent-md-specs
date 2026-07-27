@@ -2,7 +2,6 @@
 spec_name: GOALS.md
 spec_version: 0.1.0
 category: Process
-domain: goalsmd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # GOALS.md
 
 **Category:** Process
-**Domain:** goalsmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

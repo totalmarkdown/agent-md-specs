@@ -2,7 +2,6 @@
 spec_name: DEPENDENCIES.md
 spec_version: 0.1.0
 category: Technical
-domain: dependenciesmd.dev
 priority: High
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # DEPENDENCIES.md
 
 **Category:** Technical
-**Domain:** dependenciesmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

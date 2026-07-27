@@ -2,7 +2,6 @@
 spec_name: RULES.md
 spec_version: 0.1.0
 category: Governance
-domain: rulesmd.dev
 priority: High
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # RULES.md
 
 **Category:** Governance
-**Domain:** rulesmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

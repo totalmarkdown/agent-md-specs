@@ -2,7 +2,6 @@
 spec_name: HEARTBEAT.md
 spec_version: 0.1.0
 category: Operations
-domain: heartbeatmd.dev
 priority: High
 volume: "Vol 8 — Technical"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # HEARTBEAT.md
 
 **Category:** Operations
-**Domain:** heartbeatmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: CONSENT.md
 spec_version: 0.1.0
 category: Compliance
-domain: consentmd.dev
 priority: High
 volume: "Vol 16 — Resilience & Consent"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CONSENT.md
 
 **Category:** Compliance
-**Domain:** consentmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: CIRCUITBREAKER.md
 spec_version: 0.1.0
 category: Operations
-domain: circuitbreakermd.dev
 priority: Very High
 volume: "Vol 16 — Resilience & Consent"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # CIRCUITBREAKER.md
 
 **Category:** Operations
-**Domain:** circuitbreakermd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

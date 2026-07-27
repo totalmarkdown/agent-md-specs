@@ -2,7 +2,6 @@
 spec_name: A2A.md
 spec_version: 0.1.0
 category: Technical
-domain: a2amd.dev
 priority: High
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # A2A.md
 
 **Category:** Technical
-**Domain:** a2amd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

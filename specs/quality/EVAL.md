@@ -2,7 +2,6 @@
 spec_name: EVAL.md
 spec_version: 0.1.0
 category: Quality
-domain: evalmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # EVAL.md
 
 **Category:** Quality
-**Domain:** evalmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

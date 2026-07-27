@@ -2,7 +2,6 @@
 spec_name: COMPETITIVE.md
 spec_version: 0.1.0
 category: Strategic/Marketing
-domain: competitivemd.dev
 priority: Medium
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # COMPETITIVE.md
 
 **Category:** Strategic/Marketing
-**Domain:** competitivemd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

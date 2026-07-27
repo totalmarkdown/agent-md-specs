@@ -2,7 +2,6 @@
 spec_name: REQUIREMENTS.md
 spec_version: 0.1.0
 category: Operations
-domain: requirementsmd.dev
 priority: Very High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REQUIREMENTS.md
 
 **Category:** Operations
-**Domain:** requirementsmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

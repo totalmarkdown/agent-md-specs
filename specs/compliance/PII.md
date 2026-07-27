@@ -2,7 +2,6 @@
 spec_name: PII.md
 spec_version: 0.1.0
 category: Compliance
-domain: piimd.dev
 priority: High
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # PII.md
 
 **Category:** Compliance
-**Domain:** piimd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

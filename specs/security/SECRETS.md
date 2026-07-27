@@ -2,7 +2,6 @@
 spec_name: SECRETS.md
 spec_version: 0.1.0
 category: Security
-domain: secretsmd.dev
 priority: Very High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SECRETS.md
 
 **Category:** Security
-**Domain:** secretsmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

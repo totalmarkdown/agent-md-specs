@@ -2,7 +2,6 @@
 spec_name: EASTEREGG.md
 spec_version: 0.1.0
 category: Community
-domain: eastereggmd.dev
 priority: Low
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # EASTEREGG.md
 
 **Category:** Community
-**Domain:** eastereggmd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

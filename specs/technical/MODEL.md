@@ -2,7 +2,6 @@
 spec_name: MODEL.md
 spec_version: 0.1.0
 category: Technical
-domain: modelmd.dev
 priority: High
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MODEL.md
 
 **Category:** Technical
-**Domain:** modelmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -2,7 +2,6 @@
 spec_name: VISION.md
 spec_version: 0.1.0
 category: Organizational Identity
-domain: visionmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # VISION.md
 
 **Category:** Organizational Identity
-**Domain:** visionmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

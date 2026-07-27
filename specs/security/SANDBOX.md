@@ -2,7 +2,6 @@
 spec_name: SANDBOX.md
 spec_version: 0.1.0
 category: Security
-domain: sandboxmd.dev
 priority: Medium
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SANDBOX.md
 
 **Category:** Security
-**Domain:** sandboxmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

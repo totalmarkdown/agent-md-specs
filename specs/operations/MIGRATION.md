@@ -2,7 +2,6 @@
 spec_name: MIGRATION.md
 spec_version: 0.1.0
 category: Operations
-domain: migrationmd.dev
 priority: Medium
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MIGRATION.md
 
 **Category:** Operations
-**Domain:** migrationmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

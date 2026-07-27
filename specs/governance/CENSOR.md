@@ -2,7 +2,6 @@
 spec_name: CENSOR.md
 spec_version: 0.1.0
 category: Governance
-domain: censormd.dev
 priority: High
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CENSOR.md
 
 **Category:** Governance
-**Domain:** censormd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

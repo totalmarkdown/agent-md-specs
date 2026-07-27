@@ -2,7 +2,6 @@
 spec_name: ENGINE.md
 spec_version: 0.1.0
 category: Technical
-domain: enginemd.dev
 priority: Medium
 volume: "Vol 8 — Technical"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ENGINE.md
 
 **Category:** Technical
-**Domain:** enginemd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

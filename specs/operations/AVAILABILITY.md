@@ -2,7 +2,6 @@
 spec_name: AVAILABILITY.md
 spec_version: 0.1.0
 category: Operations
-domain: availabilitymd.dev
 priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # AVAILABILITY.md
 
 **Category:** Operations
-**Domain:** availabilitymd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

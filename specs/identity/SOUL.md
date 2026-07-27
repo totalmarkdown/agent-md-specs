@@ -2,7 +2,6 @@
 spec_name: SOUL.md
 spec_version: 0.1.0
 category: Identity
-domain: soulmd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # SOUL.md
 
 **Category:** Identity
-**Domain:** soulmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

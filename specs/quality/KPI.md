@@ -2,7 +2,6 @@
 spec_name: KPI.md
 spec_version: 0.1.0
 category: Performance/Governance
-domain: kpimd.dev
 priority: High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # KPI.md
 
 **Category:** Performance/Governance
-**Domain:** kpimd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

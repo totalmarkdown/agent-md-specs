@@ -2,7 +2,6 @@
 spec_name: MOAT.md
 spec_version: 0.1.0
 category: Competitive/Strategic
-domain: moatmd.dev
 priority: High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # MOAT.md
 
 **Category:** Competitive/Strategic
-**Domain:** moatmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

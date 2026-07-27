@@ -2,7 +2,6 @@
 spec_name: ENFORCEMENT.md
 spec_version: 0.1.0
 category: Governance
-domain: enforcementmd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ENFORCEMENT.md
 
 **Category:** Governance
-**Domain:** enforcementmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

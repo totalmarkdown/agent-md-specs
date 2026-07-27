@@ -2,7 +2,6 @@
 spec_name: EXAMPLES.md
 spec_version: 0.1.0
 category: Discovery/Marketing
-domain: examplesmd.dev
 priority: High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # EXAMPLES.md
 
 **Category:** Discovery/Marketing
-**Domain:** examplesmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

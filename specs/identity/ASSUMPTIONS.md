@@ -2,7 +2,6 @@
 spec_name: ASSUMPTIONS.md
 spec_version: 0.1.0
 category: Transparency/Trust
-domain: assumptionsmd.dev
 priority: Medium
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ASSUMPTIONS.md
 
 **Category:** Transparency/Trust
-**Domain:** assumptionsmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

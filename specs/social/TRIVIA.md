@@ -2,7 +2,6 @@
 spec_name: TRIVIA.md
 spec_version: 0.1.0
 category: Community
-domain: triviamd.dev
 priority: Medium
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # TRIVIA.md
 
 **Category:** Community
-**Domain:** triviamd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

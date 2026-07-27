@@ -2,7 +2,6 @@
 spec_name: CERTIFICATIONS.md
 spec_version: 0.1.0
 category: Compliance
-domain: certificationsmd.dev
 priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CERTIFICATIONS.md
 
 **Category:** Compliance
-**Domain:** certificationsmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

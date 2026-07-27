@@ -2,7 +2,6 @@
 spec_name: ACCESS.md
 spec_version: 0.1.0
 category: Security
-domain: accessmd.dev
 priority: High
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ACCESS.md
 
 **Category:** Security
-**Domain:** accessmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

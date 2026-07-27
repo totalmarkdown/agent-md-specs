@@ -2,7 +2,6 @@
 spec_name: SECURITY.md
 spec_version: 0.1.0
 category: Compliance
-domain: securitymd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SECURITY.md
 
 **Category:** Compliance
-**Domain:** securitymd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

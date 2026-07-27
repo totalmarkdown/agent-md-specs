@@ -2,7 +2,6 @@
 spec_name: SESSION.md
 spec_version: 0.1.0
 category: Lifecycle
-domain: sessionmd.dev
 priority: High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: runtime_schema
 # SESSION.md
 
 **Category:** Lifecycle
-**Domain:** sessionmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Runtime Schema
 

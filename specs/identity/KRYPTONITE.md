@@ -2,7 +2,6 @@
 spec_name: KRYPTONITE.md
 spec_version: 0.1.0
 category: Transparency
-domain: kryptonitemd.dev
 priority: High
 volume: "Vol 8 — Repos, Compliance & The Weird Wonderful Ones"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # KRYPTONITE.md
 
 **Category:** Transparency
-**Domain:** kryptonitemd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

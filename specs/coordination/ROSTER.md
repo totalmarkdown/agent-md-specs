@@ -2,7 +2,6 @@
 spec_name: ROSTER.md
 spec_version: 0.1.0
 category: Coordination
-domain: rostermd.dev
 priority: High
 volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # ROSTER.md
 
 **Category:** Coordination
-**Domain:** rostermd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

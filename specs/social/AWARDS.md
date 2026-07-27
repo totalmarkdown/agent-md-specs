@@ -2,7 +2,6 @@
 spec_name: AWARDS.md
 spec_version: 0.1.0
 category: Social
-domain: awardsmd.dev
 priority: Low
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # AWARDS.md
 
 **Category:** Social
-**Domain:** awardsmd.dev
 **Priority:** Low
 **Version:** 0.1.0 **Type:** Static
 

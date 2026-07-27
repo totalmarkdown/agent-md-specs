@@ -2,7 +2,6 @@
 spec_name: INPUT.md
 spec_version: 0.1.0
 category: Technical/Interface
-domain: inputmd.dev
 priority: Very High
 volume: "Vol 11 — Performance, Defensibility & Interface Contracts"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # INPUT.md
 
 **Category:** Technical/Interface
-**Domain:** inputmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

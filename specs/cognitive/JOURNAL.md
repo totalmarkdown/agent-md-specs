@@ -2,7 +2,6 @@
 spec_name: JOURNAL.md
 spec_version: 0.1.0
 category: Cognitive
-domain: journalmd.dev
 priority: Medium
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # JOURNAL.md
 
 **Category:** Cognitive
-**Domain:** journalmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

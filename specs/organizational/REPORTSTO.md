@@ -2,7 +2,6 @@
 spec_name: REPORTSTO.md
 spec_version: 0.1.0
 category: Organizational
-domain: reportstomd.dev
 priority: High
 volume: "Vol 3 — Forward-Thinking Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REPORTSTO.md
 
 **Category:** Organizational
-**Domain:** reportstomd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

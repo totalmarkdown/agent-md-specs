@@ -2,7 +2,6 @@
 spec_name: QUOTA.md
 spec_version: 0.1.0
 category: Governance
-domain: quotamd.dev
 priority: Medium
 volume: "Vol 12 — Fleet Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # QUOTA.md
 
 **Category:** Governance
-**Domain:** quotamd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

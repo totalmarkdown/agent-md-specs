@@ -2,7 +2,6 @@
 spec_name: BACKUP.md
 spec_version: 0.1.0
 category: Operations
-domain: backupmd.dev
 priority: Medium
 volume: "Vol 2 — Extended Operations"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # BACKUP.md
 
 **Category:** Operations
-**Domain:** backupmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

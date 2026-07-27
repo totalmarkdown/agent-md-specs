@@ -2,7 +2,6 @@
 spec_name: REVIEWS.md
 spec_version: 0.1.0
 category: Social
-domain: reviewsmd.dev
 priority: Medium
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # REVIEWS.md
 
 **Category:** Social
-**Domain:** reviewsmd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

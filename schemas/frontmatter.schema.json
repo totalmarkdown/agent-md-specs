@@ -94,11 +94,6 @@
     "volume": {
       "type": "string",
       "pattern": "^Vol \\d+"
-    },
-    "domain": {
-      "type": "string",
-      "pattern": "^[a-z0-9]+md\\.dev$",
-      "description": "Reserved .dev domain (e.g., delegationmd.dev)"
     }
   },
   "if": {
@@ -114,8 +109,7 @@
       "spec_version",
       "category",
       "tier",
-      "priority",
-      "domain"
+      "priority"
     ]
   }
 }

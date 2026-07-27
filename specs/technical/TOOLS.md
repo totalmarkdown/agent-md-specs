@@ -2,7 +2,6 @@
 spec_name: TOOLS.md
 spec_version: 0.1.0
 category: Technical
-domain: toolsmd.dev
 priority: High
 volume: "Vol 5 — Organizational & Validation"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # TOOLS.md
 
 **Category:** Technical
-**Domain:** toolsmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

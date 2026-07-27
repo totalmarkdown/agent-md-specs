@@ -2,7 +2,6 @@
 spec_name: CULTURE.md
 spec_version: 0.1.0
 category: Organizational Identity
-domain: culturemd.dev
 priority: Medium
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # CULTURE.md
 
 **Category:** Organizational Identity
-**Domain:** culturemd.dev
 **Priority:** Medium
 **Version:** 0.1.0 **Type:** Static
 

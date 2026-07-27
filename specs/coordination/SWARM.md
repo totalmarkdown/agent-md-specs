@@ -2,7 +2,6 @@
 spec_name: SWARM.md
 spec_version: 0.1.0
 category: Coordination
-domain: swarmmd.dev
 priority: High
 volume: "Vol 6 — Hierarchy Completion & Identity Anchors"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # SWARM.md
 
 **Category:** Coordination
-**Domain:** swarmmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

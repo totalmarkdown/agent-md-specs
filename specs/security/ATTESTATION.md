@@ -2,7 +2,6 @@
 spec_name: ATTESTATION.md
 spec_version: 0.1.0
 category: Security
-domain: attestationmd.dev
 priority: Very High
 volume: "Vol 14 — Agent Identity, Accountability & Compliance"
 maintained_by: TotalMarkdown.ai
@@ -17,7 +16,6 @@ spec_type: static
 # ATTESTATION.md
 
 **Category:** Security
-**Domain:** attestationmd.dev
 **Priority:** Very High
 **Version:** 0.1.0 **Type:** Static
 

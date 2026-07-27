@@ -2,7 +2,6 @@
 spec_name: WAKEUP.md
 spec_version: 0.1.0
 category: Lifecycle
-domain: wakeupmd.dev
 priority: High
 volume: "Vol 7 — Inner Life & Lifecycle Rituals"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # WAKEUP.md
 
 **Category:** Lifecycle
-**Domain:** wakeupmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 
