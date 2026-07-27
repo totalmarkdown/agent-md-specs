@@ -2,7 +2,6 @@
 spec_name: TESTSCORES.md
 spec_version: 0.1.0
 category: Quality/Trust
-domain: testscoresmd.dev
 priority: High
 volume: "Vol 10 — Purpose, Identity & Institutional Knowledge"
 maintained_by: TotalMarkdown.ai
@@ -15,7 +14,6 @@ spec_type: static
 # TESTSCORES.md
 
 **Category:** Quality/Trust
-**Domain:** testscoresmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

@@ -4,7 +4,6 @@ spec_version: "1.0.0"
 category: "Identity"
 tier: core
 priority: High
-domain: whoamimd.dev
 agent_id: "d4e8f1a3-7b2c-4d9e-a6f5-3c1d8e7b4a2f"
 agent_name: "Atlas"
 version: "2.1.0"

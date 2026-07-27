@@ -4,7 +4,6 @@ spec_version: 0.1.0
 category: Governance
 tier: core
 priority: Very High
-domain: delegationmd.dev
 ---
 
 # [REPLACE THIS — Agent Name] — Authority Delegation

@@ -4,7 +4,6 @@ spec_version: 0.1.0
 category: Business
 tier: core
 priority: High
-domain: hirememd.dev
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 status: "[REPLACE THIS — available | busy | unavailable]"

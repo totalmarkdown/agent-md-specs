@@ -2,7 +2,6 @@
 spec_name: WALLET.md
 spec_version: 0.1.0
 category: Economic
-domain: walletmd.dev
 priority: High
 volume: "Vol 4 — Economic Identity"
 maintained_by: TotalMarkdown.ai
@@ -20,7 +19,6 @@ spec_type: static
 # WALLET.md
 
 **Category:** Economic
-**Domain:** walletmd.dev
 **Priority:** High
 **Version:** 0.1.0 **Type:** Static
 

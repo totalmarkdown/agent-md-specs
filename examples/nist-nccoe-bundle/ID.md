@@ -4,7 +4,6 @@ spec_version: "1.0.0"
 category: "Identity"
 tier: core
 priority: High
-domain: idmd.dev
 agent_name: "Atlas"
 agent_version: "2.1.0"
 ---
