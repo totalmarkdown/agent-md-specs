@@ -597,7 +597,7 @@ These Core specs have their own repositories for independent adoption:
 
 | Spec | Repo | Scope | Domain |
 |------|------|---------------------|--------|
-| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values | soulmd.dev *(not owned)* |
+| SOUL.md | [totalmarkdown/soul.md](https://github.com/totalmarkdown/soul.md) | Agent personality and values | — |
 | TEAM.md | [totalmarkdown/team.md](https://github.com/totalmarkdown/team.md) | Multi-agent team coordination | [teammd.dev](https://teammd.dev) |
 | ESCALATION.md | [totalmarkdown/escalation.md](https://github.com/totalmarkdown/escalation.md) | Human-in-the-loop safety | [escalationmd.dev](https://escalationmd.dev) |
 | WHOAMI.md | [totalmarkdown/whoami.md](https://github.com/totalmarkdown/whoami.md) | Agent identity and verification | [whoamimd.dev](https://whoamimd.dev) |
@@ -605,7 +605,7 @@ These Core specs have their own repositories for independent adoption:
 | DELEGATION.md | [totalmarkdown/delegation.md](https://github.com/totalmarkdown/delegation.md) | Authority delegation chains | [delegationmd.dev](https://delegationmd.dev) |
 | AUDITTRAIL.md | [totalmarkdown/audittrail.md](https://github.com/totalmarkdown/audittrail.md) | Tamper-evident action logging | [audittrailmd.dev](https://audittrailmd.dev) |
 | CONSENT.md | [totalmarkdown/consent.md](https://github.com/totalmarkdown/consent.md) | User consent lifecycle (GDPR/CCPA) | [consentmd.dev](https://consentmd.dev) |
-| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity | walletmd.dev *(not owned)* |
+| WALLET.md | [totalmarkdown/wallet.md](https://github.com/totalmarkdown/wallet.md) | Agent financial identity | — |
 | HIREME.md | [totalmarkdown/hireme.md](https://github.com/totalmarkdown/hireme.md) | Agent hiring and engagement | [hirememd.dev](https://hirememd.dev) |
 
 ---
