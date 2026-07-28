@@ -37,7 +37,7 @@ Every spec must have:
 
 ## Domain convention
 
-Each spec has a dedicated .dev domain (e.g. soulmd.dev, teammd.dev).
+Each spec has a dedicated .dev domain (e.g. teammd.dev).
 When proposing a new spec, verify the .dev domain is available
 before submitting. The domain establishes the spec as a
 first-class standard rather than a loose convention.
