@@ -6,6 +6,8 @@ tier: extended
 agent_name: "Aria"
 version: "2.4.1"
 org: "Meridian"
+email: "support@meridian.io"
+human_owner: "Meridian Support Lead"
 updated: "2026-03-01"
 ---
 

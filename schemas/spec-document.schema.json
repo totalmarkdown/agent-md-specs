@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://totalmarkdown.ai/schemas/spec-document.schema.json",
+  "title": "agent-md-specs Specification Document",
+  "description": "Frontmatter contract for the specification documents in specs/ — the shared frontmatter fields plus the machine-validated lifecycle marker defined in SPEC_LIFECYCLE.md. Adopter instance documents (examples/, templates/) validate against frontmatter.schema.json and the per-spec schemas instead; see schemas/README.md.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "frontmatter.schema.json"
+    }
+  ],
+  "required": [
+    "status"
+  ],
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "proposed",
+        "stable",
+        "deprecated",
+        "retired"
+      ],
+      "description": "Lifecycle stage of this specification, per SPEC_LIFECYCLE.md. Independent of spec_version."
+    },
+    "proposed_on": {
+      "type": "string",
+      "format": "date",
+      "description": "Date the community review window opened. Set when status becomes proposed."
+    },
+    "superseded_by": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Spec files that replace this one. Set when status becomes deprecated."
+    }
+  }
+}

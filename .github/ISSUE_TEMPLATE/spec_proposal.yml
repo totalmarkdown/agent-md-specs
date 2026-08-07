@@ -31,15 +31,6 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: domain
-    attributes:
-      label: Domain
-      description: The .dev domain for the spec (e.g. `myspecmd.dev`). Verify availability.
-      placeholder: myspecmd.dev
-    validations:
-      required: true
-
   - type: textarea
     id: purpose
     attributes:
@@ -79,8 +70,6 @@ body:
       label: Confirmation
       options:
         - label: I agree to release this contribution under CC0 1.0 Universal (public domain).
-          required: true
-        - label: I verified the .dev domain is available (or I own it).
           required: true
         - label: I have read [CONTRIBUTING.md](../../CONTRIBUTING.md) and [GOVERNANCE.md](../../GOVERNANCE.md).
           required: true

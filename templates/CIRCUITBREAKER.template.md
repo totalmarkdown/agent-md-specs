@@ -1,9 +1,8 @@
 ---
 spec_name: CIRCUITBREAKER.md
 spec_version: 0.1.0
-category: Safety
-domain: specmd.dev
-priority: P0
+category: Operations
+priority: Very High
 tier: core
 ---
 

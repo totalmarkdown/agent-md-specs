@@ -1,9 +1,8 @@
 ---
 spec_name: OWNER.md
 spec_version: 0.1.0
-category: Governance
-domain: specmd.dev
-priority: P1
+category: Economic
+priority: High
 tier: core
 ---
 

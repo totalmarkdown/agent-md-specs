@@ -2,8 +2,7 @@
 spec_name: ID.md
 spec_version: 0.1.0
 category: Identity
-domain: specmd.dev
-priority: P0
+priority: High
 tier: core
 ---
 

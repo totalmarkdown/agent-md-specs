@@ -2,6 +2,126 @@
 
 All notable changes to agent-md-specs are documented here.
 
+## [1.3.2] — Unreleased
+
+A maintenance release. No spec changes its meaning, no spec changes stage,
+and no spec changes `spec_version`. It fixes the frontmatter of the files
+adopters copy first, puts them under CI, and repairs three places where
+the repository's governance documents contradicted themselves or the
+corpus.
+
+### Added
+
+- **`tools/validate_corpus.py`** — the schema validation CI runs, as a
+  checked-in script instead of inline workflow YAML, so contributors can
+  reproduce it. Validates all three document layers, resolves every `$ref`
+  against the local `schemas/` directory, and refuses unknown URIs rather
+  than fetching them.
+- **`schemas/spec-document.schema.json`** — the frontmatter contract for
+  specification documents: the shared fields plus a required lifecycle
+  `status`, constrained to `draft | proposed | stable | deprecated |
+  retired`, and an optional `proposed_on` date. The lifecycle marker that
+  governs the whole `SPEC_LIFECYCLE.md` ladder was previously validated by
+  nothing.
+- **`schemas/known-deviations.json`** — named, defect-attributed
+  validation failures that are deliberately not fixed yet. The validator
+  reports them and fails if one stops reproducing. Each entry is bound to a
+  signature of the exact error it names, so a materially different failure
+  at the same location is reported as unregistered rather than inheriting
+  the entry's excuse, and a listed document is counted as `known` rather
+  than `passed`. Together those keep the file from becoming a suppression
+  list.
+- **`tests/test_validate_corpus.py`** — regression tests for the validator
+  and the invariants this release establishes.
+- **Stable-gate reporting** — `tools/validate_corpus.py --stable-gate`
+  reports, per spec, the part of the Stable promotion criteria this
+  repository can check: a published schema, at least one example instance
+  document, and Level 3 conformance of those documents with no known
+  deviation registered against any of them.
+- **`status:` frontmatter on all 174 Draft specs.** The five specs
+  promoted in v1.3.1 already carried it.
+
+### Fixed
+
+- **`templates/` was outside CI entirely.** `validate-specs.yml` did not
+  trigger on `templates/**` and no step walked the directory. 31 of the 32
+  templates failed `frontmatter.schema.json` with 129 errors, and
+  `agent-md-validate templates/` reported 48 errors with 0 of 32 files
+  passing — the files an adopter copies first. Templates are now
+  validated, and their trigger paths are guarded by a test.
+- **Template frontmatter now matches the spec each template
+  instantiates.** Templates used a `P0/P1/P2` priority vocabulary that is
+  not in the schema enum (19 files), a `category: Observability` value
+  that does not exist (2 files), and in 12 cases no spec identity at all.
+  All 32 now carry their spec's `spec_name`, `spec_version`, `category`,
+  `priority` and `tier` verbatim.
+- **`templates/` was the last surface still asserting a per-spec
+  `domain`.** 19 of the 32 templates carried the boilerplate
+  `domain: specmd.dev`. TOTA-79 removed the field from `specs/**` and
+  `INDEX.md`, TOTA-90 from `examples/**`, TOTA-80 from the last two
+  third-party pointers in `README.md` and `CONTRIBUTING.md`; the
+  templates an adopter copies first were still handing out the pattern.
+  The field is now gone from the whole corpus. **No replacement field is
+  added** — the canonical location for every spec is the repository
+  itself. `specmd.dev` continues to forward to the `templates/`
+  directory; that is a redirect to a real directory, not a frontmatter
+  assertion.
+- **The frontmatter contract no longer asks for the removed field.**
+  `CONTRIBUTING.md` still listed `domain` among the required frontmatter
+  fields and gated new-spec proposals on ".dev domain availability";
+  `.github/PULL_REQUEST_TEMPLATE.md` still listed it in the frontmatter
+  checklist; `.github/ISSUE_TEMPLATE/spec_proposal.yml` still required a
+  Domain input and a domain-availability confirmation; and `README.md`
+  still told readers `INDEX.md` carried domains, which it has not since
+  TOTA-79. All corrected. A fail-closed regression now covers
+  `specs/**` and `templates/**` together, with `INDEX.md` kept as its own
+  separate assertion because it has no frontmatter to sweep.
+- **The per-spec JSON Schemas are now executed.** They were referenced
+  only by `schemas/README.md`; CI validated everything against
+  `frontmatter.schema.json` alone. They are now bound by filename to the
+  documents they describe.
+- **`README.md` and `SPEC_LIFECYCLE.md` published different stability
+  commitments for the same specs.** Both claimed all 179 specs were Draft
+  while five had been promoted to Proposed in v1.3.1 — Draft offers no
+  backward compatibility guarantee, Proposed offers best-effort. Both
+  documents now state 174 Draft / 5 Proposed, and a test fails if they
+  drift from the corpus again.
+- **Lifecycle stage is no longer encoded in the version number.** The
+  stage headings `Draft (v0.x.x)`, `Proposed (v0.5.0+)` and
+  `Stable (v1.0.0+)` made the most common governance action —
+  a breaking fix to a Proposed spec at `0.1.0` — inexpressible: semver
+  sent it to `1.0.0`, which the same document read as promotion to Stable.
+  Stage now lives solely in `status:`; while `spec_version < 1.0.0`
+  breaking changes bump the minor version.
+- **The Stable gate is implementable.** "Passes agent-md-validator Level
+  3" pointed at a check nothing executed, so no spec could be promoted
+  past Proposed. Level 3 now runs in CI and `--stable-gate` reports it.
+- **`examples/nist-nccoe-bundle/ENFORCEMENT.md`** declared
+  `drift_detection` as a string where `enforcement.schema.json` defines an
+  object; expanded to the documented `frequency` / `alert_mechanism` /
+  `auto_remediation` shape, matching what the document's own Drift
+  Detection section describes.
+- **`examples/customer-support-bundle/CONTACT.md`** satisfied no branch of
+  `contact.schema.json`'s `anyOf`; the support address and human owner it
+  already documents in the body are now declared in frontmatter.
+
+### Known deviations
+
+- `specs/identity/CONTACT.md` does not satisfy `contact.schema.json`. It is
+  a layer mismatch rather than a document defect — the schema requires a
+  contact endpoint because it describes a deployed agent's contact card,
+  and the specification that defines those fields correctly declares none
+  of them. Closing it means either splitting the per-spec schemas into a
+  specification contract and an instance contract, or relaxing the `anyOf`
+  on a Core-tier schema. Both are RFC-gated. Recorded in
+  `schemas/known-deviations.json`.
+- `status` is overloaded: lifecycle stage on a specification, agent
+  availability on a HIREME instance. The lifecycle enum is therefore
+  scoped to `spec-document.schema.json` rather than added to
+  `frontmatter.schema.json`, which would have invalidated adopter
+  documents using the field correctly under the other meaning. Resolving
+  the overload is a vocabulary change to published specs.
+
 ## [1.3.1] — 2026-04-18
 
 This release addresses findings from two independent pre-launch

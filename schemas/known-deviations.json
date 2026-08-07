@@ -1,0 +1,27 @@
+{
+  "$comment": "Schema validation failures that are known, named, and deliberately not fixed in this release. tools/validate_corpus.py reports every entry on each run and does not fail on it; it DOES fail when an entry stops reproducing, so this file cannot rot into a blanket suppression list. Every entry is bound to error_signature, a deterministic fingerprint of the exact error it names, so a materially different failure at the same path, schema, JSON path and keyword is reported as an unregistered failure rather than inheriting this entry's excuse. A document listed here has NOT passed validation: the validator counts it under 'known', never under 'passed', and an instance document listed here cannot supply Level-3 evidence for its spec's promotion to Stable. Adding an entry requires an owning defect id, a justification, and a signature read off a real run (python3 tools/validate_corpus.py --signatures). It is not a place to park ordinary bugs.",
+  "fields": {
+    "path": "repository-relative path of the document",
+    "schema": "schema file the failure comes from",
+    "json_path": "JSON Path of the failing instance location",
+    "keyword": "JSON Schema keyword that failed",
+    "error_signature": "SHA-256 over the error's structural shape: absolute schema path, failing keyword, that keyword's schema value, and recursively the same for every sub-error a composite keyword collected. Independent of instance values and of the rendered message, so unrelated frontmatter edits do not churn it — but a failure that changes shape at the same location no longer matches. Obtain it with: python3 tools/validate_corpus.py --signatures",
+    "surface": "specs | templates | examples",
+    "defect": "owning defect id",
+    "track": "governance track that owns the fix (0 = PR + maintainer review, 1 = RFC per SPEC_LIFECYCLE.md)",
+    "reason": "why it is not fixed here"
+  },
+  "deviations": [
+    {
+      "path": "specs/identity/CONTACT.md",
+      "schema": "contact.schema.json",
+      "json_path": "$",
+      "keyword": "anyOf",
+      "error_signature": "ccf48a40552db912ebc50023d073bccf492f198c0716b3fd22f90461d9712630",
+      "surface": "specs",
+      "defect": "CD-5c",
+      "track": 1,
+      "reason": "Layer mismatch, not a document defect. contact.schema.json requires one of mcp_endpoint/api_endpoint/email/human_owner, which describes a deployed agent's contact card. specs/identity/CONTACT.md is the specification that defines those fields and correctly declares none of them. Closing it needs a normative decision — either split the per-spec schemas into a specification contract and an instance contract, or relax the anyOf on a Core-tier schema. Both are RFC-gated changes to a Core spec and are out of scope for the v1.3.2 maintenance release."
+    }
+  ]
+}

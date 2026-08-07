@@ -9,7 +9,10 @@ version: "2.1.0"
 org: "Acme Corp"
 enforcement_model: "layered"
 ci_validator: "agent-md-validator v1.2.0"
-drift_detection: "continuous"
+drift_detection:
+  frequency: "continuous"
+  alert_mechanism: "compliance-drift.acme.corp webhook + PagerDuty on-call"
+  auto_remediation: "auto_halt"
 created: "2025-11-01"
 updated: "2026-03-15"
 ---

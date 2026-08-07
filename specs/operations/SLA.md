@@ -7,6 +7,7 @@ volume: "Vol 1 — Core Agent Specs"
 maintained_by: TotalMarkdown.ai
 license: CC0 1.0 Universal
 tier: core
+status: draft
 spec_type: static
 ---
 

@@ -1,4 +1,9 @@
 ---
+spec_name: ENGINE.md
+spec_version: 0.1.0
+category: Technical
+priority: Medium
+tier: extended
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 model_provider: "[REPLACE THIS — anthropic | openai | google | ollama | custom]"

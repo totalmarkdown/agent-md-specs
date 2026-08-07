@@ -13,6 +13,36 @@ curl -O https://raw.githubusercontent.com/totalmarkdown/agent-md-specs/main/temp
 mv SOUL.template.md SOUL.md
 ```
 
+## Frontmatter
+
+The first five frontmatter keys of every template — `spec_name`,
+`spec_version`, `category`, `priority`, `tier` — identify the spec the
+template instantiates and are copied verbatim from that spec. Keep them
+as they are; they are what a validator uses to know which contract your
+file is claiming to meet. Everything below them is a `[REPLACE THIS]`
+placeholder and is yours to fill in.
+
+There is no `domain` key. Templates assert no per-spec domain, and
+neither do the specs themselves — the canonical location for every spec
+is the [agent-md-specs
+repository](https://github.com/totalmarkdown/agent-md-specs). Adding a
+`domain` key to a template will fail CI.
+
+Every template in this directory is validated against
+`schemas/frontmatter.schema.json` on every push and pull request, so a
+template you copy starts conformant. Reproduce the check locally with:
+
+```bash
+pip install jsonschema pyyaml
+python3 tools/validate_corpus.py --surface templates
+```
+
+Templates keep the `.template.md` suffix while declaring the bare
+`spec_name` of the spec they instantiate, so `agent-md-validate` emits
+one `spec_name does not match filename` warning per template. That
+warning is expected and correct: it disappears the moment you rename the
+file to `SOUL.md` as the Quick Start above instructs.
+
 ## Available Templates
 
 ### Identity and Verification

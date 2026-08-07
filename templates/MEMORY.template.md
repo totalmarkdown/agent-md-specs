@@ -1,9 +1,8 @@
 ---
 spec_name: MEMORY.md
 spec_version: 0.1.0
-category: Coordination
-domain: specmd.dev
-priority: P1
+category: Cognitive
+priority: High
 tier: core
 ---
 

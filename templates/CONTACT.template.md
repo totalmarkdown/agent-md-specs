@@ -1,9 +1,8 @@
 ---
 spec_name: CONTACT.md
 spec_version: 0.1.0
-category: Coordination
-domain: specmd.dev
-priority: P2
+category: Communication
+priority: High
 tier: core
 ---
 

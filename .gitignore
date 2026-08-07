@@ -1,0 +1,7 @@
+# Byte-compiled artefacts from the local reproduction command documented in
+# templates/README.md and schemas/README.md:
+#     python3 tools/validate_corpus.py
+#     python3 -m pytest tests/
+__pycache__/
+*.py[cod]
+.pytest_cache/

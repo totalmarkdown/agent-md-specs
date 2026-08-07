@@ -1,4 +1,9 @@
 ---
+spec_name: WAKEUP.md
+spec_version: 0.1.0
+category: Lifecycle
+priority: High
+tier: core
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 boot_sequence: "[REPLACE THIS — fast | standard | full]"
