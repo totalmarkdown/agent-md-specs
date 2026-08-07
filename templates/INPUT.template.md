@@ -1,4 +1,9 @@
 ---
+spec_name: INPUT.md
+spec_version: 0.1.0
+category: Technical/Interface
+priority: Very High
+tier: core
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 created: "[REPLACE THIS — YYYY-MM-DD]"

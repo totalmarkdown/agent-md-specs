@@ -67,8 +67,11 @@ for the live debate on tier-promotion rules.
 ### Versioning
 
 - Individual specs use semver in their YAML frontmatter (`spec_version`).
+- A spec's lifecycle stage lives in its `status:` frontmatter, not in its
+  version number. Reaching a version does not promote a spec; see
+  [SPEC_LIFECYCLE.md § Versioning](./SPEC_LIFECYCLE.md#versioning).
 - The library itself is versioned by volume (Vol 1-16) combined with
-  semantic releases (current: v1.3.0).
+  semantic releases (current: v1.3.1).
 - Breaking changes to Core specs require a new major version plus a
   migration guide.
 

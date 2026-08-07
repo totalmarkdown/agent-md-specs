@@ -140,7 +140,13 @@ the NCCoE comment deadline. That cadence was driven by the deadline,
 not by maturity.
 
 Full transparency:
-- All 179 specs are at **Draft** stage (see [SPEC_LIFECYCLE.md](./SPEC_LIFECYCLE.md)).
+- **174** of the 179 specs are at **Draft** stage. The **5** Vol 14 specs
+  promoted in v1.3.1 — AUDITTRAIL, ATTESTATION, DELEGATION, INTENT and
+  LEASTPRIVILEGE — are at **Proposed** stage, with comment windows open
+  since 2026-04-18. Draft carries no backward compatibility guarantee;
+  Proposed carries best-effort compatibility and requires an RFC for
+  breaking changes (see [SPEC_LIFECYCLE.md](./SPEC_LIFECYCLE.md)). Each
+  spec states its own stage in its `status:` frontmatter.
 - The library has **not** been reviewed, adopted, or endorsed by NIST,
   OWASP, AAIF, or any standards body.
 - Submitting to the NCCoE concept paper means NIST *received* the work
@@ -693,7 +699,7 @@ Specs mapping to major regulatory frameworks:
 | [Technical](./specs/technical/) | 18 | APIs, tools, data, integration |
 
 → See [INDEX.md](INDEX.md) for the complete alphabetical index with
-domains, priorities, tiers, and file paths.
+priorities, tiers, and file paths.
 
 ---
 

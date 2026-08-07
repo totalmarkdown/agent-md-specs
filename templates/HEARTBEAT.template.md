@@ -1,4 +1,9 @@
 ---
+spec_name: HEARTBEAT.md
+spec_version: 0.1.0
+category: Operations
+priority: High
+tier: core
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 heartbeat_interval: "[REPLACE THIS — 5m | 15m | 1h | daily]"

@@ -1,9 +1,8 @@
 ---
 spec_name: GUARDRAILS.md
 spec_version: 0.1.0
-category: Safety
-domain: specmd.dev
-priority: P0
+category: Safety/Governance
+priority: Very High
 tier: core
 ---
 

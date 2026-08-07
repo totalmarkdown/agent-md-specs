@@ -1,4 +1,9 @@
 ---
+spec_name: BUDGET.md
+spec_version: 0.1.0
+category: Governance
+priority: High
+tier: core
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 billing_owner: "[REPLACE THIS]"

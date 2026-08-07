@@ -6,11 +6,19 @@ on:
       - 'specs/**'
       - 'examples/**'
       - 'schemas/**'
+      - 'templates/**'
+      - 'tools/**'
+      - 'tests/**'
+      - '.github/workflows/validate-specs.yml'
   pull_request:
     paths:
       - 'specs/**'
       - 'examples/**'
       - 'schemas/**'
+      - 'templates/**'
+      - 'tools/**'
+      - 'tests/**'
+      - '.github/workflows/validate-specs.yml'
 
 jobs:
   validate:
@@ -40,6 +48,14 @@ jobs:
           echo "=== Validating specs ==="
           agent-md-validate specs/
 
+      - name: Validate all starter templates
+        run: |
+          echo "=== Validating templates ==="
+          # Templates keep the .template.md suffix while declaring the bare
+          # spec_name of the spec they instantiate, so one filename-mismatch
+          # warning per template is expected. Errors are not.
+          agent-md-validate templates/
+
       - name: Validate all example bundles
         run: |
           for bundle in examples/*/; do
@@ -47,35 +63,24 @@ jobs:
             agent-md-validate "$bundle"
           done
 
-      - name: Validate JSON Schemas
+      - name: Validate frontmatter and per-spec schemas
         run: |
           pip install jsonschema pyyaml
-          python3 -c "
-          import yaml, json, jsonschema, glob, sys
-          schema = json.load(open('schemas/frontmatter.schema.json'))
-          errors = 0
-          total = 0
-          for f in sorted(glob.glob('specs/**/*.md', recursive=True)):
-              if f.endswith('README.md'):
-                  continue
-              total += 1
-              try:
-                  with open(f) as fh:
-                      parts = fh.read().split('---')
-                      if len(parts) >= 3:
-                          data = yaml.safe_load(parts[1])
-                          jsonschema.validate(data, schema)
-              except Exception as e:
-                  errors += 1
-                  print(f'FAIL: {f}: {e}')
-          print(f'Schema validation: {errors} errors out of {total} files')
-          if errors > 0:
-              sys.exit(1)
-          "
+          python3 tools/validate_corpus.py
+
+      - name: Report Stable-gate (Level 3) readiness
+        run: |
+          python3 tools/validate_corpus.py --stable-gate | tail -n 3
+
+      - name: Corpus validator regression tests
+        run: |
+          pip install pytest
+          python3 -m pytest tests/ -q
 
       - name: Count verification
         run: |
           total=$(find specs/ -name '*.md' -not -name 'README.md' -type f | wc -l)
           core=$(grep -rl '^tier: core' specs/ | wc -l)
           extended=$(grep -rl '^tier: extended' specs/ | wc -l)
-          echo "Total: $total | Core: $core | Extended: $extended"
+          templates=$(find templates/ -name '*.template.md' -type f | wc -l)
+          echo "Total: $total | Core: $core | Extended: $extended | Templates: $templates"

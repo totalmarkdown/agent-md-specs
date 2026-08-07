@@ -8,7 +8,6 @@ and governed by the community. All contributions are CC0 — public domain.
 Open a GitHub issue with:
 - **Spec name** — the filename (e.g. MYSPEC.md)
 - **Category** — which subdirectory it belongs in
-- **Domain** — the .dev domain for this spec (e.g. myspecmd.dev)
 - **Purpose** — one paragraph on what problem it solves
 - **Use cases** — at least 2 concrete, specific use cases
 - **Draft spec** — a first attempt at the spec content
@@ -17,7 +16,6 @@ We review proposals based on:
 - Does this fill a genuine gap not covered by existing specs?
 - Are the use cases real and specific?
 - Does it follow the spec format?
-- Is the .dev domain available?
 
 ## How to improve an existing spec
 
@@ -29,18 +27,30 @@ We review proposals based on:
 ## Spec format requirements
 
 Every spec must have:
-- YAML frontmatter with spec_name, spec_version, category, domain,
+- YAML frontmatter with spec_name, spec_version, category,
   priority, maintained_by, and license fields
 - A clear Purpose section
 - A When to create section
 - A complete Spec section with the full specification
 
-## Domain convention
+The authoritative machine contract is `schemas/frontmatter.schema.json`.
+If this list and that schema ever disagree, the schema wins — and CI
+enforces the schema, so a disagreement is a bug in this list. Specs
+carry no `domain` field; see below.
 
-Each spec has a dedicated .dev domain (e.g. teammd.dev).
-When proposing a new spec, verify the .dev domain is available
-before submitting. The domain establishes the spec as a
-first-class standard rather than a loose convention.
+## Canonical location
+
+Specs do not assert a per-spec domain. There is no `domain` frontmatter
+field, and adding one to a spec, template or example will fail CI.
+
+The canonical location for every spec in this repository is this
+repository:
+
+    https://github.com/totalmarkdown/agent-md-specs
+
+A handful of specs also have a standalone companion repo, listed in the
+README. Those are mirrors of the spec published here, not a competing
+source of truth.
 
 ## License requirement
 

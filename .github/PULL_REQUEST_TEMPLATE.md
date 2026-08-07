@@ -27,7 +27,7 @@ be held until the checklist is complete.
 - [ ] **I agree to release this contribution under CC0 1.0 Universal** (public domain, no restrictions).
 - [ ] If this touches a spec file, I ran `agent-md-validate` on the changed file and it passes.
 - [ ] If this adds a new Core spec, I have also added a matching JSON Schema in `schemas/` (or opened a tracking issue).
-- [ ] If this touches frontmatter, I checked required fields: `spec_name`, `spec_version`, `category`, `domain`, `priority`, `maintained_by`, `license`, `tier`, `spec_type`.
+- [ ] If this touches frontmatter, I checked required fields: `spec_name`, `spec_version`, `category`, `priority`, `maintained_by`, `license`, `tier`, `spec_type`. (There is no `domain` field; adding one fails CI.)
 - [ ] If this is a Core-tier change, a linked RFC has been open for ≥14 days.
 - [ ] I updated `CHANGELOG.md` under the appropriate heading.
 - [ ] I updated `INDEX.md` if this adds or renames a spec.

@@ -2,8 +2,7 @@
 spec_name: ENFORCEMENT.md
 spec_version: 0.1.0
 category: Governance
-domain: specmd.dev
-priority: P0
+priority: Very High
 tier: core
 ---
 

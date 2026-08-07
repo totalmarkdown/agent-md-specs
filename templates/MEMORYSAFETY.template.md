@@ -2,8 +2,7 @@
 spec_name: MEMORYSAFETY.md
 spec_version: 0.1.0
 category: Security
-domain: specmd.dev
-priority: P0
+priority: Very High
 tier: core
 ---
 

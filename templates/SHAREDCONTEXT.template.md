@@ -2,8 +2,7 @@
 spec_name: SHAREDCONTEXT.md
 spec_version: 0.1.0
 category: Coordination
-domain: specmd.dev
-priority: P1
+priority: Very High
 tier: core
 ---
 

@@ -1,9 +1,8 @@
 ---
 spec_name: PROVENANCE.md
 spec_version: 0.1.0
-category: Observability
-domain: specmd.dev
-priority: P1
+category: Compliance
+priority: High
 tier: core
 ---
 

@@ -1,4 +1,9 @@
 ---
+spec_name: TEAM.md
+spec_version: 0.1.0
+category: Coordination
+priority: High
+tier: core
 team_name: "[REPLACE THIS]"
 version: "0.1.0"
 purpose: "[REPLACE THIS — one sentence]"

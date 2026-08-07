@@ -1,9 +1,8 @@
 ---
 spec_name: CONSENT.md
 spec_version: 0.1.0
-category: Governance
-domain: specmd.dev
-priority: P0
+category: Compliance
+priority: High
 tier: core
 ---
 

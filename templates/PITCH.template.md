@@ -1,4 +1,9 @@
 ---
+spec_name: PITCH.md
+spec_version: 0.1.0
+category: Marketing/Discovery
+priority: Very High
+tier: extended
 agent_name: "[REPLACE THIS]"
 version: "0.1.0"
 target_audience: "[REPLACE THIS]"

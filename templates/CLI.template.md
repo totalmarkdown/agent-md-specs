@@ -2,6 +2,7 @@
 spec_name: CLI.md
 spec_version: 0.1.0
 category: Technical
+priority: High
 tier: extended
 agent_name: "[REPLACE THIS]"
 cli_name: "[REPLACE THIS — e.g. atlas, myagent]"

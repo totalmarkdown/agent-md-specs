@@ -1,9 +1,8 @@
 ---
 spec_name: AUDITTRAIL.md
 spec_version: 0.1.0
-category: Observability
-domain: specmd.dev
-priority: P0
+category: Compliance
+priority: Very High
 tier: core
 ---
 

@@ -1,9 +1,8 @@
 ---
 spec_name: PERMISSIONS.md
 spec_version: 0.1.0
-category: Security
-domain: specmd.dev
-priority: P0
+category: Governance
+priority: High
 tier: core
 ---
 
