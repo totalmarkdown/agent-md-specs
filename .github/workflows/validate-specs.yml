@@ -9,6 +9,8 @@ on:
       - 'templates/**'
       - 'tools/**'
       - 'tests/**'
+      - 'CONTRIBUTING.md'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
       - '.github/workflows/validate-specs.yml'
   pull_request:
     paths:
@@ -18,6 +20,8 @@ on:
       - 'templates/**'
       - 'tools/**'
       - 'tests/**'
+      - 'CONTRIBUTING.md'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
       - '.github/workflows/validate-specs.yml'
 
 jobs:

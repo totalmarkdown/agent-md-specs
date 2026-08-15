@@ -421,6 +421,207 @@ def test_contributor_docs_do_not_ask_for_a_domain_field():
                 '%s still asks contributors for a domain field: %r' % (rel, line.strip())
 
 
+# --------------------------------------------------------------------------
+# TOTA-109 — the prose field list and the enforced schema are one contract
+#
+# The inverse of the sweep above. That one catches a doc asking for a field
+# the schema rejects; these catch a doc omitting fields the schema requires.
+# CONTRIBUTING.md listed neither `tier` nor `status` for months, so frontmatter
+# written by following it produced five schema errors. Nothing caught it
+# because the existing 179 specs are all clean — only new contributors, who
+# are the entire audience for that file, ever hit it.
+#
+# Every expectation below is *derived* from schemas/. Restating the field list
+# in the test would just move the drift one file over.
+# --------------------------------------------------------------------------
+
+CONTRIBUTING_MD = 'CONTRIBUTING.md'
+PR_TEMPLATE_MD = os.path.join('.github', 'PULL_REQUEST_TEMPLATE.md')
+
+
+def doc_text(rel):
+    return open(os.path.join(ROOT, rel), encoding='utf-8').read()
+
+
+def contributing_section(heading='## Spec format requirements'):
+    body = doc_text(CONTRIBUTING_MD).split(heading)
+    assert len(body) == 2, '%s has %d %r headings, expected 1' % (
+        CONTRIBUTING_MD, len(body) - 1, heading)
+    return body[1].split('\n## ')[0]
+
+
+def spec_document_validator():
+    """The validator CI runs, not a lookalike: same registry, same local-only
+    $ref resolution as tools/validate_corpus.py."""
+    return vc.load_schema('spec-document.schema.json', vc.build_registry())
+
+
+def enforced_required_fields(tier):
+    """Ask the validator which fields it demands for a spec of this tier;
+    do not re-read `required` by hand. `required` alone is a trap —
+    frontmatter.schema.json carries an if/then that makes `priority`
+    required when `tier: core`, and a hand-read misses it. Missing exactly
+    that kind of clause is the bug this section exists to prevent."""
+    missing = set()
+    for error in spec_document_validator().iter_errors({'tier': tier}):
+        match = re.match(r"^'([^']+)' is a required property$", error.message)
+        if match:
+            missing.add(match.group(1))
+    assert missing, 'no required-property errors for tier=%r; check would pass vacuously' % tier
+    return missing | {'tier'}  # supplied in the probe, so never reported missing
+
+
+def documented_required_fields():
+    """CONTRIBUTING.md's nested `**required**` bullet list, as
+    {field: bullet text, continuation lines folded in}, in document order."""
+    fields, inside, current = {}, False, None
+    for line in contributing_section().split('\n'):
+        if re.match(r'^(\S|-\s)', line):
+            inside = bool(re.search(r'\*\*required\*\*', line))
+            current = None
+            continue
+        nested = re.match(r'^  -\s+`([a-z_]+)`\s*(.*)$', line)
+        if inside and nested:
+            current = nested.group(1)
+            fields[current] = nested.group(2)
+        elif current and re.match(r'^    \S', line):
+            fields[current] += ' ' + line.strip()
+        elif not line.strip():
+            current = None
+    return fields
+
+
+def test_contributing_lists_exactly_the_fields_the_schema_requires():
+    documented = documented_required_fields()
+    assert documented, '%s has no nested **required** frontmatter list' % CONTRIBUTING_MD
+    assert set(documented) == enforced_required_fields('core'), (
+        '%s documents %s; the schema requires %s'
+        % (CONTRIBUTING_MD, sorted(documented), sorted(enforced_required_fields('core'))))
+
+
+def test_contributing_flags_the_conditionally_required_fields_as_conditional():
+    """`priority` is required only for `tier: core`. Listing it flatly as
+    required is wrong in the other direction, and the honest fix is to say
+    when it applies rather than to pick a side."""
+    conditional = enforced_required_fields('core') - enforced_required_fields('extended')
+    documented = documented_required_fields()
+    for field in conditional:
+        assert re.search(r'required for\s+`tier:\s*core`', documented[field], re.I), \
+            '%s does not say %r is required only for tier: core' % (CONTRIBUTING_MD, field)
+    for field in set(documented) - conditional:
+        assert not re.search(r'required for\s+`tier:', documented[field], re.I), \
+            '%s marks %r conditional, but the schema requires it always' % (CONTRIBUTING_MD, field)
+
+
+def test_pr_template_checklist_lists_exactly_the_fields_the_schema_requires():
+    lines = [l for l in doc_text(PR_TEMPLATE_MD).split('\n') if 'required fields' in l]
+    assert len(lines) == 1, 'expected 1 frontmatter checklist line, found %d' % len(lines)
+    head = lines[0].split('required fields', 1)[1].split('(')[0]
+    documented = set(re.findall(r'`([a-z_]+)`', head))
+    assert documented == enforced_required_fields('core'), (
+        '%s checklist names %s; the schema requires %s'
+        % (PR_TEMPLATE_MD, sorted(documented), sorted(enforced_required_fields('core'))))
+
+
+def test_contributing_gives_the_allowed_values_for_every_enumerated_field():
+    """A field name without its enum is still a CI failure in waiting:
+    `category: identity` and `priority: extended` both parse and both fail."""
+    section = contributing_section()
+    validator = spec_document_validator()
+    checked = 0
+    for field in sorted(documented_required_fields()):
+        enum = enumerated_values(validator.schema, field)
+        if enum is None or len(enum) > 12:
+            continue  # `category` has 40-odd values; covered by the check below
+        for value in enum:
+            assert '`%s`' % value in section, \
+                '%s omits the %r value %r' % (CONTRIBUTING_MD, field, value)
+        checked += 1
+    # Fail closed: an unparsed or empty field list must not pass vacuously —
+    # that is precisely the state CONTRIBUTING.md was in before TOTA-109.
+    assert checked >= 3, 'only %d enumerated fields checked; expected tier, status, priority' % checked
+
+
+def enumerated_values(schema, field):
+    """The enum for a field, wherever in the composed schema it is declared."""
+    for source in [schema] + [vc.load_schema(os.path.basename(entry['$ref']),
+                                             vc.build_registry()).schema
+                              for entry in schema.get('allOf', []) if '$ref' in entry]:
+        prop = source.get('properties', {}).get(field)
+        if prop and 'enum' in prop:
+            return prop['enum']
+    return None
+
+
+def test_contributing_category_examples_are_real_enum_values():
+    """`category` is a capitalised label, not the lowercase directory name.
+    Guessing it from the path is how a contributor writes `identity`."""
+    section = contributing_section()
+    categories = enumerated_values(spec_document_validator().schema, 'category')
+    examples = re.search(r'`category`.*?\(e\.g\.\s*([^)]*)\)', section, re.S)
+    assert examples, '%s gives no example category values' % CONTRIBUTING_MD
+    found = re.findall(r'`([^`]+)`', examples.group(1))
+    assert found, '%s example categories are not in backticks' % CONTRIBUTING_MD
+    for value in found + re.findall(r'`category:\s*([^`]+)`', section):
+        assert value in categories, \
+            '%s offers category %r, which is not in the enum' % (CONTRIBUTING_MD, value)
+    assert any(' ' in value for value in found), \
+        '%s gives no multi-word category example, the case that trips on casing' % CONTRIBUTING_MD
+
+
+def test_frontmatter_written_from_contributing_validates_clean():
+    """The acceptance check, run the way the defect was found: build a
+    frontmatter block using only what CONTRIBUTING.md tells a contributor —
+    every required field, each set to the first value the doc offers for it —
+    and validate it against the schema CI enforces. This construction
+    produced 5 errors before TOTA-109 and must produce 0 after."""
+    validator = spec_document_validator()
+    for tier in enumerated_values(validator.schema, 'tier'):
+        instance = {'tier': tier}
+        for field, bullet in documented_required_fields().items():
+            if field == 'tier':
+                continue
+            offered = re.findall(r'`([^`]+)`', bullet)
+            assert offered, '%s offers no value for %r' % (CONTRIBUTING_MD, field)
+            instance[field] = offered[0]
+        errors = [e.message for e in validator.iter_errors(instance)]
+        assert errors == [], 'frontmatter per %s (tier=%s) fails: %s' % (
+            CONTRIBUTING_MD, tier, errors)
+
+
+def test_frontmatter_with_a_multi_word_category_validates_clean():
+    """The `specs/regulatory/` → `Regulatory Compliance` mapping, which is the
+    single most likely thing for a contributor to get wrong."""
+    validator = spec_document_validator()
+    instance = {'spec_name': 'MYSPEC.md', 'spec_version': '1.0.0',
+                'category': 'Regulatory Compliance', 'tier': 'core',
+                'status': 'draft', 'priority': 'High'}
+    assert [e.message for e in validator.iter_errors(instance)] == []
+
+
+def test_contributing_names_the_schema_that_actually_governs_specs():
+    """It named frontmatter.schema.json, which omits `status`. Following the
+    named schema to the letter still failed CI."""
+    section = contributing_section()
+    assert 'schemas/spec-document.schema.json' in section, \
+        '%s does not name spec-document.schema.json as the contract' % CONTRIBUTING_MD
+    assert re.search(r'authoritative machine contract is\s*\n?`schemas/spec-document',
+                     section), '%s points "authoritative" at the wrong schema' % CONTRIBUTING_MD
+
+
+def test_contributor_docs_are_in_the_validate_specs_workflow_triggers():
+    """Same argument as the templates trigger above, one file over. Every
+    check in this module lives in the pytest job, and that job did not fire on
+    an edit to CONTRIBUTING.md or the PR template — so the guards protecting
+    those two files could not run on a change to them. A check that cannot
+    fire on the file it guards is not a check."""
+    workflow = open(os.path.join(ROOT, '.github', 'workflows', 'validate-specs.yml'),
+                    encoding='utf-8').read()
+    for path in ('CONTRIBUTING.md', '.github/PULL_REQUEST_TEMPLATE.md'):
+        assert workflow.count("- '%s'" % path) >= 2, \
+            '%s missing from the push and/or pull_request triggers' % path
+
+
 def test_index_makes_no_domain_assertion():
     """TOTA-79's own INDEX.md assertion, kept as a separate check rather than
     folded into the frontmatter sweep above: INDEX.md has no frontmatter, so
