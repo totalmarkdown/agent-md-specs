@@ -26,17 +26,31 @@ We review proposals based on:
 
 ## Spec format requirements
 
-Every spec must have:
-- YAML frontmatter with spec_name, spec_version, category,
-  priority, maintained_by, and license fields
+Every spec in `specs/` must have:
+
+- YAML frontmatter with these **required** fields:
+  - `spec_name` — the filename, e.g. `MYSPEC.md`
+  - `spec_version` — semver, e.g. `1.0.0`
+  - `category` — a capitalised label from the schema's enum
+    (e.g. `Identity`, `Regulatory Compliance`). This is a label, not
+    the directory name: specs in `specs/regulatory/` use
+    `category: Regulatory Compliance`.
+  - `tier` — `core` or `extended`
+  - `status` — `draft`, `proposed`, `stable`, `deprecated` or
+    `retired`, per SPEC_LIFECYCLE.md
+  - `priority` — `Very High`, `High`, `Medium` or `Low`. Required for
+    `tier: core`; optional, but conventional, for `tier: extended`.
+- Conventional but not schema-enforced: `maintained_by`, `license`
 - A clear Purpose section
 - A When to create section
 - A complete Spec section with the full specification
 
-The authoritative machine contract is `schemas/frontmatter.schema.json`.
-If this list and that schema ever disagree, the schema wins — and CI
-enforces the schema, so a disagreement is a bug in this list. Specs
-carry no `domain` field; see below.
+The authoritative machine contract is
+`schemas/spec-document.schema.json`, which composes
+`schemas/frontmatter.schema.json` and adds the lifecycle `status`
+field. If this list and that schema ever disagree, the schema wins —
+and CI enforces the schema, so a disagreement is a bug in this list.
+Specs carry no `domain` field; see below.
 
 ## Canonical location
 
